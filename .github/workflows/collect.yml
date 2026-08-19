@@ -1,0 +1,64 @@
+name: 毎朝の収集と公開
+
+on:
+  # 日本時間の朝4時30分（UTCの19時30分）。朝5時に見るころには出来ている。
+  schedule:
+    - cron: "30 19 * * *"
+  # manual.json を直したときなど、手で直したら作り直す
+  push:
+    branches: [main]
+  # GitHubの画面から手で動かせるようにする
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+# 同時に走らないようにする
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 記事と為替をあつめる
+        run: python collect.py
+
+      - name: 何件取れたか確かめる
+        run: python check_data.py
+
+      - name: data.json を記録として残す
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data.json
+          git diff --staged --quiet || git commit -m "毎朝の収集 $(TZ=Asia/Tokyo date '+%Y-%m-%d %H:%M')"
+          git push
+
+      - name: 公開するファイルだけまとめる
+        run: |
+          mkdir -p _site
+          cp index.html data.json _site/
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

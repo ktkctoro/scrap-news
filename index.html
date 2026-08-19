@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>スクラップ今日</title>
+<style>
+  :root{
+    --ink:#17191c; --ink-2:#5c6167; --ink-3:#8b9096;
+    --line:#e2e0da; --paper:#f7f6f2; --card:#fff;
+    --up:#1f7a4d; --down:#b3352f;
+    --law:#8a5a08; --law-bg:#fbf0d9;
+    --mkt:#1a4f7a; --mkt-bg:#e6eff6;
+    --gen:#5c6167; --gen-bg:#eeece6;
+    --dc:#2b5f56;  --dc-bg:#e3f0ec;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--paper);color:var(--ink);padding:16px 12px 40px;
+    font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic",sans-serif;
+    -webkit-font-smoothing:antialiased}
+  .phone{max-width:400px;margin:0 auto;background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+  .num{font-family:ui-monospace,SFMono-Regular,Menlo,"Roboto Mono",monospace;font-variant-numeric:tabular-nums}
+
+  header{padding:16px 16px 13px;border-bottom:1px solid var(--line);display:flex;align-items:baseline;justify-content:space-between}
+  header h1{font-size:17px;font-weight:600}
+  header time{font-size:12px;color:var(--ink-3)}
+
+  section{padding:14px 16px;border-bottom:1px solid var(--line)}
+  .eyebrow{font-size:11px;letter-spacing:.08em;color:var(--ink-3);margin-bottom:10px}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+  .tile{background:var(--paper);border-radius:10px;padding:10px 12px}
+  .tile .k{font-size:12px;color:var(--ink-2);margin-bottom:3px}
+  .tile .v{font-size:20px;font-weight:600;line-height:1.2}
+  .tile .u{font-size:11px;color:var(--ink-3);font-weight:400}
+  .tile .d{font-size:12px;margin-top:2px}
+  .up{color:var(--up)} .down{color:var(--down)} .flat{color:var(--ink-3)}
+
+  .row{display:flex;align-items:baseline;justify-content:space-between;padding:9px 0;border-bottom:1px solid var(--line)}
+  .row:last-child{border-bottom:none;padding-bottom:0}
+  .row .k{font-size:14px}
+  .row .v{font-size:16px;font-weight:600}
+  .row .u{font-size:11px;color:var(--ink-3);margin-left:2px}
+  .row .d{font-size:12px;margin-left:6px}
+  .note{font-size:11px;color:var(--ink-3);margin-left:4px}
+
+  .chips{display:flex;gap:6px;padding:12px 16px;border-bottom:1px solid var(--line);overflow-x:auto}
+  .chip{flex:0 0 auto;font-size:13px;padding:6px 14px;border:1px solid var(--line);background:transparent;
+    border-radius:999px;color:var(--ink-2);cursor:pointer;font-family:inherit}
+  .chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
+  .chip:focus-visible{outline:2px solid var(--mkt);outline-offset:2px}
+
+  article{padding:14px 16px;border-bottom:1px solid var(--line)}
+  article:last-child{border-bottom:none}
+  .badge{display:inline-block;font-size:11px;padding:3px 9px;border-radius:5px}
+  .b-law{background:var(--law-bg);color:var(--law)}
+  .b-mkt{background:var(--mkt-bg);color:var(--mkt)}
+  .b-gen{background:var(--gen-bg);color:var(--gen)}
+  .b-dc{background:var(--dc-bg);color:var(--dc)}
+  article a{display:block;font-size:15.5px;font-weight:600;line-height:1.45;margin:7px 0 5px;color:inherit;text-decoration:none}
+  article a:active{opacity:.6}
+  .meta{font-size:11.5px;color:var(--ink-3)}
+  .msg{padding:28px 16px;font-size:13px;color:var(--ink-3);text-align:center;line-height:1.7}
+  .disclaimer{max-width:400px;margin:12px auto 0;font-size:11.5px;color:var(--ink-3);line-height:1.6;text-align:center}
+</style>
+</head>
+<body>
+<div class="phone">
+  <header>
+    <h1>スクラップ今日</h1>
+    <time class="num" id="updated">—</time>
+  </header>
+  <div id="prices"></div>
+  <div class="chips" role="group" aria-label="記事の絞り込み">
+    <button class="chip" data-f="all" aria-pressed="true">すべて</button>
+    <button class="chip" data-f="mkt" aria-pressed="false">相場</button>
+    <button class="chip" data-f="law" aria-pressed="false">法規制</button>
+    <button class="chip" data-f="gen" aria-pressed="false">業界</button>
+    <button class="chip" data-f="dc" aria-pressed="false">AI・DC</button>
+  </div>
+  <div id="feed"><div class="msg">読み込んでいます…</div></div>
+</div>
+<p class="disclaimer" id="foot"></p>
+
+<script>
+var DATA = null, FILTER = 'all';
+
+function esc(s){ var d = document.createElement('div'); d.textContent = s == null ? '' : s; return d.innerHTML; }
+
+function diffClass(d){
+  if (!d) return 'flat';
+  var s = String(d).trim();
+  if (s.charAt(0) === '+') return 'up';
+  if (s.charAt(0) === '-' || s.charAt(0) === '−') return 'down';
+  return 'flat';
+}
+function diffText(d){
+  if (!d) return '± 0';
+  var s = String(d).trim();
+  if (s === '0') return '± 0';
+  if (s.charAt(0) === '+') return '▲ ' + s.slice(1);
+  if (s.charAt(0) === '-' || s.charAt(0) === '−') return '▼ ' + s.slice(1);
+  return s;
+}
+
+function ago(iso){
+  if (!iso) return '';
+  var t = new Date(iso), now = new Date();
+  var h = Math.floor((now - t) / 3600000);
+  if (h < 1) return 'さっき';
+  if (h < 24) return h + '時間前';
+  var d = Math.floor(h / 24);
+  return d === 1 ? '昨日' : d + '日前';
+}
+
+function renderPrices(){
+  var m = (DATA && DATA.manual) || {}, fx = DATA && DATA.fx;
+  var html = '';
+
+  if (m.tiles && m.tiles.length){
+    html += '<section><div class="eyebrow">建値</div><div class="grid">';
+    m.tiles.forEach(function(t){
+      html += '<div class="tile"><div class="k">' + esc(t.name) + '</div>' +
+        '<div class="v num">' + esc(t.value) + '<span class="u"> ' + esc(t.unit || '') + '</span></div>' +
+        '<div class="d num ' + diffClass(t.diff) + '">' + esc(diffText(t.diff)) + '</div></div>';
+    });
+    html += '</div></section>';
+  }
+
+  var rows = (m.rows || []).slice();
+  if (fx && fx.usdjpy) rows.push({ name: 'ドル円', value: fx.usdjpy.toFixed(2), unit: '', diff: '', fx: true });
+
+  if (rows.length){
+    html += '<section><div class="eyebrow">貴金属・為替</div>';
+    rows.forEach(function(r){
+      html += '<div class="row"><span class="k">' + esc(r.name) + '</span><span>' +
+        '<span class="v num">' + esc(r.value) + '</span>' +
+        (r.unit ? '<span class="u">' + esc(r.unit) + '</span>' : '') +
+        (r.diff ? '<span class="d num ' + diffClass(r.diff) + '">' + esc(r.diff) + '</span>' : '') +
+        (r.fx ? '<span class="note">' + esc(DATA.fx.date || '') + '</span>' : '') +
+        '</span></div>';
+    });
+    html += '</section>';
+  }
+  document.getElementById('prices').innerHTML = html;
+}
+
+function renderFeed(){
+  var feed = document.getElementById('feed');
+  var items = ((DATA && DATA.items) || []).filter(function(i){ return FILTER === 'all' || i.cat === FILTER; });
+  if (!items.length){ feed.innerHTML = '<div class="msg">該当する記事はありません</div>'; return; }
+  feed.innerHTML = items.map(function(i){
+    return '<article><span class="badge b-' + esc(i.cat) + '">' + esc(i.label) + '</span>' +
+      '<a href="' + esc(i.link) + '" target="_blank" rel="noopener">' + esc(i.title) + '</a>' +
+      '<div class="meta">' + esc(i.source) + (i.published ? ' · ' + ago(i.published) : '') + '</div></article>';
+  }).join('');
+}
+
+document.querySelectorAll('.chip').forEach(function(c){
+  c.addEventListener('click', function(){
+    document.querySelectorAll('.chip').forEach(function(x){ x.setAttribute('aria-pressed', String(x === c)); });
+    FILTER = c.dataset.f;
+    renderFeed();
+  });
+});
+
+fetch('./data.json?t=' + Date.now())
+  .then(function(r){ if (!r.ok) throw new Error(r.status); return r.json(); })
+  .then(function(d){
+    DATA = d;
+    document.getElementById('updated').textContent = d.updated || '';
+    renderPrices();
+    renderFeed();
+    document.getElementById('foot').textContent = '建値と金・銀は manual.json の手入力です。';
+  })
+  .catch(function(){
+    document.getElementById('feed').innerHTML =
+      '<div class="msg">data.json が読めませんでした。<br>collect.py を実行してから、<br>簡易サーバー経由で開いてください。</div>';
+  });
+</script>
+</body>
+</html>

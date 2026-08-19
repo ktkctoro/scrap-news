@@ -1,0 +1,10 @@
+# 自動でできるもの。GitHubには上げない。
+collect.log
+__pycache__/
+携帯用.html
+_site/
+.claude/
+
+# このパソコン専用のファイル。中に個人のフォルダ名が入るので公開しない。
+run_collect.bat
+毎朝の自動実行.md
