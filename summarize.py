@@ -45,6 +45,14 @@ def build_prompt(data):
         for r in boards["rows"]:
             lines.append(f"{r['name']} {r['value']}{r['unit']}（前回比 {r.get('diff') or '±0'}）")
 
+    cmp_ = data.get("compare") or {}
+    if cmp_.get("rows"):
+        lines.append("")
+        lines.append("【同業各社の買取価格くらべ】")
+        for r in cmp_["rows"]:
+            cells = "、".join(f"{c['dealer']}{c['value']:,}円" for c in r["cells"])
+            lines.append(f"{r['name']}：{cells}（差{r['spread']:,}円）")
+
     lines.append("")
     lines.append("【記事の見出し】")
     for i in (data.get("items") or [])[:40]:

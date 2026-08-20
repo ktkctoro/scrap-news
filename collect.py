@@ -16,6 +16,8 @@ import xml.etree.ElementTree as ET
 import zlib
 from datetime import datetime, timezone, timedelta
 
+import dealers
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 JST = timezone(timedelta(hours=9))
 UA = "Mozilla/5.0 (compatible; scrap-news/1.0)"
@@ -711,6 +713,8 @@ def main():
     prices = build_prices(load_manual(), prev.get("manual") or {})
     print("基板の買取価格をあつめています…")
     boards = build_boards(prev.get("boards"))
+    print("同業各社の価格をあつめています…")
+    compare = dealers.build_compare(fetch, prev.get("compare"))
 
     out = {
         "updated": _now_label(),
@@ -722,6 +726,11 @@ def main():
     }
     if boards:
         out["boards"] = boards
+    if compare:
+        out["compare"] = compare
+    elif prev.get("compare"):
+        print("  ! 同業各社の価格は前回の値を使い回します", file=sys.stderr)
+        out["compare"] = prev["compare"]
     with open(dest, "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, indent=1)
     print(f"\n完了: {len(items)} 件を {dest} に書き出しました。")

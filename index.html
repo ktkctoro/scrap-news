@@ -79,6 +79,17 @@
   .hint{font-size:12px;padding:5px 10px;border:1px solid var(--line);background:transparent;
     border-radius:999px;color:var(--ink-2);cursor:pointer;font-family:inherit}
 
+  .cmp{padding:14px 16px;border-bottom:1px solid var(--line)}
+  .cmp .item{padding:9px 0;border-bottom:1px solid var(--line)}
+  .cmp .item:last-child{border-bottom:none;padding-bottom:0}
+  .cmp .iname{font-size:13.5px;font-weight:600;margin-bottom:4px}
+  .cmp .cells{display:flex;flex-wrap:wrap;gap:5px}
+  .cmp .cell{font-size:12.5px;padding:3px 8px;border-radius:6px;background:var(--paper);color:var(--ink-2)}
+  .cmp .cell b{font-weight:600;color:var(--ink)}
+  .cmp .cell.best{background:var(--up);color:#fff}
+  .cmp .cell.best b{color:#fff}
+  .cmp .spread{font-size:11px;color:var(--ink-3);margin-left:2px}
+
   .links{padding:14px 16px;border-top:1px solid var(--line)}
   .linkrow{display:flex;flex-direction:column;gap:10px;margin-top:2px}
   .linkgroup{display:flex;align-items:baseline;gap:8px}
@@ -98,6 +109,7 @@
   </header>
   <div id="brief"></div>
   <div id="prices"></div>
+  <div id="compare"></div>
   <div class="chips" role="group" aria-label="記事の絞り込み">
     <button class="chip" data-f="all" aria-pressed="true">すべて</button>
     <button class="chip" data-f="mkt" aria-pressed="false">相場</button>
@@ -199,6 +211,25 @@ function renderPrices(){
   document.getElementById('prices').innerHTML = html;
 }
 
+function renderCompare(){
+  var c = DATA && DATA.compare;
+  if (!c || !c.rows || !c.rows.length) return;
+  var html = '<div class="cmp"><div class="eyebrow">同業の買取価格くらべ（' +
+    esc(c.dealers.join('・')) + '）</div>';
+  c.rows.forEach(function(r){
+    html += '<div class="item"><div class="iname">' + esc(r.name) +
+      (r.spread ? '<span class="spread">差 ' + esc(String(r.spread)) + '円</span>' : '') +
+      '</div><div class="cells">';
+    r.cells.forEach(function(x){
+      html += '<span class="cell' + (x.best ? ' best' : '') + '">' + esc(x.dealer) +
+        ' <b class="num">' + x.value.toLocaleString() + '</b></span>';
+    });
+    html += '</div></div>';
+  });
+  html += '</div>';
+  document.getElementById('compare').innerHTML = html;
+}
+
 function renderFeed(){
   var feed = document.getElementById('feed');
   var items = ((DATA && DATA.items) || []).filter(function(i){ return FILTER === 'all' || i.cat === FILTER; });
@@ -273,6 +304,7 @@ fetch('./data.json?t=' + Date.now())
     document.getElementById('updated').textContent = d.updated || '';
     renderBrief();
     renderPrices();
+    renderCompare();
     renderFeed();
     document.getElementById('foot').textContent = '銅建値はJX金属、鉄は東京製鐵、金・銀は田中貴金属、基板はK&Yシステムの公表値。ほかは市場データです。';
   })
