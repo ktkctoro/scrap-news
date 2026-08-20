@@ -23,6 +23,8 @@ UA = "Mozilla/5.0 (compatible; scrap-news/1.0)"
 # 左が分類、右が検索語。増やしたいときはこの表に足すだけ。
 QUERIES = [
     ("mkt", "銅 建値"),
+    ("mkt", "亜鉛 建値"),
+    ("mkt", "アルミ二次地金"),
     ("mkt", "非鉄金属 相場"),
     ("mkt", "鉄スクラップ 価格"),
     ("mkt", "金 相場 地金"),
@@ -73,18 +75,32 @@ CONDITIONAL = {
     "室外機": ["盗", "窃盗", "被害", "逮捕", "買取", "リサイクル"],
 }
 
-# 媒体そのものが株・相場データ専門で、毎回ノイズになるもの
+# 媒体そのものが株・相場データ専門で、毎回ノイズになるもの。
+# Googleニュースは媒体を「日本経済新聞」と「nikkei.com」のように
+# 表示名とドメインの両方の書き方で返してくるので、両方書いておく。
+# 判定は大文字小文字を区別しない。
 NG_SOURCES = [
-    "Vietnam.vn", "Laodong.vn", "BigGo", "simplywall.st", "Traders Union",
-    "Newscast.jp", "アットプレス", "ドリームニュース", "Gold Price",
-    "VT Markets", "TradingKey", "Moomoo", "Yahoo!ファイナンス", "株探",
-    "ログミーFinance", "Investing.com", "まぐまぐ",
+    "vietnam.vn", "laodong.vn", "biggo", "simplywall.st",
+    "traders union", "tradersunion",
+    "newscast", "アットプレス", "atpress", "ドリームニュース", "dreamnews",
+    "gold price", "goldprice", "vt markets", "vtmarkets", "tradingkey",
+    "moomoo", "yahoo!ファイナンス", "finance.yahoo", "株探", "kabutan",
+    "ログミーfinance", "logmi", "investing.com", "まぐまぐ", "mag2",
 ]
+
+# ドメイン表記で来たときに、画面で読みやすい名前に直す
+SOURCE_NAMES = {
+    "nikkei.com": "日本経済新聞",
+    "news.yahoo.co.jp": "Yahoo!ニュース",
+    "japanmetaldaily.com": "日刊鉄鋼新聞",
+    "nikkan.co.jp": "日刊工業新聞",
+}
 
 
 def is_relevant(title, source):
     """商売に効く記事かどうかを見出しと媒体で判定する。"""
-    if any(w in source for w in NG_SOURCES):
+    src = source.lower()
+    if any(w in src for w in NG_SOURCES):
         return False
     if any(w in title for w in NG_WORDS):
         return False
@@ -150,7 +166,8 @@ def clean_title(title):
     """Googleニュースの見出しは「見出し - 媒体名」の形。媒体名を切り出す。"""
     if " - " in title:
         head, source = title.rsplit(" - ", 1)
-        return head.strip(), source.strip()
+        source = source.strip()
+        return head.strip(), SOURCE_NAMES.get(source.lower(), source)
     return title.strip(), ""
 
 

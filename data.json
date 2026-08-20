@@ -1,5 +1,5 @@
 {
- "updated": "8/20 9:07",
+ "updated": "8/20 9:39",
  "fx": {
   "usdjpy": 159.09,
   "date": "2026-08-19"
@@ -34,15 +34,15 @@
   "rows": [
    {
     "name": "金（店頭買取）",
-    "value": "24,233",
+    "value": "25,071",
     "unit": "円/g",
-    "diff": "-566"
+    "diff": "+734"
    },
    {
     "name": "銀（店頭買取）",
-    "value": "338.25",
+    "value": "371.14",
     "unit": "円/g",
-    "diff": "-32.01"
+    "diff": "+21.78"
    }
   ]
  },
@@ -72,14 +72,6 @@
    "published": "2026-08-20T01:31:02+09:00"
   },
   {
-   "cat": "mkt",
-   "label": "相場",
-   "title": "銅価格は$6.3434のサポート付近で推移しており、売られ過ぎの状況がさらなる売り圧力を抑えています。",
-   "source": "tradersunion.com",
-   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQYzVFU0E4LTV2YXFtSzB4c0R3c0FidmxIbjkyMG91NTBQc1B3cXVRajVYTWF4MURjMUU3LUo0OWNzR1FMeEhBRHpoVUd1eDRzZXJRZUNpQzNKLXNTSmtrbmdhSmJkakoycDVzVVF3RWhYQ0xTY1BtcVRTMXF6Q0c5U0MyeW13dGI1ajkweWJOa0ptTmE0cjRF?oc=5",
-   "published": "2026-08-19T21:19:34+09:00"
-  },
-  {
    "cat": "law",
    "label": "法規制",
    "title": "“ケーブルカッター”を正当な理由なく所持か…金属盗対策法違反の疑いで愛知初の逮捕者 カンボジア人の男",
@@ -99,7 +91,7 @@
    "cat": "gen",
    "label": "業界",
    "title": "｢私のものではない｣ 車にケーブル切る器具を隠し持っていた疑い カンボジア国籍の男を逮捕 太陽光発電施設などで盗難相次ぐ 愛知で初摘発 | 名古屋・愛知・岐阜・三重のニュース【CBC news】 | CBC web (2ページ)",
-   "source": "TBS NEWS DIG",
+   "source": "newsdig.tbs.co.jp",
    "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1kTUtjZUtRVW5pY1JEZkxBd0pmZVF0VnotX2xkVnZvQnlzdWQ4empGbWxvY2ZJeEtPb2R4UWFmamdxalN5UFVad1dubVRvb1B5RWtNNE1IbGNscnFaYlNacnctUQ?oc=5",
    "published": "2026-08-19T18:36:00+09:00"
   },
@@ -203,7 +195,7 @@
    "cat": "mkt",
    "label": "相場",
    "title": "銅価格の高騰を背景に黄銅代替材の快削ステンレス鋼を拡販：材料技術",
-   "source": "MONOist",
+   "source": "monoist.itmedia.co.jp",
    "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1uejhtQVlfUDdNeXpxUGdiYjRkOGhkZE5SNUJ4MlVnMzlLZGg1d0dZR01PYm9JZlNkRHpFNHBwa1pVVzV2UmxSX3JHRWFhZkRpTXV1VU1rN0lobEo5YUFkdXVvWGVqZDhHLTRHT0FjYw?oc=5",
    "published": "2026-08-14T11:00:00+09:00"
   },
@@ -254,14 +246,6 @@
    "source": "ｄメニューニュース",
    "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNbi10cXZ6aHhMYWFrNDRoNkNRa1l3eFRfdHRZQ2hDQUFYYmxTNXhWX2FQd3NlQk9QeXk4YVNUcVhQU2hkd2ZfN3BfaEVmWktsNlV2STlwWXFIOXFTZGVyZHRpOVBxTExWZUpxVWgxeHRYTjhNMkJFbVlrdWFVLWtENlQybmJHajTSAYwBQVVfeXFMT1c5ejFldEE1WW9LX3ZXcGFiMzQ0eFFUb19PblVaQ3YyMC1rN2NhemZBMDBuOE5kU2QwRlVETEpxd243OWxxY2ZaZ3RWR0xYQURYbVZ2T1cybmx0S0xheGlWV0dlV2trdVhBM3pyemhkVl9VOHdSaEhMY2lfQzc0QkVQWFBHMzFKNmhLd1Q?oc=5",
    "published": "2026-08-13T11:25:00+09:00"
-  },
-  {
-   "cat": "mkt",
-   "label": "相場",
-   "title": "国内企業物価、7月は前年比7.2％上昇　非鉄金属など押し上げ寄与",
-   "source": "ｄメニューニュース",
-   "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNVFMyOFJTcm5QQkdsSFo0UFdBNjNMblNVMjZCM3M5c3JoWExkMVpZU091TDhnUHRkTHl3R0ZMYWxVQnREandjT0Rndzd6c3JUOWgtS1ZTeWN3UkQxa3BERUNSYkptMU9RWUNUZTdubGdwMGVjMFBLazNwMHMzS2NyYXFR0gGHAUFVX3lxTE05Uy1JNzZhSlVMWjRkaFdENnVXaU8wR3ZTd3lUd3NxYzRJT3l5N1Z4c2l2cFRpQVI1NUl2ZWw0eWhScHZkeVlZZVA4Y0F1SDVQU3IxNGlCTzdNUkNxNW94SVBmMjB6enRlazNXTTkyeTBfYnd1cUM5eWdLZWVtUDJZRjBuY1VIQQ?oc=5",
-   "published": "2026-08-13T09:13:00+09:00"
   }
  ]
 }
