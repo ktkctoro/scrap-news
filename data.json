@@ -1,5 +1,5 @@
 {
- "updated": "8/20 17:42",
+ "updated": "8/20 17:43",
  "fx": {
   "usdjpy": 159.09,
   "date": "2026-08-19"
@@ -54,14 +54,6 @@
  },
  "items": [
   {
-   "cat": "law",
-   "label": "法規制",
-   "title": "金属くず買受業を営む皆さまへのお知らせ",
-   "source": "vill.kitanakagusuku.lg.jp",
-   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1LTHBLbC01MmxWZ285Zk1jMzloc3I4TTFMdG5VYXdnVkNnWE5TZmlTR3JQRVVfSXIzOWlUbVF0MXBEQ3c5eFJxOVdHSVpzU2xXd196T09heTdQTUdNa0FDeDkzWkRRR0pGazAyMExZYkJLUUhWQkx4WWV0QTU?oc=5",
-   "published": "2026-08-20T13:11:47+09:00"
-  },
-  {
    "cat": "mkt",
    "label": "相場",
    "title": "IBMAが正式に設立され、政府はインドネシアの金地金産業の強化を目標に",
@@ -89,7 +81,7 @@
    "cat": "dc",
    "label": "AI・DC",
    "title": "新会長に聞く／日本伸銅協会・加藤和照氏（三井住友金属鉱山伸銅社長）／伸銅品グリーンブランド創設へ／未利用銅リサイクル材活用、新技術検討",
-   "source": "日刊鉄鋼新聞",
+   "source": "日刊鉄鋼新聞 Japan Metal Daily",
    "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9tZ2ZfaUQwSWY5UTV0WHkyMFlnWi1sWjBKMVltWEJKSzhYS3N3SklSNkc4ZlN6RGZ3UmJzdFpFY3o2THpaMko2YVdIcEd0TGdFRG5zTmRoYl9HcUpsZ0E?oc=5",
    "published": "2026-08-20T05:00:00+09:00"
   },
@@ -177,7 +169,7 @@
    "cat": "mkt",
    "label": "相場",
    "title": "銅建値が２４０万円突破／需給ひっ迫懸念が押し上げ",
-   "source": "日刊鉄鋼新聞",
+   "source": "日刊鉄鋼新聞 Japan Metal Daily",
    "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9oZjBhbjV1ZXkzb3dQWUpjSldEZEJBc2NhSHFzeE5sOTBfeWNzWVFOSDlBVXZlMUtfSEN4RmwtS3VJREktZWR1VTVNZXc0UjVoX2JWY3FEcTRXVW1HY2c?oc=5",
    "published": "2026-08-18T05:00:00+09:00"
   },
@@ -273,7 +265,7 @@
    "cat": "gen",
    "label": "業界",
    "title": "橋下徹氏「かっぱ兄妹」の銅像２体盗難に危機感「そういう世の中ではなくなってきたのかな」",
-   "source": "news.infoseek.co.jp",
+   "source": "Infoseek",
    "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5Tc19rQzVudFNpcER1djFXSTg3emExQmdRQVA0ekdUc0dQY0U4WTNlTjNneXBCellJUzA4ZFJnN0h1aWN6a3VUakpBaFZCMUdKMVRqRVZVTDZaeWF3RGFUVjVpVDh6Sk9KdUhrTFRqU3BiYjTSAXhBVV95cUxOaGE5ZzNVcDNuMEl2dXBjRXpjMVBfWGVQejluVWk5UXlNUWNFcU45WGZMcUZfM3M3clY0Rm5vbFNlTW9SZ25UQkVIcTVVU29MbTNmYzBMQV9VOUF3bGdfb2MwRGxUczlxQ2c3MDYxQ3ZwS2p5NW5lZXo?oc=5",
    "published": "2026-08-12T16:53:35+09:00"
   },
@@ -337,7 +329,7 @@
    "cat": "law",
    "label": "法規制",
    "title": "GX推進法・資源有効利用促進法改正、再生材利用義務化を「競争力」に昇華させる戦略とは 経済産業省・資源循環経済課課長ら登壇の無料ウェビナー開催決定｜Infoseekニュース",
-   "source": "news.infoseek.co.jp",
+   "source": "Infoseek",
    "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5nbmlJOHNmNU9XYlFKS293NWdlWDZISHdHX3FYcTc2blNYM1JxX01KT2VSclk1UktoV2NXcE5PVVRGWURlUXVKRHFrU1kzdGpXM2NGN2FjLVRhWlpqX1FzOW1rUEU1TExZWGI0NmVkRERkQQ?oc=5",
    "published": "2026-08-01T16:00:00+09:00"
   },
@@ -348,6 +340,14 @@
    "source": "Yahoo!ニュース",
    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQUWM4NUp1YWNVV2d6M1YtTnY5cU5TU2JmTDgzNUFCdzFVb3VBUjZkTGVRbUE5OURmLVVWUHM4ZG5PamVURlJIWTZjU2FUYXYyRVNPV2tFWnZWb29KVjVLQXFpY2R2Z1RybDQwS0pIU3dDdHl2MVNMR1pFM1JIak5xMGlKc3lZTkw4azB1TGtR?oc=5",
    "published": "2026-07-30T10:39:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "コンタクトレンズのブリスター（空ケース）のケミカルリサイクル実証実験を開始",
+   "source": "ニコニコニュース",
+   "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5IcXg1Rm5PdmdVRXZsX0dtZjQ2QXVGUjV6Si1keE5MaF9mQVFIYU9acEFFV3JpLTlvemtRVDRfS2FhOHBqV2RGRWlmXy01azJKMWZGSg?oc=5",
+   "published": "2026-07-29T16:00:00+09:00"
   },
   {
    "cat": "law",
@@ -369,7 +369,7 @@
    "cat": "law",
    "label": "法規制",
    "title": "加賀銅板盗疑い３人逮捕 神社屋根被害１８０キロ 高騰背景、県内１～６月の金属盗被害２．９倍｜社会｜石川のニュース",
-   "source": "hokkoku.co.jp",
+   "source": "北國新聞",
    "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5YNlFXdjN0Mks2Q0FzU2tFZ2Ruc1pwNDRyQ1BtQmJQVVh4T2Vyamc1YXh0RWJQaHpDSHpMR0ZwWWhmZzhsU0NkSmo1NHh2NTVjQzJ4NmRxUQ?oc=5",
    "published": "2026-07-23T16:00:00+09:00"
   },
@@ -729,7 +729,8 @@
       "best": false
      }
     ],
-    "spread": 100
+    "spread": 100,
+    "diff": "0"
    },
    {
     "group": "電線",
@@ -802,7 +803,8 @@
       "best": false
      }
     ],
-    "spread": 55
+    "spread": 55,
+    "diff": "0"
    },
    {
     "group": "電線",
@@ -939,7 +941,8 @@
       "best": true
      }
     ],
-    "spread": 0
+    "spread": 0,
+    "diff": "0"
    },
    {
     "group": "真鍮・砲金",
@@ -1122,7 +1125,8 @@
       "best": false
      }
     ],
-    "spread": 40
+    "spread": 40,
+    "diff": "0"
    },
    {
     "group": "亜鉛・鉛",
@@ -1149,7 +1153,8 @@
       "best": false
      }
     ],
-    "spread": 55
+    "spread": 55,
+    "diff": "0"
    },
    {
     "group": "亜鉛・鉛",
@@ -1166,7 +1171,8 @@
       "best": false
      }
     ],
-    "spread": 10
+    "spread": 10,
+    "diff": "0"
    },
    {
     "group": "亜鉛・鉛",
@@ -1183,7 +1189,8 @@
       "best": false
      }
     ],
-    "spread": 5
+    "spread": 5,
+    "diff": "0"
    },
    {
     "group": "雑品",
@@ -1340,7 +1347,8 @@
       "best": false
      }
     ],
-    "spread": 60
+    "spread": 60,
+    "diff": "0"
    },
    {
     "group": "雑品",
@@ -1367,7 +1375,8 @@
       "best": false
      }
     ],
-    "spread": 105
+    "spread": 105,
+    "diff": "0"
    },
    {
     "group": "雑品",
@@ -1389,16 +1398,17 @@
       "best": false
      }
     ],
-    "spread": 5
+    "spread": 5,
+    "diff": "0"
    }
   ]
  },
  "ai": {
   "lines": [
-   "・銅建値6万円安の236万円、金は624円高で24,961円",
-   "・改正廃掃法でヤード許可制、環境省が保管基準検討へ",
-   "・ケーブルカッター所持で愛知初逮捕、金属盗警戒続く"
+   "・銅建値6万円安の236万円、金は613円高24,950円",
+   "・改正廃掃法でヤード許可制、環境省が保管基準検討",
+   "・愛知でケーブルカッター所持初逮捕、銅盗警戒続く"
   ],
-  "at": "8/20 15:19"
+  "at": "8/20 17:43"
  }
 }
