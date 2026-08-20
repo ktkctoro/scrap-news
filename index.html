@@ -159,7 +159,7 @@ function renderPrices(){
     return '<div class="row"><span class="k">' + esc(r.name) + '</span><span>' +
       '<span class="v num">' + esc(r.value) + '</span>' +
       (r.unit ? '<span class="u">' + esc(r.unit) + '</span>' : '') +
-      (r.diff ? '<span class="d num ' + diffClass(r.diff) + '">' + esc(r.diff) + '</span>' : '') +
+      (r.diff ? '<span class="d num ' + diffClass(r.diff) + '">' + esc(diffText(r.diff)) + '</span>' : '') +
       (r.fx ? '<span class="note">' + esc(DATA.fx.date || '') + '</span>' : '') +
       '</span></div>';
   }
