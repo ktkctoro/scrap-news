@@ -80,7 +80,10 @@
     border-radius:999px;color:var(--ink-2);cursor:pointer;font-family:inherit}
 
   .links{padding:14px 16px;border-top:1px solid var(--line)}
-  .linkrow{display:flex;flex-wrap:wrap;gap:6px;margin-top:2px}
+  .linkrow{display:flex;flex-direction:column;gap:10px;margin-top:2px}
+  .linkgroup{display:flex;align-items:baseline;gap:8px}
+  .glabel{flex:0 0 68px;font-size:12px;color:var(--ink-3)}
+  .gsites{display:flex;flex-wrap:wrap;gap:6px}
   .linkchip{font-size:13px;padding:7px 12px;border:1px solid var(--line);border-radius:999px;
     color:var(--mkt);text-decoration:none;background:var(--paper)}
   .linkchip:active{opacity:.6}
@@ -210,13 +213,28 @@ function renderFeed(){
 
 // よく見る価格表。足したいサイトはこの一覧に1行追加するだけ。
 var LINKS = [
-  { name: 'K&Yシステム（基板）', url: 'https://www.k-y-system.jp/trader/list/' },
-  { name: 'JX金属（銅建値）', url: 'https://www.jx-nmm.com/cuprice/' },
-  { name: '東京製鐵（鉄スクラップ）', url: 'https://www.tokyosteel.co.jp/scrapprice/' },
-  { name: '田中貴金属（金・銀）', url: 'https://gold.tanaka.co.jp/commodity/souba/' }
+  { group: '基板', sites: [
+    { name: '浜屋', url: 'https://hamaya-material.com/product' },
+    { name: 'ケイワイ', url: 'https://www.k-y-system.jp/trader/list/' }
+  ]},
+  { group: 'スクラップ', sites: [
+    { name: '安定器', url: 'https://anjyo-t.com/scrap_miscellaneous.html' },
+    { name: '土金', url: 'https://www.dokindokin.com/scrap_type/copper/' },
+    { name: '長澤', url: 'https://nagasawametal.com/purchase-items/' },
+    { name: '大畑', url: 'https://www.ohata.org' }
+  ]},
+  { group: '建値・地金', sites: [
+    { name: 'JX金属（銅建値）', url: 'https://www.jx-nmm.com/cuprice/' },
+    { name: '東京製鐵（鉄）', url: 'https://www.tokyosteel.co.jp/scrapprice/' },
+    { name: '田中貴金属（金・銀）', url: 'https://gold.tanaka.co.jp/commodity/souba/' }
+  ]}
 ];
-document.getElementById('linkrow').innerHTML = LINKS.map(function(l){
-  return '<a class="linkchip" href="' + esc(l.url) + '" target="_blank" rel="noopener">' + esc(l.name) + '</a>';
+document.getElementById('linkrow').innerHTML = LINKS.map(function(g){
+  return '<div class="linkgroup"><div class="glabel">' + esc(g.group) + '</div>' +
+    '<div class="gsites">' + g.sites.map(function(l){
+      return '<a class="linkchip" href="' + esc(l.url) + '" target="_blank" rel="noopener">' +
+        esc(l.name) + '</a>';
+    }).join('') + '</div></div>';
 }).join('');
 
 function askAI(q){
