@@ -1,5 +1,5 @@
 {
- "updated": "8/20 11:56",
+ "updated": "8/20 11:59",
  "fx": {
   "usdjpy": 159.09,
   "date": "2026-08-19"
@@ -34,7 +34,7 @@
    },
    {
     "name": "ビットコイン",
-    "value": "10,972,485",
+    "value": "10,980,503",
     "unit": "円",
     "diff": "+7.1%"
    },
@@ -81,7 +81,7 @@
    "cat": "gen",
    "label": "業界",
    "title": "“ケーブルカッター”正当な理由なく所持か カンボジア国籍の男逮捕 愛知県で初の逮捕者",
-   "source": "article.auone.jp",
+   "source": "au Webポータル",
    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBZUnFmVEdNb2h6bFhhSVgybU91Z0kyUUdHXzhBbGhveEZONTY2OEhhVmgzbm52T3JYc1BxZVdIUDU3M1ZYODE1STZBbFVLZDRRRi1DeC1xdzdvbGxWbjh5SDlFaXVWRlZtSmJrU1p3?oc=5",
    "published": "2026-08-20T02:35:27+09:00"
   },
@@ -610,9 +610,9 @@
  "ai": {
   "lines": [
    "・銅建値6万円安の236万円、金は734円高25,071円",
-   "・金属盗対策法で愛知初摘発、ヤード許可制へ規制強化",
-   "・基板買取は全品据え置き、鉄スクラップは下落局面"
+   "・金属盗対策法で愛知初摘発、ヤードは許可制へ規制強化",
+   "・三井金属がAI向け銅箔増産、基板買取価格は全品据え置き"
   ],
-  "at": "8/20 11:56"
+  "at": "8/20 11:59"
  }
 }
