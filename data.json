@@ -1,5 +1,5 @@
 {
- "updated": "8/21 6:24",
+ "updated": "8/21 8:04",
  "fx": {
   "usdjpy": 158.76,
   "date": "2026-08-20"
@@ -34,9 +34,9 @@
    },
    {
     "name": "ビットコイン",
-    "value": "11,563,873",
+    "value": "11,550,913",
     "unit": "円",
-    "diff": "+5.1%"
+    "diff": "+5.5%"
    },
    {
     "name": "日経平均",
@@ -160,10 +160,10 @@
   {
    "cat": "law",
    "label": "法規制",
-   "title": "フクシマガリレイ｜ノンフロン冷媒R1234yf採用ステップ運転機能付解凍庫４枚扉タイプ発売のお知らせ",
-   "source": "PR TIMES",
-   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5ZZ3k5LXA2WW9sZHQ4MFU4dERKVjlVM2dYanZDcVBzTjMtQ3Zhc1hzVkhXOHp1YUZEMkF0Tk9keHpaa1R1MHlITG90UEtjQWxQdWxXUjNHNzNqRW9wamtyU0JWNDFnTE5PeVE?oc=5",
-   "published": "2026-08-18T10:00:02+09:00"
+   "title": "フクシマガリレイ｜ノンフロン冷媒R1234yf採用ステップ運転機能付解凍庫４枚扉タイプ発売のお知らせ｜Infoseekニュース",
+   "source": "Infoseek",
+   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1OMnBoaWRWYVVXeEVEdGZWSFJ0SEhRRWx3UXhsWUJtSVdhQWdnTjZwSWl1RXE2NDJPS1UwT3VPOFFEUVVmeWZkM3ZCaEMwVk5HU09FN0RFWDZHdFdTTENzel84SFFtdFYyb0pKZmlzTXdKUQ?oc=5",
+   "published": "2026-08-18T10:00:00+09:00"
   },
   {
    "cat": "dc",
@@ -220,14 +220,6 @@
    "source": "Yahoo!ニュース",
    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1Vb1FDOXEyMW5nX0YxT3h1NmZ5OWM4ZDVxVWZlaEk0eERUaTBJM2VBYTJOdWt2WUJ1NF9ObnR1SXJkb2ZEUmV1S0FuTW9JVnlCOVpIU3pBZWt0YXdkcnNra0tlelhsc0FUM0lyOEZVUkJBRmJlT3VVWlduZGc3WmM?oc=5",
    "published": "2026-08-17T15:51:20+09:00"
-  },
-  {
-   "cat": "dc",
-   "label": "AI・DC",
-   "title": "韓国輸出入銀行が人工知能(AI)など戦略産業の必須素材である銅の安定的確保のために、1兆4000億ウォンを超える大規模な金融支援に乗り出す。17日、輸出入銀行はスイスに本社を置くグローバル総合資源企業..",
-   "source": "매일경제",
-   "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1YV1lwVG9iWXdaaHdPLXZreGJua0VNSERkVWxtT1l5RmNfM2hPdnZlUkVJQnUtbS0tVEJlN1lmVjlhNlo2SHpCUXJ3Z0RBLU9TR2c?oc=5",
-   "published": "2026-08-17T13:55:23+09:00"
   },
   {
    "cat": "mkt",
@@ -416,6 +408,14 @@
   {
    "cat": "law",
    "label": "法規制",
+   "title": "家庭用エアコンもフロンの「みだり放出」禁止対象に──フロン排出対策中間取りまとめ",
+   "source": "ITmedia",
+   "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1vcUxlWHNmZ2JLWjUxejF0ZENXMVYyaGQxbHZEWll4TV9XX21obERXSkhNMDZGWVUydkxNeWRBTzNrYk5DTmlJMU5NWVA0SWZYQmZLaGlqZmNZWWNWRGhOMEU1M3B4NnBTTjlsX1ZIOXRKMUk5NUZB?oc=5",
+   "published": "2026-07-17T16:00:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
    "title": "首都直下地震を想定 災害廃棄物対策で協議会立ち上げ 環境省",
    "source": "NHKニュース",
    "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1VXzhuQk45VXI5TDJjdUNLM3I1SkxNdE4xR0dwS1ZsdjFOb1hzUzRjMmI2Y3VSWk45Y2VoMEswSjhLd0pSOHM3aHJIbGRpWVNVNzBvR2NEdDZKRHBWN1ZJ?oc=5",
@@ -524,14 +524,6 @@
    "source": "LuckyFM茨城放送",
    "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9mRGFUcm9uQjdlTzRVcXdFZWNseTViY1FlUFVLVzVZdjFTdVg4dXAxdHhkd19fUWRqazFfS1ViOWo2UlJYR0s0cmpWcl9kNFNPS2VKS3Zn?oc=5",
    "published": "2026-06-30T16:00:00+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
-   "title": "三菱重工、 「加水分解前処理メタンガス化システム」が廃棄物処理技術検証第10号を取得",
-   "source": "kankyo-news.co.jp",
-   "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE80c244Nm01UHFQWHRkcUhjSFNLMENMc2tkWTYwS0U5aUdWR195Nk1zbHExcjJINjRHRTJ6T28ycmgyV1I5azkxS25fTkNJZFc3NWIyd3dzbmxNLS0zTmxUQ2pfZldtZVhPVGZ2OW43bFNqNV9ndDliT2FrOA?oc=5",
-   "published": "2026-06-30T07:34:00+09:00"
   },
   {
    "cat": "law",
@@ -1912,10 +1904,10 @@
  },
  "ai": {
   "lines": [
-   "・銅建値6万円安の236万円、株安・金は613円高",
-   "・改正廃掃法でヤード許可制、環境省が基準検討会",
-   "・愛知でケーブルカッター所持初摘発、銅盗警戒継続"
+   "・銅建値236万円へ6万円安、金は24,950円で613円高",
+   "・改正廃掃法でヤード許可制、環境省が保管基準検討会",
+   "・愛知でケーブルカッター所持初摘発、銅盗難警戒続く"
   ],
-  "at": "8/21 6:24"
+  "at": "8/21 8:04"
  }
 }
