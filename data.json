@@ -1,5 +1,5 @@
 {
- "updated": "8/20 15:18",
+ "updated": "8/20 15:19",
  "fx": {
   "usdjpy": 159.09,
   "date": "2026-08-19"
@@ -34,15 +34,15 @@
    },
    {
     "name": "ビットコイン",
-    "value": "10,991,259",
+    "value": "10,999,893",
     "unit": "円",
-    "diff": "+7.5%"
+    "diff": "+7.6%"
    },
    {
     "name": "日経平均",
-    "value": "66,124",
+    "value": "66,135",
     "unit": "円",
-    "diff": "-2,589"
+    "diff": "-2,579"
    },
    {
     "name": "NYダウ",
@@ -53,6 +53,14 @@
   ]
  },
  "items": [
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "金属くず買受業を営む皆さまへのお知らせ",
+   "source": "vill.kitanakagusuku.lg.jp",
+   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1LTHBLbC01MmxWZ285Zk1jMzloc3I4TTFMdG5VYXdnVkNnWE5TZmlTR3JQRVVfSXIzOWlUbVF0MXBEQ3c5eFJxOVdHSVpzU2xXd196T09heTdQTUdNa0FDeDkzWkRRR0pGazAyMExZYkJLUUhWQkx4WWV0QTU?oc=5",
+   "published": "2026-08-20T13:11:47+09:00"
+  },
   {
    "cat": "mkt",
    "label": "相場",
@@ -113,7 +121,7 @@
    "cat": "gen",
    "label": "業界",
    "title": "｢私のものではない｣ 車にケーブル切る器具を隠し持っていた疑い カンボジア国籍の男を逮捕 太陽光発電施設などで盗難相次ぐ 愛知で初摘発",
-   "source": "topics.smt.docomo.ne.jp",
+   "source": "ｄメニューニュース",
    "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1veHlQMzd4Y0M3d2dQaGNaNmktdlJLWHZJZUFiaktwVmt6aHhmN1Uwdk5Gb0RLckpKRmlrLVBsajNua1l0MEN5RUsyWEQtWjQ2QlZ0dDJla0xkdVZaMmQ5TkpFUmFkOXZMemxPaGw4bUs2S0ZROUU4QmxB0gF6QVVfeXFMTW94eVAzN3hjQzd3Z1BoY1o2aS12UktYdkllQWJqS3BWa3poeGY3VTB2TkZvREtySkpGaWstUGxqM25rWXQwQ3lFSzJYRC1aNDZCVnR0MmVrTGR1VloyZDlOSkVSYWQ5dkx6bE9obDhtSzZLRlE5RThCbEE?oc=5",
    "published": "2026-08-19T18:36:00+09:00"
   },
@@ -206,6 +214,14 @@
    "published": "2026-08-17T15:51:20+09:00"
   },
   {
+   "cat": "dc",
+   "label": "AI・DC",
+   "title": "韓国輸出入銀行が人工知能(AI)など戦略産業の必須素材である銅の安定的確保のために、1兆4000億ウォンを超える大規模な金融支援に乗り出す。17日、輸出入銀行はスイスに本社を置くグローバル総合資源企業..",
+   "source": "매일경제",
+   "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1YV1lwVG9iWXdaaHdPLXZreGJua0VNSERkVWxtT1l5RmNfM2hPdnZlUkVJQnUtbS0tVEJlN1lmVjlhNlo2SHpCUXJ3Z0RBLU9TR2c?oc=5",
+   "published": "2026-08-17T13:55:23+09:00"
+  },
+  {
    "cat": "mkt",
    "label": "相場",
    "title": "京写、銅を回収・販売 プリント基板の製造工程",
@@ -257,7 +273,7 @@
    "cat": "gen",
    "label": "業界",
    "title": "橋下徹氏「かっぱ兄妹」の銅像２体盗難に危機感「そういう世の中ではなくなってきたのかな」",
-   "source": "Infoseek",
+   "source": "news.infoseek.co.jp",
    "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5Tc19rQzVudFNpcER1djFXSTg3emExQmdRQVA0ekdUc0dQY0U4WTNlTjNneXBCellJUzA4ZFJnN0h1aWN6a3VUakpBaFZCMUdKMVRqRVZVTDZaeWF3RGFUVjVpVDh6Sk9KdUhrTFRqU3BiYjTSAXhBVV95cUxOaGE5ZzNVcDNuMEl2dXBjRXpjMVBfWGVQejluVWk5UXlNUWNFcU45WGZMcUZfM3M3clY0Rm5vbFNlTW9SZ25UQkVIcTVVU29MbTNmYzBMQV9VOUF3bGdfb2MwRGxUczlxQ2c3MDYxQ3ZwS2p5NW5lZXo?oc=5",
    "published": "2026-08-12T16:53:35+09:00"
   },
@@ -321,7 +337,7 @@
    "cat": "law",
    "label": "法規制",
    "title": "GX推進法・資源有効利用促進法改正、再生材利用義務化を「競争力」に昇華させる戦略とは 経済産業省・資源循環経済課課長ら登壇の無料ウェビナー開催決定｜Infoseekニュース",
-   "source": "Infoseek",
+   "source": "news.infoseek.co.jp",
    "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5nbmlJOHNmNU9XYlFKS293NWdlWDZISHdHX3FYcTc2blNYM1JxX01KT2VSclk1UktoV2NXcE5PVVRGWURlUXVKRHFrU1kzdGpXM2NGN2FjLVRhWlpqX1FzOW1rUEU1TExZWGI0NmVkRERkQQ?oc=5",
    "published": "2026-08-01T16:00:00+09:00"
   },
@@ -353,7 +369,7 @@
    "cat": "law",
    "label": "法規制",
    "title": "加賀銅板盗疑い３人逮捕 神社屋根被害１８０キロ 高騰背景、県内１～６月の金属盗被害２．９倍｜社会｜石川のニュース",
-   "source": "北國新聞",
+   "source": "hokkoku.co.jp",
    "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5YNlFXdjN0Mks2Q0FzU2tFZ2Ruc1pwNDRyQ1BtQmJQVVh4T2Vyamc1YXh0RWJQaHpDSHpMR0ZwWWhmZzhsU0NkSmo1NHh2NTVjQzJ4NmRxUQ?oc=5",
    "published": "2026-07-23T16:00:00+09:00"
   },
@@ -561,7 +577,7 @@
    "cat": "law",
    "label": "法規制",
    "title": "プラスチック資源循環法（プラ新法）とは？企業の義務と具体的な対策を解説",
-   "source": "brightinnovation.jp",
+   "source": "ブライトイノベーション",
    "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBrVXp2cHl3RTEyWlFzUVRmQ1hzZkxXQ0xmUjlTWXZSSXJ2aWVEU0FjYjBmWFBPZWVnUWtvaHY2NzlZNlM4OHY1SnVWRkc2bF9nclFpUGtkSlM4dw?oc=5",
    "published": "2026-06-23T16:00:00+09:00"
   },
@@ -581,37 +597,37 @@
     "name": "メモリー",
     "value": "9,780",
     "unit": "円/kg",
-    "diff": "+280"
+    "diff": "0"
    },
    {
     "name": "ＣＰＵグリーン（下）",
     "value": "3,500",
     "unit": "円/kg",
-    "diff": "+100"
+    "diff": "0"
    },
    {
     "name": "電源基板(鉄なし)",
     "value": "220",
     "unit": "円/kg",
-    "diff": "+5"
+    "diff": "0"
    },
    {
     "name": "Ｃクラス基板",
     "value": "1,150",
     "unit": "円/kg",
-    "diff": "+30"
+    "diff": "0"
    },
    {
     "name": "Ｄクラス基板",
     "value": "640",
     "unit": "円/kg",
-    "diff": "+20"
+    "diff": "0"
    },
    {
     "name": "マザーボード（Ｃ）",
     "value": "870",
     "unit": "円/kg",
-    "diff": "+20"
+    "diff": "0"
    }
   ]
  },
@@ -744,7 +760,7 @@
      }
     ],
     "spread": 55,
-    "diff": "+50"
+    "diff": "0"
    },
    {
     "group": "電線",
@@ -807,7 +823,8 @@
       "best": false
      }
     ],
-    "spread": 45
+    "spread": 45,
+    "diff": "0"
    },
    {
     "group": "真鍮・砲金",
@@ -829,7 +846,8 @@
       "best": false
      }
     ],
-    "spread": 255
+    "spread": 255,
+    "diff": "0"
    },
    {
     "group": "真鍮・砲金",
@@ -846,7 +864,8 @@
       "best": false
      }
     ],
-    "spread": 80
+    "spread": 80,
+    "diff": "0"
    },
    {
     "group": "真鍮・砲金",
@@ -863,7 +882,8 @@
       "best": false
      }
     ],
-    "spread": 135
+    "spread": 135,
+    "diff": "0"
    },
    {
     "group": "アルミ",
@@ -880,7 +900,8 @@
       "best": false
      }
     ],
-    "spread": 15
+    "spread": 15,
+    "diff": "0"
    },
    {
     "group": "アルミ",
@@ -897,7 +918,8 @@
       "best": false
      }
     ],
-    "spread": 30
+    "spread": 30,
+    "diff": "0"
    },
    {
     "group": "アルミ",
@@ -919,7 +941,8 @@
       "best": false
      }
     ],
-    "spread": 70
+    "spread": 70,
+    "diff": "0"
    },
    {
     "group": "アルミ",
@@ -936,7 +959,8 @@
       "best": false
      }
     ],
-    "spread": 80
+    "spread": 80,
+    "diff": "0"
    },
    {
     "group": "アルミ",
@@ -963,7 +987,8 @@
       "best": false
      }
     ],
-    "spread": 150
+    "spread": 150,
+    "diff": "0"
    },
    {
     "group": "アルミ",
@@ -980,7 +1005,8 @@
       "best": false
      }
     ],
-    "spread": 75
+    "spread": 75,
+    "diff": "0"
    },
    {
     "group": "雑品",
@@ -1008,7 +1034,7 @@
      }
     ],
     "spread": 40,
-    "diff": "+10"
+    "diff": "0"
    },
    {
     "group": "雑品",
@@ -1030,7 +1056,8 @@
       "best": false
      }
     ],
-    "spread": 45
+    "spread": 45,
+    "diff": "0"
    },
    {
     "group": "雑品",
@@ -1047,7 +1074,8 @@
       "best": false
      }
     ],
-    "spread": 100
+    "spread": 100,
+    "diff": "0"
    },
    {
     "group": "雑品",
@@ -1074,7 +1102,8 @@
       "best": false
      }
     ],
-    "spread": 30
+    "spread": 30,
+    "diff": "0"
    },
    {
     "group": "雑品",
@@ -1095,5 +1124,13 @@
     "diff": "0"
    }
   ]
+ },
+ "ai": {
+  "lines": [
+   "・銅建値6万円安の236万円、金は624円高で24,961円",
+   "・改正廃掃法でヤード許可制、環境省が保管基準検討へ",
+   "・ケーブルカッター所持で愛知初逮捕、金属盗警戒続く"
+  ],
+  "at": "8/20 15:19"
  }
 }
