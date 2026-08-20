@@ -1,5 +1,5 @@
 {
- "updated": "8/20 10:31",
+ "updated": "8/20 10:34",
  "fx": {
   "usdjpy": 159.09,
   "date": "2026-08-19"
@@ -34,15 +34,15 @@
    },
    {
     "name": "ビットコイン",
-    "value": "10,972,768",
+    "value": "10,979,132",
     "unit": "円",
     "diff": "+6.8%"
    },
    {
     "name": "日経平均",
-    "value": "66,157",
+    "value": "66,218",
     "unit": "円",
-    "diff": "-2,557"
+    "diff": "-2,496"
    },
    {
     "name": "NYダウ",
@@ -57,7 +57,7 @@
    "cat": "dc",
    "label": "AI・DC",
    "title": "新会長に聞く／日本伸銅協会・加藤和照氏（三井住友金属鉱山伸銅社長）／伸銅品グリーンブランド創設へ／未利用銅リサイクル材活用、新技術検討",
-   "source": "日刊鉄鋼新聞 Japan Metal Daily",
+   "source": "日刊鉄鋼新聞",
    "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9tZ2ZfaUQwSWY5UTV0WHkyMFlnWi1sWjBKMVltWEJKSzhYS3N3SklSNkc4ZlN6RGZ3UmJzdFpFY3o2THpaMko2YVdIcEd0TGdFRG5zTmRoYl9HcUpsZ0E?oc=5",
    "published": "2026-08-20T05:00:00+09:00"
   },
@@ -73,7 +73,7 @@
    "cat": "gen",
    "label": "業界",
    "title": "“ケーブルカッター”正当な理由なく所持か カンボジア国籍の男逮捕 愛知県で初の逮捕者",
-   "source": "au Webポータル",
+   "source": "article.auone.jp",
    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBZUnFmVEdNb2h6bFhhSVgybU91Z0kyUUdHXzhBbGhveEZONTY2OEhhVmgzbm52T3JYc1BxZVdIUDU3M1ZYODE1STZBbFVLZDRRRi1DeC1xdzdvbGxWbjh5SDlFaXVWRlZtSmJrU1p3?oc=5",
    "published": "2026-08-20T02:35:27+09:00"
   },
@@ -89,7 +89,7 @@
    "cat": "law",
    "label": "法規制",
    "title": "“ケーブルカッター”を正当な理由なく所持か…金属盗対策法違反の疑いで愛知初の逮捕者 カンボジア人の男",
-   "source": "tokai-tv.com",
+   "source": "東海テレビ放送",
    "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFA1MnREX2xqQ2VJM3BBMlQ3b3k0ajBOeXRoM2JRbEYzby02WWNlQlZLU2gyd1Y3Zi1UaElzV1Bfc0poVHdiay1XRHVzcHQ4MElsMG1QLURyelN2dU9SSFpzOFE3bHJSMXVQaGx3d1V1bWQxSVE?oc=5",
    "published": "2026-08-19T19:47:00+09:00"
   },
@@ -153,7 +153,7 @@
    "cat": "mkt",
    "label": "相場",
    "title": "銅建値が２４０万円突破／需給ひっ迫懸念が押し上げ",
-   "source": "日刊鉄鋼新聞 Japan Metal Daily",
+   "source": "日刊鉄鋼新聞",
    "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9oZjBhbjV1ZXkzb3dQWUpjSldEZEJBc2NhSHFzeE5sOTBfeWNzWVFOSDlBVXZlMUtfSEN4RmwtS3VJREktZWR1VTVNZXc0UjVoX2JWY3FEcTRXVW1HY2c?oc=5",
    "published": "2026-08-18T05:00:00+09:00"
   },
@@ -225,7 +225,7 @@
    "cat": "gen",
    "label": "業界",
    "title": "大同特殊鋼の火事 約60時間経っても鎮火せず 火は鉄くずなどの廃材を保管するスペースから… 愛知･東海市の知多工場",
-   "source": "excite.co.jp",
+   "source": "Excite エキサイト",
    "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1BbTVqOU53Vm10dDBBdnFpaXk0QjJMWHFTVXlnVDduVWYxNDY2cE9YM2NIcXZVTm9MSUp3Y2dLRXFrcjNiR2pMbDQ4Q2ZVRFRjcnB1cEVlNEVJbzVFSUhvY041Q1Rsd1k?oc=5",
    "published": "2026-08-14T08:16:00+09:00"
   },
@@ -353,7 +353,7 @@
    "cat": "law",
    "label": "法規制",
    "title": "電子廃棄物管理の市場シェアと業界の成長 [2034 年]",
-   "source": "Fortune Business Insights",
+   "source": "fortunebusinessinsights.com",
    "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNR0Z1bVlBV05CZi10am0wQnlUblVELWNQb3BLSVg2VWZ6aHozSHJWZ1pMbmtUcXRkd1lZUml6TGJFNHd0VHN3VXNtWjVRSFpaOFZKeF80elZlN2x5Ny1OSmZCbzlCN2lDSjU5UTU2X2hvbTRtMVpRVlBxcHo5OW1Oel9GazVxYk4zcXo5WWdjcTJjbVhTTlJHN2dxT0NZeEw4TTZuejI2MWlaLXBMcmc4Q0s3ZUVocWJGeGRTaUdrVnlFSTVyUXlQZzEwQ0xmMVRFLXA5bWxOMFlWWEMyMkhlZ0JFZw?oc=5",
    "published": "2026-07-27T16:00:00+09:00"
   },
@@ -393,8 +393,16 @@
    "cat": "gen",
    "label": "業界",
    "title": "銅価格高騰で太陽光パネルが標的に 三重県内でケーブル盗難急増、5月末時点で被害100件超え",
-   "source": "中日新聞Web",
+   "source": "chunichi.co.jp",
    "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBlS3gtelU0eW5Za2pBV1hGUnRBR1RObHFCYnFYai1tbDcybTNPbXZzck1tYUlMcWxGQUh1dE96Mm94cGJQWTUwaUhzdkNreWRZTDAycg?oc=5",
+   "published": "2026-07-17T16:00:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "業務用空調機の水平リサイクル グループ連携、レアアース等回収 伊藤忠とダイキン",
+   "source": "kankyo-news.co.jp",
+   "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5ydlBUdmxiWTVqYWNRRXdSOU5WRDRuWTN2d3F2SnFYeEtyNGkzRDRRcHdfWkFwODE2eGpOYkt1MGVTcjBnRVRCd1Ytczdpd1lTS25tc0dUVmdhVWdJR1RmUnF4anhwZVROOVl1eEJ1eXRLNUR1ekZSUWdQWQ?oc=5",
    "published": "2026-07-17T16:00:00+09:00"
   },
   {
@@ -505,7 +513,7 @@
    "cat": "law",
    "label": "法規制",
    "title": "金属・自動車盗減少へ ヤード対策を強化中",
-   "source": "LuckyFM茨城放送",
+   "source": "lucky-ibaraki.com",
    "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9mRGFUcm9uQjdlTzRVcXdFZWNseTViY1FlUFVLVzVZdjFTdVg4dXAxdHhkd19fUWRqazFfS1ViOWo2UlJYR0s0cmpWcl9kNFNPS2VKS3Zn?oc=5",
    "published": "2026-06-30T16:00:00+09:00"
   },
@@ -545,7 +553,7 @@
    "cat": "law",
    "label": "法規制",
    "title": "家庭用エアコンも罰則対象に＝フロンの漏えい防止で―環境・経産省",
-   "source": "portal.ijamp.jiji.com",
+   "source": "iJAMPポータル",
    "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9QR1JsellKdHFaeVpRZ3l6SS16THlqOHVqRzd1dGZvTzY1SUpWa3VLVUlLbDR4SmdRbXNjODZZOWlVR09mYmY5UWtZYlA1cWQzVVR3Wm4tbWpZNFVhRURvMkQwMVkwWEtzdnpQdUtGYw?oc=5",
    "published": "2026-06-26T16:00:00+09:00"
   },
