@@ -46,13 +46,6 @@ def build(data, template):
 
     html = template.replace(FETCH_CALL, INLINE_CALL, 1)
     html = html.replace("<script>", baked + "<script>", 1)
-
-    # サーバー経由で開く前提の注意書きは、1枚ファイルでは要らない
-    html = html.replace(
-        "'建値と金・銀は manual.json の手入力です。'",
-        "'建値と金・銀は手入力です。記事は「更新」の時点のものです。'",
-        1,
-    )
     return html
 
 

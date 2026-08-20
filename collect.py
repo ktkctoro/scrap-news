@@ -119,6 +119,10 @@ LABELS = {"mkt": "相場", "law": "法規制", "gen": "業界", "dc": "AI・DC"}
 FEED = "https://news.google.com/rss/search?q={q}&hl=ja&gl=JP&ceid=JP:ja"
 FX_URL = "https://api.frankfurter.app/latest?from=USD&to=JPY"
 
+# 建値と金・銀の公表ページ（どちらも1日1回読むだけ）
+JX_CUPRICE_URL = "https://www.jx-nmm.com/cuprice/"
+TANAKA_URL = "https://gold.tanaka.co.jp/commodity/souba/"
+
 
 def fetch(url, timeout=20):
     req = urllib.request.Request(url, headers={"User-Agent": UA})
@@ -217,8 +221,147 @@ def collect_fx():
         return None
 
 
+def parse_jx_copper(html):
+    """JX金属のページから最新の銅建値・改定日・前回比を取り出す。
+
+    ページには年ごとの「銅建値改定の履歴」の表があるので、
+    いちばん上（今年）の表の最後の行を最新の建値として読む。
+    """
+    m = re.search(
+        r'accordion_label">\s*(\d{4})年\s*</span>(.*?)(?=accordion_label"|\Z)',
+        html, re.S,
+    )
+    if not m:
+        return None
+    revs = re.findall(
+        r">\s*(\d{1,2})月(\d{1,2})日\s*</th>\s*<td[^>]*>\s*([\d,]+)\s*円", m.group(2)
+    )
+    if not revs:
+        return None
+
+    mo, day, val = revs[-1]
+    price = int(val.replace(",", ""))
+    if not (500_000 < price < 10_000_000):
+        # ページの作りが変わって別の数字を拾ってしまったときの保険
+        raise ValueError(f"銅建値らしくない数字です: {val}")
+
+    diff = ""
+    if len(revs) >= 2:
+        d = price - int(revs[-2][2].replace(",", ""))
+        diff = f"{d:+,}" if d else "0"
+    return {"value": val, "diff": diff, "asof": f"{int(mo)}/{int(day)}"}
+
+
+def fetch_jx_copper():
+    try:
+        html = fetch(JX_CUPRICE_URL).decode("utf-8", errors="replace")
+        got = parse_jx_copper(html)
+        if got is None:
+            raise ValueError("ページの中に建値の表が見つかりません")
+        return got
+    except Exception as e:
+        print(f"  ! 銅建値の取得失敗: {e}", file=sys.stderr)
+        return None
+
+
+def parse_tanaka(html):
+    """田中貴金属のページから金・銀の店頭買取価格（税込）と前日比を取り出す。"""
+    ranges = {"金": (5_000, 100_000), "銀": (50, 2_000)}
+    out = {}
+    for metal, cls in (("金", "gold"), ("銀", "silver")):
+        row = re.search(rf'<tr class="{cls}">(.*?)</tr>', html, re.S)
+        if not row:
+            continue
+        v = re.search(r"purchase_tax[^>]*>\s*([\d,.]+)\s*円", row.group(1))
+        d = re.search(r"purchase_ratio[^>]*>\s*([+\-]?[\d,.]+)\s*円", row.group(1))
+        if not v:
+            continue
+        lo, hi = ranges[metal]
+        if not (lo < float(v.group(1).replace(",", "")) < hi):
+            raise ValueError(f"{metal}らしくない数字です: {v.group(1)}")
+        diff = d.group(1) if d else ""
+        # 上がった日に「+」が付いていなくても▲で出せるように揃える
+        if diff and diff[0] not in "+-" and float(diff.replace(",", "")) != 0:
+            diff = "+" + diff
+        out[metal] = {"value": v.group(1), "diff": diff}
+    return out
+
+
+def fetch_tanaka():
+    try:
+        html = fetch(TANAKA_URL).decode("utf-8", errors="replace")
+        got = parse_tanaka(html)
+        if not got:
+            raise ValueError("ページの中に金・銀の表が見つかりません")
+        return got
+    except Exception as e:
+        print(f"  ! 金・銀の取得失敗: {e}", file=sys.stderr)
+        return None
+
+
+def load_previous(dest):
+    """前回の data.json。取得に失敗した朝は前回の値を使い回すために読む。"""
+    try:
+        with open(dest, encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:
+        return {}
+
+
+def _pick(entries, word):
+    for e in entries:
+        if word in e.get("name", ""):
+            return e
+    return None
+
+
+def build_prices(manual, prev):
+    """建値（JX金属）と金・銀（田中貴金属）を自動で取り、手入力ぶんと合わせる。
+
+    取れなかったものは前回の値を使い回す（建値は毎日変わるものではないため）。
+    manual.json に同じ名前の項目が残っていても、自動のほうを優先して重複させない。
+    """
+    tiles, rows = [], []
+    prev_tiles = prev.get("tiles", [])
+    prev_rows = prev.get("rows", [])
+
+    copper = fetch_jx_copper()
+    if copper:
+        tiles.append({
+            "name": f"電気銅建値（{copper['asof']}改定）",
+            "value": copper["value"], "unit": "円/t", "diff": copper["diff"],
+        })
+    elif _pick(prev_tiles, "銅建値"):
+        print("  ! 銅建値は前回の値を使い回します", file=sys.stderr)
+        tiles.append(_pick(prev_tiles, "銅建値"))
+
+    metals = fetch_tanaka() or {}
+    for metal in ("金", "銀"):
+        if metal in metals:
+            rows.append({
+                "name": f"{metal}（店頭買取）",
+                "value": metals[metal]["value"], "unit": "円/g",
+                "diff": metals[metal]["diff"],
+            })
+        elif _pick(prev_rows, metal):
+            print(f"  ! {metal}は前回の値を使い回します", file=sys.stderr)
+            rows.append(_pick(prev_rows, metal))
+
+    # 手入力ぶん（アルミ・鉄スクラップH2・LMEなど）を後ろに足す
+    for t in manual.get("tiles", []):
+        if "銅建値" in t.get("name", "") and _pick(tiles, "銅建値"):
+            continue
+        tiles.append(t)
+    for r in manual.get("rows", []):
+        if any(r.get("name", "").startswith(m) and _pick(rows, m) for m in ("金", "銀")):
+            continue
+        rows.append(r)
+
+    return {"tiles": tiles, "rows": rows}
+
+
 def load_manual():
-    """建値・金・銀は無料で自動取得できる先がないので、手入力ファイルから読む。"""
+    """アルミ二次地金・鉄スクラップH2・LME銅は無料の公表先がないので手入力ファイルから読む。"""
     path = os.path.join(HERE, "manual.json")
     if not os.path.exists(path):
         return {}
@@ -237,18 +380,24 @@ def _now_label():
 
 
 def main():
+    dest = os.path.join(HERE, "data.json")
+    prev = load_previous(dest)
+
     print("記事をあつめています…")
     items = collect_articles()
     print("為替をあつめています…")
     fx = collect_fx()
+    print("建値と金・銀をあつめています…")
+    prices = build_prices(load_manual(), prev.get("manual") or {})
 
     out = {
         "updated": _now_label(),
         "fx": fx,
-        "manual": load_manual(),
+        # 画面(index.html)が読む場所の名前が manual のままなのでそのまま使う。
+        # 中身は「自動取得(銅・金・銀) + 手入力(アルミ・H2・LME)」の合わせたもの。
+        "manual": prices,
         "items": items,
     }
-    dest = os.path.join(HERE, "data.json")
     with open(dest, "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, indent=1)
     print(f"\n完了: {len(items)} 件を {dest} に書き出しました。")

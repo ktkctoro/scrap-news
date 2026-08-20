@@ -1,17 +1,16 @@
 {
- "updated": "8/20 8:32",
+ "updated": "8/20 9:00",
  "fx": {
   "usdjpy": 159.09,
   "date": "2026-08-19"
  },
  "manual": {
-  "_メモ": "建値と金・銀は無料で自動取得できる先がないので、ここを手で書き換えてください。diff は前日比です。",
   "tiles": [
    {
-    "name": "電気銅建値",
-    "value": "1,580,000",
+    "name": "電気銅建値（8/19改定）",
+    "value": "2,360,000",
     "unit": "円/t",
-    "diff": "+30,000"
+    "diff": "-60,000"
    },
    {
     "name": "アルミ二次地金",
@@ -35,15 +34,15 @@
   "rows": [
    {
     "name": "金（店頭買取）",
-    "value": "18,650",
+    "value": "24,233",
     "unit": "円/g",
-    "diff": "+120"
+    "diff": "-566"
    },
    {
     "name": "銀（店頭買取）",
-    "value": "238",
+    "value": "338.25",
     "unit": "円/g",
-    "diff": "-3"
+    "diff": "-32.01"
    }
   ]
  },
@@ -89,6 +88,14 @@
    "published": "2026-08-19T19:14:00+09:00"
   },
   {
+   "cat": "mkt",
+   "label": "相場",
+   "title": "銅価格が史上最高値、韓国の非鉄金属3社が一斉に黒字転換",
+   "source": "finance.biggo.jp",
+   "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1JaVJVVzBHVVJYc0lsbDdUZmpzM3VxX1UxcGQzYXl5ZUNzR0E2ZmJEU2dVZE1Ed0VmY1ZPLVNZdldvS2NHSUM5ekFYMmlZbzEzMVdCUkZXbXkxcmo5YWRjSVBNZEhaWlZicEY1ekxtNjNWZ0lS?oc=5",
+   "published": "2026-08-19T18:55:00+09:00"
+  },
+  {
    "cat": "gen",
    "label": "業界",
    "title": "｢私のものではない｣ 車にケーブル切る器具を隠し持っていた疑い カンボジア国籍の男を逮捕 太陽光発電施設などで盗難相次ぐ 愛知で初摘発 | 名古屋・愛知・岐阜・三重のニュース【CBC news】 | CBC web (2ページ)",
@@ -107,10 +114,42 @@
   {
    "cat": "mkt",
    "label": "相場",
+   "title": "AIインフラ需要が銅価格を高値圏で下支え 供給逼迫と下流の様子見が綱引き",
+   "source": "finance.biggo.jp",
+   "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5DcjZjR00ya1RDM0dwVEd3cVR1a3BobGVMS29WR3dYVEZtSk5NZkdfT1F1cER0M1hmb2wyOXRmemd1QlQ2NENZQ2c0MXpiQk9tNjVQMmFNZjk3a2t2V1d6TTR4WjRhU055N24zOTN5aTJSS1Jn?oc=5",
+   "published": "2026-08-18T17:06:00+09:00"
+  },
+  {
+   "cat": "mkt",
+   "label": "相場",
+   "title": "銅現物が急騰、先物との価格差5年ぶり 米国外で供給不安",
+   "source": "finance.biggo.jp",
+   "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1aT04zSGRwOXpsN2VNQVZzSXBqcVB6dk1ZZHlOM19NY2FjRFN0aF9uYndRR0xyLVZEWm9yTjVzZWstdC1IRVY4dklNdFBSMFM4UDl2dFdyTG9oVlRBU0dYRmhrSnBORmdhdUJXSDkwR3FFTVZQ?oc=5",
+   "published": "2026-08-18T16:25:00+09:00"
+  },
+  {
+   "cat": "mkt",
+   "label": "相場",
    "title": "銅建値、最高値242万円 亜鉛、68万5000円（日刊産業新聞）",
    "source": "Yahoo!ニュース",
    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5oem1HYlN5eWNXb3BteWROTHB1bWFRVjgzVi1Cdm43cDY3V0ZJM2FnYlRvVzF1S2tiMDNHZjZ2VTMxMEdtWGdJa25ORjJ5SHJwUS0xV2VxYnRKR1lDUzVTQlExb1YwVE9FWmFKZjNhM2dEQ1l6QmVHMVRZSjZrc2s?oc=5",
    "published": "2026-08-18T15:17:21+09:00"
+  },
+  {
+   "cat": "mkt",
+   "label": "相場",
+   "title": "銅価格が最高値更新 必和必拓（BHP）通期利益30％増 銅部門の収益が初めて鉄鉱石を上回る",
+   "source": "finance.biggo.jp",
+   "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5rSFFKd2JTZndPVElMWkxNcUJLSWNhaTZLQkVXWXVYZ0VqRlVVYTF3ZjJlUnlsM3BoZkl2TE1mZWllYW1NRWx1NUFzb19JaDRUTFVaOWZqemtxdFNzTDhpb0VYWm1rZ1RNQXlVamFuZmFMM2Nw?oc=5",
+   "published": "2026-08-18T10:26:00+09:00"
+  },
+  {
+   "cat": "mkt",
+   "label": "相場",
+   "title": "銅価格が史上最高値なのに製錬手数料「0ウォン」…金・銀・硫酸で持ちこたえる製錬各社",
+   "source": "finance.biggo.jp",
+   "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1uTXZyT1pYNXBoVzVGeExHVUZxb2tQaDU0RS00XzFyNGg3WS11WWZLX2YxTUtVT1l2bTJQd3B1VDFaSUV4dGp2MmJuZ2h3cm1QSGJoN29haXM3YzBMWFFvYTdHN0pwalYzdUpIRmg2M2k3Rjly?oc=5",
+   "published": "2026-08-18T07:25:00+09:00"
   },
   {
    "cat": "dc",
@@ -159,6 +198,14 @@
    "source": "Yahoo!ニュース",
    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1Vb1FDOXEyMW5nX0YxT3h1NmZ5OWM4ZDVxVWZlaEk0eERUaTBJM2VBYTJOdWt2WUJ1NF9ObnR1SXJkb2ZEUmV1S0FuTW9JVnlCOVpIU3pBZWt0YXdkcnNra0tlelhsc0FUM0lyOEZVUkJBRmJlT3VVWlduZGc3WmM?oc=5",
    "published": "2026-08-17T15:51:20+09:00"
+  },
+  {
+   "cat": "dc",
+   "label": "AI・DC",
+   "title": "韓国輸出入銀行、Glencoreに10億ドル支援…銅サプライチェーン安定化",
+   "source": "finance.biggo.jp",
+   "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1JLXJydEs1MmY1Q0o5RG1XMU91cGl5aEN1dmlBaWJLakQ4eEdBaGVyem5jUGUzWW1ab0dNM0JlaVUzNjhKUFlCX2N4ZGtQUHRhWHhKM3pGOXBQVEdDMkxBdnNoYTRyRXRwUmVqZW1qRm9JeVRl?oc=5",
+   "published": "2026-08-17T15:05:00+09:00"
   },
   {
    "cat": "mkt",
@@ -212,7 +259,7 @@
    "cat": "mkt",
    "label": "相場",
    "title": "【⚠️ご注意ください！】 金地金をだましとる詐欺にご注意ください",
-   "source": "三菱マテリアル GOLDPARK",
+   "source": "gold.mmc.co.jp",
    "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBEdDZVOUJKakhLRl84aW1kc2JXTzIxXzg2LWlwaFBiV1llOFFCZFlHc2NHa2FFUDMtUEVlTTJQTFN3ZHVCNlFlc3N3cnBCYVR6VlRv?oc=5",
    "published": "2026-08-13T18:40:42+09:00"
   },

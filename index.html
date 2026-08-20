@@ -171,7 +171,7 @@ fetch('./data.json?t=' + Date.now())
     document.getElementById('updated').textContent = d.updated || '';
     renderPrices();
     renderFeed();
-    document.getElementById('foot').textContent = '建値と金・銀は manual.json の手入力です。';
+    document.getElementById('foot').textContent = '銅建値はJX金属、金・銀は田中貴金属の公表値。アルミ・鉄くず・LMEは手入力です。';
   })
   .catch(function(){
     document.getElementById('feed').innerHTML =

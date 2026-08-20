@@ -38,6 +38,18 @@ def main():
     if not fx:
         print("注意: 為替が取れていません（記事は出せるので止めません）")
 
+    # 自動取得の建値・金・銀がそろっているか
+    prices = d.get("manual") or {}
+    names = [t.get("name", "") for t in prices.get("tiles", [])] \
+          + [r.get("name", "") for r in prices.get("rows", [])]
+    missing = [label for label, word in
+               (("銅建値", "銅建値"), ("金", "金"), ("銀", "銀"))
+               if not any(word in n for n in names)]
+    if len(missing) == 3:
+        sys.exit("銅建値・金・銀が全部取れていません。公表ページの作りが変わった可能性があります。")
+    for m in missing:
+        print(f"注意: {m}が取れていません（ほかは出せるので止めません）")
+
     print("問題なし")
 
 
