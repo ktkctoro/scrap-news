@@ -1,5 +1,5 @@
 {
- "updated": "8/20 10:47",
+ "updated": "8/20 11:18",
  "fx": {
   "usdjpy": 159.09,
   "date": "2026-08-19"
@@ -34,15 +34,15 @@
    },
    {
     "name": "ビットコイン",
-    "value": "11,029,532",
+    "value": "11,033,915",
     "unit": "円",
-    "diff": "+7.4%"
+    "diff": "+7.6%"
    },
    {
     "name": "日経平均",
-    "value": "65,958",
+    "value": "66,059",
     "unit": "円",
-    "diff": "-2,756"
+    "diff": "-2,655"
    },
    {
     "name": "NYダウ",
@@ -75,7 +75,7 @@
    "title": "三井金属、銅箔新拠点で安定供給体制強化",
    "source": "LOGISTICS TODAY",
    "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5BcTktMHBWZmljdXNFRTJYUFlKNHQ4RWp6VnJzVXVjZEhHRnJVMkdnaG9Tb0t0Y3g5VS1NdG90WW01QnpReXU4OQ?oc=5",
-   "published": "2026-08-20T04:41:15+09:00"
+   "published": "2026-08-20T04:49:23+09:00"
   },
   {
    "cat": "gen",
@@ -336,6 +336,14 @@
   {
    "cat": "law",
    "label": "法規制",
+   "title": "買取専科 8月に全国4エリアに新店舗を順次オープン決定！(東京都・愛知県・大阪府・広島県）",
+   "source": "愛媛新聞",
+   "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE50S2Q2Q3RwN05XYVZ2Wkp6MzJ4Z3VSRm1iX1FQV2RYT2ZqYlFaaXhnZHRoTVk3aXUyYlYyem9BQmw4YlE0enZKX0tTeXFXVk40VXNkVngwM3oxRnc?oc=5",
+   "published": "2026-08-01T16:00:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
    "title": "GX推進法・資源有効利用促進法改正、再生材利用義務化を「競争力」に昇華させる戦略とは 経済産業省・資源循環経済課課長ら登壇の無料ウェビナー開催決定｜Infoseekニュース",
    "source": "Infoseek",
    "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5nbmlJOHNmNU9XYlFKS293NWdlWDZISHdHX3FYcTc2blNYM1JxX01KT2VSclk1UktoV2NXcE5PVVRGWURlUXVKRHFrU1kzdGpXM2NGN2FjLVRhWlpqX1FzOW1rUEU1TExZWGI0NmVkRERkQQ?oc=5",
@@ -409,7 +417,7 @@
    "cat": "gen",
    "label": "業界",
    "title": "銅価格高騰で太陽光パネルが標的に 三重県内でケーブル盗難急増、5月末時点で被害100件超え",
-   "source": "chunichi.co.jp",
+   "source": "中日新聞Web",
    "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBlS3gtelU0eW5Za2pBV1hGUnRBR1RObHFCYnFYai1tbDcybTNPbXZzck1tYUlMcWxGQUh1dE96Mm94cGJQWTUwaUhzdkNreWRZTDAycg?oc=5",
    "published": "2026-07-17T16:00:00+09:00"
   },
@@ -585,9 +593,17 @@
    "cat": "law",
    "label": "法規制",
    "title": "産業廃棄物収集運搬業許可申請の手引き・各種様式について",
-   "source": "福島県ホームページ",
+   "source": "pref.fukushima.lg.jp",
    "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFA3R3dmUzJiMVlZaUVneGNza2NMTWlVNEJxdlA0c2tnYlRXN2szeXd6NTExdFR4MWhzUFFJc2FFVHdmc1BmNTJGOEU3dmt0Ri0tWmh6WlRqZ3B0Z0RlbmxrMERYQ09jMnIydGVCT1B1WmdNMF9fb0NzUw?oc=5",
    "published": "2026-06-22T16:00:00+09:00"
   }
- ]
+ ],
+ "ai": {
+  "lines": [
+   "・銅建値6万円安の236万円、鉄スクラップも軟調",
+   "・改正廃掃法でヤード許可制、環境省が検討会設置",
+   "・金25,071円/g、+734円と急騰。店頭買取に追い風"
+  ],
+  "at": "8/20 11:18"
+ }
 }
