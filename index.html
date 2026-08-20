@@ -91,7 +91,7 @@
   </div>
   <div id="feed"><div class="msg">読み込んでいます…</div></div>
   <div class="ask">
-    <div class="eyebrow">AIに聞く（GoogleのAIモードが開きます）</div>
+    <div class="eyebrow">AIに聞く（Claudeのチャットが開きます）</div>
     <form id="askform">
       <input id="askbox" type="search" placeholder="例: アルミの直近の相場は？" aria-label="AIへの質問">
       <button type="submit">聞く</button>
@@ -182,7 +182,7 @@ function renderFeed(){
 
 function askAI(q){
   if (!q) return;
-  window.open('https://www.google.com/search?udm=50&q=' + encodeURIComponent(q), '_blank', 'noopener');
+  window.open('https://claude.ai/new?q=' + encodeURIComponent(q), '_blank', 'noopener');
 }
 document.getElementById('askform').addEventListener('submit', function(e){
   e.preventDefault();
