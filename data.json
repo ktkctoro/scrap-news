@@ -1,5 +1,5 @@
 {
- "updated": "8/20 18:16",
+ "updated": "8/20 18:17",
  "fx": {
   "usdjpy": 159.09,
   "date": "2026-08-19"
@@ -34,9 +34,9 @@
    },
    {
     "name": "ビットコイン",
-    "value": "11,387,285",
+    "value": "11,384,323",
     "unit": "円",
-    "diff": "+11.2%"
+    "diff": "+11.1%"
    },
    {
     "name": "日経平均",
@@ -214,6 +214,14 @@
    "published": "2026-08-17T15:51:20+09:00"
   },
   {
+   "cat": "dc",
+   "label": "AI・DC",
+   "title": "韓国輸出入銀行が人工知能(AI)など戦略産業の必須素材である銅の安定的確保のために、1兆4000億ウォンを超える大規模な金融支援に乗り出す。17日、輸出入銀行はスイスに本社を置くグローバル総合資源企業..",
+   "source": "매일경제",
+   "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1YV1lwVG9iWXdaaHdPLXZreGJua0VNSERkVWxtT1l5RmNfM2hPdnZlUkVJQnUtbS0tVEJlN1lmVjlhNlo2SHpCUXJ3Z0RBLU9TR2c?oc=5",
+   "published": "2026-08-17T13:55:23+09:00"
+  },
+  {
    "cat": "mkt",
    "label": "相場",
    "title": "京写、銅を回収・販売 プリント基板の製造工程",
@@ -316,6 +324,14 @@
    "source": "古紙ジャーナル",
    "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9BN25kc0Y1Tm9hdTI2WEc4RmxHblBUa2UxdC05bm4zMkJzbWZvVV9EVmJReFJGVUhQc1E5UGZGbXhQbXdGYkhUVkRlZHVPVzMwZEdBTUR3Y3dQdFlrU3h4aw?oc=5",
    "published": "2026-08-03T16:00:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "買取専科 8月に全国4エリアに新店舗を順次オープン決定！(東京都・愛知県・大阪府・広島県）",
+   "source": "ehime-np.co.jp",
+   "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE50S2Q2Q3RwN05XYVZ2Wkp6MzJ4Z3VSRm1iX1FQV2RYT2ZqYlFaaXhnZHRoTVk3aXUyYlYyem9BQmw4YlE0enZKX0tTeXFXVk40VXNkVngwM3oxRnc?oc=5",
+   "published": "2026-08-01T16:00:00+09:00"
   },
   {
    "cat": "law",
@@ -1350,7 +1366,8 @@
       "best": false
      }
     ],
-    "spread": 530
+    "spread": 530,
+    "diff": "0"
    },
    {
     "group": "基板",
@@ -1395,7 +1412,8 @@
       "best": false
      }
     ],
-    "spread": 90
+    "spread": 90,
+    "diff": "0"
    },
    {
     "group": "基板",
@@ -1412,7 +1430,8 @@
       "best": false
      }
     ],
-    "spread": 30
+    "spread": 30,
+    "diff": "0"
    },
    {
     "group": "基板",
@@ -1893,10 +1912,10 @@
  },
  "ai": {
   "lines": [
-   "・銅建値6万円安の236万円、金は613円高24,950円",
-   "・改正廃掃法でヤード許可制、環境省が保管基準検討",
-   "・愛知でケーブルカッター所持初摘発、銅盗難が続発"
+   "・銅建値6万円安の236万円、鉄も名古屋二級49,500円と軟調",
+   "・金属盗対策法で愛知初逮捕、ヤード許可制の検討も進行",
+   "・基板は各社差が大、PCメモリー浜屋11,700円で2,500円差"
   ],
-  "at": "8/20 18:09"
+  "at": "8/20 18:17"
  }
 }
