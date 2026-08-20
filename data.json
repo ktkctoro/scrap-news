@@ -1,5 +1,5 @@
 {
- "updated": "8/20 18:08",
+ "updated": "8/20 18:09",
  "fx": {
   "usdjpy": 159.09,
   "date": "2026-08-19"
@@ -214,14 +214,6 @@
    "published": "2026-08-17T15:51:20+09:00"
   },
   {
-   "cat": "dc",
-   "label": "AI・DC",
-   "title": "韓国輸出入銀行が人工知能(AI)など戦略産業の必須素材である銅の安定的確保のために、1兆4000億ウォンを超える大規模な金融支援に乗り出す。17日、輸出入銀行はスイスに本社を置くグローバル総合資源企業..",
-   "source": "매일경제",
-   "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1YV1lwVG9iWXdaaHdPLXZreGJua0VNSERkVWxtT1l5RmNfM2hPdnZlUkVJQnUtbS0tVEJlN1lmVjlhNlo2SHpCUXJ3Z0RBLU9TR2c?oc=5",
-   "published": "2026-08-17T13:55:23+09:00"
-  },
-  {
    "cat": "mkt",
    "label": "相場",
    "title": "京写、銅を回収・販売 プリント基板の製造工程",
@@ -348,14 +340,6 @@
    "source": "Yahoo!ニュース",
    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQUWM4NUp1YWNVV2d6M1YtTnY5cU5TU2JmTDgzNUFCdzFVb3VBUjZkTGVRbUE5OURmLVVWUHM4ZG5PamVURlJIWTZjU2FUYXYyRVNPV2tFWnZWb29KVjVLQXFpY2R2Z1RybDQwS0pIU3dDdHl2MVNMR1pFM1JIak5xMGlKc3lZTkw4azB1TGtR?oc=5",
    "published": "2026-07-30T10:39:00+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
-   "title": "コンタクトレンズのブリスター（空ケース）のケミカルリサイクル実証実験を開始",
-   "source": "ニコニコニュース",
-   "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5IcXg1Rm5PdmdVRXZsX0dtZjQ2QXVGUjV6Si1keE5MaF9mQVFIYU9acEFFV3JpLTlvemtRVDRfS2FhOHBqV2RGRWlmXy01azJKMWZGSg?oc=5",
-   "published": "2026-07-29T16:00:00+09:00"
   },
   {
    "cat": "law",
@@ -1217,7 +1201,8 @@
       "best": false
      }
     ],
-    "spread": 550
+    "spread": 550,
+    "diff": "0"
    },
    {
     "group": "基板",
@@ -1239,7 +1224,8 @@
       "best": false
      }
     ],
-    "spread": 420
+    "spread": 420,
+    "diff": "0"
    },
    {
     "group": "基板",
@@ -1261,7 +1247,8 @@
       "best": false
      }
     ],
-    "spread": 670
+    "spread": 670,
+    "diff": "0"
    },
    {
     "group": "基板",
@@ -1283,7 +1270,8 @@
       "best": false
      }
     ],
-    "spread": 750
+    "spread": 750,
+    "diff": "0"
    },
    {
     "group": "基板",
@@ -1305,7 +1293,8 @@
       "best": false
      }
     ],
-    "spread": 550
+    "spread": 550,
+    "diff": "0"
    },
    {
     "group": "基板",
@@ -1322,7 +1311,8 @@
       "best": false
      }
     ],
-    "spread": 460
+    "spread": 460,
+    "diff": "0"
    },
    {
     "group": "基板",
@@ -1344,7 +1334,8 @@
       "best": false
      }
     ],
-    "spread": 1630
+    "spread": 1630,
+    "diff": "0"
    },
    {
     "group": "基板",
@@ -1366,7 +1357,8 @@
       "best": false
      }
     ],
-    "spread": 1920
+    "spread": 1920,
+    "diff": "0"
    },
    {
     "group": "基板",
@@ -1383,7 +1375,8 @@
       "best": false
      }
     ],
-    "spread": 800
+    "spread": 800,
+    "diff": "0"
    },
    {
     "group": "基板",
@@ -1405,7 +1398,8 @@
       "best": false
      }
     ],
-    "spread": 280
+    "spread": 280,
+    "diff": "0"
    },
    {
     "group": "基板",
@@ -1427,7 +1421,8 @@
       "best": false
      }
     ],
-    "spread": 1500
+    "spread": 1500,
+    "diff": "0"
    },
    {
     "group": "基板",
@@ -1449,7 +1444,8 @@
       "best": false
      }
     ],
-    "spread": 25400
+    "spread": 25400,
+    "diff": "0"
    },
    {
     "group": "基板",
@@ -1471,7 +1467,8 @@
       "best": false
      }
     ],
-    "spread": 14600
+    "spread": 14600,
+    "diff": "0"
    },
    {
     "group": "基板",
@@ -1493,7 +1490,8 @@
       "best": false
      }
     ],
-    "spread": 550
+    "spread": 550,
+    "diff": "0"
    },
    {
     "group": "基板",
@@ -1515,7 +1513,8 @@
       "best": false
      }
     ],
-    "spread": 7140
+    "spread": 7140,
+    "diff": "0"
    },
    {
     "group": "基板",
@@ -1537,7 +1536,8 @@
       "best": false
      }
     ],
-    "spread": 2150
+    "spread": 2150,
+    "diff": "0"
    },
    {
     "group": "基板",
@@ -1559,7 +1559,8 @@
       "best": false
      }
     ],
-    "spread": 290
+    "spread": 290,
+    "diff": "0"
    },
    {
     "group": "基板",
@@ -1576,7 +1577,8 @@
       "best": false
      }
     ],
-    "spread": 90
+    "spread": 90,
+    "diff": "0"
    },
    {
     "group": "基板",
@@ -1593,7 +1595,8 @@
       "best": false
      }
     ],
-    "spread": 305
+    "spread": 305,
+    "diff": "0"
    },
    {
     "group": "基板",
@@ -1610,7 +1613,8 @@
       "best": false
      }
     ],
-    "spread": 1370
+    "spread": 1370,
+    "diff": "0"
    },
    {
     "group": "雑品",
@@ -1822,5 +1826,13 @@
     "diff": "0"
    }
   ]
+ },
+ "ai": {
+  "lines": [
+   "・銅建値6万円安の236万円、金は613円高24,950円",
+   "・改正廃掃法でヤード許可制、環境省が保管基準検討",
+   "・愛知でケーブルカッター所持初摘発、銅盗難が続発"
+  ],
+  "at": "8/20 18:09"
  }
 }
