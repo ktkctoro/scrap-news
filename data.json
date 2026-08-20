@@ -1,8 +1,8 @@
 {
- "updated": "8/20 18:17",
+ "updated": "8/21 4:54",
  "fx": {
-  "usdjpy": 159.09,
-  "date": "2026-08-19"
+  "usdjpy": 158.76,
+  "date": "2026-08-20"
  },
  "manual": {
   "tiles": [
@@ -34,9 +34,9 @@
    },
    {
     "name": "ビットコイン",
-    "value": "11,384,323",
+    "value": "11,563,575",
     "unit": "円",
-    "diff": "+11.1%"
+    "diff": "+6.8%"
    },
    {
     "name": "日経平均",
@@ -46,9 +46,9 @@
    },
    {
     "name": "NYダウ",
-    "value": "53,463",
+    "value": "52,827",
     "unit": "$",
-    "diff": "-307"
+    "diff": "-1,013"
    }
   ]
  },
@@ -60,14 +60,6 @@
    "source": "VOI.ID",
    "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1oMWpUR3VWU09sc0pveDZvNGNDUTBleUJkNlRnamhZQlhiem81ZTZqRVB0WHNMUHNXRmRRZDRydjlPUU9MUnfSAUJBVV95cUxNeDc1OGlOcFZNZy01MTdIQmpTMUNBTjJJS3UyT0dTQ1MzQy1wSzBEUExkUnpUY3dkTzRMTG5qWmVqaEE?oc=5",
    "published": "2026-08-20T17:38:01+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
-   "title": "金属くず買受業を営む皆さまへのお知らせ",
-   "source": "vill.kitanakagusuku.lg.jp",
-   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1LTHBLbC01MmxWZ285Zk1jMzloc3I4TTFMdG5VYXdnVkNnWE5TZmlTR3JQRVVfSXIzOWlUbVF0MXBEQ3c5eFJxOVdHSVpzU2xXd196T09heTdQTUdNa0FDeDkzWkRRR0pGazAyMExZYkJLUUhWQkx4WWV0QTU?oc=5",
-   "published": "2026-08-20T12:01:21+09:00"
   },
   {
    "cat": "mkt",
@@ -142,14 +134,6 @@
    "published": "2026-08-18T20:10:51+09:00"
   },
   {
-   "cat": "dc",
-   "label": "AI・DC",
-   "title": "三井金属、マレーシアにAI・半導体向け銅箔生産拠点の新設を計画 VSPは月産5000t体制も視野 | TECH+（テックプラス）",
-   "source": "マイナビニュース",
-   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9YbHA3RW9hOFdjSjRXT3FyMVJmWWlyME5nWFFUeU5PRHFYNFg2Rm5uaFhNUWRYdHhNaUd0bmswMU5kYWVhYWJkbl9LbFJRQTRxNG00dVhPWGNPa1Z0T3IxQjBmTVNVV2Ra?oc=5",
-   "published": "2026-08-18T19:11:15+09:00"
-  },
-  {
    "cat": "mkt",
    "label": "相場",
    "title": "銅建値、最高値242万円 亜鉛、68万5000円（日刊産業新聞）",
@@ -204,6 +188,14 @@
    "source": "日本経済新聞",
    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBhTWZQcm1fcU9HZy02NVdBRVZpQ3BGVE9xbzBXQnU4YlQ5VG5hb0NxNWU5SnpzZVdTRUVadlAtQUdRRkhMMUhoTzRVN1RWLURiZ1NPZkdRdWlSYmpKQjlZZU16c3hWNk96NUk0cQ?oc=5",
    "published": "2026-08-17T16:30:42+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "金属リサイクル市場の規模、シェア、成長率、分析、レポート（2034年まで）",
+   "source": "Straits Research",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1WZDR0UVlwUzVLRTlhWWxFdmY0dDI3R0FtX3JvaWdlbzdWcE0zMmZ1UnVpanFTbUktZGRUdWVQZm1lU1htWmdqTUNoNXNFYnYxUGx3MWNNMU9BYzlURVEwR2o5blRQeUpaNV9xRQ?oc=5",
+   "published": "2026-08-17T16:00:00+09:00"
   },
   {
    "cat": "mkt",
@@ -329,7 +321,7 @@
    "cat": "law",
    "label": "法規制",
    "title": "買取専科 8月に全国4エリアに新店舗を順次オープン決定！(東京都・愛知県・大阪府・広島県）",
-   "source": "ehime-np.co.jp",
+   "source": "愛媛新聞",
    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE50S2Q2Q3RwN05XYVZ2Wkp6MzJ4Z3VSRm1iX1FQV2RYT2ZqYlFaaXhnZHRoTVk3aXUyYlYyem9BQmw4YlE0enZKX0tTeXFXVk40VXNkVngwM3oxRnc?oc=5",
    "published": "2026-08-01T16:00:00+09:00"
   },
@@ -392,9 +384,9 @@
   {
    "cat": "gen",
    "label": "業界",
-   "title": "不正輸出や盗難など犯罪の「拠点」になるケースも多数！ ニュースで聞く自動車の「ヤード」ってなに？（WEB CARTOP）",
-   "source": "Yahoo!ニュース",
-   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBOWlVGQWNzSW0xTUR6SGxsMkFZSWRFX1g1aENkaldCU0QxbWxORFZ5djJRRzNrVm9QNWNTcXdUaUZyMmwxVm1PR1UyTlBQX2xJT3p5UmdNdy01ZXBNUnJtMF9mVDdoWk9uM2N2Wl9pWk9FUVVnYndTLWJJMUhkYUk?oc=5",
+   "title": "不正輸出や盗難など犯罪の「拠点」になるケースも多数！　ニュースで聞く自動車の「ヤード」ってなに？",
+   "source": "WEB CARTOP",
+   "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE15aHZvenNiUklfWENNT0pKZWxXUGVuSExhNkM4VUVzei1zOFJRdld1N2dFVmZBRjNXbDhocnpXRGxTZUZYbHpjNFlBRVU4UG82ZHJF0gFYQVVfeXFMT2FLcU01a1ZkVml1NVpxeHpDd3FadV9RYUdtSVBndVJzZTZaZUpsQmdETFZVYVp5MHpTS2wyamhfY2RYUV9hS045VnRhbFRrS0RKb1M0WkFiRg?oc=5",
    "published": "2026-07-22T16:00:00+09:00"
   },
   {
@@ -536,14 +528,6 @@
   {
    "cat": "law",
    "label": "法規制",
-   "title": "家庭用エアコンのフロン回収を強化へ 27年の国会で法改正みこむ",
-   "source": "朝日新聞",
-   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9qbU5aQTFIeFZFeEk3dW5uczZJakdXeC0wSTVCNWFhQ2lXRmpMTmdtemFJa2hZU25xZFFrUnZ3QUhNamFYck9oQ0V4ZWNKc3l0YVlFbUJEdGRxSEZzald0ZFdNaFktb0E?oc=5",
-   "published": "2026-06-26T16:00:00+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
    "title": "家庭用エアコン、フロン回収を幅広く義務付けへ 経産・環境省",
    "source": "日本経済新聞",
    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE12VHI3TC1rdUJBOWZZbTlXY25pc0lUN0xralFaVUJNazYxU1FGRElyaW54bmU3VXVkYXFKa1c5VE9kRjZMSjczM1pxRGdLUG03Y3NRYlZlUEFqRUlVZEpPN0RVcFF3TkZQZEgxcg?oc=5",
@@ -563,6 +547,14 @@
    "title": "家庭用エアコンも罰則対象に＝フロンの漏えい防止で―環境・経産省",
    "source": "iJAMPポータル",
    "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9QR1JsellKdHFaeVpRZ3l6SS16THlqOHVqRzd1dGZvTzY1SUpWa3VLVUlLbDR4SmdRbXNjODZZOWlVR09mYmY5UWtZYlA1cWQzVVR3Wm4tbWpZNFVhRURvMkQwMVkwWEtzdnpQdUtGYw?oc=5",
+   "published": "2026-06-26T16:00:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "家庭用エアコンのフロン回収を強化へ 27年の国会で法改正みこむ",
+   "source": "朝日新聞",
+   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9qbU5aQTFIeFZFeEk3dW5uczZJakdXeC0wSTVCNWFhQ2lXRmpMTmdtemFJa2hZU25xZFFrUnZ3QUhNamFYck9oQ0V4ZWNKc3l0YVlFbUJEdGRxSEZzald0ZFdNaFktb0E?oc=5",
    "published": "2026-06-26T16:00:00+09:00"
   },
   {
@@ -1738,7 +1730,7 @@
     "cells": [
      {
       "dealer": "安城貿易",
-      "value": 165,
+      "value": 170,
       "best": true
      },
      {
@@ -1757,8 +1749,8 @@
       "best": false
      }
     ],
-    "spread": 45,
-    "diff": "0"
+    "spread": 50,
+    "diff": "+5"
    },
    {
     "group": "雑品",
@@ -1822,7 +1814,7 @@
     "cells": [
      {
       "dealer": "安城貿易",
-      "value": 170,
+      "value": 200,
       "best": true
      },
      {
@@ -1831,8 +1823,8 @@
       "best": false
      }
     ],
-    "spread": 65,
-    "diff": "0"
+    "spread": 95,
+    "diff": "+30"
    },
    {
     "group": "雑品",
@@ -1912,10 +1904,10 @@
  },
  "ai": {
   "lines": [
-   "・銅建値6万円安の236万円、鉄も名古屋二級49,500円と軟調",
-   "・金属盗対策法で愛知初逮捕、ヤード許可制の検討も進行",
-   "・基板は各社差が大、PCメモリー浜屋11,700円で2,500円差"
+   "・銅建値236万円へ6万円安、金は24,950円で613円高",
+   "・改正廃掃法でヤード許可制、環境省が保管基準検討へ",
+   "・愛知でケーブルカッター所持初摘発、仕入れ身元確認徹底"
   ],
-  "at": "8/20 18:17"
+  "at": "8/21 4:54"
  }
 }
