@@ -21,7 +21,8 @@ JST = timezone(timedelta(hours=9))
 UA = "Mozilla/5.0 (compatible; scrap-news/1.0)"
 
 # ---- 拾うキーワード -------------------------------------------------
-# 左が分類、右が検索語。増やしたいときはこの表に足すだけ。
+# (分類, 検索語, さかのぼる日数)。日数を書かなければ7日。
+# 法規制は動きが少ないぶん見落とすと痛いので、60日さかのぼる。
 QUERIES = [
     ("mkt", "銅 建値"),
     ("mkt", "亜鉛 建値"),
@@ -29,9 +30,16 @@ QUERIES = [
     ("mkt", "非鉄金属 相場"),
     ("mkt", "鉄スクラップ 価格"),
     ("mkt", "金 相場 地金"),
-    ("law", "金属盗対策法"),
-    ("law", "金属くず ヤード 条例"),
-    ("law", "特定金属くず買受業"),
+    ("law", "金属盗対策法", 60),
+    ("law", "金属くず ヤード 条例", 60),
+    ("law", "特定金属くず買受業", 60),
+    ("law", "古物営業法", 60),
+    ("law", "古物商 金属", 60),
+    ("law", "廃棄物処理法 改正", 60),
+    ("law", "廃棄物処理法 スクラップ", 60),
+    ("law", "再資源化事業 高度化法", 60),
+    ("law", "雑品スクラップ 輸出 規制", 60),
+    ("law", "フロン排出抑制法", 60),
     ("gen", "スクラップ 盗難"),
     ("gen", "非鉄金属 リサイクル"),
     ("gen", "エアコン 室外機 盗難"),
@@ -52,6 +60,8 @@ RELEVANT = [
     "真鍮", "黄銅", "ステンレス", "鉛", "亜鉛", "電線", "ケーブル", "変圧器",
     "室外機", "建値", "地金", "貴金属", "リサイクル", "資源循環",
     "買取", "買受", "廃棄物", "解体",
+    # 法規まわり（スクラップ業の許認可・規制に関わる語）
+    "古物", "再資源化", "フロン", "バーゼル", "ヤード",
 ]
 
 # 逆に、この語が入っていたら商売に関係ないので捨てる。
@@ -64,8 +74,10 @@ NG_WORDS = [
     # 市場調査リリース（内容がなく件数だけ稼ぐ）
     "市場規模", "市場動向", "調査レポート", "業界分析", "分析レポート",
     "CAGR", "年平均成長率", "成長予測", "産業レポート", "世界市場",
-    # 広告・ランキング記事
+    # 広告・ランキング記事・PR・セミナー告知
     "人気ランキング", "無料査定", "買取フェア", "鉱山株", "ソフトボール",
+    "プレスリリース", "セミナー", "オープン！", "NEW OPEN", "徹底解説",
+    "億ドルへ", "開催中止", "録画配信",
     # 海外の金・宝飾相場（うちの買値と関係しない）
     "ベトナム", "SJC", "ルピア", "金指輪", "金リング", "テール",
 ]
@@ -117,7 +129,9 @@ def is_relevant(title, source):
 # 見出しの語で分類する。上から順に判定し、最初に当たったものを採用。
 # （同じ記事が複数のキーワードで拾われても分類がぶれないようにするため）
 CLASSIFY = [
-    ("law", ["金属盗", "条例", "改正", "届出", "規制", "警察庁", "法案", "施行", "買受業"]),
+    ("law", ["金属盗", "条例", "改正", "届出", "規制", "警察庁", "法案", "施行", "買受業",
+             "古物", "廃棄物処理法", "リサイクル法", "再資源化", "バーゼル", "フロン",
+             "義務化", "省令", "政令"]),
     ("gen", ["盗難", "窃盗", "逮捕", "被害", "火災", "火事"]),
     ("dc", ["データセンター", "生成AI", "AI投資", "半導体工場"]),
     ("mkt", ["建値", "相場", "価格", "市況", "値上げ", "値下げ", "高値", "安値", "需給"]),
@@ -140,6 +154,10 @@ FX_URL = "https://api.frankfurter.app/latest?from=USD&to=JPY"
 JX_CUPRICE_URL = "https://www.jx-nmm.com/cuprice/"
 TANAKA_URL = "https://gold.tanaka.co.jp/commodity/souba/"
 TOKYO_STEEL_URL = "https://www.tokyosteel.co.jp/scrapprice/"
+BTC_URL = ("https://api.coingecko.com/api/v3/simple/price"
+           "?ids=bitcoin&vs_currencies=jpy&include_24hr_change=true")
+# 株価指数はYahoo!ファイナンス（米国版）の公開データから。^N225=日経平均, ^DJI=NYダウ
+YAHOO_URL = "https://query1.finance.yahoo.com/v8/finance/chart/{sym}?range=5d&interval=1d"
 
 # 東京製鐵の価格表のうち、画面に出す拠点と等級。変えたいときはここ。
 TS_PLANT = "名古屋"   # 価格表の列見出しに含まれる語（名古屋サテライト）
@@ -185,12 +203,15 @@ def dedupe_key(title):
     return t[:30]
 
 
-def collect_articles(days=7):
+def collect_articles(default_days=7):
     seen = set()
     items = []
-    cutoff = datetime.now(JST) - timedelta(days=days)
+    now = datetime.now(JST)
 
-    for cat, query in QUERIES:
+    for entry in QUERIES:
+        cat, query = entry[0], entry[1]
+        days = entry[2] if len(entry) > 2 else default_days
+        cutoff = now - timedelta(days=days)
         q = urllib.parse.quote(f"{query} when:{days}d")
         try:
             raw = fetch(FEED.format(q=q))
@@ -466,6 +487,40 @@ def fetch_tokyo_steel():
         return None
 
 
+def fetch_bitcoin():
+    """ビットコインの円建て価格と24時間の変化率（CoinGecko）。"""
+    try:
+        data = json.loads(fetch(BTC_URL))["bitcoin"]
+        jpy = float(data["jpy"])
+        if not (1_000_000 < jpy < 1_000_000_000):
+            raise ValueError(f"ビットコインらしくない数字です: {jpy}")
+        chg = data.get("jpy_24h_change")
+        diff = f"{chg:+.1f}%" if chg is not None else ""
+        return {"value": f"{int(round(jpy)):,}", "diff": diff}
+    except Exception as e:
+        print(f"  ! ビットコインの取得失敗: {e}", file=sys.stderr)
+        return None
+
+
+def fetch_index(sym, label):
+    """株価指数の直近値と前日比（Yahoo!ファイナンスの公開データ）。"""
+    try:
+        url = YAHOO_URL.format(sym=urllib.parse.quote(sym))
+        meta = json.loads(fetch(url))["chart"]["result"][0]["meta"]
+        value = float(meta["regularMarketPrice"])
+        if not (1_000 < value < 500_000):
+            raise ValueError(f"{label}らしくない数字です: {value}")
+        prev = meta.get("chartPreviousClose") or meta.get("previousClose")
+        diff = ""
+        if prev:
+            d = value - float(prev)
+            diff = "0" if abs(d) < 0.5 else f"{d:+,.0f}"
+        return {"value": f"{value:,.0f}", "diff": diff}
+    except Exception as e:
+        print(f"  ! {label}の取得失敗: {e}", file=sys.stderr)
+        return None
+
+
 def load_previous(dest):
     """前回の data.json。取得に失敗した朝は前回の値を使い回すために読む。"""
     try:
@@ -526,6 +581,21 @@ def build_prices(manual, prev):
         elif _pick(prev_rows, metal):
             print(f"  ! {metal}は前回の値を使い回します", file=sys.stderr)
             rows.append(_pick(prev_rows, metal))
+
+    # 市場もの（ビットコイン・株価指数）。ドル円は画面側が為替の値から足す。
+    markets = [
+        ("ビットコイン", "円", fetch_bitcoin),
+        ("日経平均", "円", lambda: fetch_index("^N225", "日経平均")),
+        ("NYダウ", "$", lambda: fetch_index("^DJI", "NYダウ")),
+    ]
+    for name, unit, getter in markets:
+        got = getter()
+        if got:
+            rows.append({"name": name, "value": got["value"],
+                         "unit": unit, "diff": got["diff"]})
+        elif _pick(prev_rows, name):
+            print(f"  ! {name}は前回の値を使い回します", file=sys.stderr)
+            rows.append(_pick(prev_rows, name))
 
     # 手入力ぶん（アルミ・鉄スクラップH2・LMEなど）を後ろに足す
     for t in manual.get("tiles", []):

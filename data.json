@@ -1,5 +1,5 @@
 {
- "updated": "8/20 10:13",
+ "updated": "8/20 10:31",
  "fx": {
   "usdjpy": 159.09,
   "date": "2026-08-19"
@@ -17,18 +17,6 @@
     "value": "49,500",
     "unit": "円/t",
     "diff": "-500"
-   },
-   {
-    "name": "アルミ二次地金",
-    "value": "333",
-    "unit": "円/kg",
-    "diff": "0"
-   },
-   {
-    "name": "LME 銅（3M）",
-    "value": "9,840",
-    "unit": "$/t",
-    "diff": "+62"
    }
   ],
   "rows": [
@@ -43,6 +31,24 @@
     "value": "371.14",
     "unit": "円/g",
     "diff": "+21.78"
+   },
+   {
+    "name": "ビットコイン",
+    "value": "10,972,768",
+    "unit": "円",
+    "diff": "+6.8%"
+   },
+   {
+    "name": "日経平均",
+    "value": "66,157",
+    "unit": "円",
+    "diff": "-2,557"
+   },
+   {
+    "name": "NYダウ",
+    "value": "53,463",
+    "unit": "$",
+    "diff": "-307"
    }
   ]
  },
@@ -66,16 +72,24 @@
   {
    "cat": "gen",
    "label": "業界",
-   "title": "“ケーブルカッター”正当な理由なく所持か カンボジア国籍の男逮捕 愛知県で初の逮捕者（中京テレビＮＥＷＳ）",
-   "source": "Yahoo!ニュース",
-   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1kU0xzUXFYa2pxRmR3U1E1dEVxeks4WWUxdU9seW5hZnE0VWdVNms2cFNjbUMtWWJ0NGRFd3BKbUJNSjFiaUtvSXhqaFBYMy15RTJrNW9OVGlhWDFtTjNSQkpYV3FST0hqRnBZLVgtV3dvQ2hXS2pUNExUQVF2Q1E?oc=5",
-   "published": "2026-08-20T01:31:02+09:00"
+   "title": "“ケーブルカッター”正当な理由なく所持か カンボジア国籍の男逮捕 愛知県で初の逮捕者",
+   "source": "au Webポータル",
+   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBZUnFmVEdNb2h6bFhhSVgybU91Z0kyUUdHXzhBbGhveEZONTY2OEhhVmgzbm52T3JYc1BxZVdIUDU3M1ZYODE1STZBbFVLZDRRRi1DeC1xdzdvbGxWbjh5SDlFaXVWRlZtSmJrU1p3?oc=5",
+   "published": "2026-08-20T02:35:27+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "「再エネ設備材の資源循環アップサイクル事業」実装の報告",
+   "source": "ニコニコニュース",
+   "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFAzc2I5cXhVdVhqU1RqY09yLWJJTEwwcE5oSng0Y1ZpNXZNa2FWd29pY001MGl2OVkzZjJ3X2RIRTNDRkpSYWJPZF80a1NNak9VRkdobmVmbkt6d29BMnNLb1dabDMzaFZKdlV4SU9FQ2s2a3AtN2c5VmdfNA?oc=5",
+   "published": "2026-08-19T21:45:30+09:00"
   },
   {
    "cat": "law",
    "label": "法規制",
    "title": "“ケーブルカッター”を正当な理由なく所持か…金属盗対策法違反の疑いで愛知初の逮捕者 カンボジア人の男",
-   "source": "東海テレビ放送",
+   "source": "tokai-tv.com",
    "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFA1MnREX2xqQ2VJM3BBMlQ3b3k0ajBOeXRoM2JRbEYzby02WWNlQlZLU2gyd1Y3Zi1UaElzV1Bfc0poVHdiay1XRHVzcHQ4MElsMG1QLURyelN2dU9SSFpzOFE3bHJSMXVQaGx3d1V1bWQxSVE?oc=5",
    "published": "2026-08-19T19:47:00+09:00"
   },
@@ -90,9 +104,9 @@
   {
    "cat": "gen",
    "label": "業界",
-   "title": "｢私のものではない｣ 車にケーブル切る器具を隠し持っていた疑い カンボジア国籍の男を逮捕 太陽光発電施設などで盗難相次ぐ 愛知で初摘発 | 名古屋・愛知・岐阜・三重のニュース【CBC news】 | CBC web (2ページ)",
-   "source": "TBS NEWS DIG",
-   "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1kTUtjZUtRVW5pY1JEZkxBd0pmZVF0VnotX2xkVnZvQnlzdWQ4empGbWxvY2ZJeEtPb2R4UWFmamdxalN5UFVad1dubVRvb1B5RWtNNE1IbGNscnFaYlNacnctUQ?oc=5",
+   "title": "｢私のものではない｣ 車にケーブル切る器具を隠し持っていた疑い カンボジア国籍の男を逮捕 太陽光発電施設などで盗難相次ぐ 愛知で初摘発",
+   "source": "ｄメニューニュース",
+   "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1veHlQMzd4Y0M3d2dQaGNaNmktdlJLWHZJZUFiaktwVmt6aHhmN1Uwdk5Gb0RLckpKRmlrLVBsajNua1l0MEN5RUsyWEQtWjQ2QlZ0dDJla0xkdVZaMmQ5TkpFUmFkOXZMemxPaGw4bUs2S0ZROUU4QmxB0gF6QVVfeXFMTW94eVAzN3hjQzd3Z1BoY1o2aS12UktYdkllQWJqS3BWa3poeGY3VTB2TkZvREtySkpGaWstUGxqM25rWXQwQ3lFSzJYRC1aNDZCVnR0MmVrTGR1VloyZDlOSkVSYWQ5dkx6bE9obDhtSzZLRlE5RThCbEE?oc=5",
    "published": "2026-08-19T18:36:00+09:00"
   },
   {
@@ -120,6 +134,14 @@
    "published": "2026-08-18T15:17:21+09:00"
   },
   {
+   "cat": "law",
+   "label": "法規制",
+   "title": "フクシマガリレイ｜ノンフロン冷媒R1234yf採用ステップ運転機能付解凍庫４枚扉タイプ発売のお知らせ｜Infoseekニュース",
+   "source": "Infoseek",
+   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1OMnBoaWRWYVVXeEVEdGZWSFJ0SEhRRWx3UXhsWUJtSVdhQWdnTjZwSWl1RXE2NDJPS1UwT3VPOFFEUVVmeWZkM3ZCaEMwVk5HU09FN0RFWDZHdFdTTENzel84SFFtdFYyb0pKZmlzTXdKUQ?oc=5",
+   "published": "2026-08-18T10:00:00+09:00"
+  },
+  {
    "cat": "dc",
    "label": "AI・DC",
    "title": "銅高騰も製錬手数料0ドル収益は金銀硫酸で補う",
@@ -134,6 +156,14 @@
    "source": "日刊鉄鋼新聞 Japan Metal Daily",
    "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9oZjBhbjV1ZXkzb3dQWUpjSldEZEJBc2NhSHFzeE5sOTBfeWNzWVFOSDlBVXZlMUtfSEN4RmwtS3VJREktZWR1VTVNZXc0UjVoX2JWY3FEcTRXVW1HY2c?oc=5",
    "published": "2026-08-18T05:00:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "フロン排出抑制の強化政策、中間とりまとめ 機器リスト作成・更新制度など",
+   "source": "kankyo-business.jp",
+   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBzOTNUTzlkZU1SWUZxS3RzY2ZPbnZKRW9mcDlYWmxSSWdPeVZ2RUlDMFlUUHlsNW1hUzBOV3NQVUNaYmE2Q2JfM3h1NTlaMlpZYmxjNEx2SlhMVVBFTU93LUdTNUF5ZWVpSENqNHAwenZ5N1RHMnRNWXN0ZXc?oc=5",
+   "published": "2026-08-17T19:32:44+09:00"
   },
   {
    "cat": "dc",
@@ -195,7 +225,7 @@
    "cat": "gen",
    "label": "業界",
    "title": "大同特殊鋼の火事 約60時間経っても鎮火せず 火は鉄くずなどの廃材を保管するスペースから… 愛知･東海市の知多工場",
-   "source": "Excite エキサイト",
+   "source": "excite.co.jp",
    "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1BbTVqOU53Vm10dDBBdnFpaXk0QjJMWHFTVXlnVDduVWYxNDY2cE9YM2NIcXZVTm9MSUp3Y2dLRXFrcjNiR2pMbDQ4Q2ZVRFRjcnB1cEVlNEVJbzVFSUhvY041Q1Rsd1k?oc=5",
    "published": "2026-08-14T08:16:00+09:00"
   },
@@ -238,6 +268,310 @@
    "source": "ｄメニューニュース",
    "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNbi10cXZ6aHhMYWFrNDRoNkNRa1l3eFRfdHRZQ2hDQUFYYmxTNXhWX2FQd3NlQk9QeXk4YVNUcVhQU2hkd2ZfN3BfaEVmWktsNlV2STlwWXFIOXFTZGVyZHRpOVBxTExWZUpxVWgxeHRYTjhNMkJFbVlrdWFVLWtENlQybmJHajTSAYwBQVVfeXFMT1c5ejFldEE1WW9LX3ZXcGFiMzQ0eFFUb19PblVaQ3YyMC1rN2NhemZBMDBuOE5kU2QwRlVETEpxd243OWxxY2ZaZ3RWR0xYQURYbVZ2T1cybmx0S0xheGlWV0dlV2trdVhBM3pyemhkVl9VOHdSaEhMY2lfQzc0QkVQWFBHMzFKNmhLd1Q?oc=5",
    "published": "2026-08-13T11:25:00+09:00"
+  },
+  {
+   "cat": "gen",
+   "label": "業界",
+   "title": "橋下徹氏「かっぱ兄妹」の銅像２体盗難に危機感「そういう世の中ではなくなってきたのかな」",
+   "source": "Infoseek",
+   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5Tc19rQzVudFNpcER1djFXSTg3emExQmdRQVA0ekdUc0dQY0U4WTNlTjNneXBCellJUzA4ZFJnN0h1aWN6a3VUakpBaFZCMUdKMVRqRVZVTDZaeWF3RGFUVjVpVDh6Sk9KdUhrTFRqU3BiYjTSAXhBVV95cUxOaGE5ZzNVcDNuMEl2dXBjRXpjMVBfWGVQejluVWk5UXlNUWNFcU45WGZMcUZfM3M3clY0Rm5vbFNlTW9SZ25UQkVIcTVVU29MbTNmYzBMQV9VOUF3bGdfb2MwRGxUczlxQ2c3MDYxQ3ZwS2p5NW5lZXo?oc=5",
+   "published": "2026-08-12T16:53:35+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "価格が高騰する銅を狙って太陽光発電所から送電ケーブル2.2トンを盗んだか 金属盗対策法違反の疑いなど 男２人を逮捕・送検 富山",
+   "source": "TBS NEWS DIG",
+   "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE11T2NrVkhBUExUUlBWMWRTVW1fRGIwekI4djVNRWlRWDBRRWt0cVl3d0JIVzlFcG9sTlpjNFQyc1JQLUJjSmYxTVk0MkRCUDA3b3VZYUNPWXZQMmU5V040?oc=5",
+   "published": "2026-08-08T13:52:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "スクラップヤードなど「不適切な土地利用」規制強化へ 国交省",
+   "source": "朝日新聞",
+   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFByLVJ2UHlvX203WjJiRnpHcXkxOG1OWXBQeEhucVd3MDdUcWExc2EyNWdDNW9UZ0JfeXhOOFZKX3RwN1htVU5NYTNtUzBTT3BsRXpqRldYZ3E3TFB5NU82QmIyMXJEanM?oc=5",
+   "published": "2026-08-07T16:00:00+09:00"
+  },
+  {
+   "cat": "mkt",
+   "label": "相場",
+   "title": "太陽光パネル廃棄業者おすすめ10社を比較！撤去・処分の相場やリサイクルの必要性も解説！",
+   "source": "マイナビニュース",
+   "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE1CT2dac3NlOUYydzkzbjdCb3Bma3o4aGNFNG9BTnhXSGlGTTdiMnFwamlBYVA3R3pKbzRuSUpGU1pJMlpRUGVHQmVn?oc=5",
+   "published": "2026-08-05T16:00:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "フロン類、ライフサイクル全体で排出抑制強化・加速 冷媒回収の徹底など",
+   "source": "kankyo-business.jp",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5FSVBrQ3ZuNXpzTjdVWDNzc3UtN25nYm1jQ2JPRkFad0E0ckxZb0dTNmo2b0R6UlVOclVYMWd5RXNGakhiYVZEUnE4LWswYkZmV2VRQ3dET2k2UWFfY1VtWGpTNVllR1czeXQ2TmRHb010Q1UxSGRFRFFIMUF1VTA?oc=5",
+   "published": "2026-08-05T16:00:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "廃棄物リサイクルを脱炭素の最前線へ。呉市から国内初※の「グリーン水素×資源再生」モデル構築に向けた実証実験を開始",
+   "source": "PR TIMES",
+   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE4yV2NsU0xTNTJVTmdXdVpMNG1sckVZT2s3cjdhdmNMVnZuRDREd19nakVnS0ZoMW5GMDlNakFrTlVERlNRNFp6Q3pCVkFlZFIzcG01RHRFNHdqaDBKTzRiQ29TT01SajlpSEE?oc=5",
+   "published": "2026-08-04T16:00:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "【廃掃法改正】これまでの条例から法令で規制強化金属くず等を扱うヤードを許可制に",
+   "source": "古紙ジャーナル",
+   "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9BN25kc0Y1Tm9hdTI2WEc4RmxHblBUa2UxdC05bm4zMkJzbWZvVV9EVmJReFJGVUhQc1E5UGZGbXhQbXdGYkhUVkRlZHVPVzMwZEdBTUR3Y3dQdFlrU3h4aw?oc=5",
+   "published": "2026-08-03T16:00:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "GX推進法・資源有効利用促進法改正、再生材利用義務化を「競争力」に昇華させる戦略とは 経済産業省・資源循環経済課課長ら登壇の無料ウェビナー開催決定｜Infoseekニュース",
+   "source": "Infoseek",
+   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5nbmlJOHNmNU9XYlFKS293NWdlWDZISHdHX3FYcTc2blNYM1JxX01KT2VSclk1UktoV2NXcE5PVVRGWURlUXVKRHFrU1kzdGpXM2NGN2FjLVRhWlpqX1FzOW1rUEU1TExZWGI0NmVkRERkQQ?oc=5",
+   "published": "2026-08-01T16:00:00+09:00"
+  },
+  {
+   "cat": "gen",
+   "label": "業界",
+   "title": "【深刻】被害額1000万円超も…なぜ今“銅”が狙われる？水道メーターや電線盗難が相次ぐ背景 (読売テレビ)",
+   "source": "Yahoo!ニュース",
+   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQUWM4NUp1YWNVV2d6M1YtTnY5cU5TU2JmTDgzNUFCdzFVb3VBUjZkTGVRbUE5OURmLVVWUHM4ZG5PamVURlJIWTZjU2FUYXYyRVNPV2tFWnZWb29KVjVLQXFpY2R2Z1RybDQwS0pIU3dDdHl2MVNMR1pFM1JIak5xMGlKc3lZTkw4azB1TGtR?oc=5",
+   "published": "2026-07-30T10:39:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "保管・再生基準を明確化/26年度内に結果とりまとめ/環境省がスクラップヤード検討会・改正廃掃法踏まえ設置",
+   "source": "建設通信新聞Digital",
+   "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBKU2JmcGNiUGpPcWF2Y3ZYMmhMMHBTOE9RSXFKV2w0MmVqenE0NlFTWU53VDc4T0ZTamNhYVU1X2xmY01WdlpPTm12Y3RPMEtzZkIwemx3bE8?oc=5",
+   "published": "2026-07-28T16:00:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "電子廃棄物管理の市場シェアと業界の成長 [2034 年]",
+   "source": "Fortune Business Insights",
+   "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNR0Z1bVlBV05CZi10am0wQnlUblVELWNQb3BLSVg2VWZ6aHozSHJWZ1pMbmtUcXRkd1lZUml6TGJFNHd0VHN3VXNtWjVRSFpaOFZKeF80elZlN2x5Ny1OSmZCbzlCN2lDSjU5UTU2X2hvbTRtMVpRVlBxcHo5OW1Oel9GazVxYk4zcXo5WWdjcTJjbVhTTlJHN2dxT0NZeEw4TTZuejI2MWlaLXBMcmc4Q0s3ZUVocWJGeGRTaUdrVnlFSTVyUXlQZzEwQ0xmMVRFLXA5bWxOMFlWWEMyMkhlZ0JFZw?oc=5",
+   "published": "2026-07-27T16:00:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "加賀銅板盗疑い３人逮捕 神社屋根被害１８０キロ 高騰背景、県内１～６月の金属盗被害２．９倍｜社会｜石川のニュース",
+   "source": "北國新聞",
+   "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5YNlFXdjN0Mks2Q0FzU2tFZ2Ruc1pwNDRyQ1BtQmJQVVh4T2Vyamc1YXh0RWJQaHpDSHpMR0ZwWWhmZzhsU0NkSmo1NHh2NTVjQzJ4NmRxUQ?oc=5",
+   "published": "2026-07-23T16:00:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "フクシマガリレイ｜ノンフロン冷媒R1234yf採用フレッシュキューブ発売のお知らせ",
+   "source": "PR TIMES",
+   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9CS1p2bU1oRFFHeXpoSTdtNDlnbUNOci1QT25abVQ0bmFTS3NGWjVlRldGOUYyZnZHWEtIMXpsV2JtVmt1eHZkVW96QWw3TldwWlpqQkxVZ1JrempiUHNPcW5GamxvRnd1aGc?oc=5",
+   "published": "2026-07-23T16:00:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "切断工具所持疑いで63歳男逮捕 栃木県警、金属盗対策法を初適用",
+   "source": "下野新聞社",
+   "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1QM204VUNOX1dKTWtnUEktNUMyY3VrWWoweVpoLUtJeFdud2FhVGhhdDg4QUw4NUxlbUhheTdCUGZfY3Y1XzNoTW5HRTRqekIxRHQ0Nk8tZk5YazA?oc=5",
+   "published": "2026-07-22T16:00:00+09:00"
+  },
+  {
+   "cat": "gen",
+   "label": "業界",
+   "title": "不正輸出や盗難など犯罪の「拠点」になるケースも多数！ ニュースで聞く自動車の「ヤード」ってなに？（WEB CARTOP）",
+   "source": "Yahoo!ニュース",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBOWlVGQWNzSW0xTUR6SGxsMkFZSWRFX1g1aENkaldCU0QxbWxORFZ5djJRRzNrVm9QNWNTcXdUaUZyMmwxVm1PR1UyTlBQX2xJT3p5UmdNdy01ZXBNUnJtMF9mVDdoWk9uM2N2Wl9pWk9FUVVnYndTLWJJMUhkYUk?oc=5",
+   "published": "2026-07-22T16:00:00+09:00"
+  },
+  {
+   "cat": "gen",
+   "label": "業界",
+   "title": "銅価格高騰で太陽光パネルが標的に 三重県内でケーブル盗難急増、5月末時点で被害100件超え",
+   "source": "中日新聞Web",
+   "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBlS3gtelU0eW5Za2pBV1hGUnRBR1RObHFCYnFYai1tbDcybTNPbXZzck1tYUlMcWxGQUh1dE96Mm94cGJQWTUwaUhzdkNreWRZTDAycg?oc=5",
+   "published": "2026-07-17T16:00:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "首都直下地震を想定 災害廃棄物対策で協議会立ち上げ 環境省",
+   "source": "NHKニュース",
+   "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1VXzhuQk45VXI5TDJjdUNLM3I1SkxNdE4xR0dwS1ZsdjFOb1hzUzRjMmI2Y3VSWk45Y2VoMEswSjhLd0pSOHM3aHJIbGRpWVNVNzBvR2NEdDZKRHBWN1ZJ?oc=5",
+   "published": "2026-07-15T16:00:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "北九州市補助金に採択：タイにおける太陽光パネルのリユース・リサイクル事業化可能性調査を開始",
+   "source": "PR TIMES",
+   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBVZ1Q2NnJ4NUFaRDNDdk1XNFFCeUJKREtGYkhkUjdvMExVOE5MdzJGYUpaQUtYWElkZU5pd1FCa1NjeTNxWFlHNUlhOEgzRVpyNTdPdFlJZDZ5dFlNUTAxN0VJeVdsVFpkZWc?oc=5",
+   "published": "2026-07-15T16:00:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "米国GreenTek Solutionsへ出資、IT機器リユース・リサイクル事業に参入 | 住友商事",
+   "source": "sumitomocorp.com",
+   "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE8zbk1panVHUks4UkR2TE92a1pVRTlEQ1R4a29oM0YyMTdrSi0zMXNLZk0zYVl2dlQwWVdqdWZoOTNONUVvOWl6SV9JQmVZakdMVG11dTJaMkRjYnFxc05PMG1hMElUbkFzdW10bktaUjF1UWJu?oc=5",
+   "published": "2026-07-14T16:00:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "伊藤忠とダイキン、業務用空調の水平リサイクルで連携：リサイクルニュース",
+   "source": "MONOist",
+   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5zaVN4U2tvbUdxMVp4eHBjZC13Mm40WDUwMDVkSGRLOE1ZMTZiRk1TUkVNejNOM184YVhGMEljWWxUN25KRmh0eWFWYVVpWmtGN3VHb3VPby1BMlpkYlVvd29GbzZBUkN0UFY4NEd3dw?oc=5",
+   "published": "2026-07-13T16:00:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "ニュースワード「フロン排出抑制法」（時事通信）",
+   "source": "Yahoo!ニュース",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE95Y3hoZUp3cFFHUENwMmRmSW9SZGcyMUVHMUkxNVo3Y3U5aURBdUhZbG5ndjlKQzJ5d2pYb3VETnpyUFZCSXVXT0Z3OGV1TC0zUDlGbTBkQkc0QTNPTXU0eC1XWkhsUTh1eXlLU0J0UmF4bmxHOGRQdXpZdEVOOFU?oc=5",
+   "published": "2026-07-12T16:00:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "伊藤忠商事とダイキン、水平リサイクルに向け提携。業務用空調機から銅・アルミなど（鉄鋼新聞）",
+   "source": "Yahoo!ニュース",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE44RmctMWVhTGJ1eXF2eHlBRkw0QURlYmIwYndVelhFSE9kMDMwSjZGWnotdGdwdzFmdnRxeUFPRDJvV3RTdElLZTRfSlotWlZJcWJkMGMtcmZsLXBLdVdQNUR4d2NwN0Y5MEZHY0VNOEQyUFloV3JkbEswSW8wUlk?oc=5",
+   "published": "2026-07-10T16:00:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "【ダイキン】伊藤忠商事と業務用空調機の水平リサイクル事業で包括的業務提携を締結",
+   "source": "北海道新聞デジタル",
+   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE55WGFJVm1KcHgwODI3OHBBd1pzNkU1MTYwdERidm8wNFZrNUhqMlZ3TEhjQXBNNTlpT2ppQ09Xal9FV1dCWGFlaTl5N05LcmY5b1ZUTktOTFN2Zw?oc=5",
+   "published": "2026-07-09T16:00:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "ダイキン工業株式会社と業務用空調機の水平リサイクル事業で包括的業務提携を締結",
+   "source": "PR TIMES",
+   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBrNXpDdDZxYWlWVHlpeGd4WUpDXzdCeG9XY2Zza2wxLXNpYUFUd29WaDBYckU0MjhoMXlYZS1rV3FCcWV4MDFYTUZSYS1TQkRjbGtRdExZNngyRm11NXNrMmJkXzNFNFVBMHc?oc=5",
+   "published": "2026-07-09T16:00:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "「銅価格高騰」で金属盗グループの“ビジネスチャンス”到来 総額1億円の被害も…「太陽光発電設備」が狙われるワケ",
+   "source": "Yahoo!ニュース",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE50TWpvVGx3T1lkZjF1bU5JQWxBcGktVDhDMW5HdENXVk15Y2c4X1pLZVVibnFFaVdrMXIwYUVxakM1Z0loem5IbHBzSXJ1QjQ5N1pSNm1ockRwYU00OGNMYW5CN0x1SUEtN051YWpDWXlTcktIZkJwZGVqa1hzeVE?oc=5",
+   "published": "2026-07-08T16:00:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "不法就労助長ヤード 厳正対処へ改正廃棄物処理法が公布 | お知らせ | ニュース",
+   "source": "jimin.jp",
+   "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9MOGR1a01LY0ExNE9QRWNiSFlqZ25uWEt6S2pQLUw3LWR0WmRCR1RUQllQLS1OUjFjcVU1bENzX05na0YzMTlVd0YtZm1GYXUtbkZCUmVNMEY0bDJQVnc?oc=5",
+   "published": "2026-07-06T16:00:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "コロナ特需のフロン使用製品、大量廃棄時代へ？ 自治体自ら戸別回収 [愛知県]",
+   "source": "朝日新聞",
+   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFAxd1c2Vk9maEhtOHItRlJVXy13VGlrYndKZlVTTDN2X21HSGNDbTBFMHRyUUFJTVJoZGhnRkNuSDA3WW5GX0treTdRZk1YTU5IanFuYzhxMkNoQTFjc2V0YmFYbDRzbHM?oc=5",
+   "published": "2026-07-04T16:00:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "金属盗対策法の施行以降も…銅線ケーブル盗難多発 掛川・菊川の太陽光発電所や防霜ファン",
+   "source": "静岡新聞DIGITAL",
+   "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE8xUk5YczdaNjFDeWZwTlRrZ0NhaHRfR3lBUlZ4N1VGWWdWYUljZzVLaHctWkd4YW9DMC1yZkotSzRiN0NIUEFKemtLTndMZw?oc=5",
+   "published": "2026-07-03T16:00:00+09:00"
+  },
+  {
+   "cat": "gen",
+   "label": "業界",
+   "title": "太陽光発電所のケーブル狙う窃盗未遂 28歳男を逮捕 高騰する「銅」の転売目的か、県内で被害が相次ぎ警察が関連捜査 富山",
+   "source": "TBS NEWS DIG",
+   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBBMkVNSThOOVVLWkhLYXA5c2lYQU1kd3F1aU5iU0o3d1hLMXpaMGZBa3QtZjN0R1lkT3M0NW1uUXJlN2JWMENXemJJTEwyc1hBX3lwRUpnZHBkZw?oc=5",
+   "published": "2026-06-30T16:00:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "金属・自動車盗減少へ ヤード対策を強化中",
+   "source": "LuckyFM茨城放送",
+   "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9mRGFUcm9uQjdlTzRVcXdFZWNseTViY1FlUFVLVzVZdjFTdVg4dXAxdHhkd19fUWRqazFfS1ViOWo2UlJYR0s0cmpWcl9kNFNPS2VKS3Zn?oc=5",
+   "published": "2026-06-30T16:00:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "三菱重工、 「加水分解前処理メタンガス化システム」が廃棄物処理技術検証第10号を取得",
+   "source": "kankyo-news.co.jp",
+   "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE80c244Nm01UHFQWHRkcUhjSFNLMENMc2tkWTYwS0U5aUdWR195Nk1zbHExcjJINjRHRTJ6T28ycmgyV1I5azkxS25fTkNJZFc3NWIyd3dzbmxNLS0zTmxUQ2pfZldtZVhPVGZ2OW43bFNqNV9ndDliT2FrOA?oc=5",
+   "published": "2026-06-30T07:34:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "家庭用エアコンのフロン回収を強化へ 27年の国会で法改正みこむ",
+   "source": "朝日新聞",
+   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9qbU5aQTFIeFZFeEk3dW5uczZJakdXeC0wSTVCNWFhQ2lXRmpMTmdtemFJa2hZU25xZFFrUnZ3QUhNamFYck9oQ0V4ZWNKc3l0YVlFbUJEdGRxSEZzald0ZFdNaFktb0E?oc=5",
+   "published": "2026-06-26T16:00:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "家庭用エアコン、フロン回収を幅広く義務付けへ 経産・環境省",
+   "source": "日本経済新聞",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE12VHI3TC1rdUJBOWZZbTlXY25pc0lUN0xralFaVUJNazYxU1FGRElyaW54bmU3VXVkYXFKa1c5VE9kRjZMSjczM1pxRGdLUG03Y3NRYlZlUEFqRUlVZEpPN0RVcFF3TkZQZEgxcg?oc=5",
+   "published": "2026-06-26T16:00:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "フロン回収を強化へ 家庭用エアコンも規制対象に 環境省",
+   "source": "毎日新聞",
+   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBTTFBvWGVoMzNFVFpoXzBuS2JUMXdrbUc0bTdoc2JiaF9abmhiOW1tcGozUHh2OXM1UGJPZXV6TTUwS0htdVFld0hKZXp5VHFjeHlsQUhVRHFPZEdUeS1nUWFGNXZVM0Q3?oc=5",
+   "published": "2026-06-26T16:00:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "家庭用エアコンも罰則対象に＝フロンの漏えい防止で―環境・経産省",
+   "source": "portal.ijamp.jiji.com",
+   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9QR1JsellKdHFaeVpRZ3l6SS16THlqOHVqRzd1dGZvTzY1SUpWa3VLVUlLbDR4SmdRbXNjODZZOWlVR09mYmY5UWtZYlA1cWQzVVR3Wm4tbWpZNFVhRURvMkQwMVkwWEtzdnpQdUtGYw?oc=5",
+   "published": "2026-06-26T16:00:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "「令和７年度 広域自治体における資源循環システム構築の実証事業」を完了",
+   "source": "朝日新聞",
+   "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBJTW5MNkYyWG5IcVB1OFVnY2Fxc2M5X0FKMkN3eEd2RUVJQmgzLXdpVUNqMzQ5YVh6VFFPNFFlYU1EZlBvd1pCNF9sQl9IOTN2cDVoZWFlVUpydTg?oc=5",
+   "published": "2026-06-25T16:00:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "プラスチック資源循環法（プラ新法）とは？企業の義務と具体的な対策を解説",
+   "source": "ブライトイノベーション",
+   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBrVXp2cHl3RTEyWlFzUVRmQ1hzZkxXQ0xmUjlTWXZSSXJ2aWVEU0FjYjBmWFBPZWVnUWtvaHY2NzlZNlM4OHY1SnVWRkc2bF9nclFpUGtkSlM4dw?oc=5",
+   "published": "2026-06-23T16:00:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "産業廃棄物収集運搬業許可申請の手引き・各種様式について",
+   "source": "福島県ホームページ",
+   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFA3R3dmUzJiMVlZaUVneGNza2NMTWlVNEJxdlA0c2tnYlRXN2szeXd6NTExdFR4MWhzUFFJc2FFVHdmc1BmNTJGOEU3dmt0Ri0tWmh6WlRqZ3B0Z0RlbmxrMERYQ09jMnIydGVCT1B1WmdNMF9fb0NzUw?oc=5",
+   "published": "2026-06-22T16:00:00+09:00"
   }
  ]
 }

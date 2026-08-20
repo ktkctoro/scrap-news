@@ -61,6 +61,17 @@
   article a:active{opacity:.6}
   .meta{font-size:11.5px;color:var(--ink-3)}
   .msg{padding:28px 16px;font-size:13px;color:var(--ink-3);text-align:center;line-height:1.7}
+
+  .ask{padding:14px 16px;border-top:1px solid var(--line)}
+  .ask form{display:flex;gap:8px}
+  .ask input{flex:1;min-width:0;padding:9px 12px;border:1px solid var(--line);border-radius:10px;
+    font-family:inherit;font-size:14px;background:var(--paper);color:var(--ink)}
+  .ask input:focus-visible{outline:2px solid var(--mkt);outline-offset:1px}
+  .ask button[type="submit"]{padding:9px 14px;border:none;border-radius:10px;background:var(--ink);
+    color:#fff;font-family:inherit;font-size:14px;cursor:pointer}
+  .hints{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+  .hint{font-size:12px;padding:5px 10px;border:1px solid var(--line);background:transparent;
+    border-radius:999px;color:var(--ink-2);cursor:pointer;font-family:inherit}
   .disclaimer{max-width:400px;margin:12px auto 0;font-size:11.5px;color:var(--ink-3);line-height:1.6;text-align:center}
 </style>
 </head>
@@ -79,6 +90,19 @@
     <button class="chip" data-f="dc" aria-pressed="false">AI・DC</button>
   </div>
   <div id="feed"><div class="msg">読み込んでいます…</div></div>
+  <div class="ask">
+    <div class="eyebrow">AIに聞く（GoogleのAIモードが開きます）</div>
+    <form id="askform">
+      <input id="askbox" type="search" placeholder="例: アルミの直近の相場は？" aria-label="AIへの質問">
+      <button type="submit">聞く</button>
+    </form>
+    <div class="hints">
+      <button type="button" class="hint" data-q="アルミ二次地金の直近の相場は？">アルミ相場</button>
+      <button type="button" class="hint" data-q="銅建値の今後の見通しは？">銅の見通し</button>
+      <button type="button" class="hint" data-q="鉄スクラップ相場の直近の動きは？">鉄の動き</button>
+      <button type="button" class="hint" data-q="金属盗対策法で金属くず買取業者に必要な対応は？">金属盗対策法</button>
+    </div>
+  </div>
 </div>
 <p class="disclaimer" id="foot"></p>
 
@@ -131,7 +155,7 @@ function renderPrices(){
   if (fx && fx.usdjpy) rows.push({ name: 'ドル円', value: fx.usdjpy.toFixed(2), unit: '', diff: '', fx: true });
 
   if (rows.length){
-    html += '<section><div class="eyebrow">貴金属・為替</div>';
+    html += '<section><div class="eyebrow">貴金属・市況</div>';
     rows.forEach(function(r){
       html += '<div class="row"><span class="k">' + esc(r.name) + '</span><span>' +
         '<span class="v num">' + esc(r.value) + '</span>' +
@@ -156,6 +180,18 @@ function renderFeed(){
   }).join('');
 }
 
+function askAI(q){
+  if (!q) return;
+  window.open('https://www.google.com/search?udm=50&q=' + encodeURIComponent(q), '_blank', 'noopener');
+}
+document.getElementById('askform').addEventListener('submit', function(e){
+  e.preventDefault();
+  askAI(document.getElementById('askbox').value.trim());
+});
+document.querySelectorAll('.hint').forEach(function(b){
+  b.addEventListener('click', function(){ askAI(b.dataset.q); });
+});
+
 document.querySelectorAll('.chip').forEach(function(c){
   c.addEventListener('click', function(){
     document.querySelectorAll('.chip').forEach(function(x){ x.setAttribute('aria-pressed', String(x === c)); });
@@ -171,7 +207,7 @@ fetch('./data.json?t=' + Date.now())
     document.getElementById('updated').textContent = d.updated || '';
     renderPrices();
     renderFeed();
-    document.getElementById('foot').textContent = '銅建値はJX金属、鉄は東京製鐵、金・銀は田中貴金属の公表値。アルミとLMEは手入力です。';
+    document.getElementById('foot').textContent = '銅建値はJX金属、鉄は東京製鐵、金・銀は田中貴金属の公表値。ほかは市場データです。';
   })
   .catch(function(){
     document.getElementById('feed').innerHTML =
