@@ -156,6 +156,17 @@ TANAKA_URL = "https://gold.tanaka.co.jp/commodity/souba/"
 TOKYO_STEEL_URL = "https://www.tokyosteel.co.jp/scrapprice/"
 BTC_URL = ("https://api.coingecko.com/api/v3/simple/price"
            "?ids=bitcoin&vs_currencies=jpy&include_24hr_change=true")
+# 基板の買取価格（K&Yシステムの公開価格表）
+KYS_URL = "https://www.k-y-system.jp/trader/list/"
+# 載せる品目。ページ上の表記そのまま（全角・半角も同じに）で書くこと。
+KYS_ITEMS = [
+    "メモリー",
+    "ＣＰＵグリーン（下）",
+    "電源基板(鉄なし)",
+    "Ｃクラス基板",
+    "Ｄクラス基板",
+    "マザーボード（Ｃ）",
+]
 # 株価指数はYahoo!ファイナンス（米国版）の公開データから。^N225=日経平均, ^DJI=NYダウ
 YAHOO_URL = "https://query1.finance.yahoo.com/v8/finance/chart/{sym}?range=5d&interval=1d"
 
@@ -521,6 +532,65 @@ def fetch_index(sym, label):
         return None
 
 
+def parse_kys(html):
+    """K&Yの価格表ページから、KYS_ITEMS の品名の買取価格と改定日を取り出す。"""
+    pairs = dict(re.findall(
+        r'<p>([^<]{1,40})</p>\s*<div class="catPrice">買取価格<span class="num">([^<]+)</span>',
+        html,
+    ))
+    asof = ""
+    m = re.search(r"最終更新日&nbsp;\s*\d{4}年(\d{1,2})月(\d{1,2})日", html)
+    if m:
+        asof = f"{int(m.group(1))}/{int(m.group(2))}"
+
+    rows = []
+    for name in KYS_ITEMS:
+        raw = pairs.get(name)
+        if raw is None:
+            print(f"  ! 基板: 「{name}」がページに見つかりません", file=sys.stderr)
+            continue
+        m2 = re.search(r"([\d,]+)\s*円", raw)
+        if not m2:
+            print(f"  ! 基板: 「{name}」の価格が読めません: {raw}", file=sys.stderr)
+            continue
+        price = int(m2.group(1).replace(",", ""))
+        if not (10 <= price <= 200_000):
+            raise ValueError(f"基板らしくない数字です: {name} {raw}")
+        rows.append({"name": name, "value": f"{price:,}", "unit": "円/kg"})
+    return {"asof": asof, "rows": rows} if rows else None
+
+
+def fetch_kys():
+    try:
+        html = fetch(KYS_URL).decode("utf-8", errors="replace")
+        got = parse_kys(html)
+        if got is None:
+            raise ValueError("ページの中に品目が見つかりません")
+        return got
+    except Exception as e:
+        print(f"  ! 基板買取の取得失敗: {e}", file=sys.stderr)
+        return None
+
+
+def build_boards(prev):
+    """基板買取（K&Y）の段を作る。前回の値と比べて前回比も付ける。"""
+    got = fetch_kys()
+    if got is None:
+        if prev:
+            print("  ! 基板買取は前回の値を使い回します", file=sys.stderr)
+        return prev or None
+
+    prev_rows = {r["name"]: r for r in (prev or {}).get("rows", [])}
+    for r in got["rows"]:
+        diff = ""
+        old = prev_rows.get(r["name"])
+        if old:
+            d = int(r["value"].replace(",", "")) - int(old["value"].replace(",", ""))
+            diff = f"{d:+,}" if d else "0"
+        r["diff"] = diff
+    return got
+
+
 def load_previous(dest):
     """前回の data.json。取得に失敗した朝は前回の値を使い回すために読む。"""
     try:
@@ -639,6 +709,8 @@ def main():
     fx = collect_fx()
     print("建値と金・銀をあつめています…")
     prices = build_prices(load_manual(), prev.get("manual") or {})
+    print("基板の買取価格をあつめています…")
+    boards = build_boards(prev.get("boards"))
 
     out = {
         "updated": _now_label(),
@@ -648,6 +720,8 @@ def main():
         "manual": prices,
         "items": items,
     }
+    if boards:
+        out["boards"] = boards
     with open(dest, "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, indent=1)
     print(f"\n完了: {len(items)} 件を {dest} に書き出しました。")

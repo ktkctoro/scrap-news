@@ -155,19 +155,29 @@ function renderPrices(){
     html += '</div></section>';
   }
 
+  function rowHtml(r){
+    return '<div class="row"><span class="k">' + esc(r.name) + '</span><span>' +
+      '<span class="v num">' + esc(r.value) + '</span>' +
+      (r.unit ? '<span class="u">' + esc(r.unit) + '</span>' : '') +
+      (r.diff ? '<span class="d num ' + diffClass(r.diff) + '">' + esc(r.diff) + '</span>' : '') +
+      (r.fx ? '<span class="note">' + esc(DATA.fx.date || '') + '</span>' : '') +
+      '</span></div>';
+  }
+
   var rows = (m.rows || []).slice();
   if (fx && fx.usdjpy) rows.push({ name: 'ドル円', value: fx.usdjpy.toFixed(2), unit: '', diff: '', fx: true });
 
   if (rows.length){
     html += '<section><div class="eyebrow">貴金属・市況</div>';
-    rows.forEach(function(r){
-      html += '<div class="row"><span class="k">' + esc(r.name) + '</span><span>' +
-        '<span class="v num">' + esc(r.value) + '</span>' +
-        (r.unit ? '<span class="u">' + esc(r.unit) + '</span>' : '') +
-        (r.diff ? '<span class="d num ' + diffClass(r.diff) + '">' + esc(r.diff) + '</span>' : '') +
-        (r.fx ? '<span class="note">' + esc(DATA.fx.date || '') + '</span>' : '') +
-        '</span></div>';
-    });
+    rows.forEach(function(r){ html += rowHtml(r); });
+    html += '</section>';
+  }
+
+  var b = DATA && DATA.boards;
+  if (b && b.rows && b.rows.length){
+    html += '<section><div class="eyebrow">基板買取（K&amp;Y' +
+      (b.asof ? '・' + esc(b.asof) + '改定' : '') + '）</div>';
+    b.rows.forEach(function(r){ html += rowHtml(r); });
     html += '</section>';
   }
   document.getElementById('prices').innerHTML = html;
@@ -221,7 +231,7 @@ fetch('./data.json?t=' + Date.now())
     renderBrief();
     renderPrices();
     renderFeed();
-    document.getElementById('foot').textContent = '銅建値はJX金属、鉄は東京製鐵、金・銀は田中貴金属の公表値。ほかは市場データです。';
+    document.getElementById('foot').textContent = '銅建値はJX金属、鉄は東京製鐵、金・銀は田中貴金属、基板はK&Yシステムの公表値。ほかは市場データです。';
   })
   .catch(function(){
     document.getElementById('feed').innerHTML =

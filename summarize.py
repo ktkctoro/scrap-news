@@ -38,6 +38,13 @@ def build_prompt(data):
     if fx:
         lines.append(f"ドル円 {fx['usdjpy']}円")
 
+    boards = data.get("boards") or {}
+    if boards.get("rows"):
+        lines.append("")
+        lines.append("【基板の買取価格（K&Y）】")
+        for r in boards["rows"]:
+            lines.append(f"{r['name']} {r['value']}{r['unit']}（前回比 {r.get('diff') or '±0'}）")
+
     lines.append("")
     lines.append("【記事の見出し】")
     for i in (data.get("items") or [])[:40]:
