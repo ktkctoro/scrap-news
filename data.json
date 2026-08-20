@@ -1,5 +1,5 @@
 {
- "updated": "8/20 14:36",
+ "updated": "8/20 15:18",
  "fx": {
   "usdjpy": 159.09,
   "date": "2026-08-19"
@@ -34,15 +34,15 @@
    },
    {
     "name": "ビットコイン",
-    "value": "11,034,558",
+    "value": "10,991,259",
     "unit": "円",
-    "diff": "+7.8%"
+    "diff": "+7.5%"
    },
    {
     "name": "日経平均",
-    "value": "66,157",
+    "value": "66,124",
     "unit": "円",
-    "diff": "-2,557"
+    "diff": "-2,589"
    },
    {
     "name": "NYダウ",
@@ -113,7 +113,7 @@
    "cat": "gen",
    "label": "業界",
    "title": "｢私のものではない｣ 車にケーブル切る器具を隠し持っていた疑い カンボジア国籍の男を逮捕 太陽光発電施設などで盗難相次ぐ 愛知で初摘発",
-   "source": "ｄメニューニュース",
+   "source": "topics.smt.docomo.ne.jp",
    "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1veHlQMzd4Y0M3d2dQaGNaNmktdlJLWHZJZUFiaktwVmt6aHhmN1Uwdk5Gb0RLckpKRmlrLVBsajNua1l0MEN5RUsyWEQtWjQ2QlZ0dDJla0xkdVZaMmQ5TkpFUmFkOXZMemxPaGw4bUs2S0ZROUU4QmxB0gF6QVVfeXFMTW94eVAzN3hjQzd3Z1BoY1o2aS12UktYdkllQWJqS3BWa3poeGY3VTB2TkZvREtySkpGaWstUGxqM25rWXQwQ3lFSzJYRC1aNDZCVnR0MmVrTGR1VloyZDlOSkVSYWQ5dkx6bE9obDhtSzZLRlE5RThCbEE?oc=5",
    "published": "2026-08-19T18:36:00+09:00"
   },
@@ -225,7 +225,7 @@
    "cat": "mkt",
    "label": "相場",
    "title": "銅価格の高騰を背景に黄銅代替材の快削ステンレス鋼を拡販：材料技術",
-   "source": "MONOist",
+   "source": "monoist.itmedia.co.jp",
    "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1uejhtQVlfUDdNeXpxUGdiYjRkOGhkZE5SNUJ4MlVnMzlLZGg1d0dZR01PYm9JZlNkRHpFNHBwa1pVVzV2UmxSX3JHRWFhZkRpTXV1VU1rN0lobEo5YUFkdXVvWGVqZDhHLTRHT0FjYw?oc=5",
    "published": "2026-08-14T11:00:00+09:00"
   },
@@ -382,6 +382,14 @@
    "published": "2026-07-22T16:00:00+09:00"
   },
   {
+   "cat": "law",
+   "label": "法規制",
+   "title": "応援受け入れマニュアル作成 災害廃棄物処理で倉敷市 西日本豪雨教訓に",
+   "source": "山陽新聞",
+   "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5HQklyTlpmb1k3a1BFVUNCbXFoY0NEUzJLMl9pS1RzcTFBUlhGamFSYlhROUg0T3JpTFJob29fSGhUS2VoVjBGcXVSQmpiY2RVSnc?oc=5",
+   "published": "2026-07-18T16:00:00+09:00"
+  },
+  {
    "cat": "gen",
    "label": "業界",
    "title": "銅価格高騰で太陽光パネルが標的に 三重県内でケーブル盗難急増、5月末時点で被害100件超え",
@@ -417,7 +425,7 @@
    "cat": "law",
    "label": "法規制",
    "title": "伊藤忠とダイキン、業務用空調の水平リサイクルで連携：リサイクルニュース",
-   "source": "MONOist",
+   "source": "monoist.itmedia.co.jp",
    "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5zaVN4U2tvbUdxMVp4eHBjZC13Mm40WDUwMDVkSGRLOE1ZMTZiRk1TUkVNejNOM184YVhGMEljWWxUN25KRmh0eWFWYVVpWmtGN3VHb3VPby1BMlpkYlVvd29GbzZBUkN0UFY4NEd3dw?oc=5",
    "published": "2026-07-13T16:00:00+09:00"
   },
@@ -571,39 +579,39 @@
   "rows": [
    {
     "name": "メモリー",
-    "value": "9,500",
+    "value": "9,780",
     "unit": "円/kg",
-    "diff": "0"
+    "diff": "+280"
    },
    {
     "name": "ＣＰＵグリーン（下）",
-    "value": "3,400",
+    "value": "3,500",
     "unit": "円/kg",
-    "diff": "0"
+    "diff": "+100"
    },
    {
     "name": "電源基板(鉄なし)",
-    "value": "215",
+    "value": "220",
     "unit": "円/kg",
-    "diff": "0"
+    "diff": "+5"
    },
    {
     "name": "Ｃクラス基板",
-    "value": "1,120",
+    "value": "1,150",
     "unit": "円/kg",
-    "diff": "0"
+    "diff": "+30"
    },
    {
     "name": "Ｄクラス基板",
-    "value": "620",
+    "value": "640",
     "unit": "円/kg",
-    "diff": "0"
+    "diff": "+20"
    },
    {
     "name": "マザーボード（Ｃ）",
-    "value": "850",
+    "value": "870",
     "unit": "円/kg",
-    "diff": "0"
+    "diff": "+20"
    }
   ]
  },
@@ -616,6 +624,7 @@
   ],
   "rows": [
    {
+    "group": "銅",
     "name": "ピカ銅",
     "cells": [
      {
@@ -638,6 +647,7 @@
     "diff": "0"
    },
    {
+    "group": "銅",
     "name": "並銅",
     "cells": [
      {
@@ -655,6 +665,7 @@
     "diff": "0"
    },
    {
+    "group": "銅",
     "name": "込銅",
     "cells": [
      {
@@ -677,6 +688,7 @@
     "diff": "0"
    },
    {
+    "group": "電線",
     "name": "雑線(銅率80%)",
     "cells": [
      {
@@ -694,6 +706,7 @@
     "diff": "0"
    },
    {
+    "group": "電線",
     "name": "雑線(銅率60〜65%)",
     "cells": [
      {
@@ -711,12 +724,18 @@
     "diff": "0"
    },
    {
+    "group": "電線",
     "name": "VA線",
     "cells": [
      {
+      "dealer": "土金",
+      "value": 1010,
+      "best": true
+     },
+     {
       "dealer": "大畑",
       "value": 960,
-      "best": true
+      "best": false
      },
      {
       "dealer": "長澤",
@@ -724,10 +743,11 @@
       "best": false
      }
     ],
-    "spread": 5,
-    "diff": "0"
+    "spread": 55,
+    "diff": "+50"
    },
    {
+    "group": "電線",
     "name": "家電線",
     "cells": [
      {
@@ -745,6 +765,7 @@
     "diff": "0"
    },
    {
+    "group": "電線",
     "name": "エアコンパイプ",
     "cells": [
      {
@@ -767,12 +788,213 @@
     "diff": "0"
    },
    {
-    "name": "給湯器",
+    "group": "真鍮・砲金",
+    "name": "砲金",
+    "cells": [
+     {
+      "dealer": "土金",
+      "value": 2000,
+      "best": true
+     },
+     {
+      "dealer": "大畑",
+      "value": 2000,
+      "best": true
+     },
+     {
+      "dealer": "長澤",
+      "value": 1955,
+      "best": false
+     }
+    ],
+    "spread": 45
+   },
+   {
+    "group": "真鍮・砲金",
+    "name": "込砲金",
+    "cells": [
+     {
+      "dealer": "土金",
+      "value": 1950,
+      "best": true
+     },
+     {
+      "dealer": "大畑",
+      "value": 1890,
+      "best": false
+     },
+     {
+      "dealer": "長澤",
+      "value": 1695,
+      "best": false
+     }
+    ],
+    "spread": 255
+   },
+   {
+    "group": "真鍮・砲金",
+    "name": "真鍮(上)",
+    "cells": [
+     {
+      "dealer": "土金",
+      "value": 1530,
+      "best": true
+     },
+     {
+      "dealer": "大畑",
+      "value": 1450,
+      "best": false
+     }
+    ],
+    "spread": 80
+   },
+   {
+    "group": "真鍮・砲金",
+    "name": "真鍮ダライ粉",
+    "cells": [
+     {
+      "dealer": "土金",
+      "value": 1200,
+      "best": true
+     },
+     {
+      "dealer": "長澤",
+      "value": 1065,
+      "best": false
+     }
+    ],
+    "spread": 135
+   },
+   {
+    "group": "アルミ",
+    "name": "アルミ(上)",
+    "cells": [
+     {
+      "dealer": "長澤",
+      "value": 475,
+      "best": true
+     },
+     {
+      "dealer": "土金",
+      "value": 460,
+      "best": false
+     }
+    ],
+    "spread": 15
+   },
+   {
+    "group": "アルミ",
+    "name": "アルミサッシ",
+    "cells": [
+     {
+      "dealer": "長澤",
+      "value": 410,
+      "best": true
+     },
+     {
+      "dealer": "大畑",
+      "value": 380,
+      "best": false
+     }
+    ],
+    "spread": 30
+   },
+   {
+    "group": "アルミ",
+    "name": "アルミガラ",
+    "cells": [
+     {
+      "dealer": "土金",
+      "value": 350,
+      "best": true
+     },
+     {
+      "dealer": "長澤",
+      "value": 290,
+      "best": false
+     },
+     {
+      "dealer": "大畑",
+      "value": 280,
+      "best": false
+     }
+    ],
+    "spread": 70
+   },
+   {
+    "group": "アルミ",
+    "name": "アルミ缶(プレス)",
+    "cells": [
+     {
+      "dealer": "長澤",
+      "value": 380,
+      "best": true
+     },
+     {
+      "dealer": "土金",
+      "value": 300,
+      "best": false
+     }
+    ],
+    "spread": 80
+   },
+   {
+    "group": "アルミ",
+    "name": "アルミラジエーター",
     "cells": [
      {
       "dealer": "安城貿易",
-      "value": 470,
+      "value": 220,
       "best": true
+     },
+     {
+      "dealer": "長澤",
+      "value": 150,
+      "best": false
+     },
+     {
+      "dealer": "大畑",
+      "value": 80,
+      "best": false
+     },
+     {
+      "dealer": "土金",
+      "value": 70,
+      "best": false
+     }
+    ],
+    "spread": 150
+   },
+   {
+    "group": "アルミ",
+    "name": "アルミホイール",
+    "cells": [
+     {
+      "dealer": "長澤",
+      "value": 495,
+      "best": true
+     },
+     {
+      "dealer": "大畑",
+      "value": 420,
+      "best": false
+     }
+    ],
+    "spread": 75
+   },
+   {
+    "group": "雑品",
+    "name": "給湯器",
+    "cells": [
+     {
+      "dealer": "土金",
+      "value": 480,
+      "best": true
+     },
+     {
+      "dealer": "安城貿易",
+      "value": 470,
+      "best": false
      },
      {
       "dealer": "長澤",
@@ -785,50 +1007,66 @@
       "best": false
      }
     ],
-    "spread": 30,
-    "diff": "0"
+    "spread": 40,
+    "diff": "+10"
    },
    {
-    "name": "モーター",
+    "group": "雑品",
+    "name": "黒モーター",
     "cells": [
      {
-      "dealer": "長澤",
+      "dealer": "安城貿易",
       "value": 165,
       "best": true
      },
      {
-      "dealer": "安城貿易",
-      "value": 165,
-      "best": true
-     }
-    ],
-    "spread": 0,
-    "diff": "0"
-   },
-   {
-    "name": "ガスメーター",
-    "cells": [
-     {
-      "dealer": "安城貿易",
-      "value": 175,
-      "best": true
+      "dealer": "土金",
+      "value": 150,
+      "best": false
      },
      {
-      "dealer": "長澤",
-      "value": 170,
+      "dealer": "大畑",
+      "value": 120,
       "best": false
      }
     ],
-    "spread": 5,
-    "diff": "0"
+    "spread": 45
    },
    {
-    "name": "バッテリー",
+    "group": "雑品",
+    "name": "ガスメーター(アルミ外装)",
     "cells": [
      {
       "dealer": "安城貿易",
-      "value": 115,
+      "value": 200,
       "best": true
+     },
+     {
+      "dealer": "大畑",
+      "value": 100,
+      "best": false
+     }
+    ],
+    "spread": 100
+   },
+   {
+    "group": "雑品",
+    "name": "車バッテリー(鉛)",
+    "cells": [
+     {
+      "dealer": "大畑",
+      "value": 120,
+      "best": true
+     },
+     {
+      "dealer": "安城貿易",
+      "value": 115,
+      "best": false
+     },
+     {
+      "dealer": "土金",
+      "value": 110,
+      "best": false
      },
      {
       "dealer": "長澤",
@@ -836,10 +1074,10 @@
       "best": false
      }
     ],
-    "spread": 25,
-    "diff": "0"
+    "spread": 30
    },
    {
+    "group": "雑品",
     "name": "安定器",
     "cells": [
      {
@@ -857,13 +1095,5 @@
     "diff": "0"
    }
   ]
- },
- "ai": {
-  "lines": [
-   "・銅建値236万円へ6万円安、金は624円高24,961円",
-   "・金属盗対策法で愛知初摘発、ヤード許可制も前進",
-   "・ピカ銅は土金2,360円で他社比110円高、仕入強化を"
-  ],
-  "at": "8/20 14:36"
  }
 }
