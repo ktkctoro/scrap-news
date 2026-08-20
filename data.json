@@ -1,5 +1,5 @@
 {
- "updated": "8/20 14:34",
+ "updated": "8/20 14:36",
  "fx": {
   "usdjpy": 159.09,
   "date": "2026-08-19"
@@ -34,15 +34,15 @@
    },
    {
     "name": "ビットコイン",
-    "value": "11,037,698",
+    "value": "11,034,558",
     "unit": "円",
     "diff": "+7.8%"
    },
    {
     "name": "日経平均",
-    "value": "66,162",
+    "value": "66,157",
     "unit": "円",
-    "diff": "-2,551"
+    "diff": "-2,557"
    },
    {
     "name": "NYダウ",
@@ -53,14 +53,6 @@
   ]
  },
  "items": [
-  {
-   "cat": "law",
-   "label": "法規制",
-   "title": "金属くず買受業を営む皆さまへのお知らせ",
-   "source": "vill.kitanakagusuku.lg.jp",
-   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1LTHBLbC01MmxWZ285Zk1jMzloc3I4TTFMdG5VYXdnVkNnWE5TZmlTR3JQRVVfSXIzOWlUbVF0MXBEQ3c5eFJxOVdHSVpzU2xXd196T09heTdQTUdNa0FDeDkzWkRRR0pGazAyMExZYkJLUUhWQkx4WWV0QTU?oc=5",
-   "published": "2026-08-20T13:11:47+09:00"
-  },
   {
    "cat": "mkt",
    "label": "相場",
@@ -129,7 +121,7 @@
    "cat": "dc",
    "label": "AI・DC",
    "title": "Freeport-McMoRan: 将来のための銅供給の構築",
-   "source": "securities.io",
+   "source": "Securities.io",
    "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5veHBZSDcwbjhRMHowdDl6UUxVWU5CVVJvNFdISkpXdDB1eG1aUUdpem1sVEsxaUZGOU1Cd0dxM0hlNjdWM1dGazM5dDlaZVVZb2ExcmVNSjBTeUxOcVJvUVRjcml1Qk0?oc=5",
    "published": "2026-08-18T20:10:51+09:00"
   },
@@ -214,14 +206,6 @@
    "published": "2026-08-17T15:51:20+09:00"
   },
   {
-   "cat": "dc",
-   "label": "AI・DC",
-   "title": "韓国輸出入銀行が人工知能(AI)など戦略産業の必須素材である銅の安定的確保のために、1兆4000億ウォンを超える大規模な金融支援に乗り出す。17日、輸出入銀行はスイスに本社を置くグローバル総合資源企業..",
-   "source": "매일경제",
-   "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1YV1lwVG9iWXdaaHdPLXZreGJua0VNSERkVWxtT1l5RmNfM2hPdnZlUkVJQnUtbS0tVEJlN1lmVjlhNlo2SHpCUXJ3Z0RBLU9TR2c?oc=5",
-   "published": "2026-08-17T13:55:23+09:00"
-  },
-  {
    "cat": "mkt",
    "label": "相場",
    "title": "京写、銅を回収・販売 プリント基板の製造工程",
@@ -273,7 +257,7 @@
    "cat": "gen",
    "label": "業界",
    "title": "橋下徹氏「かっぱ兄妹」の銅像２体盗難に危機感「そういう世の中ではなくなってきたのかな」",
-   "source": "news.infoseek.co.jp",
+   "source": "Infoseek",
    "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5Tc19rQzVudFNpcER1djFXSTg3emExQmdRQVA0ekdUc0dQY0U4WTNlTjNneXBCellJUzA4ZFJnN0h1aWN6a3VUakpBaFZCMUdKMVRqRVZVTDZaeWF3RGFUVjVpVDh6Sk9KdUhrTFRqU3BiYjTSAXhBVV95cUxOaGE5ZzNVcDNuMEl2dXBjRXpjMVBfWGVQejluVWk5UXlNUWNFcU45WGZMcUZfM3M3clY0Rm5vbFNlTW9SZ25UQkVIcTVVU29MbTNmYzBMQV9VOUF3bGdfb2MwRGxUczlxQ2c3MDYxQ3ZwS2p5NW5lZXo?oc=5",
    "published": "2026-08-12T16:53:35+09:00"
   },
@@ -337,7 +321,7 @@
    "cat": "law",
    "label": "法規制",
    "title": "GX推進法・資源有効利用促進法改正、再生材利用義務化を「競争力」に昇華させる戦略とは 経済産業省・資源循環経済課課長ら登壇の無料ウェビナー開催決定｜Infoseekニュース",
-   "source": "news.infoseek.co.jp",
+   "source": "Infoseek",
    "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5nbmlJOHNmNU9XYlFKS293NWdlWDZISHdHX3FYcTc2blNYM1JxX01KT2VSclk1UktoV2NXcE5PVVRGWURlUXVKRHFrU1kzdGpXM2NGN2FjLVRhWlpqX1FzOW1rUEU1TExZWGI0NmVkRERkQQ?oc=5",
    "published": "2026-08-01T16:00:00+09:00"
   },
@@ -569,7 +553,7 @@
    "cat": "law",
    "label": "法規制",
    "title": "プラスチック資源循環法（プラ新法）とは？企業の義務と具体的な対策を解説",
-   "source": "ブライトイノベーション",
+   "source": "brightinnovation.jp",
    "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBrVXp2cHl3RTEyWlFzUVRmQ1hzZkxXQ0xmUjlTWXZSSXJ2aWVEU0FjYjBmWFBPZWVnUWtvaHY2NzlZNlM4OHY1SnVWRkc2bF9nclFpUGtkSlM4dw?oc=5",
    "published": "2026-06-23T16:00:00+09:00"
   },
@@ -876,10 +860,10 @@
  },
  "ai": {
   "lines": [
-   "・銅建値6万円安の236万円、金は624円高24,961円",
-   "・改正廃掃法でヤード許可制、国交省も土地利用規制強化",
-   "・愛知でケーブルカッター所持初摘発、仕入元の確認を厳格に"
+   "・銅建値236万円へ6万円安、金は624円高24,961円",
+   "・金属盗対策法で愛知初摘発、ヤード許可制も前進",
+   "・ピカ銅は土金2,360円で他社比110円高、仕入強化を"
   ],
-  "at": "8/20 14:34"
+  "at": "8/20 14:36"
  }
 }
