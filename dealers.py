@@ -111,6 +111,11 @@ COMPARE = [
 ]
 
 
+# この分野は、書いた順ではなく「高い品目から順」に並べ替えて出す。
+# 基板は等級と部品が入り混じるので、単価の高い順のほうが探しやすい。
+SORT_BY_PRICE = {"基板"}
+
+
 def _strip(h):
     """scriptとstyleを落とす。"""
     return re.sub(r"<(script|style)[^>]*>.*?</\1>", " ", h, flags=re.S | re.I)
@@ -331,4 +336,18 @@ def build_compare(fetch, prev=None):
                 row["diff"] = f"{d:+,}" if d else "0"
         rows.append(row)
 
-    return {"dealers": list(by_dealer), "rows": rows} if rows else None
+    # 指定した分野だけ、いちばん高い値の順に並べ替える（分野の並び順は変えない）
+    out = []
+    i = 0
+    while i < len(rows):
+        g = rows[i]["group"]
+        j = i
+        while j < len(rows) and rows[j]["group"] == g:
+            j += 1
+        chunk = rows[i:j]
+        if g in SORT_BY_PRICE:
+            chunk.sort(key=lambda r: -max(c["value"] for c in r["cells"]))
+        out.extend(chunk)
+        i = j
+
+    return {"dealers": list(by_dealer), "rows": out} if out else None
