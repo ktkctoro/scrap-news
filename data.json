@@ -1,5 +1,5 @@
 {
- "updated": "8/21 8:04",
+ "updated": "8/21 8:24",
  "fx": {
   "usdjpy": 158.76,
   "date": "2026-08-20"
@@ -34,9 +34,9 @@
    },
    {
     "name": "ビットコイン",
-    "value": "11,550,913",
+    "value": "11,584,438",
     "unit": "円",
-    "diff": "+5.5%"
+    "diff": "+5.7%"
    },
    {
     "name": "日経平均",
@@ -70,14 +70,6 @@
    "published": "2026-08-20T17:38:01+09:00"
   },
   {
-   "cat": "law",
-   "label": "法規制",
-   "title": "金属くず買受業を営む皆さまへのお知らせ",
-   "source": "vill.kitanakagusuku.lg.jp",
-   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1LTHBLbC01MmxWZ285Zk1jMzloc3I4TTFMdG5VYXdnVkNnWE5TZmlTR3JQRVVfSXIzOWlUbVF0MXBEQ3c5eFJxOVdHSVpzU2xXd196T09heTdQTUdNa0FDeDkzWkRRR0pGazAyMExZYkJLUUhWQkx4WWV0QTU?oc=5",
-   "published": "2026-08-20T12:01:21+09:00"
-  },
-  {
    "cat": "mkt",
    "label": "相場",
    "title": "銅建値6万円安 236万円（日刊産業新聞）",
@@ -92,14 +84,6 @@
    "source": "au Webポータル",
    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBZUnFmVEdNb2h6bFhhSVgybU91Z0kyUUdHXzhBbGhveEZONTY2OEhhVmgzbm52T3JYc1BxZVdIUDU3M1ZYODE1STZBbFVLZDRRRi1DeC1xdzdvbGxWbjh5SDlFaXVWRlZtSmJrU1p3?oc=5",
    "published": "2026-08-20T06:35:27+09:00"
-  },
-  {
-   "cat": "gen",
-   "label": "業界",
-   "title": "｢私のものではない｣ 車にケーブル切る器具を隠し持っていた疑い カンボジア国籍の男を逮捕 太陽光発電施設などで盗難相次ぐ 愛知で初摘発",
-   "source": "au Webポータル",
-   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBweUlRbDJqbW5tQWR0ZHE1bzg1aXl0NC1JVl93N2x3ak9mOHIyMWNXakM4aVdnOEN0SlVVbXg4ekhqZFpBU1RKMmh2Z3BubnZFZVEwbDhTRjk3Z18wTlJCOFdQYWxaQk9MRU9xRGF4YmRSbThpc01PZA?oc=5",
-   "published": "2026-08-20T05:12:21+09:00"
   },
   {
    "cat": "dc",
@@ -142,6 +126,14 @@
    "published": "2026-08-19T19:14:00+09:00"
   },
   {
+   "cat": "gen",
+   "label": "業界",
+   "title": "｢私のものではない｣ 車にケーブル切る器具を隠し持っていた疑い カンボジア国籍の男を逮捕 太陽光発電施設などで盗難相次ぐ 愛知で初摘発",
+   "source": "ｄメニューニュース",
+   "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1veHlQMzd4Y0M3d2dQaGNaNmktdlJLWHZJZUFiaktwVmt6aHhmN1Uwdk5Gb0RLckpKRmlrLVBsajNua1l0MEN5RUsyWEQtWjQ2QlZ0dDJla0xkdVZaMmQ5TkpFUmFkOXZMemxPaGw4bUs2S0ZROUU4QmxB0gF6QVVfeXFMTW94eVAzN3hjQzd3Z1BoY1o2aS12UktYdkllQWJqS3BWa3poeGY3VTB2TkZvREtySkpGaWstUGxqM25rWXQwQ3lFSzJYRC1aNDZCVnR0MmVrTGR1VloyZDlOSkVSYWQ5dkx6bE9obDhtSzZLRlE5RThCbEE?oc=5",
+   "published": "2026-08-19T18:36:00+09:00"
+  },
+  {
    "cat": "dc",
    "label": "AI・DC",
    "title": "Freeport-McMoRan: 将来のための銅供給の構築",
@@ -160,10 +152,10 @@
   {
    "cat": "law",
    "label": "法規制",
-   "title": "フクシマガリレイ｜ノンフロン冷媒R1234yf採用ステップ運転機能付解凍庫４枚扉タイプ発売のお知らせ｜Infoseekニュース",
-   "source": "Infoseek",
-   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1OMnBoaWRWYVVXeEVEdGZWSFJ0SEhRRWx3UXhsWUJtSVdhQWdnTjZwSWl1RXE2NDJPS1UwT3VPOFFEUVVmeWZkM3ZCaEMwVk5HU09FN0RFWDZHdFdTTENzel84SFFtdFYyb0pKZmlzTXdKUQ?oc=5",
-   "published": "2026-08-18T10:00:00+09:00"
+   "title": "フクシマガリレイ｜ノンフロン冷媒R1234yf採用ステップ運転機能付解凍庫４枚扉タイプ発売のお知らせ",
+   "source": "PR TIMES",
+   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5ZZ3k5LXA2WW9sZHQ4MFU4dERKVjlVM2dYanZDcVBzTjMtQ3Zhc1hzVkhXOHp1YUZEMkF0Tk9keHpaa1R1MHlITG90UEtjQWxQdWxXUjNHNzNqRW9wamtyU0JWNDFnTE5PeVE?oc=5",
+   "published": "2026-08-18T10:00:02+09:00"
   },
   {
    "cat": "dc",
@@ -244,14 +236,6 @@
    "source": "MONOist",
    "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1uejhtQVlfUDdNeXpxUGdiYjRkOGhkZE5SNUJ4MlVnMzlLZGg1d0dZR01PYm9JZlNkRHpFNHBwa1pVVzV2UmxSX3JHRWFhZkRpTXV1VU1rN0lobEo5YUFkdXVvWGVqZDhHLTRHT0FjYw?oc=5",
    "published": "2026-08-14T11:00:00+09:00"
-  },
-  {
-   "cat": "gen",
-   "label": "業界",
-   "title": "大同特殊鋼の火事 約60時間経っても鎮火せず 火は鉄くずなどの廃材を保管するスペースから… 愛知･東海市の知多工場",
-   "source": "Excite エキサイト",
-   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1BbTVqOU53Vm10dDBBdnFpaXk0QjJMWHFTVXlnVDduVWYxNDY2cE9YM2NIcXZVTm9MSUp3Y2dLRXFrcjNiR2pMbDQ4Q2ZVRFRjcnB1cEVlNEVJbzVFSUhvY041Q1Rsd1k?oc=5",
-   "published": "2026-08-14T08:16:00+09:00"
   },
   {
    "cat": "law",
@@ -403,14 +387,6 @@
    "title": "銅価格高騰で太陽光パネルが標的に 三重県内でケーブル盗難急増、5月末時点で被害100件超え",
    "source": "中日新聞Web",
    "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBlS3gtelU0eW5Za2pBV1hGUnRBR1RObHFCYnFYai1tbDcybTNPbXZzck1tYUlMcWxGQUh1dE96Mm94cGJQWTUwaUhzdkNreWRZTDAycg?oc=5",
-   "published": "2026-07-17T16:00:00+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
-   "title": "家庭用エアコンもフロンの「みだり放出」禁止対象に──フロン排出対策中間取りまとめ",
-   "source": "ITmedia",
-   "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1vcUxlWHNmZ2JLWjUxejF0ZENXMVYyaGQxbHZEWll4TV9XX21obERXSkhNMDZGWVUydkxNeWRBTzNrYk5DTmlJMU5NWVA0SWZYQmZLaGlqZmNZWWNWRGhOMEU1M3B4NnBTTjlsX1ZIOXRKMUk5NUZB?oc=5",
    "published": "2026-07-17T16:00:00+09:00"
   },
   {
@@ -1904,10 +1880,10 @@
  },
  "ai": {
   "lines": [
-   "・銅建値236万円へ6万円安、金は24,950円で613円高",
-   "・改正廃掃法でヤード許可制、環境省が保管基準検討会",
-   "・愛知でケーブルカッター所持初摘発、銅盗難警戒続く"
+   "・銅建値6万円安の236万円、金は613円高24,950円",
+   "・金属盗対策法で愛知初逮捕、ヤードは許可制へ",
+   "・基板類は他社と大差、CPUセラ上は2.5万円差"
   ],
-  "at": "8/21 8:04"
+  "at": "8/21 8:24"
  }
 }
