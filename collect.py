@@ -13,6 +13,7 @@ import sys
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
+import zlib
 from datetime import datetime, timezone, timedelta
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -135,9 +136,14 @@ LABELS = {"mkt": "相場", "law": "法規制", "gen": "業界", "dc": "AI・DC"}
 FEED = "https://news.google.com/rss/search?q={q}&hl=ja&gl=JP&ceid=JP:ja"
 FX_URL = "https://api.frankfurter.app/latest?from=USD&to=JPY"
 
-# 建値と金・銀の公表ページ（どちらも1日1回読むだけ）
+# 建値・金銀・鉄スクラップの公表ページ（どれも1日1回読むだけ）
 JX_CUPRICE_URL = "https://www.jx-nmm.com/cuprice/"
 TANAKA_URL = "https://gold.tanaka.co.jp/commodity/souba/"
+TOKYO_STEEL_URL = "https://www.tokyosteel.co.jp/scrapprice/"
+
+# 東京製鐵の価格表のうち、画面に出す拠点と等級。変えたいときはここ。
+TS_PLANT = "名古屋"   # 価格表の列見出しに含まれる語（名古屋サテライト）
+TS_GRADE = "二級"     # 品名。表では「二　　級」のように空白入りで載っている
 
 
 def fetch(url, timeout=20):
@@ -316,6 +322,150 @@ def fetch_tanaka():
         return None
 
 
+# ---- 東京製鐵の鉄スクラップ購入価格（PDF） ------------------------------
+# 価格はPDFでしか公表されないので、PDFの中の文字を自力で読む。
+# PDFは文字を圧縮した塊(ストリーム)で持っていて、日本語は番号(CID)で
+# 書かれている。番号と文字の対応表(ToUnicode CMap)もPDFの中にあるので、
+# それを使って番号を文字に戻す。追加ライブラリは使わない。
+
+def _pdf_cmap(raw):
+    """PDFの中の「番号→文字」対応表を集める。"""
+    cmap = {}
+    for s in re.findall(rb"stream\r?\n(.*?)endstream", raw, re.S):
+        try:
+            data = zlib.decompress(s)
+        except Exception:
+            continue
+        if b"beginbfchar" not in data and b"beginbfrange" not in data:
+            continue
+        for block in re.findall(rb"beginbfchar(.*?)endbfchar", data, re.S):
+            for src, dst in re.findall(rb"<([0-9A-Fa-f]+)>\s*<([0-9A-Fa-f]+)>", block):
+                cmap[int(src, 16)] = bytes.fromhex(dst.decode()).decode(
+                    "utf-16-be", errors="replace")
+        for block in re.findall(rb"beginbfrange(.*?)endbfrange", data, re.S):
+            for lo, hi, dst in re.findall(
+                rb"<([0-9A-Fa-f]+)>\s*<([0-9A-Fa-f]+)>\s*<([0-9A-Fa-f]+)>", block
+            ):
+                for i in range(int(hi, 16) - int(lo, 16) + 1):
+                    cmap[int(lo, 16) + i] = chr(int(dst, 16) + i)
+    return cmap
+
+
+def _pdf_pages(raw):
+    """PDFの各ページから (縦位置, 横位置, 文字列) の一覧を取り出す。"""
+    cmap = _pdf_cmap(raw)
+
+    def dec_hex(h):
+        return "".join(cmap.get(int(h[i:i + 4], 16), "") for i in range(0, len(h), 4))
+
+    def dec_lit(b):
+        return (b.replace(rb"\(", b"(").replace(rb"\)", b")")
+                 .replace(rb"\\", b"\\").decode("latin-1"))
+
+    pages = []
+    for s in re.findall(rb"stream\r?\n(.*?)endstream", raw, re.S):
+        try:
+            data = zlib.decompress(s)
+        except Exception:
+            continue
+        if b"TJ" not in data and b"Tj" not in data:
+            continue
+        page, x, y = [], 0.0, 0.0
+        for m in re.finditer(
+            rb"1 0 0 1 ([\d.\-]+) ([\d.\-]+) Tm"
+            rb"|\[(.*?)\]\s*TJ|\((.*?)\)\s*Tj|<([0-9A-Fa-f]+)>\s*Tj",
+            data, re.S,
+        ):
+            if m.group(1) is not None:
+                x, y = float(m.group(1)), float(m.group(2))
+                continue
+            parts = []
+            if m.group(3) is not None:
+                for lit, hx in re.findall(rb"\((.*?)\)|<([0-9A-Fa-f]+)>", m.group(3), re.S):
+                    parts.append(dec_lit(lit) if lit else dec_hex(hx.decode()))
+            elif m.group(4) is not None:
+                parts.append(dec_lit(m.group(4)))
+            elif m.group(5) is not None:
+                parts.append(dec_hex(m.group(5).decode()))
+            text = "".join(parts).strip()
+            if text:
+                page.append((y, x, text))
+        if page:
+            pages.append(page)
+    return pages
+
+
+def _ts_cell(page, plant, grade):
+    """価格表ページから、指定の拠点×品名の数字を1つ取り出す。"""
+    # 拠点の列見出しの横位置
+    plant_x = None
+    for _, x, t in page:
+        if plant in t:
+            plant_x = x
+            break
+    if plant_x is None:
+        return None
+    # 品名の行（「二　　級」→「二級」に詰めて比べる）を探し、
+    # その行の数字のうち、列見出しに横位置がいちばん近いものを取る
+    best = None
+    for y, x, t in page:
+        if re.sub(r"\s", "", t) != grade:
+            continue
+        for y2, x2, t2 in page:
+            if abs(y2 - y) < 3 and re.fullmatch(r"-?[\d,]+", t2):
+                d = abs(x2 - plant_x)
+                if d < 45 and (best is None or d < best[0]):
+                    best = (d, t2)
+        break
+    return best[1] if best else None
+
+
+def parse_tokyo_steel(raw, plant=TS_PLANT, grade=TS_GRADE):
+    """東京製鐵の価格表PDFから 値・前回比・適用日 を取り出す。"""
+    price_page = diff_page = None
+    asof = ""
+    for page in _pdf_pages(raw):
+        joined = "".join(t for _, _, t in page)
+        if "購入価格表" in joined:
+            price_page = page
+            m = re.search(r"(\d{1,2})月\s*(\d{1,2})日\s*午前", joined)
+            if m:
+                asof = f"{int(m.group(1))}/{int(m.group(2))}"
+        elif "改定幅" in joined:
+            diff_page = page
+
+    if price_page is None:
+        return None
+    value = _ts_cell(price_page, plant, grade)
+    if value is None:
+        return None
+    if not (10_000 < int(value.replace(",", "")) < 200_000):
+        raise ValueError(f"鉄スクラップらしくない数字です: {value}")
+
+    diff = ""
+    if diff_page is not None:
+        d = _ts_cell(diff_page, plant, grade)
+        if d is not None:
+            diff = "0" if d in ("0", "-0") else (d if d.startswith("-") else "+" + d)
+    return {"value": value, "diff": diff, "asof": asof}
+
+
+def fetch_tokyo_steel():
+    try:
+        listing = fetch(TOKYO_STEEL_URL).decode("utf-8", errors="replace")
+        links = re.findall(r'href="([^"]*scrapprice[^"]*\.pdf)"', listing)
+        if not links:
+            raise ValueError("価格表PDFへのリンクが見つかりません")
+        pdf_url = urllib.parse.urljoin(TOKYO_STEEL_URL, links[0])  # 先頭が最新
+        got = parse_tokyo_steel(fetch(pdf_url))
+        if got is None:
+            raise ValueError("PDFの中に拠点・品名の表が見つかりません")
+        return got
+    except Exception as e:
+        print(f"  ! 鉄スクラップの取得失敗: {e}", file=sys.stderr)
+        return None
+
+
 def load_previous(dest):
     """前回の data.json。取得に失敗した朝は前回の値を使い回すために読む。"""
     try:
@@ -351,6 +501,19 @@ def build_prices(manual, prev):
     elif _pick(prev_tiles, "銅建値"):
         print("  ! 銅建値は前回の値を使い回します", file=sys.stderr)
         tiles.append(_pick(prev_tiles, "銅建値"))
+
+    steel = fetch_tokyo_steel()
+    if steel:
+        name = f"東鉄{TS_PLANT}{TS_GRADE}"
+        if steel["asof"]:
+            name += f"({steel['asof']})"
+        tiles.append({
+            "name": name,
+            "value": steel["value"], "unit": "円/t", "diff": steel["diff"],
+        })
+    elif _pick(prev_tiles, "東鉄"):
+        print("  ! 鉄スクラップは前回の値を使い回します", file=sys.stderr)
+        tiles.append(_pick(prev_tiles, "東鉄"))
 
     metals = fetch_tanaka() or {}
     for metal in ("金", "銀"):

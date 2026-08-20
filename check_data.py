@@ -43,10 +43,10 @@ def main():
     names = [t.get("name", "") for t in prices.get("tiles", [])] \
           + [r.get("name", "") for r in prices.get("rows", [])]
     missing = [label for label, word in
-               (("銅建値", "銅建値"), ("金", "金"), ("銀", "銀"))
+               (("銅建値", "銅建値"), ("鉄スクラップ", "東鉄"), ("金", "金"), ("銀", "銀"))
                if not any(word in n for n in names)]
-    if len(missing) == 3:
-        sys.exit("銅建値・金・銀が全部取れていません。公表ページの作りが変わった可能性があります。")
+    if len(missing) == 4:
+        sys.exit("銅建値・鉄スクラップ・金・銀が全部取れていません。公表ページの作りが変わった可能性があります。")
     for m in missing:
         print(f"注意: {m}が取れていません（ほかは出せるので止めません）")
 

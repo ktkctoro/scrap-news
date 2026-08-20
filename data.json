@@ -1,5 +1,5 @@
 {
- "updated": "8/20 9:40",
+ "updated": "8/20 10:11",
  "fx": {
   "usdjpy": 159.09,
   "date": "2026-08-19"
@@ -13,16 +13,16 @@
     "diff": "-60,000"
    },
    {
+    "name": "東鉄名古屋二級(8/8)",
+    "value": "49,500",
+    "unit": "円/t",
+    "diff": "-500"
+   },
+   {
     "name": "アルミ二次地金",
     "value": "333",
     "unit": "円/kg",
     "diff": "0"
-   },
-   {
-    "name": "鉄スクラップ H2",
-    "value": "48,500",
-    "unit": "円/t",
-    "diff": "-500"
    },
    {
     "name": "LME 銅（3M）",
@@ -82,9 +82,9 @@
   {
    "cat": "law",
    "label": "法規制",
-   "title": "ケーブルカッターを違法に所持疑い カンボジア国籍の男が逮捕 6月施行の金属盗対策法で愛知初の逮捕者",
+   "title": "ケーブルカッターを違法に所持疑い　カンボジア国籍の男が逮捕　6月施行の金属盗対策法で愛知初の逮捕者",
    "source": "nagoyatv.com",
-   "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBGVHQzVVRzY0daTmdNcHNWZGF2OVlUMTdUTjhCWWFpc2FYYkVaWWdaUEpreXpsZTNTZ21ScFFBWDYydDRtYXVNSnVZbXVna3Y5QWc?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBGVHQzVVRzY0daTmdNcHNWZGF2OVlUMTdUTjhCWWFpc2FYYkVaWWdaUEpreXpsZTNTZ21ScFFBWDYydDRtYXVNSnVZbXVna3Y5QWfSAWRBVV95cUxPZ1V2SWpPY1M1M2twUmxCNlJXbHNYT3NvRUFZcl80R3VDeEUtYjZ3OGpzNHgxLTZ4NWFFQXZKMUtaSWxEQU16aERCVTlGeFo3VVI0WDB4RzB0eTJLWk1vZEhzdS1q?oc=5",
    "published": "2026-08-19T19:14:00+09:00"
   },
   {
@@ -94,6 +94,14 @@
    "source": "TBS NEWS DIG",
    "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1kTUtjZUtRVW5pY1JEZkxBd0pmZVF0VnotX2xkVnZvQnlzdWQ4empGbWxvY2ZJeEtPb2R4UWFmamdxalN5UFVad1dubVRvb1B5RWtNNE1IbGNscnFaYlNacnctUQ?oc=5",
    "published": "2026-08-19T18:36:00+09:00"
+  },
+  {
+   "cat": "dc",
+   "label": "AI・DC",
+   "title": "Freeport-McMoRan: 将来のための銅供給の構築",
+   "source": "Securities.io",
+   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5veHBZSDcwbjhRMHowdDl6UUxVWU5CVVJvNFdISkpXdDB1eG1aUUdpem1sVEsxaUZGOU1Cd0dxM0hlNjdWM1dGazM5dDlaZVVZb2ExcmVNSjBTeUxOcVJvUVRjcml1Qk0?oc=5",
+   "published": "2026-08-18T20:10:51+09:00"
   },
   {
    "cat": "dc",
