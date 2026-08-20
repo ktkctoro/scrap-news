@@ -62,6 +62,9 @@
   .meta{font-size:11.5px;color:var(--ink-3)}
   .msg{padding:28px 16px;font-size:13px;color:var(--ink-3);text-align:center;line-height:1.7}
 
+  .brief{padding:14px 16px;border-bottom:1px solid var(--line);background:var(--paper)}
+  .brief .line{font-size:14px;line-height:1.8;color:var(--ink)}
+
   .ask{padding:14px 16px;border-top:1px solid var(--line)}
   .ask form{display:flex;gap:8px}
   .ask input{flex:1;min-width:0;padding:9px 12px;border:1px solid var(--line);border-radius:10px;
@@ -81,6 +84,7 @@
     <h1>スクラップ今日</h1>
     <time class="num" id="updated">—</time>
   </header>
+  <div id="brief"></div>
   <div id="prices"></div>
   <div class="chips" role="group" aria-label="記事の絞り込み">
     <button class="chip" data-f="all" aria-pressed="true">すべて</button>
@@ -200,11 +204,21 @@ document.querySelectorAll('.chip').forEach(function(c){
   });
 });
 
+function renderBrief(){
+  var ai = DATA && DATA.ai;
+  if (!ai || !ai.lines || !ai.lines.length) return;
+  document.getElementById('brief').innerHTML =
+    '<div class="brief"><div class="eyebrow">けさの3行（AIのまとめ）</div>' +
+    ai.lines.map(function(l){ return '<div class="line">' + esc(l) + '</div>'; }).join('') +
+    '</div>';
+}
+
 fetch('./data.json?t=' + Date.now())
   .then(function(r){ if (!r.ok) throw new Error(r.status); return r.json(); })
   .then(function(d){
     DATA = d;
     document.getElementById('updated').textContent = d.updated || '';
+    renderBrief();
     renderPrices();
     renderFeed();
     document.getElementById('foot').textContent = '銅建値はJX金属、鉄は東京製鐵、金・銀は田中貴金属の公表値。ほかは市場データです。';

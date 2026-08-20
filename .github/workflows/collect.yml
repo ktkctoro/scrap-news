@@ -36,6 +36,11 @@ jobs:
       - name: 何件取れたか確かめる
         run: python check_data.py
 
+      - name: AIのまとめを書く（鍵があるときだけ）
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python summarize.py
+
       - name: data.json を記録として残す
         run: |
           git config user.name "github-actions[bot]"
