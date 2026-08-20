@@ -1,5 +1,5 @@
 {
- "updated": "8/20 11:55",
+ "updated": "8/20 11:56",
  "fx": {
   "usdjpy": 159.09,
   "date": "2026-08-19"
@@ -34,9 +34,9 @@
    },
    {
     "name": "ビットコイン",
-    "value": "10,975,909",
+    "value": "10,972,485",
     "unit": "円",
-    "diff": "+7.6%"
+    "diff": "+7.1%"
    },
    {
     "name": "日経平均",
@@ -73,7 +73,7 @@
    "cat": "dc",
    "label": "AI・DC",
    "title": "三井金属、銅箔新拠点で安定供給体制強化",
-   "source": "LOGISTICS TODAY",
+   "source": "logi-today.com",
    "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5BcTktMHBWZmljdXNFRTJYUFlKNHQ4RWp6VnJzVXVjZEhHRnJVMkdnaG9Tb0t0Y3g5VS1NdG90WW01QnpReXU4OQ?oc=5",
    "published": "2026-08-20T04:49:23+09:00"
   },
@@ -81,7 +81,7 @@
    "cat": "gen",
    "label": "業界",
    "title": "“ケーブルカッター”正当な理由なく所持か カンボジア国籍の男逮捕 愛知県で初の逮捕者",
-   "source": "au Webポータル",
+   "source": "article.auone.jp",
    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBZUnFmVEdNb2h6bFhhSVgybU91Z0kyUUdHXzhBbGhveEZONTY2OEhhVmgzbm52T3JYc1BxZVdIUDU3M1ZYODE1STZBbFVLZDRRRi1DeC1xdzdvbGxWbjh5SDlFaXVWRlZtSmJrU1p3?oc=5",
    "published": "2026-08-20T02:35:27+09:00"
   },
@@ -89,7 +89,7 @@
    "cat": "law",
    "label": "法規制",
    "title": "「再エネ設備材の資源循環アップサイクル事業」実装の報告",
-   "source": "news.nicovideo.jp",
+   "source": "ニコニコニュース",
    "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFAzc2I5cXhVdVhqU1RqY09yLWJJTEwwcE5oSng0Y1ZpNXZNa2FWd29pY001MGl2OVkzZjJ3X2RIRTNDRkpSYWJPZF80a1NNak9VRkdobmVmbkt6d29BMnNLb1dabDMzaFZKdlV4SU9FQ2s2a3AtN2c5VmdfNA?oc=5",
    "published": "2026-08-19T21:45:30+09:00"
   },
@@ -102,20 +102,20 @@
    "published": "2026-08-19T19:47:00+09:00"
   },
   {
-   "cat": "gen",
-   "label": "業界",
-   "title": "｢私のものではない｣ 車にケーブル切る器具を隠し持っていた疑い カンボジア国籍の男を逮捕 太陽光発電施設などで盗難相次ぐ 愛知で初摘発",
-   "source": "au Webポータル",
-   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5odm1ueUFrQ2RhZWo0VGpQQTVEdTRhaE9VV190XzVIdE44bXV0N0tlX1p1bnRPNUdCWk91aEF6SlZpb2U2Sk5acXJzZktPUWMzZ2lZZ3hPQmtWV0NTdUJYVmRBaFZ6THQ5X2YzZ0tR?oc=5",
-   "published": "2026-08-19T19:45:21+09:00"
-  },
-  {
    "cat": "law",
    "label": "法規制",
    "title": "ケーブルカッターを違法に所持疑い　カンボジア国籍の男が逮捕　6月施行の金属盗対策法で愛知初の逮捕者",
    "source": "nagoyatv.com",
    "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBGVHQzVVRzY0daTmdNcHNWZGF2OVlUMTdUTjhCWWFpc2FYYkVaWWdaUEpreXpsZTNTZ21ScFFBWDYydDRtYXVNSnVZbXVna3Y5QWfSAWRBVV95cUxPZ1V2SWpPY1M1M2twUmxCNlJXbHNYT3NvRUFZcl80R3VDeEUtYjZ3OGpzNHgxLTZ4NWFFQXZKMUtaSWxEQU16aERCVTlGeFo3VVI0WDB4RzB0eTJLWk1vZEhzdS1q?oc=5",
    "published": "2026-08-19T19:14:00+09:00"
+  },
+  {
+   "cat": "gen",
+   "label": "業界",
+   "title": "｢私のものではない｣ 車にケーブル切る器具を隠し持っていた疑い カンボジア国籍の男を逮捕 太陽光発電施設などで盗難相次ぐ 愛知で初摘発",
+   "source": "ｄメニューニュース",
+   "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1veHlQMzd4Y0M3d2dQaGNaNmktdlJLWHZJZUFiaktwVmt6aHhmN1Uwdk5Gb0RLckpKRmlrLVBsajNua1l0MEN5RUsyWEQtWjQ2QlZ0dDJla0xkdVZaMmQ5TkpFUmFkOXZMemxPaGw4bUs2S0ZROUU4QmxB0gF6QVVfeXFMTW94eVAzN3hjQzd3Z1BoY1o2aS12UktYdkllQWJqS3BWa3poeGY3VTB2TkZvREtySkpGaWstUGxqM25rWXQwQ3lFSzJYRC1aNDZCVnR0MmVrTGR1VloyZDlOSkVSYWQ5dkx6bE9obDhtSzZLRlE5RThCbEE?oc=5",
+   "published": "2026-08-19T18:36:00+09:00"
   },
   {
    "cat": "dc",
@@ -145,7 +145,7 @@
    "cat": "law",
    "label": "法規制",
    "title": "フクシマガリレイ｜ノンフロン冷媒R1234yf採用ステップ運転機能付解凍庫４枚扉タイプ発売のお知らせ｜Infoseekニュース",
-   "source": "Infoseek",
+   "source": "news.infoseek.co.jp",
    "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1OMnBoaWRWYVVXeEVEdGZWSFJ0SEhRRWx3UXhsWUJtSVdhQWdnTjZwSWl1RXE2NDJPS1UwT3VPOFFEUVVmeWZkM3ZCaEMwVk5HU09FN0RFWDZHdFdTTENzel84SFFtdFYyb0pKZmlzTXdKUQ?oc=5",
    "published": "2026-08-18T10:00:00+09:00"
   },
@@ -265,7 +265,7 @@
    "cat": "gen",
    "label": "業界",
    "title": "橋下徹氏「かっぱ兄妹」の銅像２体盗難に危機感「そういう世の中ではなくなってきたのかな」",
-   "source": "Infoseek",
+   "source": "news.infoseek.co.jp",
    "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5Tc19rQzVudFNpcER1djFXSTg3emExQmdRQVA0ekdUc0dQY0U4WTNlTjNneXBCellJUzA4ZFJnN0h1aWN6a3VUakpBaFZCMUdKMVRqRVZVTDZaeWF3RGFUVjVpVDh6Sk9KdUhrTFRqU3BiYjTSAXhBVV95cUxOaGE5ZzNVcDNuMEl2dXBjRXpjMVBfWGVQejluVWk5UXlNUWNFcU45WGZMcUZfM3M3clY0Rm5vbFNlTW9SZ25UQkVIcTVVU29MbTNmYzBMQV9VOUF3bGdfb2MwRGxUczlxQ2c3MDYxQ3ZwS2p5NW5lZXo?oc=5",
    "published": "2026-08-12T16:53:35+09:00"
   },
@@ -281,7 +281,7 @@
    "cat": "law",
    "label": "法規制",
    "title": "スクラップヤードなど「不適切な土地利用」規制強化へ 国交省",
-   "source": "朝日新聞",
+   "source": "asahi.com",
    "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFByLVJ2UHlvX203WjJiRnpHcXkxOG1OWXBQeEhucVd3MDdUcWExc2EyNWdDNW9UZ0JfeXhOOFZKX3RwN1htVU5NYTNtUzBTT3BsRXpqRldYZ3E3TFB5NU82QmIyMXJEanM?oc=5",
    "published": "2026-08-07T16:00:00+09:00"
   },
@@ -313,23 +313,15 @@
    "cat": "law",
    "label": "法規制",
    "title": "【廃掃法改正】これまでの条例から法令で規制強化金属くず等を扱うヤードを許可制に",
-   "source": "kosijnl.co.jp",
+   "source": "古紙ジャーナル",
    "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9BN25kc0Y1Tm9hdTI2WEc4RmxHblBUa2UxdC05bm4zMkJzbWZvVV9EVmJReFJGVUhQc1E5UGZGbXhQbXdGYkhUVkRlZHVPVzMwZEdBTUR3Y3dQdFlrU3h4aw?oc=5",
    "published": "2026-08-03T16:00:00+09:00"
   },
   {
    "cat": "law",
    "label": "法規制",
-   "title": "買取専科 8月に全国4エリアに新店舗を順次オープン決定！(東京都・愛知県・大阪府・広島県）",
-   "source": "愛媛新聞",
-   "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE50S2Q2Q3RwN05XYVZ2Wkp6MzJ4Z3VSRm1iX1FQV2RYT2ZqYlFaaXhnZHRoTVk3aXUyYlYyem9BQmw4YlE0enZKX0tTeXFXVk40VXNkVngwM3oxRnc?oc=5",
-   "published": "2026-08-01T16:00:00+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
    "title": "GX推進法・資源有効利用促進法改正、再生材利用義務化を「競争力」に昇華させる戦略とは 経済産業省・資源循環経済課課長ら登壇の無料ウェビナー開催決定｜Infoseekニュース",
-   "source": "Infoseek",
+   "source": "news.infoseek.co.jp",
    "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5nbmlJOHNmNU9XYlFKS293NWdlWDZISHdHX3FYcTc2blNYM1JxX01KT2VSclk1UktoV2NXcE5PVVRGWURlUXVKRHFrU1kzdGpXM2NGN2FjLVRhWlpqX1FzOW1rUEU1TExZWGI0NmVkRERkQQ?oc=5",
    "published": "2026-08-01T16:00:00+09:00"
   },
@@ -340,14 +332,6 @@
    "source": "Yahoo!ニュース",
    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQUWM4NUp1YWNVV2d6M1YtTnY5cU5TU2JmTDgzNUFCdzFVb3VBUjZkTGVRbUE5OURmLVVWUHM4ZG5PamVURlJIWTZjU2FUYXYyRVNPV2tFWnZWb29KVjVLQXFpY2R2Z1RybDQwS0pIU3dDdHl2MVNMR1pFM1JIak5xMGlKc3lZTkw4azB1TGtR?oc=5",
    "published": "2026-07-30T10:39:00+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
-   "title": "コンタクトレンズのブリスター（空ケース）のケミカルリサイクル実証実験を開始",
-   "source": "ニコニコニュース",
-   "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5IcXg1Rm5PdmdVRXZsX0dtZjQ2QXVGUjV6Si1keE5MaF9mQVFIYU9acEFFV3JpLTlvemtRVDRfS2FhOHBqV2RGRWlmXy01azJKMWZGSg?oc=5",
-   "published": "2026-07-29T16:00:00+09:00"
   },
   {
    "cat": "law",
@@ -489,7 +473,7 @@
    "cat": "law",
    "label": "法規制",
    "title": "コロナ特需のフロン使用製品、大量廃棄時代へ？ 自治体自ら戸別回収 [愛知県]",
-   "source": "朝日新聞",
+   "source": "asahi.com",
    "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFAxd1c2Vk9maEhtOHItRlJVXy13VGlrYndKZlVTTDN2X21HSGNDbTBFMHRyUUFJTVJoZGhnRkNuSDA3WW5GX0treTdRZk1YTU5IanFuYzhxMkNoQTFjc2V0YmFYbDRzbHM?oc=5",
    "published": "2026-07-04T16:00:00+09:00"
   },
@@ -529,7 +513,7 @@
    "cat": "law",
    "label": "法規制",
    "title": "家庭用エアコンのフロン回収を強化へ 27年の国会で法改正みこむ",
-   "source": "朝日新聞",
+   "source": "asahi.com",
    "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9qbU5aQTFIeFZFeEk3dW5uczZJakdXeC0wSTVCNWFhQ2lXRmpMTmdtemFJa2hZU25xZFFrUnZ3QUhNamFYck9oQ0V4ZWNKc3l0YVlFbUJEdGRxSEZzald0ZFdNaFktb0E?oc=5",
    "published": "2026-06-26T16:00:00+09:00"
   },
@@ -545,7 +529,7 @@
    "cat": "law",
    "label": "法規制",
    "title": "フロン回収を強化へ 家庭用エアコンも規制対象に 環境省",
-   "source": "毎日新聞",
+   "source": "mainichi.jp",
    "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBTTFBvWGVoMzNFVFpoXzBuS2JUMXdrbUc0bTdoc2JiaF9abmhiOW1tcGozUHh2OXM1UGJPZXV6TTUwS0htdVFld0hKZXp5VHFjeHlsQUhVRHFPZEdUeS1nUWFGNXZVM0Q3?oc=5",
    "published": "2026-06-26T16:00:00+09:00"
   },
@@ -561,7 +545,7 @@
    "cat": "law",
    "label": "法規制",
    "title": "「令和７年度 広域自治体における資源循環システム構築の実証事業」を完了",
-   "source": "朝日新聞",
+   "source": "asahi.com",
    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBJTW5MNkYyWG5IcVB1OFVnY2Fxc2M5X0FKMkN3eEd2RUVJQmgzLXdpVUNqMzQ5YVh6VFFPNFFlYU1EZlBvd1pCNF9sQl9IOTN2cDVoZWFlVUpydTg?oc=5",
    "published": "2026-06-25T16:00:00+09:00"
   },
@@ -589,38 +573,46 @@
     "name": "メモリー",
     "value": "9,500",
     "unit": "円/kg",
-    "diff": ""
+    "diff": "0"
    },
    {
     "name": "ＣＰＵグリーン（下）",
     "value": "3,400",
     "unit": "円/kg",
-    "diff": ""
+    "diff": "0"
    },
    {
     "name": "電源基板(鉄なし)",
     "value": "215",
     "unit": "円/kg",
-    "diff": ""
+    "diff": "0"
    },
    {
     "name": "Ｃクラス基板",
     "value": "1,120",
     "unit": "円/kg",
-    "diff": ""
+    "diff": "0"
    },
    {
     "name": "Ｄクラス基板",
     "value": "620",
     "unit": "円/kg",
-    "diff": ""
+    "diff": "0"
    },
    {
     "name": "マザーボード（Ｃ）",
     "value": "850",
     "unit": "円/kg",
-    "diff": ""
+    "diff": "0"
    }
   ]
+ },
+ "ai": {
+  "lines": [
+   "・銅建値6万円安の236万円、金は734円高25,071円",
+   "・金属盗対策法で愛知初摘発、ヤード許可制へ規制強化",
+   "・基板買取は全品据え置き、鉄スクラップは下落局面"
+  ],
+  "at": "8/20 11:56"
  }
 }
