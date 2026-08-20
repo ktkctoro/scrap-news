@@ -1,5 +1,5 @@
 {
- "updated": "8/20 9:02",
+ "updated": "8/20 9:05",
  "fx": {
   "usdjpy": 159.09,
   "date": "2026-08-19"
@@ -7,7 +7,7 @@
  "manual": {
   "tiles": [
    {
-    "name": "電気銅建値（8/19改定）",
+    "name": "銅建値（8/19改定）",
     "value": "2,360,000",
     "unit": "円/t",
     "diff": "-60,000"
@@ -72,6 +72,14 @@
    "published": "2026-08-20T01:31:02+09:00"
   },
   {
+   "cat": "mkt",
+   "label": "相場",
+   "title": "貿易摩擦と需要急増により、銅価格は過去最高値を更新した。",
+   "source": "vietnam.vn",
+   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPU3FtU015LUZEVGZNTlJWWlJHaml3Q0tldEZOQlIydkhCRnFvWktwUWZydDlaRVRjWEFiMXJZSGJwbDNNRDJGT3lZcWd2TzVBN05zSlpiLXk0MVNGUVlLemV4dmhHVWFzeklFb0ktOGhnVFIyQW81Z0ZFRXVPWGJkaFBDNXJIbVQ0dFQyWGVWUkY?oc=5",
+   "published": "2026-08-19T21:59:32+09:00"
+  },
+  {
    "cat": "law",
    "label": "法規制",
    "title": "“ケーブルカッター”を正当な理由なく所持か…金属盗対策法違反の疑いで愛知初の逮捕者 カンボジア人の男",
@@ -115,7 +123,7 @@
    "cat": "dc",
    "label": "AI・DC",
    "title": "銅高騰も製錬手数料0ドル収益は金銀硫酸で補う",
-   "source": "Chosunbiz",
+   "source": "biz.chosun.com",
    "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQbUNpNHRWbTBzVHlCN092NUVrOFlMS3BvamI5aGV4MTVzaXFOcUlQQUJRa1A1bXVpS1NpTVotNWpvSUQweHlaMjRJX0Q0anA2LVl4Y2R1Z09nWHJBMnJRamxWLXVZZkU5aFZiNXRKaXpER3Y0QzlhcmZPWWNGeVI0Vmtn?oc=5",
    "published": "2026-08-18T06:02:00+09:00"
   },

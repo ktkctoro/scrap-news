@@ -328,7 +328,7 @@ def build_prices(manual, prev):
     copper = fetch_jx_copper()
     if copper:
         tiles.append({
-            "name": f"電気銅建値（{copper['asof']}改定）",
+            "name": f"銅建値（{copper['asof']}改定）",
             "value": copper["value"], "unit": "円/t", "diff": copper["diff"],
         })
     elif _pick(prev_tiles, "銅建値"):
