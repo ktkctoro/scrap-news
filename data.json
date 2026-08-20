@@ -1,5 +1,5 @@
 {
- "updated": "8/20 14:33",
+ "updated": "8/20 14:34",
  "fx": {
   "usdjpy": 159.09,
   "date": "2026-08-19"
@@ -34,15 +34,15 @@
    },
    {
     "name": "ビットコイン",
-    "value": "11,040,436",
+    "value": "11,037,698",
     "unit": "円",
     "diff": "+7.8%"
    },
    {
     "name": "日経平均",
-    "value": "66,173",
+    "value": "66,162",
     "unit": "円",
-    "diff": "-2,541"
+    "diff": "-2,551"
    },
    {
     "name": "NYダウ",
@@ -152,10 +152,10 @@
   {
    "cat": "law",
    "label": "法規制",
-   "title": "フクシマガリレイ｜ノンフロン冷媒R1234yf採用ステップ運転機能付解凍庫４枚扉タイプ発売のお知らせ｜Infoseekニュース",
-   "source": "Infoseek",
-   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1OMnBoaWRWYVVXeEVEdGZWSFJ0SEhRRWx3UXhsWUJtSVdhQWdnTjZwSWl1RXE2NDJPS1UwT3VPOFFEUVVmeWZkM3ZCaEMwVk5HU09FN0RFWDZHdFdTTENzel84SFFtdFYyb0pKZmlzTXdKUQ?oc=5",
-   "published": "2026-08-18T10:00:00+09:00"
+   "title": "フクシマガリレイ｜ノンフロン冷媒R1234yf採用ステップ運転機能付解凍庫４枚扉タイプ発売のお知らせ",
+   "source": "PR TIMES",
+   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5ZZ3k5LXA2WW9sZHQ4MFU4dERKVjlVM2dYanZDcVBzTjMtQ3Zhc1hzVkhXOHp1YUZEMkF0Tk9keHpaa1R1MHlITG90UEtjQWxQdWxXUjNHNzNqRW9wamtyU0JWNDFnTE5PeVE?oc=5",
+   "published": "2026-08-18T10:00:02+09:00"
   },
   {
    "cat": "dc",
@@ -273,7 +273,7 @@
    "cat": "gen",
    "label": "業界",
    "title": "橋下徹氏「かっぱ兄妹」の銅像２体盗難に危機感「そういう世の中ではなくなってきたのかな」",
-   "source": "Infoseek",
+   "source": "news.infoseek.co.jp",
    "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5Tc19rQzVudFNpcER1djFXSTg3emExQmdRQVA0ekdUc0dQY0U4WTNlTjNneXBCellJUzA4ZFJnN0h1aWN6a3VUakpBaFZCMUdKMVRqRVZVTDZaeWF3RGFUVjVpVDh6Sk9KdUhrTFRqU3BiYjTSAXhBVV95cUxOaGE5ZzNVcDNuMEl2dXBjRXpjMVBfWGVQejluVWk5UXlNUWNFcU45WGZMcUZfM3M3clY0Rm5vbFNlTW9SZ25UQkVIcTVVU29MbTNmYzBMQV9VOUF3bGdfb2MwRGxUczlxQ2c3MDYxQ3ZwS2p5NW5lZXo?oc=5",
    "published": "2026-08-12T16:53:35+09:00"
   },
@@ -328,8 +328,16 @@
   {
    "cat": "law",
    "label": "法規制",
+   "title": "買取専科 8月に全国4エリアに新店舗を順次オープン決定！(東京都・愛知県・大阪府・広島県）",
+   "source": "愛媛新聞",
+   "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE50S2Q2Q3RwN05XYVZ2Wkp6MzJ4Z3VSRm1iX1FQV2RYT2ZqYlFaaXhnZHRoTVk3aXUyYlYyem9BQmw4YlE0enZKX0tTeXFXVk40VXNkVngwM3oxRnc?oc=5",
+   "published": "2026-08-01T16:00:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
    "title": "GX推進法・資源有効利用促進法改正、再生材利用義務化を「競争力」に昇華させる戦略とは 経済産業省・資源循環経済課課長ら登壇の無料ウェビナー開催決定｜Infoseekニュース",
-   "source": "Infoseek",
+   "source": "news.infoseek.co.jp",
    "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5nbmlJOHNmNU9XYlFKS293NWdlWDZISHdHX3FYcTc2blNYM1JxX01KT2VSclk1UktoV2NXcE5PVVRGWURlUXVKRHFrU1kzdGpXM2NGN2FjLVRhWlpqX1FzOW1rUEU1TExZWGI0NmVkRERkQQ?oc=5",
    "published": "2026-08-01T16:00:00+09:00"
   },
@@ -561,7 +569,7 @@
    "cat": "law",
    "label": "法規制",
    "title": "プラスチック資源循環法（プラ新法）とは？企業の義務と具体的な対策を解説",
-   "source": "brightinnovation.jp",
+   "source": "ブライトイノベーション",
    "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBrVXp2cHl3RTEyWlFzUVRmQ1hzZkxXQ0xmUjlTWXZSSXJ2aWVEU0FjYjBmWFBPZWVnUWtvaHY2NzlZNlM4OHY1SnVWRkc2bF9nclFpUGtkSlM4dw?oc=5",
    "published": "2026-06-23T16:00:00+09:00"
   },
@@ -642,7 +650,8 @@
       "best": false
      }
     ],
-    "spread": 110
+    "spread": 110,
+    "diff": "0"
    },
    {
     "name": "並銅",
@@ -658,7 +667,8 @@
       "best": false
      }
     ],
-    "spread": 50
+    "spread": 50,
+    "diff": "0"
    },
    {
     "name": "込銅",
@@ -679,7 +689,8 @@
       "best": false
      }
     ],
-    "spread": 80
+    "spread": 80,
+    "diff": "0"
    },
    {
     "name": "雑線(銅率80%)",
@@ -695,7 +706,8 @@
       "best": false
      }
     ],
-    "spread": 40
+    "spread": 40,
+    "diff": "0"
    },
    {
     "name": "雑線(銅率60〜65%)",
@@ -711,7 +723,8 @@
       "best": false
      }
     ],
-    "spread": 25
+    "spread": 25,
+    "diff": "0"
    },
    {
     "name": "VA線",
@@ -727,7 +740,8 @@
       "best": false
      }
     ],
-    "spread": 5
+    "spread": 5,
+    "diff": "0"
    },
    {
     "name": "家電線",
@@ -743,7 +757,8 @@
       "best": false
      }
     ],
-    "spread": 20
+    "spread": 20,
+    "diff": "0"
    },
    {
     "name": "エアコンパイプ",
@@ -764,7 +779,8 @@
       "best": false
      }
     ],
-    "spread": 130
+    "spread": 130,
+    "diff": "0"
    },
    {
     "name": "給湯器",
@@ -785,7 +801,8 @@
       "best": false
      }
     ],
-    "spread": 30
+    "spread": 30,
+    "diff": "0"
    },
    {
     "name": "モーター",
@@ -801,7 +818,8 @@
       "best": true
      }
     ],
-    "spread": 0
+    "spread": 0,
+    "diff": "0"
    },
    {
     "name": "ガスメーター",
@@ -817,7 +835,8 @@
       "best": false
      }
     ],
-    "spread": 5
+    "spread": 5,
+    "diff": "0"
    },
    {
     "name": "バッテリー",
@@ -833,7 +852,8 @@
       "best": false
      }
     ],
-    "spread": 25
+    "spread": 25,
+    "diff": "0"
    },
    {
     "name": "安定器",
@@ -849,8 +869,17 @@
       "best": false
      }
     ],
-    "spread": 65
+    "spread": 65,
+    "diff": "0"
    }
   ]
+ },
+ "ai": {
+  "lines": [
+   "・銅建値6万円安の236万円、金は624円高24,961円",
+   "・改正廃掃法でヤード許可制、国交省も土地利用規制強化",
+   "・愛知でケーブルカッター所持初摘発、仕入元の確認を厳格に"
+  ],
+  "at": "8/20 14:34"
  }
 }
