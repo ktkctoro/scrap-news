@@ -141,6 +141,7 @@
   <div class="tabs" role="tablist">
     <button class="tab" id="tab-today" role="tab" aria-selected="true" aria-controls="page-today">けさ</button>
     <button class="tab" id="tab-compare" role="tab" aria-selected="false" aria-controls="page-compare">くらべる</button>
+    <button class="tab" id="tab-board" role="tab" aria-selected="false" aria-controls="page-board">基板</button>
   </div>
 
   <div id="page-today" role="tabpanel" aria-labelledby="tab-today">
@@ -174,6 +175,14 @@
     <div class="links">
       <div class="eyebrow">よく見る価格表（新しいタブで開きます）</div>
       <div class="linkrow" id="linkrow"></div>
+    </div>
+  </div>
+
+  <div id="page-board" role="tabpanel" aria-labelledby="tab-board" hidden>
+    <div id="board"></div>
+    <div class="links">
+      <div class="eyebrow">基板の価格表（新しいタブで開きます）</div>
+      <div class="linkrow" id="linkrow-board"></div>
     </div>
   </div>
 </div>
@@ -255,8 +264,26 @@ function renderPrices(){
 function renderCompare(){
   var c = DATA && DATA.compare;
   if (!c || !c.rows || !c.rows.length) return;
-  var html = '<div class="cmp"><div class="eyebrow">同業の買取価格くらべ（' +
-    esc(c.dealers.join('・')) + '）</div>';
+  // 基板は独立したページに出すので、ここで振り分ける
+  var isBoard = function(r){ return (r.group || '').indexOf('基板') === 0; };
+  drawCompare('compare', '同業の買取価格くらべ', c.dealers,
+              c.rows.filter(function(r){ return !isBoard(r); }));
+  drawCompare('board', '基板の買取価格くらべ', c.dealers,
+              c.rows.filter(isBoard));
+}
+
+function drawCompare(hostId, title, dealers, rows){
+  if (!rows.length) return;
+  // その表に実際に出てくる会社だけを見出しに書く
+  var used = [];
+  rows.forEach(function(r){
+    r.cells.forEach(function(x){
+      if (used.indexOf(x.dealer) < 0) used.push(x.dealer);
+    });
+  });
+  var c = { dealers: used, rows: rows };
+  var html = '<div class="cmp"><div class="eyebrow">' + esc(title) + '（' +
+    esc(used.join('・')) + '）</div>';
   // 分野名が「基板／クラス」のように ／ を含むものは、
   // 前半を大見出し、後半を内側のタブとしてまとめる。
   function itemHtml(r){
@@ -290,7 +317,8 @@ function renderCompare(){
 
   var boxId = 0;
   blocks.forEach(function(b){
-    html += '<div class="cgroup">' + esc(b.head) + '</div>';
+    // かたまりが1つだけなら大見出しは省く（基板ページのように内タブだけで足りる場合）
+    if (blocks.length > 1) html += '<div class="cgroup">' + esc(b.head) + '</div>';
     if (b.subs.length === 1 && b.subs[0].name === null){
       b.subs[0].rows.forEach(function(r){ html += itemHtml(r); });
       return;
@@ -311,7 +339,7 @@ function renderCompare(){
   });
 
   html += '</div>';
-  var host = document.getElementById('compare');
+  var host = document.getElementById(hostId);
   host.innerHTML = html;
 
   host.querySelectorAll('.subtab').forEach(function(btn){
@@ -340,12 +368,17 @@ function renderFeed(){
 }
 
 // よく見る価格表。足したいサイトはこの一覧に1行追加するだけ。
-var LINKS = [
+// 基板ページに出すリンク
+var BOARD_LINKS = [
   { group: '基板', sites: [
     { name: '浜屋', url: 'https://hamaya-material.com/product' },
     { name: 'ケイワイ', url: 'https://www.k-y-system.jp/trader/list/' },
-    { name: 'キバセン', url: 'https://kibasen.net/' }
-  ]},
+    { name: 'キバセン', url: 'https://kibasen.net/' },
+    { name: '大畑', url: 'https://www.ohata.org/kakaku.html?tag=kiban' }
+  ]}
+];
+
+var LINKS = [
   { group: 'スクラップ', sites: [
     { name: '安定器', url: 'https://anjyo-t.com/scrap_miscellaneous.html' },
     { name: '土金', url: 'https://www.dokindokin.com/scrap_type/copper/' },
@@ -359,17 +392,22 @@ var LINKS = [
     { name: '田中貴金属（金・銀）', url: 'https://gold.tanaka.co.jp/commodity/souba/' }
   ]}
 ];
-document.getElementById('linkrow').innerHTML = LINKS.map(function(g){
-  return '<div class="linkgroup"><div class="glabel">' + esc(g.group) + '</div>' +
-    '<div class="gsites">' + g.sites.map(function(l){
-      return '<a class="linkchip" href="' + esc(l.url) + '" target="_blank" rel="noopener">' +
-        esc(l.name) + '</a>';
-    }).join('') + '</div></div>';
-}).join('');
+function linksHtml(list){
+  return list.map(function(g){
+    return '<div class="linkgroup"><div class="glabel">' + esc(g.group) + '</div>' +
+      '<div class="gsites">' + g.sites.map(function(l){
+        return '<a class="linkchip" href="' + esc(l.url) + '" target="_blank" rel="noopener">' +
+          esc(l.name) + '</a>';
+      }).join('') + '</div></div>';
+  }).join('');
+}
+document.getElementById('linkrow').innerHTML = linksHtml(LINKS);
+document.getElementById('linkrow-board').innerHTML = linksHtml(BOARD_LINKS);
 
 // 上のタブで「けさ」と「くらべる」を切り替える
 (function(){
-  var pages = { 'tab-today': 'page-today', 'tab-compare': 'page-compare' };
+  var pages = { 'tab-today': 'page-today', 'tab-compare': 'page-compare',
+                'tab-board': 'page-board' };
   Object.keys(pages).forEach(function(id){
     document.getElementById(id).addEventListener('click', function(){
       Object.keys(pages).forEach(function(other){
