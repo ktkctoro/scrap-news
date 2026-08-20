@@ -1,5 +1,5 @@
 {
- "updated": "8/20 10:39",
+ "updated": "8/20 10:47",
  "fx": {
   "usdjpy": 159.09,
   "date": "2026-08-19"
@@ -34,15 +34,15 @@
    },
    {
     "name": "ビットコイン",
-    "value": "11,004,334",
+    "value": "11,029,532",
     "unit": "円",
-    "diff": "+7.1%"
+    "diff": "+7.4%"
    },
    {
     "name": "日経平均",
-    "value": "66,070",
+    "value": "65,958",
     "unit": "円",
-    "diff": "-2,644"
+    "diff": "-2,756"
    },
    {
     "name": "NYダウ",
@@ -53,6 +53,14 @@
   ]
  },
  "items": [
+  {
+   "cat": "mkt",
+   "label": "相場",
+   "title": "銅建値6万円安 236万円（日刊産業新聞）",
+   "source": "Yahoo!ニュース",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9rR0VjU0ZhUnJZNkFQZEwzS2xRMy1xcjBqUGhicXlmckhnRHBUQ3Q5eHFlcVd1akFHN19xY1EtM2pZMHFsdFVRak13WFBKZUJYUHlUQTRLdzE4aDBRZm9lNUpaeFdmc1BEc3dYMUh4UDZGdkNRMGw4ZlVuQnFNblk?oc=5",
+   "published": "2026-08-20T10:32:18+09:00"
+  },
   {
    "cat": "dc",
    "label": "AI・DC",
@@ -73,7 +81,7 @@
    "cat": "gen",
    "label": "業界",
    "title": "“ケーブルカッター”正当な理由なく所持か カンボジア国籍の男逮捕 愛知県で初の逮捕者",
-   "source": "article.auone.jp",
+   "source": "au Webポータル",
    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBZUnFmVEdNb2h6bFhhSVgybU91Z0kyUUdHXzhBbGhveEZONTY2OEhhVmgzbm52T3JYc1BxZVdIUDU3M1ZYODE1STZBbFVLZDRRRi1DeC1xdzdvbGxWbjh5SDlFaXVWRlZtSmJrU1p3?oc=5",
    "published": "2026-08-20T02:35:27+09:00"
   },
@@ -344,6 +352,14 @@
   {
    "cat": "law",
    "label": "法規制",
+   "title": "コンタクトレンズのブリスター（空ケース）のケミカルリサイクル実証実験を開始",
+   "source": "ニコニコニュース",
+   "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5IcXg1Rm5PdmdVRXZsX0dtZjQ2QXVGUjV6Si1keE5MaF9mQVFIYU9acEFFV3JpLTlvemtRVDRfS2FhOHBqV2RGRWlmXy01azJKMWZGSg?oc=5",
+   "published": "2026-07-29T16:00:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
    "title": "保管・再生基準を明確化/26年度内に結果とりまとめ/環境省がスクラップヤード検討会・改正廃掃法踏まえ設置",
    "source": "建設通信新聞Digital",
    "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBKU2JmcGNiUGpPcWF2Y3ZYMmhMMHBTOE9RSXFKV2w0MmVqenE0NlFTWU53VDc4T0ZTamNhYVU1X2xmY01WdlpPTm12Y3RPMEtzZkIwemx3bE8?oc=5",
@@ -395,14 +411,6 @@
    "title": "銅価格高騰で太陽光パネルが標的に 三重県内でケーブル盗難急増、5月末時点で被害100件超え",
    "source": "chunichi.co.jp",
    "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBlS3gtelU0eW5Za2pBV1hGUnRBR1RObHFCYnFYai1tbDcybTNPbXZzck1tYUlMcWxGQUh1dE96Mm94cGJQWTUwaUhzdkNreWRZTDAycg?oc=5",
-   "published": "2026-07-17T16:00:00+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
-   "title": "業務用空調機の水平リサイクル グループ連携、レアアース等回収 伊藤忠とダイキン",
-   "source": "kankyo-news.co.jp",
-   "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5ydlBUdmxiWTVqYWNRRXdSOU5WRDRuWTN2d3F2SnFYeEtyNGkzRDRRcHdfWkFwODE2eGpOYkt1MGVTcjBnRVRCd1Ytczdpd1lTS25tc0dUVmdhVWdJR1RmUnF4anhwZVROOVl1eEJ1eXRLNUR1ekZSUWdQWQ?oc=5",
    "published": "2026-07-17T16:00:00+09:00"
   },
   {
