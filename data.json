@@ -1,5 +1,5 @@
 {
- "updated": "8/20 18:09",
+ "updated": "8/20 18:16",
  "fx": {
   "usdjpy": 159.09,
   "date": "2026-08-19"
@@ -34,9 +34,9 @@
    },
    {
     "name": "ビットコイン",
-    "value": "11,346,817",
+    "value": "11,387,285",
     "unit": "円",
-    "diff": "+10.7%"
+    "diff": "+11.2%"
    },
    {
     "name": "日経平均",
@@ -316,14 +316,6 @@
    "source": "古紙ジャーナル",
    "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9BN25kc0Y1Tm9hdTI2WEc4RmxHblBUa2UxdC05bm4zMkJzbWZvVV9EVmJReFJGVUhQc1E5UGZGbXhQbXdGYkhUVkRlZHVPVzMwZEdBTUR3Y3dQdFlrU3h4aw?oc=5",
    "published": "2026-08-03T16:00:00+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
-   "title": "買取専科 8月に全国4エリアに新店舗を順次オープン決定！(東京都・愛知県・大阪府・広島県）",
-   "source": "ehime-np.co.jp",
-   "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE50S2Q2Q3RwN05XYVZ2Wkp6MzJ4Z3VSRm1iX1FQV2RYT2ZqYlFaaXhnZHRoTVk3aXUyYlYyem9BQmw4YlE0enZKX0tTeXFXVk40VXNkVngwM3oxRnc?oc=5",
-   "published": "2026-08-01T16:00:00+09:00"
   },
   {
    "cat": "law",
@@ -631,7 +623,8 @@
    "安城貿易",
    "宝源",
    "浜屋",
-   "ケイワイ"
+   "ケイワイ",
+   "キバセン"
   ],
   "rows": [
    {
@@ -1196,6 +1189,11 @@
       "best": true
      },
      {
+      "dealer": "キバセン",
+      "value": 6900,
+      "best": false
+     },
+     {
       "dealer": "ケイワイ",
       "value": 6790,
       "best": false
@@ -1339,6 +1337,23 @@
    },
    {
     "group": "基板",
+    "name": "ノートPCマザー",
+    "cells": [
+     {
+      "dealer": "ケイワイ",
+      "value": 3900,
+      "best": true
+     },
+     {
+      "dealer": "浜屋",
+      "value": 3370,
+      "best": false
+     }
+    ],
+    "spread": 530
+   },
+   {
+    "group": "基板",
     "name": "PCメモリー",
     "cells": [
      {
@@ -1355,10 +1370,49 @@
       "dealer": "ケイワイ",
       "value": 9780,
       "best": false
+     },
+     {
+      "dealer": "キバセン",
+      "value": 9200,
+      "best": false
      }
     ],
-    "spread": 1920,
+    "spread": 2500,
     "diff": "0"
+   },
+   {
+    "group": "基板",
+    "name": "デスクトップPC",
+    "cells": [
+     {
+      "dealer": "キバセン",
+      "value": 200,
+      "best": true
+     },
+     {
+      "dealer": "大畑",
+      "value": 110,
+      "best": false
+     }
+    ],
+    "spread": 90
+   },
+   {
+    "group": "基板",
+    "name": "リレー",
+    "cells": [
+     {
+      "dealer": "浜屋",
+      "value": 630,
+      "best": true
+     },
+     {
+      "dealer": "ケイワイ",
+      "value": 600,
+      "best": false
+     }
+    ],
+    "spread": 30
    },
    {
     "group": "基板",
@@ -1389,6 +1443,11 @@
      },
      {
       "dealer": "大畑",
+      "value": 4000,
+      "best": false
+     },
+     {
+      "dealer": "キバセン",
       "value": 4000,
       "best": false
      },
@@ -1436,6 +1495,11 @@
      {
       "dealer": "ケイワイ",
       "value": 51200,
+      "best": false
+     },
+     {
+      "dealer": "キバセン",
+      "value": 50000,
       "best": false
      },
      {
