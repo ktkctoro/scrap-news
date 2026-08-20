@@ -79,6 +79,13 @@
   .hint{font-size:12px;padding:5px 10px;border:1px solid var(--line);background:transparent;
     border-radius:999px;color:var(--ink-2);cursor:pointer;font-family:inherit}
 
+  .tabs{display:flex;border-bottom:1px solid var(--line)}
+  .tab{flex:1;padding:12px 8px;border:none;background:transparent;font-family:inherit;
+    font-size:14px;font-weight:600;color:var(--ink-3);cursor:pointer;
+    border-bottom:2px solid transparent;margin-bottom:-1px}
+  .tab[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--ink)}
+  .tab:focus-visible{outline:2px solid var(--mkt);outline-offset:-2px}
+
   .cmp{padding:14px 16px;border-bottom:1px solid var(--line)}
   .cmp .item{padding:9px 0;border-bottom:1px solid var(--line)}
   .cmp .item:last-child{border-bottom:none;padding-bottom:0}
@@ -110,9 +117,14 @@
     <h1>スクラップ今日</h1>
     <time class="num" id="updated">—</time>
   </header>
+  <div class="tabs" role="tablist">
+    <button class="tab" id="tab-today" role="tab" aria-selected="true" aria-controls="page-today">けさ</button>
+    <button class="tab" id="tab-compare" role="tab" aria-selected="false" aria-controls="page-compare">くらべる</button>
+  </div>
+
+  <div id="page-today" role="tabpanel" aria-labelledby="tab-today">
   <div id="brief"></div>
   <div id="prices"></div>
-  <div id="compare"></div>
   <div class="chips" role="group" aria-label="記事の絞り込み">
     <button class="chip" data-f="all" aria-pressed="true">すべて</button>
     <button class="chip" data-f="mkt" aria-pressed="false">相場</button>
@@ -134,9 +146,14 @@
       <button type="button" class="hint" data-q="金属盗対策法で金属くず買取業者に必要な対応は？">金属盗対策法</button>
     </div>
   </div>
-  <div class="links">
-    <div class="eyebrow">よく見る価格表（新しいタブで開きます）</div>
-    <div class="linkrow" id="linkrow"></div>
+  </div><!-- /page-today -->
+
+  <div id="page-compare" role="tabpanel" aria-labelledby="tab-compare" hidden>
+    <div id="compare"></div>
+    <div class="links">
+      <div class="eyebrow">よく見る価格表（新しいタブで開きます）</div>
+      <div class="linkrow" id="linkrow"></div>
+    </div>
   </div>
 </div>
 <p class="disclaimer" id="foot"></p>
@@ -277,6 +294,21 @@ document.getElementById('linkrow').innerHTML = LINKS.map(function(g){
         esc(l.name) + '</a>';
     }).join('') + '</div></div>';
 }).join('');
+
+// 上のタブで「けさ」と「くらべる」を切り替える
+(function(){
+  var pages = { 'tab-today': 'page-today', 'tab-compare': 'page-compare' };
+  Object.keys(pages).forEach(function(id){
+    document.getElementById(id).addEventListener('click', function(){
+      Object.keys(pages).forEach(function(other){
+        var on = other === id;
+        document.getElementById(other).setAttribute('aria-selected', String(on));
+        document.getElementById(pages[other]).hidden = !on;
+      });
+      window.scrollTo(0, 0);
+    });
+  });
+})();
 
 function askAI(q){
   if (!q) return;
