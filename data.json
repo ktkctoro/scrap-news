@@ -1,5 +1,5 @@
 {
- "updated": "8/20 15:19",
+ "updated": "8/20 17:42",
  "fx": {
   "usdjpy": 159.09,
   "date": "2026-08-19"
@@ -22,27 +22,27 @@
   "rows": [
    {
     "name": "金（店頭買取）",
-    "value": "24,961",
+    "value": "24,950",
     "unit": "円/g",
-    "diff": "+624"
+    "diff": "+613"
    },
    {
     "name": "銀（店頭買取）",
-    "value": "366.74",
+    "value": "362.89",
     "unit": "円/g",
-    "diff": "+17.38"
+    "diff": "+13.53"
    },
    {
     "name": "ビットコイン",
-    "value": "10,999,893",
+    "value": "11,320,587",
     "unit": "円",
-    "diff": "+7.6%"
+    "diff": "+10.5%"
    },
    {
     "name": "日経平均",
-    "value": "66,135",
+    "value": "66,217",
     "unit": "円",
-    "diff": "-2,579"
+    "diff": "-2,497"
    },
    {
     "name": "NYダウ",
@@ -64,6 +64,14 @@
   {
    "cat": "mkt",
    "label": "相場",
+   "title": "IBMAが正式に設立され、政府はインドネシアの金地金産業の強化を目標に",
+   "source": "VOI.ID",
+   "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1oMWpUR3VWU09sc0pveDZvNGNDUTBleUJkNlRnamhZQlhiem81ZTZqRVB0WHNMUHNXRmRRZDRydjlPUU9MUnfSAUJBVV95cUxNeDc1OGlOcFZNZy01MTdIQmpTMUNBTjJJS3UyT0dTQ1MzQy1wSzBEUExkUnpUY3dkTzRMTG5qWmVqaEE?oc=5",
+   "published": "2026-08-20T17:38:01+09:00"
+  },
+  {
+   "cat": "mkt",
+   "label": "相場",
    "title": "銅建値6万円安 236万円（日刊産業新聞）",
    "source": "Yahoo!ニュース",
    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9rR0VjU0ZhUnJZNkFQZEwzS2xRMy1xcjBqUGhicXlmckhnRHBUQ3Q5eHFlcVd1akFHN19xY1EtM2pZMHFsdFVRak13WFBKZUJYUHlUQTRLdzE4aDBRZm9lNUpaeFdmc1BEc3dYMUh4UDZGdkNRMGw4ZlVuQnFNblk?oc=5",
@@ -81,7 +89,7 @@
    "cat": "dc",
    "label": "AI・DC",
    "title": "新会長に聞く／日本伸銅協会・加藤和照氏（三井住友金属鉱山伸銅社長）／伸銅品グリーンブランド創設へ／未利用銅リサイクル材活用、新技術検討",
-   "source": "日刊鉄鋼新聞 Japan Metal Daily",
+   "source": "日刊鉄鋼新聞",
    "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9tZ2ZfaUQwSWY5UTV0WHkyMFlnWi1sWjBKMVltWEJKSzhYS3N3SklSNkc4ZlN6RGZ3UmJzdFpFY3o2THpaMko2YVdIcEd0TGdFRG5zTmRoYl9HcUpsZ0E?oc=5",
    "published": "2026-08-20T05:00:00+09:00"
   },
@@ -169,7 +177,7 @@
    "cat": "mkt",
    "label": "相場",
    "title": "銅建値が２４０万円突破／需給ひっ迫懸念が押し上げ",
-   "source": "日刊鉄鋼新聞 Japan Metal Daily",
+   "source": "日刊鉄鋼新聞",
    "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9oZjBhbjV1ZXkzb3dQWUpjSldEZEJBc2NhSHFzeE5sOTBfeWNzWVFOSDlBVXZlMUtfSEN4RmwtS3VJREktZWR1VTVNZXc0UjVoX2JWY3FEcTRXVW1HY2c?oc=5",
    "published": "2026-08-18T05:00:00+09:00"
   },
@@ -188,14 +196,6 @@
    "source": "日本経済新聞",
    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBVeWlYZHdvZTJqVUVhb21jOHpzY0lxRUdyT3hnOEZmWTNmdzRvZFpaMVBPMVlMWmlUaThTVmMzeWpvcGJKajRhUGVKbnBmRnZXU1Y1R2Rqck1Uc3lxS3ZNdDQxek82WjhEUFpqNw?oc=5",
    "published": "2026-08-17T18:40:29+09:00"
-  },
-  {
-   "cat": "mkt",
-   "label": "相場",
-   "title": "米国銅先物、投機筋の買い越し幅が最大 関税発動の思惑で",
-   "source": "日本経済新聞",
-   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBfQ3lTc2FvYWRmYTNqV3JjQjA3VnFZSFd4ckFfSHhqVDhSbTdybXp5N0FyNWlHU0RtUWNCY3dRZnA1VjlwM3RuTWFreVRuZ2FnWEJlSzhVM1pjYUtEWWEtbDBhT3JOMHdNeHdYRg?oc=5",
-   "published": "2026-08-17T17:34:10+09:00"
   },
   {
    "cat": "mkt",
@@ -241,7 +241,7 @@
    "cat": "mkt",
    "label": "相場",
    "title": "銅価格の高騰を背景に黄銅代替材の快削ステンレス鋼を拡販：材料技術",
-   "source": "monoist.itmedia.co.jp",
+   "source": "MONOist",
    "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1uejhtQVlfUDdNeXpxUGdiYjRkOGhkZE5SNUJ4MlVnMzlLZGg1d0dZR01PYm9JZlNkRHpFNHBwa1pVVzV2UmxSX3JHRWFhZkRpTXV1VU1rN0lobEo5YUFkdXVvWGVqZDhHLTRHT0FjYw?oc=5",
    "published": "2026-08-14T11:00:00+09:00"
   },
@@ -329,7 +329,7 @@
    "cat": "law",
    "label": "法規制",
    "title": "買取専科 8月に全国4エリアに新店舗を順次オープン決定！(東京都・愛知県・大阪府・広島県）",
-   "source": "愛媛新聞",
+   "source": "ehime-np.co.jp",
    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE50S2Q2Q3RwN05XYVZ2Wkp6MzJ4Z3VSRm1iX1FQV2RYT2ZqYlFaaXhnZHRoTVk3aXUyYlYyem9BQmw4YlE0enZKX0tTeXFXVk40VXNkVngwM3oxRnc?oc=5",
    "published": "2026-08-01T16:00:00+09:00"
   },
@@ -441,7 +441,7 @@
    "cat": "law",
    "label": "法規制",
    "title": "伊藤忠とダイキン、業務用空調の水平リサイクルで連携：リサイクルニュース",
-   "source": "monoist.itmedia.co.jp",
+   "source": "MONOist",
    "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5zaVN4U2tvbUdxMVp4eHBjZC13Mm40WDUwMDVkSGRLOE1ZMTZiRk1TUkVNejNOM184YVhGMEljWWxUN25KRmh0eWFWYVVpWmtGN3VHb3VPby1BMlpkYlVvd29GbzZBUkN0UFY4NEd3dw?oc=5",
    "published": "2026-07-13T16:00:00+09:00"
   },
@@ -591,7 +591,7 @@
   }
  ],
  "boards": {
-  "asof": "7/23",
+  "asof": "8/21",
   "rows": [
    {
     "name": "メモリー",
@@ -636,7 +636,8 @@
    "土金",
    "長澤",
    "大畑",
-   "安城貿易"
+   "安城貿易",
+   "宝源"
   ],
   "rows": [
    {
@@ -657,9 +658,14 @@
       "dealer": "大畑",
       "value": 2250,
       "best": false
+     },
+     {
+      "dealer": "宝源",
+      "value": 2210,
+      "best": false
      }
     ],
-    "spread": 110,
+    "spread": 150,
     "diff": "0"
    },
    {
@@ -675,9 +681,14 @@
       "dealer": "大畑",
       "value": 2200,
       "best": false
+     },
+     {
+      "dealer": "宝源",
+      "value": 2100,
+      "best": false
      }
     ],
-    "spread": 50,
+    "spread": 150,
     "diff": "0"
    },
    {
@@ -704,6 +715,23 @@
     "diff": "0"
    },
    {
+    "group": "銅",
+    "name": "下銅",
+    "cells": [
+     {
+      "dealer": "宝源",
+      "value": 2000,
+      "best": true
+     },
+     {
+      "dealer": "土金",
+      "value": 1900,
+      "best": false
+     }
+    ],
+    "spread": 100
+   },
+   {
     "group": "電線",
     "name": "雑線(銅率80%)",
     "cells": [
@@ -711,6 +739,11 @@
       "dealer": "大畑",
       "value": 1750,
       "best": true
+     },
+     {
+      "dealer": "宝源",
+      "value": 1730,
+      "best": false
      },
      {
       "dealer": "長澤",
@@ -731,6 +764,11 @@
       "best": true
      },
      {
+      "dealer": "宝源",
+      "value": 1260,
+      "best": true
+     },
+     {
       "dealer": "長澤",
       "value": 1235,
       "best": false
@@ -741,7 +779,7 @@
    },
    {
     "group": "電線",
-    "name": "VA線",
+    "name": "VA線・F線",
     "cells": [
      {
       "dealer": "土金",
@@ -754,13 +792,17 @@
       "best": false
      },
      {
+      "dealer": "宝源",
+      "value": 960,
+      "best": false
+     },
+     {
       "dealer": "長澤",
       "value": 955,
       "best": false
      }
     ],
-    "spread": 55,
-    "diff": "0"
+    "spread": 55
    },
    {
     "group": "電線",
@@ -798,9 +840,14 @@
       "dealer": "大畑",
       "value": 1150,
       "best": false
+     },
+     {
+      "dealer": "宝源",
+      "value": 1000,
+      "best": false
      }
     ],
-    "spread": 130,
+    "spread": 280,
     "diff": "0"
    },
    {
@@ -862,10 +909,37 @@
       "dealer": "大畑",
       "value": 1450,
       "best": false
+     },
+     {
+      "dealer": "宝源",
+      "value": 1450,
+      "best": false
+     },
+     {
+      "dealer": "長澤",
+      "value": 1370,
+      "best": false
      }
     ],
-    "spread": 80,
+    "spread": 160,
     "diff": "0"
+   },
+   {
+    "group": "真鍮・砲金",
+    "name": "込真鍮",
+    "cells": [
+     {
+      "dealer": "長澤",
+      "value": 1370,
+      "best": true
+     },
+     {
+      "dealer": "宝源",
+      "value": 1370,
+      "best": true
+     }
+    ],
+    "spread": 0
    },
    {
     "group": "真鍮・砲金",
@@ -898,9 +972,14 @@
       "dealer": "土金",
       "value": 460,
       "best": false
+     },
+     {
+      "dealer": "宝源",
+      "value": 400,
+      "best": false
      }
     ],
-    "spread": 15,
+    "spread": 75,
     "diff": "0"
    },
    {
@@ -937,6 +1016,11 @@
      },
      {
       "dealer": "大畑",
+      "value": 280,
+      "best": false
+     },
+     {
+      "dealer": "宝源",
       "value": 280,
       "best": false
      }
@@ -977,6 +1061,11 @@
       "best": false
      },
      {
+      "dealer": "宝源",
+      "value": 150,
+      "best": false
+     },
+     {
       "dealer": "大畑",
       "value": 80,
       "best": false
@@ -1000,6 +1089,11 @@
       "best": true
      },
      {
+      "dealer": "宝源",
+      "value": 460,
+      "best": false
+     },
+     {
       "dealer": "大畑",
       "value": 420,
       "best": false
@@ -1007,6 +1101,89 @@
     ],
     "spread": 75,
     "diff": "0"
+   },
+   {
+    "group": "亜鉛・鉛",
+    "name": "亜鉛",
+    "cells": [
+     {
+      "dealer": "土金",
+      "value": 250,
+      "best": true
+     },
+     {
+      "dealer": "大畑",
+      "value": 240,
+      "best": false
+     },
+     {
+      "dealer": "長澤",
+      "value": 210,
+      "best": false
+     }
+    ],
+    "spread": 40
+   },
+   {
+    "group": "亜鉛・鉛",
+    "name": "鉛(上)・鉛管",
+    "cells": [
+     {
+      "dealer": "土金",
+      "value": 255,
+      "best": true
+     },
+     {
+      "dealer": "大畑",
+      "value": 220,
+      "best": false
+     },
+     {
+      "dealer": "長澤",
+      "value": 210,
+      "best": false
+     },
+     {
+      "dealer": "宝源",
+      "value": 200,
+      "best": false
+     }
+    ],
+    "spread": 55
+   },
+   {
+    "group": "亜鉛・鉛",
+    "name": "鉛(下)・込鉛",
+    "cells": [
+     {
+      "dealer": "長澤",
+      "value": 140,
+      "best": true
+     },
+     {
+      "dealer": "土金",
+      "value": 130,
+      "best": false
+     }
+    ],
+    "spread": 10
+   },
+   {
+    "group": "亜鉛・鉛",
+    "name": "バランスウエイト",
+    "cells": [
+     {
+      "dealer": "大畑",
+      "value": 35,
+      "best": true
+     },
+     {
+      "dealer": "長澤",
+      "value": 30,
+      "best": false
+     }
+    ],
+    "spread": 5
    },
    {
     "group": "雑品",
@@ -1019,6 +1196,11 @@
      },
      {
       "dealer": "安城貿易",
+      "value": 470,
+      "best": false
+     },
+     {
+      "dealer": "宝源",
       "value": 470,
       "best": false
      },
@@ -1046,6 +1228,11 @@
       "best": true
      },
      {
+      "dealer": "宝源",
+      "value": 160,
+      "best": false
+     },
+     {
       "dealer": "土金",
       "value": 150,
       "best": false
@@ -1061,12 +1248,22 @@
    },
    {
     "group": "雑品",
-    "name": "ガスメーター(アルミ外装)",
+    "name": "ガスメーター",
     "cells": [
      {
       "dealer": "安城貿易",
       "value": 200,
       "best": true
+     },
+     {
+      "dealer": "長澤",
+      "value": 170,
+      "best": false
+     },
+     {
+      "dealer": "宝源",
+      "value": 150,
+      "best": false
      },
      {
       "dealer": "大畑",
@@ -1122,6 +1319,77 @@
     ],
     "spread": 65,
     "diff": "0"
+   },
+   {
+    "group": "雑品",
+    "name": "工業雑品",
+    "cells": [
+     {
+      "dealer": "長澤",
+      "value": 90,
+      "best": true
+     },
+     {
+      "dealer": "宝源",
+      "value": 65,
+      "best": false
+     },
+     {
+      "dealer": "大畑",
+      "value": 30,
+      "best": false
+     }
+    ],
+    "spread": 60
+   },
+   {
+    "group": "雑品",
+    "name": "ステンレス",
+    "cells": [
+     {
+      "dealer": "長澤",
+      "value": 210,
+      "best": true
+     },
+     {
+      "dealer": "宝源",
+      "value": 195,
+      "best": false
+     },
+     {
+      "dealer": "大畑",
+      "value": 140,
+      "best": false
+     },
+     {
+      "dealer": "土金",
+      "value": 105,
+      "best": false
+     }
+    ],
+    "spread": 105
+   },
+   {
+    "group": "雑品",
+    "name": "鉄(B・ギロB)",
+    "cells": [
+     {
+      "dealer": "土金",
+      "value": 49,
+      "best": true
+     },
+     {
+      "dealer": "長澤",
+      "value": 46,
+      "best": false
+     },
+     {
+      "dealer": "宝源",
+      "value": 44,
+      "best": false
+     }
+    ],
+    "spread": 5
    }
   ]
  },
