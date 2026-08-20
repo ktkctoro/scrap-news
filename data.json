@@ -1,5 +1,5 @@
 {
- "updated": "8/21 4:54",
+ "updated": "8/21 6:24",
  "fx": {
   "usdjpy": 158.76,
   "date": "2026-08-20"
@@ -34,9 +34,9 @@
    },
    {
     "name": "ビットコイン",
-    "value": "11,563,575",
+    "value": "11,563,873",
     "unit": "円",
-    "diff": "+6.8%"
+    "diff": "+5.1%"
    },
    {
     "name": "日経平均",
@@ -46,13 +46,21 @@
    },
    {
     "name": "NYダウ",
-    "value": "52,827",
+    "value": "52,759",
     "unit": "$",
-    "diff": "-1,013"
+    "diff": "-1,081"
    }
   ]
  },
  "items": [
+  {
+   "cat": "dc",
+   "label": "AI・DC",
+   "title": "5G高速銅張積層板市場調査報告書：世界の産業現状、競合分析、シェア、規模、動向2026-2032年の予測｜QYResearch",
+   "source": "note",
+   "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9wRXpUeTVRS01uc2owbDQzTElZYmU3M1BOQUtaMXJoMXFteHJpaXFtMUdjTkl2Y3dWM2hHUXRNZ1VUanpXb3NDcTYxUmY5U1AwSGY1TmlBVQ?oc=5",
+   "published": "2026-08-20T17:44:13+09:00"
+  },
   {
    "cat": "mkt",
    "label": "相場",
@@ -60,6 +68,14 @@
    "source": "VOI.ID",
    "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1oMWpUR3VWU09sc0pveDZvNGNDUTBleUJkNlRnamhZQlhiem81ZTZqRVB0WHNMUHNXRmRRZDRydjlPUU9MUnfSAUJBVV95cUxNeDc1OGlOcFZNZy01MTdIQmpTMUNBTjJJS3UyT0dTQ1MzQy1wSzBEUExkUnpUY3dkTzRMTG5qWmVqaEE?oc=5",
    "published": "2026-08-20T17:38:01+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "金属くず買受業を営む皆さまへのお知らせ",
+   "source": "vill.kitanakagusuku.lg.jp",
+   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1LTHBLbC01MmxWZ285Zk1jMzloc3I4TTFMdG5VYXdnVkNnWE5TZmlTR3JQRVVfSXIzOWlUbVF0MXBEQ3c5eFJxOVdHSVpzU2xXd196T09heTdQTUdNa0FDeDkzWkRRR0pGazAyMExZYkJLUUhWQkx4WWV0QTU?oc=5",
+   "published": "2026-08-20T12:01:21+09:00"
   },
   {
    "cat": "mkt",
@@ -76,6 +92,14 @@
    "source": "au Webポータル",
    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBZUnFmVEdNb2h6bFhhSVgybU91Z0kyUUdHXzhBbGhveEZONTY2OEhhVmgzbm52T3JYc1BxZVdIUDU3M1ZYODE1STZBbFVLZDRRRi1DeC1xdzdvbGxWbjh5SDlFaXVWRlZtSmJrU1p3?oc=5",
    "published": "2026-08-20T06:35:27+09:00"
+  },
+  {
+   "cat": "gen",
+   "label": "業界",
+   "title": "｢私のものではない｣ 車にケーブル切る器具を隠し持っていた疑い カンボジア国籍の男を逮捕 太陽光発電施設などで盗難相次ぐ 愛知で初摘発",
+   "source": "au Webポータル",
+   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBweUlRbDJqbW5tQWR0ZHE1bzg1aXl0NC1JVl93N2x3ak9mOHIyMWNXakM4aVdnOEN0SlVVbXg4ekhqZFpBU1RKMmh2Z3BubnZFZVEwbDhTRjk3Z18wTlJCOFdQYWxaQk9MRU9xRGF4YmRSbThpc01PZA?oc=5",
+   "published": "2026-08-20T05:12:21+09:00"
   },
   {
    "cat": "dc",
@@ -116,14 +140,6 @@
    "source": "nagoyatv.com",
    "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBGVHQzVVRzY0daTmdNcHNWZGF2OVlUMTdUTjhCWWFpc2FYYkVaWWdaUEpreXpsZTNTZ21ScFFBWDYydDRtYXVNSnVZbXVna3Y5QWfSAWRBVV95cUxPZ1V2SWpPY1M1M2twUmxCNlJXbHNYT3NvRUFZcl80R3VDeEUtYjZ3OGpzNHgxLTZ4NWFFQXZKMUtaSWxEQU16aERCVTlGeFo3VVI0WDB4RzB0eTJLWk1vZEhzdS1q?oc=5",
    "published": "2026-08-19T19:14:00+09:00"
-  },
-  {
-   "cat": "gen",
-   "label": "業界",
-   "title": "｢私のものではない｣ 車にケーブル切る器具を隠し持っていた疑い カンボジア国籍の男を逮捕 太陽光発電施設などで盗難相次ぐ 愛知で初摘発",
-   "source": "ｄメニューニュース",
-   "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1veHlQMzd4Y0M3d2dQaGNaNmktdlJLWHZJZUFiaktwVmt6aHhmN1Uwdk5Gb0RLckpKRmlrLVBsajNua1l0MEN5RUsyWEQtWjQ2QlZ0dDJla0xkdVZaMmQ5TkpFUmFkOXZMemxPaGw4bUs2S0ZROUU4QmxB0gF6QVVfeXFMTW94eVAzN3hjQzd3Z1BoY1o2aS12UktYdkllQWJqS3BWa3poeGY3VTB2TkZvREtySkpGaWstUGxqM25rWXQwQ3lFSzJYRC1aNDZCVnR0MmVrTGR1VloyZDlOSkVSYWQ5dkx6bE9obDhtSzZLRlE5RThCbEE?oc=5",
-   "published": "2026-08-19T18:36:00+09:00"
   },
   {
    "cat": "dc",
@@ -244,14 +260,6 @@
    "source": "Excite エキサイト",
    "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1BbTVqOU53Vm10dDBBdnFpaXk0QjJMWHFTVXlnVDduVWYxNDY2cE9YM2NIcXZVTm9MSUp3Y2dLRXFrcjNiR2pMbDQ4Q2ZVRFRjcnB1cEVlNEVJbzVFSUhvY041Q1Rsd1k?oc=5",
    "published": "2026-08-14T08:16:00+09:00"
-  },
-  {
-   "cat": "mkt",
-   "label": "相場",
-   "title": "鉄スクラップ輸出入札、5万円割れ 関東鉄源8月契約",
-   "source": "日刊工業新聞",
-   "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBUQl80RzUwTEJjM05XQ2hGYmVWQlhqTEh6RmlTT2IyeU1oOE5QVnRQSVI5b1g2YXhiNVliem9Rc3dSaHFlSGNkVEhNVWNfVVVnR24tbm82MTBfLV9Za204YkwzX1RqaC1WZVFUd0sza2xPdEJT?oc=5",
-   "published": "2026-08-14T05:00:00+09:00"
   },
   {
    "cat": "law",
@@ -528,6 +536,14 @@
   {
    "cat": "law",
    "label": "法規制",
+   "title": "家庭用エアコンのフロン回収を強化へ 27年の国会で法改正みこむ",
+   "source": "朝日新聞",
+   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9qbU5aQTFIeFZFeEk3dW5uczZJakdXeC0wSTVCNWFhQ2lXRmpMTmdtemFJa2hZU25xZFFrUnZ3QUhNamFYck9oQ0V4ZWNKc3l0YVlFbUJEdGRxSEZzald0ZFdNaFktb0E?oc=5",
+   "published": "2026-06-26T16:00:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
    "title": "家庭用エアコン、フロン回収を幅広く義務付けへ 経産・環境省",
    "source": "日本経済新聞",
    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE12VHI3TC1rdUJBOWZZbTlXY25pc0lUN0xralFaVUJNazYxU1FGRElyaW54bmU3VXVkYXFKa1c5VE9kRjZMSjczM1pxRGdLUG03Y3NRYlZlUEFqRUlVZEpPN0RVcFF3TkZQZEgxcg?oc=5",
@@ -547,14 +563,6 @@
    "title": "家庭用エアコンも罰則対象に＝フロンの漏えい防止で―環境・経産省",
    "source": "iJAMPポータル",
    "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9QR1JsellKdHFaeVpRZ3l6SS16THlqOHVqRzd1dGZvTzY1SUpWa3VLVUlLbDR4SmdRbXNjODZZOWlVR09mYmY5UWtZYlA1cWQzVVR3Wm4tbWpZNFVhRURvMkQwMVkwWEtzdnpQdUtGYw?oc=5",
-   "published": "2026-06-26T16:00:00+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
-   "title": "家庭用エアコンのフロン回収を強化へ 27年の国会で法改正みこむ",
-   "source": "朝日新聞",
-   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9qbU5aQTFIeFZFeEk3dW5uczZJakdXeC0wSTVCNWFhQ2lXRmpMTmdtemFJa2hZU25xZFFrUnZ3QUhNamFYck9oQ0V4ZWNKc3l0YVlFbUJEdGRxSEZzald0ZFdNaFktb0E?oc=5",
    "published": "2026-06-26T16:00:00+09:00"
   },
   {
@@ -1750,7 +1758,7 @@
      }
     ],
     "spread": 50,
-    "diff": "+5"
+    "diff": "0"
    },
    {
     "group": "雑品",
@@ -1824,7 +1832,7 @@
      }
     ],
     "spread": 95,
-    "diff": "+30"
+    "diff": "0"
    },
    {
     "group": "雑品",
@@ -1904,10 +1912,10 @@
  },
  "ai": {
   "lines": [
-   "・銅建値236万円へ6万円安、金は24,950円で613円高",
-   "・改正廃掃法でヤード許可制、環境省が保管基準検討へ",
-   "・愛知でケーブルカッター所持初摘発、仕入れ身元確認徹底"
+   "・銅建値6万円安の236万円、株安・金は613円高",
+   "・改正廃掃法でヤード許可制、環境省が基準検討会",
+   "・愛知でケーブルカッター所持初摘発、銅盗警戒継続"
   ],
-  "at": "8/21 4:54"
+  "at": "8/21 6:24"
  }
 }
