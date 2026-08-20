@@ -50,6 +50,9 @@
   .chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
   .chip:focus-visible{outline:2px solid var(--mkt);outline-offset:2px}
 
+  #feed{max-height:62vh;overflow-y:auto;-webkit-overflow-scrolling:touch;
+    overscroll-behavior:contain;border-bottom:1px solid var(--line)}
+
   article{padding:14px 16px;border-bottom:1px solid var(--line)}
   article:last-child{border-bottom:none}
   .badge{display:inline-block;font-size:11px;padding:3px 9px;border-radius:5px}
@@ -192,6 +195,7 @@ function renderFeed(){
       '<a href="' + esc(i.link) + '" target="_blank" rel="noopener">' + esc(i.title) + '</a>' +
       '<div class="meta">' + esc(i.source) + (i.published ? ' · ' + ago(i.published) : '') + '</div></article>';
   }).join('');
+  feed.scrollTop = 0;  // 絞り込みを切り替えたら窓の先頭に戻す
 }
 
 function askAI(q){
