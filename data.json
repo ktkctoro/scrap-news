@@ -1,5 +1,5 @@
 {
- "updated": "8/21 8:44",
+ "updated": "8/21 8:50",
  "fx": {
   "usdjpy": 158.76,
   "date": "2026-08-20"
@@ -34,9 +34,9 @@
    },
    {
     "name": "ビットコイン",
-    "value": "11,618,874",
+    "value": "11,614,607",
     "unit": "円",
-    "diff": "+5.9%"
+    "diff": "+6.1%"
    },
    {
     "name": "日経平均",
@@ -348,14 +348,6 @@
    "source": "Fortune Business Insights",
    "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNR0Z1bVlBV05CZi10am0wQnlUblVELWNQb3BLSVg2VWZ6aHozSHJWZ1pMbmtUcXRkd1lZUml6TGJFNHd0VHN3VXNtWjVRSFpaOFZKeF80elZlN2x5Ny1OSmZCbzlCN2lDSjU5UTU2X2hvbTRtMVpRVlBxcHo5OW1Oel9GazVxYk4zcXo5WWdjcTJjbVhTTlJHN2dxT0NZeEw4TTZuejI2MWlaLXBMcmc4Q0s3ZUVocWJGeGRTaUdrVnlFSTVyUXlQZzEwQ0xmMVRFLXA5bWxOMFlWWEMyMkhlZ0JFZw?oc=5",
    "published": "2026-07-27T16:00:00+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
-   "title": "なぜ2つのシャフトの産業シュレッダーはスマートなオートメーション、高いトルクの処理および持続可能な物質的な回復によってリサイクルする産業廃棄物を革命化しています",
-   "source": "Spherical Insights",
-   "link": "https://news.google.com/rss/articles/CBMirwJBVV95cUxPcHJQV05VNHllMEhnM1AzY01UeEI5UTkyb0JBbC1jUnpteEVaaDlnQ3gwN2tVUnFJcVhYNzBlaWI2aUV5NjVtcDRkNzlidUd0aE5sZWdQb1l2cHFpU3dIdkdMUFFBS3JGTk5nRGJPcURoMTdyT05QeVhLcDBOQUlHUTJnWmZLWFhxamxRRzJVZjJRZEJOam1lS3hIRS1uU19xenJjdlgxZGFSOGhMZmtrWllnQ1hUdVVKdGNKMmVZX0E3UTk5RGkydld5WWdqTVRiazRlWHc3WjVlWXZBb2pHYzZOT05uMUZoQXMwWkdiOUlyRWMyTUI0U3NOeHFDeFU1bGkyVkVIZHhYWk1RcEpBR1kzX3VBb0t0bGxlM0RSQ3hkVFoxYlhuUFI3UUM3Tnc?oc=5",
-   "published": "2026-07-27T02:49:59+09:00"
   },
   {
    "cat": "law",
@@ -1188,7 +1180,181 @@
     "diff": "0"
    },
    {
-    "group": "基板",
+    "group": "基板／クラス",
+    "name": "基板SS",
+    "cells": [
+     {
+      "dealer": "浜屋",
+      "value": 7340,
+      "best": true
+     },
+     {
+      "dealer": "キバセン",
+      "value": 6900,
+      "best": false
+     },
+     {
+      "dealer": "ケイワイ",
+      "value": 6790,
+      "best": false
+     }
+    ],
+    "spread": 550,
+    "diff": "0"
+   },
+   {
+    "group": "基板／クラス",
+    "name": "基板S",
+    "cells": [
+     {
+      "dealer": "浜屋",
+      "value": 5630,
+      "best": true
+     },
+     {
+      "dealer": "大畑",
+      "value": 5500,
+      "best": false
+     },
+     {
+      "dealer": "ケイワイ",
+      "value": 5210,
+      "best": false
+     }
+    ],
+    "spread": 420,
+    "diff": "0"
+   },
+   {
+    "group": "基板／クラス",
+    "name": "基板A",
+    "cells": [
+     {
+      "dealer": "大畑",
+      "value": 3500,
+      "best": true
+     },
+     {
+      "dealer": "浜屋",
+      "value": 3370,
+      "best": false
+     },
+     {
+      "dealer": "ケイワイ",
+      "value": 2830,
+      "best": false
+     }
+    ],
+    "spread": 670,
+    "diff": "0"
+   },
+   {
+    "group": "基板／クラス",
+    "name": "基板B",
+    "cells": [
+     {
+      "dealer": "浜屋",
+      "value": 2750,
+      "best": true
+     },
+     {
+      "dealer": "大畑",
+      "value": 2600,
+      "best": false
+     },
+     {
+      "dealer": "ケイワイ",
+      "value": 2000,
+      "best": false
+     }
+    ],
+    "spread": 750,
+    "diff": "0"
+   },
+   {
+    "group": "基板／クラス",
+    "name": "基板C",
+    "cells": [
+     {
+      "dealer": "大畑",
+      "value": 1700,
+      "best": true
+     },
+     {
+      "dealer": "浜屋",
+      "value": 1620,
+      "best": false
+     },
+     {
+      "dealer": "ケイワイ",
+      "value": 1150,
+      "best": false
+     }
+    ],
+    "spread": 550,
+    "diff": "0"
+   },
+   {
+    "group": "基板／クラス",
+    "name": "基板D",
+    "cells": [
+     {
+      "dealer": "浜屋",
+      "value": 1100,
+      "best": true
+     },
+     {
+      "dealer": "ケイワイ",
+      "value": 640,
+      "best": false
+     }
+    ],
+    "spread": 460,
+    "diff": "0"
+   },
+   {
+    "group": "基板／クラス",
+    "name": "電源基板",
+    "cells": [
+     {
+      "dealer": "浜屋",
+      "value": 440,
+      "best": true
+     },
+     {
+      "dealer": "ケイワイ",
+      "value": 220,
+      "best": false
+     },
+     {
+      "dealer": "大畑",
+      "value": 150,
+      "best": false
+     }
+    ],
+    "spread": 290,
+    "diff": "0"
+   },
+   {
+    "group": "基板／クラス",
+    "name": "家電基板",
+    "cells": [
+     {
+      "dealer": "大畑",
+      "value": 400,
+      "best": true
+     },
+     {
+      "dealer": "ケイワイ",
+      "value": 310,
+      "best": false
+     }
+    ],
+    "spread": 90,
+    "diff": "0"
+   },
+   {
+    "group": "基板／CPU・IC",
     "name": "CPUセラ(上)",
     "cells": [
      {
@@ -1216,7 +1382,7 @@
     "diff": "0"
    },
    {
-    "group": "基板",
+    "group": "基板／CPU・IC",
     "name": "CPU黒",
     "cells": [
      {
@@ -1239,25 +1405,76 @@
     "diff": "0"
    },
    {
-    "group": "基板",
-    "name": "携帯電話基板",
+    "group": "基板／CPU・IC",
+    "name": "IC正方形",
     "cells": [
      {
       "dealer": "浜屋",
-      "value": 12130,
+      "value": 11640,
       "best": true
      },
      {
       "dealer": "ケイワイ",
-      "value": 11330,
+      "value": 10900,
+      "best": false
+     },
+     {
+      "dealer": "大畑",
+      "value": 4500,
       "best": false
      }
     ],
-    "spread": 800,
+    "spread": 7140,
     "diff": "0"
    },
    {
-    "group": "基板",
+    "group": "基板／CPU・IC",
+    "name": "CPU緑(下)",
+    "cells": [
+     {
+      "dealer": "大畑",
+      "value": 3500,
+      "best": true
+     },
+     {
+      "dealer": "ケイワイ",
+      "value": 3500,
+      "best": true
+     },
+     {
+      "dealer": "浜屋",
+      "value": 2950,
+      "best": false
+     }
+    ],
+    "spread": 550,
+    "diff": "0"
+   },
+   {
+    "group": "基板／CPU・IC",
+    "name": "IC長方形",
+    "cells": [
+     {
+      "dealer": "浜屋",
+      "value": 2650,
+      "best": true
+     },
+     {
+      "dealer": "ケイワイ",
+      "value": 1030,
+      "best": false
+     },
+     {
+      "dealer": "大畑",
+      "value": 500,
+      "best": false
+     }
+    ],
+    "spread": 2150,
+    "diff": "0"
+   },
+   {
+    "group": "基板／PC部品",
     "name": "PCメモリー",
     "cells": [
      {
@@ -1285,76 +1502,7 @@
     "diff": "0"
    },
    {
-    "group": "基板",
-    "name": "IC正方形",
-    "cells": [
-     {
-      "dealer": "浜屋",
-      "value": 11640,
-      "best": true
-     },
-     {
-      "dealer": "ケイワイ",
-      "value": 10900,
-      "best": false
-     },
-     {
-      "dealer": "大畑",
-      "value": 4500,
-      "best": false
-     }
-    ],
-    "spread": 7140,
-    "diff": "0"
-   },
-   {
-    "group": "基板",
-    "name": "基板SS",
-    "cells": [
-     {
-      "dealer": "浜屋",
-      "value": 7340,
-      "best": true
-     },
-     {
-      "dealer": "キバセン",
-      "value": 6900,
-      "best": false
-     },
-     {
-      "dealer": "ケイワイ",
-      "value": 6790,
-      "best": false
-     }
-    ],
-    "spread": 550,
-    "diff": "0"
-   },
-   {
-    "group": "基板",
-    "name": "基板S",
-    "cells": [
-     {
-      "dealer": "浜屋",
-      "value": 5630,
-      "best": true
-     },
-     {
-      "dealer": "大畑",
-      "value": 5500,
-      "best": false
-     },
-     {
-      "dealer": "ケイワイ",
-      "value": 5210,
-      "best": false
-     }
-    ],
-    "spread": 420,
-    "diff": "0"
-   },
-   {
-    "group": "基板",
+    "group": "基板／PC部品",
     "name": "PCカード",
     "cells": [
      {
@@ -1372,7 +1520,7 @@
     "diff": "0"
    },
    {
-    "group": "基板",
+    "group": "基板／PC部品",
     "name": "HDD基板",
     "cells": [
      {
@@ -1390,7 +1538,84 @@
     "diff": "0"
    },
    {
-    "group": "基板",
+    "group": "基板／PC部品",
+    "name": "ノートPCマザー",
+    "cells": [
+     {
+      "dealer": "ケイワイ",
+      "value": 3900,
+      "best": true
+     },
+     {
+      "dealer": "浜屋",
+      "value": 3370,
+      "best": false
+     }
+    ],
+    "spread": 530,
+    "diff": "0"
+   },
+   {
+    "group": "基板／PC部品",
+    "name": "マザーボード",
+    "cells": [
+     {
+      "dealer": "ケイワイ",
+      "value": 2530,
+      "best": true
+     },
+     {
+      "dealer": "浜屋",
+      "value": 2060,
+      "best": false
+     },
+     {
+      "dealer": "大畑",
+      "value": 900,
+      "best": false
+     }
+    ],
+    "spread": 1630,
+    "diff": "0"
+   },
+   {
+    "group": "基板／PC部品",
+    "name": "デスクトップPC",
+    "cells": [
+     {
+      "dealer": "キバセン",
+      "value": 200,
+      "best": true
+     },
+     {
+      "dealer": "大畑",
+      "value": 110,
+      "best": false
+     }
+    ],
+    "spread": 90,
+    "diff": "0"
+   },
+   {
+    "group": "基板／機器",
+    "name": "携帯電話基板",
+    "cells": [
+     {
+      "dealer": "浜屋",
+      "value": 12130,
+      "best": true
+     },
+     {
+      "dealer": "ケイワイ",
+      "value": 11330,
+      "best": false
+     }
+    ],
+    "spread": 800,
+    "diff": "0"
+   },
+   {
+    "group": "基板／機器",
     "name": "携帯電話(電池なし)",
     "cells": [
      {
@@ -1418,140 +1643,7 @@
     "diff": "0"
    },
    {
-    "group": "基板",
-    "name": "ノートPCマザー",
-    "cells": [
-     {
-      "dealer": "ケイワイ",
-      "value": 3900,
-      "best": true
-     },
-     {
-      "dealer": "浜屋",
-      "value": 3370,
-      "best": false
-     }
-    ],
-    "spread": 530,
-    "diff": "0"
-   },
-   {
-    "group": "基板",
-    "name": "基板A",
-    "cells": [
-     {
-      "dealer": "大畑",
-      "value": 3500,
-      "best": true
-     },
-     {
-      "dealer": "浜屋",
-      "value": 3370,
-      "best": false
-     },
-     {
-      "dealer": "ケイワイ",
-      "value": 2830,
-      "best": false
-     }
-    ],
-    "spread": 670,
-    "diff": "0"
-   },
-   {
-    "group": "基板",
-    "name": "CPU緑(下)",
-    "cells": [
-     {
-      "dealer": "大畑",
-      "value": 3500,
-      "best": true
-     },
-     {
-      "dealer": "ケイワイ",
-      "value": 3500,
-      "best": true
-     },
-     {
-      "dealer": "浜屋",
-      "value": 2950,
-      "best": false
-     }
-    ],
-    "spread": 550,
-    "diff": "0"
-   },
-   {
-    "group": "基板",
-    "name": "基板B",
-    "cells": [
-     {
-      "dealer": "浜屋",
-      "value": 2750,
-      "best": true
-     },
-     {
-      "dealer": "大畑",
-      "value": 2600,
-      "best": false
-     },
-     {
-      "dealer": "ケイワイ",
-      "value": 2000,
-      "best": false
-     }
-    ],
-    "spread": 750,
-    "diff": "0"
-   },
-   {
-    "group": "基板",
-    "name": "IC長方形",
-    "cells": [
-     {
-      "dealer": "浜屋",
-      "value": 2650,
-      "best": true
-     },
-     {
-      "dealer": "ケイワイ",
-      "value": 1030,
-      "best": false
-     },
-     {
-      "dealer": "大畑",
-      "value": 500,
-      "best": false
-     }
-    ],
-    "spread": 2150,
-    "diff": "0"
-   },
-   {
-    "group": "基板",
-    "name": "マザーボード",
-    "cells": [
-     {
-      "dealer": "ケイワイ",
-      "value": 2530,
-      "best": true
-     },
-     {
-      "dealer": "浜屋",
-      "value": 2060,
-      "best": false
-     },
-     {
-      "dealer": "大畑",
-      "value": 900,
-      "best": false
-     }
-    ],
-    "spread": 1630,
-    "diff": "0"
-   },
-   {
-    "group": "基板",
+    "group": "基板／機器",
     "name": "スマートフォン",
     "cells": [
      {
@@ -1574,48 +1666,7 @@
     "diff": "0"
    },
    {
-    "group": "基板",
-    "name": "基板C",
-    "cells": [
-     {
-      "dealer": "大畑",
-      "value": 1700,
-      "best": true
-     },
-     {
-      "dealer": "浜屋",
-      "value": 1620,
-      "best": false
-     },
-     {
-      "dealer": "ケイワイ",
-      "value": 1150,
-      "best": false
-     }
-    ],
-    "spread": 550,
-    "diff": "0"
-   },
-   {
-    "group": "基板",
-    "name": "基板D",
-    "cells": [
-     {
-      "dealer": "浜屋",
-      "value": 1100,
-      "best": true
-     },
-     {
-      "dealer": "ケイワイ",
-      "value": 640,
-      "best": false
-     }
-    ],
-    "spread": 460,
-    "diff": "0"
-   },
-   {
-    "group": "基板",
+    "group": "基板／機器",
     "name": "リレー",
     "cells": [
      {
@@ -1630,65 +1681,6 @@
      }
     ],
     "spread": 30,
-    "diff": "0"
-   },
-   {
-    "group": "基板",
-    "name": "電源基板",
-    "cells": [
-     {
-      "dealer": "浜屋",
-      "value": 440,
-      "best": true
-     },
-     {
-      "dealer": "ケイワイ",
-      "value": 220,
-      "best": false
-     },
-     {
-      "dealer": "大畑",
-      "value": 150,
-      "best": false
-     }
-    ],
-    "spread": 290,
-    "diff": "0"
-   },
-   {
-    "group": "基板",
-    "name": "家電基板",
-    "cells": [
-     {
-      "dealer": "大畑",
-      "value": 400,
-      "best": true
-     },
-     {
-      "dealer": "ケイワイ",
-      "value": 310,
-      "best": false
-     }
-    ],
-    "spread": 90,
-    "diff": "0"
-   },
-   {
-    "group": "基板",
-    "name": "デスクトップPC",
-    "cells": [
-     {
-      "dealer": "キバセン",
-      "value": 200,
-      "best": true
-     },
-     {
-      "dealer": "大畑",
-      "value": 110,
-      "best": false
-     }
-    ],
-    "spread": 90,
     "diff": "0"
    },
    {
@@ -1904,10 +1896,10 @@
  },
  "ai": {
   "lines": [
-   "・銅建値236万円へ6万円安、株も急落、金は続伸",
-   "・改正廃掃法でヤード許可制、環境省が保管基準検討",
-   "・愛知でケーブルカッター初摘発、銅盗難の警戒続く"
+   "・銅建値6万円安の236万円、金は613円高の24,950円",
+   "・金属盗対策法で愛知初逮捕、ヤードは許可制へ規制強化",
+   "・基板類は各社差大、CPUセラ上は浜屋65,400円で最高"
   ],
-  "at": "8/21 8:44"
+  "at": "8/21 8:50"
  }
 }
