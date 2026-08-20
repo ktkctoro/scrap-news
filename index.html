@@ -206,7 +206,7 @@ function renderPrices(){
 
   var b = DATA && DATA.boards;
   if (b && b.rows && b.rows.length){
-    html += '<section><div class="eyebrow">基板買取（K&amp;Y' +
+    html += '<section><div class="eyebrow">よく出す基板（K&amp;Y' +
       (b.asof ? '・' + esc(b.asof) + '改定' : '') + '）</div>';
     b.rows.forEach(function(r){ html += rowHtml(r); });
     html += '</section>';
