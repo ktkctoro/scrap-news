@@ -114,6 +114,12 @@
   .cmp .cgroup{font-size:11px;letter-spacing:.06em;font-weight:700;color:#fff;background:var(--ai);
     border-radius:4px;padding:3px 10px;margin:14px 0 4px;display:inline-block}
   .cmp .cgroup:first-child{margin-top:0}
+  .subtabs{display:flex;flex-wrap:wrap;gap:5px;margin:8px 0 4px}
+  .subtab{font-size:12px;font-weight:600;padding:5px 11px;border-radius:999px;
+    border:1px solid var(--line-2);background:var(--card);color:var(--ink-2);
+    cursor:pointer;font-family:inherit}
+  .subtab[aria-selected="true"]{background:var(--ai-bg);border-color:var(--ai);color:var(--ai)}
+  .subtab:focus-visible{outline:2px solid var(--ai);outline-offset:1px}
 
   .links{padding:14px 16px;border-top:1px solid var(--line)}
   .linkrow{display:flex;flex-direction:column;gap:10px;margin-top:2px}
@@ -251,23 +257,74 @@ function renderCompare(){
   if (!c || !c.rows || !c.rows.length) return;
   var html = '<div class="cmp"><div class="eyebrow">同業の買取価格くらべ（' +
     esc(c.dealers.join('・')) + '）</div>';
-  var lastGroup = null;
-  c.rows.forEach(function(r){
-    if (r.group && r.group !== lastGroup){
-      html += '<div class="cgroup">' + esc(r.group) + '</div>';
-      lastGroup = r.group;
-    }
-    html += '<div class="item"><div class="iname">' + esc(r.name) +
+  // 分野名が「基板／クラス」のように ／ を含むものは、
+  // 前半を大見出し、後半を内側のタブとしてまとめる。
+  function itemHtml(r){
+    var s = '<div class="item"><div class="iname">' + esc(r.name) +
       (r.spread ? '<span class="spread">差 ' + esc(String(r.spread)) + '円</span>' : '') +
       '</div><div class="cells">';
     r.cells.forEach(function(x){
-      html += '<span class="cell' + (x.best ? ' best' : '') + '">' + esc(x.dealer) +
+      s += '<span class="cell' + (x.best ? ' best' : '') + '">' + esc(x.dealer) +
         ' <b class="num">' + x.value.toLocaleString() + '</b></span>';
     });
-    html += '</div></div>';
+    return s + '</div></div>';
+  }
+
+  // 分野を順番どおりのかたまりにする
+  var blocks = [], last = null;
+  c.rows.forEach(function(r){
+    var g = r.group || '';
+    var head = g.indexOf('／') >= 0 ? g.split('／')[0] : g;
+    var sub  = g.indexOf('／') >= 0 ? g.split('／')[1] : null;
+    if (!last || last.head !== head){
+      last = { head: head, subs: [] };
+      blocks.push(last);
+    }
+    var tail = last.subs[last.subs.length - 1];
+    if (!tail || tail.name !== sub){
+      tail = { name: sub, rows: [] };
+      last.subs.push(tail);
+    }
+    tail.rows.push(r);
   });
+
+  var boxId = 0;
+  blocks.forEach(function(b){
+    html += '<div class="cgroup">' + esc(b.head) + '</div>';
+    if (b.subs.length === 1 && b.subs[0].name === null){
+      b.subs[0].rows.forEach(function(r){ html += itemHtml(r); });
+      return;
+    }
+    boxId++;
+    html += '<div class="subtabs" role="tablist" data-box="' + boxId + '">';
+    b.subs.forEach(function(s, i){
+      html += '<button class="subtab" role="tab" data-box="' + boxId + '" data-i="' + i +
+        '" aria-selected="' + (i === 0) + '">' + esc(s.name) + '</button>';
+    });
+    html += '</div>';
+    b.subs.forEach(function(s, i){
+      html += '<div class="subpane" data-box="' + boxId + '" data-i="' + i + '"' +
+        (i === 0 ? '' : ' hidden') + '>';
+      s.rows.forEach(function(r){ html += itemHtml(r); });
+      html += '</div>';
+    });
+  });
+
   html += '</div>';
-  document.getElementById('compare').innerHTML = html;
+  var host = document.getElementById('compare');
+  host.innerHTML = html;
+
+  host.querySelectorAll('.subtab').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var box = btn.dataset.box, i = btn.dataset.i;
+      host.querySelectorAll('.subtab[data-box="' + box + '"]').forEach(function(b){
+        b.setAttribute('aria-selected', String(b.dataset.i === i));
+      });
+      host.querySelectorAll('.subpane[data-box="' + box + '"]').forEach(function(p){
+        p.hidden = p.dataset.i !== i;
+      });
+    });
+  });
 }
 
 function renderFeed(){
