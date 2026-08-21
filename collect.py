@@ -25,8 +25,10 @@ JST = timezone(timedelta(hours=9))
 UA = "Mozilla/5.0 (compatible; scrap-news/1.0)"
 
 # ---- 拾うキーワード -------------------------------------------------
-# (分類, 検索語, さかのぼる日数)。日数を書かなければ7日。
+# (分類, 検索語, さかのぼる日数, その検索語から拾う上限)。
+# 日数を書かなければ7日、上限を書かなければ制限なし。
 # 法規制は動きが少ないぶん見落とすと痛いので、60日さかのぼる。
+# 話題が多すぎてニュース欄を埋めてしまう検索語には上限をつける。
 QUERIES = [
     ("mkt", "銅 建値"),
     ("mkt", "亜鉛 建値"),
@@ -50,6 +52,7 @@ QUERIES = [
     ("dc", "データセンター 銅 需要"),
     ("dc", "データセンター 電力設備 投資"),
     ("dc", "サーバー 廃棄 リサイクル"),
+    ("mkt", "ビットコイン 相場", 7, 5),   # 話題が多いので5本まで
 ]
 
 # AI・DC分類はノイズが多いので、この語のどれかを含む記事だけ残す
@@ -66,6 +69,8 @@ RELEVANT = [
     "買取", "買受", "廃棄物", "解体",
     # 法規まわり（スクラップ業の許認可・規制に関わる語）
     "古物", "再資源化", "フロン", "バーゼル", "ヤード",
+    # 資産の値動き（金と並べて見たい）
+    "ビットコイン", "BTC", "暗号資産",
 ]
 
 # 逆に、この語が入っていたら商売に関係ないので捨てる。
@@ -79,6 +84,10 @@ NG_WORDS = [
     "市場規模", "市場動向", "調査レポート", "業界分析", "分析レポート",
     "CAGR", "年平均成長率", "成長予測", "産業レポート", "世界市場",
     "市場の規模", "シェア、成長率", "発売のお知らせ", "業務提携を締結",
+    # 暗号資産まわりのノイズ（取引所の事務連絡・値動き予想・解説記事）
+    "ハードフォーク", "入出金", "メンテナンス", "価格予想", "価格予測",
+    "上昇の可能性", "解説", "週刊", "ロードマップ", "アルトコイン",
+    "相場分析", "ショート清算", "テクニカル",
     # 広告・ランキング記事・PR・セミナー告知
     "人気ランキング", "無料査定", "買取フェア", "鉱山株", "ソフトボール",
     "プレスリリース", "セミナー", "オープン！", "NEW OPEN", "徹底解説",
@@ -104,6 +113,8 @@ NG_SOURCES = [
     "gold price", "goldprice", "vt markets", "vtmarkets", "tradingkey",
     "moomoo", "yahoo!ファイナンス", "finance.yahoo", "株探", "kabutan",
     "ログミーfinance", "logmi", "investing.com", "まぐまぐ", "mag2",
+    # 暗号資産の取引所・値動きツール系（記事ではなく価格表や宣伝が多い）
+    "bybit", "phemex", "panews", "bitbank", "coincheck", "zaif",
 ]
 
 # ドメイン表記で来たときに、画面で読みやすい名前に直す
@@ -139,7 +150,8 @@ CLASSIFY = [
              "義務化", "省令", "政令"]),
     ("gen", ["盗難", "窃盗", "逮捕", "被害", "火災", "火事"]),
     ("dc", ["データセンター", "生成AI", "AI投資", "半導体工場"]),
-    ("mkt", ["建値", "相場", "価格", "市況", "値上げ", "値下げ", "高値", "安値", "需給"]),
+    ("mkt", ["建値", "相場", "価格", "市況", "値上げ", "値下げ", "高値", "安値", "需給",
+             "ビットコイン", "BTC", "暗号資産"]),
 ]
 
 
@@ -299,6 +311,8 @@ def collect_articles(default_days=7):
     for entry in QUERIES:
         cat, query = entry[0], entry[1]
         days = entry[2] if len(entry) > 2 else default_days
+        cap = entry[3] if len(entry) > 3 else None
+        taken = 0
         cutoff = now - timedelta(days=days)
         q = urllib.parse.quote(f"{query} when:{days}d")
         try:
@@ -309,6 +323,8 @@ def collect_articles(default_days=7):
             continue
 
         for node in root.iterfind(".//item"):
+            if cap is not None and taken >= cap:
+                break
             title_raw = (node.findtext("title") or "").strip()
             if not title_raw:
                 continue
@@ -330,6 +346,7 @@ def collect_articles(default_days=7):
                 continue
 
             seen.add(key)
+            taken += 1
             items.append({
                 "cat": final,
                 "label": LABELS[final],
