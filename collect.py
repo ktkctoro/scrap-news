@@ -5,6 +5,7 @@
 使い方:  python collect.py
 """
 
+import difflib
 import json
 import os
 import re
@@ -77,6 +78,7 @@ NG_WORDS = [
     # 市場調査リリース（内容がなく件数だけ稼ぐ）
     "市場規模", "市場動向", "調査レポート", "業界分析", "分析レポート",
     "CAGR", "年平均成長率", "成長予測", "産業レポート", "世界市場",
+    "市場の規模", "シェア、成長率", "発売のお知らせ", "業務提携を締結",
     # 広告・ランキング記事・PR・セミナー告知
     "人気ランキング", "無料査定", "買取フェア", "鉱山株", "ソフトボール",
     "プレスリリース", "セミナー", "オープン！", "NEW OPEN", "徹底解説",
@@ -222,6 +224,65 @@ def clean_title(title):
     return title.strip(), ""
 
 
+def _norm_title(title):
+    """見出しから飾りと記号を落として、比べやすい形にする。"""
+    t = re.sub(r"[【（(\[].{0,12}?[】）)\]]", "", title)
+    return re.sub(r"[^0-9A-Za-z぀-ヿ一-鿿]", "", t)
+
+
+def _bigrams(s):
+    return {s[i:i + 2] for i in range(len(s) - 1)}
+
+
+def same_story(a, b):
+    """同じ出来事を伝える記事かどうかを、見出しの似かたで判断する。
+
+    同じ事件を各社が少しずつ違う言い回しで書くので、前から順に
+    文字を比べるやり方（difflib）と、2文字組の重なり具合の
+    両方を見て、どちらかが基準を超えたら同じ話とみなす。
+
+    ただし相場の記事は書き方がそっくりなので、出てくる数字が
+    まったく別なら（例：亜鉛建値67万円と銅建値236万円）、
+    別の話とみなして基準をぐっと厳しくする。
+    """
+    if not a or not b:
+        return False
+
+    na, nb = set(re.findall(r"\d+", a)), set(re.findall(r"\d+", b))
+    both_have_numbers = bool(na) and bool(nb)
+    if both_have_numbers and not (na & nb):
+        # 数字がまったく重ならない＝別の日・別の品目の可能性が高い
+        return difflib.SequenceMatcher(None, a, b).ratio() >= 0.70
+
+    if difflib.SequenceMatcher(None, a, b).ratio() >= 0.50:
+        return True
+    A, B = _bigrams(a), _bigrams(b)
+    if not A or not B:
+        return False
+    return len(A & B) / len(A | B) >= 0.32
+
+
+def merge_same_stories(items):
+    """同じ出来事の記事を1本にまとめる。新しいほうを残す。
+
+    まとめた本数は dups に入れて、画面に「他2件」と出せるようにする。
+    """
+    kept, norms = [], []
+    for it in items:
+        n = _norm_title(it["title"])
+        hit = None
+        for i, prev in enumerate(norms):
+            if same_story(n, prev):
+                hit = i
+                break
+        if hit is None:
+            kept.append(it)
+            norms.append(n)
+        else:
+            kept[hit]["dups"] = kept[hit].get("dups", 0) + 1
+    return kept
+
+
 def dedupe_key(title):
     """同じ話題の記事を1本にまとめるための見出しキー。
     【画像】【速報】のような飾りと記号を落としてから比べる。"""
@@ -280,6 +341,10 @@ def collect_articles(default_days=7):
         print(f"  ✓ {query} → 累計 {len(items)} 件")
 
     items.sort(key=lambda x: x["published"], reverse=True)
+    before = len(items)
+    items = merge_same_stories(items)   # 新しい順に見て、同じ話は1本にまとめる
+    if before != len(items):
+        print(f"  同じ出来事の記事 {before - len(items)} 本を1本にまとめました")
     return items
 
 
