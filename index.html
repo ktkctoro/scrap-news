@@ -100,6 +100,13 @@
   .tab[aria-selected="true"]{color:var(--ai);border-bottom-color:var(--ai);background:var(--card)}
   .tab:focus-visible{outline:2px solid var(--ai);outline-offset:-2px}
 
+  .pagetabs{display:flex;gap:6px;padding:12px 16px 0}
+  .pagetab{flex:1;padding:9px 8px;border:1px solid var(--line-2);border-radius:8px;
+    background:var(--card);font-family:inherit;font-size:13.5px;font-weight:700;
+    color:var(--ink-2);cursor:pointer}
+  .pagetab[aria-selected="true"]{background:var(--ai);border-color:var(--ai);color:#fff}
+  .pagetab:focus-visible{outline:2px solid var(--ai);outline-offset:2px}
+
   .cmp{padding:14px 16px;border-bottom:1px solid var(--line)}
   .cmp .item{padding:9px 0;border-bottom:1px solid var(--line)}
   .cmp .item:last-child{border-bottom:none;padding-bottom:0}
@@ -141,7 +148,6 @@
   <div class="tabs" role="tablist">
     <button class="tab" id="tab-today" role="tab" aria-selected="true" aria-controls="page-today">けさ</button>
     <button class="tab" id="tab-compare" role="tab" aria-selected="false" aria-controls="page-compare">くらべる</button>
-    <button class="tab" id="tab-board" role="tab" aria-selected="false" aria-controls="page-board">基板</button>
   </div>
 
   <div id="page-today" role="tabpanel" aria-labelledby="tab-today">
@@ -171,18 +177,23 @@
   </div><!-- /page-today -->
 
   <div id="page-compare" role="tabpanel" aria-labelledby="tab-compare" hidden>
-    <div id="compare"></div>
-    <div class="links">
-      <div class="eyebrow">よく見る価格表（新しいタブで開きます）</div>
-      <div class="linkrow" id="linkrow"></div>
+    <div class="pagetabs" role="tablist">
+      <button class="pagetab" id="ptab-scrap" role="tab" aria-selected="true">スクラップ</button>
+      <button class="pagetab" id="ptab-board" role="tab" aria-selected="false">基板</button>
     </div>
-  </div>
-
-  <div id="page-board" role="tabpanel" aria-labelledby="tab-board" hidden>
-    <div id="board"></div>
-    <div class="links">
-      <div class="eyebrow">基板の価格表（新しいタブで開きます）</div>
-      <div class="linkrow" id="linkrow-board"></div>
+    <div id="sub-scrap">
+      <div id="compare"></div>
+      <div class="links">
+        <div class="eyebrow">よく見る価格表（新しいタブで開きます）</div>
+        <div class="linkrow" id="linkrow"></div>
+      </div>
+    </div>
+    <div id="sub-board" hidden>
+      <div id="board"></div>
+      <div class="links">
+        <div class="eyebrow">基板の価格表（新しいタブで開きます）</div>
+        <div class="linkrow" id="linkrow-board"></div>
+      </div>
     </div>
   </div>
 </div>
@@ -406,14 +417,26 @@ document.getElementById('linkrow-board').innerHTML = linksHtml(BOARD_LINKS);
 
 // 上のタブで「けさ」と「くらべる」を切り替える
 (function(){
-  var pages = { 'tab-today': 'page-today', 'tab-compare': 'page-compare',
-                'tab-board': 'page-board' };
+  var pages = { 'tab-today': 'page-today', 'tab-compare': 'page-compare' };
   Object.keys(pages).forEach(function(id){
     document.getElementById(id).addEventListener('click', function(){
       Object.keys(pages).forEach(function(other){
         var on = other === id;
         document.getElementById(other).setAttribute('aria-selected', String(on));
         document.getElementById(pages[other]).hidden = !on;
+      });
+      window.scrollTo(0, 0);
+    });
+  });
+
+  // 「くらべる」の中で、スクラップと基板を切り替える
+  var subs = { 'ptab-scrap': 'sub-scrap', 'ptab-board': 'sub-board' };
+  Object.keys(subs).forEach(function(id){
+    document.getElementById(id).addEventListener('click', function(){
+      Object.keys(subs).forEach(function(other){
+        var on = other === id;
+        document.getElementById(other).setAttribute('aria-selected', String(on));
+        document.getElementById(subs[other]).hidden = !on;
       });
       window.scrollTo(0, 0);
     });
