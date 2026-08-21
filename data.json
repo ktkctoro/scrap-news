@@ -1,5 +1,5 @@
 {
- "updated": "8/21 15:12",
+ "updated": "8/21 15:13",
  "fx": {
   "usdjpy": 158.76,
   "date": "2026-08-20"
@@ -34,15 +34,15 @@
    },
    {
     "name": "ビットコイン",
-    "value": "11,979,879",
+    "value": "11,962,280",
     "unit": "円",
-    "diff": "+8.9%"
+    "diff": "+8.8%"
    },
    {
     "name": "日経平均",
-    "value": "65,843",
+    "value": "65,862",
     "unit": "円",
-    "diff": "-3,377"
+    "diff": "-3,358"
    },
    {
     "name": "NYダウ",
@@ -92,6 +92,14 @@
    "source": "VOI.ID",
    "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1oMWpUR3VWU09sc0pveDZvNGNDUTBleUJkNlRnamhZQlhiem81ZTZqRVB0WHNMUHNXRmRRZDRydjlPUU9MUnfSAUJBVV95cUxNeDc1OGlOcFZNZy01MTdIQmpTMUNBTjJJS3UyT0dTQ1MzQy1wSzBEUExkUnpUY3dkTzRMTG5qWmVqaEE?oc=5",
    "published": "2026-08-20T17:38:01+09:00"
+  },
+  {
+   "cat": "dc",
+   "label": "AI・DC",
+   "title": "金よりも安定した銅投資の選択肢",
+   "source": "jp.ajunews.com",
+   "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBRUlBLQ3BmWEx1bjg2RGhub0hia0JHZDY3S3JaZGs1ekFDTDBhR3Zhc3JWUko4dDZOZC01cUZvamw0OU9VUlQtZVBNNGNMRkc3REowYzNJYnFza3M?oc=5",
+   "published": "2026-08-20T17:04:00+09:00"
   },
   {
    "cat": "law",
@@ -2077,5 +2085,13 @@
     "diff": "0"
    }
   ]
+ },
+ "ai": {
+  "lines": [
+   "・銅建値234万円へ2万円安、金は25,352円で281円高",
+   "・改正廃掃法でヤード許可制、環境省が保管基準検討へ",
+   "・愛知でケーブルカッター所持を初摘発、金属盗警戒続く"
+  ],
+  "at": "8/21 15:13"
  }
 }
