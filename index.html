@@ -78,6 +78,8 @@
   article a:active{opacity:.6}
   .meta{font-size:11.5px;color:var(--ink-3)}
   .msg{padding:28px 16px;font-size:13px;color:var(--ink-3);text-align:center;line-height:1.7}
+  .stale{padding:9px 16px;font-size:12px;color:var(--shu);background:var(--shu-bg);
+    border-bottom:1px solid var(--line)}
 
   .brief{padding:14px 16px;border-bottom:2px solid var(--line-2);background:var(--ai-bg)}
   .brief .line{font-size:14px;line-height:1.8;color:var(--ink)}
@@ -370,7 +372,9 @@ function renderFeed(){
   var feed = document.getElementById('feed');
   var items = ((DATA && DATA.items) || []).filter(function(i){ return FILTER === 'all' || i.cat === FILTER; });
   if (!items.length){ feed.innerHTML = '<div class="msg">該当する記事はありません</div>'; return; }
-  feed.innerHTML = items.map(function(i){
+  var head = DATA.items_stale
+    ? '<div class="stale">けさは記事を取れませんでした。前回のものを出しています。</div>' : '';
+  feed.innerHTML = head + items.map(function(i){
     return '<article><span class="badge b-' + esc(i.cat) + '">' + esc(i.label) + '</span>' +
       '<a href="' + esc(i.link) + '" target="_blank" rel="noopener">' + esc(i.title) + '</a>' +
       '<div class="meta">' + esc(i.source) + (i.published ? ' · ' + ago(i.published) : '') + '</div></article>';

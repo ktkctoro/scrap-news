@@ -10,6 +10,7 @@ import os
 import re
 import ssl
 import sys
+import time
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
@@ -177,11 +178,24 @@ TS_PLANT = "名古屋"   # 価格表の列見出しに含まれる語（名古�
 TS_GRADE = "二級"     # 品名。表では「二　　級」のように空白入りで載っている
 
 
-def fetch(url, timeout=20):
-    req = urllib.request.Request(url, headers={"User-Agent": UA})
+def fetch(url, timeout=20, tries=3, wait=4):
+    """取りにいく。断られたときは少し待ってやり直す。
+
+    相手のサーバーが混んでいて一時的に断ってくること（503など）があるので、
+    間をあけて数回試す。それでもだめなら、そのまま失敗として返す。
+    """
+    last = None
     ctx = ssl.create_default_context()
-    with urllib.request.urlopen(req, timeout=timeout, context=ctx) as r:
-        return r.read()
+    for i in range(tries):
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": UA})
+            with urllib.request.urlopen(req, timeout=timeout, context=ctx) as r:
+                return r.read()
+        except Exception as e:
+            last = e
+            if i < tries - 1:
+                time.sleep(wait * (i + 1))
+    raise last
 
 
 def parse_pubdate(text):
@@ -716,6 +730,15 @@ def main():
     print("同業各社の価格をあつめています…")
     compare = dealers.build_compare(fetch, prev.get("compare"))
 
+    # ニュースが1件も取れなかった朝は、前回の記事をそのまま残す。
+    # （Googleが一時的に断ってくることがある。価格や画面の更新まで
+    #   止めてしまわないようにするため。）
+    stale = False
+    if not items and prev.get("items"):
+        print("  ! 記事が取れなかったので前回の記事を使い回します", file=sys.stderr)
+        items = prev["items"]
+        stale = True
+
     out = {
         "updated": _now_label(),
         "fx": fx,
@@ -726,6 +749,8 @@ def main():
     }
     if boards:
         out["boards"] = boards
+    if stale:
+        out["items_stale"] = True
     if compare:
         out["compare"] = compare
     elif prev.get("compare"):

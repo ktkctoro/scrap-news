@@ -33,6 +33,9 @@ def main():
 
     if not items:
         sys.exit("記事が1件も取れていません。Googleニュースの取得先が変わった可能性があります。")
+    if d.get("items_stale"):
+        # 今朝は取れなかったが前回ぶんが残っている。価格と画面は出せるので止めない。
+        print("注意: けさは記事が取れず、前回の記事を出しています")
     if len(items) > 120:
         sys.exit(f"記事が {len(items)} 件と多すぎます。ふるい分けが効いていない可能性があります。")
     if not fx:
