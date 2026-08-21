@@ -1,5 +1,5 @@
 {
- "updated": "8/22 7:53",
+ "updated": "8/22 8:50",
  "fx": {
   "usdjpy": 158.7,
   "date": "2026-08-21"
@@ -34,9 +34,9 @@
    },
    {
     "name": "ビットコイン",
-    "value": "12,454,959",
+    "value": "12,447,868",
     "unit": "円",
-    "diff": "+7.7%"
+    "diff": "+7.2%"
    },
    {
     "name": "日経平均",
@@ -56,10 +56,19 @@
   {
    "cat": "mkt",
    "label": "相場",
-   "title": "ビットコイン一時7万9450ドル、週間で2割強上昇 ドル安の受け皿に",
-   "source": "日本経済新聞",
-   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE91Ui1KMldVczFzMHI1eElJRUp3LVNzaTdLUnd5NnVHQUg2a1h2SE1TUXJ6TW9kNDE1MmJEb2M5QkVVc1A5NGF1bDczMUc0UEZCTzdEN0MzRWtSZEFlN3JwYTI3eEJlVWw5aUN3eA?oc=5",
-   "published": "2026-08-22T03:42:50+09:00"
+   "title": "5月の鉄スクラップ輸出入札、落札価格2カ月連続5万4000円台 関東鉄源",
+   "source": "日刊工業新聞",
+   "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9heUNTWW1CNG5oM0NMMGFfVTdIeEEtX1FEZXlTdVlrdUFZR2wxRms0OGRiUTZYejFCVnl4b2l1TE5BZjZNSnZKRWM3QzB2UjhrMFZRTXRrcW8?oc=5",
+   "published": "2026-08-22T04:53:05+09:00",
+   "dups": 1
+  },
+  {
+   "cat": "gen",
+   "label": "業界",
+   "title": "阪和興業、インドネシアの非鉄金属会社に出資 ニッケル・コバルト材参画",
+   "source": "日刊工業新聞",
+   "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBtaU51eVNMN0gwbXh3VFJYSlQ1MW56M3lLMk9ldXhXZ29CNEVaMHFMaGx4bmwwNWJCNG52WU1EREVUU2FiX0ZRUl9jZjdyMGVtR1RzUGhzS0g?oc=5",
+   "published": "2026-08-21T22:58:41+09:00"
   },
   {
    "cat": "mkt",
@@ -86,8 +95,8 @@
    "published": "2026-08-21T17:48:33+09:00"
   },
   {
-   "cat": "mkt",
-   "label": "相場",
+   "cat": "btc",
+   "label": "ビットコイン",
    "title": "BTC（ビットコイン）は米利上げ観測の後退で上昇余地も、ジャクソンホール会議を前に様子見か",
    "source": "マネクリ",
    "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9TYTZuYlF1dzZkeWxwTzJXQmV6ZXROTGRqYVV3OTlXNHlzRGFER0E5SXNmNk5pYUg1OVJnVC1UVDN0c0RoU1dGOUl5VzNLYVdraDFaNDN5Z9IBV0FVX3lxTE9TYTZuYlF1dzZkeWxwTzJXQmV6ZXROTGRqYVV3OTlXNHlzRGFER0E5SXNmNk5pYUg1OVJnVC1UVDN0c0RoU1dGOUl5VzNLYVdraDFaNDN5Zw?oc=5",
@@ -158,8 +167,8 @@
    "published": "2026-08-20T17:04:00+09:00"
   },
   {
-   "cat": "mkt",
-   "label": "相場",
+   "cat": "btc",
+   "label": "ビットコイン",
    "title": "ビットコイン急伸と「希少資産・暗号資産全体」再評価の背景",
    "source": "SBI VCトレード",
    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9UWmNqM1JUbzU5d3pXS1k0eVRFeG1KbTZ4dUtxZTNPSzhnVzZXdGNuN3dPOTczSWpXQnlwV3loYkQwWUxlWXhlclk5Z1lORS1jQTBiNEJiOHE2Wm8?oc=5",
@@ -175,8 +184,8 @@
    "dups": 1
   },
   {
-   "cat": "mkt",
-   "label": "相場",
+   "cat": "btc",
+   "label": "ビットコイン",
    "title": "米債券利回り急騰が30％のビットコイン価格ショックを引き起こす可能性",
    "source": "Forbes JAPAN",
    "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1NM0lMVF9rbDRoMzUxRGFZeHg5OGJqSFRoemFWYV9fSW5JLVo3ZHF4SXBLNlhxem9OSnVrWE5KNEM4UXdrV2VXTUpUUFJvUTl4YXBVejJtc2VsUQ?oc=5",
@@ -232,8 +241,8 @@
    "published": "2026-08-19T21:21:45+09:00"
   },
   {
-   "cat": "mkt",
-   "label": "相場",
+   "cat": "btc",
+   "label": "ビットコイン",
    "title": "SkyBridge創業者、弱気相場でもビットコイン底堅さ指摘",
    "source": "CoinPost",
    "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTFB2emsxSVhtNkI3bThGUEVxSVlDOC1ab1Z3V0dWTjZDSlhfMXN4UHUwSDhaYUJUenVIWEJqd2dPMlowTkk?oc=5",
@@ -246,6 +255,14 @@
    "source": "ニコニコニュース",
    "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE91YWUtTzR5Yi1oSFQ3R3NxMm5iM3JITXBWUjdaOFk1eTdNdFNWMXRqOHY4QnJ3dkdxZjdWclQxUERweUZPQk9ubUFsOTJ5cTFUU0F3dkVEemV3djNPYkk5V21SRUZfaEtSbXU4ZVJIUVBleU1sU3c?oc=5",
    "published": "2026-08-19T13:00:00+09:00"
+  },
+  {
+   "cat": "btc",
+   "label": "ビットコイン",
+   "title": "ブラックロック、ビットコイン下落でも分散効果健在と分析",
+   "source": "CoinPost",
+   "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE1WVTRTQlpzV0stQ0plalBSd1NweVlGS01MeHNWNVhJQWVBZDJlRGhaOXMyd1gzYTVubEJ2R0NieF9TN1k?oc=5",
+   "published": "2026-08-19T11:15:47+09:00"
   },
   {
    "cat": "law",
@@ -362,14 +379,6 @@
   {
    "cat": "law",
    "label": "法規制",
-   "title": "フロン類、ライフサイクル全体で排出抑制強化・加速 冷媒回収の徹底など",
-   "source": "kankyo-business.jp",
-   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5FSVBrQ3ZuNXpzTjdVWDNzc3UtN25nYm1jQ2JPRkFad0E0ckxZb0dTNmo2b0R6UlVOclVYMWd5RXNGakhiYVZEUnE4LWswYkZmV2VRQ3dET2k2UWFfY1VtWGpTNVllR1czeXQ2TmRHb010Q1UxSGRFRFFIMUF1VTA?oc=5",
-   "published": "2026-08-05T16:00:00+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
    "title": "廃棄物リサイクルを脱炭素の最前線へ。呉市から国内初※の「グリーン水素×資源再生」モデル構築に向けた実証実験を開始",
    "source": "PR TIMES",
    "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE4yV2NsU0xTNTJVTmdXdVpMNG1sckVZT2s3cjdhdmNMVnZuRDREd19nakVnS0ZoMW5GMDlNakFrTlVERlNRNFp6Q3pCVkFlZFIzcG01RHRFNHdqaDBKTzRiQ29TT01SajlpSEE?oc=5",
@@ -474,19 +483,19 @@
   {
    "cat": "law",
    "label": "法規制",
-   "title": "米国GreenTek Solutionsへ出資、IT機器リユース・リサイクル事業に参入 | 住友商事",
-   "source": "sumitomocorp.com",
-   "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE8zbk1panVHUks4UkR2TE92a1pVRTlEQ1R4a29oM0YyMTdrSi0zMXNLZk0zYVl2dlQwWVdqdWZoOTNONUVvOWl6SV9JQmVZakdMVG11dTJaMkRjYnFxc05PMG1hMElUbkFzdW10bktaUjF1UWJu?oc=5",
-   "published": "2026-07-14T16:00:00+09:00"
+   "title": "ダイキン工業と伊藤忠商事、業務用空調機の水平リサイクル事業で包括的提携。法認定取得へ",
+   "source": "Circular Economy Hub",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFB0dlA0OWt6Vm1Tb1RCSU5MSXh1QWhKQjhmSy05S296eHhXdGdHNUFfWkw0Vk4zZk5HT3lRSU40eW1xcS1ZdmthcEVWNzRRRkFVb2VPci1XcXZXcUhWaUlhT0F3VFVqNkxLNmZILU5zcDdWU1NhOU8wUVpuM0JqVGs?oc=5",
+   "published": "2026-07-15T16:00:00+09:00",
+   "dups": 2
   },
   {
    "cat": "law",
    "label": "法規制",
-   "title": "伊藤忠とダイキン、業務用空調の水平リサイクルで連携：リサイクルニュース",
-   "source": "MONOist",
-   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5zaVN4U2tvbUdxMVp4eHBjZC13Mm40WDUwMDVkSGRLOE1ZMTZiRk1TUkVNejNOM184YVhGMEljWWxUN25KRmh0eWFWYVVpWmtGN3VHb3VPby1BMlpkYlVvd29GbzZBUkN0UFY4NEd3dw?oc=5",
-   "published": "2026-07-13T16:00:00+09:00",
-   "dups": 1
+   "title": "米国GreenTek Solutionsへ出資、IT機器リユース・リサイクル事業に参入 | 住友商事",
+   "source": "sumitomocorp.com",
+   "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE8zbk1panVHUks4UkR2TE92a1pVRTlEQ1R4a29oM0YyMTdrSi0zMXNLZk0zYVl2dlQwWVdqdWZoOTNONUVvOWl6SV9JQmVZakdMVG11dTJaMkRjYnFxc05PMG1hMElUbkFzdW10bktaUjF1UWJu?oc=5",
+   "published": "2026-07-14T16:00:00+09:00"
   },
   {
    "cat": "law",
@@ -2144,13 +2153,5 @@
     "diff": "0"
    }
   ]
- },
- "ai": {
-  "lines": [
-   "・銅建値234万円で2万円安、鉄は名古屋二級1500円安、金は344円高25,415円",
-   "・スクラップヤードの土地利用規制強化へ、フロン・廃掃法改正も動く",
-   "・愛知でケーブルカッター所持初摘発、銅盗難増で仕入元の確認徹底を"
-  ],
-  "at": "8/22 7:53"
  }
 }
