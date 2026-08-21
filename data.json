@@ -1,5 +1,5 @@
 {
- "updated": "8/22 8:52",
+ "updated": "8/22 8:56",
  "fx": {
   "usdjpy": 158.7,
   "date": "2026-08-21"
@@ -34,7 +34,7 @@
    },
    {
     "name": "ビットコイン",
-    "value": "12,440,973",
+    "value": "12,445,293",
     "unit": "円",
     "diff": "+7.2%"
    },
@@ -60,6 +60,14 @@
    "source": "ｄメニューニュース",
    "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPTDFjcW9fV1U1ZTZONmx5eVVmNjNaV0t2RTNjbFN2dmdXVEtTM0o2SlJlVVhpVG15R1dPeVVWOG1mZ0JaWHR4amR5WmREY0pzUGdVcUtkc2Fkbi1uU09vNVNUN1BsamhCdmQ4STBTQWkzaVVIQ2ZrUXViVWxLZHE5dzFvcXYwQm04dFJVZjBoNzlhc3dTZFlNcS16dXhoVmxQQ3RFdW5XOUp2UnNCUmVvU3FsTDk5cUhvQ3hLSjBFNUVvUkFzUkF2elZzRUcycmY4elpPMWhuZFo1RjNy0gGMAUFVX3lxTFBUQVNJV2dXTXFHbGItRVFLcjVEME5ZQ1k1S21VSF9WdEVpS1NyaHVnVVZTMVlwZjBNTXY3LVpRR0RmZG9wWjctaWUxU2FlemEycHByS0Y1cnNSM1o3U0NPOHJrQXJ0X0xSU1BYdGUwUS1ycXhKRmpXaEEydFRDVGJzQV82SzFvODNHdy13?oc=5",
    "published": "2026-08-22T08:46:31+09:00"
+  },
+  {
+   "cat": "dc",
+   "label": "AI・DC",
+   "title": "【国際】トレインとイートン、AIデータセンター統合設計開発。省エネ性能15%向上、銅80%減 | Sustainable Japan | 世界のサステナビリティ・ESG投資・SDGs",
+   "source": "Sustainable Japan",
+   "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNQXY0NmVZQzZYRHJabFdzRjl4aXZYT3pnVjRYTWNEdHhPR1l5NFo0RlBMNlk3LUlmM0ptWkdaNUZ1emlZSDdWMkxEeFZCQ1dNcENEOUtOSDUxejk4cUl2eU9EeTA1d3ZENFdGM2Q3MWx2cVpGLXFhc0NObmphUmxfWnRn0gGCAUFVX3lxTE1BdjQ2ZVlDNlhEclpsV3NGOXhpdlhPemdWNFhNY0R0eE9HWXk0WjRGUEw2WTctSWYzSm1aR1o1RnV6aVlIN1YyTER4VkJDV01wQ0Q5S05INTF6OThxSXZ5T0R5MDV3dkQ0V0YzZDcxbHZxWkYtcWFzQ05uamFSbF9adGc?oc=5",
+   "published": "2026-08-22T07:10:22+09:00"
   },
   {
    "cat": "mkt",
@@ -124,6 +132,14 @@
    "source": "sogyotecho.jp",
    "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBCSFhjYXBEeEdkajBaZGNway1GY05OYkE0UGJNd0dzdlhvcTUxWGd4VG5FdkxSX1hWYXVQZklSN3BEaUJ3NExiZHFiRnI3d1NzOWRtazdyLW8wZw?oc=5",
    "published": "2026-08-21T10:54:49+09:00"
+  },
+  {
+   "cat": "mkt",
+   "label": "相場",
+   "title": "なぜ金が動くと松田産業（7456）が動くのか、ジャクソンホールと貴金属リサイクルの意外な接点",
+   "source": "note",
+   "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBCOExlZzBwMG5LVkg3UzVOdUJ6VENlclhxY0tQMmI3YkZMYUxib2ROX0xiRzJjUktleEc2a1FDZXRFNjdWRG1rNktucHdSUDVXWmcxMV9qNnptSHc?oc=5",
+   "published": "2026-08-21T06:04:37+09:00"
   },
   {
    "cat": "dc",
@@ -248,6 +264,14 @@
    "published": "2026-08-19T11:15:47+09:00"
   },
   {
+   "cat": "law",
+   "label": "法規制",
+   "title": "環境省「令和8年度 プラスチック資源循環に関する先進的社会実装モデル形成支援事業」に6社共同の実証事業が採択",
+   "source": "ニコニコニュース",
+   "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1mM1c2WG9HQ3ZpWXhFY3VaU1ZRbGRzZ2xMLUpSMk9kaEFTemtqMEtwRjM2N0lPTFBpTGw0VTFQeGlmQkR4Zjh1Y2hGc1BJcnZsZ1E0Mw?oc=5",
+   "published": "2026-08-18T19:18:42+09:00"
+  },
+  {
    "cat": "dc",
    "label": "AI・DC",
    "title": "三井金属、マレーシアにAI・半導体向け銅箔生産拠点の新設を計画 VSPは月産5000t体制も視野 | TECH+（テックプラス）",
@@ -277,14 +301,6 @@
    "title": "銅建値が２４０万円突破／需給ひっ迫懸念が押し上げ",
    "source": "日刊鉄鋼新聞 Japan Metal Daily",
    "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9oZjBhbjV1ZXkzb3dQWUpjSldEZEJBc2NhSHFzeE5sOTBfeWNzWVFOSDlBVXZlMUtfSEN4RmwtS3VJREktZWR1VTVNZXc0UjVoX2JWY3FEcTRXVW1HY2c?oc=5",
-   "published": "2026-08-18T05:00:00+09:00"
-  },
-  {
-   "cat": "mkt",
-   "label": "相場",
-   "title": "名港海運／輸入アルミ地金の新物流拠点開設／安全性高め、作業のＤＸ化推進",
-   "source": "日刊鉄鋼新聞 Japan Metal Daily",
-   "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFAzazk3dkpFal9NV0ktR1NTM0pZTVlSUGxHclJjUW5BWmxfSDUtNjdWUTFhM01KRUZ4SVBwTGN1T2VSRzlvMmRUTXVRVU5pSm5EVW5FcEZBQ19WUDBnZEE?oc=5",
    "published": "2026-08-18T05:00:00+09:00"
   },
   {
@@ -336,20 +352,20 @@
    "published": "2026-08-17T13:55:23+09:00"
   },
   {
-   "cat": "mkt",
-   "label": "相場",
-   "title": "1万円台も続々〉最旬【地金アクセサリー】7選。大人が垢抜ける“ほどよいボリューム”は？｜STORY（magacol",
-   "source": "Yahoo!ニュース",
-   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBpNjBqWGhMa3B2ZHpLRG9VcmhIZWd2U0FfUlBZZjdabmtmMmRydTF4SFhYc0JibDlhNURmeWR4NmhyMTJsMnFndGlNbFQteUx6SmRDWHNqM3J5bnJkcFBSQm12RGdkb01DcFVHYkJlOWgxc3FqcVJncGJHcFNaOHc?oc=5",
-   "published": "2026-08-17T11:00:00+09:00"
+   "cat": "dc",
+   "label": "AI・DC",
+   "title": "石井敬太・伊藤忠商事社長「銅など資源分野を強化へ」",
+   "source": "毎日新聞",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA5bHloZHU0N1NqU1dwemE3LVVQR0lTMk5RaWRLdklTWHdvaVZRdFNXVEN5ckxDOVRwaXZtWlVqSHZDVC1GZDczRFRubVB4bGxQY0E5NEJyNGh1dk1LWlp3QXBsVmx2QjVVektoRC1QNHdmWnB6UnFyWE42ZFZoRjA?oc=5",
+   "published": "2026-08-16T05:00:00+09:00"
   },
   {
    "cat": "gen",
    "label": "業界",
-   "title": "橋下徹氏「かっぱ兄妹」の銅像２体盗難に危機感「そういう世の中ではなくなってきたのかな」",
-   "source": "Infoseek",
-   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5Tc19rQzVudFNpcER1djFXSTg3emExQmdRQVA0ekdUc0dQY0U4WTNlTjNneXBCellJUzA4ZFJnN0h1aWN6a3VUakpBaFZCMUdKMVRqRVZVTDZaeWF3RGFUVjVpVDh6Sk9KdUhrTFRqU3BiYjTSAXhBVV95cUxOaGE5ZzNVcDNuMEl2dXBjRXpjMVBfWGVQejluVWk5UXlNUWNFcU45WGZMcUZfM3M3clY0Rm5vbFNlTW9SZ25UQkVIcTVVU29MbTNmYzBMQV9VOUF3bGdfb2MwRGxUczlxQ2c3MDYxQ3ZwS2p5NW5lZXo?oc=5",
-   "published": "2026-08-12T16:53:35+09:00"
+   "title": "橋下徹氏「かっぱ兄妹」の銅像２体盗難に危機感「そういう世の中ではなくなってきたのかな」（日刊スポーツ）",
+   "source": "Yahoo!ニュース",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE81RnF3Y2JQX05iRDYzYVFSbGwxNFppaFNUQW9FN1ZkaGFBTnI4b21CaUJDZWo3MDRGSDl5c1FTaDBWRUNGREd4dHItalA3d3pzVnhuWUN0OFRqOTJ6SnRlenZfNHEwR1NSemlFYy1qQ2tMZjZOcjN1c2xTa19va1U?oc=5",
+   "published": "2026-08-12T16:00:00+09:00"
   },
   {
    "cat": "law",
@@ -366,14 +382,6 @@
    "source": "朝日新聞",
    "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFByLVJ2UHlvX203WjJiRnpHcXkxOG1OWXBQeEhucVd3MDdUcWExc2EyNWdDNW9UZ0JfeXhOOFZKX3RwN1htVU5NYTNtUzBTT3BsRXpqRldYZ3E3TFB5NU82QmIyMXJEanM?oc=5",
    "published": "2026-08-07T16:00:00+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
-   "title": "フロン類、ライフサイクル全体で排出抑制強化・加速 冷媒回収の徹底など",
-   "source": "kankyo-business.jp",
-   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5FSVBrQ3ZuNXpzTjdVWDNzc3UtN25nYm1jQ2JPRkFad0E0ckxZb0dTNmo2b0R6UlVOclVYMWd5RXNGakhiYVZEUnE4LWswYkZmV2VRQ3dET2k2UWFfY1VtWGpTNVllR1czeXQ2TmRHb010Q1UxSGRFRFFIMUF1VTA?oc=5",
-   "published": "2026-08-05T16:00:00+09:00"
   },
   {
    "cat": "law",
@@ -438,14 +446,6 @@
    "source": "北國新聞",
    "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5YNlFXdjN0Mks2Q0FzU2tFZ2Ruc1pwNDRyQ1BtQmJQVVh4T2Vyamc1YXh0RWJQaHpDSHpMR0ZwWWhmZzhsU0NkSmo1NHh2NTVjQzJ4NmRxUQ?oc=5",
    "published": "2026-07-23T16:00:00+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
-   "title": "切断工具所持疑いで63歳男逮捕 栃木県警、金属盗対策法を初適用",
-   "source": "47NEWS",
-   "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1kakpoeVhSYjdnamU5ajVfbFBXTGRiX0doRHhUal9yTlJPZHBMRndoSUZFdXVtaGNDa2tPbENOQUtyTTlvcmFZN1BPQQ?oc=5",
-   "published": "2026-07-22T16:00:00+09:00"
   },
   {
    "cat": "gen",
@@ -545,6 +545,14 @@
    "published": "2026-07-03T16:00:00+09:00"
   },
   {
+   "cat": "law",
+   "label": "法規制",
+   "title": "「金属盗対策法」が全面施行／届出の期限、既存業者は８月末まで",
+   "source": "日刊鉄鋼新聞 Japan Metal Daily",
+   "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE55bDdodmxpbGI0Q1RsRVVuYm5uN1U5ZVpCaWtrT3RnUk44M0lKangzZFN3NWlyd3g2TFhEQmZQb3hmQjhHMFVLNDMtSzZlcG91SjBQVHVQSXRuQ1lOMlE?oc=5",
+   "published": "2026-07-01T16:00:00+09:00"
+  },
+  {
    "cat": "gen",
    "label": "業界",
    "title": "太陽光発電所のケーブル狙う窃盗未遂 28歳男を逮捕 高騰する「銅」の転売目的か、県内で被害が相次ぎ警察が関連捜査 富山",
@@ -597,8 +605,8 @@
    "cat": "law",
    "label": "法規制",
    "title": "「令和７年度 広域自治体における資源循環システム構築の実証事業」を完了",
-   "source": "PR TIMES",
-   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBOZ05oWVdPWUgxYzZNS1pzcE9BdTdWUUdpUkplTTB2YlVtMWxOa3FRT0JLU2xJQTBiVmxXY042SkdvU19fN2N1Mlh5cGhpbExzY0lMMnNYMjVOSVhNc1FsbzByS3MzazhWd0E?oc=5",
+   "source": "朝日新聞",
+   "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBJTW5MNkYyWG5IcVB1OFVnY2Fxc2M5X0FKMkN3eEd2RUVJQmgzLXdpVUNqMzQ5YVh6VFFPNFFlYU1EZlBvd1pCNF9sQl9IOTN2cDVoZWFlVUpydTg?oc=5",
    "published": "2026-06-25T16:00:00+09:00"
   }
  ],
@@ -2155,10 +2163,10 @@
  },
  "ai": {
   "lines": [
-   "・銅建値234万円（-2万）、鉄は名古屋二級4.8万で1500円安",
-   "・スクラップヤードの土地利用規制強化へ、国交省が動く",
-   "・愛知でケーブルカッター所持初摘発、銅盗難の持込に警戒"
+   "・銅建値234万円で2万円安、金は344円高の25,415円",
+   "・改正廃棄物処理法が可決、フロン点検制度も強化へ",
+   "・愛知でケーブルカッター所持を初摘発、金属盗警戒継続"
   ],
-  "at": "8/22 8:52"
+  "at": "8/22 8:56"
  }
 }
