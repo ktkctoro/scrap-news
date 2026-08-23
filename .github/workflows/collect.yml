@@ -57,8 +57,17 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data.json history.json
-          git diff --staged --quiet || git commit -m "毎朝の収集 $(TZ=Asia/Tokyo date '+%Y-%m-%d %H:%M')"
-          git push
+          git diff --staged --quiet && exit 0
+          git commit -m "毎朝の収集 $(TZ=Asia/Tokyo date '+%Y-%m-%d %H:%M')"
+          # 別の実行と重なって弾かれることがあるので、取り込んでから何度か試す
+          for i in 1 2 3; do
+            git push && exit 0
+            echo "プッシュがぶつかりました。取り込んで再試行します（$i回目）"
+            git pull --rebase -X ours origin main || git rebase --abort || true
+            sleep 5
+          done
+          echo "::error::data.json の保存に失敗しました"
+          exit 1
 
       - name: 公開するファイルだけまとめる
         run: |
