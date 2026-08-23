@@ -9,6 +9,11 @@ on:
     branches: [main]
   # GitHubの画面から手で動かせるようにする
   workflow_dispatch:
+    inputs:
+      force_weekly:
+        description: "週次レポートを今すぐ書き直す（月曜以外でも）"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -40,6 +45,12 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python summarize.py
+
+      - name: 週次レポートを書く（月曜だけ）
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          FORCE_WEEKLY: ${{ inputs.force_weekly && '1' || '' }}
+        run: python weekly.py
 
       - name: data.json と推移の記録を残す
         run: |

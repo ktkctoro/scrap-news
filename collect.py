@@ -847,6 +847,11 @@ def main():
         print("  ! 同業各社の価格は前回の値を使い回します", file=sys.stderr)
         out["compare"] = prev["compare"]
 
+    # 週次レポートは月曜だけ作り直す（weekly.py）。
+    # ふだんの朝は前回のものをそのまま持ち越す。
+    if prev.get("weekly"):
+        out["weekly"] = prev["weekly"]
+
     print("AIの朝3本をあつめています…")
     l3m = ai_morning.fetch_today(fetch)
     if l3m:
