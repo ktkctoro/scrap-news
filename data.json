@@ -1,5 +1,5 @@
 {
- "updated": "8/23 13:25",
+ "updated": "8/23 13:31",
  "fx": {
   "usdjpy": 158.7,
   "date": "2026-08-21"
@@ -34,7 +34,7 @@
    },
    {
     "name": "ビットコイン",
-    "value": "12,216,847",
+    "value": "12,232,411",
     "unit": "円",
     "diff": "-2.0%"
    },
@@ -360,14 +360,6 @@
    "published": "2026-08-13T23:51:54+09:00"
   },
   {
-   "cat": "gen",
-   "label": "業界",
-   "title": "橋下徹氏「かっぱ兄妹」の銅像２体盗難に危機感「そういう世の中ではなくなってきたのかな」（日刊スポーツ）",
-   "source": "Yahoo!ニュース",
-   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE81RnF3Y2JQX05iRDYzYVFSbGwxNFppaFNUQW9FN1ZkaGFBTnI4b21CaUJDZWo3MDRGSDl5c1FTaDBWRUNGREd4dHItalA3d3pzVnhuWUN0OFRqOTJ6SnRlenZfNHEwR1NSemlFYy1qQ2tMZjZOcjN1c2xTa19va1U?oc=5",
-   "published": "2026-08-12T16:00:00+09:00"
-  },
-  {
    "cat": "law",
    "label": "法規制",
    "title": "価格が高騰する銅を狙って太陽光発電所から送電ケーブル2.2トンを盗んだか 金属盗対策法違反の疑いなど 男２人を逮捕・送検 富山",
@@ -426,14 +418,6 @@
   {
    "cat": "law",
    "label": "法規制",
-   "title": "なぜ2つのシャフトの産業シュレッダーはスマートなオートメーション、高いトルクの処理および持続可能な物質的な回復によってリサイクルする産業廃棄物を革命化しています",
-   "source": "Spherical Insights",
-   "link": "https://news.google.com/rss/articles/CBMirwJBVV95cUxPcHJQV05VNHllMEhnM1AzY01UeEI5UTkyb0JBbC1jUnpteEVaaDlnQ3gwN2tVUnFJcVhYNzBlaWI2aUV5NjVtcDRkNzlidUd0aE5sZWdQb1l2cHFpU3dIdkdMUFFBS3JGTk5nRGJPcURoMTdyT05QeVhLcDBOQUlHUTJnWmZLWFhxamxRRzJVZjJRZEJOam1lS3hIRS1uU19xenJjdlgxZGFSOGhMZmtrWllnQ1hUdVVKdGNKMmVZX0E3UTk5RGkydld5WWdqTVRiazRlWHc3WjVlWXZBb2pHYzZOT05uMUZoQXMwWkdiOUlyRWMyTUI0U3NOeHFDeFU1bGkyVkVIZHhYWk1RcEpBR1kzX3VBb0t0bGxlM0RSQ3hkVFoxYlhuUFI3UUM3Tnc?oc=5",
-   "published": "2026-07-27T02:49:59+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
    "title": "加賀銅板盗疑い３人逮捕 神社屋根被害１８０キロ 高騰背景、県内１～６月の金属盗被害２．９倍｜社会｜石川のニュース",
    "source": "北國新聞",
    "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5YNlFXdjN0Mks2Q0FzU2tFZ2Ruc1pwNDRyQ1BtQmJQVVh4T2Vyamc1YXh0RWJQaHpDSHpMR0ZwWWhmZzhsU0NkSmo1NHh2NTVjQzJ4NmRxUQ?oc=5",
@@ -485,6 +469,14 @@
    "title": "首都直下地震を想定 災害廃棄物対策で協議会立ち上げ 環境省",
    "source": "NHKニュース",
    "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1VXzhuQk45VXI5TDJjdUNLM3I1SkxNdE4xR0dwS1ZsdjFOb1hzUzRjMmI2Y3VSWk45Y2VoMEswSjhLd0pSOHM3aHJIbGRpWVNVNzBvR2NEdDZKRHBWN1ZJ?oc=5",
+   "published": "2026-07-15T16:00:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "北九州市補助金に採択：タイにおける太陽光パネルのリユース・リサイクル事業化可能性調査を開始",
+   "source": "PR TIMES",
+   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBVZ1Q2NnJ4NUFaRDNDdk1XNFFCeUJKREtGYkhkUjdvMExVOE5MdzJGYUpaQUtYWElkZU5pd1FCa1NjeTNxWFlHNUlhOEgzRVpyNTdPdFlJZDZ5dFlNUTAxN0VJeVdsVFpkZWc?oc=5",
    "published": "2026-07-15T16:00:00+09:00"
   },
   {
@@ -2657,7 +2649,7 @@
     10986156,
     11613775,
     12466777,
-    12217604
+    12232267
    ]
   },
   "日経平均": {
@@ -2847,10 +2839,10 @@
  },
  "ai": {
   "lines": [
-   "・銅建値2,340,000円/tで2万円安、金は25,415円/g（+344）",
-   "・金属盗対策法が全面施行、既存業者の届出期限は8月末",
-   "・太陽光や水道メーターで銅盗難相次ぐ、本人確認厳格化"
+   "・銅建値234万円へ2万円安、東鉄名古屋二級4.8万円で1,500円安",
+   "・金属盗対策法が全面施行、既存業者の届出は8月末まで",
+   "・太陽光や神社で銅線・銅板盗難相次ぐ、買取時の本人確認厳格化"
   ],
-  "at": "8/23 13:25"
+  "at": "8/23 13:31"
  }
 }
