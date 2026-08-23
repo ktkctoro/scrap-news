@@ -1,5 +1,5 @@
 {
- "updated": "8/23 12:58",
+ "updated": "8/23 13:21",
  "fx": {
   "usdjpy": 158.7,
   "date": "2026-08-21"
@@ -34,9 +34,9 @@
    },
    {
     "name": "ビットコイン",
-    "value": "12,229,937",
+    "value": "12,222,799",
     "unit": "円",
-    "diff": "-1.9%"
+    "diff": "-1.8%"
    },
    {
     "name": "日経平均",
@@ -551,14 +551,6 @@
    "source": "産経ニュース",
    "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5CaEZabm83VFUwLWEzSjBXTVJUMmtLS2dMM2xKTDFoLTAxSkp3N0dfUEJWSUNWUlZuUTRIZ09udkI3eUJfT3A5a1llc1pqOGNiZ3AxRmJhcXNxS2RraWtzSnhyWUVNbndOYm54RXZ6djVWb1NhWUE?oc=5",
    "published": "2026-07-03T16:00:00+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
-   "title": "道内の金属くず／買取に新ルール／規制に合わせ本人確認厳格化／道警「盗難品売りにくい環境を」",
-   "source": "nikkinonline.com",
-   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE03cEJCak9lZENRLWVlNXJfWjljQXNjQ21NZnZjSjVrLXVjbVUtMGZLdmJ1YTRBaTdBSXY2WUY2by11bEVBQW44d2s4WV80OTVXSGtvSU5wdjZtUmtEVFFnOW1ONk4?oc=5",
-   "published": "2026-07-02T16:00:00+09:00"
   },
   {
    "cat": "law",
@@ -2649,7 +2641,7 @@
     10986156,
     11613775,
     12466777,
-    12229166
+    12219137
    ]
   },
   "日経平均": {
@@ -2839,10 +2831,10 @@
  },
  "ai": {
   "lines": [
-   "・銅建値234万円へ2万円安、金は25,415円で344円高",
-   "・金属盗対策法が全面施行、既存業者の届出は8月末まで",
-   "・太陽光や水道メーターの銅盗難が各地で続発、警戒を"
+   "・銅建値234万円へ2万円安、鉄も名古屋二級1,500円安",
+   "・金属盗対策法が全面施行、届出期限は8月末まで",
+   "・太陽光の銅線盗難相次ぎ、切断工具所持で逮捕も"
   ],
-  "at": "8/23 12:58"
+  "at": "8/23 13:21"
  }
 }
