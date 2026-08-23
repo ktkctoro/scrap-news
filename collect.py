@@ -19,6 +19,7 @@ import zlib
 from datetime import datetime, timezone, timedelta
 
 import dealers
+import history
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 JST = timezone(timedelta(hours=9))
@@ -838,6 +839,13 @@ def main():
     elif prev.get("compare"):
         print("  ! 同業各社の価格は前回の値を使い回します", file=sys.stderr)
         out["compare"] = prev["compare"]
+
+    print("3ヶ月の推移をあつめています…")
+    try:
+        out["history"] = history.build(fetch, JX_CUPRICE_URL, out)
+    except Exception as e:
+        print(f"  ! 推移の取得失敗: {e}", file=sys.stderr)
+
     with open(dest, "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, indent=1)
     print(f"\n完了: {len(items)} 件を {dest} に書き出しました。")

@@ -133,6 +133,28 @@
   .subtab[aria-selected="true"]{background:var(--ai-bg);border-color:var(--ai);color:var(--ai)}
   .subtab:focus-visible{outline:2px solid var(--ai);outline-offset:1px}
 
+  /* 指標をタッチしたときに出るチャート */
+  .tapable{cursor:pointer}
+  .tapable:active{background:var(--ai-bg)}
+  .sheet{position:fixed;inset:0;z-index:50;display:none;align-items:center;justify-content:center;
+    background:rgba(20,28,38,.45);padding:16px}
+  .sheet[open]{display:flex}
+  .sheetbox{background:var(--card);border:2px solid var(--ai);border-radius:14px;
+    width:100%;max-width:380px;overflow:hidden}
+  .sheethead{background:var(--ai);color:#fff;padding:11px 14px;display:flex;
+    align-items:baseline;justify-content:space-between;gap:8px}
+  .sheethead b{font-size:15px;font-weight:700}
+  .sheethead .x{background:transparent;border:none;color:#fff;font-size:20px;
+    line-height:1;cursor:pointer;padding:0 2px;font-family:inherit}
+  .sheetbody{padding:14px}
+  .sheetnow{display:flex;align-items:baseline;gap:8px;margin-bottom:10px}
+  .sheetnow .v{font-size:26px;font-weight:700;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+  .sheetnow .u{font-size:12px;color:var(--ink-3)}
+  .sheetnow .d{font-size:13px;font-weight:600;margin-left:auto}
+  .sheetsvg{width:100%;height:130px;display:block}
+  .sheetfoot{display:flex;justify-content:space-between;font-size:11.5px;
+    color:var(--ink-3);margin-top:6px}
+
   .links{padding:14px 16px;border-top:1px solid var(--line)}
   .linkrow{display:flex;flex-direction:column;gap:10px;margin-top:2px}
   .linkgroup{display:flex;align-items:baseline;gap:8px}
@@ -205,6 +227,16 @@
 </div>
 <p class="disclaimer" id="foot"></p>
 
+<div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title">
+  <div class="sheetbox">
+    <div class="sheethead">
+      <b id="sheet-title">—</b>
+      <button class="x" id="sheet-close" aria-label="閉じる">×</button>
+    </div>
+    <div class="sheetbody" id="sheet-body"></div>
+  </div>
+</div>
+
 <script>
 var DATA = null, FILTER = 'all';
 
@@ -243,7 +275,8 @@ function renderPrices(){
   if (m.tiles && m.tiles.length){
     html += '<section><div class="eyebrow">建値</div><div class="grid">';
     m.tiles.forEach(function(t){
-      html += '<div class="tile"><div class="k">' + esc(t.name) + '</div>' +
+      html += '<div class="tile tapable" data-name="' + esc(t.name) + '" data-unit="' +
+        esc(t.unit || '') + '"><div class="k">' + esc(t.name) + '</div>' +
         '<div class="v num">' + esc(t.value) + '<span class="u"> ' + esc(t.unit || '') + '</span></div>' +
         '<div class="d num ' + diffClass(t.diff) + '">' + esc(diffText(t.diff)) + '</div></div>';
     });
@@ -251,7 +284,9 @@ function renderPrices(){
   }
 
   function rowHtml(r){
-    return '<div class="row"><span class="k">' + esc(r.name) + '</span><span>' +
+    return '<div class="row tapable" data-name="' + esc(r.name) + '" data-unit="' +
+      esc(r.unit || '') + '" data-key="' + esc((r.board ? '基板:' : '') + r.name) +
+      '"><span class="k">' + esc(r.name) + '</span><span>' +
       '<span class="v num">' + esc(r.value) + '</span>' +
       (r.unit ? '<span class="u">' + esc(r.unit) + '</span>' : '') +
       (r.diff ? '<span class="d num ' + diffClass(r.diff) + '">' + esc(diffText(r.diff)) + '</span>' : '') +
@@ -272,11 +307,90 @@ function renderPrices(){
   if (b && b.rows && b.rows.length){
     html += '<section><div class="eyebrow">よく出す基板（K&amp;Y' +
       (b.asof ? '・' + esc(b.asof) + '改定' : '') + '）</div>';
-    b.rows.forEach(function(r){ html += rowHtml(r); });
+    b.rows.forEach(function(r){
+      html += rowHtml({ name: r.name, value: r.value, unit: r.unit, diff: r.diff, board: true });
+    });
     html += '</section>';
   }
-  document.getElementById('prices').innerHTML = html;
+  var host = document.getElementById('prices');
+  host.innerHTML = html;
+
+  // 指標をタッチしたら3ヶ月チャートを出す
+  host.querySelectorAll('.tapable').forEach(function(el){
+    el.addEventListener('click', function(){
+      openChart(el.dataset.name, el.dataset.unit, el.dataset.key);
+    });
+  });
 }
+
+// ---- 指標をタッチしたときの3ヶ月チャート ----------------------------
+
+function histKey(name){
+  // 「銅建値（8/21改定）」→「銅建値」。日付つきの表示名から記録用の名前へ。
+  return String(name).replace(/[（(].*$/, '').trim();
+}
+
+function sparkline(vals){
+  var W = 340, H = 130, P = 6;
+  var lo = Math.min.apply(null, vals), hi = Math.max.apply(null, vals);
+  var span = (hi - lo) || 1;
+  var x = function(i){ return P + i * (W - P * 2) / Math.max(1, vals.length - 1); };
+  var y = function(v){ return P + (1 - (v - lo) / span) * (H - P * 2); };
+
+  var line = vals.map(function(v, i){ return x(i).toFixed(1) + ',' + y(v).toFixed(1); }).join(' ');
+  var area = 'M' + x(0).toFixed(1) + ',' + (H - P) + ' L' + line.split(' ').join(' L') +
+             ' L' + x(vals.length - 1).toFixed(1) + ',' + (H - P) + ' Z';
+  var up = vals[vals.length - 1] >= vals[0];
+  var col = up ? 'var(--midori)' : 'var(--shu)';
+
+  return '<svg class="sheetsvg" viewBox="0 0 ' + W + ' ' + H + '" preserveAspectRatio="none" ' +
+    'role="img" aria-label="3か月の推移">' +
+    '<path d="' + area + '" fill="' + col + '" opacity="0.10"/>' +
+    '<polyline points="' + line + '" fill="none" stroke="' + col +
+      '" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>' +
+    '<circle cx="' + x(vals.length - 1).toFixed(1) + '" cy="' + y(vals[vals.length - 1]).toFixed(1) +
+      '" r="3.5" fill="' + col + '"/>' +
+    '</svg>';
+}
+
+function openChart(name, unit, key){
+  var h = DATA && DATA.history && DATA.history[histKey(key || name)];
+  var body = document.getElementById('sheet-body');
+  document.getElementById('sheet-title').textContent = name;
+
+  if (!h || !h.v || h.v.length < 3){
+    body.innerHTML = '<div class="msg">まだ推移を記録中です。<br>' +
+      '数日たつとグラフが出ます。</div>';
+  } else {
+    var v = h.v, first = v[0], last = v[v.length - 1];
+    var diff = last - first;
+    var pct = first ? (diff / first * 100) : 0;
+    var cls = diff > 0 ? 'up' : (diff < 0 ? 'down' : 'flat');
+    var sign = diff > 0 ? '▲ ' : (diff < 0 ? '▼ ' : '± ');
+    var fmt = function(n){ return n.toLocaleString('ja-JP', {maximumFractionDigits: 2}); };
+
+    body.innerHTML =
+      '<div class="sheetnow"><span class="v num">' + fmt(last) + '</span>' +
+      (unit ? '<span class="u">' + esc(unit) + '</span>' : '') +
+      '<span class="d num ' + cls + '">' + sign + fmt(Math.abs(diff)) +
+      '（' + (pct >= 0 ? '+' : '') + pct.toFixed(1) + '%）</span></div>' +
+      sparkline(v) +
+      '<div class="sheetfoot"><span>' + esc(h.d[0]) + '</span>' +
+      '<span>高 ' + fmt(Math.max.apply(null, v)) + ' / 安 ' + fmt(Math.min.apply(null, v)) + '</span>' +
+      '<span>' + esc(h.d[h.d.length - 1]) + '</span></div>';
+  }
+  document.getElementById('sheet').setAttribute('open', '');
+}
+
+function closeChart(){ document.getElementById('sheet').removeAttribute('open'); }
+
+document.getElementById('sheet-close').addEventListener('click', closeChart);
+document.getElementById('sheet').addEventListener('click', function(e){
+  if (e.target === this) closeChart();   // 外側を押したら閉じる
+});
+document.addEventListener('keydown', function(e){
+  if (e.key === 'Escape') closeChart();
+});
 
 function renderCompare(){
   var c = DATA && DATA.compare;
