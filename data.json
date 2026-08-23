@@ -1,5 +1,5 @@
 {
- "updated": "8/23 12:42",
+ "updated": "8/23 12:58",
  "fx": {
   "usdjpy": 158.7,
   "date": "2026-08-21"
@@ -34,9 +34,9 @@
    },
    {
     "name": "ビットコイン",
-    "value": "12,227,283",
+    "value": "12,229,937",
     "unit": "円",
-    "diff": "-2.1%"
+    "diff": "-1.9%"
    },
    {
     "name": "日経平均",
@@ -125,6 +125,14 @@
    "source": "日刊工業新聞",
    "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBtaU51eVNMN0gwbXh3VFJYSlQ1MW56M3lLMk9ldXhXZ29CNEVaMHFMaGx4bmwwNWJCNG52WU1EREVUU2FiX0ZRUl9jZjdyMGVtR1RzUGhzS0g?oc=5",
    "published": "2026-08-21T22:58:41+09:00"
+  },
+  {
+   "cat": "mkt",
+   "label": "相場",
+   "title": "フリーポート・マクモラン・カッパー・アンド・ゴールド株が急騰、銅価格が最高値更新 執筆 - Investing.com",
+   "source": "FX | 株式市場 | ファイナンス | 金融ニュース",
+   "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE04ekh2SnlXdWp5VXJqZ1lUT0FaeElLeV9Ja2tiblBVYkNUbVRGclFsUTJUSVJZQ1BzY2F0d1FzdHE4R0ZwRE1xQjl3RVhYMWpFZ1FIZTd0ZlRvdUFoTXlEd05nNlJqY1FMeWV2VkdwZE9XbmhEVFVv?oc=5",
+   "published": "2026-08-21T22:52:00+09:00"
   },
   {
    "cat": "dc",
@@ -288,14 +296,6 @@
    "published": "2026-08-18T20:10:51+09:00"
   },
   {
-   "cat": "dc",
-   "label": "AI・DC",
-   "title": "三井金属、マレーシアにAI・半導体向け銅箔生産拠点の新設を計画 VSPは月産5000t体制も視野 | TECH+（テックプラス）",
-   "source": "マイナビニュース",
-   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9YbHA3RW9hOFdjSjRXT3FyMVJmWWlyME5nWFFUeU5PRHFYNFg2Rm5uaFhNUWRYdHhNaUd0bmswMU5kYWVhYWJkbl9LbFJRQTRxNG00dVhPWGNPa1Z0T3IxQjBmTVNVV2Ra?oc=5",
-   "published": "2026-08-18T19:11:15+09:00"
-  },
-  {
    "cat": "mkt",
    "label": "相場",
    "title": "銅建値、最高値242万円 亜鉛、68万5000円（日刊産業新聞）",
@@ -414,22 +414,6 @@
    "source": "Yahoo!ニュース",
    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQUWM4NUp1YWNVV2d6M1YtTnY5cU5TU2JmTDgzNUFCdzFVb3VBUjZkTGVRbUE5OURmLVVWUHM4ZG5PamVURlJIWTZjU2FUYXYyRVNPV2tFWnZWb29KVjVLQXFpY2R2Z1RybDQwS0pIU3dDdHl2MVNMR1pFM1JIak5xMGlKc3lZTkw4azB1TGtR?oc=5",
    "published": "2026-07-30T10:39:00+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
-   "title": "電子廃棄物管理の市場シェアと業界の成長 [2034 年]",
-   "source": "Fortune Business Insights",
-   "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNR0Z1bVlBV05CZi10am0wQnlUblVELWNQb3BLSVg2VWZ6aHozSHJWZ1pMbmtUcXRkd1lZUml6TGJFNHd0VHN3VXNtWjVRSFpaOFZKeF80elZlN2x5Ny1OSmZCbzlCN2lDSjU5UTU2X2hvbTRtMVpRVlBxcHo5OW1Oel9GazVxYk4zcXo5WWdjcTJjbVhTTlJHN2dxT0NZeEw4TTZuejI2MWlaLXBMcmc4Q0s3ZUVocWJGeGRTaUdrVnlFSTVyUXlQZzEwQ0xmMVRFLXA5bWxOMFlWWEMyMkhlZ0JFZw?oc=5",
-   "published": "2026-07-27T16:00:00+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
-   "title": "なぜ2つのシャフトの産業シュレッダーはスマートなオートメーション、高いトルクの処理および持続可能な物質的な回復によってリサイクルする産業廃棄物を革命化しています",
-   "source": "Spherical Insights",
-   "link": "https://news.google.com/rss/articles/CBMirwJBVV95cUxPcHJQV05VNHllMEhnM1AzY01UeEI5UTkyb0JBbC1jUnpteEVaaDlnQ3gwN2tVUnFJcVhYNzBlaWI2aUV5NjVtcDRkNzlidUd0aE5sZWdQb1l2cHFpU3dIdkdMUFFBS3JGTk5nRGJPcURoMTdyT05QeVhLcDBOQUlHUTJnWmZLWFhxamxRRzJVZjJRZEJOam1lS3hIRS1uU19xenJjdlgxZGFSOGhMZmtrWllnQ1hUdVVKdGNKMmVZX0E3UTk5RGkydld5WWdqTVRiazRlWHc3WjVlWXZBb2pHYzZOT05uMUZoQXMwWkdiOUlyRWMyTUI0U3NOeHFDeFU1bGkyVkVIZHhYWk1RcEpBR1kzX3VBb0t0bGxlM0RSQ3hkVFoxYlhuUFI3UUM3Tnc?oc=5",
-   "published": "2026-07-27T02:49:59+09:00"
   },
   {
    "cat": "law",
@@ -2193,6 +2177,26 @@
    }
   ]
  },
+ "ai_morning": {
+  "date": "2026-08-23",
+  "items": [
+   {
+    "title": "エージェント専用メール？ChatGPTに「Agent Email」の痕跡",
+    "link": "https://thelastthreeminutes.com/issues/2026-08-23/stories/1/"
+   },
+   {
+    "title": "スキルが効く理由は「知識」より「手順」。8,135回の対照実験",
+    "link": "https://thelastthreeminutes.com/issues/2026-08-23/stories/2/"
+   },
+   {
+    "title": "AI嫌いの世論と、隠れて使う個人。「矛盾の時代」が来る",
+    "link": "https://thelastthreeminutes.com/issues/2026-08-23/stories/3/"
+   }
+  ],
+  "link": "https://thelastthreeminutes.com/issues/2026-08-23/",
+  "lead": "日曜の朝は、まだ発表されていない話から。ChatGPTのアプリ内に、エージェント専用メール「Agent Email」の文字列が見つかりました。2本目は研究。エージェントの「スキル」が効く理由は、知識ではなく手順の足場だと8,135回の対照実験が示しました。締めは識者の視点。これからは「みんなが嫌い、みんなが使う」矛盾の時代だそうです。",
+  "video": "https://www.youtube.com/watch?v=KIVapYbKsdY"
+ },
  "history": {
   "NYダウ": {
    "d": [
@@ -2645,7 +2649,7 @@
     10986156,
     11613775,
     12466777,
-    12223148
+    12229166
    ]
   },
   "日経平均": {
@@ -2835,10 +2839,10 @@
  },
  "ai": {
   "lines": [
-   "・銅建値234万円/t（-2万円）、金25,415円/g（+344）",
-   "・金属盗対策法が全面施行、既存業者の届出期限は8月末まで",
-   "・太陽光の銅線盗難が多発、ヤード規制強化の動きも"
+   "・銅建値234万円へ2万円安、金は25,415円で344円高",
+   "・金属盗対策法が全面施行、既存業者の届出は8月末まで",
+   "・太陽光や水道メーターの銅盗難が各地で続発、警戒を"
   ],
-  "at": "8/23 12:42"
+  "at": "8/23 12:58"
  }
 }
