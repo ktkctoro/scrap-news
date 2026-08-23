@@ -20,6 +20,7 @@
 | `index.html` | スマホで見る画面。`data.json` を読んで表示する |
 | `data.json` | 自動生成。手で触らない |
 | `check_data.py` | `data.json` が空でないか等を見張る番人。おかしければエラーで止める |
+| `ai_morning.py` | The Last Three Minutes（AIの朝3本）の見出しとリンクを取る。`/issues/日付/` の一覧から3本。今日のぶんが無ければ昨日のぶん |
 | `history.py` | 各指標の3ヶ月の推移を作る。銅建値(JXの改定履歴)・日経平均・NYダウ・ビットコイン・ドル円は毎回まるごと取り直す。金・銀・鉄スクラップ・基板は取得元に過去分がないので `history.json` に毎朝足していく |
 | `history.json` | 推移の記録。自動生成だが**毎朝コミットして引き継ぐ**（消すと積み上げがゼロに戻る） |
 | `build_page.py` | `data.json` を `index.html` に埋め込んで1枚のHTMLにする（サーバー不要・offline用） |

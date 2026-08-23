@@ -87,6 +87,18 @@
   .brief{padding:14px 16px;border-bottom:2px solid var(--line-2);background:var(--ai-bg)}
   .brief .line{font-size:14px;line-height:1.8;color:var(--ink)}
 
+  .l3m{padding:14px 16px;border-top:1px solid var(--line);background:var(--paper)}
+  .l3mrow{display:flex;gap:9px;align-items:baseline;padding:8px 0;
+    border-bottom:1px solid var(--line);color:inherit;text-decoration:none}
+  .l3mrow:last-of-type{border-bottom:none}
+  .l3mrow:active{opacity:.6}
+  .l3mrow .n{flex:0 0 auto;font-size:11px;font-weight:700;color:var(--ai);
+    font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+  .l3mrow .t{font-size:14px;line-height:1.45;font-weight:600}
+  .l3mvideo{display:inline-block;margin-top:9px;font-size:12.5px;font-weight:600;
+    color:var(--ai);text-decoration:none;border:1px solid var(--ai);
+    border-radius:999px;padding:5px 12px;background:var(--card)}
+
   .ask{padding:14px 16px;border-top:1px solid var(--line)}
   .ask form{display:flex;gap:8px}
   .ask input{flex:1;min-width:0;padding:9px 12px;border:1px solid var(--line-2);border-radius:8px;
@@ -189,6 +201,7 @@
     <button class="chip" data-f="btc" aria-pressed="false">ビットコイン</button>
   </div>
   <div id="feed"><div class="msg">読み込んでいます…</div></div>
+  <div id="l3m"></div>
   <div class="ask">
     <div class="eyebrow">AIに聞く（Claudeのチャットが開きます）</div>
     <form id="askform">
@@ -391,6 +404,24 @@ document.getElementById('sheet').addEventListener('click', function(e){
 document.addEventListener('keydown', function(e){
   if (e.key === 'Escape') closeChart();
 });
+
+function renderL3M(){
+  var m = DATA && DATA.ai_morning;
+  if (!m || !m.items || !m.items.length) return;
+  var html = '<div class="l3m"><div class="eyebrow">AIの朝3本（The Last Three Minutes・' +
+    esc(m.date) + '）</div>';
+  m.items.forEach(function(it, i){
+    html += '<a class="l3mrow" href="' + esc(it.link) + '" target="_blank" rel="noopener">' +
+      '<span class="n">' + ('0' + (i + 1)).slice(-2) + '</span>' +
+      '<span class="t">' + esc(it.title) + '</span></a>';
+  });
+  if (m.video){
+    html += '<a class="l3mvideo" href="' + esc(m.video) + '" target="_blank" rel="noopener">' +
+      '動画版で見る（3分）</a>';
+  }
+  html += '</div>';
+  document.getElementById('l3m').innerHTML = html;
+}
 
 function renderCompare(){
   var c = DATA && DATA.compare;
@@ -603,6 +634,7 @@ fetch('./data.json?t=' + Date.now())
     renderBrief();
     renderPrices();
     renderCompare();
+    renderL3M();
     renderFeed();
     document.getElementById('foot').textContent = '銅建値はJX金属、鉄は東京製鐵、金・銀は田中貴金属、基板はK&Yシステムの公表値。ほかは市場データです。';
   })

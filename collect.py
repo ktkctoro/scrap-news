@@ -18,6 +18,7 @@ import xml.etree.ElementTree as ET
 import zlib
 from datetime import datetime, timezone, timedelta
 
+import ai_morning
 import dealers
 import history
 
@@ -845,6 +846,14 @@ def main():
     elif prev.get("compare"):
         print("  ! 同業各社の価格は前回の値を使い回します", file=sys.stderr)
         out["compare"] = prev["compare"]
+
+    print("AIの朝3本をあつめています…")
+    l3m = ai_morning.fetch_today(fetch)
+    if l3m:
+        out["ai_morning"] = l3m
+    elif prev.get("ai_morning"):
+        print("  ! AIの朝3本は前回のものを使い回します", file=sys.stderr)
+        out["ai_morning"] = prev["ai_morning"]
 
     print("3ヶ月の推移をあつめています…")
     try:
