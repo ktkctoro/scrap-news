@@ -1,5 +1,5 @@
 {
- "updated": "8/25 4:52",
+ "updated": "8/25 13:36",
  "fx": {
   "usdjpy": 159.12,
   "date": "2026-08-24"
@@ -7,10 +7,10 @@
  "manual": {
   "tiles": [
    {
-    "name": "銅建値（8/21改定）",
-    "value": "2,340,000",
+    "name": "銅建値（8/25改定）",
+    "value": "2,380,000",
     "unit": "円/t",
-    "diff": "-20,000"
+    "diff": "+40,000"
    },
    {
     "name": "東鉄名古屋二級(8/22)",
@@ -22,33 +22,33 @@
   "rows": [
    {
     "name": "金（店頭買取）",
-    "value": "25,869",
+    "value": "26,168",
     "unit": "円/g",
-    "diff": "+654"
+    "diff": "+523"
    },
    {
     "name": "銀（店頭買取）",
-    "value": "372.13",
+    "value": "386.87",
     "unit": "円/g",
-    "diff": "-5.61"
+    "diff": "+4.73"
    },
    {
     "name": "ビットコイン",
-    "value": "12,540,306",
+    "value": "12,791,049",
     "unit": "円",
-    "diff": "+1.9%"
+    "diff": "+4.3%"
    },
    {
     "name": "日経平均",
-    "value": "65,528",
+    "value": "65,796",
     "unit": "円",
-    "diff": "-1,933"
+    "diff": "+470"
    },
    {
     "name": "NYダウ",
-    "value": "53,441",
+    "value": "53,417",
     "unit": "$",
-    "diff": "-19"
+    "diff": "-43"
    }
   ]
  },
@@ -56,10 +56,34 @@
   {
    "cat": "gen",
    "label": "業界",
-   "title": "電照菊の銅線盗難 拡大 本島全域 昨年8月から32件 農家 出荷へ影響懸念",
+   "title": "【髙橋金属株式会社】EV向けアルミ部品の洗浄品質向上へ非鉄金属専用の電解水生成装置「アルミーズ」を開発",
+   "source": "PR TIMES",
+   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1XV3VYWGk5Y3I5VVNJaTByeV8yTW4zbk00dVd6RW5PbGtlWVRmbkJBSkI5amoyS2ZyUFFaaXFfaFQ1V0VROEdBbGM3SkRsZVcySnNHZTRWa0d3UFpZMy1aOUVxWUQ0S3ZFM2c?oc=5",
+   "published": "2026-08-25T10:00:02+09:00"
+  },
+  {
+   "cat": "gen",
+   "label": "業界",
+   "title": "電照菊の銅線の盗難 被害が拡大 沖縄本島全域、昨年8月から32件 農家、出荷へ影響懸念",
    "source": "沖縄タイムス社",
    "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE16a3ppbm9uaUNySHhfNGljSHBDSXFHVzFTcm4zUmstUXRHTG03dG1tQkNlS2JPeXNKeXYxSXUxM2pwMW1WdE9mZmpWVWFuc3lERmxDcnprT0MtbERpOXc?oc=5",
-   "published": "2026-08-25T04:00:00+09:00"
+   "published": "2026-08-25T07:31:00+09:00"
+  },
+  {
+   "cat": "mkt",
+   "label": "相場",
+   "title": "関東地区の鉄スクラップ電炉買値／需給締まらず、１０００円続落／東鉄下げ「苦肉の策」、入荷調整でやむなく",
+   "source": "日刊鉄鋼新聞 Japan Metal Daily",
+   "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE8wVlZoZE51THZFd2dPTFlfNWtJdFduTzR5bnNXYmI4T1BFdmRhcXhpNExNZGlqTm9zaDZQOVNYRHgybm8zblNKVUE0UzhFX1lsTWtRbG5KcEs1bFdCdVE?oc=5",
+   "published": "2026-08-25T05:00:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "太陽光パネルリサイクル法が成立、段階的に規制強化する方針も",
+   "source": "日経クロステック",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBRUmwyTEQtdmEyREMwUnQtZXUyVEd1UlY1UlJqampBWldYQ2RoTTdELW05amJLLWdtcjh5WHJjcFNtX0NOTVpVaU9mQ0g0SVdOMjNXaXExR25oVmM3dG5yclB3Y3ZOcldOMjUzeQ?oc=5",
+   "published": "2026-08-25T05:00:00+09:00"
   },
   {
    "cat": "mkt",
@@ -119,6 +143,14 @@
    "published": "2026-08-24T11:00:00+09:00"
   },
   {
+   "cat": "mkt",
+   "label": "相場",
+   "title": "住友鉱山---大幅続伸、海外関連株高を受けて非鉄株が強い動きに",
+   "source": "ｄメニューニュース",
+   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNN0hiSXR4WDNuOGdqZGpVcFdIRzhFRHJIZEJ3a0pqV2JuejBUUzZZOE1VM0ltNTJaSU5YNmlfTzVBN2hiRTlDWXA2ZDdNcTRQUTBxWmNpcTBtNXAxWjNHUXpGQkxkUlg3MUIzRjA5UXZ1bkV0MlBQSGg3SzcwVHcwN3ZfNmk2RXdDNjFHbdIBjAFBVV95cUxNN0hiSXR4WDNuOGdqZGpVcFdIRzhFRHJIZEJ3a0pqV2JuejBUUzZZOE1VM0ltNTJaSU5YNmlfTzVBN2hiRTlDWXA2ZDdNcTRQUTBxWmNpcTBtNXAxWjNHUXpGQkxkUlg3MUIzRjA5UXZ1bkV0MlBQSGg3SzcwVHcwN3ZfNmk2RXdDNjFHbQ?oc=5",
+   "published": "2026-08-24T10:44:00+09:00"
+  },
+  {
    "cat": "dc",
    "label": "AI・DC",
    "title": "三井金属、AIインフラ向け銅箔増産へ マレーシアに新拠点：ビッグテックで採用進む",
@@ -145,18 +177,18 @@
   {
    "cat": "gen",
    "label": "業界",
-   "title": "「ついにヤラれました」　太陽光発電所で異常事態　実は“あるある被害”…銅線盗難、泣き寝入りの背景とは",
-   "source": "ｄメニューニュース",
-   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQU0h0WVMyODN1RTNwNVJIQ3c2TXZRZXphQ25wSFdkVU5HeUlXanlYeXRyMW9KM3RxTGdwczBrZ1pLei1zNktKMUlRT3p3S3hPWmo0cFdJNXNrcVpnc3JjbjllZFlNUDFOOS16blEwbS1IbXVuOVFxT09FdE4xdkJZTG4wNlRSWlVGR2M2N9IBiAFBVV95cUxNM0FFZGNxQUtpWXl3b21rbm16dG9kdVNhRzItSmhRaXB0YkpUeTMzbk1fOW1CVXl6LXpHb0VnVTlnQTFQdVBoUmJ5QnhtQWZxWm5na2RDMDVBOFh4UG9FdmIzdmE4cWpLdERGb0lIeVBnUEtRcmZvOXdvTXJLV1UxZ1VaaFJkZ0h0?oc=5",
-   "published": "2026-08-22T14:02:54+09:00"
+   "title": "ごみ処理施設で火事 鉄くずが燃える けが人なし 愛知・豊橋市",
+   "source": "Excite エキサイト",
+   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE15Wnk5S3paYVVlb29BTU9aM0cxTmZUV0VQOGQwVUJQcnp4ZjZfZE4zcHYwb0h5RVo4THNsdEloUllGbWU0VWN2azNJQjhkVXFod1RUTUF3bUZYTTQzYUhZTFZVOUMwUmxLc1E4NDdR?oc=5",
+   "published": "2026-08-22T17:38:00+09:00"
   },
   {
    "cat": "btc",
    "label": "ビットコイン",
-   "title": "ビットコイン、8.2万ドルが強気相場転換の分岐点に＝ギャラクシー・リサーチ",
+   "title": "ビットコイン7.9万ドル突破、イラン制裁観測で逃避買い オプション市場は9万ドルを意識｜仮想NISHI",
    "source": "CoinPost",
-   "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTFBtWkRuT3d0Ym0ya19sRHBrdWduNGM1aDgtYms0RnpscnFmQVJtT0RPOTZkTlJaZWhFcGZrOHIyRXNfYlE?oc=5",
-   "published": "2026-08-22T08:40:08+09:00"
+   "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE5aWU40Nzc5dE5adEdOaG1xTmdqVk1qR2MxbzhLaHMxWHNlZlYxbDYwek9jeUhvOUhNelZyejBMekVyRDQ?oc=5",
+   "published": "2026-08-22T10:35:13+09:00"
   },
   {
    "cat": "dc",
@@ -263,8 +295,8 @@
    "published": "2026-08-20T11:00:00+09:00"
   },
   {
-   "cat": "dc",
-   "label": "AI・DC",
+   "cat": "mkt",
+   "label": "相場",
    "title": "新会長に聞く／日本伸銅協会・加藤和照氏（三井住友金属鉱山伸銅社長）／伸銅品グリーンブランド創設へ／未利用銅リサイクル材活用、新技術検討",
    "source": "日刊鉄鋼新聞 Japan Metal Daily",
    "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9tZ2ZfaUQwSWY5UTV0WHkyMFlnWi1sWjBKMVltWEJKSzhYS3N3SklSNkc4ZlN6RGZ3UmJzdFpFY3o2THpaMko2YVdIcEd0TGdFRG5zTmRoYl9HcUpsZ0E?oc=5",
@@ -298,18 +330,10 @@
   {
    "cat": "law",
    "label": "法規制",
-   "title": "【遠東石塚グリーンペット姫路工場】国内最大、15万トンのPETリサイクル工場が本格操業フル稼働に向けた廃PETボトル原料の調達戦略とは?!",
-   "source": "plasticjournal.net",
-   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9vRm14eFMyenNaa0kxWTdQTjRLQ3RiSkxtZ3pLQjdjQUdIQXVwajNRNkZPZXFUa29yS1RnSEVNNTdWdjQyUTFGTWo3LXRMTWs4UnRFUTZJY1NzdEg3TTRVVTYwc0JDblhJcHRvVXZEUHR6enhzSUx1Nw?oc=5",
-   "published": "2026-08-19T16:00:00+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
    "title": "「再エネ設備材の資源循環アップサイクル事業」実装の報告",
-   "source": "Excite エキサイト",
-   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9MUkx4SHNNQTVRZHNTbzF2b1RrcEd4Z0NuNlYxX0l3MGtFWjU4aVBuczh5T2k0NUIyZU40eTZPWlNnSExZOWY3OUpZZzI2NHU5X09aTlF5VGlycDUtb1AwR20zMUdlRV9HQWh6NUptamhRVW8?oc=5",
-   "published": "2026-08-19T15:15:00+09:00"
+   "source": "PR TIMES",
+   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9EWlh5Tnd3R29LYWd2Y2M1dWFXMmFWZzRabXRoZkVLOU0tRkhtXzV5SW1tN1ltVDhiMHR1V1Aweko4OGcwdUFxV21fMGtBZklDNmxOb3ZuUEFYdmd6SXFpbjZlRl82eDFVUkE?oc=5",
+   "published": "2026-08-19T13:00:02+09:00"
   },
   {
    "cat": "dc",
@@ -328,22 +352,6 @@
    "published": "2026-08-18T15:17:21+09:00"
   },
   {
-   "cat": "dc",
-   "label": "AI・DC",
-   "title": "銅高騰も製錬手数料0ドル収益は金銀硫酸で補う - CHOSUNBIZ",
-   "source": "Chosunbiz",
-   "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQbUNpNHRWbTBzVHlCN092NUVrOFlMS3BvamI5aGV4MTVzaXFOcUlQQUJRa1A1bXVpS1NpTVotNWpvSUQweHlaMjRJX0Q0anA2LVl4Y2R1Z09nWHJBMnJRamxWLXVZZkU5aFZiNXRKaXpER3Y0QzlhcmZPWWNGeVI0Vmtn0gGWAUFVX3lxTE0tM2FCZ0s5NWN0LUNDQVBPM0lxWXlxN2l3azVFdl9IUGJKMXJ3a1N2eFNFWjVSMmo1N3BuYXE0ZHNXUVZLU1BlVGxZUm82blE1cjA2bkszQjl1eElLU1o5VUlQa3N3YjRFcW80d0dpTUJtWW1MazVZQXRKZW40YXA1Tm5kQ1ZOcnNvSXktei1tZURqSVYwQQ?oc=5",
-   "published": "2026-08-18T06:02:00+09:00"
-  },
-  {
-   "cat": "mkt",
-   "label": "相場",
-   "title": "銅建値が２４０万円突破／需給ひっ迫懸念が押し上げ",
-   "source": "日刊鉄鋼新聞 Japan Metal Daily",
-   "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9oZjBhbjV1ZXkzb3dQWUpjSldEZEJBc2NhSHFzeE5sOTBfeWNzWVFOSDlBVXZlMUtfSEN4RmwtS3VJREktZWR1VTVNZXc0UjVoX2JWY3FEcTRXVW1HY2c?oc=5",
-   "published": "2026-08-18T05:00:00+09:00"
-  },
-  {
    "cat": "law",
    "label": "法規制",
    "title": "フロン排出抑制の強化政策、中間とりまとめ 機器リスト作成・更新制度など",
@@ -358,14 +366,6 @@
    "source": "city.ishigaki.okinawa.jp",
    "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBtMzRheEZCUWh5cHFNOFIzdlVHWlJ1dDdPcU1uV2Z6clBzV3otakoyN0hBRHRoMF9IRXhQY0xmOV9HN25FYWlOMDBFdXpFQ1k4T2JwUHZXZ0FONDROVVpCRGhVbS1JR3o2UHJLQXhPbFJBUXlR?oc=5",
    "published": "2026-08-13T16:00:00+09:00"
-  },
-  {
-   "cat": "gen",
-   "label": "業界",
-   "title": "橋下徹氏「かっぱ兄妹」の銅像２体盗難に危機感「そういう世の中ではなくなってきたのかな」（日刊スポーツ）",
-   "source": "Yahoo!ニュース",
-   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE81RnF3Y2JQX05iRDYzYVFSbGwxNFppaFNUQW9FN1ZkaGFBTnI4b21CaUJDZWo3MDRGSDl5c1FTaDBWRUNGREd4dHItalA3d3pzVnhuWUN0OFRqOTJ6SnRlenZfNHEwR1NSemlFYy1qQ2tMZjZOcjN1c2xTa19va1U?oc=5",
-   "published": "2026-08-12T16:00:00+09:00"
   },
   {
    "cat": "law",
@@ -390,6 +390,14 @@
    "source": "朝日新聞",
    "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFByLVJ2UHlvX203WjJiRnpHcXkxOG1OWXBQeEhucVd3MDdUcWExc2EyNWdDNW9UZ0JfeXhOOFZKX3RwN1htVU5NYTNtUzBTT3BsRXpqRldYZ3E3TFB5NU82QmIyMXJEanM?oc=5",
    "published": "2026-08-07T16:00:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "日鉄興和不動産が所有・管理するオフィスビルに資源循環データインフラ「pool」を導入｜Infoseekニュース",
+   "source": "Infoseek",
+   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1fMTV2RHpjTnUxSjcxcXNveXRiUDRXZnQtQlY1X0Q2YlVvNElMY3VzUjNGTVBIdy1PYUk1b21UMVp1UmNsenRtSG10SmRadHFTal9Vc3JvWTNBLWg1clpXRnZCdENRSUNJTWctbXAwZUJ0dw?oc=5",
+   "published": "2026-08-05T16:00:00+09:00"
   },
   {
    "cat": "law",
@@ -617,37 +625,37 @@
     "name": "メモリー",
     "value": "10,070",
     "unit": "円/kg",
-    "diff": "+290"
+    "diff": "0"
    },
    {
     "name": "ＣＰＵグリーン（下）",
     "value": "3,600",
     "unit": "円/kg",
-    "diff": "+100"
+    "diff": "0"
    },
    {
     "name": "電源基板(鉄なし)",
     "value": "225",
     "unit": "円/kg",
-    "diff": "+5"
+    "diff": "0"
    },
    {
     "name": "Ｃクラス基板",
     "value": "1,180",
     "unit": "円/kg",
-    "diff": "+30"
+    "diff": "0"
    },
    {
     "name": "Ｄクラス基板",
     "value": "660",
     "unit": "円/kg",
-    "diff": "+20"
+    "diff": "0"
    },
    {
     "name": "マザーボード（Ｃ）",
     "value": "880",
     "unit": "円/kg",
-    "diff": "+10"
+    "diff": "0"
    }
   ]
  },
@@ -1052,7 +1060,7 @@
      }
     ],
     "spread": 100,
-    "diff": "+30"
+    "diff": "0"
    },
    {
     "group": "アルミ",
@@ -1272,8 +1280,8 @@
      },
      {
       "dealer": "浜屋",
-      "value": 3370,
-      "best": false
+      "value": 3500,
+      "best": true
      },
      {
       "dealer": "ケイワイ",
@@ -1336,8 +1344,8 @@
      },
      {
       "dealer": "浜屋",
-      "value": 1620,
-      "best": false
+      "value": 1700,
+      "best": true
      },
      {
       "dealer": "ケイワイ",
@@ -1354,7 +1362,7 @@
     "cells": [
      {
       "dealer": "浜屋",
-      "value": 1100,
+      "value": 1150,
       "best": true
      },
      {
@@ -1363,8 +1371,8 @@
       "best": false
      }
     ],
-    "spread": 440,
-    "diff": "0"
+    "spread": 490,
+    "diff": "+50"
    },
    {
     "group": "基板／クラス",
@@ -1372,7 +1380,7 @@
     "cells": [
      {
       "dealer": "浜屋",
-      "value": 440,
+      "value": 460,
       "best": true
      },
      {
@@ -1386,8 +1394,8 @@
       "best": false
      }
     ],
-    "spread": 290,
-    "diff": "0"
+    "spread": 310,
+    "diff": "+20"
    },
    {
     "group": "基板／クラス",
@@ -1413,7 +1421,7 @@
     "cells": [
      {
       "dealer": "浜屋",
-      "value": 65400,
+      "value": 68800,
       "best": true
      },
      {
@@ -1432,8 +1440,8 @@
       "best": false
      }
     ],
-    "spread": 25400,
-    "diff": "0"
+    "spread": 28800,
+    "diff": "+3,400"
    },
    {
     "group": "基板／CPU・IC",
@@ -1441,7 +1449,7 @@
     "cells": [
      {
       "dealer": "浜屋",
-      "value": 65400,
+      "value": 68800,
       "best": true
      },
      {
@@ -1455,8 +1463,8 @@
       "best": false
      }
     ],
-    "spread": 44800,
-    "diff": "0"
+    "spread": 48200,
+    "diff": "+3,400"
    },
    {
     "group": "基板／CPU・IC",
@@ -1464,7 +1472,7 @@
     "cells": [
      {
       "dealer": "浜屋",
-      "value": 30800,
+      "value": 31900,
       "best": true
      },
      {
@@ -1473,8 +1481,8 @@
       "best": false
      }
     ],
-    "spread": 7420,
-    "diff": "0"
+    "spread": 8520,
+    "diff": "+1,100"
    },
    {
     "group": "基板／CPU・IC",
@@ -1482,7 +1490,7 @@
     "cells": [
      {
       "dealer": "浜屋",
-      "value": 27600,
+      "value": 28500,
       "best": true
      },
      {
@@ -1496,8 +1504,8 @@
       "best": false
      }
     ],
-    "spread": 14600,
-    "diff": "0"
+    "spread": 15500,
+    "diff": "+900"
    },
    {
     "group": "基板／CPU・IC",
@@ -1510,12 +1518,12 @@
      },
      {
       "dealer": "浜屋",
-      "value": 18600,
+      "value": 19200,
       "best": false
      }
     ],
-    "spread": 2000,
-    "diff": "+600"
+    "spread": 1400,
+    "diff": "0"
    },
    {
     "group": "基板／CPU・IC",
@@ -1546,7 +1554,7 @@
     "cells": [
      {
       "dealer": "浜屋",
-      "value": 9500,
+      "value": 9900,
       "best": true
      },
      {
@@ -1555,8 +1563,8 @@
       "best": false
      }
     ],
-    "spread": 2600,
-    "diff": "0"
+    "spread": 3000,
+    "diff": "+400"
    },
    {
     "group": "基板／CPU・IC",
@@ -1574,12 +1582,12 @@
      },
      {
       "dealer": "浜屋",
-      "value": 2950,
+      "value": 3100,
       "best": false
      }
     ],
-    "spread": 650,
-    "diff": "+100"
+    "spread": 500,
+    "diff": "0"
    },
    {
     "group": "基板／CPU・IC",
@@ -1587,7 +1595,7 @@
     "cells": [
      {
       "dealer": "浜屋",
-      "value": 2650,
+      "value": 2750,
       "best": true
      },
      {
@@ -1601,8 +1609,8 @@
       "best": false
      }
     ],
-    "spread": 2150,
-    "diff": "0"
+    "spread": 2250,
+    "diff": "+100"
    },
    {
     "group": "基板／PC部品",
@@ -1610,7 +1618,7 @@
     "cells": [
      {
       "dealer": "浜屋",
-      "value": 11700,
+      "value": 12300,
       "best": true
      },
      {
@@ -1629,8 +1637,8 @@
       "best": false
      }
     ],
-    "spread": 2500,
-    "diff": "0"
+    "spread": 3100,
+    "diff": "+600"
    },
    {
     "group": "基板／PC部品",
@@ -1638,7 +1646,7 @@
     "cells": [
      {
       "dealer": "浜屋",
-      "value": 5100,
+      "value": 5350,
       "best": true
      },
      {
@@ -1652,8 +1660,8 @@
       "best": false
      }
     ],
-    "spread": 1100,
-    "diff": "0"
+    "spread": 1350,
+    "diff": "+250"
    },
    {
     "group": "基板／PC部品",
@@ -1730,7 +1738,7 @@
      }
     ],
     "spread": 1700,
-    "diff": "+70"
+    "diff": "0"
    },
    {
     "group": "基板／PC部品",
@@ -1756,7 +1764,7 @@
     "cells": [
      {
       "dealer": "浜屋",
-      "value": 1080,
+      "value": 1100,
       "best": true
      },
      {
@@ -1765,8 +1773,8 @@
       "best": false
      }
     ],
-    "spread": 140,
-    "diff": "0"
+    "spread": 160,
+    "diff": "+20"
    },
    {
     "group": "基板／PC部品",
@@ -1935,7 +1943,7 @@
      }
     ],
     "spread": 90,
-    "diff": "+20"
+    "diff": "0"
    },
    {
     "group": "基板／機器",
@@ -2173,24 +2181,24 @@
   "label": "8/24の週"
  },
  "ai_morning": {
-  "date": "2026-08-24",
+  "date": "2026-08-25",
   "items": [
    {
-    "title": "無料の覆面モデル「Ox Alpha」出現。正体探しで界隈騒然",
-    "link": "https://thelastthreeminutes.com/issues/2026-08-24/stories/1/"
+    "title": "Hugging Faceに130億ドルの買収話。ただし売るかは別問題",
+    "link": "https://thelastthreeminutes.com/issues/2026-08-25/stories/1/"
    },
    {
-    "title": "Anthropic絶好調の裏で、最強モデルFable 5は苦戦の実測",
-    "link": "https://thelastthreeminutes.com/issues/2026-08-24/stories/2/"
+    "title": "研究で使うオープンAI、主役は中国製に。論文50万本の実測",
+    "link": "https://thelastthreeminutes.com/issues/2026-08-25/stories/2/"
    },
    {
-    "title": "AI上司、初めて人間を解雇。ただし人間に背中を押されて",
-    "link": "https://thelastthreeminutes.com/issues/2026-08-24/stories/3/"
+    "title": "GPT-5.6、AWSの開発エージェントKiroに搭載",
+    "link": "https://thelastthreeminutes.com/issues/2026-08-25/stories/3/"
    }
   ],
-  "link": "https://thelastthreeminutes.com/issues/2026-08-24/",
-  "lead": "月曜の朝は、正体不明の話から。OpenRouterに突然現れた無料の覆面モデル「Ox Alpha」をめぐり、週末の界隈は正体探しで持ちきりでした。2本目はお金の実測。Anthropicは絶好調なのに、最強モデルは選ばれていないという数字が出ました。締めは実験の読み物。AI上司が、初めて人間を解雇しました。",
-  "video": "https://www.youtube.com/watch?v=aK3gWvJcF7U"
+  "link": "https://thelastthreeminutes.com/issues/2026-08-25/",
+  "lead": "火曜の朝は、お金の話から。AIモデルの一大拠点Hugging Faceに、130億ドルの買収話が浮上しています。2本目は研究の実測。論文50万本を解析したら、研究で使うオープンモデルの主役は中国製に替わっていました。締めは道具の話。OpenAIの最新モデル群が、AWSの開発エージェントに乗り込みました。",
+  "video": "https://www.youtube.com/watch?v=aRw8eOJlxuk"
  },
  "history": {
   "NYダウ": {
@@ -2322,7 +2330,7 @@
     53463.05,
     52759.21,
     53277.01,
-    53434.87
+    53417.16
    ]
   },
   "ドル円": {
@@ -2467,7 +2475,6 @@
   },
   "ビットコイン": {
    "d": [
-    "2026-05-27",
     "2026-05-28",
     "2026-05-29",
     "2026-05-30",
@@ -2560,7 +2567,6 @@
     "2026-08-25"
    ],
    "v": [
-    12103765,
     11838993,
     11734256,
     11709357,
@@ -2649,8 +2655,8 @@
     11613775,
     12466777,
     12257663,
-    12346880,
-    12515827
+    12341426,
+    12773437
    ]
   },
   "基板:マザーボード（Ｃ）": {
@@ -2789,7 +2795,9 @@
     "2026-08-18",
     "2026-08-19",
     "2026-08-20",
-    "2026-08-21"
+    "2026-08-21",
+    "2026-08-24",
+    "2026-08-25"
    ],
    "v": [
     65158.19,
@@ -2854,7 +2862,9 @@
     67460.73,
     65326.42,
     66216.79,
-    66016.36
+    66016.36,
+    65528.09,
+    65782.5
    ]
   },
   "東鉄名古屋二級": {
@@ -2878,7 +2888,7 @@
    "v": [
     25415.0,
     25415.0,
-    25869.0
+    26168.0
    ]
   },
   "銀": {
@@ -2890,7 +2900,7 @@
    "v": [
     376.97,
     376.97,
-    372.13
+    386.87
    ]
   },
   "銅建値": {
@@ -2917,7 +2927,8 @@
     "2026-08-12",
     "2026-08-17",
     "2026-08-19",
-    "2026-08-21"
+    "2026-08-21",
+    "2026-08-25"
    ],
    "v": [
     2260000,
@@ -2942,16 +2953,17 @@
     2380000,
     2420000,
     2360000,
-    2340000
+    2340000,
+    2380000
    ]
   }
  },
  "ai": {
   "lines": [
-   "・銅建値234万円（-2万）、東鉄名古屋二級48,000円（-1,500）",
-   "・金属盗対策法、既存業者の届出期限は今月末まで",
-   "・太陽光や室外機の銅盗難が全国で急増、仕入品の確認徹底を"
+   "・銅建値2,380,000円/tへ+40,000円、金26,168円/g",
+   "・金属盗対策法の届出、既存業者は8月末が期限",
+   "・鉄は東鉄名古屋二級48,000円で-1,500の下げ"
   ],
-  "at": "8/25 4:52"
+  "at": "8/25 13:36"
  }
 }
