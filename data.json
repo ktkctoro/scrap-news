@@ -1,5 +1,5 @@
 {
- "updated": "8/25 13:36",
+ "updated": "8/25 13:37",
  "fx": {
   "usdjpy": 159.12,
   "date": "2026-08-24"
@@ -34,15 +34,15 @@
    },
    {
     "name": "ビットコイン",
-    "value": "12,791,049",
+    "value": "12,790,778",
     "unit": "円",
-    "diff": "+4.3%"
+    "diff": "+4.4%"
    },
    {
     "name": "日経平均",
-    "value": "65,796",
+    "value": "65,744",
     "unit": "円",
-    "diff": "+470"
+    "diff": "+418"
    },
    {
     "name": "NYダウ",
@@ -143,14 +143,6 @@
    "published": "2026-08-24T11:00:00+09:00"
   },
   {
-   "cat": "mkt",
-   "label": "相場",
-   "title": "住友鉱山---大幅続伸、海外関連株高を受けて非鉄株が強い動きに",
-   "source": "ｄメニューニュース",
-   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNN0hiSXR4WDNuOGdqZGpVcFdIRzhFRHJIZEJ3a0pqV2JuejBUUzZZOE1VM0ltNTJaSU5YNmlfTzVBN2hiRTlDWXA2ZDdNcTRQUTBxWmNpcTBtNXAxWjNHUXpGQkxkUlg3MUIzRjA5UXZ1bkV0MlBQSGg3SzcwVHcwN3ZfNmk2RXdDNjFHbdIBjAFBVV95cUxNN0hiSXR4WDNuOGdqZGpVcFdIRzhFRHJIZEJ3a0pqV2JuejBUUzZZOE1VM0ltNTJaSU5YNmlfTzVBN2hiRTlDWXA2ZDdNcTRQUTBxWmNpcTBtNXAxWjNHUXpGQkxkUlg3MUIzRjA5UXZ1bkV0MlBQSGg3SzcwVHcwN3ZfNmk2RXdDNjFHbQ?oc=5",
-   "published": "2026-08-24T10:44:00+09:00"
-  },
-  {
    "cat": "dc",
    "label": "AI・DC",
    "title": "三井金属、AIインフラ向け銅箔増産へ マレーシアに新拠点：ビッグテックで採用進む",
@@ -189,6 +181,14 @@
    "source": "CoinPost",
    "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE5aWU40Nzc5dE5adEdOaG1xTmdqVk1qR2MxbzhLaHMxWHNlZlYxbDYwek9jeUhvOUhNelZyejBMekVyRDQ?oc=5",
    "published": "2026-08-22T10:35:13+09:00"
+  },
+  {
+   "cat": "btc",
+   "label": "ビットコイン",
+   "title": "ビットコイン、8.2万ドルが強気相場転換の分岐点に＝ギャラクシー・リサーチ",
+   "source": "CoinPost",
+   "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTFBtWkRuT3d0Ym0ya19sRHBrdWduNGM1aDgtYms0RnpscnFmQVJtT0RPOTZkTlJaZWhFcGZrOHIyRXNfYlE?oc=5",
+   "published": "2026-08-22T08:40:08+09:00"
   },
   {
    "cat": "dc",
@@ -287,14 +287,6 @@
    "published": "2026-08-20T17:38:01+09:00"
   },
   {
-   "cat": "btc",
-   "label": "ビットコイン",
-   "title": "米債券利回り急騰が30％のビットコイン価格ショックを引き起こす可能性",
-   "source": "Forbes JAPAN",
-   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1NM0lMVF9rbDRoMzUxRGFZeHg5OGJqSFRoemFWYV9fSW5JLVo3ZHF4SXBLNlhxem9OSnVrWE5KNEM4UXdrV2VXTUpUUFJvUTl4YXBVejJtc2VsUQ?oc=5",
-   "published": "2026-08-20T11:00:00+09:00"
-  },
-  {
    "cat": "mkt",
    "label": "相場",
    "title": "新会長に聞く／日本伸銅協会・加藤和照氏（三井住友金属鉱山伸銅社長）／伸銅品グリーンブランド創設へ／未利用銅リサイクル材活用、新技術検討",
@@ -336,12 +328,12 @@
    "published": "2026-08-19T13:00:02+09:00"
   },
   {
-   "cat": "dc",
-   "label": "AI・DC",
-   "title": "Freeport-McMoRan: 将来のための銅供給の構築",
-   "source": "Securities.io",
-   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5veHBZSDcwbjhRMHowdDl6UUxVWU5CVVJvNFdISkpXdDB1eG1aUUdpem1sVEsxaUZGOU1Cd0dxM0hlNjdWM1dGazM5dDlaZVVZb2ExcmVNSjBTeUxOcVJvUVRjcml1Qk0?oc=5",
-   "published": "2026-08-18T20:10:51+09:00"
+   "cat": "mkt",
+   "label": "相場",
+   "title": "銅現物高騰、先物との価格差5年ぶり大きさ 米国外で供給不安",
+   "source": "日本経済新聞",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9jYWVBRVVaU0xraVpCTkNlZ0cwdHlxQ0tRVU1tcDk3ZVIwUzlfRlM1c0xkenhhU3RqbVphM2toTVQwXzNHMTEyUEFIeHh5dXJNdjZoODhzVlZwZ1c5Ym1IaDFYQkFuOE1YS0xRNQ?oc=5",
+   "published": "2026-08-18T16:08:57+09:00"
   },
   {
    "cat": "mkt",
@@ -358,14 +350,6 @@
    "source": "kankyo-business.jp",
    "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBzOTNUTzlkZU1SWUZxS3RzY2ZPbnZKRW9mcDlYWmxSSWdPeVZ2RUlDMFlUUHlsNW1hUzBOV3NQVUNaYmE2Q2JfM3h1NTlaMlpZYmxjNEx2SlhMVVBFTU93LUdTNUF5ZWVpSENqNHAwenZ5N1RHMnRNWXN0ZXc?oc=5",
    "published": "2026-08-17T19:32:44+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
-   "title": "金属くず・金属スクラップの買受け業を営む皆さまへ",
-   "source": "city.ishigaki.okinawa.jp",
-   "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBtMzRheEZCUWh5cHFNOFIzdlVHWlJ1dDdPcU1uV2Z6clBzV3otakoyN0hBRHRoMF9IRXhQY0xmOV9HN25FYWlOMDBFdXpFQ1k4T2JwUHZXZ0FONDROVVpCRGhVbS1JR3o2UHJLQXhPbFJBUXlR?oc=5",
-   "published": "2026-08-13T16:00:00+09:00"
   },
   {
    "cat": "law",
@@ -394,14 +378,6 @@
   {
    "cat": "law",
    "label": "法規制",
-   "title": "日鉄興和不動産が所有・管理するオフィスビルに資源循環データインフラ「pool」を導入｜Infoseekニュース",
-   "source": "Infoseek",
-   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1fMTV2RHpjTnUxSjcxcXNveXRiUDRXZnQtQlY1X0Q2YlVvNElMY3VzUjNGTVBIdy1PYUk1b21UMVp1UmNsenRtSG10SmRadHFTal9Vc3JvWTNBLWg1clpXRnZCdENRSUNJTWctbXAwZUJ0dw?oc=5",
-   "published": "2026-08-05T16:00:00+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
    "title": "廃棄物リサイクルを脱炭素の最前線へ。呉市から国内初※の「グリーン水素×資源再生」モデル構築に向けた実証実験を開始",
    "source": "PR TIMES",
    "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE4yV2NsU0xTNTJVTmdXdVpMNG1sckVZT2s3cjdhdmNMVnZuRDREd19nakVnS0ZoMW5GMDlNakFrTlVERlNRNFp6Q3pCVkFlZFIzcG01RHRFNHdqaDBKTzRiQ29TT01SajlpSEE?oc=5",
@@ -418,10 +394,10 @@
   {
    "cat": "gen",
    "label": "業界",
-   "title": "【深刻】被害額1000万円超も…なぜ今“銅”が狙われる？水道メーターや電線盗難が相次ぐ背景 (読売テレビ)",
-   "source": "Yahoo!ニュース",
-   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQUWM4NUp1YWNVV2d6M1YtTnY5cU5TU2JmTDgzNUFCdzFVb3VBUjZkTGVRbUE5OURmLVVWUHM4ZG5PamVURlJIWTZjU2FUYXYyRVNPV2tFWnZWb29KVjVLQXFpY2R2Z1RybDQwS0pIU3dDdHl2MVNMR1pFM1JIak5xMGlKc3lZTkw4azB1TGtR?oc=5",
-   "published": "2026-07-30T10:39:00+09:00"
+   "title": "【深刻】被害額1000万円超も…なぜ今“銅”が狙われる？水道メーターや電線盗難が相次ぐ背景",
+   "source": "日テレNEWS NNN",
+   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPN1gtQ0h1MGhoR0xOU3pESDRwRUNqRmE5VlYta002ZjhKVG5pVWc3bk9qTVBteWZLMWx6dS02aF9rT2JtSUJrUFN3aWxoUll6bldRcnRtaEFDeVF6UFZ4aWt6clNiNEdlQm5HYUhYaTNNOTdqSUpsR1ZUNndVZDRTVFQzQjdMbEpyamQxVw?oc=5",
+   "published": "2026-07-29T16:00:00+09:00"
   },
   {
    "cat": "law",
@@ -2656,7 +2632,7 @@
     12466777,
     12257663,
     12341426,
-    12773437
+    12785179
    ]
   },
   "基板:マザーボード（Ｃ）": {
@@ -2864,7 +2840,7 @@
     66216.79,
     66016.36,
     65528.09,
-    65782.5
+    65744.23
    ]
   },
   "東鉄名古屋二級": {
@@ -2960,10 +2936,22 @@
  },
  "ai": {
   "lines": [
-   "・銅建値2,380,000円/tへ+40,000円、金26,168円/g",
-   "・金属盗対策法の届出、既存業者は8月末が期限",
-   "・鉄は東鉄名古屋二級48,000円で-1,500の下げ"
+   "・銅建値240万円手前の238万円へ+4万、鉄は名古屋二級4.8万で-1500",
+   "・金属盗対策法の届出経過措置は8月末まで、ヤード許可制も",
+   "・エアコン室外機や太陽光ケーブル盗難が急増、仕入れの出所確認を"
   ],
-  "at": "8/25 13:36"
+  "at": "8/25 13:37"
+ },
+ "monthly": {
+  "title": "銅高止まりと金属盗対策法の月末期限",
+  "paragraphs": [
+   "先月の銅建値は月間で2.6%上がり、現在238万円です。途中で最高値242万円を付けた後、2万円安の234万円への改定もあり、月末にかけては週で1.7%下げています。上げの背景には、銅現物が先物より高くなる「米国外の供給不安」に加え、AIやデータセンター向けの需要期待があり、「銅は新たな石油」と呼ばれる報道も出ています。一方で鉄スクラップは東京製鉄が500〜1500円の値下げ、関東の電炉買値も1000円続落と弱く、名古屋二級は48,000円で横ばい、大阪では海外情勢を背景に強基調との見方もあり地域差が出ています。金は26,168円、銀は387円で、金の国際価格が上場来高値圏という報道もあり、貴金属は高値圏を保っています。",
+   "制度面では、金属盗対策法の問屋の届出について経過措置期間が今月末までとされています。自社の届出状況と、買取時の本人確認・記録の運用が法の求める形になっているかを、今週のうちに最終確認してください。あわせて廃棄物処理法の改正で金属くず等を扱うヤードが許可制になる方向、国土交通省もスクラップヤードなどの「不適切な土地利用」の規制を強めるとされており、ヤードの許可・土地利用の要件は今後さらに厳しくなる可能性があります。太陽光パネルリサイクル法の成立、フロン排出抑制の強化策の中間とりまとめもあり、パネル・フロン機器を扱う場合は受入基準の見直しが必要になる可能性に注意してください。",
+   "同業の建値差は依然として大きく、特にCPUセラ長方形(金足)は浜屋68,800円に対しケイワイ20,600円で48,200円差、CPUセラ(上)も28,800円差、CPU黒は15,500円差です。CPU類は選別の手間に対して差額が最も大きい品目なので、形状・金足の有無まで細かく分け、複数先に相見積もりを取る運用に切り替える価値があります。マザーボードだけはケイワイ2,600円が浜屋2,060円を上回っており、品目ごとに出し先を分ける前提で考えるべきです。K&Yの基板価格はメモリー10,070円、Cクラス1,180円などいずれも前回比0で動いておらず、基板側の値上がり益は当面期待しにくいため、選別精度で粗利を作る方向が現実的です。",
+   "1ヶ月の変化率は、銅建値+2.6%、日経平均+1.8%、NYダウ+2.8%、ビットコイン+21.3%、ドル円-2.9%(159円)。円高方向に2.9%動いた分は輸出採算や国内建値の重しになりやすく、それでも銅が上がったのは供給不安とAI関連需要という実需・思惑の両方が効いた形です。鉄は電炉側の入荷調整による値下げが続き、需給が締まらなかったことが下押し要因でした。基板相場が全品目横ばいだったのは、地金の値動きが基板の建値まで下りてきていないためと見られます。",
+   "今月は三点に絞ります。第一に金属盗対策法の経過措置が月末で切れるため、届出と買取記録の運用を月内に完了させること。第二にCPU類とIC類の選別区分を細かくし、差額の大きい品目は出し先を分ける試算を一度出すこと。第三に銅を狙った盗難が全国で急増しているため、持込品の出所確認を厳しくし、疑わしい持込を断る基準を現場に共有することです。銅は高値圏ながら月末は下げており、仕入値を固定しすぎないよう注意してください。"
+  ],
+  "date": "2026-08-25",
+  "label": "7月のまとめ"
  }
 }
