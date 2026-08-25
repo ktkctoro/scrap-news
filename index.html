@@ -94,7 +94,8 @@
   .wk summary::after{content:'▾';margin-left:auto;color:var(--ai);font-size:13px}
   .wk[open] summary::after{content:'▴'}
   .wklabel{font-size:10.5px;font-weight:700;color:#fff;background:var(--ai);
-    border-radius:4px;padding:2px 7px;letter-spacing:.04em}
+    border-radius:4px;padding:2px 7px;letter-spacing:.04em;flex:0 0 auto}
+  .wklabel.mon{background:var(--midori)}
   .wktitle{font-size:14px;font-weight:700}
   .wkdate{font-size:11px;color:var(--ink-3)}
   .wkbody{padding:0 16px 14px}
@@ -421,16 +422,19 @@ document.addEventListener('keydown', function(e){
 });
 
 function renderWeekly(){
-  var w = DATA && DATA.weekly;
-  if (!w || !w.paragraphs || !w.paragraphs.length) return;
   // 長いので、たたんだ状態で置く。見出しを押すと開く。
-  var html = '<details class="wk"><summary>' +
-    '<span class="wklabel">週次レポート</span>' +
-    '<span class="wktitle">' + esc(w.title || '今週のスクラップ動向') + '</span>' +
-    '<span class="wkdate">' + esc(w.label || '') + '</span></summary>' +
-    '<div class="wkbody">' +
-    w.paragraphs.map(function(p){ return '<p>' + esc(p) + '</p>'; }).join('') +
-    '</div></details>';
+  function box(r, label, cls){
+    if (!r || !r.paragraphs || !r.paragraphs.length) return '';
+    return '<details class="wk"><summary>' +
+      '<span class="wklabel ' + cls + '">' + label + '</span>' +
+      '<span class="wktitle">' + esc(r.title || 'スクラップ動向') + '</span>' +
+      '<span class="wkdate">' + esc(r.label || '') + '</span></summary>' +
+      '<div class="wkbody">' +
+      r.paragraphs.map(function(p){ return '<p>' + esc(p) + '</p>'; }).join('') +
+      '</div></details>';
+  }
+  var html = box(DATA && DATA.monthly, '月次レポート', 'mon') +
+             box(DATA && DATA.weekly, '週次レポート', 'wkly');
   document.getElementById('weekly').innerHTML = html;
 }
 

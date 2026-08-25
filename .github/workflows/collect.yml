@@ -14,6 +14,10 @@ on:
         description: "週次レポートを今すぐ書き直す（月曜以外でも）"
         type: boolean
         default: false
+      force_monthly:
+        description: "月次レポートを今すぐ書き直す（1日以外でも）"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -50,6 +54,13 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           FORCE_WEEKLY: ${{ inputs.force_weekly && '1' || '' }}
+        run: python weekly.py
+
+      - name: 月次レポートを書く（1日だけ）
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          REPORT_KIND: monthly
+          FORCE_WEEKLY: ${{ inputs.force_monthly && '1' || '' }}
         run: python weekly.py
 
       - name: data.json と推移の記録を残す
