@@ -1,8 +1,8 @@
 {
- "updated": "8/28 12:51",
+ "updated": "8/29 11:21",
  "fx": {
-  "usdjpy": 159.39,
-  "date": "2026-08-27"
+  "usdjpy": 159.68,
+  "date": "2026-08-28"
  },
  "manual": {
   "tiles": [
@@ -22,33 +22,33 @@
   "rows": [
    {
     "name": "金（店頭買取）",
-    "value": "25,718",
+    "value": "25,735",
     "unit": "円/g",
-    "diff": "-124"
+    "diff": "-107"
    },
    {
     "name": "銀（店頭買取）",
-    "value": "385.22",
+    "value": "382.36",
     "unit": "円/g",
-    "diff": "+2.64"
+    "diff": "-0.22"
    },
    {
     "name": "ビットコイン",
-    "value": "12,743,791",
+    "value": "12,437,958",
     "unit": "円",
-    "diff": "+1.4%"
+    "diff": "-2.6%"
    },
    {
     "name": "日経平均",
-    "value": "66,683",
+    "value": "66,406",
     "unit": "円",
-    "diff": "+1,155"
+    "diff": "+877"
    },
    {
     "name": "NYダウ",
-    "value": "53,569",
+    "value": "53,560",
     "unit": "$",
-    "diff": "+810"
+    "diff": "+283"
    }
   ]
  },
@@ -56,18 +56,59 @@
   {
    "cat": "law",
    "label": "法規制",
-   "title": "KANEYOグループの福島日産とナプロアース、中古部品の「買取から再販まで」を県内41店舗に実装（PR TIMES）",
-   "source": "毎日新聞",
-   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBiSDhnWlotRk9mVnFhUlFrQVN6WFVCZWRISXVBQXZUY3pFX3BKQ0xaUFozWmljd01QYlhSQ0Z4OWVSTUJjZG8xd1A5R2tkb2w0S2JaaTRyVEo4bWtkTUY0QVRBVGhPckpu?oc=5",
-   "published": "2026-08-28T11:52:45+09:00"
+   "title": "政府、廃棄物処理法に「国内再生原則」 改正案を閣議決定",
+   "source": "日刊工業新聞",
+   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE8xRDBHNEpRMFFhamZCRmtkN0RIeU9oMDd5R2t1OU5OZU13X3ZraTY0N293UTd2Ni0ydHpmY0d3b0lnY3MwQjhWZ0VmalpPSEtBOGl4WlZ2WVNBODlnYVJtc3dCNG9aXzRRdVdwYzFuOA?oc=5",
+   "published": "2026-08-28T20:05:07+09:00"
+  },
+  {
+   "cat": "gen",
+   "label": "業界",
+   "title": "「ボランティアのような格好で犯罪に…」被災地でエアコン室外機など金属類の窃盗 無人の住宅を狙った空き巣被害も 八代市に派遣された警察官が現状語る 熊本地震から1カ月",
+   "source": "Excite エキサイト",
+   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBCLVhrbW85X2FseHZldGN3cThnSEJ3UF9WcXd2d2hxdFM5Y0V6cTNpTGJEX3ZDTWNpLTdCSU9rVzV3QzFTbU9ZcmNTSDEtN3FxeXMzWUxXaV9VX1FoNGxwSU93TWVEd0JYYnF3ellB?oc=5",
+   "published": "2026-08-28T19:32:57+09:00"
+  },
+  {
+   "cat": "gen",
+   "label": "業界",
+   "title": "【速報】大阪市営住宅で水道メーター92個盗難　被害総額33万円超　銅などの価格高騰が背景か　大阪府下でも被害相次ぐ",
+   "source": "Infoseek",
+   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9WTWVUVzJWWm9pNXlMMGhNckhZNFFBZnVWdm80dWJkcjJCNmdtWGJGZWx3MEVXci11amFVRldnMFJGTGNVZUZfeWpYSm1yUzZfcENlbmhTeF85T21ETzdDTENqbVlfRGsyaWZjbkhR0gFuQVVfeXFMT1ZNZVRXMlZab2k1eUwwaE1ySFk0UUFmdVZ2bzR1YmRyMkI2Z21YYkZlbHcwRVdyLXVqYVVGV2cwUkZMY1VlRl95alhKbXJTNl9wQ2VuaFN4XzlPbURPN0NMQ2ptWV9EazJpZmNuSFE?oc=5",
+   "published": "2026-08-28T15:32:00+09:00"
+  },
+  {
+   "cat": "dc",
+   "label": "AI・DC",
+   "title": "住友商事、チリの銅・金鉱山開発に参画 持ち分権益年5000トン",
+   "source": "日本経済新聞",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE41bHRYU0tScXRtczVlUUoyX2FaTHBTNWdLNGRFVEUydkRBbEJhM1BCa05PdEdIbEJqandZSU9VdjRHdUhXRWplZTAzVjR4cWhvbFV2TXJHSm1aby1BMjlLVXJFcFpmeTFIa0NvbA?oc=5",
+   "published": "2026-08-28T14:06:21+09:00"
   },
   {
    "cat": "btc",
    "label": "ビットコイン",
-   "title": "CZ氏、次の強気相場でビットコイン時価総額が金上回ると見解",
-   "source": "CoinPost",
-   "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE9ZbGQyYUMwS2VabnBhMnZMa2s1djVtUzVaNTNadEFjNzk5aTNMRzluUDBVV2FOT1E4X09WUG9qcURJNTQ?oc=5",
-   "published": "2026-08-28T05:00:06+09:00"
+   "title": "バイナンス創業者CZ、「ビットコイン（BTC）時価総額が次の強気相場で金を上回る可能性」に言及（あたらしい経済）",
+   "source": "Yahoo!ニュース",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5PRG1qRUhQS29ST2M0ekZFQzlLWmFoaVVoSk1MRWZVQ21Dd09fUmdZQ1AxS3hzY3JWWENnRy1xcjdadWhaR1U3THR3UWNJSjZBM2thV3dmOU05UnNOcGFBS1RyYktnVVZqd09rNXMzSWQwNGxnVkd3ZXJXejZOMjA?oc=5",
+   "published": "2026-08-28T13:46:11+09:00",
+   "dups": 1
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "福島日産、中古部品・タイヤ買取サービス開始…41店舗で",
+   "source": "レスポンス（Response.jp）",
+   "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9NeHNNekFISVBlVHI4X2FqYUxOM2xhLUF0eW4tZnIxN01JMXJ5WnFkMUZ4ckRKVmdqLUxXa2ttbjRkSUFzTmVNUlNpQnJMY2paNXRsY1l2ZWlmRFRlVDRz?oc=5",
+   "published": "2026-08-28T12:45:03+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "KANEYOグループの福島日産とナプロアース、中古部品の「買取から再販まで」を県内41店舗に実装（PR TIMES）",
+   "source": "毎日新聞",
+   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBiSDhnWlotRk9mVnFhUlFrQVN6WFVCZWRISXVBQXZUY3pFX3BKQ0xaUFozWmljd01QYlhSQ0Z4OWVSTUJjZG8xd1A5R2tkb2w0S2JaaTRyVEo4bWtkTUY0QVRBVGhPckpu?oc=5",
+   "published": "2026-08-28T11:52:45+09:00"
   },
   {
    "cat": "dc",
@@ -86,6 +127,14 @@
    "published": "2026-08-27T16:06:18+09:00"
   },
   {
+   "cat": "mkt",
+   "label": "相場",
+   "title": "東京、銅スクラップ反発−中国の経済指標改善が強材料",
+   "source": "日刊工業新聞",
+   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBYR3hfTmdmaWJfVDZOa21GUWs5LU96N0llY01QbkRZdVk4TmNYVjBRcHJaRFlHdlRybUt0TlJfR2V6ZmQzSzNmQVp1bmZGZWRjTTZ4cXhLaVpqUl9fQkd5bUIxeXhVelNZM0NYQ1d2dw?oc=5",
+   "published": "2026-08-27T16:02:32+09:00"
+  },
+  {
    "cat": "btc",
    "label": "ビットコイン",
    "title": "ビットコイン相場、中立圏に回復 買い集め広がる＝グラスノード",
@@ -99,8 +148,7 @@
    "title": "鉛建値3000円高36万6000円に（日刊産業新聞）",
    "source": "Yahoo!ニュース",
    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQTXFHT3FaQldlWGFpTGRUNXk0WHJhdEE3Tk1RTEg4RFdDeFFSTmNVdE1YQzltX1liSDN6VnRUalR2cTd5RlpaNzlnM3I2dTBScmNLTjJtWTVpay0xVjF3NW5fSTFwaXltWVVWS0YzRlUtblpDQmE1U0I1b0ZvNHlXXzV0aUVseV9nNlZmUTZ3?oc=5",
-   "published": "2026-08-27T11:28:55+09:00",
-   "dups": 1
+   "published": "2026-08-27T11:28:55+09:00"
   },
   {
    "cat": "law",
@@ -119,14 +167,6 @@
    "published": "2026-08-27T06:00:00+09:00"
   },
   {
-   "cat": "btc",
-   "label": "ビットコイン",
-   "title": "バーンスタイン、ビットコイン30万ドル予想維持 「ディベースメント・トレード」を追い風に",
-   "source": "CoinPost",
-   "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE9DUlRyNGQ4NmhLRHB4LWk2N3ZPRjdIQVh1ZnJmU0MycXNsT2J5ZElNX0YxeUgxV1lydEpUN2pMNWhhQnc?oc=5",
-   "published": "2026-08-27T05:00:20+09:00"
-  },
-  {
    "cat": "mkt",
    "label": "相場",
    "title": "亜鉛建値が７０万円突破／最高値更新、年初比３割高",
@@ -135,12 +175,12 @@
    "published": "2026-08-27T05:00:00+09:00"
   },
   {
-   "cat": "gen",
-   "label": "業界",
-   "title": "解体工事で出たごみ6.9トン、残土処分場に不法投棄の疑い　会社経営の男ら逮捕　洲本署など",
-   "source": "ｄメニューニュース",
-   "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE92YXZKRHFwMTRtOHE4UHVNRlFEclhESXluQkNUaXpOQUdySmktbkd2SS1FNmhkdTBvcUxuX2Iwbk1mbU90ZXZZeUJHUkhiN2RfSkctMHlFMTh1MHBORjQ5WWhBVXBWR3psX1hTbGxqalU5WUVxakMw0gF8QVVfeXFMT0lrb1pjeUo0eXAwanY3cjV4TkJEN0xzV2xZeldqOWdCTWwycDhza3V5akZHcUxXdXpNNENDZ0FuOW16ZzZzT2xnSTB6RVE5dXZKWXhSZUJZSklsLWd0eUxnRU5wUFYtbU1QMW9IMjBrcS1UbzFjaFJuYnZGSw?oc=5",
-   "published": "2026-08-26T21:16:00+09:00"
+   "cat": "mkt",
+   "label": "相場",
+   "title": "非鉄金属、軟調推移−中国の追加利上げ相場押し下げ",
+   "source": "日刊工業新聞",
+   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFAwRmxSaGdfT2xydEVRcnJIZ2VjSDczdE51VXpKdXRuRTQyN0RFY0dUbmhFZVUyUkpIbllSNXdfckRLYzlPejYwSWItN0wzaE9EMjkxVklmSjRIYTdRWHlKb29CWk00MEV6UEY1MVJn?oc=5",
+   "published": "2026-08-26T21:05:52+09:00"
   },
   {
    "cat": "dc",
@@ -149,14 +189,6 @@
    "source": "日本経済新聞",
    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5FWkx2U2drTEpnTHByRWJhUWNNdWFRNVZ1ZEVGMHRvSHNnU05vOU1ha05uQzllMVBGbkp2ZXNYWGQ3MXc3Q3F5VmJveHF4TG4wN1VwT00zc0JYZmRvUWJFYTh6c24wbUtabTRlOQ?oc=5",
    "published": "2026-08-26T20:30:43+09:00"
-  },
-  {
-   "cat": "mkt",
-   "label": "相場",
-   "title": "大阪の鉄スクラップ、強基調 海外情勢緊迫に先高観",
-   "source": "日刊工業新聞",
-   "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1waUVPLUtuV29zS3h4T2hTS0VodTdfVGIyY1B0TnNza0pob0t1TXRNQ05TZVdOR0xKZXlpMTNvdkY0S0ZyU1RqOWZQYkxnVWFaWUlkYzcycl8?oc=5",
-   "published": "2026-08-26T18:01:19+09:00"
   },
   {
    "cat": "mkt",
@@ -171,7 +203,7 @@
    "label": "業界",
    "title": "猛暑のさなか“室外機の盗難”が急増　被害は4年で約13倍、銅価格高騰で身近なエアコンが標的に",
    "source": "ｄメニューニュース",
-   "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1UeHV1Y1ZON21jMC1HLWtyWjhLTFpRMTJUNDNuNm5vNl9rSkN5UHJTclU2V1o3RUVoNTVGQW1iSV9iZ05BeWhQSzhPaVRRbk9yOGdUOGlSNDZmalpPM1ZNVDRXNGZrbHY1VXhvUGVqZkVVOEhUVWc40gF3QVVfeXFMTVR4dXVjVk43bWMwLUcta3JaOEtMWlExMlQ0M242bm82X2tKQ3lQclNyVTZXWjdFRWg1NUZBbWJJX2JnTkF5aFBLOE9pVFFuT3I4Z1Q4aVI0NmZqWk8zVk1UNFc0ZmtsdjVVeG9QZWpmRVU4SFRVZzg?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE43VDJWb2RuSzJGQzNlcWRTMFlwQlp4RE9uVUlWRmV0VWprU0g0dkowWDdSaXpuLWppaGRHcC12SkRDdUdTOUhFUFQzN0ZmY19ieFZXc21iRi1zNk5XOWdHam9qWnZsbFJ3QXdWbjNseWZsd9IBd0FVX3lxTE1UeHV1Y1ZON21jMC1HLWtyWjhLTFpRMTJUNDNuNm5vNl9rSkN5UHJTclU2V1o3RUVoNTVGQW1iSV9iZ05BeWhQSzhPaVRRbk9yOGdUOGlSNDZmalpPM1ZNVDRXNGZrbHY1VXhvUGVqZkVVOEhUVWc4?oc=5",
    "published": "2026-08-26T11:01:00+09:00",
    "dups": 1
   },
@@ -200,20 +232,20 @@
    "published": "2026-08-26T08:00:00+09:00"
   },
   {
-   "cat": "btc",
-   "label": "ビットコイン",
-   "title": "「強気さが足りない」ビットコイン、1兆ドル規模のゲームチェンジャーに突如備える",
-   "source": "Forbes JAPAN",
-   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE56V3N5ZjVBTWRFbGlMNGVKT2xjSW1LalFvVm1sQ2NSWTc2RFJ1ZGhmVzl1NG5GQ0xETGpEQlF0RTNjd0JydzJHWWZLVzNPS1g5ejBKczd3ckIzUQ?oc=5",
-   "published": "2026-08-26T07:30:00+09:00"
-  },
-  {
    "cat": "mkt",
    "label": "相場",
    "title": "国内外の非鉄・貴金属、下落",
    "source": "日刊工業新聞",
    "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5oRlJsdlVib0dINGR5Wi1rMEFOM1B0OHlyRTRnVEQ4RlhBY2hLQm5DREpxdzV1Q1V5ZllnVm9EaEtUVHl2dHl1dDF6QzBnaWlfSnhwT1p0cVhsbVVIYUNRUG9iOF9LR1pNQmZxU3pWaw?oc=5",
    "published": "2026-08-26T04:43:28+09:00"
+  },
+  {
+   "cat": "mkt",
+   "label": "相場",
+   "title": "大阪の鉄スクラップ、強基調 海外情勢緊迫に先高観",
+   "source": "日刊工業新聞",
+   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFAtNVc5M3lCMWhuNUtOMVN1cWpaVVN0R3lzU3QyaFBpWUlWeThYdEhvalJzemNoRl9hcmt6SnR5QXJuTmZ3TVlKYmd1NVVEYnNaUGlBcXpLNlhkWHEtUXdiemV6aXRyQ096QjE3SDJCTQ?oc=5",
+   "published": "2026-08-25T17:11:23+09:00"
   },
   {
    "cat": "mkt",
@@ -234,14 +266,6 @@
   {
    "cat": "law",
    "label": "法規制",
-   "title": "ザンビアの排水溝破壊動画が日本で金属盗難問題を浮き彫りに",
-   "source": "x.com",
-   "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1heVhid1JDVS1JQXZQTFllNXlZVzUwUzJST3Q3Q1pmZHJCdU5BTkp0NklPRFhqckJVYkFXVnRjVFJsWmxtdXJoNG8yemVybUxzVHdJcUJzVQ?oc=5",
-   "published": "2026-08-25T16:00:00+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
    "title": "太陽光発電の余剰で水素製造、鉄スクラップ溶断に活用 - ニュース - メガソーラービジネス plus",
    "source": "日経BP",
    "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE81TWpQRjlrQ1g1eWVLYjBvZXJ0T2plSVFMemFIbVRJVWEzcDhSSkFBSjh5NVl6dEg0aXBkSHBEMnRTVFliUks1N2hobDZ2YkljTUFpYXdxX0NXVVBSckp0U1dRdnJhcXBMaUNRQzhwRDZPRHJv?oc=5",
@@ -252,7 +276,7 @@
    "label": "業界",
    "title": "【速報】高騰「銅」目的か…水道メーター盗難相次ぐ　計15個5万6000円相当　大阪市東住吉区",
    "source": "Infoseek",
-   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1VYy1jeFNxb0pNTnF3VzVFemc1RUlQRThobmVWT0NleHVFTXkwYThiZUlUTzA2RXByWjJkaldCWFFERk5KNHBEZm8yaDNmWGs1Qy1QRm5SLTBsenRkd2w5bXJHWGVTRTZRZ1pjU05n0gFuQVVfeXFMTVVjLWN4U3FvSk1OcXdXNUV6ZzVFSVBFOGhuZVZPQ2V4dUVNeTBhOGJlSVRPMDZFcHJaMmRqV0JYUURGTko0cERmbzJoM2ZYazVDLVBGblItMGx6dGR3bDltckdYZVNFNlFnWmNTTmc?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBKaGZySUd5T2ZqbnMtYjlGR3pyRW9wRU9FVDhoTnpWTDNJSjFtUVR2R1BSVzBPT3V2RW5kSGxGeUlrdjZNTmxndEdWU3FHa1dqQWFXc05GLTBpR0RGaFMwQkx0WVBQTTVC0gFuQVVfeXFMTVVjLWN4U3FvSk1OcXdXNUV6ZzVFSVBFOGhuZVZPQ2V4dUVNeTBhOGJlSVRPMDZFcHJaMmRqV0JYUURGTko0cERmbzJoM2ZYazVDLVBGblItMGx6dGR3bDltckdYZVNFNlFnWmNTTmc?oc=5",
    "published": "2026-08-25T15:23:01+09:00"
   },
   {
@@ -280,14 +304,6 @@
    "published": "2026-08-25T05:00:00+09:00"
   },
   {
-   "cat": "law",
-   "label": "法規制",
-   "title": "太陽光パネルリサイクル法が成立、段階的に規制強化する方針も",
-   "source": "日経クロステック",
-   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBRUmwyTEQtdmEyREMwUnQtZXUyVEd1UlY1UlJqampBWldYQ2RoTTdELW05amJLLWdtcjh5WHJjcFNtX0NOTVpVaU9mQ0g0SVdOMjNXaXExR25oVmM3dG5yclB3Y3ZOcldOMjUzeQ?oc=5",
-   "published": "2026-08-25T05:00:00+09:00"
-  },
-  {
    "cat": "mkt",
    "label": "相場",
    "title": "銅建値2万円安 234万円に改定（日刊産業新聞）",
@@ -302,6 +318,22 @@
    "source": "Yahoo!ニュース",
    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9TQ3dFOExHMXZCMGEyWUoxbXZTWEUtVDQ2MGxLXzE5LU4xcnVEeHozNXVQME55UmxFbHFNVjAtZlUwOUJBXzAwMVRuME85bHlGaVNKV1pZa2xFVVU1ek9Sbk1Bd0Y4RGcteFJSUWJBbWpZWWFRX2NXNlNqTzUxa0U?oc=5",
    "published": "2026-08-24T17:30:19+09:00"
+  },
+  {
+   "cat": "btc",
+   "label": "ビットコイン",
+   "title": "【暗号資産】BTC（ビットコイン）はボトムアウトか？200日移動平均線を一気に突破",
+   "source": "マネクリ",
+   "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5ib0Q2cFkyQVUyRThKUERIUGF5TlRhXzRuNzY3d0hiMHVrcHRraTQwSDVUYnVscFVxTTF3M19TdmQ5U3hiMWt3MGc1ZmM0RmR3WjBKcQ?oc=5",
+   "published": "2026-08-24T16:40:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "ザンビアの排水溝破壊動画が日本で金属盗難問題を浮き彫りに",
+   "source": "x.com",
+   "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1heVhid1JDVS1JQXZQTFllNXlZVzUwUzJST3Q3Q1pmZHJCdU5BTkp0NklPRFhqckJVYkFXVnRjVFJsWmxtdXJoNG8yemVybUxzVHdJcUJzVQ?oc=5",
+   "published": "2026-08-24T12:41:56+09:00"
   },
   {
    "cat": "gen",
@@ -360,22 +392,6 @@
    "published": "2026-08-22T14:02:54+09:00"
   },
   {
-   "cat": "gen",
-   "label": "業界",
-   "title": "河童兄妹からの手紙「誘拐されました」 神奈川県海老名市で市民に愛されるシンボルの銅像が盗難 銅価格高騰が背景に？",
-   "source": "Infoseek",
-   "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBpSjhodTZPZERPZ2o4WTBLcDlRTkhjX2QxYnBkdy1tOFMxOVB1QWRCcjNEb2hfbnFQd2xsa2VoTllKS25JN0xDV1BrWXNWRzJaNWJqZGZwYWVVSEhI?oc=5",
-   "published": "2026-08-21T20:04:19+09:00"
-  },
-  {
-   "cat": "dc",
-   "label": "AI・DC",
-   "title": "Copper is the New Oil（銅は新たな石油）とは 脱炭素やAIで需要急伸",
-   "source": "日本経済新聞",
-   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5oR3YwNG5iZ0ZSOXltWEEzTVNfNTE0c2kxTzdDT0RoWlFvVEl6ZFQ2LWJZVlZISXMzZ0FoWDZ6T3RfT0c0V3J3dkFZd0NpZzlDOHdxcmtHcmljcmM1RUVHcnNCbGY5X3VPWWw2TA?oc=5",
-   "published": "2026-08-21T17:48:33+09:00"
-  },
-  {
    "cat": "law",
    "label": "法規制",
    "title": "フロン機器1万3000台をクラウド管理、全社で点検漏れ防ぐ",
@@ -399,14 +415,6 @@
    "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQTVk3aWhPQlVBaVRRVGJYeVZsQUt4M2ZWaDA0ZHdDTExrcVBtRW5sNEEzUXJ4bHJRb1k3aUhKS2syWGtIVmpkbEd6Ykp0bGo2MXAwNkhtbTZMWHZyYWJwSmJhYmg2WFR5S3dKeXpMWWgyblBDZmFONUdxd3RkeGtQQXBjdzQ1aVU?oc=5",
    "published": "2026-08-20T01:26:00+09:00",
    "dups": 2
-  },
-  {
-   "cat": "gen",
-   "label": "業界",
-   "title": "橋下徹氏「かっぱ兄妹」の銅像２体盗難に危機感「そういう世の中ではなくなってきたのかな」",
-   "source": "Infoseek",
-   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5Tc19rQzVudFNpcER1djFXSTg3emExQmdRQVA0ekdUc0dQY0U4WTNlTjNneXBCellJUzA4ZFJnN0h1aWN6a3VUakpBaFZCMUdKMVRqRVZVTDZaeWF3RGFUVjVpVDh6Sk9KdUhrTFRqU3BiYjTSAXhBVV95cUxOaGE5ZzNVcDNuMEl2dXBjRXpjMVBfWGVQejluVWk5UXlNUWNFcU45WGZMcUZfM3M3clY0Rm5vbFNlTW9SZ25UQkVIcTVVU29MbTNmYzBMQV9VOUF3bGdfb2MwRGxUczlxQ2c3MDYxQ3ZwS2p5NW5lZXo?oc=5",
-   "published": "2026-08-12T16:00:00+09:00"
   },
   {
    "cat": "law",
@@ -452,9 +460,9 @@
    "cat": "law",
    "label": "法規制",
    "title": "GX推進法・資源有効利用促進法改正、再生材利用義務化を「競争力」に昇華させる戦略とは 経済産業省・資源循環経済課課長ら登壇の無料ウェビナー開催決定",
-   "source": "Infoseek",
-   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5nbmlJOHNmNU9XYlFKS293NWdlWDZISHdHX3FYcTc2blNYM1JxX01KT2VSclk1UktoV2NXcE5PVVRGWURlUXVKRHFrU1kzdGpXM2NGN2FjLVRhWlpqX1FzOW1rUEU1TExZWGI0NmVkRERkQQ?oc=5",
-   "published": "2026-08-01T16:00:00+09:00"
+   "source": "PR TIMES",
+   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5pd21UWFdlQ3JDZE9xelZTZmFPX0trU3NILWZCa2FiMWFMbWd0UU5QOFdfeUJPV0hENHRZZ2ZnSTJFSFBIZW1Xajd3MS14SktXbjhkRkpHQTJ6ZS1OeU0zdHF4cURyZDNzZlE?oc=5",
+   "published": "2026-07-31T16:00:00+09:00"
   },
   {
    "cat": "gen",
@@ -462,6 +470,14 @@
    "title": "【深刻】被害額1000万円超も…なぜ今“銅”が狙われる？水道メーターや電線盗難が相次ぐ背景",
    "source": "日テレNEWS NNN",
    "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPN1gtQ0h1MGhoR0xOU3pESDRwRUNqRmE5VlYta002ZjhKVG5pVWc3bk9qTVBteWZLMWx6dS02aF9rT2JtSUJrUFN3aWxoUll6bldRcnRtaEFDeVF6UFZ4aWt6clNiNEdlQm5HYUhYaTNNOTdqSUpsR1ZUNndVZDRTVFQzQjdMbEpyamQxVw?oc=5",
+   "published": "2026-07-29T16:00:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "株式会社 digglue、アスクルの使用済みクリアホルダー資源循環プロジェクトに「CE トレーサビリティ」を提供",
+   "source": "Infoseek",
+   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE10NFpQSUNVZ1FmOFcxb2hiRk45THhnaXZoSHZZeFpBRzFORkFVUjkwdVFnc3c2dVdRSnBJdDBOVVR6WXZlaFpPY3JHNWdkZlZ0a21nZVZxYXZRTEdWMHBMRi1CLUpsS1ZjTjE0LUhaMDMtQQ?oc=5",
    "published": "2026-07-29T16:00:00+09:00"
   },
   {
@@ -518,6 +534,14 @@
    "title": "銅価格高騰で太陽光パネルが標的に 三重県内でケーブル盗難急増、5月末時点で被害100件超え",
    "source": "中日新聞Web",
    "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBlS3gtelU0eW5Za2pBV1hGUnRBR1RObHFCYnFYai1tbDcybTNPbXZzck1tYUlMcWxGQUh1dE96Mm94cGJQWTUwaUhzdkNreWRZTDAycg?oc=5",
+   "published": "2026-07-17T16:00:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "県が廃棄物処理法違反で産廃処分業の停止命令 新居浜の業者",
+   "source": "愛媛新聞",
+   "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE0xNFM2SzVLNG9pTmxSVDVRUVFGdzlZY3UzMXlyamtSQnk3NmlyWk9IU3lJTlQ1SmpGRExsWGNJTUZSMlhEQ2ZNZnh4NDhWNHlOQTNNSWxWbXozWGU4RFZDQg?oc=5",
    "published": "2026-07-17T16:00:00+09:00"
   },
   {
@@ -685,6 +709,7 @@
  },
  "compare": {
   "dealers": [
+   "土金",
    "長澤",
    "大畑",
    "安城貿易",
@@ -699,9 +724,14 @@
     "name": "ピカ銅",
     "cells": [
      {
+      "dealer": "土金",
+      "value": 2400,
+      "best": true
+     },
+     {
       "dealer": "長澤",
       "value": 2365,
-      "best": true
+      "best": false
      },
      {
       "dealer": "大畑",
@@ -714,17 +744,22 @@
       "best": false
      }
     ],
-    "spread": 115,
-    "diff": "-35"
+    "spread": 150,
+    "diff": "+35"
    },
    {
     "group": "銅",
     "name": "並銅",
     "cells": [
      {
+      "dealer": "土金",
+      "value": 2290,
+      "best": true
+     },
+     {
       "dealer": "大畑",
       "value": 2220,
-      "best": true
+      "best": false
      },
      {
       "dealer": "宝源",
@@ -732,8 +767,8 @@
       "best": false
      }
     ],
-    "spread": 90,
-    "diff": "-70"
+    "spread": 160,
+    "diff": "+70"
    },
    {
     "group": "銅",
@@ -745,6 +780,11 @@
       "best": true
      },
      {
+      "dealer": "土金",
+      "value": 2260,
+      "best": false
+     },
+     {
       "dealer": "大畑",
       "value": 2170,
       "best": false
@@ -752,6 +792,23 @@
     ],
     "spread": 105,
     "diff": "0"
+   },
+   {
+    "group": "銅",
+    "name": "下銅",
+    "cells": [
+     {
+      "dealer": "宝源",
+      "value": 2030,
+      "best": true
+     },
+     {
+      "dealer": "土金",
+      "value": 1910,
+      "best": false
+     }
+    ],
+    "spread": 120
    },
    {
     "group": "電線",
@@ -804,9 +861,14 @@
     "name": "VA線・F線",
     "cells": [
      {
+      "dealer": "土金",
+      "value": 1010,
+      "best": true
+     },
+     {
       "dealer": "宝源",
       "value": 970,
-      "best": true
+      "best": false
      },
      {
       "dealer": "大畑",
@@ -819,8 +881,8 @@
       "best": false
      }
     ],
-    "spread": 15,
-    "diff": "-40"
+    "spread": 55,
+    "diff": "+40"
    },
    {
     "group": "電線",
@@ -845,9 +907,14 @@
     "name": "エアコンパイプ",
     "cells": [
      {
+      "dealer": "土金",
+      "value": 1280,
+      "best": true
+     },
+     {
       "dealer": "長澤",
       "value": 1155,
-      "best": true
+      "best": false
      },
      {
       "dealer": "大畑",
@@ -860,17 +927,22 @@
       "best": false
      }
     ],
-    "spread": 155,
-    "diff": "-125"
+    "spread": 280,
+    "diff": "+125"
    },
    {
     "group": "真鍮・砲金",
     "name": "砲金",
     "cells": [
      {
+      "dealer": "土金",
+      "value": 2020,
+      "best": true
+     },
+     {
       "dealer": "大畑",
       "value": 2000,
-      "best": true
+      "best": false
      },
      {
       "dealer": "長澤",
@@ -878,17 +950,22 @@
       "best": false
      }
     ],
-    "spread": 45,
-    "diff": "-20"
+    "spread": 65,
+    "diff": "+20"
    },
    {
     "group": "真鍮・砲金",
     "name": "込砲金",
     "cells": [
      {
+      "dealer": "土金",
+      "value": 1960,
+      "best": true
+     },
+     {
       "dealer": "大畑",
       "value": 1890,
-      "best": true
+      "best": false
      },
      {
       "dealer": "長澤",
@@ -896,17 +973,22 @@
       "best": false
      }
     ],
-    "spread": 195,
-    "diff": "-70"
+    "spread": 265,
+    "diff": "+70"
    },
    {
     "group": "真鍮・砲金",
     "name": "真鍮(上)",
     "cells": [
      {
+      "dealer": "土金",
+      "value": 1530,
+      "best": true
+     },
+     {
       "dealer": "大畑",
       "value": 1480,
-      "best": true
+      "best": false
      },
      {
       "dealer": "宝源",
@@ -919,8 +1001,8 @@
       "best": false
      }
     ],
-    "spread": 110,
-    "diff": "-50"
+    "spread": 160,
+    "diff": "+50"
    },
    {
     "group": "真鍮・砲金",
@@ -941,6 +1023,23 @@
     "diff": "0"
    },
    {
+    "group": "真鍮・砲金",
+    "name": "真鍮ダライ粉",
+    "cells": [
+     {
+      "dealer": "土金",
+      "value": 1200,
+      "best": true
+     },
+     {
+      "dealer": "長澤",
+      "value": 1065,
+      "best": false
+     }
+    ],
+    "spread": 135
+   },
+   {
     "group": "アルミ",
     "name": "アルミ(上)",
     "cells": [
@@ -948,6 +1047,11 @@
       "dealer": "長澤",
       "value": 475,
       "best": true
+     },
+     {
+      "dealer": "土金",
+      "value": 460,
+      "best": false
      },
      {
       "dealer": "宝源",
@@ -986,6 +1090,11 @@
       "best": true
      },
      {
+      "dealer": "土金",
+      "value": 350,
+      "best": false
+     },
+     {
       "dealer": "長澤",
       "value": 290,
       "best": false
@@ -998,6 +1107,23 @@
     ],
     "spread": 100,
     "diff": "0"
+   },
+   {
+    "group": "アルミ",
+    "name": "アルミ缶(プレス)",
+    "cells": [
+     {
+      "dealer": "長澤",
+      "value": 380,
+      "best": true
+     },
+     {
+      "dealer": "土金",
+      "value": 300,
+      "best": false
+     }
+    ],
+    "spread": 80
    },
    {
     "group": "アルミ",
@@ -1022,9 +1148,14 @@
       "dealer": "大畑",
       "value": 80,
       "best": false
+     },
+     {
+      "dealer": "土金",
+      "value": 70,
+      "best": false
      }
     ],
-    "spread": 140,
+    "spread": 150,
     "diff": "0"
    },
    {
@@ -1055,9 +1186,14 @@
     "name": "亜鉛",
     "cells": [
      {
+      "dealer": "土金",
+      "value": 250,
+      "best": true
+     },
+     {
       "dealer": "大畑",
       "value": 240,
-      "best": true
+      "best": false
      },
      {
       "dealer": "長澤",
@@ -1065,8 +1201,8 @@
       "best": false
      }
     ],
-    "spread": 30,
-    "diff": "-10"
+    "spread": 40,
+    "diff": "+10"
    },
    {
     "group": "亜鉛・鉛",
@@ -1076,6 +1212,11 @@
       "dealer": "大畑",
       "value": 260,
       "best": true
+     },
+     {
+      "dealer": "土金",
+      "value": 255,
+      "best": false
      },
      {
       "dealer": "長澤",
@@ -1090,6 +1231,23 @@
     ],
     "spread": 60,
     "diff": "0"
+   },
+   {
+    "group": "亜鉛・鉛",
+    "name": "鉛(下)・込鉛",
+    "cells": [
+     {
+      "dealer": "長澤",
+      "value": 140,
+      "best": true
+     },
+     {
+      "dealer": "土金",
+      "value": 130,
+      "best": false
+     }
+    ],
+    "spread": 10
    },
    {
     "group": "亜鉛・鉛",
@@ -1854,6 +2012,11 @@
     "name": "給湯器",
     "cells": [
      {
+      "dealer": "土金",
+      "value": 490,
+      "best": true
+     },
+     {
       "dealer": "安城貿易",
       "value": 490,
       "best": true
@@ -1889,6 +2052,11 @@
      {
       "dealer": "宝源",
       "value": 160,
+      "best": false
+     },
+     {
+      "dealer": "土金",
+      "value": 150,
       "best": false
      },
      {
@@ -1940,6 +2108,11 @@
      {
       "dealer": "安城貿易",
       "value": 115,
+      "best": false
+     },
+     {
+      "dealer": "土金",
+      "value": 110,
       "best": false
      },
      {
@@ -2010,9 +2183,14 @@
       "dealer": "大畑",
       "value": 140,
       "best": false
+     },
+     {
+      "dealer": "土金",
+      "value": 105,
+      "best": false
      }
     ],
-    "spread": 70,
+    "spread": 105,
     "diff": "0"
    }
   ]
@@ -2041,29 +2219,28 @@
   "label": "7月のまとめ"
  },
  "ai_morning": {
-  "date": "2026-08-28",
+  "date": "2026-08-29",
   "items": [
    {
-    "title": "Nvidia、Hugging Faceを129億ドルで買収合意と報道",
-    "link": "https://thelastthreeminutes.com/issues/2026-08-28/stories/1/"
+    "title": "Codexが眠らなくなる？OpenAIが常時稼働モードを試験中",
+    "link": "https://thelastthreeminutes.com/issues/2026-08-29/stories/1/"
    },
    {
-    "title": "Coworkに内蔵ブラウザ。Claudeがサイト操作を代行",
-    "link": "https://thelastthreeminutes.com/issues/2026-08-28/stories/2/"
+    "title": "BeatportがAI完全生成曲を排除。DJの6割「かけない」",
+    "link": "https://thelastthreeminutes.com/issues/2026-08-29/stories/2/"
    },
    {
-    "title": "Gemini Omni 1.1 Flash、動画生成が安く自在に",
-    "link": "https://thelastthreeminutes.com/issues/2026-08-28/stories/3/"
+    "title": "Hugging Faceの399ドルロボ「Microduck」予約開始",
+    "link": "https://thelastthreeminutes.com/issues/2026-08-29/stories/3/"
    }
   ],
-  "link": "https://thelastthreeminutes.com/issues/2026-08-28/",
-  "lead": "金曜の朝は、AIの足場が動く話です。NvidiaによるHugging Face買収合意が報じられ、ClaudeのCoworkにはブラウザが内蔵され、Googleは動画生成を安く自在にしました。",
-  "video": "https://www.youtube.com/watch?v=-iRB40wxvOw"
+  "link": "https://thelastthreeminutes.com/issues/2026-08-29/",
+  "lead": "土曜の朝は、AIとの距離感の話です。OpenAIは眠らないエージェントを試し、BeatportはAI完全生成曲を締め出し、Hugging Faceは399ドルのアヒル型ロボットの予約を始めました。",
+  "video": "https://www.youtube.com/watch?v=M1dNgT2VSJ4"
  },
  "history": {
   "NYダウ": {
    "d": [
-    "2026-05-28",
     "2026-05-29",
     "2026-06-01",
     "2026-06-02",
@@ -2126,10 +2303,10 @@
     "2026-08-24",
     "2026-08-25",
     "2026-08-26",
-    "2026-08-27"
+    "2026-08-27",
+    "2026-08-28"
    ],
    "v": [
-    50668.97,
     51032.46,
     51078.88,
     51307.79,
@@ -2192,12 +2369,12 @@
     53417.16,
     53577.4,
     53463.88,
-    53569.44
+    53569.44,
+    53559.99
    ]
   },
   "ドル円": {
    "d": [
-    "2026-05-28",
     "2026-05-29",
     "2026-06-01",
     "2026-06-02",
@@ -2263,10 +2440,10 @@
     "2026-08-25",
     "2026-08-26",
     "2026-08-27",
-    "2026-08-28"
+    "2026-08-28",
+    "2026-08-29"
    ],
    "v": [
-    159.46,
     159.27,
     159.49,
     159.75,
@@ -2332,12 +2509,12 @@
     159.24,
     159.07,
     159.39,
-    159.39
+    159.68,
+    159.68
    ]
   },
   "ビットコイン": {
    "d": [
-    "2026-05-31",
     "2026-06-01",
     "2026-06-02",
     "2026-06-03",
@@ -2426,10 +2603,10 @@
     "2026-08-25",
     "2026-08-26",
     "2026-08-27",
-    "2026-08-28"
+    "2026-08-28",
+    "2026-08-29"
    ],
    "v": [
-    11763487,
     11750555,
     11409797,
     10672999,
@@ -2518,7 +2695,8 @@
     12567312,
     12500297,
     12583827,
-    12718945
+    12787956,
+    12435606
    ]
   },
   "基板:マザーボード（Ｃ）": {
@@ -2528,11 +2706,13 @@
     "2026-08-25",
     "2026-08-26",
     "2026-08-27",
-    "2026-08-28"
+    "2026-08-28",
+    "2026-08-29"
    ],
    "v": [
     870.0,
     870.0,
+    880.0,
     880.0,
     880.0,
     880.0,
@@ -2546,11 +2726,13 @@
     "2026-08-25",
     "2026-08-26",
     "2026-08-27",
-    "2026-08-28"
+    "2026-08-28",
+    "2026-08-29"
    ],
    "v": [
     9780.0,
     9780.0,
+    10070.0,
     10070.0,
     10070.0,
     10070.0,
@@ -2564,11 +2746,13 @@
     "2026-08-25",
     "2026-08-26",
     "2026-08-27",
-    "2026-08-28"
+    "2026-08-28",
+    "2026-08-29"
    ],
    "v": [
     220.0,
     220.0,
+    225.0,
     225.0,
     225.0,
     225.0,
@@ -2582,11 +2766,13 @@
     "2026-08-25",
     "2026-08-26",
     "2026-08-27",
-    "2026-08-28"
+    "2026-08-28",
+    "2026-08-29"
    ],
    "v": [
     1150.0,
     1150.0,
+    1180.0,
     1180.0,
     1180.0,
     1180.0,
@@ -2600,11 +2786,13 @@
     "2026-08-25",
     "2026-08-26",
     "2026-08-27",
-    "2026-08-28"
+    "2026-08-28",
+    "2026-08-29"
    ],
    "v": [
     3500.0,
     3500.0,
+    3600.0,
     3600.0,
     3600.0,
     3600.0,
@@ -2618,11 +2806,13 @@
     "2026-08-25",
     "2026-08-26",
     "2026-08-27",
-    "2026-08-28"
+    "2026-08-28",
+    "2026-08-29"
    ],
    "v": [
     640.0,
     640.0,
+    660.0,
     660.0,
     660.0,
     660.0,
@@ -2631,7 +2821,6 @@
   },
   "日経平均": {
    "d": [
-    "2026-05-28",
     "2026-05-29",
     "2026-06-01",
     "2026-06-02",
@@ -2694,11 +2883,9 @@
     "2026-08-24",
     "2026-08-25",
     "2026-08-26",
-    "2026-08-27",
-    "2026-08-28"
+    "2026-08-27"
    ],
    "v": [
-    64693.12,
     66329.5,
     66934.33,
     66734.24,
@@ -2761,8 +2948,7 @@
     65528.09,
     65856.43,
     66262.16,
-    66131.98,
-    66630.37
+    66131.98
    ]
   },
   "東鉄名古屋二級": {
@@ -2772,9 +2958,11 @@
     "2026-08-25",
     "2026-08-26",
     "2026-08-27",
-    "2026-08-28"
+    "2026-08-28",
+    "2026-08-29"
    ],
    "v": [
+    48000.0,
     48000.0,
     48000.0,
     48000.0,
@@ -2790,7 +2978,8 @@
     "2026-08-25",
     "2026-08-26",
     "2026-08-27",
-    "2026-08-28"
+    "2026-08-28",
+    "2026-08-29"
    ],
    "v": [
     25415.0,
@@ -2798,7 +2987,8 @@
     26168.0,
     25822.0,
     25770.0,
-    25718.0
+    25718.0,
+    25735.0
    ]
   },
   "銀": {
@@ -2808,7 +2998,8 @@
     "2026-08-25",
     "2026-08-26",
     "2026-08-27",
-    "2026-08-28"
+    "2026-08-28",
+    "2026-08-29"
    ],
    "v": [
     376.97,
@@ -2816,7 +3007,8 @@
     386.87,
     362.45,
     370.26,
-    385.22
+    385.22,
+    382.36
    ]
   },
   "銅建値": {
@@ -2876,10 +3068,10 @@
  },
  "ai": {
   "lines": [
-   "・銅建値238万円へ+4万、亜鉛建値70万円突破し最高値",
-   "・金属盗対策法が全面施行、届出期限は8月末まで",
-   "・室外機や水道メーター盗難急増、被害4年で13倍"
+   "・銅建値238万円へ4万円高、鉄名古屋二級48,000円で横ばい",
+   "・金属盗対策法が全面施行、既存業者の届出期限は8月末",
+   "・水道メーターや太陽光ケーブルの銅盗難が各地で急増"
   ],
-  "at": "8/28 12:51"
+  "at": "8/29 11:21"
  }
 }
