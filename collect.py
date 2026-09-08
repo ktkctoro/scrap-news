@@ -27,6 +27,8 @@ JST = timezone(timedelta(hours=9))
 UA = "Mozilla/5.0 (compatible; scrap-news/1.0)"
 # 日付が取れなかった記事を並べ替えで最後に回すための、うんと古い日
 OLDEST = datetime(1970, 1, 1, tzinfo=JST)
+# Bingに問い合わせる前に空ける秒数。続けざまに聞くと断られるため
+BING_WAIT = 1.5
 
 # ---- 拾うキーワード -------------------------------------------------
 # (分類, 検索語, さかのぼる日数, その検索語から拾う上限)。
@@ -58,6 +60,12 @@ QUERIES = [
     ("dc", "サーバー 廃棄 リサイクル"),
     ("btc", "ビットコイン 相場", 7, 5),   # 話題が多いので5本まで
 ]
+
+# 分類ごとの「さかのぼる日数」。ここに無い分類は default_days（7日）。
+# 古さは検索語ではなく、最終的な分類で測る。法規制の検索語（60日）で拾った
+# 記事が、見出しの語で「業界」に振り替わることがあり、そのまま60日の物差しで
+# 通すと、2ヶ月前の記事が業界チップに混じってしまうため。
+CAT_DAYS = {"law": 60}
 
 # AI・DC分類はノイズが多いので、この語のどれかを含む記事だけ残す
 DC_MUST_HAVE = ["銅", "電線", "変圧器", "電力", "ケーブル", "廃棄", "リサイクル", "回収", "設備投資"]
@@ -351,12 +359,24 @@ def _read_feed(kind, query, days):
     """
     if kind == "google":
         url = FEED_GOOGLE.format(q=urllib.parse.quote(f"{query} when:{days}d"))
+        tries = 1
     else:
         url = FEED_BING.format(q=urllib.parse.quote(query))
-    try:
-        root = ET.fromstring(fetch(url))
-    except Exception as e:
-        print(f"  ! 取得失敗 [{kind} {query}]: {e}", file=sys.stderr)
+        # 続けざまに問い合わせるとBingに断られ、RSSではないもの（案内ページ）が
+        # 返ってくる。少し間を空け、それでもだめなら長めに待ってもう一度だけ試す。
+        tries = 2
+
+    root, last = None, None
+    for i in range(tries):
+        if kind == "bing":
+            time.sleep(BING_WAIT * (i * 3 + 1))
+        try:
+            root = ET.fromstring(fetch(url))
+            break
+        except Exception as e:
+            last = e
+    if root is None:
+        print(f"  ! 取得失敗 [{kind} {query}]: {last}", file=sys.stderr)
         return []
 
     rows = []
@@ -398,7 +418,6 @@ def collect_articles(default_days=7):
         cap = entry[3] if len(entry) > 3 else None
         taken = 0
         got = {"google": 0, "bing": 0}
-        cutoff = now - timedelta(days=days)
 
         rows = _read_feed("google", query, days) + _read_feed("bing", query, days)
         # 新しい順に見る。同じ話が両方に載っていたら、新しいほうを残す。
@@ -429,7 +448,8 @@ def collect_articles(default_days=7):
             if final == "dc" and not any(w in title for w in DC_MUST_HAVE):
                 continue
 
-            if dt and dt < cutoff:
+            # 古さは最終的な分類で測る（拾ってきた検索語の日数ではない）
+            if dt and dt < now - timedelta(days=CAT_DAYS.get(final, default_days)):
                 continue
 
             seen[key] = len(items)

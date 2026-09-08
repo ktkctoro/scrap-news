@@ -4,9 +4,16 @@ on:
   # 日本時間の朝4時30分（UTCの19時30分）。朝5時に見るころには出来ている。
   schedule:
     - cron: "30 19 * * *"
-  # manual.json を直したときなど、手で直したら作り直す
+  # manual.json を直したときなど、手で直したら作り直す。
+  # ただし画面や中身に関わるファイルのときだけ。ドキュメントを1行直しただけで
+  # 記事の取り直し・同業8社の巡回・AIまとめ（有料）まで走らせない。
   push:
     branches: [main]
+    paths:
+      - "manual.json"
+      - "index.html"
+      - "**.py"
+      - ".github/workflows/collect.yml"
   # GitHubの画面から手で動かせるようにする
   workflow_dispatch:
     inputs:
@@ -33,9 +40,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
 
@@ -67,9 +74,15 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          # 別の実行と重なって弾かれることがあるので、何度か試す。
+          # 別の実行や手作業と重なって弾かれることがあるので、何度か試す。
           # data.json と history.json はこの実行で作ったものが正しいので、
-          # ぶつかったらリモートの上に「作ったファイルを載せ直して」やり直す。
+          # ぶつかったらリモートの中身に合わせ直してから、この2つだけ置き直す。
+          #
+          # ここで reset --soft を使ってはいけない。手元の状態を抱えたまま
+          # HEADだけ動くので、次の commit が「抱えている全部」を記録し、
+          # その間に入ったコードの変更まで巻き戻したコミットになる。
+          mkdir -p "$RUNNER_TEMP/keep"
+          cp data.json history.json "$RUNNER_TEMP/keep/"
           for i in 1 2 3; do
             git add data.json history.json
             git diff --staged --quiet && exit 0
@@ -77,7 +90,8 @@ jobs:
             git push && exit 0
             echo "プッシュがぶつかりました。載せ直して再試行します（$i回目）"
             git fetch origin main
-            git reset --soft origin/main    # 作ったファイルはそのまま残る
+            git reset --hard origin/main
+            cp "$RUNNER_TEMP/keep/data.json" "$RUNNER_TEMP/keep/history.json" .
             sleep 5
           done
           echo "::error::data.json の保存に失敗しました"
@@ -88,7 +102,7 @@ jobs:
           mkdir -p _site
           cp index.html data.json _site/
 
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: _site
 
@@ -100,4 +114,4 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
