@@ -782,8 +782,25 @@ def fetch_kys():
         return None
 
 
-def build_boards(prev):
-    """基板買取（K&Y）の段を作る。前回の値と比べて前回比も付ける。"""
+def _prev_day_value(hist, key, today):
+    """推移の記録（history.json）から、今日ではないいちばん新しい日の値を返す。
+
+    前回比を「前回の data.json」と比べると、同じ日に2回動いたときに
+    「1回目との差＝0」になってしまう。1日2回の定時実行を入れたので、
+    日付の付いた記録のほうを見て、今日と違ういちばん近い日と比べる。
+    """
+    series = (hist or {}).get(key) or {}
+    days = sorted(d for d in series if d != today)
+    if not days:
+        return None
+    try:
+        return float(series[days[-1]])
+    except (TypeError, ValueError):
+        return None
+
+
+def build_boards(prev, hist=None, today=None):
+    """基板買取（K&Y）の段を作る。前の日の値と比べて前回比も付ける。"""
     got = fetch_kys()
     if got is None:
         if prev:
@@ -793,9 +810,18 @@ def build_boards(prev):
     prev_rows = {r["name"]: r for r in (prev or {}).get("rows", [])}
     for r in got["rows"]:
         diff = ""
-        old = prev_rows.get(r["name"])
-        if old:
-            d = int(r["value"].replace(",", "")) - int(old["value"].replace(",", ""))
+        now = int(r["value"].replace(",", ""))
+        old = _prev_day_value(hist, f"基板:{r['name']}", today)
+        if old is None:
+            # 記録がまだ無い品目は、これまでどおり前回の data.json と比べる
+            p = prev_rows.get(r["name"])
+            if p:
+                try:
+                    old = float(p["value"].replace(",", ""))
+                except (TypeError, ValueError, KeyError):
+                    old = None
+        if old is not None:
+            d = now - int(old)
             diff = f"{d:+,}" if d else "0"
         r["diff"] = diff
     return got
@@ -920,7 +946,8 @@ def main():
     print("建値と金・銀をあつめています…")
     prices = build_prices(load_manual(), prev.get("manual") or {})
     print("基板の買取価格をあつめています…")
-    boards = build_boards(prev.get("boards"))
+    boards = build_boards(prev.get("boards"), history.load(),
+                          datetime.now(JST).strftime("%Y-%m-%d"))
     print("同業各社の価格をあつめています…")
     compare = dealers.build_compare(fetch, prev.get("compare"))
 
