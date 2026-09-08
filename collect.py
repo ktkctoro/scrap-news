@@ -25,6 +25,8 @@ import history
 HERE = os.path.dirname(os.path.abspath(__file__))
 JST = timezone(timedelta(hours=9))
 UA = "Mozilla/5.0 (compatible; scrap-news/1.0)"
+# 日付が取れなかった記事を並べ替えで最後に回すための、うんと古い日
+OLDEST = datetime(1970, 1, 1, tzinfo=JST)
 
 # ---- 拾うキーワード -------------------------------------------------
 # (分類, 検索語, さかのぼる日数, その検索語から拾う上限)。
@@ -172,7 +174,13 @@ def classify(title, fallback):
 # 分類の表示名
 LABELS = {"mkt": "相場", "law": "法規制", "gen": "業界", "dc": "AI・DC", "btc": "ビットコイン"}
 
-FEED = "https://news.google.com/rss/search?q={q}&hl=ja&gl=JP&ceid=JP:ja"
+# 記事の取得元はふたつ。Googleは本数が多いかわりに新着が遅れがちで、
+# Bingは本数が少ないかわりに当日の記事が早く出る。両方から取って重なりは
+# 1本にまとめる。片方がこけても、もう片方で記事は出る。
+# Googleは検索語に when:7d のような期間指定が効く。Bingには効かないので、
+# 取ってきてから日付でふるいにかける。
+FEED_GOOGLE = "https://news.google.com/rss/search?q={q}&hl=ja&gl=JP&ceid=JP:ja"
+FEED_BING = "https://www.bing.com/news/search?q={q}&format=RSS&setmkt=ja-JP&setlang=ja"
 FX_URL = "https://api.frankfurter.app/latest?from=USD&to=JPY"
 
 # 建値・金銀・鉄スクラップの公表ページ（どれも1日1回読むだけ）
@@ -311,8 +319,76 @@ def dedupe_key(title):
     return t[:30]
 
 
+def _bing_source(node):
+    """Bingは媒体名を <News:Source> という別のタグに入れてくる。
+
+    このタグの名前空間のURLが検索語ごとに変わる（検索URLそのものが入る）ので、
+    名前空間を決め打ちで書くと当たらない。タグ名の後ろだけを見て探す。
+    """
+    for child in node:
+        if child.tag.rsplit("}", 1)[-1] == "Source":
+            name = (child.text or "").strip()
+            return SOURCE_NAMES.get(name.lower(), name)
+    return ""
+
+
+def _bing_link(url):
+    """Bingのリンクは自社の中継URL。中の url= に本当の行き先が入っている。"""
+    try:
+        real = urllib.parse.parse_qs(urllib.parse.urlparse(url).query).get("url", [""])[0]
+        if real.startswith("http"):
+            return real
+    except Exception:
+        pass
+    return url
+
+
+def _read_feed(kind, query, days):
+    """検索語ひとつぶんの記事を取ってくる。取れなければ空で返す。
+
+    ここで失敗しても例外は投げない。片方の取得元がこけても、
+    もう片方の記事は画面に出したいため。
+    """
+    if kind == "google":
+        url = FEED_GOOGLE.format(q=urllib.parse.quote(f"{query} when:{days}d"))
+    else:
+        url = FEED_BING.format(q=urllib.parse.quote(query))
+    try:
+        root = ET.fromstring(fetch(url))
+    except Exception as e:
+        print(f"  ! 取得失敗 [{kind} {query}]: {e}", file=sys.stderr)
+        return []
+
+    rows = []
+    for node in root.iterfind(".//item"):
+        title_raw = (node.findtext("title") or "").strip()
+        if not title_raw:
+            continue
+        link = (node.findtext("link") or "").strip()
+        if kind == "google":
+            title, source = clean_title(title_raw)
+        else:
+            title, source = title_raw, _bing_source(node)
+            link = _bing_link(link)
+        # Bingは長い見出しを途中で切って「…」を付けてくる。記号は落として、
+        # 切れている印だけ持っておく（同じ記事が両方に載っていたら、
+        # 切れていないほうの見出しを使うため）
+        cut = re.search(r"\s*(\.\.\.|…)$", title)
+        if cut:
+            title = title[:cut.start()].rstrip("　 、,")
+        rows.append({
+            "kind": kind,
+            "title": title,
+            "source": source,
+            "link": link,
+            "cut": bool(cut),
+            "dt": parse_pubdate(node.findtext("pubDate")),
+        })
+    return rows
+
+
 def collect_articles(default_days=7):
-    seen = set()
+    seen = {}   # 見出しキー → items の何番目か
     items = []
     now = datetime.now(JST)
 
@@ -321,25 +397,29 @@ def collect_articles(default_days=7):
         days = entry[2] if len(entry) > 2 else default_days
         cap = entry[3] if len(entry) > 3 else None
         taken = 0
+        got = {"google": 0, "bing": 0}
         cutoff = now - timedelta(days=days)
-        q = urllib.parse.quote(f"{query} when:{days}d")
-        try:
-            raw = fetch(FEED.format(q=q))
-            root = ET.fromstring(raw)
-        except Exception as e:
-            print(f"  ! 取得失敗 [{query}]: {e}", file=sys.stderr)
-            continue
 
-        for node in root.iterfind(".//item"):
+        rows = _read_feed("google", query, days) + _read_feed("bing", query, days)
+        # 新しい順に見る。同じ話が両方に載っていたら、新しいほうを残す。
+        # 日付が無いものは最後に回す。
+        rows.sort(key=lambda r: r["dt"] or OLDEST, reverse=True)
+
+        for row in rows:
             if cap is not None and taken >= cap:
                 break
-            title_raw = (node.findtext("title") or "").strip()
-            if not title_raw:
-                continue
-            title, source = clean_title(title_raw)
+            title, source, dt = row["title"], row["source"], row["dt"]
 
             key = dedupe_key(title)
             if key in seen:
+                # 同じ記事がもう入っている。先に入ったほうの見出しが
+                # 途中で切れていて、こちらが切れていないなら差し替える。
+                kept = items[seen[key]]
+                if kept.get("cut") and not row["cut"] and is_relevant(title, source):
+                    kept["title"] = title
+                    kept["cut"] = False
+                    if row["kind"] == "google":
+                        kept["link"] = row["link"]
                 continue
 
             if not is_relevant(title, source):
@@ -349,22 +429,26 @@ def collect_articles(default_days=7):
             if final == "dc" and not any(w in title for w in DC_MUST_HAVE):
                 continue
 
-            dt = parse_pubdate(node.findtext("pubDate"))
             if dt and dt < cutoff:
                 continue
 
-            seen.add(key)
+            seen[key] = len(items)
             taken += 1
+            got[row["kind"]] += 1
             items.append({
                 "cat": final,
                 "label": LABELS[final],
                 "title": title,
                 "source": source,
-                "link": (node.findtext("link") or "").strip(),
+                "link": row["link"],
+                "cut": row["cut"],
                 "published": dt.isoformat() if dt else "",
             })
-        print(f"  ✓ {query} → 累計 {len(items)} 件")
+        print(f"  ✓ {query} → 累計 {len(items)} 件"
+              f"（Google {got['google']} / Bing {got['bing']}）")
 
+    for it in items:
+        it.pop("cut", None)   # 見出しの差し替えに使うだけの印。画面には要らない
     items.sort(key=lambda x: x["published"], reverse=True)
     before = len(items)
     items = merge_same_stories(items)   # 新しい順に見て、同じ話は1本にまとめる
