@@ -1,5 +1,5 @@
 {
- "updated": "9/8 12:55",
+ "updated": "9/8 16:06",
  "fx": {
   "usdjpy": 154.75,
   "date": "2026-09-07"
@@ -22,27 +22,27 @@
   "rows": [
    {
     "name": "金（店頭買取）",
-    "value": "23,821",
+    "value": "23,884",
     "unit": "円/g",
-    "diff": "-425"
+    "diff": "-362"
    },
    {
     "name": "銀（店頭買取）",
-    "value": "356.18",
+    "value": "358.93",
     "unit": "円/g",
-    "diff": "-3.96"
+    "diff": "-1.21"
    },
    {
     "name": "ビットコイン",
-    "value": "12,087,054",
+    "value": "12,039,372",
     "unit": "円",
-    "diff": "-2.7%"
+    "diff": "-3.0%"
    },
    {
     "name": "日経平均",
-    "value": "66,638",
+    "value": "65,269",
     "unit": "円",
-    "diff": "+2,312"
+    "diff": "+944"
    },
    {
     "name": "NYダウ",
@@ -53,6 +53,54 @@
   ]
  },
  "items": [
+  {
+   "cat": "btc",
+   "label": "ビットコイン",
+   "title": "ビットコイン（BTC）のゴールデンクロスが到来しました。次の展開は？",
+   "source": "CoinDesk",
+   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQLXN2LVhyOVZ0dnRWVTk0QUxNTjVXNy1MRGhpNjd6cEZsYk93dWx6N2pTTjFhSFE0SDh2Wk5QQmg3UjloaVpkcVFzdFNHelBKZW5vSlFPNDR1VUM3cHh1NXRURnFjblZzR2x2aUFHUnh3Z3ZuZC1ia3V3dXpGODVDNWlYTQ?oc=5",
+   "published": "2026-09-08T14:56:23+09:00"
+  },
+  {
+   "cat": "btc",
+   "label": "ビットコイン",
+   "title": "ビットコイン、79,000ドルを下回る。ゼットキャッシュは連邦準備制度理事会の利上げ確率が約60%で推移する中、損失を主導",
+   "source": "CoinDesk",
+   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNQ1B0UUFtWVRaQVlCQjQ4VklwOHRIZk9LWVF0T2l4dDBjZm5sWnBBZzR4RXkyaWVCMU85dFAzZEg2ZFpjeU5ucjJ5RFpZWllRMVRFaklvR1ZIZU5lUzBvNDBYNTJvY29ZbzQ1aGMydkZwYW02Y0VnTURmREhfZm0tbUhlVjV6R1JiMi1oNDhkUkNwWkN1N2NwdGlUeFNScDNRN2Q3M3VoSHdzWV93MXlNMGJrQkhHWlZEaDBJRk1pb2JfYTg?oc=5",
+   "published": "2026-09-08T13:40:57+09:00"
+  },
+  {
+   "cat": "btc",
+   "label": "ビットコイン",
+   "title": "ビットコイン、8万ドル台回復 米CPIとFRB会合が今週の焦点",
+   "source": "디지털투데이",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPbGNaUEV6b0pvYnh1M2Nxc3dMVGtXUW5CWk1jNWZTLVVEZHJBTDhzWWhPNFhZVHhoV2VDeENMWVRLT0UzUDJuOWVLWlJ5RVBDWEVscGY3S1YzTjk5dHZzRGNQa1BCenpZWXp3SkFTVzc1U3pHRTAzaWFWblpvVmJoelpaUUhYVVdDd0RIVzRPMV9RZE52b3FlYWppc1Rfc3BYTXNTTG94NDQwRnNRN2RPdERXZ2VwQjdId0lUdU9uMkUxQXVk?oc=5",
+   "published": "2026-09-08T13:33:37+09:00"
+  },
+  {
+   "cat": "mkt",
+   "label": "相場",
+   "title": "国際銅価格が米国の追加関税の可能性と主要鉱山の生産支障が重なり、史上最高水準に上がっている。 銅は半導体などの核心原材料として米国の関税不確実性に需要が増えた点などが影響を与える姿だ。7日（現地時間）..",
+   "source": "매일경제",
+   "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9veW9td2JxUkNTZDgzR0x5Mi1iUkhFOEVoWjRxdUViN1FUYWJMRUtMY2hzeFVGOG00c3lOcHVFQXdLd1QzOW0xc05ib1VtMkE?oc=5",
+   "published": "2026-09-08T13:11:45+09:00"
+  },
+  {
+   "cat": "btc",
+   "label": "ビットコイン",
+   "title": "1500ポンドが333万ポンドに…忘れていたビットコイン14年ぶりに取り戻した経緯（中央日報日本語版）",
+   "source": "Yahoo!ニュース",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFByVzVoWXpESDhkaG9NUTdOLV9IZGJsVTBsQjdUZkpOSGNWZHFfT2REdV9hTk1uYXljM3dvVEl6aUpsZXVNcjV2WXdYWXFxOUhOQWFMcTFXNENuaUJSVzRra0k1N1YwSjRLX3VFMlN3RWNYLWVLRklSNTMxcFFWWW8?oc=5",
+   "published": "2026-09-08T10:31:17+09:00"
+  },
+  {
+   "cat": "btc",
+   "label": "ビットコイン",
+   "title": "ビットコイン、強力な米雇用統計を受けて揺れるもETF需要は堅調維持",
+   "source": "interactivecrypto.com",
+   "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE45emwzZ1I0TXhIOHlSUDdtdWs4M0oyUDJxVFFxQ2l6a0kxZVdQZmRDVlVJYnNOWmxoS1lvUFNIZFkwbS05MXBJQlROcVFfUWZLb2xrbmliU203WlFVNU94Sw?oc=5",
+   "published": "2026-09-08T09:52:49+09:00"
+  },
   {
    "cat": "mkt",
    "label": "相場",
@@ -86,14 +134,6 @@
    "published": "2026-09-08T01:43:57+09:00"
   },
   {
-   "cat": "btc",
-   "label": "ビットコイン",
-   "title": "【暗号資産】BTC（ビットコイン）は高値圏もみ合いが3週間超、再ブレイク待ち相場か",
-   "source": "マネクリ",
-   "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1Ga1k0RXpTcF9qYkx3MzRITGc0WDRuc3F0MVJBQUwwNnVPZW1zOVNmcEozRGVkYkxyU09wUm82aVB2NlRKN1JSTjEwN3hsVjg2VmtiZHpFMNIBV0FVX3lxTE1Ga1k0RXpTcF9qYkx3MzRITGc0WDRuc3F0MVJBQUwwNnVPZW1zOVNmcEozRGVkYkxyU09wUm82aVB2NlRKN1JSTjEwN3hsVjg2VmtiZHpFMA?oc=5",
-   "published": "2026-09-07T16:29:00+09:00"
-  },
-  {
    "cat": "mkt",
    "label": "相場",
    "title": "亜鉛建値2.4万円下げ 69万7000円（日刊産業新聞）",
@@ -113,7 +153,7 @@
    "cat": "btc",
    "label": "ビットコイン",
    "title": "ビットコインの時価総額は金の10分の1、 「次の強気相場で逆転も」とCZ",
-   "source": "Yellow.com",
+   "source": "yellow.com",
    "link": "https://news.google.com/rss/articles/CBMisANBVV95cUxNaVhiYklaN1dJUkl1ZWhjeUwtRTJRX1ZESHpUVnpkQ0RqbFFNNDBTTmdxc1lnRUlmOWxmZHdXaDZYZWNzSFh0WEM2TmFZeFBVUkR5UlQ1eTN5VjRNNUdpejYtYVpzWG1nVmRGZ1FtSWhXZ2F2TER3WjNXOFl0Tkh6aXJYVzFwbHBWSGtpNWNDbVFOU2JkMlE2X0xVN0ExcUZEbUliNTRwSkJpYWNaN0xyRmpNUjN5ZTFNTVNILURSZ3c2dzZGRDdUUDlDeTZZR2JQNXkzNUZkVUtmSlBpbkJxWlNhZUp2dkptdTdZSlVfODE2MjNZMEdMWlB2OUVxY2xhbldTTVlIM3AwSGpiZ1lFT01lekFCWEptSzBoZXdNMnJlbE5ZVi1yYklZd0JJZzBwNjFBOFVDNlBwOUtwekhHaWF1cTlkYklLRG9rUzcyUThXSXU3TU1lQnhEbHh6OGcyM2J2cmY2YkhwendMUFhPZF9UWGpVeGVlYk4wYVdWcFd2eUxmMG4tUEhuQWo4d2RiR2thbXRfNU8zckwta3FDNEhXblY2ZjJMbFVPTUowOFA?oc=5",
    "published": "2026-09-07T14:09:29+09:00"
   },
@@ -147,7 +187,8 @@
    "title": "2026年の経営者：半導体材料で世界をリード――林陽一・JX金属社長",
    "source": "週刊エコノミスト Online",
    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE85bDVlSjBhVVdpVmlXNXpPakY0aDk5cHhkcVNENGRfTjFZcjNvNmt6WlJtVlFjY1I4Q3pXSjh1TkFOQTV4dldzakloTmpRWXBlT0FZZEJuOFdKNzl1T25qZDJiVDlMU1o4bFh1VHAzeGtCRkhMWV9JTk5QNVR6Z2s?oc=5",
-   "published": "2026-09-07T05:02:42+09:00"
+   "published": "2026-09-07T05:02:42+09:00",
+   "dups": 1
   },
   {
    "cat": "dc",
@@ -166,12 +207,12 @@
    "published": "2026-09-06T17:37:15+09:00"
   },
   {
-   "cat": "btc",
-   "label": "ビットコイン",
-   "title": "ビットコインが大幅な価格変動に備えるなか、トランプが米FRBに重大警告",
-   "source": "Forbes JAPAN",
-   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9UdzR6WWsxYzBLMkJrTHdhSWpUeUxBcERmZGNXQWo3dGVrS1BOMHFjMjdlY250azdLQ1VEVzNYU0ZZWGNXUkFiV2kwUlZGSHhTRVFGWXBNMEFydw?oc=5",
-   "published": "2026-09-06T10:30:00+09:00"
+   "cat": "mkt",
+   "label": "相場",
+   "title": "銅の過去最高値、要因は関税か地質か 米政権の動向が鍵",
+   "source": "BeInCrypto",
+   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1vREhUbkNEVEhZek9BT0lmZDdmdzZsVTdNa3pjRXJpRmtHWVJqSFBwc25iNjU1ck4td1BXOGhhaHlraHYwajk2SjJiMjNGd1hRLVN2VXRsN2RGWVRZLTc5ZXFZcWVLMmJ2N1ZEQzVjc0dtZw?oc=5",
+   "published": "2026-09-06T16:00:00+09:00"
   },
   {
    "cat": "dc",
@@ -192,6 +233,15 @@
   {
    "cat": "law",
    "label": "法規制",
+   "title": "代替フロン回収・再生設備導入に補助金、大気中に放出した場合の罰金対象機器を拡大…環境省方針",
+   "source": "au Webポータル",
+   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5JdS1QZ2d4ZUxmMUk5S29XTm9Gdl9ad2FLd0Q0c0tkWmwtSHRWUl9Fa1BCOUdoRVlhbGQ0c1JQVW9wc2M0ZXRxaFlWNlhBem1PNHdKWE1aNFFWaS1kSHFjTldOZjYyLUdPTjU1Z3RjZl9KWENSUGRxSg?oc=5",
+   "published": "2026-09-06T04:58:00+09:00",
+   "dups": 1
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
    "title": "『サーキュラープラットフォーム』サービス第二弾を提供開始。「配車WEB予約」と「サーキュラーレポート」で、廃棄物管理のDXと環境経営を高度化",
    "source": "Infoseek",
    "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5KeUh0OXM3UzBuSE5hSW5YX25rbTYxcUtVaUk2VmN6dEY5QUFtR2VTSVA0WjQxMmRRaG4xWE9kbDFkeFNOd28xdDFnTDFsN1l6ZFZuVGxsTEh4SkpZMjdkazdTZS11aU52SmVUVEhTN3lVdw?oc=5",
@@ -202,8 +252,8 @@
    "label": "業界",
    "title": "「原料確保、半導体材料の開発技術より重要に」 挑む資源循環企業④",
    "source": "日本経済新聞",
-   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1qNlFuUHc4VnJJWWVzb0NjVWR4ZUpKNmE4VG05TXd6Z3Y1WmV3eW93UDNsU2IwRGpDQkZKVVpzVTFyZ3BSZnFiczBqemw0ZHhub3VXQ2FSMXNlQkJsajZZS0xXcE1SRGRJaTRvMl81aVJ3R3dTbzg4VnpoZV9FUQ?oc=5",
-   "published": "2026-09-05T05:00:00+09:00"
+   "link": "https://www.nikkei.com/prime/veritas/article/DGXZQOUB263PM0W6A820C2000000",
+   "published": "2026-09-05T07:00:00+09:00"
   },
   {
    "cat": "gen",
@@ -217,25 +267,9 @@
    "cat": "law",
    "label": "法規制",
    "title": "準備は進んでいますか？2030年問題（脱フロン）対策",
-   "source": "ECのミカタ",
+   "source": "ecnomikata.com",
    "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE44NmtJZHhOWUl5V1RiSEZlSUxqNVJMYk12Sk5hS3pIekxHcXFCNHBEbmZJcXdIUTFORzB6Skk0LWJQWHpiRi1rVDAwNnRJQQ?oc=5",
    "published": "2026-09-04T16:00:00+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
-   "title": "代替フロン回収・再生設備導入に補助金、大気中に放出した場合の罰金対象機器を拡大…環境省方針",
-   "source": "読売新聞",
-   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5FMHNtX3JhSGhKaGJQZ282ZEdtaUZCR2JyMjdjbWpFZ3l3cllHNVFJeWlfOFdyb3FJYlN6UjNIVHVNUkVVb3E1NkdvYVNnWHBleVB6VVB4Z0dSTzZKMXlVLU1FTzhrNVFO?oc=5",
-   "published": "2026-09-04T15:00:00+09:00"
-  },
-  {
-   "cat": "btc",
-   "label": "ビットコイン",
-   "title": "［動画］9月ビットコイン：7月底値から4割高。アノマリー弱気、チャート好転、冬の時代は終わった？",
-   "source": "トウシル",
-   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1SeGRSLV9mZWRtRHh1blBBWldncXZxY2lBTmZFLU9DSXlMUUlUalJjOUNqY0xOTVFfVmxXeVMxT09RdWxFdVcyN05DT1F3enVOLURVemFScDg5UQ?oc=5",
-   "published": "2026-09-04T14:13:00+09:00"
   },
   {
    "cat": "mkt",
@@ -246,21 +280,36 @@
    "published": "2026-09-04T10:50:45+09:00"
   },
   {
-   "cat": "gen",
-   "label": "業界",
-   "title": "「ふざけるな」豪雨被害の千葉で連続窃盗 住宅3軒が給湯器や室外機など盗まれる被害 専門家「被災地をターゲットにしている」",
-   "source": "Yahoo!ニュース",
-   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1zeGtKaHJVT1B4OUQzWnVuT1BWbkthV04tYVJpOFE3ZnJGUXVYOEI2TEpaNW9ndnVZMnJLNVFFNk5BdmdmalQtb3gwdEdUbkZDSjRyUkxGOHZ3OFpLN1h0OEZaUWxqVE16Z0R0T1pVdzhuVkx4M3RrZG15Z2ZvaFk?oc=5",
-   "published": "2026-09-03T19:43:21+09:00"
+   "cat": "mkt",
+   "label": "相場",
+   "title": "鉄スクラップ 米国市況、二極化進む 鋼材 トランプ関税恩恵で上昇",
+   "source": "日刊産業新聞",
+   "link": "https://www.japanmetal.com/news-t20260904150633.html",
+   "published": "2026-09-04T07:50:00+09:00"
   },
   {
    "cat": "mkt",
    "label": "相場",
-   "title": "地金、宝飾大手に偽サイト 消費者庁が注意喚起",
-   "source": "article.auone.jp",
-   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1hLU5UcHZQenVMRWtUR0FsaUc5LXQ0dVZHTWYwM2VHdHJzVjlidjltUW5SVm9JZ2hEWVhwLXhEMkRXbFN5UkdIZmtydmhXX2xsQ25xYmdLQndoc1ZTRDVHNjJhQm5xV05oYm9keG9B?oc=5",
-   "published": "2026-09-03T16:50:19+09:00",
-   "dups": 1
+   "title": "鉄スクラップ市況／関東地区で下げ止まり感／東鉄2拠点の入荷",
+   "source": "日刊鉄鋼新聞",
+   "link": "https://www.japanmetaldaily.com/articles/-/266724",
+   "published": "2026-09-04T07:00:00+09:00"
+  },
+  {
+   "cat": "dc",
+   "label": "AI・DC",
+   "title": "最高値の銅にどう投資する？ AIデータセンターで需要拡大、ETFや",
+   "source": "Bloomberg",
+   "link": "https://www.bloomberg.com/jp/news/articles/2026-09-04/TKQ3M4T9NJLW00",
+   "published": "2026-09-04T02:00:00+09:00"
+  },
+  {
+   "cat": "gen",
+   "label": "業界",
+   "title": "「ふざけるな」豪雨被害の千葉で連続窃盗 住宅3軒が給湯器や室外機など盗まれる被害 専門家「被災地をターゲットにしている」",
+   "source": "FNNプライムオンライン",
+   "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9xd05NUUdfZlpnNlJvVTVCUEJDX2xDeFhoM3psR3FuMkdacTZ4a1AyU1ctOEx4WEJkdkZ3MUhCRENCOFRTRmtPaXJxYlpYZw?oc=5",
+   "published": "2026-09-03T19:37:00+09:00"
   },
   {
    "cat": "law",
@@ -279,6 +328,14 @@
    "published": "2026-09-03T11:00:00+09:00"
   },
   {
+   "cat": "dc",
+   "label": "AI・DC",
+   "title": "「銅100万トン、金200トン超」中国が発見した巨大鉱床、AI・EV時代の",
+   "source": "政経フォーカス on MSN",
+   "link": "https://www.msn.com/ja-jp/news/other/%E9%8A%85100%E4%B8%87%E3%83%88%E3%83%B3-%E9%87%91200%E3%83%88%E3%83%B3%E8%B6%85-%E4%B8%AD%E5%9B%BD%E3%81%8C%E7%99%BA%E8%A6%8B%E3%81%97%E3%81%9F%E5%B7%A8%E5%A4%A7%E9%89%B1%E5%BA%8A-ai-ev%E6%99%82%E4%BB%A3%E3%81%AE%E8%B3%87%E6%BA%90%E6%88%A6%E4%BA%89%E3%82%92%E5%A4%89%E3%81%88%E3%82%8B%E3%81%8B/ar-AA2bu3Xk",
+   "published": "2026-09-03T10:34:50+09:00"
+  },
+  {
    "cat": "law",
    "label": "法規制",
    "title": "JA三井リースと浜田、太陽光パネルのリサイクルで提携 - ニュース - メガソーラービジネス plus",
@@ -287,12 +344,12 @@
    "published": "2026-09-03T09:51:00+09:00"
   },
   {
-   "cat": "btc",
-   "label": "ビットコイン",
-   "title": "「ビットコイン、初のハッシュレート弱気相場に」トゥエンティワンCEOが指摘",
-   "source": "CoinPost",
-   "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE9oOGFMcmJmd0NLT0RzV1ZpeFN0VmhlWm9obUpkUE84MklibVdITmM4M3lWdGtLY1k4aEZVejhJRnRIdlU?oc=5",
-   "published": "2026-09-03T06:30:53+09:00"
+   "cat": "gen",
+   "label": "業界",
+   "title": "太陽光発電所から銅線ケーブル盗んだ疑い 細江署が共謀容疑のラオス国籍30代を逮捕",
+   "source": "news.at-s.com",
+   "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9aTVYwSWVhTjAzTXM1V0xEaFlHVkVSbjd6MGNpT0VvbDkzcm0tUVBaeGNVZXh5bmJYSmpxX1piMThEdnM0TWt1a3FMZkhTdw?oc=5",
+   "published": "2026-09-03T08:08:00+09:00"
   },
   {
    "cat": "mkt",
@@ -335,18 +392,10 @@
    "published": "2026-09-02T05:00:45+09:00"
   },
   {
-   "cat": "btc",
-   "label": "ビットコイン",
-   "title": "ビットコイン、秋に吹く逆風 米国の遅れる法整備や利上げ観測が重荷",
-   "source": "日本経済新聞",
-   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9ueDBNaG1xeHlHaG9HSE9SNFdvN29SWHMtdWZfSlgweUpCTHQ5cHNVQVBMa3o2TlhFMlNzeWhBdnRwQkpteUtaVkZFQUx4ZGlGYXZSSFhUVzB0bXFyeXdIOEI1YzNqdGxXbW1vVw?oc=5",
-   "published": "2026-09-01T19:20:01+09:00"
-  },
-  {
    "cat": "gen",
    "label": "業界",
    "title": "【JX金属の次】資金が向かう半導体材料株。大化け候補の日本株7選#三井金属 #DOWA #トリケミカル #日本電子材料 #日東紡 #東京応化 #東邦チタニウム Swatch Ap (GQ5QYvGH0z)",
-   "source": "mshale.com",
+   "source": "Mshale",
    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE44Rkd5S2JyVTZGalBUdEhUZUcydThrTGI2NHRaSlNTelQtaG9DcTZ6VGZxUlNwelJ2N2x2anRCcXo3Wlg3SV9WNGtTQkFIT0lpMWxxZGZaWnhwbEU?oc=5",
    "published": "2026-09-01T19:08:41+09:00"
   },
@@ -357,22 +406,6 @@
    "source": "株式会社共同通信社",
    "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE54bFl3dWhHbHA4cUhwTGZJZ0JhVnpVZmpVU1pSQVV2SEpuQktDRXE1UUFSanRrakZZdVdHN0huQmlZaGxGa0VJQlJhT1kwZW1vNUZLRm43dkNIQWJHVDJRNTlKcw?oc=5",
    "published": "2026-09-01T17:26:00+09:00"
-  },
-  {
-   "cat": "mkt",
-   "label": "相場",
-   "title": "銅建値2万円引き上げ 亜鉛は下げ、鉛は上げ",
-   "source": "日本経済新聞",
-   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBNU1dZaDVkS01qdUhieFhTb0I4SjlhVGRoZUdCV0xZcDRBMGx1QUo2MGpGZXphbmV5SGdnMkFhWW5BZ1BKODIwaWRnSDZVZVd2a2lBM0pOSGpEWFhXZ19oX3hmZDA2MnBEZnMzZw?oc=5",
-   "published": "2026-09-01T13:40:27+09:00"
-  },
-  {
-   "cat": "mkt",
-   "label": "相場",
-   "title": "インジウム建値引き上げ 9月、DOWAエレ",
-   "source": "日本経済新聞",
-   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5VNHMyYmNrRnM2dWZPTU83TUFHWi1zZmd0aldfNS1pWHBnczhmN25seHh4YVd0Unp0VzhaMVZJZVJFU1dKOURUQU5NTm5BdTZFY21MS0d6dGt6U1RjT04td3ZxeVd5SjY1OHFUSA?oc=5",
-   "published": "2026-09-01T13:39:25+09:00"
   },
   {
    "cat": "law",
@@ -425,6 +458,14 @@
   {
    "cat": "law",
    "label": "法規制",
+   "title": "沼津市の廃棄物リサイクル会社「台湾貿易」で金属くず約２８平方メートル焼く",
+   "source": "news.at-s.com",
+   "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE00NGdCYUhrMVZ3bGRCSGRnVnFHX3F6T2xBYmFZd0hmRUNwS204QjJSMkxmTk9RX0lWUEM1NXFqS01ZQ3l3VEd6WlJpcDE0QQ?oc=5",
+   "published": "2026-08-27T16:00:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
    "title": "【脱炭素・SDGs・ESG】資源循環システムズなど6社：建設廃プラ循環の実証が環境省事業に採択、AI分別から再生材利用まで一体化",
    "source": "みんなの広報宣伝部",
    "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1QTEp2cWh3WFd6YzY5cHZwRjlURW5ncjE0Qnd3Ykk3d0NITll5MnRFckVPaWdhakRsdXJLaE5PckRvMDQ3MGtkY20tQ29KMld2c01TR2NLQ3ByR0JUQmxCRmZSVVJ6QkphSjdaNzN4S3ZYQQ?oc=5",
@@ -458,7 +499,7 @@
    "cat": "law",
    "label": "法規制",
    "title": "価格が高騰する銅を狙って太陽光発電所から送電ケーブル2.2トンを盗んだか 金属盗対策法違反の疑いなど 男２人を逮捕・送検 富山",
-   "source": "newsdig.tbs.co.jp",
+   "source": "TBS NEWS DIG",
    "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9IeWJ6bGUtc2NFQURQLWJpWlZKMlo0SGkycGV2c0E3RV81SXQxRExLOU1vWC0tRDhMdTdUU3JaaFd6SnVqOTk2MzgtVVZITFQ2ZDFBaDQtVQ?oc=5",
    "published": "2026-08-08T16:00:00+09:00"
   },
@@ -489,18 +530,18 @@
   {
    "cat": "law",
    "label": "法規制",
-   "title": "ＥＶ充電所の破壊相次ぐ 銅線を狙った犯行―オーストラリア：時事ドットコム",
-   "source": "時事ドットコム",
-   "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBpR2g0LW5nLU1FcGFrMmRBSFJia1Nfcy1mdS1peXNhWmRxeGozbDBTRlhibjZLLWFwUHhzQnZReG4xTEdEVnNZMTkzUzJTalVPcVVscFU3c3RyZVZKcEVHZUllUQ?oc=5",
-   "published": "2026-08-02T16:00:00+09:00"
+   "title": "[8/25（火）開催]「環境省登壇！再資源化事業等高度化法 ～資源循環",
+   "source": "毎日新聞",
+   "link": "https://mainichi.jp/articles/20260731/pr2/00m/020/772000c",
+   "published": "2026-07-31T08:21:00+09:00"
   },
   {
    "cat": "gen",
    "label": "業界",
    "title": "【深刻】被害額1000万円超も…なぜ今“銅”が狙われる？水道メーターや電線盗難が相次ぐ背景",
-   "source": "日テレNEWS NNN",
-   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQSXJ0RnFKQW5NWFJOU1o1UU1XdVdNenk5RDFTZjV6bW1kLXFVRTQwWnhTR1Y0YU1uVm5FTUp5OWRSODk2NEZncDMwXzB4Z3pSWUg1aW9MNGl2N2Z3bE1MT3NWc2V6TjlMcmw3VldBVElhbUxZQjRyWHlIMFViXzFqSFZEM2U?oc=5",
-   "published": "2026-07-29T16:00:00+09:00"
+   "source": "ｄメニューニュース",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNbXhPZmlxS2lxN0l5WW5PSDEyY3c0VkhyTVBCTHU3elNRY2pDWnJRdktteVJwcDk3WFA2bV92ck92VThiLTRHLTN3cnNfOWNmN0xUR0dxWkc5SWpfd0xsUnNCM3NEbmotWngtX0h6YjdWdW5xdWxJOE8wdTQzWmZ4NzBadUfSAYABQVVfeXFMTVpPWElOUkh2Smh1SmFUc1FQTjloRTRnNkJ3Xy1wbFh6N1ROUGFQUHBJZXc1X2puakhaVG5jc0x6eEZwR3FFelJuRVViczM2WmpselFDODJOQlU2UUJwcWxVUHlBYU1zc01GSHNOeG5neEdEMlpHc0VoOS1kYVNjNmU?oc=5",
+   "published": "2026-07-30T16:00:00+09:00"
   },
   {
    "cat": "law",
@@ -521,14 +562,6 @@
   {
    "cat": "law",
    "label": "法規制",
-   "title": "環境省、資源循環加速化モデル事業に大林組・クボタ・ピリカなど9事業採択",
-   "source": "Circular Economy Hub",
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOTTgyenlWRDNMZ3c2bzc1Q1JmX2U4eS0tdE5JUTFsWFNwTy1MbWNfU1VxVWZTdTZxdDB6MzljeVVTN0hXbHp5SlFDaHRaUG5lV0MxamdqTXRFUndpRmhqdEpJRGZWY3VlLUJFaThCNXF2WmhTdFlXM1l1ckdIanItUmxqUjFEb2tua1NyMWN5UExpcWRlbFJvQ0FQNmxydDFOX2pVSm9xNFk3amVWRTdB?oc=5",
-   "published": "2026-07-27T16:00:00+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
    "title": "なぜ2つのシャフトの産業シュレッダーはスマートなオートメーション、高いトルクの処理および持続可能な物質的な回復によってリサイクルする産業廃棄物を革命化しています",
    "source": "Spherical Insights",
    "link": "https://news.google.com/rss/articles/CBMirwJBVV95cUxPcHJQV05VNHllMEhnM1AzY01UeEI5UTkyb0JBbC1jUnpteEVaaDlnQ3gwN2tVUnFJcVhYNzBlaWI2aUV5NjVtcDRkNzlidUd0aE5sZWdQb1l2cHFpU3dIdkdMUFFBS3JGTk5nRGJPcURoMTdyT05QeVhLcDBOQUlHUTJnWmZLWFhxamxRRzJVZjJRZEJOam1lS3hIRS1uU19xenJjdlgxZGFSOGhMZmtrWllnQ1hUdVVKdGNKMmVZX0E3UTk5RGkydld5WWdqTVRiazRlWHc3WjVlWXZBb2pHYzZOT05uMUZoQXMwWkdiOUlyRWMyTUI0U3NOeHFDeFU1bGkyVkVIZHhYWk1RcEpBR1kzX3VBb0t0bGxlM0RSQ3hkVFoxYlhuUFI3UUM3Tnc?oc=5",
@@ -541,6 +574,14 @@
    "source": "選挙ドットコム",
    "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1jTEpySlRmRVV4Nnp6d25BUHZfSW9JSVd2d0JqMHowb0VhOTdSajg0WDQyOUJVRkV2VXg3aENoUDBHeHJyRHlmdkhLZ1JGbkRRY0g3QjUzcGNpTGxzMXc?oc=5",
    "published": "2026-07-26T16:00:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "改正廃棄物処理法 ヤードが不法就労の温床に 【政党メディア",
+   "source": "Sekai Nippo",
+   "link": "https://www.worldtimes.co.jp/opinion/mediawatch/20260724-213053/",
+   "published": "2026-07-24T11:30:00+09:00"
   },
   {
    "cat": "law",
@@ -588,7 +629,8 @@
    "title": "家庭用エアコンもフロンの「みだり放出」禁止対象に──フロン排出対策中間取りまとめ",
    "source": "ITmedia",
    "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1vcUxlWHNmZ2JLWjUxejF0ZENXMVYyaGQxbHZEWll4TV9XX21obERXSkhNMDZGWVUydkxNeWRBTzNrYk5DTmlJMU5NWVA0SWZYQmZLaGlqZmNZWWNWRGhOMEU1M3B4NnBTTjlsX1ZIOXRKMUk5NUZB?oc=5",
-   "published": "2026-07-17T16:00:00+09:00"
+   "published": "2026-07-17T16:00:00+09:00",
+   "dups": 1
   },
   {
    "cat": "law",
@@ -613,7 +655,7 @@
    "source": "Circular Economy Hub",
    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFB0dlA0OWt6Vm1Tb1RCSU5MSXh1QWhKQjhmSy05S296eHhXdGdHNUFfWkw0Vk4zZk5HT3lRSU40eW1xcS1ZdmthcEVWNzRRRkFVb2VPci1XcXZXcUhWaUlhT0F3VFVqNkxLNmZILU5zcDdWU1NhOU8wUVpuM0JqVGs?oc=5",
    "published": "2026-07-14T16:00:00+09:00",
-   "dups": 2
+   "dups": 1
   },
   {
    "cat": "law",
@@ -757,7 +799,7 @@
      }
     ],
     "spread": 90,
-    "diff": "-15"
+    "diff": "0"
    },
    {
     "group": "銅",
@@ -867,7 +909,7 @@
      }
     ],
     "spread": 10,
-    "diff": "-10"
+    "diff": "0"
    },
    {
     "group": "電線",
@@ -2682,7 +2724,7 @@
     12449830,
     12499679,
     12548047,
-    12136622
+    12043208
    ]
   },
   "基板:マザーボード（Ｃ）": {
@@ -3058,7 +3100,7 @@
     64214.48,
     65020.94,
     66399.84,
-    66646.07
+    65269.33
    ]
   },
   "東鉄名古屋二級": {
@@ -3138,7 +3180,7 @@
     24544.0,
     24544.0,
     24544.0,
-    23821.0
+    23884.0
    ]
   },
   "銀": {
@@ -3178,7 +3220,7 @@
     359.15,
     359.15,
     359.15,
-    356.18
+    358.93
    ]
   },
   "銅建値": {
@@ -3240,10 +3282,10 @@
  },
  "ai": {
   "lines": [
-   "・銅建値2,350,000円/t、2万円下げ。金23,821円/g",
-   "・環境省がスクラップヤード環境対策技術検討会を初開催",
-   "・金属盗が急増、神社銅板や太陽光ケーブル被害相次ぐ"
+   "・銅建値2,350,000円/t（-20,000）、金23,884円/g（-362）",
+   "・環境省がヤード環境対策技術検討会を初開催、金属盗対策法初適用も",
+   "・銅高騰でケーブル・銅板盗難相次ぐ、給湯器も被害"
   ],
-  "at": "9/8 12:55"
+  "at": "9/8 16:06"
  }
 }
