@@ -1,8 +1,8 @@
 {
- "updated": "9/18 7:18",
+ "updated": "9/19 3:40",
  "fx": {
-  "usdjpy": 155.69,
-  "date": "2026-09-17"
+  "usdjpy": 157.89,
+  "date": "2026-09-18"
  },
  "manual": {
   "tiles": [
@@ -13,62 +13,158 @@
     "diff": "+70,000"
    },
    {
-    "name": "東鉄名古屋二級(8/26)",
-    "value": "48,000",
+    "name": "東鉄名古屋二級(9/19)",
+    "value": "48,500",
     "unit": "円/t",
-    "diff": "0"
+    "diff": ""
    }
   ],
   "rows": [
    {
     "name": "金（店頭買取）",
-    "value": "23,576",
+    "value": "24,247",
     "unit": "円/g",
-    "diff": "+251"
+    "diff": "+747"
    },
    {
     "name": "銀（店頭買取）",
-    "value": "338.36",
+    "value": "362.45",
     "unit": "円/g",
-    "diff": "-6.27"
+    "diff": "+15.29"
    },
    {
     "name": "ビットコイン",
-    "value": "11,905,020",
+    "value": "12,697,043",
     "unit": "円",
-    "diff": "+0.4%"
+    "diff": "+6.4%"
    },
    {
     "name": "日経平均",
-    "value": "64,136",
+    "value": "65,019",
     "unit": "円",
-    "diff": "+125"
+    "diff": "+1,526"
    },
    {
     "name": "NYダウ",
-    "value": "51,778",
+    "value": "51,663",
     "unit": "$",
-    "diff": "-286"
+    "diff": "-910"
    }
   ]
  },
  "items": [
   {
-   "cat": "mkt",
-   "label": "相場",
-   "title": "地金買い取り相談が急増",
-   "source": "中国新聞デジタル",
-   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5FVmtyYkU3b0JjUF9CcVhsZXVZX2VLamVKUjFhZFJoMGlndmVPZ2NZaW1QSjVuSjRWTUVTZUt5NV84bVdFTWhYVjVHNzVDa3ZvME9pWTVpb0I4Zw?oc=5",
-   "published": "2026-09-18T06:09:07+09:00",
-   "dups": 1
+   "cat": "law",
+   "label": "法規制",
+   "title": "ブリュッセルは、環境面での保証が不足しているとして、インドとエジプトへの鉄スクラップ輸出の制限を提案",
+   "source": "Informat.ro",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNQzE4RXhLVm9lc25vOVdUbmM0Qi1rb2ZSWkJBYno0cjRLTDhpU00xa0dUeWt2NzF4SUdhYXRreEVZZlNMVEFSdGdMU01HMGJDeHJLblFiT19PUDZPVnRSZ1RKZ3pIdmFuYjcxNHRwVU1uNjFEX0NGQnRCakZ4bkV5SUE4aW92NGlKWjFQZi10UjJpamdKYXpwQXlmdERocnh1VEVKWDdB?oc=5",
+   "published": "2026-09-19T01:52:21+09:00"
   },
   {
    "cat": "btc",
    "label": "ビットコイン",
-   "title": "本日、日銀は追加利上げか──円高は再開するのか、FOMC後のビットコインを待つ「二重の価格変動」【エックスウィン】",
+   "title": "ビットコインの価格が8万ドルを突破し、空売り勢が圧倒されています。",
+   "source": "Bitcoin News",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPS0tLQTZMZlRtbzgwdE5ibFpYV1pIRzJhVUdyYlllMkpUVGxHeE05WDFCdFgzZWNVY1ktaVY5ZDgyeDFMYlNaQS1vcXNra3NXbldFTmdiVXNkbVFaZUVCZmdGRUFuZ0pyMWFxV1l4LVRjT1ozOFlSTXRyZzg3c2EtZ2RLNGNPRHVWUWFBaFhVelJwSWpIV1ZBRlBsN09JR3hrWWJZdGp6QmhabDU5YjJ3Sl9rbV9aZHNwaVVQVw?oc=5",
+   "published": "2026-09-19T00:37:37+09:00"
+  },
+  {
+   "cat": "btc",
+   "label": "ビットコイン",
+   "title": "ビットコインの今サイクルの底値、5万8000ドルで通過か オンチェーン分析",
+   "source": "디지털투데이",
+   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOZ3JQMVp6T2Q3SjlrZGVRX1RaS3JSbmZpZS1sbGRkWkpwamdlSUFmejRkQkJ5eml1T2JZUFJUQzY0TXVkemFkREdGdjQyN1lwaTJka2VERGNtRkhxNTlDbnc1Zzlobm1ZOVhsYVQtLTlXdGpuOFdJNENjc0FkaS13WWExZlc1RmZkUWRxZQ?oc=5",
+   "published": "2026-09-18T22:26:16+09:00"
+  },
+  {
+   "cat": "dc",
+   "label": "AI・DC",
+   "title": "ベダンタのKCM、中国のNERINと4億9800万ドルの銅回収プラント契約を締結 - ニュースと統計",
+   "source": "IndexBox",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQR29oY3pBdEY1S0Y2MmRNTVg1ZkpnRUZPTXRwbjR2VFBqRzFtM3ltZXFUMlRmTnhJai1MQ2p4bks0Ny1xVTBlLVJkclFPV2NEa2xQVGgxQWpjd1p4VjlKeTlQdGpjNEVkME5HVTdJNVQzX2pOb2plc05lcmVwZk5XdVUwRU9RRFU2Rjl1MnFTTmR0VDNtWGZKWkFYMS16MWxMM1I4Z3NkY1plZzNUUlN4ZkowNE1rZw?oc=5",
+   "published": "2026-09-18T20:10:51+09:00"
+  },
+  {
+   "cat": "btc",
+   "label": "ビットコイン",
+   "title": "ビットコイン担保のデジタルクレジット市場、160億ドル規模に拡大",
+   "source": "디지털투데이",
+   "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOaTNMeHhoWkZSZmt2cENSTE5hYjdYeEw2REJrOENRWnRidlpiSTlZTkhZQVYtUlA2OXloX2s5RkVjRENCMm1Tc2ttWVZuTTJ5Njg2QnkxYkdWTzhSS1NvdFhFbGJFLVRmLWlRSV92OFgyQUtVYVdPQTI4aS1ZVnFuT0cySFNUUTVLajRDOEdVd0NPdXZtYTdxWE1DQW11UUpuTmdSY2puNzJjTTFEX0JGUmltVjFXVG1EM3ctbHRQZHFaSzN3ZFB5eUNjTUtQWVZTenc?oc=5",
+   "published": "2026-09-18T20:00:00+09:00"
+  },
+  {
+   "cat": "btc",
+   "label": "ビットコイン",
+   "title": "レバレッジは無期限へ、リスク価格はオプションへ──BTCデリバティブの構造変化",
+   "source": "jinacoin.ne.jp",
+   "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE10Vks5TDdSR0trUmlhcXV2RUtWdW14dmpXSG9TdHUySTB0a09ZYzlqSEpoaVIxdTlXd2U4eWdmNzJBMWl4NjRQV3c2a3p0ek1BM3hXZXFzN0QySVB6UkdveTJqZkI3bGpJQkMxdFUyeHBFelNXLUg4?oc=5",
+   "published": "2026-09-18T13:47:16+09:00"
+  },
+  {
+   "cat": "mkt",
+   "label": "相場",
+   "title": "銅建値 231万円 亜鉛建値66万4000円（日刊産業新聞）",
    "source": "Yahoo!ニュース",
-   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFB2YmVtQy1fN2tubVlkWlhpem9nRi1ETEpSQ2dYSXZKUnVmV0JjMF91c2VXWGhtdVBRb2xnWS1JUG84Q2czS2JhaUNlQzY0NUVGQUlJcGhZOTV6cURBSk1RMjZWeU5GM2pCOUZJX3RtUzFFdHFOUzVaTGdaMHdCNXc?oc=5",
-   "published": "2026-09-18T06:05:17+09:00"
+   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOanhROUF4dHZJa3JEUkFCQXp1TFFQc3VxOHBQbE4wSjhaeUF4Tlp3MjA3eTB6cTZFQ0g2SlFFZDcxSXA5WlZoVktOX3NZU0dtcDJaTEpjY2pldW5SdEtqRklHa0YxZlFoblljcE5SNEVERjhBYjdDaWl1aU12ZVVBd1dyOG1FNDBHTUhINVdB?oc=5",
+   "published": "2026-09-18T13:27:23+09:00",
+   "dups": 1
+  },
+  {
+   "cat": "gen",
+   "label": "業界",
+   "title": "神戸の会社で、軽トラック荷台からエアコンと室外機を盗んだ疑い",
+   "source": "Yahoo!ニュース",
+   "link": "https://news.yahoo.co.jp/articles/f27df388211c67d523291ffd6f4e45f43f8aa931",
+   "published": "2026-09-18T13:26:00+09:00"
+  },
+  {
+   "cat": "dc",
+   "label": "AI・DC",
+   "title": "露出配線用ケーブルダクト市場2035年予測：産業自動化とデータセンターが拡大を牽引 - ニュースと統計",
+   "source": "IndexBox",
+   "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPa0VlVnlzU0NNNlBiQkNFdEx4NXMzWUt5V09tRmQ5RHRxSGpQbUNpT2x0LWptenM0OXZyNk5Fb2RBRm52cmxnLWdkWEZFWGxXb3NXcllNVUlMeGRZMXNkZGtFTWs1b2ZtTWxhMW5abmJESGJaWE9XN09zRkZETnpWcmN3and4ZVhYXzFyYTFzMUc3N2VYZmR2SWtXTWRmN0lxb3QzVHZkVUlKbTBsMURkNVZjbE9nWXRIcDhtTlZ5UTlnNmtBTDk2MnBfOVJXRWpHVDJDQ3JkWjBfbThmTGNRd01zcFNSbDFlTjlOQQ?oc=5",
+   "published": "2026-09-18T13:06:19+09:00"
+  },
+  {
+   "cat": "btc",
+   "label": "ビットコイン",
+   "title": "「ビットコインは依然として強気圏内も勢い鈍化」＝クリプトク",
+   "source": "CoinPost",
+   "link": "https://coinpost.jp/?p=738273",
+   "published": "2026-09-18T11:30:00+09:00"
+  },
+  {
+   "cat": "dc",
+   "label": "AI・DC",
+   "title": "AI関連の電子廃棄物、2050年までに最大6億1700万トン増加も",
+   "source": "디지털투데이",
+   "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOLVVQMEZHbnpaMHNDbjAyMVJobnFZLVhEc1hfeE1sTWhOaWROMFl4OFgwWkR1eVNCeG9hQThrNTRmS0syRnhGckFUY2xmSVVvUG5xdEtnRGF0MkpwVXBqVFVraTZ1NkVWbF9zWWIyNjRoZ2dFRDJ0R2FXVmVRTFlTa0JONUtsWGNHNmxVRVA4OWV2dDFyRTdFNTlpMlV0SEg5Vk5zYXo4MFhEdURZRmxWOFlRbDByQlp1U0gtWDd2akdPZjNCdGM1UkExTFdrOHhUdFdzdl92cw?oc=5",
+   "published": "2026-09-18T10:53:45+09:00"
+  },
+  {
+   "cat": "mkt",
+   "label": "相場",
+   "title": "地金買い取り相談が急増　査定不満、注意呼びかけ",
+   "source": "topics.smt.docomo.ne.jp",
+   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQNlVMaFhxb2dmeld6dzBFRDg3Vzc2VU55cHhGbE5FbVBscHVhT0ZZTHpKbk5HR2FsTjljN2VQWXdPUEltLXVHYlpnODJJYkJwWjJvOXZBMHRZOGxsVDlBbEg5Y0VpcDk5NzRMcFNraWpOcTNqeURKWDdKQjNCOWpXTmhlOV8za3VteGJz0gGQAUFVX3lxTE0ya3V1VHMwWkQ5QkdDM1cxVW5NMnBodHdKbzliOGs1a2UyYVVvUmR6RlQ4S3VBZnhTYk5NSjFmZU8xcEtwRG5WSkV5YklXWWlPeHBKaEotUEVzakFnUnh4Ri1FS3VNS1FmYWl2U0V2RUEzaG5zMnp0VHEzNUlJcWUta1dHZUpDN0I4c3E2SGw3NQ?oc=5",
+   "published": "2026-09-18T09:39:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "【日本】環境省、非常災害廃棄物の迅速処理で自治体と民間業者との協定締結促進。平時の備え強化 | Sustainable Japan | 世界のサステナビリティ・ESG投資・SDGs",
+   "source": "Sustainable Japan",
+   "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFA1X2RwTHhPOWJfNi1vems1NGZteER5V2std3E0SzVaRkdtZnJmMzNlT21qY1FpTDdVeXJYQkZDNFp6elY2TFRkeUJPRjQ1MnYySFpDbk1hQlFYUktCV2ZVSWV3aVhrQ3lNdkpDTjhtQkI3TnlLeTEzWlRR0gF6QVVfeXFMUDVfZHBMeE85Yl82LW96azU0Zm14RHlXay13cTRLNVpGR21mcmYzM2VPbWpjUWlMN1V5clhCRkM0Wnp6VjZMVGR5Qk9GNDUydjJIWkNuTWFCUVhSS0JXZlVJZXdpWGtDeU12SkNOOG1CQjdOeUt5MTNaVFE?oc=5",
+   "published": "2026-09-18T07:59:10+09:00"
+  },
+  {
+   "cat": "mkt",
+   "label": "相場",
+   "title": "銅電線8月出荷微減 建設電販・電機は好調",
+   "source": "日刊産業新聞",
+   "link": "https://www.japanmetal.com/news-h20260918150827.html",
+   "published": "2026-09-18T07:58:00+09:00"
   },
   {
    "cat": "mkt",
@@ -79,60 +175,12 @@
    "published": "2026-09-18T05:59:00+09:00"
   },
   {
-   "cat": "btc",
-   "label": "ビットコイン",
-   "title": "アナリスト「ビットコインETF、金の3倍規模も」価格への影響は",
-   "source": "BeInCrypto",
-   "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPT2RQTTJGVHhiZ2VsYUFPV3JBbk1oSnRUVnhkLV95by1lZEtaeFhOeURoY1hndUtjSGUtb2I5bk80Njg4NzFFVUIwRXJfcklXanJrNzRfRG1GSUR6eldfTEZqUVFrd1V1bDNfdzFfS0d6dXdqZFpVWG5WNHhodG9UUw?oc=5",
-   "published": "2026-09-18T04:44:07+09:00"
-  },
-  {
-   "cat": "btc",
-   "label": "ビットコイン",
-   "title": "ビットコインの価格が7万7000ドルに達する中、暗号資産の強制清算額が2億6000万ドルを突破しました。",
-   "source": "Bitcoin News",
-   "link": "https://news.google.com/rss/articles/CBMigwJBVV95cUxNbWVwbENzV3VHd3gxTFk2SFRIVVBhczZlZWoyU01vTlJ6R1VBWHNUN2pIV3BHU2JUMUJGTVBwcjg1SkMzU1pVM0hFc0ItWXJTSHZ6VjhodHhmaHFPNXdGNFlMa29pSmlST1IxZjVseDVjYjBoTEZkV2xYNVdGVy14NHA0VWl0TjcwOFpnQkpzSkM1S2xMSGVHODdWWFdUa2lOaVp1NlZxdnk0aTM2NS0wOXNWMnIzck5vRkYyZElDdVBpUndEN2JJQlE1LUtBR2dfYWRUNG1wdGplTW1xMzhXNEM2SDFjZ0lQai1YeTBENUpoazczSWc0ZnJXV3pUV1pMclZj?oc=5",
-   "published": "2026-09-18T04:06:29+09:00"
-  },
-  {
-   "cat": "btc",
-   "label": "ビットコイン",
-   "title": "ビットコイン堅調もオンチェーン指標は慎重",
-   "source": "BeInCrypto",
-   "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPaC1pV3JoajYzNWlUQjVJMXNwd3A4REpYVkp0amNCVzMwa05BZlFtNklIUVc5RHFwb1pwTzBtd2loajNIeWZFTGhxa2RGWjJLczdWZ0ZVbG5Vc1p6Vk1DYWtmakNOeXYxREZWRFE3MmNQMmpGTXRGSzZ3MFBYaElCZmFR?oc=5",
-   "published": "2026-09-17T21:12:24+09:00"
-  },
-  {
-   "cat": "btc",
-   "label": "ビットコイン",
-   "title": "ビットコインの価格が上昇するためには、CLARITY法は本当に（必要ではない）のでしょうか？",
-   "source": "Bitcoin News",
-   "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQc2JVSC1WVWJTT2tTOGotWWJNTnFUOXhXY2ZOT180dDg0dlJUOTRZYlJqY0Fyd2tsSnBzeXhpYnREdUc4cHNLZEt4QlVRNG1ybmhLNHpCbWxwMTByTkx3YVV6MWlyeGZWMmZDc2YxQnZrY0tNRG5zcU5NSjRzQndxTlpqM3NjQkhTTG13WURoWFZpVXBIOUp6bmJPTzVzSDNDMlNTbzVYQkt1ODRQSWJTLW12T1JlX1ZSN0FxcERNR2NyV2NLaE9fNGI3eUF2WXJkelRRM0hwSkt5Q00?oc=5",
-   "published": "2026-09-17T20:30:55+09:00"
-  },
-  {
-   "cat": "mkt",
-   "label": "相場",
-   "title": "銅建値、7万円上げ 亜鉛は1万8000円下げ",
-   "source": "日本経済新聞",
-   "link": "https://www.nikkei.com/article/DGXZQOUB171B60X10C26A9000000/",
-   "published": "2026-09-17T18:16:00+09:00"
-  },
-  {
-   "cat": "mkt",
-   "label": "相場",
-   "title": "銅電線8月出荷微減 建設電販・電機は好調",
-   "source": "日刊産業新聞",
-   "link": "https://www.japanmetal.com/news-h20260918150827.html",
-   "published": "2026-09-17T17:59:00+09:00"
-  },
-  {
-   "cat": "mkt",
-   "label": "相場",
-   "title": "東京／銅・黄銅屑／3．5万～5．6万円高",
-   "source": "日刊鉄鋼新聞",
-   "link": "https://www.japanmetaldaily.com/articles/-/267465",
-   "published": "2026-09-17T17:00:00+09:00"
+   "cat": "law",
+   "label": "法規制",
+   "title": "【日本】環境省、非常災害廃棄物の迅速処理で自治体と民間業者と",
+   "source": "sustainablejapan",
+   "link": "https://sustainablejapan.jp/2026/09/18/japan-disaster-waste/130678",
+   "published": "2026-09-18T02:00:00+09:00"
   },
   {
    "cat": "law",
@@ -144,13 +192,12 @@
    "dups": 1
   },
   {
-   "cat": "law",
-   "label": "法規制",
-   "title": "非常災害廃棄物の処理迅速化へ政令閣議決定。廃棄物処理法等改正法の施行に伴い再委託やアセス特例基準を整備",
-   "source": "Circular Economy Hub",
-   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE11bXVXSVlGOWo2YVZjeU5qcENZV1ZIVXY0dGtGWG9lQW1LVmhGRE5melZQSm9DRlpMUm5ubk1OSVZjenRHXzBZbXFPaFc4WDVSbjRUb1BNNVlZS05ZeFQ2WU1JdlpiUTVaZE5Z?oc=5",
-   "published": "2026-09-17T12:00:15+09:00",
-   "dups": 1
+   "cat": "mkt",
+   "label": "相場",
+   "title": "なぜ地方にヤードが増えたのか――集めた鉄くずはどこへ行く？",
+   "source": "note",
+   "link": "https://note.com/takumis_room/n/nc5033b049250",
+   "published": "2026-09-17T12:53:00+09:00"
   },
   {
    "cat": "mkt",
@@ -169,20 +216,28 @@
    "published": "2026-09-17T11:00:44+09:00"
   },
   {
+   "cat": "gen",
+   "label": "業界",
+   "title": "非鉄製錬の年収ランキング｜全6社を30歳推定で並べた【2026年版】",
+   "source": "note",
+   "link": "https://note.com/company_scope/n/nca166918781f",
+   "published": "2026-09-17T04:00:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "非常災害廃棄物の処理迅速化へ政令閣議決定。廃棄物処理法等改正",
+   "source": "cehub",
+   "link": "https://cehub.jp/news/japan-disaster-waste-order-amendment/",
+   "published": "2026-09-17T02:00:00+09:00"
+  },
+  {
    "cat": "btc",
    "label": "ビットコイン",
    "title": "ビットコインマイニングに「ハッシュレート空白」 AI向け設備投資が電力と資本を吸収",
    "source": "Yellow.com",
    "link": "https://news.google.com/rss/articles/CBMijARBVV95cUxNbEdHUzdSOU13ZURpSjRxYVNIMUFONFJTWHk1OWFMR2NvSFFVaHpKOVFfSDA0RFlIX2FJMUpmLUpsU3F0WGdLODNndjBvZzBCT0ZBM3pYeTlmUlFoSHBQY1ZjRGhsTkJsQXdGSnF5a3NLeTNzcUR2ZFd4RE9JNW5yMGoydmVTLS16S2s2dVVENmJvbEc1UHhuRFRkTmEyNWg4bmlZXzByUXNWMHFJU01Sa1I3UlRyeHZ2QVl3OC1RdVZ4NHhNQ1JyMUI0WGRXdGZSWEI4QUtXR3ptem95V2JCTktaY3FMVGNvN0Z1NUdWaFVxTFltdUxNMUNjZktjUkxta0NlV1lua1J3WFhyOElMa1dtX0c3d1c5Ul9pRzNKRTcyZXVHcENSdjdPdkxISUtncE1pb2w3dFRVb2R0b2ZLcldWTGxsS2RJdHBYb000c3E3anNSUEdGbF9wSU5ZaVVQTWJqenFYOENFV2IyQVJVZ0h0OXVWZkpoNy1GRldGSG5pZXNtWUlSaTJUS1Zxa3MxaTREQWRHOWVYcS04S0lXcVJtMGpPaTl0dWRadWJaYy1wTEJoMG5fMFNLS3BKbVRJeUNmQjlkdTM0eWdsX0s2QXVfRHRqdkkzb0dzQllLQUExaElvWUJDOGFxUlpjVkx4Y1RieHR6WTRzeDlhbG9jVDRsVHlZZ2N1eXpwdA?oc=5",
    "published": "2026-09-17T01:17:34+09:00"
-  },
-  {
-   "cat": "mkt",
-   "label": "相場",
-   "title": "銅建値224万円 鉛建値 35万4000円（日刊産業新聞）",
-   "source": "Yahoo!ニュース",
-   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9sbldOUVN3NE5XbVozWkEyc0x3YU9hLUFCWWEtUldOUElfWGpEU0JnUmZHSHV4Ni1tZjYzY1ZTeHE0WElUVUo1N0lreENhcEctTWNPRDBjYldrZnFZUm5LdXdBZElUclk3NXdyS1lYeTRBZ0dfRkl3MlJkUFpuV1k?oc=5",
-   "published": "2026-09-16T10:26:08+09:00"
   },
   {
    "cat": "mkt",
@@ -195,35 +250,18 @@
   {
    "cat": "law",
    "label": "法規制",
-   "title": "近畿から資源循環の地域モデルを発信 「近畿地方資源循環自治体",
-   "source": "環境新聞オンライン",
-   "link": "https://www.kankyo-news.co.jp/news/fa83d941-de08-4240-85bf-2818b0cc6bfd",
-   "published": "2026-09-16T09:00:00+09:00",
-   "dups": 1
-  },
-  {
-   "cat": "gen",
-   "label": "業界",
-   "title": "神鋼商事、２７年３月期２桁増収増益・大幅増配予想、自動車・半導体向けアルミ需要好調で再上振れ余地も",
-   "source": "kabu-ir.com",
-   "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1HLVRDR2xCZXIxMU9qNlYwUWRZVHh4R1B1Z1MtYUVhUVVtTWNCM1ZoUzJydjZLT0ZpeW5hdlJlRFpadkZuZDhmYm1zZ3hZc3FTZkFFaA?oc=5",
-   "published": "2026-09-16T07:51:26+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
-   "title": "【特別座談会】全国産業資源循環連合会青年部協議会会長・委員長 「委員長が主役」の全国青年部を目指す",
-   "source": "kankyo-news.co.jp",
-   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBsc3R1b0VjdkFRWXBqSU5MNmJOazMwUEF4bzBvNXZyOEs3R0FsS1dzLTJnRWxZYWdXMGd6TDFuc3hnUlNHT1BEeEpFOExtQjRyMlk1QVllSWhrc3BXZU9TckdtS1loUDZRMFg3UGt3OWcxQTZLLWNPT25RV0ZIUkk?oc=5",
-   "published": "2026-09-16T07:00:00+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
    "title": "環境省のヤード環境対策技術検討会／木谷鉄リ工業会会長、「２段階の許可審査」を提言／〝地域との共生〟書類で判断",
    "source": "日刊鉄鋼新聞 Japan Metal Daily",
    "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBLUUg1Ylltc29VUndkUTZqVTFDd29QbUR6T1V1Qkg3WnBiV3hxdDY0M1BVS3dkaUs0cy1LNW5wNUpvQXlyMlZWTnpWNDBDZkw4anozSDBGeEt5OGhZbkE?oc=5",
    "published": "2026-09-16T05:00:00+09:00"
+  },
+  {
+   "cat": "mkt",
+   "label": "相場",
+   "title": "公開収支モデルをもとに買取業界の情報を比較・可視化。「公開収支モデルで比較する 買取価格 Tierランキング」を公開",
+   "source": "ニコニコニュース",
+   "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5oZWRXUGZ5WU9QdEg1U1pyeWZYaXRTaWxDTmZkbE1GU2RGaDlncThXYjlSSlUwV1FKc2hMbUpjQWxKaThKSHZJRkNLUy1PaTRqNWx4Rg?oc=5",
+   "published": "2026-09-16T04:00:27+09:00"
   },
   {
    "cat": "law",
@@ -242,20 +280,28 @@
    "published": "2026-09-15T15:34:55+09:00"
   },
   {
-   "cat": "mkt",
-   "label": "相場",
-   "title": "公開収支モデルをもとに買取業界の情報を比較・可視化。「公開収支モデルで比較する 買取価格 Tierランキング」を公開",
-   "source": "agara.co.jp",
-   "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1SbzNuaFVKclJTRmdVS0JSb1N4dERJdFJVYXFDelJqV2wxTC00eDQ3YnNtU1hRc2VxYjRZX2lfMU43UnpaMWhPbnhkLWNNbGc?oc=5",
-   "published": "2026-09-15T15:03:00+09:00"
-  },
-  {
    "cat": "dc",
    "label": "AI・DC",
    "title": "暁星重工業が米ビッグテックに超高圧変圧器3865億供給契約 - CHOSUNBIZ",
-   "source": "Chosunbiz",
+   "source": "biz.chosun.com",
    "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOQktJRU5nXzRXRXFxaGlMSGxYbU1EdGwzM19uOWhqckdxWEw0OTJLMlJGRk9Xdi1qWlo0WjNETFQyWE1OM3liengzUDM0ZEhZUV9tNzVvQWVDaGdEaHFtMEhLNlZWcDgwOTlXZXVIQ0JCZExIdFZSZnJnX3pnSmloWW5B0gGWAUFVX3lxTE9iUDUxR1NIT2dGdXZLdzdpcEx2aGdNbGZaY3hMS3JlU2Y2Q2FTd093TGhLdTc4SGR6TUlCT01adHAyVnNobXlOODR6bUNrNE96d3pTZG42Nl9sNVNILTlCd0FMZ09vUzNFNXM1VEp2UHpDbXdQWjVFWnVEY2xsRko5UDVyVlBYV2VTNWctWjRobzZ5ZDRyZw?oc=5",
    "published": "2026-09-15T13:50:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "建設現場の木くずを床材に再生、東京ボード工業と三洋UDがリサイクル体制を構築。広域認定を活用",
+   "source": "Circular Economy Hub",
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQcjB5VkFoRl9RX25sYUNkS3dwSW4wUUt0Z3lHUEptY0ZKQlVYZkpYbkVHYmFPVDIzbmVQck1idEVfQWswbUs5NHpJdzV1U1hmSll4d1AzTVdzbjU0NjdrU1hSUVloVU9hcGptbklsZGZyb2lLUXpTZ09tczVWWWlycllpa3c0aGJIRTBCT1NBVGZTSkFvYVE?oc=5",
+   "published": "2026-09-15T12:00:37+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "DOWAエコシステム、使用済み電動車の駆動モーターからレアアース磁石を回収・再資源化する実証事業を開始へ。環境省の公募に採択",
+   "source": "Circular Economy Hub",
+   "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOb2F5RnhjbjVkRkVMMjdqNDJtN3hHeHJHd1RLbmVoY05jcTZnNEhDYS1aOGJteG00cGlpS09mOE5hbjFVV19COERncHhQUDhSWE5tOVQ0UzRGWXFzanFESlMzUy1mcVBSUV80Z1JZc3N2dzBDUmF2Y2hpblJwUnBYWXdR?oc=5",
+   "published": "2026-09-15T09:00:18+09:00"
   },
   {
    "cat": "mkt",
@@ -274,27 +320,27 @@
    "published": "2026-09-15T05:00:00+09:00"
   },
   {
-   "cat": "law",
-   "label": "法規制",
-   "title": "積層プラスチックシート廃棄物市場2035年予測：電子機器リサイクル需要が年率6～8%成長を牽引",
-   "source": "IndexBox",
-   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNTmpsSFhORTdoLXJudm1BQXExMHJoeVRNY2Y2aHBaMFViZzZnRWVXaUVRNWRidm1FN1FwcWZDRDFvUHpaZ2RiYVVSVTlkNWRvbDNxNWJhUGpTR1ZRT3A2MkN5d3BjNVFfc3NWMkdub0RZcWd4MFl1Xzk5cDFOUGJsbVBpU3lNNmI0bVA3LS0zbDFNb1JoR3F3RkhKVU02NjBJLTZwTkFqLXlzRy15VExXSXJ2S0tJNl9xS2pGUzAyQlhaNFROckdraFZ5WQ?oc=5",
-   "published": "2026-09-14T23:06:18+09:00"
-  },
-  {
    "cat": "mkt",
    "label": "相場",
    "title": "銅急騰で電線2社追い風 価格転嫁と需要増で業績拡大 - CHOSUNBIZ",
-   "source": "Chosunbiz",
+   "source": "biz.chosun.com",
    "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNM3J1RWEwckJKallZS3F2dzczdTBHVDhQUVN5YVVZeVFFZW5JeFJZeWZDQ00yM014b3NoYmp0em5ZTWZGS0dHZHJ5NWFpS2o2VkhtYkxKV0kzcXNMY0VUa1U5VDhIaDZudFRiNlBNendHd1dfM2h4RE9QbDJmU0h3eDJ30gGWAUFVX3lxTE5ac2dlNDdmbDE1ak9Yd2J1QzRrR3JWQmtORl96d3BqZzRoR1FEWG9oQVVwYzNST29kRWdLd2NPQTYtenlUSG43LWJ1ZFIxdjBOUWxYTGY3czN4aUhkUnFZaVByM2JzNk9lZF85aHhUX3A3ZVlON29ZdW5iOTVnQ0JuLVFKb1d5bEZJakJaR1FlRGRUUU9vQQ?oc=5",
    "published": "2026-09-14T14:50:00+09:00"
   },
   {
    "cat": "gen",
    "label": "業界",
+   "title": "【太陽光発電】yh：発電所のケーブル盗難対策「鉄壁」を開始、24時間監視と即時通報で資産防衛",
+   "source": "みんなの広報宣伝部",
+   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9mSGpCRm5oa0tmOEVFcDY5blZmU092a0xtMTJybEhPT0tGMkFfZUYxNWl5dlA5aWpBZ0JLNXZWZEd6aHZVZFVLRmN3dTFXOUhkTHQ0VGVVRTFoSVlIb1RnMk03YlhnN3VXTXl4d3lUeUgxdw?oc=5",
+   "published": "2026-09-14T14:44:10+09:00"
+  },
+  {
+   "cat": "gen",
+   "label": "業界",
    "title": "盗品と知りながら銅線1100㌔購入、容疑で中国人男女を逮捕 富山県警（北國新聞社）",
    "source": "Yahoo!ニュース",
-   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1JazlubW9tV3l5cW9uTklxZUZNMUNUcnVKWjFNX21UTkpRN2tWSzJONzNSREtyWkpDTmZPWjdjemdxdXZnLTBVWmN2WThselJUSmhrUWRZbXNJbTdINTVXVnRPU24tRVRFc0VLMllnbjBRektUQ1V2VWNwaWRmY0E?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNLWhOTEgxSVdsQkZOc3BSNWJocFZyWUxmM2ZoTGxmMVVYdFh2bW54RGVjakh6a1pyUFZpX0psLTd1X05MTmVGUnl4WUVtVVRqSlFTMXBCdkVsakRGU1VOdWsydzlJSDJQTmlHZG00Q0ZzbzlkUDU3T1VyVmk4RERmWDJIMEk4MVJ3cUxjV05hTW5PSzdnU3duc3N1emlMSW8waGNBR2ctaFhvX1J6Uld5dkloSjBQdFA0MzRUel9UbmxwX0lYNU9FbEZVMmY?oc=5",
    "published": "2026-09-14T12:54:18+09:00"
   },
   {
@@ -303,17 +349,15 @@
    "title": "三ッ星、リサイクルに参入 天進商事を子会社化",
    "source": "日刊産業新聞",
    "link": "https://www.japanmetal.com/news-h20260914150753.html",
-   "published": "2026-09-14T07:52:00+09:00",
-   "dups": 2
+   "published": "2026-09-14T07:52:00+09:00"
   },
   {
    "cat": "mkt",
    "label": "相場",
-   "title": "JX金属、銅建値9万円下げ",
-   "source": "日刊鉄鋼新聞",
-   "link": "https://www.japanmetaldaily.com/articles/-/267185",
-   "published": "2026-09-14T07:01:00+09:00",
-   "dups": 1
+   "title": "ＪＸ金属、銅建値９万円下げ",
+   "source": "日刊鉄鋼新聞 Japan Metal Daily",
+   "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBYekRGY3AwekMxM1BQeHRwWlkzekQ0NzZSNG1oeDlzRGlqVDhaOXF0NS01RWVqbEIxay1MU2V6VjRDVGkycllOZHpMbzlLZVhsVWx3RnNxQ0FQVTlhSEE?oc=5",
+   "published": "2026-09-14T05:00:00+09:00"
   },
   {
    "cat": "mkt",
@@ -324,14 +368,6 @@
    "published": "2026-09-14T05:00:00+09:00"
   },
   {
-   "cat": "gen",
-   "label": "業界",
-   "title": "自動車由来鉄・非鉄材料の高度循環をテーマに「自動車リサイクル",
-   "source": "毎日新聞デジタル",
-   "link": "https://mainichi.jp/articles/20260914/pls/00m/020/523000c",
-   "published": "2026-09-14T02:00:00+09:00"
-  },
-  {
    "cat": "law",
    "label": "法規制",
    "title": "災害廃棄物の処理費 国が97.5％負担へ　高市首相が熊本地震対応を報告",
@@ -340,28 +376,12 @@
    "published": "2026-09-12T20:33:36+09:00"
   },
   {
-   "cat": "law",
-   "label": "法規制",
-   "title": "くら寿司「ちいかわ」転売騒動――メルカリを「闇市」と呼ぶ前の古物営業法の穴｜山本一郎（やまもといちろう）",
-   "source": "note",
-   "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBQQTViQWctN191X1RKY3pHOFpOWW1VSFljM2luY0UyQTc0OW1LWHhpdlBFRFhXYnlQeVhRdnRMdW0yNjlqOTJIbnBDb2VPQUk?oc=5",
-   "published": "2026-09-12T17:55:04+09:00"
-  },
-  {
    "cat": "dc",
    "label": "AI・DC",
    "title": "フェラーリとBMWがアルミ電線を採用し車両の軽量化を進める | ウクライナニュース - #Mezha",
    "source": "Межа. Новини України.",
    "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE8tREZucE0tX2UtN1ZJRGJtU1lYaloxVWZxUjNCT3VRNGpXblMtSjg3ZTA3c0tEOFpkNFc0aVU5b0ZqVjh2ZExzT0JRUDJqN0tKNVNwSzNqOXh1MHJaLXdFWQ?oc=5",
    "published": "2026-09-12T13:19:14+09:00"
-  },
-  {
-   "cat": "gen",
-   "label": "業界",
-   "title": "電動車駆動モーター由来のレアアース磁石リサイクル技術の実証事業が環境省の公募事業に採択",
-   "source": "ニコニコニュース",
-   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBvaVZwUE5scElBYXpJdV9tMHlFeDc5aExpMmtfeEswOHlDTUNBLVFIS3BMV0F6b05ERE9HbjVuM1dUcjVxcFd1d1d3ZWNTV1ZWQzJJUGZFdlFEeUZqTk5vT09vdDZIZkkzcUNFTDFHOA?oc=5",
-   "published": "2026-09-11T22:18:20+09:00"
   },
   {
    "cat": "law",
@@ -373,44 +393,12 @@
    "dups": 2
   },
   {
-   "cat": "mkt",
-   "label": "相場",
-   "title": "国内の銅建値9万円下落、1カ月ぶり230万円割れ 米関税懸念の後退で",
-   "source": "日本経済新聞",
-   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE12ZFRyLUxlLTA2djNRN0hxdEpvcWdGbjJtS2F1cjFKZUFPZ2VmZmFfTmMzcDN3bWlaM3ZvT3pCNWVQSFhEMmt6MFpmQi1OZGRNanFIcUQ2Ukk2dE44dVdSOWIzS2hsb19fei1vNw?oc=5",
-   "published": "2026-09-11T15:48:49+09:00"
-  },
-  {
-   "cat": "gen",
-   "label": "業界",
-   "title": "三ツ星---大幅続伸、金属スクラップ回収企業を子会社化",
-   "source": "ｄメニューニュース",
-   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPaC1uVnQ2MGRPaWNpU1VZT0d4SzBCSDdPU09MRFBzZDNxWXNTVEFqbWR1QUlKNkp5QzZBSkVtTXJDbDZUYktrTTZlR2JhRmpFSUZOcUdOa1VKMEk2eWY0MkVIVnJDbEstV1ltMU5VSzkzcWNvbUFNVXNvTU40aGdPVEFGTXRrRlHSAYwBQVVfeXFMUHNJQWlndUQxeXJwdVJGLWpDcnJmbHNtUEo4T19DQnZfNzJCV1p5ckZNdFNBRER4S3JpYXdqZG1hXzU2MFZZOXZ2ZG15VzMtaElvalNqZmpDZ0xuN2JuNDlWVUw0OTA3MFRNTFVkeHhJUHQyNlZLWDlwLW5jb0lfMDl3cV9BYWJkV1pfMFA?oc=5",
-   "published": "2026-09-11T14:39:00+09:00"
-  },
-  {
-   "cat": "gen",
-   "label": "業界",
-   "title": "住友鉱山、国内初のEV電池リサイクル 米中のレアメタル囲い込みに対抗",
-   "source": "日本経済新聞",
-   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE84SmdLOUpzcjh1blExS1RrRkEzd0lYZm5WeWc1RGZoQVdoNXJ1VVVJYUY5Q1duSkJLczJNQkxHSUpRSjlUQzlfN0xWRW5GNjduQm5ma3ItUDdHTXdFVThRQWJPd0t0VTFTLWw0NQ?oc=5",
-   "published": "2026-09-11T11:51:39+09:00"
-  },
-  {
-   "cat": "mkt",
-   "label": "相場",
-   "title": "銅建値237万円 2万円上げ（日刊産業新聞）",
-   "source": "Yahoo!ニュース",
-   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5WTld0Ql8xT09tYkg3UzRjRzhvd1VtMmkzTzluNVVmUm5rSW52ZmFtTkxLaS1XZXZOY1ZZMnpXS05SSFk2MXI2RXlTbUkybl9Kc2pzSEhBazZBVC1oQnU5LXJSMVpYNTJTMXRzdk4yZ2trMzBMRS1FLU8taDNOSUE?oc=5",
-   "published": "2026-09-11T11:38:54+09:00"
-  },
-  {
-   "cat": "mkt",
-   "label": "相場",
-   "title": "鉄スクラップ 関東湾岸価格が反転上昇 船積み案件多く",
-   "source": "日刊産業新聞",
-   "link": "https://www.japanmetal.com/news-t20260911150729.html",
-   "published": "2026-09-11T07:55:00+09:00"
+   "cat": "law",
+   "label": "法規制",
+   "title": "Maersk、廃棄物・スクラップ貨物の予約規則を設定 - ニュースと統計",
+   "source": "IndexBox",
+   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQdnB1NmdRdmVOVlg5cVRlWTVpejFOWWw2Q2QxUHRCYzZwS2F5VWJlZkdUMmNGUjlHdzJvVGJEel9wSWhFaDZKQ2FWb3BPM25VWUlPenBvazNKcHlweHhfQ0FBNGdfRVZjM2JkWVVPRjBVTjJMS3lnS1ExeEFLbG5keDM4ZGNhRWN5a2V3SXBSdw?oc=5",
+   "published": "2026-09-11T13:02:29+09:00"
   },
   {
    "cat": "law",
@@ -423,10 +411,18 @@
   {
    "cat": "law",
    "label": "法規制",
+   "title": "『サーキュラープラットフォーム』サービス第二弾を提供開始。「配車WEB予約」と「サーキュラーレポート」で、廃棄物管理のDXと環境経営を高度化",
+   "source": "Infoseek",
+   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5KeUh0OXM3UzBuSE5hSW5YX25rbTYxcUtVaUk2VmN6dEY5QUFtR2VTSVA0WjQxMmRRaG4xWE9kbDFkeFNOd28xdDFnTDFsN1l6ZFZuVGxsTEh4SkpZMjdkazdTZS11aU52SmVUVEhTN3lVdw?oc=5",
+   "published": "2026-09-05T23:40:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
    "title": "代替フロン回収・再生設備導入に補助金、大気中に放出した場合の罰金対象機器を拡大…環境省方針",
-   "source": "yomiuri.co.jp",
-   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5FMHNtX3JhSGhKaGJQZ282ZEdtaUZCR2JyMjdjbWpFZ3l3cllHNVFJeWlfOFdyb3FJYlN6UjNIVHVNUkVVb3E1NkdvYVNnWHBleVB6VVB4Z0dSTzZKMXlVLU1FTzhrNVFO?oc=5",
-   "published": "2026-09-04T16:00:00+09:00"
+   "source": "読売新聞オンライン on MSN",
+   "link": "https://www.msn.com/ja-jp/news/other/代替フロン回収-再生設備導入に補助金-大気中に放出した場合の罰金対象機器を拡大-環境省方針/ar-AA2bx54X",
+   "published": "2026-09-04T17:01:00+09:00"
   },
   {
    "cat": "law",
@@ -447,10 +443,10 @@
   {
    "cat": "law",
    "label": "法規制",
-   "title": "『サーキュラープラットフォーム』サービス第二弾を提供開始。「配車WEB予約」と「サーキュラーレポート」で、廃棄物管理の",
-   "source": "ニコニコニュース",
-   "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE05c0NPbE9LS1o1dTJlU1RUaGNUdTdNSWxxd1VSNVZkbmRvaHFBMXlHaDVNeHZOaThBVEV6S2R2S3RZc3k1eHlIZ2s3T0Y0QnRfa2x6UA?oc=5",
-   "published": "2026-09-01T16:00:00+09:00"
+   "title": "JEPLAN、GX推進機構から資金調達。PETケミカルリサイクル事業の高度化・拡大へ",
+   "source": "Circular Economy Hub",
+   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPZjhaQzlrTlVhNzQya2JycXoxSmpPOXhKemJvbjB2ekptbmdpTEJNTXBtQmNTSi1zQl9KRFI4UlJEMzI3aXZQV1lVZFc1dVYzYk96M1VSMndZY09oOUVkdXBCLXNJV0VPVGdPMVc0akZEeTBqdjRCWk8zNDZVV3lHaXVLMGdjZjQ?oc=5",
+   "published": "2026-09-01T13:00:11+09:00"
   },
   {
    "cat": "law",
@@ -458,6 +454,14 @@
    "title": "柏・野田・茨城境の未来図：自動車ヤード問題とムスリム定着社会のリアル",
    "source": "選挙ドットコム",
    "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5jZ0JpWFhoMkVKY045bjg3RDZYNzlZWjlLbEY1SWZqRXM3MkM2dFZwazRGb0dNeDhEZE5DLTJLdTZ1ZGFlS2NvVjZsMHYyZTlRYnZSeWRHMnBrd0gxT0lB?oc=5",
+   "published": "2026-08-31T16:00:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "水銀の規制が厳しくなったと聞きました。水銀廃棄物はどのように廃棄したらよいですか？",
+   "source": "pref.saitama.lg.jp",
+   "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBXLTg2WmR2bEw5MEN0ci16SklMTHItelB5VjJ6T0lGZ2tWclktdkg4RGd1ckpCSFFLNW5McGRIMEhZNjBUdGRDbWEyTHBDSkFxWEk4ekhKdDVRQ3lxdFhyaENra2J4ZVJkNGQ4Ql9sZ3VTeHY4?oc=5",
    "published": "2026-08-31T16:00:00+09:00"
   },
   {
@@ -479,25 +483,9 @@
   {
    "cat": "law",
    "label": "法規制",
-   "title": "沼津市の廃棄物リサイクル会社「台湾貿易」で金属くず約２８平方メートル焼く",
-   "source": "静岡新聞DIGITAL",
-   "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE00NGdCYUhrMVZ3bGRCSGRnVnFHX3F6T2xBYmFZd0hmRUNwS204QjJSMkxmTk9RX0lWUEM1NXFqS01ZQ3l3VEd6WlJpcDE0QQ?oc=5",
-   "published": "2026-08-27T16:00:00+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
    "title": "環境省、脱炭素型循環経済システム構築促進事業の1次公募で6事業を採択。水平リサイクルやバイオメタノール製造など",
    "source": "Circular Economy Hub",
    "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNTUt6by1sTTlBRFVBbVNDck5OMHRHT2FtbkxVTmMyNHpWU2R5LU8zQUNrX2xHWUJYSkpvNUx6aGFqWkxNZGtlbWhnb3BGYkRaNDB3dU9uVG5Ga2c4ejhGb1VKTlhMQUZ6X3JDeV9BbTdFSEYyOFR2d1RLU3JxYVQ0Tg?oc=5",
-   "published": "2026-08-27T16:00:00+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
-   "title": "プラ・金属の資源循環設備導入補助、最大50％ 太陽光発電パネル再生も対象",
-   "source": "kankyo-business.jp",
-   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5GRDMzZ1JSNE9TWEtFekZiWHgzWjlyM09pMVhFRkRBOFRUbkJhQzhITWgtd19mLWIwTWpDY2pvWXJRejFjY2NBbkZXQnJ0RWZXZlIyamp5MHNLMTl0OUZiNmR4YjBRMm5sTzYyVGkyYWVsV29lMVVQVF9nUms?oc=5",
    "published": "2026-08-27T16:00:00+09:00"
   },
   {
@@ -511,10 +499,34 @@
   {
    "cat": "law",
    "label": "法規制",
+   "title": "冷蔵庫のフロンガス規制とは？脱フロン・脱炭素化に向けた補助金制度まとめ",
+   "source": "補助金ポータル",
+   "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE4ybjJxTXQ5djBVckthdnEza1ZYMjhaWE1Tc2R6Y0JTOHhMZ1R1N3NNMURtQjlrYTdxMVNQLUFfMHg3LXZrb1hfSU1od28zM2MyMFVFelVGdWw0R05k?oc=5",
+   "published": "2026-08-24T16:00:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
    "title": "【脱炭素・SDGs・ESG】資源循環システムズなど6社：建設廃プラ循環の実証が環境省事業に採択、AI分別から再生材利用まで一体化",
    "source": "みんなの広報宣伝部",
    "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1QTEp2cWh3WFd6YzY5cHZwRjlURW5ncjE0Qnd3Ykk3d0NITll5MnRFckVPaWdhakRsdXJLaE5PckRvMDQ3MGtkY20tQ29KMld2c01TR2NLQ3ByR0JUQmxCRmZSVVJ6QkphSjdaNzN4S3ZYQQ?oc=5",
    "published": "2026-08-23T07:36:55+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "フロン機器1万3000台をクラウド管理、全社で点検漏れ防ぐ",
+   "source": "alterna.co.jp",
+   "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE96REhobzM2ZHBpNWdKYnNFdmVDSEZqZmRlMnJpcVFLalNMNVRWXzJyVmdDMWtpT3ZCLTlhOTNyQno2TnpEa1pFLQ?oc=5",
+   "published": "2026-08-21T16:00:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "電子廃棄物管理の市場シェアと業界の成長 [2034 年]",
+   "source": "Fortune Business Insights",
+   "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNR0Z1bVlBV05CZi10am0wQnlUblVELWNQb3BLSVg2VWZ6aHozSHJWZ1pMbmtUcXRkd1lZUml6TGJFNHd0VHN3VXNtWjVRSFpaOFZKeF80elZlN2x5Ny1OSmZCbzlCN2lDSjU5UTU2X2hvbTRtMVpRVlBxcHo5OW1Oel9GazVxYk4zcXo5WWdjcTJjbVhTTlJHN2dxT0NZeEw4TTZuejI2MWlaLXBMcmc4Q0s3ZUVocWJGeGRTaUdrVnlFSTVyUXlQZzEwQ0xmMVRFLXA5bWxOMFlWWEMyMkhlZ0JFZw?oc=5",
+   "published": "2026-08-17T16:00:00+09:00"
   },
   {
    "cat": "law",
@@ -559,14 +571,6 @@
   {
    "cat": "law",
    "label": "法規制",
-   "title": "【廃掃法改正】これまでの条例から法令で規制強化金属くず等を扱うヤードを許可制に",
-   "source": "古紙ジャーナル",
-   "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9BN25kc0Y1Tm9hdTI2WEc4RmxHblBUa2UxdC05bm4zMkJzbWZvVV9EVmJReFJGVUhQc1E5UGZGbXhQbXdGYkhUVkRlZHVPVzMwZEdBTUR3Y3dQdFlrU3h4aw?oc=5",
-   "published": "2026-08-03T16:00:00+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
    "title": "ＥＶ充電所の破壊相次ぐ 銅線を狙った犯行―オーストラリア：時事ドットコム",
    "source": "時事ドットコム",
    "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBpR2g0LW5nLU1FcGFrMmRBSFJia1Nfcy1mdS1peXNhWmRxeGozbDBTRlhibjZLLWFwUHhzQnZReG4xTEdEVnNZMTkzUzJTalVPcVVscFU3c3RyZVZKcEVHZUllUQ?oc=5",
@@ -576,25 +580,9 @@
   {
    "cat": "law",
    "label": "法規制",
-   "title": "[8/25（火）開催]「環境省登壇！再資源化事業等高度化法 ～資源循環",
-   "source": "毎日新聞",
-   "link": "https://mainichi.jp/articles/20260731/pr2/00m/020/772000c",
-   "published": "2026-07-31T08:21:00+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
    "title": "スクラップヤード環境対策技術検討会／環境省が初会合を開催／木谷鉄リ工業会会長が委員参加／「適正業者への配慮」と「ナショナルミニマム」重要",
    "source": "日刊鉄鋼新聞 Japan Metal Daily",
    "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1yazByN0N2N1FjNUpKLW5KYlVWai1EUm1fazJ3aVhpWG1lRm0zTlMwRUNQN1BIWnUyUUJpUndTX1dhbU4zRWd0cG1fdzRha2gxSnZCLWtjUldudnF0OEE?oc=5",
-   "published": "2026-07-28T16:00:00+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
-   "title": "保管・再生基準を明確化/26年度内に結果とりまとめ/環境省がスクラップヤード検討会・改正廃掃法踏まえ設置",
-   "source": "建設通信新聞Digital",
-   "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBKU2JmcGNiUGpPcWF2Y3ZYMmhMMHBTOE9RSXFKV2w0MmVqenE0NlFTWU53VDc4T0ZTamNhYVU1X2xmY01WdlpPTm12Y3RPMEtzZkIwemx3bE8?oc=5",
    "published": "2026-07-28T16:00:00+09:00"
   },
   {
@@ -620,14 +608,6 @@
    "source": "Circular Economy Hub",
    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOTTgyenlWRDNMZ3c2bzc1Q1JmX2U4eS0tdE5JUTFsWFNwTy1MbWNfU1VxVWZTdTZxdDB6MzljeVVTN0hXbHp5SlFDaHRaUG5lV0MxamdqTXRFUndpRmhqdEpJRGZWY3VlLUJFaThCNXF2WmhTdFlXM1l1ckdIanItUmxqUjFEb2tua1NyMWN5UExpcWRlbFJvQ0FQNmxydDFOX2pVSm9xNFk3amVWRTdB?oc=5",
    "published": "2026-07-27T16:00:00+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
-   "title": "なぜ2つのシャフトの産業シュレッダーはスマートなオートメーション、高いトルクの処理および持続可能な物質的な回復によってリサイクルする産業廃棄物を革命化しています",
-   "source": "Spherical Insights",
-   "link": "https://news.google.com/rss/articles/CBMirwJBVV95cUxPcHJQV05VNHllMEhnM1AzY01UeEI5UTkyb0JBbC1jUnpteEVaaDlnQ3gwN2tVUnFJcVhYNzBlaWI2aUV5NjVtcDRkNzlidUd0aE5sZWdQb1l2cHFpU3dIdkdMUFFBS3JGTk5nRGJPcURoMTdyT05QeVhLcDBOQUlHUTJnWmZLWFhxamxRRzJVZjJRZEJOam1lS3hIRS1uU19xenJjdlgxZGFSOGhMZmtrWllnQ1hUdVVKdGNKMmVZX0E3UTk5RGkydld5WWdqTVRiazRlWHc3WjVlWXZBb2pHYzZOT05uMUZoQXMwWkdiOUlyRWMyTUI0U3NOeHFDeFU1bGkyVkVIZHhYWk1RcEpBR1kzX3VBb0t0bGxlM0RSQ3hkVFoxYlhuUFI3UUM3Tnc?oc=5",
-   "published": "2026-07-27T02:49:59+09:00"
   },
   {
    "cat": "law",
@@ -660,14 +640,6 @@
    "source": "下野新聞社",
    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1QM204VUNOX1dKTWtnUEktNUMyY3VrWWoweVpoLUtJeFdud2FhVGhhdDg4QUw4NUxlbUhheTdCUGZfY3Y1XzNoTW5HRTRqekIxRHQ0Nk8tZk5YazA?oc=5",
    "published": "2026-07-22T16:00:00+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
-   "title": "建設リサイクル法関係",
-   "source": "pref.saitama.lg.jp",
-   "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9kSzlRWkc1WWUxT2d5Mi1vcUl5Z2VUX2Q3eWt1OHVVWmtfaFdSQVExYndxUkJNN3JwblBGWTZacHhiZzBsNmRSaVZCS0c0a2pLTzNTbUtaenRuU0lJOTQw?oc=5",
-   "published": "2026-07-21T16:00:00+09:00"
   }
  ],
  "boards": {
@@ -729,7 +701,7 @@
     "cells": [
      {
       "dealer": "土金",
-      "value": 2300,
+      "value": 2340,
       "best": true
      },
      {
@@ -739,7 +711,7 @@
      },
      {
       "dealer": "大畑",
-      "value": 2220,
+      "value": 2250,
       "best": false
      },
      {
@@ -748,8 +720,8 @@
       "best": false
      }
     ],
-    "spread": 170,
-    "diff": "0"
+    "spread": 210,
+    "diff": "+40"
    },
    {
     "group": "銅",
@@ -757,12 +729,12 @@
     "cells": [
      {
       "dealer": "土金",
-      "value": 2200,
+      "value": 2260,
       "best": true
      },
      {
       "dealer": "大畑",
-      "value": 2170,
+      "value": 2200,
       "best": false
      },
      {
@@ -771,8 +743,8 @@
       "best": false
      }
     ],
-    "spread": 170,
-    "diff": "0"
+    "spread": 230,
+    "diff": "+60"
    },
    {
     "group": "銅",
@@ -780,7 +752,7 @@
     "cells": [
      {
       "dealer": "土金",
-      "value": 2190,
+      "value": 2200,
       "best": true
      },
      {
@@ -790,30 +762,30 @@
      },
      {
       "dealer": "大畑",
-      "value": 2120,
+      "value": 2150,
       "best": false
      }
     ],
-    "spread": 70,
-    "diff": "0"
+    "spread": 50,
+    "diff": "+10"
    },
    {
     "group": "銅",
     "name": "下銅",
     "cells": [
      {
-      "dealer": "宝源",
-      "value": 1930,
+      "dealer": "土金",
+      "value": 1950,
       "best": true
      },
      {
-      "dealer": "土金",
-      "value": 1900,
+      "dealer": "宝源",
+      "value": 1930,
       "best": false
      }
     ],
-    "spread": 30,
-    "diff": "0"
+    "spread": 20,
+    "diff": "+20"
    },
    {
     "group": "電線",
@@ -867,7 +839,7 @@
     "cells": [
      {
       "dealer": "土金",
-      "value": 1000,
+      "value": 1020,
       "best": true
      },
      {
@@ -886,8 +858,8 @@
       "best": false
      }
     ],
-    "spread": 90,
-    "diff": "0"
+    "spread": 110,
+    "diff": "+20"
    },
    {
     "group": "電線",
@@ -913,7 +885,7 @@
     "cells": [
      {
       "dealer": "土金",
-      "value": 1250,
+      "value": 1300,
       "best": true
      },
      {
@@ -932,8 +904,8 @@
       "best": false
      }
     ],
-    "spread": 290,
-    "diff": "0"
+    "spread": 340,
+    "diff": "+50"
    },
    {
     "group": "真鍮・砲金",
@@ -941,7 +913,7 @@
     "cells": [
      {
       "dealer": "土金",
-      "value": 2000,
+      "value": 2020,
       "best": true
      },
      {
@@ -955,8 +927,8 @@
       "best": false
      }
     ],
-    "spread": 80,
-    "diff": "0"
+    "spread": 100,
+    "diff": "+20"
    },
    {
     "group": "真鍮・砲金",
@@ -964,7 +936,7 @@
     "cells": [
      {
       "dealer": "土金",
-      "value": 1900,
+      "value": 1920,
       "best": true
      },
      {
@@ -978,8 +950,8 @@
       "best": false
      }
     ],
-    "spread": 240,
-    "diff": "0"
+    "spread": 260,
+    "diff": "+20"
    },
    {
     "group": "真鍮・砲金",
@@ -987,12 +959,12 @@
     "cells": [
      {
       "dealer": "土金",
-      "value": 1530,
+      "value": 1560,
       "best": true
      },
      {
       "dealer": "大畑",
-      "value": 1450,
+      "value": 1460,
       "best": false
      },
      {
@@ -1006,8 +978,8 @@
       "best": false
      }
     ],
-    "spread": 190,
-    "diff": "0"
+    "spread": 220,
+    "diff": "+30"
    },
    {
     "group": "真鍮・砲金",
@@ -2021,13 +1993,13 @@
     "cells": [
      {
       "dealer": "土金",
-      "value": 490,
+      "value": 500,
       "best": true
      },
      {
       "dealer": "安城貿易",
       "value": 490,
-      "best": true
+      "best": false
      },
      {
       "dealer": "宝源",
@@ -2045,8 +2017,8 @@
       "best": false
      }
     ],
-    "spread": 30,
-    "diff": "0"
+    "spread": 40,
+    "diff": "+10"
    },
    {
     "group": "雑品",
@@ -2110,7 +2082,7 @@
     "cells": [
      {
       "dealer": "大畑",
-      "value": 120,
+      "value": 123,
       "best": true
      },
      {
@@ -2129,8 +2101,8 @@
       "best": false
      }
     ],
-    "spread": 30,
-    "diff": "0"
+    "spread": 33,
+    "diff": "+3"
    },
    {
     "group": "雑品",
@@ -2267,7 +2239,6 @@
  "history": {
   "NYダウ": {
    "d": [
-    "2026-06-18",
     "2026-06-22",
     "2026-06-23",
     "2026-06-24",
@@ -2329,10 +2300,10 @@
     "2026-09-14",
     "2026-09-15",
     "2026-09-16",
-    "2026-09-17"
+    "2026-09-17",
+    "2026-09-18"
    ],
    "v": [
-    51564.7,
     51712.71,
     51666.84,
     51848.9,
@@ -2394,12 +2365,12 @@
     52421.2,
     52093.11,
     51461.9,
-    51778.04
+    51778.04,
+    51664.93
    ]
   },
   "ドル円": {
    "d": [
-    "2026-06-18",
     "2026-06-19",
     "2026-06-22",
     "2026-06-23",
@@ -2465,10 +2436,10 @@
     "2026-09-15",
     "2026-09-16",
     "2026-09-17",
-    "2026-09-18"
+    "2026-09-18",
+    "2026-09-19"
    ],
    "v": [
-    160.93,
     161.23,
     161.78,
     161.53,
@@ -2534,12 +2505,12 @@
     155.0,
     155.05,
     155.69,
-    155.69
+    157.89,
+    157.89
    ]
   },
   "ビットコイン": {
    "d": [
-    "2026-06-20",
     "2026-06-21",
     "2026-06-22",
     "2026-06-23",
@@ -2629,10 +2600,10 @@
     "2026-09-15",
     "2026-09-16",
     "2026-09-17",
-    "2026-09-18"
+    "2026-09-18",
+    "2026-09-19"
    ],
    "v": [
-    10241224,
     10374996,
     10220663,
     10331679,
@@ -2722,7 +2693,8 @@
     12071421,
     11738220,
     11882325,
-    11903080
+    11925885,
+    12657096
    ]
   },
   "基板:マザーボード（Ｃ）": {
@@ -2753,11 +2725,13 @@
     "2026-09-15",
     "2026-09-16",
     "2026-09-17",
-    "2026-09-18"
+    "2026-09-18",
+    "2026-09-19"
    ],
    "v": [
     870.0,
     870.0,
+    880.0,
     880.0,
     880.0,
     880.0,
@@ -2813,11 +2787,13 @@
     "2026-09-15",
     "2026-09-16",
     "2026-09-17",
-    "2026-09-18"
+    "2026-09-18",
+    "2026-09-19"
    ],
    "v": [
     9780.0,
     9780.0,
+    10070.0,
     10070.0,
     10070.0,
     10070.0,
@@ -2873,11 +2849,13 @@
     "2026-09-15",
     "2026-09-16",
     "2026-09-17",
-    "2026-09-18"
+    "2026-09-18",
+    "2026-09-19"
    ],
    "v": [
     220.0,
     220.0,
+    225.0,
     225.0,
     225.0,
     225.0,
@@ -2933,11 +2911,13 @@
     "2026-09-15",
     "2026-09-16",
     "2026-09-17",
-    "2026-09-18"
+    "2026-09-18",
+    "2026-09-19"
    ],
    "v": [
     1150.0,
     1150.0,
+    1180.0,
     1180.0,
     1180.0,
     1180.0,
@@ -2993,11 +2973,13 @@
     "2026-09-15",
     "2026-09-16",
     "2026-09-17",
-    "2026-09-18"
+    "2026-09-18",
+    "2026-09-19"
    ],
    "v": [
     3500.0,
     3500.0,
+    3600.0,
     3600.0,
     3600.0,
     3600.0,
@@ -3053,11 +3035,13 @@
     "2026-09-15",
     "2026-09-16",
     "2026-09-17",
-    "2026-09-18"
+    "2026-09-18",
+    "2026-09-19"
    ],
    "v": [
     640.0,
     640.0,
+    660.0,
     660.0,
     660.0,
     660.0,
@@ -3087,7 +3071,6 @@
   },
   "日経平均": {
    "d": [
-    "2026-06-18",
     "2026-06-19",
     "2026-06-22",
     "2026-06-23",
@@ -3149,10 +3132,10 @@
     "2026-09-11",
     "2026-09-14",
     "2026-09-15",
-    "2026-09-16"
+    "2026-09-16",
+    "2026-09-17"
    ],
    "v": [
-    71053.49,
     71250.06,
     72353.96,
     69788.38,
@@ -3214,7 +3197,8 @@
     64011.34,
     63492.99,
     63484.1,
-    63923.0
+    63923.0,
+    64136.25
    ]
   },
   "東鉄名古屋二級": {
@@ -3245,7 +3229,8 @@
     "2026-09-15",
     "2026-09-16",
     "2026-09-17",
-    "2026-09-18"
+    "2026-09-18",
+    "2026-09-19"
    ],
    "v": [
     48000.0,
@@ -3274,7 +3259,8 @@
     48000.0,
     48000.0,
     48000.0,
-    48000.0
+    48000.0,
+    48500.0
    ]
   },
   "金": {
@@ -3305,7 +3291,8 @@
     "2026-09-15",
     "2026-09-16",
     "2026-09-17",
-    "2026-09-18"
+    "2026-09-18",
+    "2026-09-19"
    ],
    "v": [
     25415.0,
@@ -3334,7 +3321,8 @@
     23301.0,
     23194.0,
     23445.0,
-    23576.0
+    23576.0,
+    24247.0
    ]
   },
   "銀": {
@@ -3365,7 +3353,8 @@
     "2026-09-15",
     "2026-09-16",
     "2026-09-17",
-    "2026-09-18"
+    "2026-09-18",
+    "2026-09-19"
    ],
    "v": [
     376.97,
@@ -3394,7 +3383,8 @@
     330.44,
     328.24,
     333.85,
-    338.36
+    338.36,
+    362.45
    ]
   },
   "銅建値": {
@@ -3458,10 +3448,10 @@
  },
  "ai": {
   "lines": [
-   "・銅建値231万円（+7万）、金23,576円/g（+251）銀は-6.27円",
-   "・環境省ヤード検討会、事業者許可は二段階審査を提言",
-   "・銅線盗が続発、富山で盗品銅線1100kg購入の男女逮捕"
+   "・銅建値231万円（+7万）、金24,247円/g（+747）",
+   "・環境省ヤード対策、許可は二段階審査を提言",
+   "・金属盗が続発、銅線1100kg購入で逮捕も"
   ],
-  "at": "9/18 7:18"
+  "at": "9/19 3:40"
  }
 }
