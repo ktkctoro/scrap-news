@@ -1,5 +1,5 @@
 {
- "updated": "9/23 4:12",
+ "updated": "9/23 7:19",
  "fx": {
   "usdjpy": 157.18,
   "date": "2026-09-22"
@@ -34,9 +34,9 @@
    },
    {
     "name": "ビットコイン",
-    "value": "13,620,684",
+    "value": "13,553,216",
     "unit": "円",
-    "diff": "+0.6%"
+    "diff": "-0.7%"
    },
    {
     "name": "日経平均",
@@ -46,9 +46,9 @@
    },
    {
     "name": "NYダウ",
-    "value": "51,888",
+    "value": "51,864",
     "unit": "$",
-    "diff": "-205"
+    "diff": "-229"
    }
   ]
  },
@@ -160,6 +160,14 @@
    "published": "2026-09-20T22:26:20+09:00"
   },
   {
+   "cat": "dc",
+   "label": "AI・DC",
+   "title": "日立エナジー、米国に変圧器新工場 800億円投資 データセンター需要増に対応",
+   "source": "電波新聞デジタル",
+   "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5HclR3UllxV1ZXNzlwWDBOaDdvQTBJeDJkTUQwclVaY2hJZmwyRmZSNzY2NklfRFVtakVpRC1wN0xjQVRvel93cWs0LWJXbkJZYnc?oc=5",
+   "published": "2026-09-20T22:06:32+09:00"
+  },
+  {
    "cat": "gen",
    "label": "業界",
    "title": "エアコン室外機の銅線盗もうとした男が突然倒れる…韓国・救急隊が心肺蘇生",
@@ -195,7 +203,7 @@
    "cat": "gen",
    "label": "業界",
    "title": "美浜の休業中の国民宿舎等 室外機など盗まれる",
-   "source": "日高新報",
+   "source": "hidakashimpo.co.jp",
    "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9PSjZ6WmJOcUZzeXQzNzdvdi1DNlBreGpwWHRJUzZ5OFpzY0JaRHNvR2RaUG9ta3o4V3dBa0M4NHhYVjI0RFZQSHFHM0c?oc=5",
    "published": "2026-09-19T14:45:29+09:00"
   },
@@ -327,7 +335,7 @@
    "cat": "mkt",
    "label": "相場",
    "title": "銅価格が急ピッチで上昇､先物価格と連動する非鉄株は？",
-   "source": "四季報オンライン",
+   "source": "shikiho.toyokeizai.net",
    "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9qakRoUXd6RmxvcUJsUmtJcG0tMEpWRDVkSkdLeTd3TllucHFkeGh5U3ZuWldNU0pzVHIyNzNUMjNwTXFLbkk5N3RSSjhERTk0Z2tqMmFXdw?oc=5",
    "published": "2026-09-17T11:30:00+09:00"
   },
@@ -443,7 +451,7 @@
    "source": "PR TIMES",
    "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBIeEViZko5UXhXb015VF9KWGk3WWJOaVJqUUg2dkhPTFJzLU9oT2FMcjZRNUFUVGxpZ01rRU16Ynd2U0w0ajFOS09kUElQVS1SYjV1aTM4RkFheTExNi1mVk1BNTE4U1hySmc?oc=5",
    "published": "2026-09-11T16:00:00+09:00",
-   "dups": 2
+   "dups": 1
   },
   {
    "cat": "law",
@@ -459,8 +467,7 @@
    "title": "【アメリカ】プリンストン大、プラ9種の光熱ケミカルリサイクル法開発。BPA-PCで収率78% | Sustainable Japan | 世界のサステナビリティ・ESG投資・SDGs",
    "source": "Sustainable Japan",
    "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPTWJ6ZW9BTHprRGZnTURqZGMxejduX19uX05TRU9fR2VlZzVpYTFJbzlHaHNtQVo1OVp1TlByWlJDWlczUmkwZVJwUWhRYkZLajRqREFNYURDam5iOHFSX05OQy00cEREYWtZT0RsUWRLdVJBUklQekJuVllSb3hLbjNTRTXSAYoBQVVfeXFMTVdaYk9XQjNLSHlNN0RReWtJTXI3bUZwZ0p1dC1vdWliU2JKbGpCUUhfeXI4YXA2VGV3Slp6ODRubUdLZm9TNGhEb1dmdEFRVTRiTlhqRW9aTVZEaG8xbnU5Zk92NG41SXB2RlNOenBjSC1oZVVGV2R2N2NmZHFlQjBJdGp0MjZLY1VR?oc=5",
-   "published": "2026-09-07T16:00:00+09:00",
-   "dups": 1
+   "published": "2026-09-07T16:00:00+09:00"
   },
   {
    "cat": "law",
@@ -498,7 +505,7 @@
    "cat": "law",
    "label": "法規制",
    "title": "柏・野田・茨城境の未来図：自動車ヤード問題とムスリム定着社会のリアル",
-   "source": "go2senkyo.com",
+   "source": "選挙ドットコム",
    "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5jZ0JpWFhoMkVKY045bjg3RDZYNzlZWjlLbEY1SWZqRXM3MkM2dFZwazRGb0dNeDhEZE5DLTJLdTZ1ZGFlS2NvVjZsMHYyZTlRYnZSeWRHMnBrd0gxT0lB?oc=5",
    "published": "2026-08-31T16:00:00+09:00"
   },
@@ -586,7 +593,7 @@
    "cat": "law",
    "label": "法規制",
    "title": "ＥＶ充電所の破壊相次ぐ 銅線を狙った犯行―オーストラリア：時事ドットコム",
-   "source": "jiji.com",
+   "source": "時事ドットコム",
    "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBpR2g0LW5nLU1FcGFrMmRBSFJia1Nfcy1mdS1peXNhWmRxeGozbDBTRlhibjZLLWFwUHhzQnZReG4xTEdEVnNZMTkzUzJTalVPcVVscFU3c3RyZVZKcEVHZUllUQ?oc=5",
    "published": "2026-08-02T16:00:00+09:00",
    "dups": 1
@@ -651,7 +658,7 @@
    "cat": "law",
    "label": "法規制",
    "title": "【大田区の未来を守る】 雑品スクラップ 規制強化への備えと、クリーンな行政への決意",
-   "source": "go2senkyo.com",
+   "source": "選挙ドットコム",
    "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1jTEpySlRmRVV4Nnp6d25BUHZfSW9JSVd2d0JqMHowb0VhOTdSajg0WDQyOUJVRkV2VXg3aENoUDBHeHJyRHlmdkhLZ1JGbkRRY0g3QjUzcGNpTGxzMXc?oc=5",
    "published": "2026-07-26T16:00:00+09:00"
   }
@@ -735,7 +742,7 @@
      }
     ],
     "spread": 120,
-    "diff": "+10"
+    "diff": "0"
    },
    {
     "group": "銅",
@@ -781,7 +788,7 @@
      }
     ],
     "spread": 50,
-    "diff": "+10"
+    "diff": "0"
    },
    {
     "group": "銅",
@@ -919,7 +926,7 @@
      }
     ],
     "spread": 320,
-    "diff": "+20"
+    "diff": "0"
    },
    {
     "group": "真鍮・砲金",
@@ -942,7 +949,7 @@
      }
     ],
     "spread": 110,
-    "diff": "+10"
+    "diff": "0"
    },
    {
     "group": "真鍮・砲金",
@@ -1281,7 +1288,8 @@
       "best": false
      }
     ],
-    "spread": 890
+    "spread": 890,
+    "diff": "0"
    },
    {
     "group": "基板／クラス",
@@ -1344,7 +1352,8 @@
       "best": false
      }
     ],
-    "spread": 1500
+    "spread": 1500,
+    "diff": "0"
    },
    {
     "group": "基板／クラス",
@@ -1407,7 +1416,8 @@
       "best": false
      }
     ],
-    "spread": 490
+    "spread": 490,
+    "diff": "0"
    },
    {
     "group": "基板／クラス",
@@ -1447,7 +1457,8 @@
       "best": false
      }
     ],
-    "spread": 130
+    "spread": 130,
+    "diff": "0"
    },
    {
     "group": "基板／CPU・IC",
@@ -1515,7 +1526,8 @@
       "best": false
      }
     ],
-    "spread": 8520
+    "spread": 8520,
+    "diff": "0"
    },
    {
     "group": "基板／CPU・IC",
@@ -1555,7 +1567,8 @@
       "best": false
      }
     ],
-    "spread": 1400
+    "spread": 1400,
+    "diff": "0"
    },
    {
     "group": "基板／CPU・IC",
@@ -1595,7 +1608,8 @@
       "best": false
      }
     ],
-    "spread": 3000
+    "spread": 3000,
+    "diff": "0"
    },
    {
     "group": "基板／CPU・IC",
@@ -1691,7 +1705,8 @@
       "best": false
      }
     ],
-    "spread": 1350
+    "spread": 1350,
+    "diff": "0"
    },
    {
     "group": "基板／PC部品",
@@ -1708,7 +1723,8 @@
       "best": false
      }
     ],
-    "spread": 440
+    "spread": 440,
+    "diff": "0"
    },
    {
     "group": "基板／PC部品",
@@ -1725,7 +1741,8 @@
       "best": false
      }
     ],
-    "spread": 1280
+    "spread": 1280,
+    "diff": "0"
    },
    {
     "group": "基板／PC部品",
@@ -1742,7 +1759,8 @@
       "best": false
      }
     ],
-    "spread": 380
+    "spread": 380,
+    "diff": "0"
    },
    {
     "group": "基板／PC部品",
@@ -1759,7 +1777,8 @@
       "best": false
      }
     ],
-    "spread": 240
+    "spread": 240,
+    "diff": "0"
    },
    {
     "group": "基板／PC部品",
@@ -1782,7 +1801,7 @@
      }
     ],
     "spread": 1650,
-    "diff": "+420"
+    "diff": "0"
    },
    {
     "group": "基板／PC部品",
@@ -1799,7 +1818,8 @@
       "best": false
      }
     ],
-    "spread": 160
+    "spread": 160,
+    "diff": "0"
    },
    {
     "group": "基板／PC部品",
@@ -1839,7 +1859,8 @@
       "best": false
      }
     ],
-    "spread": 90
+    "spread": 90,
+    "diff": "0"
    },
    {
     "group": "基板／機器",
@@ -1856,7 +1877,8 @@
       "best": false
      }
     ],
-    "spread": 1200
+    "spread": 1200,
+    "diff": "0"
    },
    {
     "group": "基板／機器",
@@ -1901,7 +1923,8 @@
       "best": false
      }
     ],
-    "spread": 380
+    "spread": 380,
+    "diff": "0"
    },
    {
     "group": "基板／機器",
@@ -1946,7 +1969,8 @@
       "best": false
      }
     ],
-    "spread": 580
+    "spread": 580,
+    "diff": "0"
    },
    {
     "group": "基板／機器",
@@ -1963,7 +1987,8 @@
       "best": false
      }
     ],
-    "spread": 90
+    "spread": 90,
+    "diff": "0"
    },
    {
     "group": "基板／機器",
@@ -1980,7 +2005,8 @@
       "best": true
      }
     ],
-    "spread": 0
+    "spread": 0,
+    "diff": "0"
    },
    {
     "group": "雑品",
@@ -2194,24 +2220,24 @@
   "label": "8月のまとめ"
  },
  "ai_morning": {
-  "date": "2026-09-22",
+  "date": "2026-09-23",
   "items": [
    {
-    "title": "Grok 4.7とMiMo-V2.6公開 新モデルの波が来た",
-    "link": "https://thelastthreeminutes.com/issues/2026-09-22/stories/1/"
+    "title": "Claude Opus 5.5公開 Fable級の力を4割安く",
+    "link": "https://thelastthreeminutes.com/issues/2026-09-23/stories/1/"
    },
    {
-    "title": "OpenAI「未解決問題100超を解決」 数学者と助言団",
-    "link": "https://thelastthreeminutes.com/issues/2026-09-22/stories/2/"
+    "title": "GPT-6 SolとLuna公開 API料金は半額に",
+    "link": "https://thelastthreeminutes.com/issues/2026-09-23/stories/2/"
    },
    {
-    "title": "Googlebook予約開始 899ドルから、画面操作にAI",
-    "link": "https://thelastthreeminutes.com/issues/2026-09-22/stories/3/"
+    "title": "Snapdragon新型 30B級のAIをスマホの中で",
+    "link": "https://thelastthreeminutes.com/issues/2026-09-23/stories/3/"
    }
   ],
-  "link": "https://thelastthreeminutes.com/issues/2026-09-22/",
-  "lead": "火曜の朝は「新モデル2本、数学100問超、AIを組み込んだPC」です。昨日の予告号に続き、Grok 4.7とMiMo 2.6が実際に公開されました。OpenAIは数学の未解決問題を100問以上解いたと発表し、独立した助言団を設立。Googlebookは899ドルから予約を始めました。使えるようになったことと、これから確かめることを分けて読みます。",
-  "video": "https://www.youtube.com/watch?v=6iPvPVgbZKk"
+  "link": "https://thelastthreeminutes.com/issues/2026-09-23/",
+  "lead": "水曜の朝は「同じ夜に出た新モデル2本と、スマホの中のAI」です。AnthropicはClaude Opus 5.5を、OpenAIはGPT-6 SolとLunaを公開しました。どちらも「前より安く」が軸です。Qualcommは30B級のAIを端末内で動かすチップを発表。値段と使いどころを並べて読みます。",
+  "video": "https://www.youtube.com/watch?v=ZORp-9INN6o"
  },
  "history": {
   "NYダウ": {
@@ -2345,7 +2371,7 @@
     51778.04,
     51682.64,
     52048.83,
-    51893.19
+    51863.69
    ]
   },
   "ドル円": {
@@ -2673,7 +2699,7 @@
     12744163,
     12742937,
     13627945,
-    13613514
+    13552738
    ]
   },
   "基板:マザーボード（Ｃ）": {
@@ -3496,9 +3522,9 @@
  "ai": {
   "lines": [
    "・銅建値231万円（+7万）、金24,247円/g（+747）",
-   "・環境省ヤード検討会、事業者許可は二段階審査案",
-   "・田原市でケーブル盗難連続、室外機盗も各地で発生"
+   "・環境省ヤード検討会、許可は二段階審査案",
+   "・室外機・ケーブル盗難が各地で連続発生、警戒を"
   ],
-  "at": "9/23 4:12"
+  "at": "9/23 7:19"
  }
 }
