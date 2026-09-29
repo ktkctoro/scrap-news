@@ -1,5 +1,5 @@
 {
- "updated": "9/30 5:15",
+ "updated": "9/30 8:03",
  "fx": {
   "usdjpy": 157.12,
   "date": "2026-09-29"
@@ -54,6 +54,22 @@
  },
  "items": [
   {
+   "cat": "btc",
+   "label": "ビットコイン",
+   "title": "5%金利でも崩れぬビットコイン 金との明暗鮮明に",
+   "source": "日本経済新聞",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9PWUJkYUV2VUZWVVR6MUkycHNWRjFIZ0pXVV9IQW9IUzg0eHBGVFJZWkRPVnM4bE5qdnhEZF8zak41emxWUUtiRG8wS1luMDN1emxmRjBKOERiVzI0RjZacGJ5V2ZPRjJWRWZxbQ?oc=5",
+   "published": "2026-09-30T06:50:28+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "日本の廃棄物をエネルギーに変える市場の最新動向",
+   "source": "pando.life",
+   "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE9DSndZdUpKSjBTZTFXX3ZHUlh5ZUNodnNOMjNYVWpFNDRzMGprVEdrYk1xUmlJb0NmcDhSVlE3MjluM0Z4ZUJIYUt3?oc=5",
+   "published": "2026-09-30T05:53:20+09:00"
+  },
+  {
    "cat": "law",
    "label": "法規制",
    "title": "木谷鉄リサイクル工業会会長／環境省の検討会、過剰規制を警戒／実効性ある規制求め２段階審査を提言",
@@ -62,12 +78,12 @@
    "published": "2026-09-30T05:00:00+09:00"
   },
   {
-   "cat": "dc",
-   "label": "AI・DC",
-   "title": "「AI・電化時代の銅市場」と題して、住友商事グローバルリサーチ株式会社 経済部 部長補佐・チーフマーケットアナリスト",
-   "source": "ニコニコニュース",
-   "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9mcVdXTnpGbGFOU3cyM1ZLTnhfc0JLNGR1d19ISFNWUWY1ZmplT3Rndl9BVE1EWnZkWUVLaEJxcnVQejJMUFJIS2ZHQ0dhMlotbDRLSA?oc=5",
-   "published": "2026-09-30T00:00:43+09:00"
+   "cat": "btc",
+   "label": "ビットコイン",
+   "title": "ビットコイン反発、支持線回復も8.8万～9万ドルに厚い上値抵抗",
+   "source": "Yellow.com",
+   "link": "https://news.google.com/rss/articles/CBMiiANBVV95cUxQWmFDU2liVENoamFsWGNCd0FhcjhtZnVrRTRmaEhPcjVzbzc4TnZlQVEtblJLTUVqallsMDRjSzRlMVplTy04c2t6LXpZeFVtVDg3NXVsVS1GWDNWQTQ4aHFDdG9GU3pxQkIxcDMzYzhzWjI2UDRFQk9OVFpWOXNrMk1JVEdic1JhOXRyZm5EX3pPY1puQUJRTUFZSllzUEw1U2lfMDRRdVc2LVFUWXNZVWk3Mi1Ya3lfY2tZZnRIYjV4S3VHM0lVb0FyOWhTZXg5MHgwZ1JrYUtoR1BRU3ZsbjBidnJfX0hYX0piM1RtSmxRUXpNYkZ4Wlpmb2hfYU83TXh3OHdJb0k5S2RJel9hOUZ6QzNfV1VCQmNkcDh3eDRXTW1IdGdkVGVSYkJzOVNqVG90Tll2c2FFMmtDVGc3b0JSLWFCby1BdXpfdUQwVVptNS1Hc2NJQjlwSmFIV3V5cmdkVVdJUGRnY3FLN0QycEJ1OUUybFhDay05STFuZmxMMGVLTnkzQw?oc=5",
+   "published": "2026-09-30T02:15:45+09:00"
   },
   {
    "cat": "btc",
@@ -78,28 +94,20 @@
    "published": "2026-09-29T23:31:30+09:00"
   },
   {
+   "cat": "btc",
+   "label": "ビットコイン",
+   "title": "ビットコインが金を上回るパフォーマンスを見せる。現在、10万ドルへの急騰が予測される：Crypto Daily",
+   "source": "CoinDesk",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOUTJoRFQ1M0kyaUp3aWJIUWtjZGIwMHc1X2lPR1l5X0NKVW9aaXBKWGQzVTAxbWhVdlBYZXBwN2dlZURfOXdRTFFOQTE3VG01YzQ3VnBLM3BQOEYyczU2YVdTREl2REg2T1dSMnNMeFNoZUVoaXhLQUJRMjJsSW82U2hJdlVQZDRLT3J3dVNrZEZoNVNHT2RjTXh2TnVhRTY2?oc=5",
+   "published": "2026-09-29T21:25:58+09:00"
+  },
+  {
    "cat": "dc",
    "label": "AI・DC",
    "title": "LGエナジーソリューション・LSケーブル&システム・ガオン電線...AIインフラに参入する韓国企業",
    "source": "매일경제",
    "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9OWUNpUW1FZUZ4WmROdWxHdmxVWTBFWEIxQURVc0lJU2EtV0xFek95VmYzMHRLei1rSjNvd1Q5QWNBd2RmRnZ4Z21aU2VXcWRiaWVv?oc=5",
    "published": "2026-09-29T19:41:21+09:00"
-  },
-  {
-   "cat": "btc",
-   "label": "ビットコイン",
-   "title": "ビットコイン反発、支持線回復も8.8万～9万ドルに厚い上値抵抗",
-   "source": "yellow",
-   "link": "https://yellow.com/ja/news/%E3%83%93%E3%83%83%E3%83%88%E3%82%B3%E3%82%A4%E3%83%B3%E5%8F%8D%E7%99%BA%E3%80%81%E6%94%AF%E6%8C%81%E7%B7%9A%E5%9B%9E%E5%BE%A9%E3%82%8288%E4%B8%87%EF%BD%9E9%E4%B8%87%E3%83%89%E3%83%AB%E3%81%AB%E5%8E%9A%E3%81%84%E4%B8%8A%E5%80%A4%E6%8A%B5%E6%8A%97",
-   "published": "2026-09-29T19:15:00+09:00"
-  },
-  {
-   "cat": "gen",
-   "label": "業界",
-   "title": "“誰もいない”現場から大量の炎と煙 スクラップ置き場で火災 鉄くずや家電製品など燃える 愛知・津島市",
-   "source": "au Webポータル",
-   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5CYVVXbUZMbnNxSENheXFraVVPRmt3R2ozaXN4bTBoY19ZbVBOQ09qV1NQZGFxRU1fRFE4TjE3aFFVRXFkOV9mSEplSTdYN0FHWEx5LTZUZjN2U2I5dDczZDdocHVqZ3NiSUNXdy1n?oc=5",
-   "published": "2026-09-29T18:54:00+09:00"
   },
   {
    "cat": "mkt",
@@ -120,6 +128,14 @@
   {
    "cat": "mkt",
    "label": "相場",
+   "title": "鉄スクラップ 国際相場が上昇 トルコ調達増 国内連れ高要因に",
+   "source": "日刊産業新聞",
+   "link": "https://www.japanmetal.com/news-t20260930150923.html",
+   "published": "2026-09-29T12:00:00+09:00"
+  },
+  {
+   "cat": "mkt",
+   "label": "相場",
    "title": "三井金属のレアメタル溶液材料 黒鉛部材にTaCコート 被膜形成技術を開発（日刊産業新聞）",
    "source": "Yahoo!ニュース",
    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE53Ynh5WkxReFVWUDV3Sk9fLTNVN05wdG5Gem5FWUlac29zRnd0alV6R1NQcmo0VW1fdTJ3blhLN2ludnBDTGdta1VBWnU5U0cyTWxKZEZQdGc3YjlHMDBTUGNuM1otY1NnWVlha0M1NFZKakY2c1Y4c0RzTkVvRkE?oc=5",
@@ -129,17 +145,9 @@
    "cat": "btc",
    "label": "ビットコイン",
    "title": "2026年9月29日 ビットコイン価格の３３％反発、ＥＴＦ・金利・ＡＩが試練に｜暗号資産（仮想通貨）・電子決済手段の取引所",
-   "source": "SBI VCトレード",
+   "source": "sbivc.co.jp",
    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNbHl0bXRyNlcySVl1WFg4ZENoWHNGdGRtQmtJOU9yaUJCNjlsM1dOWXpnN2h2dHNOZ1NNVWNBVlpNdkRWclZSb2trMTF2WWpRQVhVRjNDRDBqS2ZxVXhVVkV2N1VieHRobU1URnQtdVFaVzVrNU9zZEt0UUx5R3N0MHgyLXpYVEtHLVVDb1l3?oc=5",
    "published": "2026-09-29T10:00:56+09:00"
-  },
-  {
-   "cat": "btc",
-   "label": "ビットコイン",
-   "title": "ビットコイン8万3000ドルに下落 ETF資金減と利食い響く - CHOSUNBIZ",
-   "source": "Chosunbiz",
-   "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPOGRPdGlmS1MzMm9EQmtSY3VCSUdBbVBQMlJIWHJsOEFHV2xLb09sQ2NvNGlkcHN1eEdKZDRhNnc2V1lkR1dNV2h1ZERDVThHT0hlRWs5TnpaTnRtZGhnRGVKT1pBa0E0eFNLNndMM1ZtVVY5bm5MQlFBejJVeXphctIBlAFBVV95cUxPVm5JeDBzYjhVa3VjUWdKVTQ5Q0J4SUMyWkJ1ZXl1b3l0ZExaZmp6cER3aUx1TnU5MTJlb19uMXdBc2xOckpLYmdaWWNRQ2lFclA3dzJZaUg3Rkt0eFM2TTlBU0JmbzdzMF9ERExONnFJeExTb0lwSjZEUFZEMUpZaEZJY2U5N0hrakNiSVlJVDdFVUlO?oc=5",
-   "published": "2026-09-29T08:49:00+09:00"
   },
   {
    "cat": "mkt",
@@ -167,14 +175,6 @@
    "dups": 2
   },
   {
-   "cat": "btc",
-   "label": "ビットコイン",
-   "title": "金利上昇が金に圧力をかける中、ビットコイントレーダーはショートを追う",
-   "source": "CoinDesk",
-   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPRGd1aUgtaUZxRXdPSk96WE03TDVDSVZRa0hYdnJ4SHBfc1F3YjNjVkVocXFBQl9DbG9oOXNacTJUMWJ4SGtvUUl5SGh1Zjh1NHNfcFNFVkR5MlFNeUtDalppWjE2OXlXWDVONHdaTk1ZS2w1S0tZSTRBTktSYjRJTVFjdDFfT3cwa2NHSWk5MFFOY0dGVC16Y1lDdGpEelY0MjEzNXR0c1AwV1AtclFPcXNOaDFfZ0U4elhpQWRqTm9Yd0pIU1J0eQ?oc=5",
-   "published": "2026-09-29T00:08:36+09:00"
-  },
-  {
    "cat": "dc",
    "label": "AI・DC",
    "title": "銅張積層板市場、5GとEV需要を背景に2035年まで拡大へ",
@@ -189,14 +189,6 @@
    "source": "pando.life",
    "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFBLV2xNNnBmUFZ2cG9NYkU3bzkwanNkS0tFd2VPSERiSHdEQi03eUtMRFdTUHFuZ1VHcHZPNl9rUFZUQ19CZzFUT1VB?oc=5",
    "published": "2026-09-28T21:27:40+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
-   "title": "ケーブル用水難止めテープ市場2026-2033年における規制の洞察：政策と市場を統治す",
-   "source": "pando.life",
-   "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5Na3JtbVBHTGV4b2ZkSG9HenpRVVZuZTA0Q0Z4U3Fra1lWUkZHSnVGWjNteTBHdEFacmJJTk9BQ1BDTk5WYkRfazVB?oc=5",
-   "published": "2026-09-28T19:08:07+09:00"
   },
   {
    "cat": "mkt",
@@ -346,14 +338,6 @@
    "published": "2026-09-25T11:10:52+09:00"
   },
   {
-   "cat": "mkt",
-   "label": "相場",
-   "title": "鉄スクラップ小幅反発 国内相場",
-   "source": "日刊産業新聞",
-   "link": "https://www.japanmetal.com/news-t20260925150853.html",
-   "published": "2026-09-25T07:50:00+09:00"
-  },
-  {
    "cat": "law",
    "label": "法規制",
    "title": "スクラップヤード規制、2028年までに全国で許可制へ｜県・市条例の",
@@ -472,14 +456,6 @@
    "source": "note",
    "link": "https://note.com/atsumaro/n/n3db8dee9c4c4",
    "published": "2026-09-23T10:11:00+09:00"
-  },
-  {
-   "cat": "gen",
-   "label": "業界",
-   "title": "住友金属鉱山、国内初のEV電池リサイクル工場を稼働…年間1万トン処理の勝算は",
-   "source": "ビジネスジャーナル",
-   "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1PbkR4Wjc5MVFuQmJwUFhvaEVYREJCb2RHRHp2UmZQdEVmdTBodUNQTVJzNkdzZURZczJpSVVrdy1yLUhlTFUtVzhMbk5peWE2OFNWM3R3Q3VBSUE?oc=5",
-   "published": "2026-09-23T05:55:11+09:00"
   },
   {
    "cat": "law",
@@ -616,7 +592,7 @@
    "cat": "law",
    "label": "法規制",
    "title": "代替フロン回収・再生設備導入に補助金、大気中に放出した場合の罰金対象機器を拡大…環境省方針",
-   "source": "yomiuri.co.jp",
+   "source": "読売新聞",
    "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5FMHNtX3JhSGhKaGJQZ282ZEdtaUZCR2JyMjdjbWpFZ3l3cllHNVFJeWlfOFdyb3FJYlN6UjNIVHVNUkVVb3E1NkdvYVNnWHBleVB6VVB4Z0dSTzZKMXlVLU1FTzhrNVFO?oc=5",
    "published": "2026-09-04T16:00:00+09:00"
   },
@@ -680,7 +656,7 @@
    "cat": "law",
    "label": "法規制",
    "title": "倉庫・食品工場の冷凍冷蔵設備に最大6,700万円！東京都の省エネ型ノンフロン機器補助",
-   "source": "hojyokin-portal.jp",
+   "source": "補助金ポータル",
    "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5tTDgtV1VSTENZcTZwdmhHSG9uZlcwc0l3ODk0N19jLUNhb3lOQ3Zzc2FPWHNITnk5SkRiaTRYdnhJRmMxMEh1dVRFRmFaWkRobk8wYUN5eVVXc2NsRUE?oc=5",
    "published": "2026-08-24T16:00:00+09:00"
   },
@@ -2191,7 +2167,7 @@
      }
     ],
     "spread": 35,
-    "diff": "+2"
+    "diff": "0"
    },
    {
     "group": "雑品",
@@ -2306,24 +2282,24 @@
   "label": "8月のまとめ"
  },
  "ai_morning": {
-  "date": "2026-09-29",
+  "date": "2026-09-30",
   "items": [
    {
-    "title": "Claude Sonnet 5.5公開 3割速く、仕事あたり最大3割安く",
-    "link": "https://thelastthreeminutes.com/issues/2026-09-29/stories/1/"
+    "title": "GPT-6.1 Sol公開 Astra並みの性能で値段は5分の1",
+    "link": "https://thelastthreeminutes.com/issues/2026-09-30/stories/1/"
    },
    {
-    "title": "今夜DevDay 20以上の発表予告、常駐AI「Aeon」が本命か",
-    "link": "https://thelastthreeminutes.com/issues/2026-09-29/stories/2/"
+    "title": "OpenAIの常駐AI「dots」 自分のPCを持って24時間働く",
+    "link": "https://thelastthreeminutes.com/issues/2026-09-30/stories/2/"
    },
    {
-    "title": "GeminiのGems、11月17日に「スキル」へ自動で移行",
-    "link": "https://thelastthreeminutes.com/issues/2026-09-29/stories/3/"
+    "title": "月200ドルのPro再開 使える量は半分、月500ドル版も",
+    "link": "https://thelastthreeminutes.com/issues/2026-09-30/stories/3/"
    }
   ],
-  "link": "https://thelastthreeminutes.com/issues/2026-09-29/",
-  "lead": "火曜の朝は、Claudeの新しい主力と今夜のDevDayです。Sonnet 5.5は値段を据え置いたまま3割速くなり、仕事1件あたり最大3割安くなりました。OpenAIは日本時間30日未明のDevDayで、20以上の発表を予告しています。GeminiのGemsは11月にスキルへ移ります。",
-  "video": "https://www.youtube.com/watch?v=e67a-_V0uWk"
+  "link": "https://thelastthreeminutes.com/issues/2026-09-30/",
+  "lead": "水曜の朝は、DevDayの3本です。GPT-6.1 Solは最上位のAstraに迫る性能を、5分の1の値段で出してきました。常駐エージェントのdotsは、自分のPCを持って24時間働きます。月200ドルのProは再開しましたが、使える量は半分になりました。",
+  "video": "https://www.youtube.com/watch?v=yGxM3dOjtHg"
  },
  "history": {
   "NYダウ": {
@@ -2785,7 +2761,7 @@
     13277483,
     13295037,
     13136421,
-    13144787
+    13158346
    ]
   },
   "基板:マザーボード（Ｃ）": {
@@ -3725,10 +3701,10 @@
  },
  "ai": {
   "lines": [
-   "・銅建値242万円、11万円高で再び最高値",
-   "・環境省ヤード検討会、許可2段階審査を提言",
-   "・銅狙いの窃盗急増、神社の銅板剥ぎで2人逮捕"
+   "・銅建値242万円、11万円高で再び最高値更新",
+   "・環境省ヤード検討会、許可制へ2段階審査を提言",
+   "・銅狙いの窃盗多発、神社銅板やケーブル2.2トン盗難"
   ],
-  "at": "9/30 5:15"
+  "at": "9/30 8:03"
  }
 }
