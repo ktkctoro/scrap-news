@@ -108,6 +108,12 @@ jobs:
         run: |
           mkdir -p _site
           cp index.html data.json _site/
+          # 画面案も一緒に出す。採用を決めるまでスマホで見るため。
+          # 各案は ../data.json を読むので、_site の直下に置けばそのまま動く
+          # （データを埋め込んでいないので、ダブルクリックでは中身が出ない）。
+          # トップページからはリンクしていないので、朝の画面には出てこない。
+          # 採用が決まったらこの行ごと消すこと
+          cp -r 画面案 _site/
 
       - uses: actions/upload-pages-artifact@v5
         with:
