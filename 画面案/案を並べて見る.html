@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>画面案くらべ</title>
+<!-- パソコンで6案を並べて見るためのページ。ダブルクリックで開ける。
+     中の6つは本物のスマホ画面と同じように、押したり切り替えたりできる。 -->
+<style>
+  :root{--ai:#1c74b8;--ink:#14171b;--ink-3:#59606a;--paper:#e9eef3}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--paper);color:var(--ink);padding:20px 16px 40px;
+    font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic UI",Meiryo,sans-serif}
+  h1{font-size:20px;text-align:center}
+  h2{font-size:15px;text-align:center;color:var(--ink-3);margin:36px 0 14px;font-weight:700}
+  .lead{text-align:center;color:var(--ink-3);font-size:14px;margin:6px 0 8px;line-height:1.7}
+  .row{display:flex;flex-wrap:wrap;gap:28px;justify-content:center}
+  figure{display:flex;flex-direction:column;align-items:center;gap:10px}
+  figcaption{text-align:center;max-width:390px}
+  figcaption b{display:block;font-size:17px;color:var(--ai)}
+  figcaption span{font-size:13px;color:var(--ink-3);line-height:1.6}
+  figcaption a{font-size:13px;color:var(--ai)}
+  .phone{width:390px;height:844px;border:10px solid #1d2229;border-radius:44px;overflow:hidden;background:#fff;
+    box-shadow:0 12px 30px rgba(0,0,0,.18)}
+  .phone iframe{width:100%;height:100%;border:0;display:block}
+</style>
+</head>
+<body>
+<h1>スマホ画面の作り直し 6案</h1>
+<p class="lead">6つとも本物のデータ（9/30 8:03 時点）で動きます。押したり、切り替えたりして試せます。<br>
+くわしい説明は同じフォルダの「画面案の説明.md」にあります。</p>
+
+<h2>A〜C：画面の並べ方を変える</h2>
+<div class="row">
+  <figure>
+    <figcaption><b>案A　いまの並びを直す</b><span>並び順はそのまま。押しやすさ・読みやすさを直し、タブを下へ</span><br>
+      <a href="案A_いまの並びを直す.html" target="_blank">1枚で開く</a></figcaption>
+    <div class="phone"><iframe src="案A_いまの並びを直す.html" title="案A" loading="lazy"></iframe></div>
+  </figure>
+  <figure>
+    <figcaption><b>案B　下タブで分ける</b><span>けさ／相場／記事／くらべる の4画面。1画面に1つの目的</span><br>
+      <a href="案B_下タブで分ける.html" target="_blank">1枚で開く</a></figcaption>
+    <div class="phone"><iframe src="案B_下タブで分ける.html" title="案B" loading="lazy"></iframe></div>
+  </figure>
+  <figure>
+    <figcaption><b>案C　朝1分</b><span>開いた1画面で答えが出る。続きは下の大きなボタンから</span><br>
+      <a href="案C_朝1分.html" target="_blank">1枚で開く</a></figcaption>
+    <div class="phone"><iframe src="案C_朝1分.html" title="案C" loading="lazy"></iframe></div>
+  </figure>
+</div>
+
+<h2>D〜F：見る順番・切り口を変える</h2>
+<div class="row">
+  <figure>
+    <figcaption><b>案D　品目で引く</b><span>銅・鉄・アルミ…を押すと、その品目の相場・同業の価格・記事がまとめて出る</span><br>
+      <a href="案D_品目で引く.html" target="_blank">1枚で開く</a></figcaption>
+    <div class="phone"><iframe src="案D_品目で引く.html" title="案D" loading="lazy"></iframe></div>
+  </figure>
+  <figure>
+    <figcaption><b>案E　変わったところだけ</b><span>前回見たときから動いたものだけ。「見終わった」で次は続きから</span><br>
+      <a href="案E_変わったところだけ.html" target="_blank">1枚で開く</a></figcaption>
+    <div class="phone"><iframe src="案E_変わったところだけ.html" title="案E" loading="lazy"></iframe></div>
+  </figure>
+  <figure>
+    <figcaption><b>案F　めくるカード</b><span>6枚のカードを「次へ」でめくれば、朝の確認が終わる</span><br>
+      <a href="案F_めくるカード.html" target="_blank">1枚で開く</a></figcaption>
+    <div class="phone"><iframe src="案F_めくるカード.html" title="案F" loading="lazy"></iframe></div>
+  </figure>
+</div>
+</body>
+</html>

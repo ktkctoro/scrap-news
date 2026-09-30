@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f2f5f8">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>スクラップ今日（案D）</title>
+<!--
+  画面案D「品目で引く」
+  - 入口は「銅・鉄・アルミ…」の品目のボタン。押すと、その品目の
+    相場（グラフつき）・同業8社の買取価格・関係する記事が1画面にまとまって出る
+  - 「銅のことが知りたい」と思ったら、あちこちのタブを渡り歩かずに済む
+  - 品目の画面の一番下に「銅のことをAIに聞く」。けさの数字を入れた質問が自動でできる
+  - 記事の分類（5つ）はそのまま。品目は記事の見出しの語で振り分ける
+-->
+<style>
+  /* ===== 3案に共通の土台 ===================================== */
+  :root{
+    /* 色は3つ（いまの画面と同じ）。藍=骨組み、緑=高い/上がった、朱=下がった/注意 */
+    --ai:#1c74b8;     --ai-dk:#135a91; --ai-bg:#e8f3fc;
+    --midori:#0f8650; --midori-bg:#e6f6ed;
+    --shu:#c74524;    --shu-dk:#9a3419; --shu-bg:#fdeee9;
+    /* 屋外でも読めるよう、文字はいまより濃くした（いちばん薄い灰でも白地で5:1以上） */
+    --ink:#14171b; --ink-2:#3c424a; --ink-3:#59606a;
+    --line:#dde2e7; --line-2:#b7bfc8;
+    --paper:#f2f5f8; --card:#fff;
+    --up:var(--midori); --down:var(--shu);
+    --tap:48px;   /* 指で押すものの最低の高さ（Android 48dp / iOS 44pt） */
+    --gap:8px;    /* 押せるもの同士のすきま */
+    --r:12px;
+    --safe-t:env(safe-area-inset-top,0px);
+    --safe-b:env(safe-area-inset-bottom,0px);
+    --safe-l:env(safe-area-inset-left,0px);
+    --safe-r:env(safe-area-inset-right,0px);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{font-size:100%;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+  /* iPhoneの「文字サイズ」設定に追従させる（指で触る端末のときだけ） */
+  @media (pointer:coarse){ @supports (font:-apple-system-body){ html{font:-apple-system-body} } }
+  body{background:var(--paper);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic UI",Meiryo,sans-serif;
+    font-size:1rem;line-height:1.6;-webkit-font-smoothing:antialiased;
+    -webkit-tap-highlight-color:transparent;overflow-wrap:anywhere;
+    padding-left:var(--safe-l);padding-right:var(--safe-r)}
+  .wrap{max-width:560px;margin:0 auto}
+  .num{font-variant-numeric:tabular-nums}
+  .up{color:var(--up)} .down{color:var(--down)} .flat{color:var(--ink-3)}
+  a{color:inherit}
+  button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;text-align:inherit}
+  input{font:inherit}
+  :focus-visible{outline:3px solid var(--ai);outline-offset:2px}
+  [hidden]{display:none!important}
+
+  /* 押したら必ず見た目が変わる（押せたことが指に返る） */
+  .press{transition:background-color .12s,transform .08s}
+  .press:active{transform:scale(.985)}
+
+  .btn{min-height:var(--tap);padding:0 18px;border-radius:var(--r);font-weight:700;font-size:1rem;
+    display:flex;align-items:center;justify-content:center;gap:8px;width:100%;text-decoration:none;text-align:center}
+  .btn-main{background:var(--ai);color:#fff}
+  .btn-main:active{background:var(--ai-dk)}
+  .btn-sub{background:var(--card);color:var(--ai);border:1.5px solid var(--ai)}
+  .btn-sub:active{background:var(--ai-bg)}
+
+  .eyebrow{font-size:.875rem;font-weight:700;color:var(--ai);letter-spacing:.04em;line-height:1.35;
+    border-left:4px solid var(--ai);padding-left:8px;margin-bottom:10px;
+    display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+  .eyebrow .hint{font-size:.8125rem;color:var(--ink-3);font-weight:400;letter-spacing:0}
+  .sec{padding:18px 16px 4px}
+
+  /* お知らせ（通信できない・記事が古い・見本） */
+  .banner{margin:12px 16px 0;padding:12px 14px;border-radius:var(--r);font-size:.9375rem;line-height:1.6}
+  .banner.warn{background:var(--shu-bg);color:var(--shu-dk);border:1px solid #efc0b1}
+  .banner.info{background:transparent;color:var(--ink-3);border:1px dashed var(--line-2);font-size:.8125rem;padding:8px 12px}
+  .banner .btn{margin-top:10px}
+
+  /* 読み込み中のぐるぐる */
+  .loading{display:flex;flex-direction:column;align-items:center;gap:12px;padding:56px 16px;color:var(--ink-3)}
+  .spin{width:34px;height:34px;border-radius:50%;border:3px solid var(--line);border-top-color:var(--ai);
+    animation:spin .9s linear infinite}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  .empty{padding:32px 16px;text-align:center;color:var(--ink-3)}
+
+  /* けさの3行 */
+  .brief{margin:14px 16px 0;padding:14px 16px;border-radius:var(--r);background:var(--ai-bg);
+    border:1px solid #cfe3f5}
+  .brief ul{list-style:none}
+  .brief li{position:relative;padding-left:16px;font-size:1rem;line-height:1.65;margin-top:6px}
+  .brief li:first-child{margin-top:0}
+  .brief li::before{content:"";position:absolute;left:2px;top:.62em;width:7px;height:7px;border-radius:50%;background:var(--ai)}
+
+  /* 数字のタイル */
+  .tiles{display:grid;grid-template-columns:1fr 1fr;gap:var(--gap)}
+  .tile{display:block;width:100%;background:var(--card);border:1px solid var(--line);border-radius:var(--r);
+    padding:12px 14px;min-height:104px;text-align:left}
+  .tile:active{background:var(--ai-bg)}
+  .tile .k{font-size:.9375rem;font-weight:700;color:var(--ink-2);line-height:1.3}
+  .tile .sub{font-size:.8125rem;color:var(--ink-3);line-height:1.3}
+  .tile .v{display:block;font-size:1.375rem;font-weight:800;line-height:1.25;margin-top:6px;letter-spacing:-.01em}
+  .tile .d{font-size:.9375rem;font-weight:700}
+
+  /* 数字の行（押すとグラフ） */
+  .list{background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+  .li{display:flex;align-items:center;gap:10px;width:100%;min-height:58px;padding:9px 12px 9px 14px;
+    border-bottom:1px solid var(--line);text-align:left}
+  .li:last-child{border-bottom:0}
+  .li:active{background:var(--ai-bg)}
+  .li .kk{flex:1;min-width:0;line-height:1.35}
+  .li .k{display:block;font-size:1rem;font-weight:600}
+  .li .sub{display:block;font-size:.8125rem;color:var(--ink-3)}
+  .li .vv{text-align:right;line-height:1.3;flex:0 0 auto}
+  .li .v{font-size:1.125rem;font-weight:800}
+  .li .u{font-size:.8125rem;color:var(--ink-3);margin-left:2px;font-weight:500}
+  .li .d{display:block;font-size:.875rem;font-weight:700}
+  .chev{flex:0 0 auto;width:18px;height:18px;color:var(--line-2)}
+
+  /* 絞り込みチップ */
+  .chips{display:flex;flex-wrap:wrap;gap:var(--gap)}
+  .chips.scroll{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;
+    -webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);mask-image:linear-gradient(90deg,#000 88%,transparent);
+    padding-right:32px}
+  .chips.scroll::-webkit-scrollbar{display:none}
+  .chip{flex:0 0 auto;min-height:var(--tap);padding:0 16px;border-radius:999px;background:var(--card);
+    border:1.5px solid var(--line-2);color:var(--ink-2);font-weight:700;font-size:.9375rem;
+    display:inline-flex;align-items:center;gap:6px}
+  .chip .n{font-size:.8125rem;font-weight:600;color:var(--ink-3)}
+  .chip[aria-pressed="true"]{background:var(--ai);border-color:var(--ai);color:#fff}
+  .chip[aria-pressed="true"] .n{color:#d6e9f8}
+  .chip:active{background:var(--ai-bg)}
+  .chip[aria-pressed="true"]:active{background:var(--ai-dk)}
+
+  /* 2〜4つの切り替え（どの案でも、切り替えはこの形だけ） */
+  .seg{display:flex;gap:4px;background:#e2e7ec;border-radius:14px;padding:4px}
+  .seg button{flex:1;min-height:var(--tap);border-radius:10px;font-weight:700;font-size:.9375rem;
+    color:var(--ink-2);text-align:center;padding:0 6px;line-height:1.25}
+  .seg button[aria-selected="true"]{background:var(--card);color:var(--ai);box-shadow:0 1px 3px rgba(0,0,0,.18)}
+  .seg button:active{background:rgba(255,255,255,.6)}
+
+  /* 記事 */
+  .feed{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .art{display:block;padding:14px 16px;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink)}
+  .art:last-child{border-bottom:0}
+  .art:active{background:var(--ai-bg)}
+  .art:visited{color:var(--ink-3)}           /* 読んだ記事は灰色になる */
+  .art-t{display:block;font-size:1.0625rem;font-weight:700;line-height:1.5;margin:6px 0 4px}
+  .meta{display:block;font-size:.8125rem;color:var(--ink-3)}
+  .ext{display:inline-block;width:.9em;height:.9em;vertical-align:-.1em;margin-left:3px;opacity:.7}
+  .badge{display:inline-block;font-size:.8125rem;font-weight:700;padding:1px 8px;border-radius:6px;line-height:1.6}
+  .b-mkt{background:var(--ai-bg);color:var(--ai-dk)}
+  .b-law{background:var(--shu-bg);color:var(--shu-dk)}
+  .b-gen{background:#ebe9e3;color:var(--ink-2)}
+  .b-dc{background:var(--midori-bg);color:#0b6b3f}
+  .b-btc{background:#fff3df;color:#8a5200}
+  .dups{display:inline-block;margin-left:6px;padding:0 7px;border-radius:6px;font-size:.8125rem;
+    background:var(--ai-bg);color:var(--ai-dk);font-weight:700}
+
+  /* レポート（たたんだ状態で置く） */
+  .rep{background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+  .rep + .rep{margin-top:var(--gap)}
+  .rep summary{min-height:60px;padding:10px 44px 10px 14px;cursor:pointer;list-style:none;position:relative;
+    display:flex;flex-direction:column;justify-content:center;gap:2px}
+  .rep summary::-webkit-details-marker{display:none}
+  .rep summary::after{content:"";position:absolute;right:16px;top:50%;width:10px;height:10px;margin-top:-7px;
+    border-right:2.5px solid var(--ai);border-bottom:2.5px solid var(--ai);transform:rotate(45deg);transition:transform .15s}
+  .rep[open] summary::after{transform:rotate(-135deg);margin-top:-2px}
+  .rep summary:active{background:var(--ai-bg)}
+  .rep .lab{font-size:.8125rem;font-weight:700;color:var(--ai)}
+  .rep .lab.mon{color:var(--midori)}
+  .rep .ttl{font-size:1rem;font-weight:700;line-height:1.4}
+  .rep .body{padding:4px 16px 16px;border-top:1px solid var(--line)}
+  .rep .body p{font-size:1rem;line-height:1.85;margin-top:12px}
+
+  /* AIの朝3本・リンク */
+  .l3m a{display:flex;gap:10px;align-items:flex-start;min-height:var(--tap);padding:12px 14px;
+    border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink);background:var(--card)}
+  .l3m a:last-child{border-bottom:0}
+  .l3m a:active{background:var(--ai-bg)}
+  .l3m .n{flex:0 0 auto;font-weight:800;color:var(--ai);font-size:.9375rem;line-height:1.6}
+  .l3m .t{font-size:1rem;font-weight:600;line-height:1.55}
+  .linkgroup + .linkgroup{margin-top:14px}
+  .glabel{font-size:.8125rem;color:var(--ink-3);font-weight:700;margin-bottom:6px}
+  .gsites{display:flex;flex-wrap:wrap;gap:var(--gap)}
+  .linkchip{min-height:var(--tap);padding:0 14px;border-radius:999px;border:1.5px solid var(--ai);color:var(--ai);
+    background:var(--card);font-weight:700;font-size:.9375rem;text-decoration:none;display:inline-flex;align-items:center}
+  .linkchip:active{background:var(--ai-bg)}
+
+  /* AIに聞く */
+  .qlist{display:flex;flex-direction:column;gap:var(--gap)}
+  .q{display:flex;align-items:center;gap:10px;width:100%;min-height:56px;padding:10px 12px 10px 14px;
+    background:var(--card);border:1px solid var(--line-2);border-radius:var(--r);font-size:1rem;font-weight:600;line-height:1.45;text-align:left}
+  .q:active{background:var(--ai-bg)}
+  .q span{flex:1}
+  .askform{display:flex;flex-direction:column;gap:var(--gap)}
+  .askform input{width:100%;min-height:52px;padding:0 14px;border:1.5px solid var(--line-2);border-radius:var(--r);
+    font-size:1rem;background:var(--card);color:var(--ink)}
+  .askform input:focus{border-color:var(--ai);outline:none;box-shadow:0 0 0 3px var(--ai-bg)}
+  .lead{font-size:.9375rem;color:var(--ink-2);line-height:1.6}
+
+  /* 下から出るシート（グラフなど） */
+  .sheet{position:fixed;inset:0;z-index:60;display:flex;align-items:flex-end;justify-content:center;
+    background:rgba(14,20,28,.5);opacity:0;visibility:hidden;transition:opacity .2s,visibility .2s}
+  .sheet.open{opacity:1;visibility:visible}
+  .sheet-box{background:var(--card);width:100%;max-width:560px;max-height:92vh;overflow-y:auto;
+    border-radius:20px 20px 0 0;padding:8px 16px calc(14px + var(--safe-b));
+    transform:translateY(40px);transition:transform .22s ease-out;overscroll-behavior:contain}
+  .sheet.open .sheet-box{transform:none}
+  .grab{display:block;width:44px;height:5px;border-radius:3px;background:var(--line-2);margin:4px auto 12px}
+  .sheet-title{font-size:1.125rem;font-weight:800;line-height:1.35}
+  .sheet-sub{font-size:.8125rem;color:var(--ink-3);margin-bottom:10px}
+  .cnow{display:flex;align-items:baseline;gap:6px;flex-wrap:wrap}
+  .cnow .v{font-size:2rem;font-weight:800;line-height:1.2}
+  .cnow .u{font-size:.875rem;color:var(--ink-3)}
+  .cdiff{font-size:1rem;font-weight:700;margin:2px 0 8px}
+  .csvg{display:block;width:100%;height:150px}
+  .cfoot{display:flex;justify-content:space-between;gap:8px;font-size:.8125rem;color:var(--ink-3);margin:6px 0 14px}
+  .sheet .msg{padding:24px 8px;text-align:center;color:var(--ink-2);line-height:1.8}
+
+  @media (prefers-reduced-motion:reduce){ *{transition:none!important;animation-duration:3s!important} }
+
+  /* 同業くらべ（いちばん高い先を大きく、ほかは下に） */
+  .cmp{background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+  .ci{padding:12px 14px;border-bottom:1px solid var(--line)}
+  .ci:last-child{border-bottom:0}
+  .ci-top{display:flex;align-items:baseline;justify-content:space-between;gap:8px}
+  .ci-n{font-size:1.0625rem;font-weight:800;line-height:1.4}
+  .ci-s{font-size:.8125rem;color:var(--shu-dk);font-weight:700;flex:0 0 auto}
+  .ci-best{display:flex;align-items:baseline;gap:8px;margin-top:6px;padding:6px 10px;border-radius:8px;background:var(--midori-bg);color:#0b6b3f}
+  .ci-bl{font-size:.8125rem;font-weight:700;flex:0 0 auto}
+  .ci-bd{font-size:1rem;flex:1}
+  .ci-bv{font-size:1.25rem;font-weight:800}
+  .ci-bv small{font-size:.8125rem;margin-left:1px}
+  .ci-rest{display:flex;flex-wrap:wrap;gap:2px 16px;margin-top:6px;padding:0 2px;font-size:.9375rem;color:var(--ink-2)}
+  .ci-rest b{color:var(--ink);font-weight:700}
+  .gname{font-size:.9375rem;font-weight:800;color:var(--ink-2);margin:18px 2px 8px}
+  .gname:first-child{margin-top:4px}
+  .foot{padding:20px 16px 8px;font-size:.8125rem;color:var(--ink-3);line-height:1.7;text-align:center}
+
+  /* ---- 案Dだけの見た目 ---- */
+  header.top h1{font-size:1.625rem;font-weight:800;line-height:1.3}
+  .topics{display:grid;grid-template-columns:1fr 1fr;gap:var(--gap)}
+  .topic{display:flex;flex-direction:column;width:100%;min-height:112px;padding:11px 12px 10px 14px;text-align:left;
+    background:var(--card);border:1px solid var(--line);border-radius:var(--r);position:relative}
+  .topic:active{background:var(--ai-bg)}
+  .topic .tn{font-size:1.0625rem;font-weight:800;line-height:1.3;padding-right:18px}
+  .topic .tl{font-size:.8125rem;color:var(--ink-3);line-height:1.35;margin-top:2px}
+  .topic .tv{font-size:1.1875rem;font-weight:800;line-height:1.3}
+  .topic .tv small{font-size:.8125rem;font-weight:500;color:var(--ink-3);margin-left:2px}
+  .topic .td{font-size:.875rem;font-weight:700}
+  .topic .tc{margin-top:auto;padding-top:6px;font-size:.8125rem;color:var(--ai);font-weight:700}
+  .topic .chev{position:absolute;right:10px;top:14px;color:var(--ai)}
+  .topic.wide{grid-column:1 / -1;min-height:auto}
+
+  .big{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:12px 14px 4px}
+  .big .k{font-size:.9375rem;font-weight:700;color:var(--ink-2)}
+  .big .k small{font-size:.8125rem;font-weight:500;color:var(--ink-3);margin-left:6px}
+  .big .cfoot{margin-bottom:8px}
+  .others{margin-top:var(--gap)}
+  .asktopic{padding:22px 16px 0}
+  .asktopic .btn{min-height:56px}
+  .asktopic p{font-size:.8125rem;color:var(--ink-3);text-align:center;margin-top:6px}
+  .gchips{margin-bottom:4px}
+
+  /* ---- 画面ごと切り替える案（C・D・E・F）の共通部品 ---- */
+  body.sub{padding-bottom:calc(24px + var(--safe-b))}
+  header.top{padding:calc(14px + var(--safe-t)) 16px 2px}
+  header.top .app{display:flex;justify-content:space-between;align-items:baseline;gap:8px;font-size:.8125rem;font-weight:700;color:var(--ai)}
+  header.top .upd{color:var(--ink-3);font-weight:500}
+
+  /* 下の大きなボタン3つ */
+  .dock{position:fixed;left:0;right:0;bottom:0;z-index:30;background:rgba(255,255,255,.97);
+    border-top:1px solid var(--line-2);box-shadow:0 -4px 16px rgba(0,0,0,.06);
+    padding:8px calc(12px + var(--safe-r)) calc(8px + var(--safe-b)) calc(12px + var(--safe-l))}
+  .dock .in{display:flex;gap:var(--gap);max-width:560px;margin:0 auto}
+  .dock .btn{min-height:62px;width:auto;white-space:nowrap;padding:0 8px}
+  .dock .go{flex:2;font-size:1.0625rem;gap:6px}
+  .dock .go .cnt{background:rgba(255,255,255,.25);border-radius:999px;padding:0 7px;font-size:.8125rem}
+  .dock .sm{flex:1;flex-direction:column;gap:1px;padding:0 4px;font-size:.8125rem}
+  .dock svg{width:22px;height:22px;flex:0 0 auto}
+
+  /* 切り替わる画面（記事・くらべる・聞く） */
+  .subview{animation:rise .22s ease-out}
+  @keyframes rise{from{transform:translateY(28px);opacity:.4}to{transform:none;opacity:1}}
+  .subtop{position:sticky;top:0;z-index:20;background:rgba(242,245,248,.96);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);padding-top:var(--safe-t)}
+  .subhead{display:flex;align-items:center;gap:4px;padding:6px 8px;min-height:60px}
+  .back{display:flex;align-items:center;min-height:var(--tap);padding:0 14px 0 4px;border-radius:12px;color:var(--ai);font-weight:700;font-size:1rem}
+  .back:active{background:var(--ai-bg)}
+  .back svg{width:22px;height:22px}
+  .subhead h2{font-size:1.25rem;font-weight:800}
+  .subtop .chips,.subtop .seg{margin:0 16px 10px}
+  .subtop .chips.scroll{margin:0 0 10px;padding:0 32px 0 16px}
+  .endback{padding:20px 16px 0}
+</style>
+</head>
+<body>
+<div id="home">
+  <header class="top"><div class="wrap">
+    <div class="app"><span>スクラップ今日</span><span class="upd num" id="updated"></span></div>
+    <h1>けさ</h1>
+  </div></header>
+  <div class="wrap">
+    <div id="banner"></div>
+    <div class="loading" id="loading"><span class="spin" aria-hidden="true"></span>読み込んでいます…</div>
+    <main id="main" hidden>
+      <div id="brief"></div>
+      <div class="sec">
+        <div class="eyebrow">品目から見る<span class="hint">押すと、相場・同業の価格・記事がまとめて出ます</span></div>
+        <div class="topics" id="topics"></div>
+      </div>
+      <div class="sec" style="padding-top:12px">
+        <button class="btn btn-sub press" type="button" data-open="v-all" id="allbtn">記事を新しい順にぜんぶ見る</button>
+      </div>
+      <div class="sec" id="reports-sec" hidden style="padding-top:18px">
+        <div class="eyebrow">レポート</div>
+        <div id="reports"></div>
+      </div>
+      <div class="sec" id="l3m-sec" hidden style="padding-top:20px">
+        <div class="eyebrow">AIの朝3本<span class="hint" id="l3m-date"></span></div>
+        <div id="l3m"></div>
+      </div>
+      <div class="sec" style="padding-top:20px">
+        <button class="btn btn-sub press" type="button" data-open="v-ask">AIに聞く</button>
+      </div>
+      <p class="foot">銅建値はJX金属、鉄は東京製鐵、金・銀は田中貴金属、基板はK&amp;Yシステムの公表値。ほかは市場データです。</p>
+    </main>
+  </div>
+</div>
+
+<!-- 品目の画面（押した品目で中身が変わる） -->
+<section class="subview" id="v-topic" hidden aria-labelledby="topic-title">
+  <div class="subtop"><div class="wrap">
+    <div class="subhead"><button class="back press" type="button" data-close><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="m15 5-7 7 7 7"/></svg>もどる</button><h2 id="topic-title">—</h2></div>
+  </div></div>
+  <div class="wrap">
+    <div id="topic-body"></div>
+    <div class="endback"><button class="btn btn-sub press" type="button" data-close>品目の一覧にもどる</button></div>
+  </div>
+</section>
+
+<!-- 記事ぜんぶ -->
+<section class="subview" id="v-all" hidden aria-labelledby="h-all">
+  <div class="subtop"><div class="wrap">
+    <div class="subhead"><button class="back press" type="button" data-close><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="m15 5-7 7 7 7"/></svg>もどる</button><h2 id="h-all">記事（新しい順）</h2></div>
+    <div class="chips scroll" id="chips" role="group" aria-label="記事の絞り込み"></div>
+  </div></div>
+  <div class="wrap">
+    <div class="feed" id="feed"></div>
+    <div class="endback"><button class="btn btn-sub press" type="button" data-close>けさの画面にもどる</button></div>
+  </div>
+</section>
+
+<!-- 聞く -->
+<section class="subview" id="v-ask" hidden aria-labelledby="h-ask">
+  <div class="subtop"><div class="wrap">
+    <div class="subhead"><button class="back press" type="button" data-close><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="m15 5-7 7 7 7"/></svg>もどる</button><h2 id="h-ask">AIに聞く</h2></div>
+  </div></div>
+  <div class="wrap"><div class="sec" id="ask"></div></div>
+</section>
+
+<div class="sheet" id="chart-sheet" role="dialog" aria-modal="true" aria-labelledby="chart-title" aria-hidden="true">
+  <div class="sheet-box">
+    <span class="grab" aria-hidden="true"></span>
+    <div class="sheet-title" id="chart-title">—</div>
+    <div class="sheet-sub" id="chart-sub"></div>
+    <div id="chart-body"></div>
+    <button class="btn btn-sub press" type="button" data-close>閉じる</button>
+  </div>
+</div>
+
+<script id="baked-data" type="application/json">{"updated":"9/30 8:03","fx":{"usdjpy":157.12,"date":"2026-09-29"},"manual":{"tiles":[{"name":"銅建値（9/24改定）","value":"2,420,000","unit":"円/t","diff":"+110,000"},{"name":"東鉄名古屋二級(9/19)","value":"48,500","unit":"円/t","diff":""}],"rows":[{"name":"金（店頭買取）","value":"22,791","unit":"円/g","diff":"-767"},{"name":"銀（店頭買取）","value":"324.50","unit":"円/g","diff":"-23.21"},{"name":"ビットコイン","value":"13,141,093","unit":"円","diff":"-1.2%"},{"name":"日経平均","value":"65,481","unit":"円","diff":"+462"},{"name":"NYダウ","value":"51,350","unit":"$","diff":"-514"}]},"items":[{"cat":"btc","label":"ビットコイン","title":"5%金利でも崩れぬビットコイン 金との明暗鮮明に","source":"日本経済新聞","link":"https://news.google.com/rss/articles/CBMibEFVX3lxTE9PWUJkYUV2VUZWVVR6MUkycHNWRjFIZ0pXVV9IQW9IUzg0eHBGVFJZWkRPVnM4bE5qdnhEZF8zak41emxWUUtiRG8wS1luMDN1emxmRjBKOERiVzI0RjZacGJ5V2ZPRjJWRWZxbQ?oc=5","published":"2026-09-30T06:50:28+09:00"},{"cat":"law","label":"法規制","title":"日本の廃棄物をエネルギーに変える市場の最新動向","source":"pando.life","link":"https://news.google.com/rss/articles/CBMiSkFVX3lxTE9DSndZdUpKSjBTZTFXX3ZHUlh5ZUNodnNOMjNYVWpFNDRzMGprVEdrYk1xUmlJb0NmcDhSVlE3MjluM0Z4ZUJIYUt3?oc=5","published":"2026-09-30T05:53:20+09:00"},{"cat":"law","label":"法規制","title":"木谷鉄リサイクル工業会会長／環境省の検討会、過剰規制を警戒／実効性ある規制求め２段階審査を提言","source":"日刊鉄鋼新聞 Japan Metal Daily","link":"https://news.google.com/rss/articles/CBMiXkFVX3lxTE1ySEFEUWowUjVYOFpxdXVNdGpNYUFTUEhjRlV2NGRDazA5bXNrQkNTdjJ2dmowWWZObzNXQkVOWXlSM2NYVXkwNWd0Um9kMGl0WENEQ0FhTGE1QWo4U1E?oc=5","published":"2026-09-30T05:00:00+09:00"},{"cat":"btc","label":"ビットコイン","title":"ビットコイン反発、支持線回復も8.8万～9万ドルに厚い上値抵抗","source":"Yellow.com","link":"https://news.google.com/rss/articles/CBMiiANBVV95cUxQWmFDU2liVENoamFsWGNCd0FhcjhtZnVrRTRmaEhPcjVzbzc4TnZlQVEtblJLTUVqallsMDRjSzRlMVplTy04c2t6LXpZeFVtVDg3NXVsVS1GWDNWQTQ4aHFDdG9GU3pxQkIxcDMzYzhzWjI2UDRFQk9OVFpWOXNrMk1JVEdic1JhOXRyZm5EX3pPY1puQUJRTUFZSllzUEw1U2lfMDRRdVc2LVFUWXNZVWk3Mi1Ya3lfY2tZZnRIYjV4S3VHM0lVb0FyOWhTZXg5MHgwZ1JrYUtoR1BRU3ZsbjBidnJfX0hYX0piM1RtSmxRUXpNYkZ4Wlpmb2hfYU83TXh3OHdJb0k5S2RJel9hOUZ6QzNfV1VCQmNkcDh3eDRXTW1IdGdkVGVSYkJzOVNqVG90Tll2c2FFMmtDVGc3b0JSLWFCby1BdXpfdUQwVVptNS1Hc2NJQjlwSmFIV3V5cmdkVVdJUGRnY3FLN0QycEJ1OUUybFhDay05STFuZmxMMGVLTnkzQw?oc=5","published":"2026-09-30T02:15:45+09:00"},{"cat":"btc","label":"ビットコイン","title":"BTC「価格上昇は意味不明」シフ氏がトークン化株式との競合を指摘","source":"bittimes.net","link":"https://news.google.com/rss/articles/CBMiTkFVX3lxTE96c1Rrc3ZoX0lFUEpMVkxLS25ZYXRyb1ZQa1p0SnBfNkJlRzl4Z3BtTDlCUm9DTTU5cEVrVm00WXg1aGJld0dyZktsVl83UQ?oc=5","published":"2026-09-29T23:31:30+09:00"},{"cat":"btc","label":"ビットコイン","title":"ビットコインが金を上回るパフォーマンスを見せる。現在、10万ドルへの急騰が予測される：Crypto Daily","source":"CoinDesk","link":"https://news.google.com/rss/articles/CBMioAFBVV95cUxOUTJoRFQ1M0kyaUp3aWJIUWtjZGIwMHc1X2lPR1l5X0NKVW9aaXBKWGQzVTAxbWhVdlBYZXBwN2dlZURfOXdRTFFOQTE3VG01YzQ3VnBLM3BQOEYyczU2YVdTREl2REg2T1dSMnNMeFNoZUVoaXhLQUJRMjJsSW82U2hJdlVQZDRLT3J3dVNrZEZoNVNHT2RjTXh2TnVhRTY2?oc=5","published":"2026-09-29T21:25:58+09:00"},{"cat":"dc","label":"AI・DC","title":"LGエナジーソリューション・LSケーブル&システム・ガオン電線...AIインフラに参入する韓国企業","source":"매일경제","link":"https://news.google.com/rss/articles/CBMiU0FVX3lxTE9OWUNpUW1FZUZ4WmROdWxHdmxVWTBFWEIxQURVc0lJU2EtV0xFek95VmYzMHRLei1rSjNvd1Q5QWNBd2RmRnZ4Z21aU2VXcWRiaWVv?oc=5","published":"2026-09-29T19:41:21+09:00"},{"cat":"mkt","label":"相場","title":"【銅が史上最高値なのに大赤字】加工賃ゼロで崩壊する製錬","source":"note","link":"https://note.com/aiinveststation/n/n8ed115eefa68","published":"2026-09-29T13:54:00+09:00"},{"cat":"gen","label":"業界","title":"鉄くずや家電など燃える…当時無人だったスクラップ置き場で火事 約3時間半後に消し止められケガ人なし","source":"Excite エキサイト","link":"https://news.google.com/rss/articles/CBMic0FVX3lxTE9yWFdGc1hEM3ljeGQ4QlhQaFltaVBRakpEMmptTnp4cXpGUGlVby1YaUlHWWtHdkNkUEJ1RWdRaE1qT0RhM3AxTGV3ZnlRVW9QOTE4LWpjXzZrZ2xHaXNVbVp5UUNCVndjdU9FRGcxdXZ1Skk?oc=5","published":"2026-09-29T12:11:00+09:00"},{"cat":"mkt","label":"相場","title":"鉄スクラップ 国際相場が上昇 トルコ調達増 国内連れ高要因に","source":"日刊産業新聞","link":"https://www.japanmetal.com/news-t20260930150923.html","published":"2026-09-29T12:00:00+09:00"},{"cat":"mkt","label":"相場","title":"三井金属のレアメタル溶液材料 黒鉛部材にTaCコート 被膜形成技術を開発（日刊産業新聞）","source":"Yahoo!ニュース","link":"https://news.google.com/rss/articles/CBMif0FVX3lxTE53Ynh5WkxReFVWUDV3Sk9fLTNVN05wdG5Gem5FWUlac29zRnd0alV6R1NQcmo0VW1fdTJ3blhLN2ludnBDTGdta1VBWnU5U0cyTWxKZEZQdGc3YjlHMDBTUGNuM1otY1NnWVlha0M1NFZKakY2c1Y4c0RzTkVvRkE?oc=5","published":"2026-09-29T11:35:28+09:00"},{"cat":"btc","label":"ビットコイン","title":"2026年9月29日 ビットコイン価格の３３％反発、ＥＴＦ・金利・ＡＩが試練に｜暗号資産（仮想通貨）・電子決済手段の取引所","source":"sbivc.co.jp","link":"https://news.google.com/rss/articles/CBMijgFBVV95cUxNbHl0bXRyNlcySVl1WFg4ZENoWHNGdGRtQmtJOU9yaUJCNjlsM1dOWXpnN2h2dHNOZ1NNVWNBVlpNdkRWclZSb2trMTF2WWpRQVhVRjNDRDBqS2ZxVXhVVkV2N1VieHRobU1URnQtdVFaVzVrNU9zZEt0UUx5R3N0MHgyLXpYVEtHLVVDb1l3?oc=5","published":"2026-09-29T10:00:56+09:00"},{"cat":"mkt","label":"相場","title":"東京／銅・黄銅屑／黄銅類1万6000円高","source":"日刊鉄鋼新聞","link":"https://www.japanmetaldaily.com/articles/-/267820","published":"2026-09-29T07:00:00+09:00"},{"cat":"mkt","label":"相場","title":"キオクシア2日続落、6万円の壁は遠い？指数横ばいでも値下がり6割｜非鉄金属が急騰【9/9日本株】 Anxiety (g2qs8xIiXZ)","source":"Unisba Media","link":"https://news.google.com/rss/articles/CBMia0FVX3lxTE9Vc1c5c2dhakZHLTR4SnpNLUdKbDhVX0dDY21NanpXUjQ2d21ZV2thaEREM3NDN3VLTHEzd3JTQld2ZzZ3clR5UlBLenpfQ2VOaHFnbURDZjBpcjI2NXd2RzRfWGJibzVjQUdz?oc=5","published":"2026-09-29T04:57:37+09:00"},{"cat":"dc","label":"AI・DC","title":"ベリリウム銅合金市場2035年予測：航空宇宙・防衛需要が成長を牽引 - ニュースと統計","source":"IndexBox","link":"https://news.google.com/rss/articles/CBMiwwFBVV95cUxNbHZ5Z2FSaUZzaGtITGZDeUlNSHRwckZhY081bnFtWE9EaThMYTRPRVJRUlNqcDFreFpLNHkwY3o5Q254Y3h4d3JvN1c5SkpqeFhtM1duWEpleUhUdzNLTHpESkQyLWIwd1h2cHJZX0IwOEFqQ0FwZzQ5M2pDRWpLMDZCTUZOR2xLTEZYdHlIX19aZFI5QlZZQXNWd0ZZU1EteWhqUlpaX1dZWFZDelFpajhqLU5JZFdOYm9ZNU9KVm1sMlE?oc=5","published":"2026-09-29T04:56:04+09:00","dups":2},{"cat":"dc","label":"AI・DC","title":"銅張積層板市場、5GとEV需要を背景に2035年まで拡大へ","source":"IndexBox","link":"https://news.google.com/rss/articles/CBMitgFBVV95cUxNSnNQWDFyVXlPYXBCRGNOc0RYU2VFUEVDQjVmOS1CLW9rYXBrbUgxSUFwaWVxb1J5VnczRFFVa2ZxdTlnb3Y1Q3gwSHBJa1FnOEJYVU5qdzQzbXcyZjVoeWpqWUR5VmNzTHZlWHc5V3djRnFMeXVzUVhZX2hwX05tYjlNdkRZcGdxRFJuTlFrVFN0S3l6TldYVUMwMEhVTm03TkxCaTctRjV5OWE4NU5JeG1ESjhFdw?oc=5","published":"2026-09-29T00:06:04+09:00"},{"cat":"gen","label":"業界","title":"焼却炉ボトムアッシュリサイクル設置市場の主要10社まとめ","source":"pando.life","link":"https://news.google.com/rss/articles/CBMiSkFVX3lxTFBLV2xNNnBmUFZ2cG9NYkU3bzkwanNkS0tFd2VPSERiSHdEQi03eUtMRFdTUHFuZ1VHcHZPNl9rUFZUQ19CZzFUT1VB?oc=5","published":"2026-09-28T21:27:40+09:00"},{"cat":"mkt","label":"相場","title":"【先行】周防大島町に金地金１キロの寄付/約２３５０万円相当、一般競争入札で売却、一般財源へ","source":"山口新聞 電子版","link":"https://news.google.com/rss/articles/CBMiakFVX3lxTE56MXc0ZFNhSlJ5ZnR0alB6dGdOb1BRRXVDR05VSW9kWm4zRVlZRzhOOHZYNnY0Uk9CMGM4TkczWGM0THp1akZncU5RdkJYODFRMklZeHVuSDJvRThGaEJFdk1jemVJY2lPdnc?oc=5","published":"2026-09-28T17:00:00+09:00"},{"cat":"law","label":"法規制","title":"【特定金属くず買受業】届出にはどんな書類が必要？","source":"note","link":"https://note.com/romeoand/n/n7c07b7afa1e6","published":"2026-09-28T16:02:00+09:00"},{"cat":"dc","label":"AI・DC","title":"銅ブームを望むペルーが、鉱山案件の許認可削減に動き出した","source":"Business Insider Japan","link":"https://www.businessinsider.jp/article/2609-news-peru-wants-to-unlock-a-copper-boom-permits-are-in-the-way/","published":"2026-09-28T13:45:00+09:00"},{"cat":"law","label":"法規制","title":"プラスチックリサイクルのesaとDigitalArchi、廃プラスチックを建築用3Dプリント型枠へ再生する取り組みを開始","source":"ニコニコニュース","link":"https://news.google.com/rss/articles/CBMiVEFVX3lxTE8wMDlhZjFrWng0RV81WmM3bW9tZUtDMHI1MzdIMHUxc1VfcGxyeFJHUTN1el9ZVEpYWDBnQXRiVGxfQXNMREI2UTRaajZQaHRWaXF5Uw?oc=5","published":"2026-09-28T12:30:29+09:00"},{"cat":"law","label":"法規制","title":"今後、医薬品·石油·廃棄物·旅客·貨物運送など国民生活と密接な業種で談合を繰り返すと、営業停止や登録取り消し処分を受けることになる。 談合処分の時効も最大15年に増える。政府と共に民主党は28日、国会..","source":"매일경제","link":"https://news.google.com/rss/articles/CBMiUkFVX3lxTFBISzkteExTS3haSkRWMk42eDNFMGRQbXZPbktIV1dDaFZBMTJGYzhLUGdnMmdIZzRZenFWU2J6RTg2UUQ4NnJ4UUY0UHJzX2hkcmc?oc=5","published":"2026-09-28T09:33:31+09:00"},{"cat":"dc","label":"AI・DC","title":"米国、AIデータセンター急増で電力設備の争奪戦に―変圧器の納期長期化、産業設備の保守にも影響","source":"財経新聞","link":"https://news.google.com/rss/articles/CBMiY0FVX3lxTE1MTVJwVXJBUzNYcVRaWnozakRvSkpVV1JPNi02OWQzNGlJdDR6Tk8wbTZGYjlDa0pVckNqNzdRM1JEamRtOS1WaVE0eUJhb0xZZWFra1ZmeUJmVF93TFFOeXY4b9IBaEFVX3lxTE9iRHV3VWFZdzNiMldna1kyaDVtN0I4clNYcWR5SFJKZlN3RnktSDZoVktTQlM2X05ZcXFjQXZKeEJKY1FLRWlUMmZkWE5CWU9RblFfeHlJNy1WY1lsOXo1YWZiZTN2eXhL?oc=5","published":"2026-09-27T18:36:45+09:00"},{"cat":"dc","label":"AI・DC","title":"銅電線の中期需要予測／３０年度に６０万トン台回復へ／データセンター関連需要などけん引 | 産業別動向記事 | プレミアム","source":"nikkinonline.com","link":"https://news.google.com/rss/articles/CBMiZEFVX3lxTE41S1F6RU4yV0xOU2laSXY0b3RUSlBudGdJSEZNX1IxNFl1blY3a1NIS0Z4ODl0ZFBZZXI3cXhUdVNMRm9oazdHTnoxM0VabFF0ZHdiWkRGZDBKa2pONm10ZlNIaE0?oc=5","published":"2026-09-27T17:11:05+09:00"},{"cat":"law","label":"法規制","title":"＃空き家活用 次に解体・産廃業界の適正化と ＃不法投棄ゼロ の徹底｜山本 龍","source":"t.co","link":"https://news.google.com/rss/articles/CBMiO0FVX3lxTFByeUdkXzlUeU5Kdk4zejhzUE9GaV95aDZZQWhVbWI5RjNNMW9ncHpsUmxLMktIUkowZW5v?oc=5","published":"2026-09-26T12:33:50+09:00"},{"cat":"gen","label":"業界","title":"未明に2人組が神社の屋根で...　銅板を剥がしていた男2人を現行犯逮捕　パトロール中の警察官が発見　8月から県内では山あいの神社の屋根が狙われる事件相次ぐ　警察は関連も含め捜査【長野・塩尻市】","source":"ｄメニューニュース","link":"https://news.google.com/rss/articles/CBMibEFVX3lxTE11S29UeFV2amFuRlQ4SFlXSTdiLW13OXA1R1gxRFoyZXk5MU9YQlBlamhTZGw2VGtLeFppNUNUbm5wVk80aXV3LXM0ZVBoVDRmWDcxaTltTk9sQ0dqeHBHOHBjbGZYVGhTRVM0c9IBckFVX3lxTE9UbGNSYV9aZXZzVU9mek1pemhJSjE1ZmNJcm81NURkamJBV2owZDRpSDViZUpOcG5jTnNOZnd1aGdzUFBPWDJ0eHZUd0N5WGZtR2N2MUVSMHUyeURwam15ZlV1TklXbWdhQUs1WnE2SjYxUQ?oc=5","published":"2026-09-26T09:48:00+09:00"},{"cat":"gen","label":"業界","title":"EU廃棄物輸送規則：草案リストでインド、マレーシア、タイが金属スクラップ輸入から除外 - ニュースと統計","source":"IndexBox","link":"https://news.google.com/rss/articles/CBMiuwFBVV95cUxOVGdsbnJ1czNKVEZURnVOSG5SbGktTzR3alVDNmdPeDJRb0RNX0JvYmphU1FaM3l3UGJiOWk5REJkelFQU1o1OHhVc1gzM1hGbFdGVGFidXNtN1pEclVXMTJ2WHQtT3RLMEpWNVJseHRuNFRCZ0xETWFnQV9XT24td3dGNUNpZUMxbjFsU1R5d2xNcGl3c2pFT1NUZ2M3NmVERGtaU3FHNVpyRHc0QjhfeVFyM3ZwSVVaVTcw?oc=5","published":"2026-09-26T05:12:40+09:00"},{"cat":"mkt","label":"相場","title":"（短信）亜鉛建値、5万4000円上げ 鉛も9000円上げ","source":"日本経済新聞","link":"https://www.nikkei.com/article/DGKKZO98947650V20C26A9QM8000/","published":"2026-09-26T04:00:00+09:00"},{"cat":"law","label":"法規制","title":"グローバル繊維強化プラスチック（FRP）リサイクル市場の洞察：2026年から2033年","source":"pando.life","link":"https://news.google.com/rss/articles/CBMiSkFVX3lxTFBvMzVlSllzWkpUdnZTREkxSGlVS2pHaXZzc0l0RkViVURMY2VvUTJkeUk2Y3Y0WU1YdlpCd3MySVBHOGNBRF8tRDJB?oc=5","published":"2026-09-25T21:02:31+09:00"},{"cat":"mkt","label":"相場","title":"2026年、銅がポンド当たり6.95ドルの最高値更新 金は小動きにとどまる","source":"Yellow.com","link":"https://news.google.com/rss/articles/CBMitANBVV95cUxNcEpYck9vMGhuTDV6SjhISjFWbkk0Ym9GUnVvSWt5ckJpSUVGcVZybVBsei0tbGtVbVhkckY4V29tMHc2ZmhqdHd4SnhrWGdpZ09lVDJWUjBqRGNlbnc1b243UUdvZW5GaG5qTDd0WG5OdTN5SXFtOEpremEzb01EMTJNRG52WDZZamhoZHdYT0ZBRS1POXpzWWVBTm9Xa0RhVndQVmRtZlBkT1doeTg1OFRoWWw0MmZLX1JsRlpQakxBdVhITkh4bzJ5YVZtUVBhWXBqNTRKM0dZUjZyc1JfZGhkekZNbFIxTk00X1dFNDFwc3JTZXUxYlBuT3ZuM2xqNlc1b3F5NDBZdG0zR0tsZFExTkN5UHN0ak04Y0NtaTZEbzVQOE5Wb1hQa0FObXFXd1J6QkpCVDJMSVRQQnVpd3lIaEp6V0dhZFdiUGQycnBPQUtoeEF4OWdGREw0dmgxNDZEQmxJM1FTZVRkdi1BRW95MTBZZVpsem03TUpUVUh0VjdfZXhoNFNMMWp5cjg0ODRkdGcya3JTNi1INnNBa1Ztb0dzWnJhOWdNTGlrd1pmV2Vt?oc=5","published":"2026-09-25T19:26:27+09:00"},{"cat":"mkt","label":"相場","title":"鉄スクラップ 東鉄買値上げ 輸出価格けん制狙い","source":"Yahoo!ニュース","link":"https://news.yahoo.co.jp/articles/d674d99ae986cd308dbece1edcfcdc64dbb25e59","published":"2026-09-25T16:06:00+09:00","dups":1},{"cat":"gen","label":"業界","title":"｢銅｣を狙う窃盗事件が急増 背景に脱炭素!?【WBSクロス】","source":"テレ東BIZ","link":"https://news.google.com/rss/articles/CBMiVEFVX3lxTFA5ei1rSV9PNmNaVjMtV0s2VFE4dkNiQWpqVGtvS3ByUUhPa1RzRVoyNGY4dGZ5ZUxXT2x5a1d2dE9yV2dfdllpTXkzdmdQUC1NclIzUA?oc=5","published":"2026-09-25T14:24:32+09:00"},{"cat":"mkt","label":"相場","title":"銅建値242万円11万円上げ 再び最高値に（日刊産業新聞）","source":"Yahoo!ニュース","link":"https://news.google.com/rss/articles/CBMif0FVX3lxTE15QnpmLWJZRGc5TVhxR0k4aDdKWDRORURVMmR5WGRMU01pMzEtYngxa25ZMXJUNFBPZXlRMkd4Y2hreHRERDNBZWhwcXd2VG1RNmhSbjFyTnI4ZHRSeFd0Y0pjRV93Qzg1a1NYaWU3VFJjX1paN3lITXY4WDdTM0k?oc=5","published":"2026-09-25T14:07:08+09:00","dups":2},{"cat":"mkt","label":"相場","title":"三菱電機 ワイヤ・レーザー金属 新3Dプリンター発売（日刊産業新聞）","source":"Yahoo!ニュース","link":"https://news.google.com/rss/articles/CBMif0FVX3lxTFBnNXN5NTlWQzZ5ZlpVaHhIU2hDSzlFVk1hTm5JRFdRUUhuNzEyMExibEU5Y1pBRlhPTzF3dnFFemtubXQ4cGNIUjIwRER5LVgtYjktNmtyTnY2aW11VVFpOWREWmIyT2g0ai00aElibnZ2N0IydHpOeDJCVFQ5OHc?oc=5","published":"2026-09-25T14:01:59+09:00","dups":1},{"cat":"dc","label":"AI・DC","title":"銅は新たなゴールドか 2026年に金上回る可能性","source":"BeInCrypto","link":"https://news.google.com/rss/articles/CBMiZEFVX3lxTE9DQzFvaXBhUHpyb3BlZW5naWtTSXZucU1xWUJHcW1xZWtPY1J3bzRpU2FoajFhNEpTMlJUaVh0MWtIU0Y2UWF6eHJrazduQ28weFdHUExCMHpIdi15Z3BfTFYzYTU?oc=5","published":"2026-09-25T11:10:52+09:00"},{"cat":"law","label":"法規制","title":"スクラップヤード規制、2028年までに全国で許可制へ｜県・市条例の","source":"note","link":"https://note.com/hanakenyusui/n/na8580098f2bb","published":"2026-09-25T07:46:00+09:00"},{"cat":"mkt","label":"相場","title":"電気設備の経済ニュース｜2026年9月25日号 銅建値242万円、週間+11万円","source":"note","link":"https://note.com/harita2021/n/n30f8b9f82e44","published":"2026-09-25T02:00:00+09:00"},{"cat":"dc","label":"AI・DC","title":"AIデータセンター1基が食う銅は1,600トン超——含み益+210%の銅株から","source":"note","link":"https://note.com/prime_laelia3161/n/n943ed875af7c","published":"2026-09-25T01:27:00+09:00"},{"cat":"law","label":"法規制","title":"再資源化事業等高度化法（資源循環の促進のための再資源化事業等の高度化に関する法律）","source":"kankyo-business.jp","link":"https://news.google.com/rss/articles/CBMihAFBVV95cUxPNnp5NDBTdlFENWNHQi1QR3VjNFh0dDVEc0dqVkFkNEQycEI5bmlQX1JWT0pWMjJBTl9GZ2JpMDhrU0hpb0MtT2RLRDhOTTVTZHlVWkwwMkJTc2lhYmFGSkFnLTFXWkpVRTZ3R3ZBUU1aWWNBZlBwRi1tZGhfbXF3MzRwNk0?oc=5","published":"2026-09-25T00:00:00+09:00"},{"cat":"mkt","label":"相場","title":"鉄スクラップ7月国内市況 輸出は2カ月ぶり減","source":"Yahoo!ニュース","link":"https://news.yahoo.co.jp/articles/e693ebb3fa51ed02c30724c092c1de171cc62e5f","published":"2026-09-24T12:48:00+09:00"},{"cat":"law","label":"法規制","title":"廃棄物の再資源化設備、保管・荷役施設に補助金 循環経済認定の港なら加点","source":"kankyo-business.jp","link":"https://news.google.com/rss/articles/CBMifEFVX3lxTE5pdjN3UDdfQ0RZcGtJT0dlUkViZUxLYURLQm5Rck1pUTYtVVJTTmJMTENXWHA5VEgxZnRmcVJJNFM1VDdRSHZBbjhvenZ4bDEzVU5fenlPSHBYUGNFcVB2WnBpbDFSMVZlTHdxMlhaTDNrLXV6Q1MwUEctYWo?oc=5","published":"2026-09-24T12:27:45+09:00"},{"cat":"mkt","label":"相場","title":"三井金属 全固体電池実用化へ共同開発 米社と協業（日刊産業新聞）","source":"Yahoo!ニュース","link":"https://news.google.com/rss/articles/CBMif0FVX3lxTE1VR1pYNWNSc1hZNDQteV9YRmpMQXRuT2JsNWNnZUNEUm5HVUlLWTlVMGREVFFIbUc5emtpS0tRdVp3VHhMODJwcFlSbm00Wjl0WUVHbEtGNWlHN0NYMXVUeGs1bmFaTkh0MXMyMVpTb0NHTUl6bjBVWlo4aVZ0MTA?oc=5","published":"2026-09-24T10:54:08+09:00"},{"cat":"mkt","label":"相場","title":"中国、銅製錬の採算悪化 副産物の硫酸価格急落（日刊産業新聞）","source":"Yahoo!ニュース","link":"https://news.google.com/rss/articles/CBMif0FVX3lxTE9jdS1LRWxyNmJ5OVRCbzBVRVFJYTVta2oxbkZKblRwRWlqUVpSSjVzUlRkQzNXV2hzXzU4Nm5ZRXRCb1hNc0JOMzFLMUZIZFV1TmJsQzdzOVh6cy14NlRxcmZXeUZ6VUlzeFBFWFZwOWhQX1FSWFdfOXF3bS1mdlE?oc=5","published":"2026-09-24T10:53:00+09:00"},{"cat":"mkt","label":"相場","title":"Ni系ステンレス冷薄続伸 1万円上げ 中部地区（日刊産業新聞）","source":"Yahoo!ニュース","link":"https://news.google.com/rss/articles/CBMif0FVX3lxTE96Q0Q4c2VTU055Q0NuSldGandNX0pVYkhjYjRlZGhVb3ZiMEd3MmdEVUZGTmE5bVIydFBMLVB0aW1jUTdYRDlta3BraldpYTJyZDhyMDkwN0pYSlhOVGRaaVM2NWFETGdwZkxwWE1BZGFUeE8yX00zd2kwVkhjUms?oc=5","published":"2026-09-24T10:51:48+09:00"},{"cat":"dc","label":"AI・DC","title":"オリエンタル・カッパー／銅ブスバー新工場稼働／年１万トン増強、銅ボール製造も視野","source":"日刊鉄鋼新聞 Japan Metal Daily","link":"https://news.google.com/rss/articles/CBMiXkFVX3lxTE9QUnBRYW45NG5raGlNZUJCZmdEeWpCclNjX0lYUXNUUy1QdXA0ZF9EMFVzcWREY3RVcG5uVVQxd3lTRm9SMkEtMklmd0J0bzF6cDkzcTJVQkFfQWVGZVE?oc=5","published":"2026-09-24T05:00:00+09:00"},{"cat":"mkt","label":"相場","title":"【9/24】銅の最高値更新と国内製錬事業の縮小","source":"note","link":"https://note.com/kiku_keizai/n/n204e10485f45","published":"2026-09-24T02:20:00+09:00"},{"cat":"law","label":"法規制","title":"JESCO事業の災害廃棄物事業の追加は画期的 廃棄物・3R研究財団、3R","source":"環境新聞オンライン","link":"https://www.kankyo-news.co.jp/news/5142e1dc-e1fd-4c9f-aa71-8a6a1324c800","published":"2026-09-24T02:00:00+09:00"},{"cat":"dc","label":"AI・DC","title":"AI普及で電子廃棄物が従来推計の40〜60倍に──鹿児島の中小企業が","source":"note","link":"https://note.com/juicy_eel7128/n/nfa261889308f","published":"2026-09-24T00:32:00+09:00"},{"cat":"dc","label":"AI・DC","title":"AIブームに乗り遅れたか バリー氏は銅に注目","source":"BeInCrypto","link":"https://news.google.com/rss/articles/CBMib0FVX3lxTE1GOHBoSkt2Tlk3Nk5ycnhlblBVVUkwNjJpOF9Penc1aWJYcnJfWmd1OEMxbjFHM05xcHlmZ1Jjbzh2YkhBcmhfb1hIZHJVU0o4UXJZWmZyc0t3b2RJVzNsR0hRLVk4eTVaaTJ5d1p6QQ?oc=5","published":"2026-09-23T19:44:14+09:00"},{"cat":"dc","label":"AI・DC","title":"BHP AIデータセンターもEVも銅が必要で足りなくなる？、銅を掘る巨人","source":"note","link":"https://note.com/atsumaro/n/n3db8dee9c4c4","published":"2026-09-23T10:11:00+09:00"},{"cat":"law","label":"法規制","title":"金属くずを「置いておく」だけで許可が要る時代へ","source":"note","link":"https://note.com/kjsnakei/n/n69d5daf3a796","published":"2026-09-21T11:00:00+09:00"},{"cat":"law","label":"法規制","title":"#099 最低賃金が5県で確定・廃棄物処理法が次のフェーズへ・地方","source":"note","link":"https://note.com/clever_pansy3598/n/nb62cd0b518f7","published":"2026-09-21T05:16:00+09:00"},{"cat":"law","label":"法規制","title":"住友金属鉱山、愛媛にて電池リサイクルプラントを竣工。商業規模での稼働は国内初","source":"Circular Economy Hub","link":"https://news.google.com/rss/articles/CBMic0FVX3lxTFBhV3hTNmNvMEMzbERENHd5WjIwYktoNmRKNW9OandJcXMwT2hkTEh2OGgydjcyc2hPZkJjTkJucHBTTWlrNERUcDRNVVUwSF9aRDR5RmREUFhoOS1iNXZnT1Y3S200bVRzNXV1VHgyQVgxR0U?oc=5","published":"2026-09-20T16:00:17+09:00"},{"cat":"law","label":"法規制","title":"「ごみ」を海外に売る時代が終わる――EUが金属スクラップに","source":"note","link":"https://note.com/leo77777/n/nd2dcbbf57610","published":"2026-09-18T18:15:00+09:00"},{"cat":"law","label":"法規制","title":"【日本】環境省、非常災害廃棄物の迅速処理で自治体と民間業者と","source":"sustainablejapan","link":"https://sustainablejapan.jp/2026/09/18/japan-disaster-waste/130678","published":"2026-09-18T02:00:00+09:00"},{"cat":"law","label":"法規制","title":"環境省 スクラップヤード対策検討会 事業者許可 二段階審査を（日刊産業新聞）","source":"Yahoo!ニュース","link":"https://news.google.com/rss/articles/CBMif0FVX3lxTE5idV96MTh3c1NJTDRDNTYydDdna1dmTno0NExRTHBpN0FTRmRacmlwUS03MDJHVTJNZzdtVERWTmpuRU1xaFVDNzI2Qno0Q0lhcjFGcjVIV09uTkVndVNsOGcwWHdfMW53MzhydWtDRVk0bWEzQWVkakc0aUxqZFU?oc=5","published":"2026-09-17T16:00:00+09:00","dups":1},{"cat":"law","label":"法規制","title":"アルミスクラップの輸出制限案、欧州委が撤回。リサイクル業界団体が歓迎表明","source":"Circular Economy Hub","link":"https://news.google.com/rss/articles/CBMinAFBVV95cUxQQnFMVThVWnZDd0VQb1VmaVNVeDlUbXlhT2lhM2hMV2gtLTRZSFpPemgwRVNqVkdoVTZGZDg5WTVCVmIycDdvMTVjTHVVREQ5SUFJYXFOS2xSSFhOVlkwTlUyNUJhN2hhVUQteHByZHpwNVBJUmpIcmdpdXhVc05JSkxvZU0xOVV3ajVJMU5kcUpUS3dfakVLSDVKblo?oc=5","published":"2026-09-17T16:00:00+09:00"},{"cat":"law","label":"法規制","title":"非常災害廃棄物の処理迅速化へ政令閣議決定。廃棄物処理法等改正法の施行に伴い再委託やアセス特例基準を整備","source":"Circular Economy Hub","link":"https://news.google.com/rss/articles/CBMia0FVX3lxTE11bXVXSVlGOWo2YVZjeU5qcENZV1ZIVXY0dGtGWG9lQW1LVmhGRE5melZQSm9DRlpMUm5ubk1OSVZjenRHXzBZbXFPaFc4WDVSbjRUb1BNNVlZS05ZeFQ2WU1JdlpiUTVaZE5Z?oc=5","published":"2026-09-17T12:00:15+09:00","dups":1},{"cat":"law","label":"法規制","title":"特定放射性廃棄物の最終処分に関する法律に基づく文献調査等に関する考え方等について","source":"pref.hokkaido.lg.jp","link":"https://news.google.com/rss/articles/CBMiZkFVX3lxTE9GUHFDRXU4SGt3ajk1dHZCMXQwc2NwSXliemxrWVQ5TzlTeXlvN015LUlxbWZkeFZOV3BDVmxUb1J4bHJ1aEpZaEtEYzJoVTZmNDNJNTlKM3R6UEtwV2p5TE5Ea0Mtdw?oc=5","published":"2026-09-16T16:00:00+09:00"},{"cat":"law","label":"法規制","title":"環境省のヤード環境対策技術検討会／木谷鉄リ工業会会長、「２段階の許可審査」を提言／〝地域との共生〟書類で判断","source":"日刊鉄鋼新聞 Japan Metal Daily","link":"https://news.google.com/rss/articles/CBMiXkFVX3lxTFBLUUg1Ylltc29VUndkUTZqVTFDd29QbUR6T1V1Qkg3WnBiV3hxdDY0M1BVS3dkaUs0cy1LNW5wNUpvQXlyMlZWTnpWNDBDZkw4anozSDBGeEt5OGhZbkE?oc=5","published":"2026-09-16T16:00:00+09:00"},{"cat":"law","label":"法規制","title":"近畿から資源循環の地域モデルを発信 「近畿地方資源循環自治体","source":"環境新聞オンライン","link":"https://www.kankyo-news.co.jp/news/fa83d941-de08-4240-85bf-2818b0cc6bfd","published":"2026-09-16T09:00:00+09:00"},{"cat":"law","label":"法規制","title":"DOWAエコシステム、使用済み電動車の駆動モーターからレアアース磁石を回収・再資源化する実証事業を開始へ。環境省の公募に採択","source":"Circular Economy Hub","link":"https://news.google.com/rss/articles/CBMiggFBVV95cUxOb2F5RnhjbjVkRkVMMjdqNDJtN3hHeHJHd1RLbmVoY05jcTZnNEhDYS1aOGJteG00cGlpS09mOE5hbjFVV19COERncHhQUDhSWE5tOVQ0UzRGWXFzanFESlMzUy1mcVBSUV80Z1JZc3N2dzBDUmF2Y2hpblJwUnBYWXdR?oc=5","published":"2026-09-15T16:00:00+09:00"},{"cat":"law","label":"法規制","title":"災害廃棄物の処理費 国が97.5％負担へ　高市首相が熊本地震対応を報告","source":"epochtimes.jp","link":"https://news.google.com/rss/articles/CBMiWEFVX3lxTE5FeTZBc21WOVFva1g3OUxVZHpNQ1ZkTFBHYU94Y1B2SllUcnl5UjlqVk5aWExkY3ltODV3V290Qkg2VUJZNmdNbU1JY3FpU3d3dWVId3BtMW7SAV5BVV95cUxNR2tYRFBaQU9oZ092U09BZHgwMXNzaUotQ3pNQ1phNDBDaXkxNjF3Y00tMnpYSnBKME9JZTk0RW5LMGVmX1BndmFXREFzcHJNdUVta0dOZy1hOGxRV2h3?oc=5","published":"2026-09-12T16:00:00+09:00"},{"cat":"law","label":"法規制","title":"2027年4月義務化の『再資源化項目の報告』に対応！さらに処分場単体で使える『DXE Station 処分業者』も同時リリース","source":"PR TIMES","link":"https://news.google.com/rss/articles/CBMiakFVX3lxTFBIeEViZko5UXhXb015VF9KWGk3WWJOaVJqUUg2dkhPTFJzLU9oT2FMcjZRNUFUVGxpZ01rRU16Ynd2U0w0ajFOS09kUElQVS1SYjV1aTM4RkFheTExNi1mVk1BNTE4U1hySmc?oc=5","published":"2026-09-11T16:00:00+09:00","dups":1},{"cat":"law","label":"法規制","title":"TRUSTDOCK、古物営業法の施行規則改正に対応する口座情報確認APIを","source":"PR TIMES","link":"https://prtimes.jp/main/html/rd/p/000000274.000003955.html","published":"2026-09-10T18:00:00+09:00"},{"cat":"law","label":"法規制","title":"『サーキュラープラットフォーム』サービス第二弾を提供開始。「配車WEB予約」と「サーキュラーレポート」で、廃棄物管理のDXと環境経営を高度化｜Infoseekニュース","source":"Infoseek","link":"https://news.google.com/rss/articles/CBMickFVX3lxTE5KeUh0OXM3UzBuSE5hSW5YX25rbTYxcUtVaUk2VmN6dEY5QUFtR2VTSVA0WjQxMmRRaG4xWE9kbDFkeFNOd28xdDFnTDFsN1l6ZFZuVGxsTEh4SkpZMjdkazdTZS11aU52SmVUVEhTN3lVdw?oc=5","published":"2026-09-05T16:00:00+09:00"},{"cat":"law","label":"法規制","title":"代替フロン回収・再生設備導入に補助金、大気中に放出した場合の罰金対象機器を拡大…環境省方針","source":"読売新聞","link":"https://news.google.com/rss/articles/CBMiaEFVX3lxTE5FMHNtX3JhSGhKaGJQZ282ZEdtaUZCR2JyMjdjbWpFZ3l3cllHNVFJeWlfOFdyb3FJYlN6UjNIVHVNUkVVb3E1NkdvYVNnWHBleVB6VVB4Z0dSTzZKMXlVLU1FTzhrNVFO?oc=5","published":"2026-09-04T16:00:00+09:00"},{"cat":"law","label":"法規制","title":"「特定金属くず」の法律相談","source":"弁護士ドットコム","link":"https://www.bengo4.com/c_5/bbs/%E7%89%B9%E5%AE%9A%E9%87%91%E5%B1%9E%E3%81%8F%E3%81%9A/","published":"2026-09-04T12:26:00+09:00"},{"cat":"law","label":"法規制","title":"リース満了の太陽光パネル活用、資源循環モデル構築 新法見据え2社提携へ","source":"kankyo-business.jp","link":"https://news.google.com/rss/articles/CBMifEFVX3lxTE9SblAzZzVDblFwN2l5bnNzR2dWaUtHZmM0amYwcDZyMFF0cFg5VzlUaThzcVpTdldFamI3YnM1V2wza1JoT2NodkM0S1hwemV3cW40TlFIS3VxTUhJVV9PWTM1MHY1T0RWNHJpRnI4bGpBRXV2d1VXbWRlX0M?oc=5","published":"2026-09-03T16:00:00+09:00"},{"cat":"law","label":"法規制","title":"ＴＲＥＨＤの新中計を聞く／阿部光男社長／公民・動静脈連携を強化／解体事業進出、Ｍ＆Ａも推進","source":"japanmetal.com","link":"https://news.google.com/rss/articles/CBMiY0FVX3lxTFBZdkVFTlJQRno4aWgydzRvVWJJZ3EyUDdrejM3bks2LXQ0RW1qVkI2blpXcTNKWTg0RUFOOEZtcVdiQUpMZi1pc0V6SktVdkJXWEtZT1ZJdVotTF9oZWpNcDludw?oc=5","published":"2026-09-02T16:00:00+09:00"},{"cat":"law","label":"法規制","title":"水銀の規制が厳しくなったと聞きました。水銀廃棄物はどのように廃棄したらよいですか？","source":"pref.saitama.lg.jp","link":"https://news.google.com/rss/articles/CBMidEFVX3lxTFBXLTg2WmR2bEw5MEN0ci16SklMTHItelB5VjJ6T0lGZ2tWclktdkg4RGd1ckpCSFFLNW5McGRIMEhZNjBUdGRDbWEyTHBDSkFxWEk4ekhKdDVRQ3lxdFhyaENra2J4ZVJkNGQ4Ql9sZ3VTeHY4?oc=5","published":"2026-08-31T16:00:00+09:00"},{"cat":"law","label":"法規制","title":"電子廃棄物管理の市場シェアと業界の成長 [2034 年]","source":"Fortune Business Insights","link":"https://news.google.com/rss/articles/CBMi4wFBVV95cUxNR0Z1bVlBV05CZi10am0wQnlUblVELWNQb3BLSVg2VWZ6aHozSHJWZ1pMbmtUcXRkd1lZUml6TGJFNHd0VHN3VXNtWjVRSFpaOFZKeF80elZlN2x5Ny1OSmZCbzlCN2lDSjU5UTU2X2hvbTRtMVpRVlBxcHo5OW1Oel9GazVxYk4zcXo5WWdjcTJjbVhTTlJHN2dxT0NZeEw4TTZuejI2MWlaLXBMcmc4Q0s3ZUVocWJGeGRTaUdrVnlFSTVyUXlQZzEwQ0xmMVRFLXA5bWxOMFlWWEMyMkhlZ0JFZw?oc=5","published":"2026-08-31T16:00:00+09:00"},{"cat":"law","label":"法規制","title":"福島日産、中古部品・タイヤ買取サービス開始…41店舗で","source":"レスポンス（Response.jp）","link":"https://news.google.com/rss/articles/CBMiX0FVX3lxTE9NeHNNekFISVBlVHI4X2FqYUxOM2xhLUF0eW4tZnIxN01JMXJ5WnFkMUZ4ckRKVmdqLUxXa2ttbjRkSUFzTmVNUlNpQnJMY2paNXRsY1l2ZWlmRFRlVDRz?oc=5","published":"2026-08-28T16:00:00+09:00"},{"cat":"law","label":"法規制","title":"KANEYOグループの福島日産とナプロアース、中古部品の「買取から再販まで」を県内41店舗に実装（PR TIMES）","source":"毎日新聞","link":"https://news.google.com/rss/articles/CBMiaEFVX3lxTFBiSDhnWlotRk9mVnFhUlFrQVN6WFVCZWRISXVBQXZUY3pFX3BKQ0xaUFozWmljd01QYlhSQ0Z4OWVSTUJjZG8xd1A5R2tkb2w0S2JaaTRyVEo4bWtkTUY0QVRBVGhPckpu?oc=5","published":"2026-08-28T16:00:00+09:00"},{"cat":"law","label":"法規制","title":"倉庫・食品工場の冷凍冷蔵設備に最大6,700万円！東京都の省エネ型ノンフロン機器補助","source":"補助金ポータル","link":"https://news.google.com/rss/articles/CBMiXkFVX3lxTE5tTDgtV1VSTENZcTZwdmhHSG9uZlcwc0l3ODk0N19jLUNhb3lOQ3Zzc2FPWHNITnk5SkRiaTRYdnhJRmMxMEh1dVRFRmFaWkRobk8wYUN5eVVXc2NsRUE?oc=5","published":"2026-08-24T16:00:00+09:00"},{"cat":"law","label":"法規制","title":"価格が高騰する銅を狙って太陽光発電所から送電ケーブル2.2トンを盗んだか 金属盗対策法違反の疑いなど 男２人を逮捕・送検 富山","source":"TBS NEWS DIG","link":"https://news.google.com/rss/articles/CBMiZ0FVX3lxTFB2ME5BU3FYY25saG1YZG5MSS1ERGE3YW1tMUhrZUVDRVVUVDZuZWJtekd0bFNMUGZyNnNfTzFoVDc0V1Y5LUVBN2ZqLUxyN2tKSldySHRYNm0wZUt6MGZOMTlLVkRsV0U?oc=5","published":"2026-08-08T16:00:00+09:00"},{"cat":"law","label":"法規制","title":"スクラップヤードなど「不適切な土地利用」規制強化へ 国交省","source":"朝日新聞","link":"https://news.google.com/rss/articles/CBMiZ0FVX3lxTFByLVJ2UHlvX203WjJiRnpHcXkxOG1OWXBQeEhucVd3MDdUcWExc2EyNWdDNW9UZ0JfeXhOOFZKX3RwN1htVU5NYTNtUzBTT3BsRXpqRldYZ3E3TFB5NU82QmIyMXJEanM?oc=5","published":"2026-08-07T16:00:00+09:00"},{"cat":"law","label":"法規制","title":"三菱ケミカルなど9社、環境省のプラスチック資源循環実証に参画：リサイクルニュース","source":"MONOist","link":"https://news.google.com/rss/articles/CBMib0FVX3lxTE5KWXpTN3UzQ0llRE4wcFZzRXdaWFdtQk5MWlZMc0hndlpZa216US0yeVhkWjBVLUhrSzFtVno3eUVMYnlaRXNQTk5CdVV1S0Y5b0ZUVEVsTFkyenFkS0hBcGp3X2ZZSEhLNnB4RkJ6OA?oc=5","published":"2026-08-06T16:00:00+09:00"},{"cat":"law","label":"法規制","title":"英国の循環経済への移行、依然として「回収・リサイクル偏重」が課題に","source":"Circular Economy Hub","link":"https://news.google.com/rss/articles/CBMiS0FVX3lxTE1YQmJQYTRNc3k2TXdkS2Z5Rlg0TDNOUUlWLXF6dEVYSThna2xUWW02YVZsYmFZeV9WbUlqVXJPX1JpRzRyREdlVFRMYw?oc=5","published":"2026-08-04T16:00:00+09:00"},{"cat":"law","label":"法規制","title":"廃棄物リサイクルを脱炭素の最前線へ。呉市から国内初※の「グリーン水素×資源再生」モデル構築に向けた実証実験を開始","source":"PR TIMES","link":"https://news.google.com/rss/articles/CBMiakFVX3lxTE4yV2NsU0xTNTJVTmdXdVpMNG1sckVZT2s3cjdhdmNMVnZuRDREd19nakVnS0ZoMW5GMDlNakFrTlVERlNRNFp6Q3pCVkFlZFIzcG01RHRFNHdqaDBKTzRiQ29TT01SajlpSEE?oc=5","published":"2026-08-04T16:00:00+09:00"},{"cat":"law","label":"法規制","title":"【廃掃法改正】これまでの条例から法令で規制強化金属くず等を扱うヤードを許可制に","source":"古紙ジャーナル","link":"https://news.google.com/rss/articles/CBMiYEFVX3lxTE9BN25kc0Y1Tm9hdTI2WEc4RmxHblBUa2UxdC05bm4zMkJzbWZvVV9EVmJReFJGVUhQc1E5UGZGbXhQbXdGYkhUVkRlZHVPVzMwZEdBTUR3Y3dQdFlrU3h4aw?oc=5","published":"2026-08-03T16:00:00+09:00"},{"cat":"law","label":"法規制","title":"ＥＶ充電所の破壊相次ぐ 銅線を狙った犯行―オーストラリア：時事ドットコム","source":"時事ドットコム","link":"https://news.google.com/rss/articles/CBMiY0FVX3lxTFBpR2g0LW5nLU1FcGFrMmRBSFJia1Nfcy1mdS1peXNhWmRxeGozbDBTRlhibjZLLWFwUHhzQnZReG4xTEdEVnNZMTkzUzJTalVPcVVscFU3c3RyZVZKcEVHZUllUQ?oc=5","published":"2026-08-02T16:00:00+09:00","dups":1}],"boards":{"asof":"9/28","rows":[{"name":"メモリー","value":"13,000","unit":"円/kg","diff":"0"},{"name":"ＣＰＵグリーン（下）","value":"4,000","unit":"円/kg","diff":"0"},{"name":"Ｃクラス基板","value":"2,000","unit":"円/kg","diff":"0"},{"name":"Ｄクラス基板","value":"1,100","unit":"円/kg","diff":"0"},{"name":"マザーボード（Ｃ）","value":"1,050","unit":"円/kg","diff":"0"}]},"compare":{"dealers":["土金","長澤","大畑","安城貿易","宝源","浜屋","ケイワイ","キバセン"],"rows":[{"group":"銅","name":"ピカ銅","cells":[{"dealer":"長澤","value":2430,"best":true},{"dealer":"土金","value":2400,"best":false},{"dealer":"大畑","value":2350,"best":false},{"dealer":"宝源","value":2240,"best":false}],"spread":190,"diff":"0"},{"group":"銅","name":"並銅","cells":[{"dealer":"土金","value":2300,"best":true},{"dealer":"大畑","value":2250,"best":false},{"dealer":"宝源","value":2130,"best":false}],"spread":170,"diff":"0"},{"group":"銅","name":"込銅","cells":[{"dealer":"長澤","value":2300,"best":true},{"dealer":"土金","value":2280,"best":false},{"dealer":"大畑","value":2200,"best":false}],"spread":100,"diff":"0"},{"group":"銅","name":"下銅","cells":[{"dealer":"宝源","value":2030,"best":true},{"dealer":"土金","value":1980,"best":false}],"spread":50,"diff":"0"},{"group":"電線","name":"雑線(銅率80%)","cells":[{"dealer":"大畑","value":1800,"best":true},{"dealer":"長澤","value":1780,"best":false},{"dealer":"宝源","value":1750,"best":false}],"spread":50,"diff":"0"},{"group":"電線","name":"雑線(銅率60〜65%)","cells":[{"dealer":"大畑","value":1290,"best":true},{"dealer":"宝源","value":1280,"best":false},{"dealer":"長澤","value":1260,"best":false}],"spread":30,"diff":"0"},{"group":"電線","name":"VA線・F線","cells":[{"dealer":"土金","value":1040,"best":true},{"dealer":"長澤","value":980,"best":false},{"dealer":"大畑","value":980,"best":false},{"dealer":"宝源","value":960,"best":false}],"spread":80,"diff":"0"},{"group":"電線","name":"家電線","cells":[{"dealer":"長澤","value":700,"best":true},{"dealer":"大畑","value":670,"best":false}],"spread":30,"diff":"0"},{"group":"電線","name":"エアコンパイプ","cells":[{"dealer":"土金","value":1320,"best":true},{"dealer":"長澤","value":1260,"best":false},{"dealer":"大畑","value":1200,"best":false},{"dealer":"宝源","value":1000,"best":false}],"spread":320,"diff":"0"},{"group":"真鍮・砲金","name":"砲金","cells":[{"dealer":"土金","value":2050,"best":true},{"dealer":"大畑","value":2010,"best":false},{"dealer":"長澤","value":2000,"best":false}],"spread":50,"diff":"0"},{"group":"真鍮・砲金","name":"込砲金","cells":[{"dealer":"土金","value":2000,"best":true},{"dealer":"大畑","value":1900,"best":false},{"dealer":"長澤","value":1740,"best":false}],"spread":260,"diff":"0"},{"group":"真鍮・砲金","name":"真鍮(上)","cells":[{"dealer":"土金","value":1600,"best":true},{"dealer":"大畑","value":1480,"best":false},{"dealer":"宝源","value":1460,"best":false},{"dealer":"長澤","value":1450,"best":false}],"spread":150,"diff":"0"},{"group":"真鍮・砲金","name":"込真鍮","cells":[{"dealer":"長澤","value":1450,"best":true},{"dealer":"宝源","value":1380,"best":false}],"spread":70,"diff":"0"},{"group":"真鍮・砲金","name":"真鍮ダライ粉","cells":[{"dealer":"土金","value":1200,"best":true},{"dealer":"長澤","value":1150,"best":false}],"spread":50,"diff":"0"},{"group":"アルミ","name":"アルミ(上)","cells":[{"dealer":"長澤","value":500,"best":true},{"dealer":"土金","value":460,"best":false},{"dealer":"宝源","value":400,"best":false}],"spread":100,"diff":"0"},{"group":"アルミ","name":"アルミサッシ","cells":[{"dealer":"長澤","value":440,"best":true},{"dealer":"大畑","value":380,"best":false}],"spread":60,"diff":"0"},{"group":"アルミ","name":"アルミガラ","cells":[{"dealer":"大畑","value":380,"best":true},{"dealer":"土金","value":350,"best":false},{"dealer":"長澤","value":290,"best":false},{"dealer":"宝源","value":280,"best":false}],"spread":100,"diff":"0"},{"group":"アルミ","name":"アルミ缶(プレス)","cells":[{"dealer":"長澤","value":380,"best":true},{"dealer":"土金","value":300,"best":false}],"spread":80,"diff":"0"},{"group":"アルミ","name":"アルミラジエーター","cells":[{"dealer":"安城貿易","value":220,"best":true},{"dealer":"長澤","value":150,"best":false},{"dealer":"宝源","value":150,"best":false},{"dealer":"大畑","value":80,"best":false},{"dealer":"土金","value":70,"best":false}],"spread":150,"diff":"0"},{"group":"アルミ","name":"アルミホイール","cells":[{"dealer":"長澤","value":495,"best":true},{"dealer":"宝源","value":460,"best":false},{"dealer":"大畑","value":420,"best":false}],"spread":75,"diff":"0"},{"group":"亜鉛・鉛","name":"亜鉛","cells":[{"dealer":"土金","value":250,"best":true},{"dealer":"大畑","value":240,"best":false},{"dealer":"長澤","value":210,"best":false}],"spread":40,"diff":"0"},{"group":"亜鉛・鉛","name":"鉛(上)・鉛管","cells":[{"dealer":"土金","value":260,"best":true},{"dealer":"大畑","value":260,"best":true},{"dealer":"長澤","value":210,"best":false},{"dealer":"宝源","value":200,"best":false}],"spread":60,"diff":"0"},{"group":"亜鉛・鉛","name":"鉛(下)・込鉛","cells":[{"dealer":"長澤","value":140,"best":true},{"dealer":"土金","value":130,"best":false}],"spread":10,"diff":"0"},{"group":"亜鉛・鉛","name":"バランスウエイト","cells":[{"dealer":"大畑","value":35,"best":true},{"dealer":"長澤","value":30,"best":false}],"spread":5,"diff":"0"},{"group":"基板／クラス","name":"基板SS","cells":[{"dealer":"ケイワイ","value":8300,"best":true},{"dealer":"浜屋","value":7790,"best":false},{"dealer":"キバセン","value":6900,"best":false}],"spread":1400,"diff":"0"},{"group":"基板／クラス","name":"基板S","cells":[{"dealer":"ケイワイ","value":6800,"best":true},{"dealer":"大畑","value":6000,"best":false},{"dealer":"浜屋","value":5960,"best":false}],"spread":840,"diff":"0"},{"group":"基板／クラス","name":"基板A","cells":[{"dealer":"ケイワイ","value":4500,"best":true},{"dealer":"大畑","value":4000,"best":false},{"dealer":"浜屋","value":3500,"best":false}],"spread":1000,"diff":"0"},{"group":"基板／クラス","name":"金メッキ基板(厚金)","cells":[{"dealer":"浜屋","value":3500,"best":true},{"dealer":"ケイワイ","value":3500,"best":true}],"spread":0,"diff":"0"},{"group":"基板／クラス","name":"基板B","cells":[{"dealer":"ケイワイ","value":3300,"best":true},{"dealer":"大畑","value":3000,"best":false},{"dealer":"浜屋","value":2750,"best":false}],"spread":550,"diff":"0"},{"group":"基板／クラス","name":"基板C","cells":[{"dealer":"大畑","value":2000,"best":true},{"dealer":"ケイワイ","value":2000,"best":true},{"dealer":"浜屋","value":1700,"best":false}],"spread":300,"diff":"0"},{"group":"基板／クラス","name":"基板D","cells":[{"dealer":"浜屋","value":1150,"best":true},{"dealer":"ケイワイ","value":1100,"best":false}],"spread":50,"diff":"0"},{"group":"基板／クラス","name":"家電基板","cells":[{"dealer":"ケイワイ","value":470,"best":true},{"dealer":"大畑","value":450,"best":false}],"spread":20,"diff":"0"},{"group":"基板／クラス","name":"電源基板","cells":[{"dealer":"浜屋","value":460,"best":true},{"dealer":"大畑","value":150,"best":false}],"spread":310,"diff":"0"},{"group":"基板／CPU・IC","name":"CPUセラ(上)","cells":[{"dealer":"浜屋","value":68800,"best":true},{"dealer":"ケイワイ","value":53000,"best":false},{"dealer":"キバセン","value":50000,"best":false},{"dealer":"大畑","value":42000,"best":false}],"spread":26800,"diff":"0"},{"group":"基板／CPU・IC","name":"CPUセラ長方形(金足)","cells":[{"dealer":"浜屋","value":68800,"best":true},{"dealer":"大畑","value":37000,"best":false},{"dealer":"ケイワイ","value":21000,"best":false}],"spread":47800,"diff":"0"},{"group":"基板／CPU・IC","name":"CPUセラ(金属板なし)","cells":[{"dealer":"浜屋","value":31900,"best":true},{"dealer":"ケイワイ","value":24000,"best":false}],"spread":7900,"diff":"0"},{"group":"基板／CPU・IC","name":"CPU黒","cells":[{"dealer":"浜屋","value":28500,"best":true},{"dealer":"ケイワイ","value":21000,"best":false},{"dealer":"大畑","value":15000,"best":false}],"spread":13500,"diff":"0"},{"group":"基板／CPU・IC","name":"CPUセラ(金属板あり)","cells":[{"dealer":"ケイワイ","value":21000,"best":true},{"dealer":"浜屋","value":19200,"best":false}],"spread":1800,"diff":"0"},{"group":"基板／CPU・IC","name":"IC正方形","cells":[{"dealer":"浜屋","value":12360,"best":true},{"dealer":"ケイワイ","value":12000,"best":false},{"dealer":"大畑","value":4500,"best":false}],"spread":7860,"diff":"0"},{"group":"基板／CPU・IC","name":"CPU緑(上)","cells":[{"dealer":"浜屋","value":9900,"best":true},{"dealer":"ケイワイ","value":7000,"best":false}],"spread":2900,"diff":"0"},{"group":"基板／CPU・IC","name":"CPU緑(下)","cells":[{"dealer":"大畑","value":4000,"best":true},{"dealer":"ケイワイ","value":4000,"best":true},{"dealer":"浜屋","value":3100,"best":false}],"spread":900,"diff":"0"},{"group":"基板／CPU・IC","name":"IC長方形","cells":[{"dealer":"浜屋","value":2750,"best":true},{"dealer":"ケイワイ","value":2000,"best":false},{"dealer":"大畑","value":500,"best":false}],"spread":2250,"diff":"0"},{"group":"基板／PC部品","name":"PCメモリー","cells":[{"dealer":"ケイワイ","value":13000,"best":true},{"dealer":"浜屋","value":12300,"best":false},{"dealer":"大畑","value":12000,"best":false},{"dealer":"キバセン","value":9200,"best":false}],"spread":3800,"diff":"0"},{"group":"基板／PC部品","name":"拡張カード(上)","cells":[{"dealer":"ケイワイ","value":5500,"best":true},{"dealer":"浜屋","value":4080,"best":false}],"spread":1420,"diff":"0"},{"group":"基板／PC部品","name":"ノートPC基板","cells":[{"dealer":"浜屋","value":5350,"best":true},{"dealer":"ケイワイ","value":5000,"best":false},{"dealer":"キバセン","value":4000,"best":false}],"spread":1350,"diff":"0"},{"group":"基板／PC部品","name":"HDD基板","cells":[{"dealer":"浜屋","value":4620,"best":true},{"dealer":"ケイワイ","value":4200,"best":false}],"spread":420,"diff":"0"},{"group":"基板／PC部品","name":"PCカード","cells":[{"dealer":"浜屋","value":4620,"best":true},{"dealer":"ケイワイ","value":4000,"best":false}],"spread":620,"diff":"0"},{"group":"基板／PC部品","name":"マザーボード","cells":[{"dealer":"ケイワイ","value":4200,"best":true},{"dealer":"浜屋","value":2180,"best":false},{"dealer":"大畑","value":950,"best":false}],"spread":3250,"diff":"0"},{"group":"基板／PC部品","name":"拡張カード(下)","cells":[{"dealer":"ケイワイ","value":3900,"best":true},{"dealer":"浜屋","value":2610,"best":false}],"spread":1290,"diff":"0"},{"group":"基板／PC部品","name":"ノートPCマザー(下)","cells":[{"dealer":"ケイワイ","value":1500,"best":true},{"dealer":"浜屋","value":1100,"best":false}],"spread":400,"diff":"0"},{"group":"基板／PC部品","name":"HDD本体","cells":[{"dealer":"安城貿易","value":300,"best":true},{"dealer":"ケイワイ","value":160,"best":false},{"dealer":"大畑","value":150,"best":false}],"spread":150,"diff":"0"},{"group":"基板／PC部品","name":"デスクトップPC","cells":[{"dealer":"キバセン","value":200,"best":true},{"dealer":"大畑","value":110,"best":false}],"spread":90,"diff":"0"},{"group":"基板／機器","name":"携帯電話基板","cells":[{"dealer":"ケイワイ","value":14400,"best":true},{"dealer":"浜屋","value":12870,"best":false}],"spread":1530,"diff":"0"},{"group":"基板／機器","name":"携帯電話(電池なし)","cells":[{"dealer":"大畑","value":5000,"best":true},{"dealer":"ケイワイ","value":5000,"best":true},{"dealer":"浜屋","value":4460,"best":false},{"dealer":"キバセン","value":4000,"best":false}],"spread":1000,"diff":"0"},{"group":"基板／機器","name":"携帯電話(電池あり)","cells":[{"dealer":"ケイワイ","value":4750,"best":true},{"dealer":"浜屋","value":4130,"best":false}],"spread":620,"diff":"0"},{"group":"基板／機器","name":"スマートフォン","cells":[{"dealer":"浜屋","value":2500,"best":true},{"dealer":"ケイワイ","value":2000,"best":false},{"dealer":"大畑","value":1800,"best":false}],"spread":700,"diff":"0"},{"group":"基板／機器","name":"リレー","cells":[{"dealer":"キバセン","value":1200,"best":true},{"dealer":"ケイワイ","value":1100,"best":false},{"dealer":"浜屋","value":690,"best":false}],"spread":510,"diff":"0"},{"group":"基板／機器","name":"デジカメ","cells":[{"dealer":"ケイワイ","value":900,"best":true},{"dealer":"浜屋","value":610,"best":false}],"spread":290,"diff":"0"},{"group":"基板／機器","name":"リチウムイオン電池","cells":[{"dealer":"大畑","value":30,"best":true},{"dealer":"ケイワイ","value":30,"best":true}],"spread":0,"diff":"0"},{"group":"雑品","name":"給湯器","cells":[{"dealer":"土金","value":510,"best":true},{"dealer":"安城貿易","value":490,"best":false},{"dealer":"長澤","value":480,"best":false},{"dealer":"宝源","value":470,"best":false},{"dealer":"大畑","value":460,"best":false}],"spread":50,"diff":"0"},{"group":"雑品","name":"黒モーター","cells":[{"dealer":"安城貿易","value":180,"best":true},{"dealer":"宝源","value":160,"best":false},{"dealer":"土金","value":150,"best":false},{"dealer":"大畑","value":130,"best":false}],"spread":50,"diff":"0"},{"group":"雑品","name":"ガスメーター","cells":[{"dealer":"大畑","value":200,"best":true},{"dealer":"安城貿易","value":200,"best":true},{"dealer":"長澤","value":170,"best":false},{"dealer":"宝源","value":150,"best":false}],"spread":50,"diff":"0"},{"group":"雑品","name":"車バッテリー(鉛)","cells":[{"dealer":"安城貿易","value":125,"best":true},{"dealer":"大畑","value":123,"best":false},{"dealer":"土金","value":110,"best":false},{"dealer":"長澤","value":90,"best":false}],"spread":35,"diff":"0"},{"group":"雑品","name":"安定器","cells":[{"dealer":"安城貿易","value":200,"best":true},{"dealer":"長澤","value":105,"best":false}],"spread":95,"diff":"0"},{"group":"雑品","name":"工業雑品","cells":[{"dealer":"長澤","value":90,"best":true},{"dealer":"宝源","value":65,"best":false},{"dealer":"大畑","value":30,"best":false}],"spread":60,"diff":"0"},{"group":"雑品","name":"ステンレス","cells":[{"dealer":"長澤","value":220,"best":true},{"dealer":"宝源","value":195,"best":false},{"dealer":"土金","value":105,"best":false},{"dealer":"大畑","value":35,"best":false}],"spread":185,"diff":"0"},{"group":"雑品","name":"鉄(B・ギロB)","cells":[{"dealer":"長澤","value":45,"best":true},{"dealer":"宝源","value":43,"best":false}],"spread":2,"diff":"0"}]},"weekly":{"title":"銅最高値更新、貴金属は下落","paragraphs":["先週は銅建値が11万円上げて242万円となり、週で4.8%、月で1.7%の上昇と再び最高値をつけました。背景にはAIデータセンター向けの需要拡大があり、データセンター1基で1,600トン超の銅を使うとの試算や、銅電線の需要が2030年度に60万トン台へ回復するとの見方が出ています。一方で鉄は東鉄名古屋二級が48,500円と横ばい（月+1.0%）で、輸出価格をけん制する狙いの買値上げが伝えられました。貴金属は逆行し、金が23,650円で週-2.5%・月-8.1%、銀が340円で週-6.1%・月-11.0%と大きく下げています。","スクラップヤードの規制が2028年までに全国で許可制へ移行する方向で、環境省の検討会では「二段階の許可審査」が提言されています。金属くずを保管しておくだけで許可が必要になる時代が近づいており、自社のヤードの保管方法や地域との関係を書類で示せるよう、今から整理しておくことが必要です。再資源化事業等高度化法や、保管・荷役施設への補助金といった支援制度も動いているため、設備投資を考えているなら情報を取っておく価値があります。海外では、EUが金属スクラップの輸出先を絞る規則案を進めており、輸出頼みの出し先には注意が要ります。","同業との価格差は今週も大きく、CPUセラ長方形（金足）は浜屋68,800円に対しケイワイ20,600円で、差は48,200円にのぼります。CPUセラ（上）で18,800円、CPU黒で7,900円、PCメモリーで3,100円の差があり、金を含む上位品目ほど売り先選びで手取りが大きく変わります。一方、CPUセラ（金属板あり）はケイワイ20,600円が浜屋19,200円を上回っており、品目ごとに出し先を分ける判断が有効です。K&Yの基板価格はメモリー10,070円、Cクラス1,180円などすべて前回比ゼロで、金の下落がまだ買取価格に反映されていない点は押さえておきたいところです。","銅はAI・データセンター需要を背景に強含みが続く可能性がある一方、中国の銅製錬の採算悪化や国内製錬事業の縮小といった話も出ており、値動きが荒くなる点に注意が必要です。金銀は月間で8〜11%下げており、基板の買取価格が据え置きのままなら、次回改定で下方修正される可能性があります。金を含む基板は在庫を抱え込まず、早めに回す判断も検討材料になります。また、神社の銅板や施設の室外機・蛇口の盗難事件が報じられており、銅高が続く局面では持ち込み品の確認をこれまで以上に厳格にしてください。"],"date":"2026-09-28","label":"9/28の週"},"monthly":{"title":"2026年8月度 相場と業界の動き","paragraphs":["銅建値は月間で0.8%上がり238万円となりました。上げ幅そのものは小さいものの、LME銅は最高値を更新した後も上昇が続き、供給のひっ迫が解けていないと報じられています。AI関連の設備投資で銅の需要が膨らんでいるという見方もあり、住友商事のチリ鉱山参画やコマツの米国保守拠点3倍化など、増産に向けた動きが相次ぎました。一方で鉄は東鉄名古屋二級が48,000円で横ばい、輸出入札は関東鉄源7月契約が2カ月連続で下落し、輸出の成約が進まず需給が緩んでいます。貴金属は週間で金が5.0%安、銀が6.5%安と大きく下げており、買取単価の設定はいったん慎重にみておきたいところです。","段落2の代わりに制度面では、政府が廃棄物処理法の改正案を閣議決定し、使用済み資源を国内で再生することを原則とする方針が示されました。国土交通省はスクラップヤードなどの「不適切な土地利用」への規制強化を進める方針で、ヤード火災をめぐっては福岡県に要望書が提出されるなど、地域からの目も厳しくなっています。6月施行の金属盗対策法では、愛知でケーブルカッターの違法所持による初の逮捕者が出たほか、富山では太陽光発電所から送電ケーブル2.2トンを盗んだ疑いで2人が摘発されました。今月中に、仕入れ時の本人確認と品目・数量の記録が抜けなく残っているか、置き場の区画と消火まわりの状態はどうか、この2点を自社で一度点検しておくことをおすすめします。","同業との価格差は基板系で特に大きく、CPUセラ長方形(金足)は浜屋68,800円に対しケイワイ20,600円と48,200円もの開きがあります。CPUセラ(上)で26,800円、CPU黒で13,500円、CPUセラ(金属板なし)で8,520円と、CPU系はおおむね浜屋が高い並びです。一方でマザーボードはケイワイ2,600円が浜屋2,060円を上回っており、品目ごとに出し先を分けたほうが有利になる可能性があります。K&Yの基板買取は全品目で前回から動きがなく、メモリー10,070円、Cクラス1,180円、Dクラス660円と横ばいですので、単価が動かない今のうちにCPU系を混ぜずに選別する手順を固めておくと差額を取りやすくなります。","1ヶ月の変化率を並べると、銅建値+0.8%、日経平均+3.2%、NYダウ+1.3%、ドル円は-0.3%の160円、ビットコインは+27.1%でした。銅の小幅高は供給ひっ迫と中国の経済指標改善が支えた一方、中国の追加利上げで非鉄全体が軟調になる場面もあり、行って来いの一ヶ月だったと整理できます。鉄は横ばいでしたが、輸出が決まりにくい状態が続けば下押しに注意が必要です。金と銀は直近1週間で5〜6%下げており、月内の高値圏で仕入れた分は利幅が薄くなっている可能性があります。アルミ二次合金が8月に4%安と1年2カ月ぶりに下落した点も、地金頼みの値付けの危うさとして覚えておきたいところです。","今月の重点は3つです。第一に、CPU系基板の選別と出し先の見直しです。差額の大きい上位3品目だけでも分けて出す運用を今月中に試し、実際の手取り差を数字で確認してください。第二に、法令対応の自主点検です。改正案とヤード規制の流れを踏まえ、記録・保管・防火の3点を書面で残しておくと、行政の確認が入った際に慌てずに済みます。第三に、盗品の持ち込み対策です。エアコン室外機や水道メーター、太陽光のケーブルといった被害品が全国で急増しているため、これらの品目は出所の確認を一段厳しくし、疑わしい持ち込みは断る基準を現場に共有しておきましょう。"],"date":"2026-09-01","label":"8月のまとめ"},"ai_morning":{"date":"2026-09-30","items":[{"title":"GPT-6.1 Sol公開 Astra並みの性能で値段は5分の1","link":"https://thelastthreeminutes.com/issues/2026-09-30/stories/1/"},{"title":"OpenAIの常駐AI「dots」 自分のPCを持って24時間働く","link":"https://thelastthreeminutes.com/issues/2026-09-30/stories/2/"},{"title":"月200ドルのPro再開 使える量は半分、月500ドル版も","link":"https://thelastthreeminutes.com/issues/2026-09-30/stories/3/"}],"link":"https://thelastthreeminutes.com/issues/2026-09-30/","lead":"水曜の朝は、DevDayの3本です。GPT-6.1 Solは最上位のAstraに迫る性能を、5分の1の値段で出してきました。常駐エージェントのdotsは、自分のPCを持って24時間働きます。月200ドルのProは再開しましたが、使える量は半分になりました。","video":"https://www.youtube.com/watch?v=yGxM3dOjtHg"},"history":{"NYダウ":{"d":["2026-06-30","2026-07-01","2026-07-02","2026-07-06","2026-07-07","2026-07-08","2026-07-09","2026-07-10","2026-07-13","2026-07-14","2026-07-15","2026-07-16","2026-07-17","2026-07-20","2026-07-21","2026-07-22","2026-07-23","2026-07-24","2026-07-27","2026-07-28","2026-07-29","2026-07-30","2026-07-31","2026-08-03","2026-08-04","2026-08-05","2026-08-06","2026-08-07","2026-08-10","2026-08-11","2026-08-12","2026-08-13","2026-08-14","2026-08-17","2026-08-18","2026-08-19","2026-08-20","2026-08-21","2026-08-24","2026-08-25","2026-08-26","2026-08-27","2026-08-28","2026-08-31","2026-09-01","2026-09-02","2026-09-03","2026-09-04","2026-09-08","2026-09-09","2026-09-10","2026-09-11","2026-09-14","2026-09-15","2026-09-16","2026-09-17","2026-09-18","2026-09-21","2026-09-22","2026-09-23","2026-09-24","2026-09-25","2026-09-28","2026-09-29"],"v":[52319.2,52305.24,52900.07,53055.91,52925.15,52348.39,52487.41,52637.01,52498.64,52508.27,52658.64,52552.97,52146.42,51839.26,52224.64,52218.58,51711.65,51947.25,52210.08,52747.32,51594.14,52208.06,52485.03,53178.41,54085.88,54349.12,53885.1,54036.93,53975.98,53791.85,53770.27,53839.99,53732.41,53459.78,53343.4,53463.05,52759.21,53277.01,53417.16,53577.4,53463.88,53569.44,53559.99,53185.9,52766.88,53061.95,53686.11,53414.25,52786.07,52380.66,52064.1,52573.29,52421.2,52093.11,51461.9,51778.04,51682.64,52048.83,51863.69,51511.59,51349.98,51828.62,51481.51,51349.92]},"ドル円":{"d":["2026-06-30","2026-07-01","2026-07-02","2026-07-03","2026-07-06","2026-07-07","2026-07-08","2026-07-09","2026-07-10","2026-07-13","2026-07-14","2026-07-15","2026-07-16","2026-07-17","2026-07-20","2026-07-21","2026-07-22","2026-07-23","2026-07-24","2026-07-27","2026-07-28","2026-07-29","2026-07-30","2026-07-31","2026-08-03","2026-08-04","2026-08-05","2026-08-06","2026-08-07","2026-08-10","2026-08-11","2026-08-12","2026-08-13","2026-08-14","2026-08-17","2026-08-18","2026-08-19","2026-08-20","2026-08-21","2026-08-24","2026-08-25","2026-08-26","2026-08-27","2026-08-28","2026-08-31","2026-09-01","2026-09-02","2026-09-03","2026-09-04","2026-09-07","2026-09-08","2026-09-09","2026-09-10","2026-09-11","2026-09-14","2026-09-15","2026-09-16","2026-09-17","2026-09-18","2026-09-21","2026-09-22","2026-09-23","2026-09-24","2026-09-25","2026-09-28","2026-09-29","2026-09-30"],"v":[162.44,162.71,161.58,161.15,162.34,161.89,162.49,162.41,161.87,162.14,162.22,162.39,162.2,162.35,162.38,162.74,163.07,163.47,163.82,163.64,163.91,163.68,162.94,160.24,156.68,157.41,157.59,157.83,158.34,158.64,159.2,159.09,159.33,159.01,159.23,159.7,159.09,158.76,158.7,159.12,159.24,159.07,159.39,159.68,159.73,160.16,159.6,156.01,156.25,154.75,154.3,153.27,154.18,154.04,154.55,155.0,155.05,155.69,157.89,157.27,157.18,157.92,158.85,157.59,156.88,157.12,157.12]},"ビットコイン":{"d":["2026-07-02","2026-07-03","2026-07-04","2026-07-05","2026-07-06","2026-07-07","2026-07-08","2026-07-09","2026-07-10","2026-07-11","2026-07-12","2026-07-13","2026-07-14","2026-07-15","2026-07-16","2026-07-17","2026-07-18","2026-07-19","2026-07-20","2026-07-21","2026-07-22","2026-07-23","2026-07-24","2026-07-25","2026-07-26","2026-07-27","2026-07-28","2026-07-29","2026-07-30","2026-07-31","2026-08-01","2026-08-02","2026-08-03","2026-08-04","2026-08-05","2026-08-06","2026-08-07","2026-08-08","2026-08-09","2026-08-10","2026-08-11","2026-08-12","2026-08-13","2026-08-14","2026-08-15","2026-08-16","2026-08-17","2026-08-18","2026-08-19","2026-08-20","2026-08-21","2026-08-22","2026-08-23","2026-08-24","2026-08-25","2026-08-26","2026-08-27","2026-08-28","2026-08-29","2026-08-30","2026-08-31","2026-09-01","2026-09-02","2026-09-03","2026-09-04","2026-09-05","2026-09-06","2026-09-07","2026-09-08","2026-09-09","2026-09-10","2026-09-11","2026-09-12","2026-09-13","2026-09-14","2026-09-15","2026-09-16","2026-09-17","2026-09-18","2026-09-19","2026-09-20","2026-09-21","2026-09-22","2026-09-23","2026-09-24","2026-09-25","2026-09-26","2026-09-27","2026-09-28","2026-09-29","2026-09-30"],"v":[9679054,9923354,10093964,10187043,10306290,10390761,10295339,10107440,10216706,10364501,10331988,10353732,10100527,10539872,10489030,10358840,10381743,10525803,10510266,10591941,10855393,10776606,10658491,10500682,10538866,10691709,10433235,10468174,10438039,10371073,9889452,9882601,10007288,9998517,10102799,10183010,10180665,10238350,10244265,10241452,10172495,10119945,10103055,10112895,10033649,10041098,10006215,10275541,10320718,10965990,11601604,12449792,12253191,12346880,12567312,12500297,12583827,12787956,12457937,12522671,12434520,12548885,12402372,12282592,12648526,12449830,12499679,12548047,12166644,12038700,12020257,11825191,11856536,11865454,11785571,12071421,11738220,11882325,11925885,12687243,12744163,12742937,13627945,13570594,13354961,13402441,13224692,13277483,13295037,13136421,13158346]},"基板:マザーボード（Ｃ）":{"d":["2026-08-23","2026-08-24","2026-08-25","2026-08-26","2026-08-27","2026-08-28","2026-08-29","2026-08-30","2026-08-31","2026-09-01","2026-09-02","2026-09-03","2026-09-04","2026-09-05","2026-09-06","2026-09-07","2026-09-08","2026-09-09","2026-09-10","2026-09-11","2026-09-12","2026-09-13","2026-09-14","2026-09-15","2026-09-16","2026-09-17","2026-09-18","2026-09-19","2026-09-20","2026-09-21","2026-09-22","2026-09-23","2026-09-24","2026-09-25","2026-09-26","2026-09-27","2026-09-28","2026-09-29","2026-09-30"],"v":[870.0,870.0,880.0,880.0,880.0,880.0,880.0,880.0,880.0,880.0,880.0,880.0,880.0,880.0,880.0,880.0,880.0,880.0,880.0,880.0,880.0,880.0,880.0,880.0,880.0,880.0,880.0,880.0,880.0,880.0,880.0,880.0,880.0,880.0,880.0,880.0,880.0,1050.0,1050.0]},"基板:メモリー":{"d":["2026-08-23","2026-08-24","2026-08-25","2026-08-26","2026-08-27","2026-08-28","2026-08-29","2026-08-30","2026-08-31","2026-09-01","2026-09-02","2026-09-03","2026-09-04","2026-09-05","2026-09-06","2026-09-07","2026-09-08","2026-09-09","2026-09-10","2026-09-11","2026-09-12","2026-09-13","2026-09-14","2026-09-15","2026-09-16","2026-09-17","2026-09-18","2026-09-19","2026-09-20","2026-09-21","2026-09-22","2026-09-23","2026-09-24","2026-09-25","2026-09-26","2026-09-27","2026-09-28","2026-09-29","2026-09-30"],"v":[9780.0,9780.0,10070.0,10070.0,10070.0,10070.0,10070.0,10070.0,10070.0,10070.0,10070.0,10070.0,10070.0,10070.0,10070.0,10070.0,10070.0,10070.0,10070.0,10070.0,10070.0,10070.0,10070.0,10070.0,10070.0,10070.0,10070.0,10070.0,10070.0,10070.0,10070.0,10070.0,10070.0,10070.0,10070.0,10070.0,10070.0,13000.0,13000.0]},"基板:電源基板(鉄なし)":{"d":["2026-08-23","2026-08-24","2026-08-25","2026-08-26","2026-08-27","2026-08-28","2026-08-29","2026-08-30","2026-08-31","2026-09-01","2026-09-02","2026-09-03","2026-09-04","2026-09-05","2026-09-06","2026-09-07","2026-09-08","2026-09-09","2026-09-10","2026-09-11","2026-09-12","2026-09-13","2026-09-14","2026-09-15","2026-09-16","2026-09-17","2026-09-18","2026-09-19","2026-09-20","2026-09-21","2026-09-22","2026-09-23","2026-09-24","2026-09-25","2026-09-26","2026-09-27","2026-09-28"],"v":[220.0,220.0,225.0,225.0,225.0,225.0,225.0,225.0,225.0,225.0,225.0,225.0,225.0,225.0,225.0,225.0,225.0,225.0,225.0,225.0,225.0,225.0,225.0,225.0,225.0,225.0,225.0,225.0,225.0,225.0,225.0,225.0,225.0,225.0,225.0,225.0,225.0]},"基板:Ｃクラス基板":{"d":["2026-08-23","2026-08-24","2026-08-25","2026-08-26","2026-08-27","2026-08-28","2026-08-29","2026-08-30","2026-08-31","2026-09-01","2026-09-02","2026-09-03","2026-09-04","2026-09-05","2026-09-06","2026-09-07","2026-09-08","2026-09-09","2026-09-10","2026-09-11","2026-09-12","2026-09-13","2026-09-14","2026-09-15","2026-09-16","2026-09-17","2026-09-18","2026-09-19","2026-09-20","2026-09-21","2026-09-22","2026-09-23","2026-09-24","2026-09-25","2026-09-26","2026-09-27","2026-09-28","2026-09-29","2026-09-30"],"v":[1150.0,1150.0,1180.0,1180.0,1180.0,1180.0,1180.0,1180.0,1180.0,1180.0,1180.0,1180.0,1180.0,1180.0,1180.0,1180.0,1180.0,1180.0,1180.0,1180.0,1180.0,1180.0,1180.0,1180.0,1180.0,1180.0,1180.0,1180.0,1180.0,1180.0,1180.0,1180.0,1180.0,1180.0,1180.0,1180.0,1180.0,2000.0,2000.0]},"基板:ＣＰＵグリーン（下）":{"d":["2026-08-23","2026-08-24","2026-08-25","2026-08-26","2026-08-27","2026-08-28","2026-08-29","2026-08-30","2026-08-31","2026-09-01","2026-09-02","2026-09-03","2026-09-04","2026-09-05","2026-09-06","2026-09-07","2026-09-08","2026-09-09","2026-09-10","2026-09-11","2026-09-12","2026-09-13","2026-09-14","2026-09-15","2026-09-16","2026-09-17","2026-09-18","2026-09-19","2026-09-20","2026-09-21","2026-09-22","2026-09-23","2026-09-24","2026-09-25","2026-09-26","2026-09-27","2026-09-28","2026-09-29","2026-09-30"],"v":[3500.0,3500.0,3600.0,3600.0,3600.0,3600.0,3600.0,3600.0,3600.0,3600.0,3600.0,3600.0,3600.0,3600.0,3600.0,3600.0,3600.0,3600.0,3600.0,3600.0,3600.0,3600.0,3600.0,3600.0,3600.0,3600.0,3600.0,3600.0,3600.0,3600.0,3600.0,3600.0,3600.0,3600.0,3600.0,3600.0,3600.0,4000.0,4000.0]},"基板:Ｄクラス基板":{"d":["2026-08-23","2026-08-24","2026-08-25","2026-08-26","2026-08-27","2026-08-28","2026-08-29","2026-08-30","2026-08-31","2026-09-01","2026-09-02","2026-09-03","2026-09-04","2026-09-05","2026-09-06","2026-09-07","2026-09-08","2026-09-09","2026-09-10","2026-09-11","2026-09-12","2026-09-13","2026-09-14","2026-09-15","2026-09-16","2026-09-17","2026-09-18","2026-09-19","2026-09-20","2026-09-21","2026-09-22","2026-09-23","2026-09-24","2026-09-25","2026-09-26","2026-09-27","2026-09-28","2026-09-29","2026-09-30"],"v":[640.0,640.0,660.0,660.0,660.0,660.0,660.0,660.0,660.0,660.0,660.0,660.0,660.0,660.0,660.0,660.0,660.0,660.0,660.0,660.0,660.0,660.0,660.0,660.0,660.0,660.0,660.0,660.0,660.0,660.0,660.0,660.0,660.0,660.0,660.0,660.0,660.0,1100.0,1100.0]},"日経平均":{"d":["2026-06-30","2026-07-01","2026-07-02","2026-07-03","2026-07-06","2026-07-07","2026-07-08","2026-07-09","2026-07-10","2026-07-13","2026-07-14","2026-07-15","2026-07-16","2026-07-17","2026-07-21","2026-07-22","2026-07-23","2026-07-24","2026-07-27","2026-07-28","2026-07-29","2026-07-30","2026-07-31","2026-08-03","2026-08-04","2026-08-05","2026-08-06","2026-08-07","2026-08-10","2026-08-12","2026-08-13","2026-08-14","2026-08-17","2026-08-18","2026-08-19","2026-08-20","2026-08-21","2026-08-24","2026-08-25","2026-08-26","2026-08-27","2026-08-28","2026-08-31","2026-09-01","2026-09-02","2026-09-03","2026-09-04","2026-09-07","2026-09-08","2026-09-09","2026-09-10","2026-09-11","2026-09-14","2026-09-15","2026-09-16","2026-09-17","2026-09-18","2026-09-24","2026-09-25","2026-09-28"],"v":[70062.32,70474.96,68733.15,69744.07,69737.69,68256.96,66819.05,67743.85,68557.73,67242.73,67743.5,68751.51,66835.54,64141.12,66232.19,66115.6,66422.6,64611.15,64931.19,62364.92,61434.19,61867.43,64362.02,63754.9,63957.53,66300.44,65683.26,65606.71,66970.22,67524.06,68308.59,68713.8,69220.25,67460.73,65326.42,66216.79,66016.36,65528.09,65856.43,66262.16,66131.98,66405.56,66311.93,66215.34,64325.64,64214.48,65020.94,66399.84,65269.33,65142.78,65270.95,64011.34,63492.99,63484.1,63923.0,64136.25,65018.95,65513.99,66364.2,65877.62]},"東鉄名古屋二級":{"d":["2026-08-23","2026-08-24","2026-08-25","2026-08-26","2026-08-27","2026-08-28","2026-08-29","2026-08-30","2026-08-31","2026-09-01","2026-09-02","2026-09-03","2026-09-04","2026-09-05","2026-09-06","2026-09-07","2026-09-08","2026-09-09","2026-09-10","2026-09-11","2026-09-12","2026-09-13","2026-09-14","2026-09-15","2026-09-16","2026-09-17","2026-09-18","2026-09-19","2026-09-20","2026-09-21","2026-09-22","2026-09-23","2026-09-24","2026-09-25","2026-09-26","2026-09-27","2026-09-28","2026-09-29","2026-09-30"],"v":[48000.0,48000.0,48000.0,48000.0,48000.0,48000.0,48000.0,48000.0,48000.0,48000.0,48000.0,48000.0,48000.0,48000.0,48000.0,48000.0,48000.0,48000.0,48000.0,48000.0,48000.0,48000.0,48000.0,48000.0,48000.0,48000.0,48000.0,48500.0,48500.0,48500.0,48500.0,48500.0,48500.0,48500.0,48500.0,48500.0,48500.0,48500.0,48500.0]},"金":{"d":["2026-08-23","2026-08-24","2026-08-25","2026-08-26","2026-08-27","2026-08-28","2026-08-29","2026-08-30","2026-08-31","2026-09-01","2026-09-02","2026-09-03","2026-09-04","2026-09-05","2026-09-06","2026-09-07","2026-09-08","2026-09-09","2026-09-10","2026-09-11","2026-09-12","2026-09-13","2026-09-14","2026-09-15","2026-09-16","2026-09-17","2026-09-18","2026-09-19","2026-09-20","2026-09-21","2026-09-22","2026-09-23","2026-09-24","2026-09-25","2026-09-26","2026-09-27","2026-09-28","2026-09-29","2026-09-30"],"v":[25415.0,25415.0,26168.0,25822.0,25770.0,25718.0,25735.0,25735.0,25735.0,24868.0,24733.0,24141.0,24351.0,24544.0,24544.0,24544.0,23636.0,23374.0,23613.0,23639.0,23415.0,23415.0,23415.0,23301.0,23194.0,23445.0,23576.0,24247.0,24247.0,24247.0,24247.0,24247.0,24247.0,23707.0,23650.0,23650.0,23650.0,22798.0,22791.0]},"銀":{"d":["2026-08-23","2026-08-24","2026-08-25","2026-08-26","2026-08-27","2026-08-28","2026-08-29","2026-08-30","2026-08-31","2026-09-01","2026-09-02","2026-09-03","2026-09-04","2026-09-05","2026-09-06","2026-09-07","2026-09-08","2026-09-09","2026-09-10","2026-09-11","2026-09-12","2026-09-13","2026-09-14","2026-09-15","2026-09-16","2026-09-17","2026-09-18","2026-09-19","2026-09-20","2026-09-21","2026-09-22","2026-09-23","2026-09-24","2026-09-25","2026-09-26","2026-09-27","2026-09-28","2026-09-29","2026-09-30"],"v":[376.97,376.97,386.87,362.45,370.26,385.22,382.36,382.36,382.36,361.9,358.38,344.85,350.46,359.15,359.15,359.15,342.98,351.56,346.17,348.15,332.53,332.53,332.53,330.44,328.24,333.85,338.36,362.45,362.45,362.45,362.45,362.45,362.45,343.09,340.23,340.23,340.23,323.07,324.5]},"銅建値":{"d":["2026-07-01","2026-07-03","2026-07-07","2026-07-09","2026-07-13","2026-07-15","2026-07-21","2026-07-22","2026-07-24","2026-07-28","2026-08-03","2026-08-05","2026-08-12","2026-08-17","2026-08-19","2026-08-21","2026-08-25","2026-09-01","2026-09-03","2026-09-07","2026-09-10","2026-09-11","2026-09-15","2026-09-17","2026-09-24"],"v":[2270000,2230000,2260000,2240000,2270000,2290000,2310000,2370000,2320000,2360000,2280000,2330000,2380000,2420000,2360000,2340000,2380000,2400000,2370000,2350000,2370000,2280000,2240000,2310000,2420000]}},"ai":{"lines":["・銅建値242万円、11万円高で再び最高値更新","・環境省ヤード検討会、許可制へ2段階審査を提言","・銅狙いの窃盗多発、神社銅板やケーブル2.2トン盗難"],"at":"9/30 8:03"}}</script>
+<script>
+// ===== 3案に共通の部品 ============================================
+var DATA = null, FROM = '';   // FROM: net=取れた / cache=前回の控え / baked=見本に入れたデータ
+
+function $(id){ return document.getElementById(id); }
+function esc(s){ var d = document.createElement('div'); d.textContent = s == null ? '' : String(s); return d.innerHTML; }
+function getPref(k){ try { return localStorage.getItem('scrap-news:' + k); } catch (e) { return null; } }
+function setPref(k, v){ try { localStorage.setItem('scrap-news:' + k, v); } catch (e) {} }
+
+var ICON_EXT = '<svg class="ext" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 3H3v10h10v-3M9 3h4v4M13 3 7 9"/></svg>';
+var ICON_CHEV = '<svg class="chev" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="m6 3 5 5-5 5"/></svg>';
+
+function diffClass(d){
+  if (!d) return 'flat';
+  var s = String(d).trim();
+  if (s.charAt(0) === '+') return 'up';
+  if (s.charAt(0) === '-' || s.charAt(0) === '−') return 'down';
+  return 'flat';
+}
+function diffText(d){
+  if (!d) return '± 0';
+  var s = String(d).trim();
+  if (s === '0') return '± 0';
+  if (s.charAt(0) === '+') return '▲ ' + s.slice(1);
+  if (s.charAt(0) === '-' || s.charAt(0) === '−') return '▼ ' + s.slice(1);
+  return s;
+}
+function ago(iso){
+  if (!iso) return '';
+  var h = Math.floor((new Date() - new Date(iso)) / 3600000);
+  if (h < 1) return 'さっき';
+  if (h < 24) return h + '時間前';
+  var d = Math.floor(h / 24);
+  return d === 1 ? '昨日' : d + '日前';
+}
+function yen(n){ return Number(n).toLocaleString('ja-JP'); }
+
+// 「銅建値（9/24改定）」→ ['銅建値', '9/24改定']。名前と添え書きに分ける
+function splitName(name){
+  var m = String(name).match(/^(.*?)\s*[（(]([^（()）]*)[）)]\s*$/);
+  return m ? [m[1], m[2]] : [String(name), ''];
+}
+// 推移の記録を探す。基板は「ＣＰＵグリーン（下）」のようにかっこ込みで記録されているので、
+// まずそのまま探し、無ければかっこを外して探す（いまの画面はかっこを外すだけなので、基板2品目が出ない）
+function findHist(key){
+  var H = (DATA && DATA.history) || {};
+  return H[key] || H[splitName(key)[0]] || null;
+}
+
+// ---- データを読む。通信できなければ前回の控えを出す -------------------
+function loadData(){
+  var offlineDemo = /[?&]offline\b/.test(location.search);   // 「?offline」を付けると圏外の見え方を試せる
+  var net = offlineDemo ? Promise.reject(new Error('demo'))
+    : fetch('../data.json?t=' + Date.now()).then(function(r){ if (!r.ok) throw new Error(r.status); return r.json(); });
+  return net.then(function(d){
+    try { localStorage.setItem('scrap-news:last', JSON.stringify(d)); } catch (e) {}
+    return { data: d, from: 'net' };
+  }).catch(function(){
+    var c = null;
+    try { c = JSON.parse(localStorage.getItem('scrap-news:last') || 'null'); } catch (e) {}
+    if (c) return { data: c, from: 'cache' };
+    var b = document.getElementById('baked-data');
+    if (b) return { data: JSON.parse(b.textContent), from: offlineDemo ? 'cache' : 'baked' };
+    throw new Error('nodata');
+  });
+}
+
+function updatedAt(){
+  var m = String((DATA && DATA.updated) || '').match(/(\d+)\/(\d+)\s+(\d+):(\d+)/);
+  if (!m) return null;
+  var now = new Date(), d = new Date(now.getFullYear(), m[1] - 1, m[2], m[3], m[4]);
+  if (d - now > 30 * 864e5) d.setFullYear(d.getFullYear() - 1);
+  return d;
+}
+
+// 画面の上に出すお知らせ。エラーは「何が起きて、どうすればよいか」をふつうの言葉で
+function bannerHtml(){
+  var h = '', up = esc(DATA.updated || '');
+  var reload = '<button class="btn btn-sub press" type="button" onclick="location.reload()">もう一度読み込む</button>';
+  if (FROM === 'cache'){
+    h += '<div class="banner warn" role="status"><b>通信できませんでした。</b><br>' +
+      '電波の良い場所で、もう一度読み込んでください。いまは前回（' + up + ' 更新）の内容を出しています。' + reload + '</div>';
+  } else if (FROM === 'baked'){
+    h += '<div class="banner info">見本です。' + up + ' 時点のデータで表示しています。</div>';
+  } else {
+    var t = updatedAt();
+    if (t && new Date() - t > 26 * 3600000){
+      h += '<div class="banner warn" role="status"><b>更新が1日以上止まっています。</b><br>' +
+        '最後に作り直したのは ' + up + ' です。数字や記事が古いかもしれません。</div>';
+    }
+  }
+  if (DATA.items_stale){
+    h += '<div class="banner warn" role="status">けさは記事を取れませんでした。前回の記事を出しています。</div>';
+  }
+  return h;
+}
+function fatalHtml(){
+  return '<div class="banner warn" role="alert"><b>通信できません。</b><br>' +
+    '電波の良い場所で、もう一度開いてください。' +
+    '<button class="btn btn-sub press" type="button" onclick="location.reload()">もう一度読み込む</button></div>';
+}
+
+// ---- 重なる画面（シート・サブ画面）。スマホの「戻る」で閉じられるようにする ----
+var LAYERS = [], HIST_OK = true;
+// 戻ったときのスクロール位置は自分で戻す（ブラウザ任せだと先頭に飛ぶ）
+try { history.scrollRestoration = 'manual'; } catch (e) {}
+function openLayer(close){
+  LAYERS.push(close);
+  try { history.pushState({ layer: LAYERS.length }, ''); } catch (e) { HIST_OK = false; }
+}
+function closeLayer(){
+  if (!LAYERS.length) return;
+  if (!HIST_OK){ LAYERS.pop()(); return; }
+  var n = LAYERS.length;
+  history.back();
+  setTimeout(function(){ if (LAYERS.length === n) LAYERS.pop()(); }, 400);  // 戻るが効かない環境の保険
+}
+window.addEventListener('popstate', function(){ var c = LAYERS.pop(); if (c) c(); });
+document.addEventListener('keydown', function(e){ if (e.key === 'Escape') closeLayer(); });
+
+function openSheet(id){
+  var s = $(id), back = document.activeElement;
+  s.classList.add('open');
+  s.setAttribute('aria-hidden', 'false');
+  document.documentElement.style.overflow = 'hidden';
+  var f = s.querySelector('[data-close]');
+  if (f) setTimeout(function(){ f.focus({ preventScroll: true }); }, 50);
+  openLayer(function(){
+    s.classList.remove('open');
+    s.setAttribute('aria-hidden', 'true');
+    document.documentElement.style.overflow = '';
+    if (back && back.focus) back.focus({ preventScroll: true });
+  });
+}
+document.addEventListener('click', function(e){
+  var t = e.target;
+  if (t.classList && t.classList.contains('sheet')) { closeLayer(); return; }   // 暗いところを押したら閉じる
+  if (t.closest && t.closest('[data-close]')) { closeLayer(); return; }
+  var c = t.closest && t.closest('[data-chart]');
+  if (c) openChart(c.getAttribute('data-chart'), c.getAttribute('data-unit') || '');
+});
+
+// ---- 3ヶ月チャート ----------------------------------------------------
+function sparkline(vals){
+  var W = 340, H = 150, P = 8;
+  var lo = Math.min.apply(null, vals), hi = Math.max.apply(null, vals), span = (hi - lo) || 1;
+  var x = function(i){ return P + i * (W - P * 2) / Math.max(1, vals.length - 1); };
+  var y = function(v){ return P + (1 - (v - lo) / span) * (H - P * 2); };
+  var pts = vals.map(function(v, i){ return x(i).toFixed(1) + ',' + y(v).toFixed(1); });
+  var area = 'M' + x(0).toFixed(1) + ',' + (H - P) + ' L' + pts.join(' L') + ' L' + x(vals.length - 1).toFixed(1) + ',' + (H - P) + ' Z';
+  var col = vals[vals.length - 1] >= vals[0] ? 'var(--midori)' : 'var(--shu)';
+  return '<svg class="csvg" viewBox="0 0 ' + W + ' ' + H + '" preserveAspectRatio="none" role="img" aria-label="3か月の推移">' +
+    '<path d="' + area + '" fill="' + col + '" opacity=".10"/>' +
+    '<polyline points="' + pts.join(' ') + '" fill="none" stroke="' + col + '" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>' +
+    '<circle cx="' + x(vals.length - 1).toFixed(1) + '" cy="' + y(vals[vals.length - 1]).toFixed(1) + '" r="4" fill="' + col + '"/></svg>';
+}
+function md(iso){ var p = String(iso).split('-'); return p.length === 3 ? (+p[1]) + '/' + (+p[2]) : iso; }
+
+function openChart(key, unit){
+  // 基板は「ＣＰＵグリーン（下）」までが品名なので、かっこで分けない
+  var h = findHist(key), parts = key.indexOf('基板:') === 0 ? [key.slice(3), ''] : splitName(key);
+  $('chart-title').textContent = parts[0];
+  $('chart-sub').textContent = (parts[1] ? parts[1] + '・' : '') + '3ヶ月の動き';
+  var body = $('chart-body');
+  if (!h || !h.v || h.v.length < 3){
+    body.innerHTML = '<div class="msg">まだ記録をためているところです。<br>数日たつとグラフが出ます。</div>';
+  } else {
+    var v = h.v, first = v[0], last = v[v.length - 1], diff = last - first;
+    var pct = first ? diff / first * 100 : 0;
+    var cls = diff > 0 ? 'up' : (diff < 0 ? 'down' : 'flat');
+    var sign = diff > 0 ? '▲ ' : (diff < 0 ? '▼ ' : '± ');
+    var f = function(n){ return n.toLocaleString('ja-JP', { maximumFractionDigits: 2 }); };
+    body.innerHTML =
+      '<div class="cnow"><span class="v num">' + f(last) + '</span><span class="u">' + esc(unit) + '</span></div>' +
+      '<div class="cdiff num ' + cls + '">3ヶ月で ' + sign + f(Math.abs(diff)) + '（' + (pct >= 0 ? '+' : '') + pct.toFixed(1) + '%）</div>' +
+      sparkline(v) +
+      '<div class="cfoot num"><span>' + md(h.d[0]) + '</span><span>高 ' + f(Math.max.apply(null, v)) +
+      '　安 ' + f(Math.min.apply(null, v)) + '</span><span>' + md(h.d[h.d.length - 1]) + '</span></div>';
+  }
+  openSheet('chart-sheet');
+}
+
+// ---- 部品のHTML --------------------------------------------------------
+// 価格の一覧を1本にまとめる（建値・貴金属・市況・基板）
+function priceList(){
+  var m = DATA.manual || {}, out = [];
+  (m.tiles || []).forEach(function(t){ out.push({ name: t.name, value: t.value, unit: t.unit, diff: t.diff, key: t.name, kind: 'tile' }); });
+  (m.rows || []).forEach(function(r){ out.push({ name: r.name, value: r.value, unit: r.unit, diff: r.diff, key: r.name, kind: 'row' }); });
+  if (DATA.fx && DATA.fx.usdjpy){
+    out.push({ name: 'ドル円', value: DATA.fx.usdjpy.toFixed(2), unit: '円', diff: '', key: 'ドル円', kind: 'row', note: DATA.fx.date ? md(DATA.fx.date) : '' });
+  }
+  ((DATA.boards && DATA.boards.rows) || []).forEach(function(r){
+    out.push({ name: r.name, value: r.value, unit: r.unit, diff: r.diff, key: '基板:' + r.name, kind: 'board' });
+  });
+  return out;
+}
+function findPrice(prefix){
+  var l = priceList();
+  for (var i = 0; i < l.length; i++) if (String(l[i].name).indexOf(prefix) === 0) return l[i];
+  return null;
+}
+function chartAttrs(p){ return ' data-chart="' + esc(p.key) + '" data-unit="' + esc(p.unit || '') + '"'; }
+
+function tileHtml(p, label){
+  var n = splitName(p.name);
+  return '<button class="tile press" type="button"' + chartAttrs(p) + '>' +
+    '<span class="k">' + esc(label || n[0]) + '</span>' +
+    '<span class="sub"> ' + esc([n[1] || p.note, p.unit].filter(Boolean).join('・')) + '</span>' +
+    '<span class="v num">' + esc(p.value) + '</span>' +
+    '<span class="d num ' + diffClass(p.diff) + '">' + esc(diffText(p.diff)) + '</span></button>';
+}
+function rowHtml(p){
+  var n = p.kind === 'board' ? [p.name, ''] : splitName(p.name), sub = [n[1], p.note].filter(Boolean).join('・');
+  return '<button class="li press" type="button"' + chartAttrs(p) + '>' +
+    '<span class="kk"><span class="k">' + esc(n[0]) + '</span>' + (sub ? '<span class="sub">' + esc(sub) + '</span>' : '') + '</span>' +
+    '<span class="vv"><span class="v num">' + esc(p.value) + '</span><span class="u">' + esc(p.unit || '') + '</span>' +
+    (p.diff ? '<span class="d num ' + diffClass(p.diff) + '">' + esc(diffText(p.diff)) + '</span>' : '') + '</span>' +
+    ICON_CHEV + '</button>';
+}
+
+function briefHtml(){
+  var ai = DATA.ai;
+  if (!ai || !ai.lines || !ai.lines.length) return '';
+  return '<div class="brief"><div class="eyebrow">けさの3行<span class="hint">AIのまとめ</span></div><ul>' +
+    ai.lines.map(function(l){ return '<li>' + esc(String(l).replace(/^[・\s]+/, '')) + '</li>'; }).join('') + '</ul></div>';
+}
+
+function reportsHtml(){
+  function box(r, label, cls){
+    if (!r || !r.paragraphs || !r.paragraphs.length) return '';
+    return '<details class="rep"><summary><span class="lab ' + cls + '">' + label + '・' + esc(r.label || '') + '</span>' +
+      '<span class="ttl">' + esc(r.title || 'スクラップ動向') + '</span></summary><div class="body">' +
+      r.paragraphs.map(function(p){ return '<p>' + esc(p) + '</p>'; }).join('') + '</div></details>';
+  }
+  return box(DATA.monthly, '月次レポート', 'mon') + box(DATA.weekly, '週次レポート', 'wk');
+}
+
+function articleHtml(i){
+  return '<a class="art" href="' + esc(i.link) + '" target="_blank" rel="noopener">' +
+    '<span class="badge b-' + esc(i.cat) + '">' + esc(i.label) + '</span>' +
+    '<span class="art-t">' + esc(i.title) + '</span>' +
+    '<span class="meta">' + esc(i.source) + (i.published ? '・' + ago(i.published) : '') +
+    (i.dups ? '<span class="dups">ほか' + i.dups + '社</span>' : '') + ICON_EXT + '</span></a>';
+}
+
+var CATS = [['all', 'すべて'], ['mkt', '相場'], ['law', '法規制'], ['gen', '業界'], ['dc', 'AI・DC'], ['btc', 'ビットコイン']];
+function chipsHtml(current){
+  var items = DATA.items || [];
+  return CATS.map(function(c){
+    var n = c[0] === 'all' ? items.length : items.filter(function(i){ return i.cat === c[0]; }).length;
+    return '<button class="chip press" type="button" data-f="' + c[0] + '" aria-pressed="' + (c[0] === current) + '">' +
+      esc(c[1]) + '<span class="n num">' + n + '</span></button>';
+  }).join('');
+}
+function filtered(f){ return (DATA.items || []).filter(function(i){ return f === 'all' || i.cat === f; }); }
+
+// 相場・法規制・業界から、いちばん新しい記事を1本ずつ
+function pickTop(){
+  var out = [];
+  ['mkt', 'law', 'gen'].forEach(function(c){
+    var items = DATA.items || [];
+    for (var i = 0; i < items.length; i++) if (items[i].cat === c){ out.push(items[i]); break; }
+  });
+  return out;
+}
+
+function l3mHtml(){
+  var m = DATA.ai_morning;
+  if (!m || !m.items || !m.items.length) return '';
+  return '<div class="list l3m">' + m.items.map(function(it, i){
+    return '<a href="' + esc(it.link) + '" target="_blank" rel="noopener"><span class="n num">' + (i + 1) + '</span>' +
+      '<span class="t">' + esc(it.title) + ICON_EXT + '</span></a>';
+  }).join('') + (m.video ? '<a href="' + esc(m.video) + '" target="_blank" rel="noopener"><span class="n">▶</span><span class="t">動画版で見る（3分）' + ICON_EXT + '</span></a>' : '') + '</div>';
+}
+
+// ---- 同業くらべ --------------------------------------------------------
+function isBoard(r){ return (r.group || '').indexOf('基板') === 0; }
+function cmpRows(board){ return ((DATA.compare && DATA.compare.rows) || []).filter(function(r){ return isBoard(r) === board; }); }
+function cmpGroups(rows){
+  // 「基板／クラス」は後ろ半分を、「銅」はそのまま、かたまりの名前にする
+  var out = [], last = null;
+  rows.forEach(function(r){
+    var g = r.group || '', name = g.indexOf('／') >= 0 ? g.split('／')[1] : g;
+    if (!last || last.name !== name){ last = { name: name, rows: [] }; out.push(last); }
+    last.rows.push(r);
+  });
+  return out;
+}
+
+// いちばん高い先を1行で大きく、ほかは下に小さく
+function cmpItemHtml(r){
+  var best = r.cells.filter(function(c){ return c.best; }), rest = r.cells.filter(function(c){ return !c.best; });
+  return '<div class="ci"><div class="ci-top"><span class="ci-n">' + esc(r.name) + '</span>' +
+    (r.spread ? '<span class="ci-s num">最安との差 ' + yen(r.spread) + '円</span>' : '') + '</div>' +
+    '<div class="ci-best"><span class="ci-bl">いちばん高い</span><b class="ci-bd">' +
+    esc(best.map(function(c){ return c.dealer; }).join('・')) + '</b><span class="ci-bv num">' + yen(best[0].value) + '<small>円</small></span></div>' +
+    (rest.length ? '<div class="ci-rest">' + rest.map(function(c){
+      return '<span>' + esc(c.dealer) + ' <b class="num">' + yen(c.value) + '</b></span>';
+    }).join('') + '</div>' : '') + '</div>';
+}
+
+// ---- AIに聞く ----------------------------------------------------------
+var ASK_FIXED = [
+  ['アルミの相場', 'アルミ二次地金の直近の相場は？'],
+  ['銅の見通し', '銅建値の今後の見通しは？'],
+  ['鉄の動き', '鉄スクラップ相場の直近の動きは？'],
+  ['金属盗対策法', '金属盗対策法で金属くず買取業者に必要な対応は？']
+];
+function askAI(q){ if (q) window.open('https://claude.ai/new?q=' + encodeURIComponent(q), '_blank', 'noopener'); }
+function askPanelHtml(){
+  var lines = ((DATA.ai && DATA.ai.lines) || []).map(function(l){ return String(l).replace(/^[・\s]+/, ''); });
+  var q = function(label, text){
+    return '<button class="q press" type="button" data-q="' + esc(text) + '"><span>' + esc(label) + '</span>' + ICON_CHEV + '</button>';
+  };
+  return '<p class="lead">押すと、Claudeのチャットが質問を入れた状態で開きます。文字を打たなくても聞けます。</p>' +
+    (lines.length ? '<div class="eyebrow" style="margin-top:18px">けさの話題をくわしく聞く</div><div class="qlist">' +
+      lines.map(function(l){ return q(l, 'けさのニュース「' + l + '」について、スクラップ買取業者にとっての影響と気をつけることを教えて'); }).join('') + '</div>' : '') +
+    '<div class="eyebrow" style="margin-top:22px">よく聞くこと</div><div class="qlist">' +
+    ASK_FIXED.map(function(a){ return q(a[0], a[1]); }).join('') + '</div>' +
+    '<div class="eyebrow" style="margin-top:22px">自分で書いて聞く</div>' +
+    '<form class="askform"><input type="search" enterkeyhint="send" placeholder="例: 砲金の相場は上がりそう？" aria-label="AIへの質問">' +
+    '<button class="btn btn-main press" type="submit">この質問で聞く</button></form>';
+}
+function bindAsk(host){
+  host.addEventListener('click', function(e){ var b = e.target.closest('[data-q]'); if (b) askAI(b.getAttribute('data-q')); });
+  var f = host.querySelector('.askform');
+  if (f) f.addEventListener('submit', function(e){
+    e.preventDefault();
+    var box = f.querySelector('input'), v = box.value.trim();
+    if (!v){ box.focus(); box.setAttribute('placeholder', '質問を入れてから押してください'); return; }
+    askAI(v);
+  });
+}
+
+// ---- 価格表サイトへのリンク（index.html と同じもの） --------------------
+var LINKS = [
+  { group: 'スクラップ', sites: [
+    { name: '安定器', url: 'https://anjyo-t.com/scrap_miscellaneous.html' },
+    { name: '土金', url: 'https://www.dokindokin.com/scrap_type/copper/' },
+    { name: '長澤', url: 'https://nagasawametal.com/purchase-items/' },
+    { name: '大畑', url: 'https://www.ohata.org/kakaku.html' },
+    { name: '宝源', url: 'https://hougen-tokyo.jp/' } ]},
+  { group: '建値・地金', sites: [
+    { name: 'JX金属（銅建値）', url: 'https://www.jx-nmm.com/cuprice/' },
+    { name: '東京製鐵（鉄）', url: 'https://www.tokyosteel.co.jp/scrapprice/' },
+    { name: '田中貴金属（金・銀）', url: 'https://gold.tanaka.co.jp/commodity/souba/' } ]}
+];
+var BOARD_LINKS = [
+  { group: '基板', sites: [
+    { name: '浜屋', url: 'https://hamaya-material.com/product' },
+    { name: 'ケイワイ', url: 'https://www.k-y-system.jp/trader/list/' },
+    { name: 'キバセン', url: 'https://kibasen.net/' },
+    { name: '大畑', url: 'https://www.ohata.org/kakaku.html?tag=kiban' } ]}
+];
+function linksHtml(list){
+  return list.map(function(g){
+    return '<div class="linkgroup"><div class="glabel">' + esc(g.group) + '</div><div class="gsites">' +
+      g.sites.map(function(l){
+        return '<a class="linkchip press" href="' + esc(l.url) + '" target="_blank" rel="noopener">' + esc(l.name) + ICON_EXT + '</a>';
+      }).join('') + '</div></div>';
+  }).join('');
+}
+// ---- 画面ごと切り替える（案C・D・E・F） ---------------------------------
+// ボタンから別の画面に切り替える。「もどる」とスマホの戻るで、元の画面の元の位置に帰る
+var SUB_HOOK = {};   // 画面を開くときに中身を作る関数（案ごとに登録）
+function openSub(id, arg){
+  var y = window.scrollY, v = $(id);
+  if (SUB_HOOK[id]) SUB_HOOK[id](arg);
+  $('home').hidden = true; v.hidden = false; document.body.classList.add('sub');
+  window.scrollTo(0, 0);
+  openLayer(function(){
+    v.hidden = true; $('home').hidden = false; document.body.classList.remove('sub');
+    window.scrollTo(0, y);
+  });
+}
+document.addEventListener('click', function(e){
+  var b = e.target.closest('[data-open]'); if (b) openSub(b.getAttribute('data-open'), b.getAttribute('data-arg'));
+});
+
+// ---- 記事ぜんぶの画面（#chips と #feed がある案だけ） ----------------------
+var FILTER = getPref('filter') || 'all';
+function renderNewsView(){
+  $('chips').innerHTML = chipsHtml(FILTER);
+  var items = filtered(FILTER);
+  $('feed').innerHTML = items.length ? items.map(articleHtml).join('') : '<div class="empty">この分類の記事は、けさはありません</div>';
+}
+function setupNewsView(){
+  if (!$('chips')) return;
+  $('chips').addEventListener('click', function(e){
+    var c = e.target.closest('.chip'); if (!c) return;
+    FILTER = c.getAttribute('data-f'); setPref('filter', FILTER);
+    renderNewsView(); window.scrollTo(0, 0);
+  });
+  renderNewsView();
+}
+
+// ---- 同業くらべの画面（#cseg がある案だけ）。スクラップ／基板を切り替え、分野はチップで絞る ----
+var CMP = getPref('cmp') || 'scrap', GROUP = {};
+function renderCompareView(){
+  document.querySelectorAll('#cseg [data-p]').forEach(function(x){ x.setAttribute('aria-selected', String(x.getAttribute('data-p') === CMP)); });
+  var groups = cmpGroups(cmpRows(CMP === 'board'));
+  var cur = GROUP[CMP] || getPref('group-' + CMP) || (CMP === 'board' ? (groups[0] && groups[0].name) : 'all');
+  var opts = (CMP === 'board' ? [] : [['all', 'すべて']]).concat(groups.map(function(g){ return [g.name, g.name]; }));
+  if (!opts.some(function(o){ return o[0] === cur; })) cur = opts[0][0];
+  GROUP[CMP] = cur;
+  $('gchips').innerHTML = opts.map(function(o){
+    return '<button class="chip press" type="button" data-g="' + esc(o[0]) + '" aria-pressed="' + (o[0] === cur) + '">' + esc(o[1]) + '</button>';
+  }).join('');
+  $('cmplist').innerHTML = groups.filter(function(g){ return cur === 'all' || g.name === cur; }).map(function(g){
+    return '<div class="gname">' + esc(g.name) + '</div><div class="cmp">' + g.rows.map(cmpItemHtml).join('') + '</div>';
+  }).join('');
+  $('cmplinks').innerHTML = linksHtml(CMP === 'board' ? BOARD_LINKS : LINKS);
+}
+function setupCompareView(){
+  if (!$('cseg')) return;
+  $('cseg').addEventListener('click', function(e){
+    var b = e.target.closest('[data-p]'); if (!b) return;
+    CMP = b.getAttribute('data-p'); setPref('cmp', CMP);
+    renderCompareView(); window.scrollTo(0, 0);
+  });
+  $('gchips').addEventListener('click', function(e){
+    var c = e.target.closest('[data-g]'); if (!c) return;
+    GROUP[CMP] = c.getAttribute('data-g'); setPref('group-' + CMP, GROUP[CMP]);
+    renderCompareView();
+  });
+  renderCompareView();
+}
+
+// ===== 案Dだけの動き ================================================
+var TGROUP = {};
+
+// 品目の決め方。price=相場の名前の頭、groups=同業くらべの分野、kw=記事の見出しに出る語、cats=まるごと入れる記事の分類
+var TOPICS = [
+  { id: 'cu',  name: '銅',            price: ['銅建値'], groups: ['銅', '電線'], kw: /銅|電線|ケーブル/, cats: ['dc'], note: 'AI・データセンター向けの銅の記事もここ' },
+  { id: 'fe',  name: '鉄',            price: ['東鉄'], groups: [], kw: /鉄スクラップ|鉄くず|鉄屑|鉄源|電炉|鉄鋼|東鉄|東京製鐵/ },
+  { id: 'al',  name: 'アルミ',        price: [], groups: ['アルミ'], kw: /アルミ/ },
+  { id: 'bs',  name: '真鍮・亜鉛・鉛', price: [], groups: ['真鍮・砲金', '亜鉛・鉛'], kw: /真鍮|黄銅|砲金|亜鉛|鉛/ },
+  { id: 'pm',  name: '金・銀',        price: ['金', '銀'], groups: [], kw: /金価格|金相場|金地金|金の価格|貴金属|銀価格|銀相場|プラチナ|白金|パラジウム|田中貴金属/ },
+  { id: 'bd',  name: '基板・雑品',    price: [], boards: true, groups: ['クラス', 'CPU・IC', 'PC部品', '機器', '雑品'], kw: /基板|小型家電|家電リサイクル|電子スクラップ|レアメタル|雑品|バッテリー|リチウム/ },
+  { id: 'law', name: '法規制・業界',  price: [], groups: [], kw: null, cats: ['law', 'gen'] },
+  { id: 'mk',  name: '市況',          price: ['日経平均', 'NYダウ', 'ドル円', 'ビットコイン'], groups: [], kw: null, cats: ['btc'], rest: true, note: '日経平均・NYダウ・ドル円・ビットコイン' }
+];
+function topicById(id){ for (var i = 0; i < TOPICS.length; i++) if (TOPICS[i].id === id) return TOPICS[i]; return null; }
+
+function topicPrices(t){
+  var list = priceList(), out = [];
+  t.price.forEach(function(pre){ list.forEach(function(p){ if (p.kind !== 'board' && String(p.name).indexOf(pre) === 0) out.push(p); }); });
+  if (t.boards) list.forEach(function(p){ if (p.kind === 'board') out.push(p); });
+  return out;
+}
+function topicGroups(t){
+  var all = cmpGroups((DATA.compare && DATA.compare.rows) || []);
+  return all.filter(function(g){ return t.groups.indexOf(g.name) >= 0; });
+}
+// 記事の振り分け。1本の記事が2つの品目に出ることもある（銅線の盗難＝銅と法規制）
+function metalHit(i){
+  for (var k = 0; k < TOPICS.length; k++){ var t = TOPICS[k]; if (t.kw && t.kw.test(i.title)) return true; }
+  return false;
+}
+function topicItems(t){
+  return (DATA.items || []).filter(function(i){
+    if (t.cats && t.cats.indexOf(i.cat) >= 0) return true;
+    if (t.rest) return i.cat === 'mkt' && !metalHit(i);
+    return i.cat !== 'btc' && t.kw && t.kw.test(i.title);
+  });
+}
+
+function topicCard(t){
+  var ps = topicPrices(t), gs = topicGroups(t), items = topicItems(t), mid = '';
+  if (t.id === 'law'){
+    var day = items.filter(function(i){ return new Date(updatedAt() || new Date()) - new Date(i.published) < 48 * 3600000; }).length;
+    mid = '<span class="tl">金属盗対策法・古物営業法など</span><span class="tv num">' + day + '<small>本（2日以内）</small></span>';
+  } else if (ps.length){
+    var p = ps[0], n = splitName(p.name);
+    mid = '<span class="tl">' + esc(t.boards ? 'K&Y ' + n[0] : (n[0] === t.name ? '' : n[0])) + '</span>' +
+      '<span class="tv num">' + esc(p.value) + '<small>' + esc(p.unit || '') + '</small></span>' +
+      '<span class="td num ' + diffClass(p.diff) + '">' + esc(diffText(p.diff)) + '</span>';
+  } else if (gs.length && gs[0].rows.length){
+    var r = gs[0].rows[0], best = r.cells.filter(function(c){ return c.best; })[0];
+    mid = '<span class="tl">' + esc(r.name) + 'の同業最高</span><span class="tv num">' + yen(best.value) + '<small>円 ' + esc(best.dealer) + '</small></span>';
+  }
+  return '<button class="topic press" type="button" data-open="v-topic" data-arg="' + t.id + '">' +
+    '<span class="tn">' + esc(t.name) + '</span>' + ICON_CHEV + mid +
+    '<span class="tc">記事 ' + items.length + '本</span></button>';
+}
+
+// 品目の画面の中身
+function bigChartHtml(p){
+  var h = findHist(p.key), n = splitName(p.name), f = function(x){ return x.toLocaleString('ja-JP', { maximumFractionDigits: 2 }); };
+  var s = '<div class="big"><div class="k">' + esc(n[0]) + '<small>' + esc([n[1], p.unit].filter(Boolean).join('・')) + '</small></div>' +
+    '<div class="cnow"><span class="v num">' + esc(p.value) + '</span><span class="d num ' + diffClass(p.diff) + '" style="font-weight:800">' + esc(diffText(p.diff)) + '</span></div>';
+  if (h && h.v && h.v.length >= 3){
+    s += sparkline(h.v) + '<div class="cfoot num"><span>' + md(h.d[0]) + '</span><span>3ヶ月　高 ' + f(Math.max.apply(null, h.v)) +
+      '　安 ' + f(Math.min.apply(null, h.v)) + '</span><span>' + md(h.d[h.d.length - 1]) + '</span></div>';
+  } else {
+    s += '<p style="padding:8px 0 10px;font-size:.8125rem;color:var(--ink-3)">グラフは記録がたまると出ます</p>';
+  }
+  return s + '</div>';
+}
+function topicQuestion(t, ps, gs){
+  var bits = ps.slice(0, 3).map(function(p){ return splitName(p.name)[0] + 'は' + p.value + (p.unit || '') + (p.diff && p.diff !== '0' ? '（前回比 ' + p.diff + '）' : ''); });
+  gs.forEach(function(g){ g.rows.slice(0, 2).forEach(function(r){
+    var b = r.cells.filter(function(c){ return c.best; })[0];
+    bits.push(r.name + 'の同業最高は' + b.dealer + 'の' + yen(b.value) + '円');
+  }); });
+  bits = bits.slice(0, 5);   // 質問が長すぎると開けないので、数字は5つまで
+  return 'スクラップ・非鉄金属の買取業者です。けさの' + t.name + 'の状況：' + (bits.length ? bits.join('、') : '手元に数字はありません') +
+    '。これから1〜2週間の見通しと、買取価格を決めるときに気をつけることを教えて';
+}
+function renderTopic(id){
+  var t = topicById(id); if (!t) return;
+  var ps = topicPrices(t), gs = topicGroups(t), items = topicItems(t), s = '';
+  $('topic-title').textContent = t.name;
+  if (t.note) s += '<p class="lead" style="padding:12px 16px 0">' + esc(t.note) + '</p>';
+  if (ps.length){
+    var main = t.boards ? [] : ps.slice(0, t.id === 'pm' ? 2 : 1), rest = ps.slice(main.length);
+    s += '<div class="sec" style="padding-top:12px"><div class="eyebrow">相場' + (rest.length ? '<span class="hint">押すと3ヶ月のグラフ</span>' : '') + '</div>' +
+      main.map(function(p){ return '<div style="margin-bottom:var(--gap)">' + bigChartHtml(p) + '</div>'; }).join('') +
+      (rest.length ? '<div class="list others">' + rest.map(rowHtml).join('') + '</div>' : '') + '</div>';
+  }
+  if (gs.length){
+    var many = gs.length > 2, cur = TGROUP[t.id] || gs[0].name;
+    s += '<div class="sec"><div class="eyebrow">同業の買取価格<span class="hint">緑がいちばん高い先</span></div>' +
+      (many ? '<div class="chips gchips" data-t="' + t.id + '">' + gs.map(function(g){
+        return '<button class="chip press" type="button" data-g="' + esc(g.name) + '" aria-pressed="' + (g.name === cur) + '">' + esc(g.name) + '</button>'; }).join('') + '</div>' : '') +
+      gs.filter(function(g){ return !many || g.name === cur; }).map(function(g){
+        return '<div class="gname">' + esc(g.name) + '</div><div class="cmp">' + g.rows.map(cmpItemHtml).join('') + '</div>'; }).join('') + '</div>';
+  }
+  s += '<div class="sec"><div class="eyebrow">記事<span class="hint">' + items.length + '本・新しい順</span></div>' +
+    (items.length ? '<div class="feed" style="margin:0 -16px">' + items.map(articleHtml).join('') + '</div>'
+                  : '<div class="empty">この品目の記事は、けさはありません</div>') + '</div>';
+  s += '<div class="asktopic"><button class="btn btn-main press" type="button" data-q="' + esc(topicQuestion(t, ps, gs)) + '">' + esc(t.name) + 'のことをAIに聞く</button>' +
+    '<p>けさの数字を入れた質問で、Claudeが開きます</p></div>';
+  $('topic-body').innerHTML = s;
+}
+SUB_HOOK['v-topic'] = renderTopic;
+$('topic-body').addEventListener('click', function(e){
+  var q = e.target.closest('[data-q]'); if (q){ askAI(q.getAttribute('data-q')); return; }
+  var g = e.target.closest('[data-g]'); if (!g) return;
+  var box = g.closest('[data-t]'); TGROUP[box.getAttribute('data-t')] = g.getAttribute('data-g');
+  var y = window.scrollY; renderTopic(box.getAttribute('data-t')); window.scrollTo(0, y);
+});
+
+loadData().then(function(res){
+  DATA = res.data; FROM = res.from;
+  $('loading').hidden = true; $('main').hidden = false;
+  $('updated').textContent = (DATA.updated || '') + ' 更新';
+  $('banner').innerHTML = bannerHtml();
+  $('brief').innerHTML = briefHtml();
+  $('topics').innerHTML = TOPICS.map(topicCard).join('');
+  $('allbtn').textContent = '記事を新しい順にぜんぶ見る（' + (DATA.items || []).length + '本）';
+  var rep = reportsHtml();
+  if (rep){ $('reports').innerHTML = rep; $('reports-sec').hidden = false; }
+  var l3m = l3mHtml();
+  if (l3m){ $('l3m').innerHTML = l3m; $('l3m-date').textContent = 'The Last Three Minutes・' + md(DATA.ai_morning.date || ''); $('l3m-sec').hidden = false; }
+  setupNewsView();
+  $('ask').innerHTML = askPanelHtml(); bindAsk($('ask'));
+}).catch(function(){
+  $('loading').hidden = true;
+  $('banner').innerHTML = fatalHtml();
+});
+</script>
+</body>
+</html>
