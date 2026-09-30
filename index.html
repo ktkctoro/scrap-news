@@ -356,7 +356,12 @@ function renderPrices(){
 
 function histKey(name){
   // 「銅建値（8/21改定）」→「銅建値」。日付つきの表示名から記録用の名前へ。
-  return String(name).replace(/[（(].*$/, '').trim();
+  // ただし基板は「基板:ＣＰＵグリーン（下）」「基板:電源基板(鉄なし)」のように、
+  // かっこが品名の一部として記録されている。かっこを落とすと当たらないので、
+  // まずそのままの名前で探し、無かったときだけ落とす。
+  var raw = String(name).trim();
+  if (DATA && DATA.history && DATA.history[raw]) return raw;
+  return raw.replace(/[（(].*$/, '').trim();
 }
 
 function sparkline(vals){
