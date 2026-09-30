@@ -1,5 +1,5 @@
 {
- "updated": "9/30 17:30",
+ "updated": "9/30 17:39",
  "fx": {
   "usdjpy": 157.12,
   "date": "2026-09-29"
@@ -34,9 +34,9 @@
    },
    {
     "name": "ビットコイン",
-    "value": "13,045,230",
+    "value": "13,027,895",
     "unit": "円",
-    "diff": "-1.5%"
+    "diff": "-1.4%"
    },
    {
     "name": "日経平均",
@@ -111,20 +111,37 @@
    "published": "2026-09-30T11:47:29+09:00"
   },
   {
+   "cat": "mkt",
+   "label": "相場",
+   "title": "鉄スクラップ 国際相場が上昇 トルコ調達増 国内連れ高要因に",
+   "source": "Yahoo!ニュース",
+   "link": "https://news.yahoo.co.jp/articles/c5aead74d7ee705e921335d63c1c3aa462324ef5",
+   "published": "2026-09-30T10:14:00+09:00"
+  },
+  {
+   "cat": "mkt",
+   "label": "相場",
+   "title": "東京／アルミ合金屑／様子見横ばい",
+   "source": "日刊鉄鋼新聞",
+   "link": "https://www.japanmetaldaily.com/articles/-/267890",
+   "published": "2026-09-30T07:00:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "木谷鉄リサイクル工業会会長／環境省の検討会、過剰規制を警戒",
+   "source": "日刊鉄鋼新聞",
+   "link": "https://www.japanmetaldaily.com/articles/-/267977",
+   "published": "2026-09-30T07:00:00+09:00",
+   "dups": 1
+  },
+  {
    "cat": "law",
    "label": "法規制",
    "title": "日本の廃棄物をエネルギーに変える市場の最新動向",
    "source": "pando.life",
    "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE9DSndZdUpKSjBTZTFXX3ZHUlh5ZUNodnNOMjNYVWpFNDRzMGprVEdrYk1xUmlJb0NmcDhSVlE3MjluM0Z4ZUJIYUt3?oc=5",
    "published": "2026-09-30T05:53:20+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
-   "title": "木谷鉄リサイクル工業会会長／環境省の検討会、過剰規制を警戒／実効性ある規制求め２段階審査を提言",
-   "source": "日刊鉄鋼新聞 Japan Metal Daily",
-   "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1ySEFEUWowUjVYOFpxdXVNdGpNYUFTUEhjRlV2NGRDazA5bXNrQkNTdjJ2dmowWWZObzNXQkVOWXlSM2NYVXkwNWd0Um9kMGl0WENEQ0FhTGE1QWo4U1E?oc=5",
-   "published": "2026-09-30T05:00:00+09:00"
   },
   {
    "cat": "law",
@@ -143,12 +160,12 @@
    "published": "2026-09-30T00:00:43+09:00"
   },
   {
-   "cat": "mkt",
-   "label": "相場",
-   "title": "【銅が史上最高値なのに大赤字】加工賃ゼロで崩壊する製錬",
-   "source": "note",
-   "link": "https://note.com/aiinveststation/n/n8ed115eefa68",
-   "published": "2026-09-29T13:54:00+09:00"
+   "cat": "law",
+   "label": "法規制",
+   "title": "【徹底比較】無料の古物台帳アプリで買取店はどこまで運営できる",
+   "source": "RBB TODAY",
+   "link": "https://www.rbbtoday.com/release/dreamnews/20260930/1364900.html",
+   "published": "2026-09-29T23:30:00+09:00"
   },
   {
    "cat": "gen",
@@ -318,7 +335,8 @@
    "title": "鉄スクラップ 東鉄買値上げ 輸出価格けん制狙い（日刊産業新聞）",
    "source": "Yahoo!ニュース",
    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBmcHB6czlTaXY0czJQNVhCVHpKb3VYS09ZODhNdlliQXNJTHN3b1VWd3hqdUxRZGpFakl5VjRZdGZxMG9Ia1JlbzZZaVdxU19ENFBiLUNzZFZOYU9TWmh3dVBpa29kWGJVRG5qcXc0OWs3RkRrbkkwVFlydXJMcDA?oc=5",
-   "published": "2026-09-25T14:06:04+09:00"
+   "published": "2026-09-25T14:06:04+09:00",
+   "dups": 1
   },
   {
    "cat": "mkt",
@@ -344,6 +362,14 @@
    "source": "選挙ドットコム",
    "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBqYVQzZGtTbmdkMlVjY3ZobFltcXNBYUM4UUxKZmFPVC12NDdrUVhoakhpR0htay10MFhjTjNyVWRLcl9Ral83akVhRWdXeUpyQU5LMnJSMWExSGR5TW1B?oc=5",
    "published": "2026-09-25T08:14:04+09:00"
+  },
+  {
+   "cat": "mkt",
+   "label": "相場",
+   "title": "鉄スクラップ小幅反発 国内相場",
+   "source": "日刊産業新聞",
+   "link": "https://www.japanmetal.com/news-t20260925150853.html",
+   "published": "2026-09-25T07:50:00+09:00"
   },
   {
    "cat": "law",
@@ -426,14 +452,6 @@
    "published": "2026-09-24T05:00:00+09:00"
   },
   {
-   "cat": "mkt",
-   "label": "相場",
-   "title": "【9/24】銅の最高値更新と国内製錬事業の縮小",
-   "source": "note",
-   "link": "https://note.com/kiku_keizai/n/n204e10485f45",
-   "published": "2026-09-24T02:20:00+09:00"
-  },
-  {
    "cat": "law",
    "label": "法規制",
    "title": "JESCO事業の災害廃棄物事業の追加は画期的 廃棄物・3R研究財団、3R",
@@ -487,8 +505,7 @@
    "title": "環境省 スクラップヤード対策検討会 事業者許可 二段階審査を（日刊産業新聞）",
    "source": "Yahoo!ニュース",
    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5idV96MTh3c1NJTDRDNTYydDdna1dmTno0NExRTHBpN0FTRmRacmlwUS03MDJHVTJNZzdtVERWTmpuRU1xaFVDNzI2Qno0Q0lhcjFGcjVIV09uTkVndVNsOGcwWHdfMW53MzhydWtDRVk0bWEzQWVkakc0aUxqZFU?oc=5",
-   "published": "2026-09-17T16:00:00+09:00",
-   "dups": 1
+   "published": "2026-09-17T16:00:00+09:00"
   },
   {
    "cat": "law",
@@ -555,6 +572,14 @@
    "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBIeEViZko5UXhXb015VF9KWGk3WWJOaVJqUUg2dkhPTFJzLU9oT2FMcjZRNUFUVGxpZ01rRU16Ynd2U0w0ajFOS09kUElQVS1SYjV1aTM4RkFheTExNi1mVk1BNTE4U1hySmc?oc=5",
    "published": "2026-09-11T16:00:00+09:00",
    "dups": 1
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "TRUSTDOCK、古物営業法の施行規則改正に対応する口座情報確認APIを",
+   "source": "PR TIMES",
+   "link": "https://prtimes.jp/main/html/rd/p/000000274.000003955.html",
+   "published": "2026-09-10T18:00:00+09:00"
   },
   {
    "cat": "law",
@@ -2726,7 +2751,7 @@
     13277483,
     13295037,
     13136421,
-    13085213
+    13072038
    ]
   },
   "基板:マザーボード（Ｃ）": {
@@ -3670,10 +3695,10 @@
  },
  "ai": {
   "lines": [
-   "・銅建値242万円、11万円上げで再び最高値。金22,927円/g",
-   "・環境省検討会で2段階審査提言、ヤードは2028年までに全国許可制へ",
-   "・銅盗難が急増。神社の銅板や太陽光ケーブル2.2トンで逮捕"
+   "・銅建値242万円、11万円高で再び最高値",
+   "・環境省ヤード検討会、28年までに全国許可制へ",
+   "・銅狙う窃盗が急増、神社銅板やケーブル盗も"
   ],
-  "at": "9/30 17:31"
+  "at": "9/30 17:39"
  }
 }
