@@ -1,0 +1,65 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>画面案をくらべる — スクラップ今日</title>
+<style>
+  :root{ --ai:#1f4e79; --midori:#2e7d52; --shu:#c0522d;
+         --paper:#f7f7f5; --ink:#22262b; --sub:#5b636c; --line:#dcdfe3; }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);
+       font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic",sans-serif;
+       padding:max(16px,env(safe-area-inset-top)) 16px calc(24px + env(safe-area-inset-bottom));
+       -webkit-font-smoothing:antialiased;line-height:1.7}
+  .wrap{max-width:560px;margin:0 auto}
+  h1{font-size:20px;margin:4px 0 6px}
+  .lead{font-size:15px;color:var(--sub);margin:0 0 20px}
+  a.card{display:block;text-decoration:none;color:inherit;background:#fff;
+         border:1px solid var(--line);border-left:4px solid var(--ai);
+         border-radius:10px;padding:14px 16px;margin-bottom:12px;min-height:48px}
+  a.card:active{background:#eef2f6}
+  .name{font-size:17px;font-weight:700}
+  .name .tag{font-size:12px;font-weight:600;color:#fff;background:var(--midori);
+             border-radius:999px;padding:2px 8px;margin-left:8px;vertical-align:2px}
+  .desc{font-size:14px;color:var(--sub);margin-top:4px}
+  .note{font-size:13px;color:var(--sub);background:#fff;border:1px solid var(--line);
+        border-radius:10px;padding:12px 14px;margin-top:20px}
+  .back{display:inline-block;margin-top:18px;font-size:15px;color:var(--ai);min-height:44px;line-height:44px}
+</style>
+<div class="wrap">
+  <h1>画面案をくらべる</h1>
+  <p class="lead">スマホ画面の作り直し 6案。どれも今朝のデータで動きます。<br>
+    押すと開きます。戻るときはブラウザの「戻る」で。</p>
+
+  <a class="card" href="c.html">
+    <div class="name">案C　朝1分<span class="tag">おすすめ</span></div>
+    <div class="desc">開いた1画面で答えが出る。銅建値を特大に。続きは下の大きなボタン3つから</div>
+  </a>
+  <a class="card" href="a.html">
+    <div class="name">案A　いまの並びを直す</div>
+    <div class="desc">並び順はそのまま。文字の大きさ・濃さ・押しやすさだけ直した案</div>
+  </a>
+  <a class="card" href="b.html">
+    <div class="name">案B　下タブで分ける</div>
+    <div class="desc">目的ごとに4画面へ。けさ／相場／記事／くらべる を下タブで切り替え</div>
+  </a>
+  <a class="card" href="d.html">
+    <div class="name">案D　品目で引く</div>
+    <div class="desc">「銅はいくら」から入る。品目を選ぶと相場・買取価格・記事がまとまって出る</div>
+  </a>
+  <a class="card" href="e.html">
+    <div class="name">案E　変わったところだけ</div>
+    <div class="desc">動いた数字と新しい記事だけを上に出す。変わっていないものは下へ</div>
+  </a>
+  <a class="card" href="f.html">
+    <div class="name">案F　めくるカード</div>
+    <div class="desc">1枚ずつめくって読む。指の動きがいちばん少ない</div>
+  </a>
+
+  <div class="note">
+    どれか1つに決めなくても構いません。「この案のここが良い」という形でも、
+    組み合わせて作れます。決まったら、その案を本番の画面に入れて、
+    この <code>/plans/</code> は消します。
+  </div>
+
+  <a class="back" href="../">← いつもの画面にもどる</a>
+</div>

@@ -109,11 +109,20 @@ jobs:
           mkdir -p _site
           cp index.html data.json _site/
           # 画面案も一緒に出す。採用を決めるまでスマホで見るため。
-          # 各案は ../data.json を読むので、_site の直下に置けばそのまま動く
+          # 置き場は /plans/ で、名前も a〜f にする。日本語のままだと
+          # アドレスが %E3%81%82… だらけになり、スマホで扱えないため。
+          # 各案は ../data.json を読むので、_site の1つ下に置けばそのまま動く
           # （データを埋め込んでいないので、ダブルクリックでは中身が出ない）。
           # トップページからはリンクしていないので、朝の画面には出てこない。
-          # 採用が決まったらこの行ごと消すこと
-          cp -r 画面案 _site/
+          # 採用が決まったら、ここから下の plans まわりをまとめて消すこと
+          mkdir -p _site/plans
+          cp 画面案/plans-index.html            _site/plans/index.html
+          cp "画面案/案A_いまの並びを直す.html"     _site/plans/a.html
+          cp "画面案/案B_下タブで分ける.html"       _site/plans/b.html
+          cp "画面案/案C_朝1分.html"              _site/plans/c.html
+          cp "画面案/案D_品目で引く.html"          _site/plans/d.html
+          cp "画面案/案E_変わったところだけ.html"    _site/plans/e.html
+          cp "画面案/案F_めくるカード.html"         _site/plans/f.html
 
       - uses: actions/upload-pages-artifact@v5
         with:
