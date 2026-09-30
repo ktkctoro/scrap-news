@@ -1,5 +1,5 @@
 {
- "updated": "9/30 15:58",
+ "updated": "9/30 17:30",
  "fx": {
   "usdjpy": 157.12,
   "date": "2026-09-29"
@@ -22,21 +22,21 @@
   "rows": [
    {
     "name": "金（店頭買取）",
-    "value": "23,026",
+    "value": "22,927",
     "unit": "円/g",
-    "diff": "+297"
+    "diff": "+198"
    },
    {
     "name": "銀（店頭買取）",
-    "value": "336.49",
+    "value": "323.29",
     "unit": "円/g",
-    "diff": "+2.53"
+    "diff": "-10.67"
    },
    {
     "name": "ビットコイン",
-    "value": "13,034,133",
+    "value": "13,045,230",
     "unit": "円",
-    "diff": "-1.4%"
+    "diff": "-1.5%"
    },
    {
     "name": "日経平均",
@@ -53,6 +53,14 @@
   ]
  },
  "items": [
+  {
+   "cat": "btc",
+   "label": "ビットコイン",
+   "title": "ビットコインの強気派が守るべき価格水準は一つだけ",
+   "source": "CoinDesk",
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNU1BCNVZtcDJMQ2pFU3pjc0lOOXVpQ1ZIakdyMi13TnZpVWdVTDQ4VkhEaG1jZEpwSUk1dXhZc2FsekdlUERoakhqMUZybnk4OTBqc19zRHZQSFRQTDYyX1lGS3Y2ckNPVTlON2VHTHVhRm9vZFR6Rnl6LVJ6ckt3RFZvRjV2ZDNQU0k0bTVTX3FLUml4VHc?oc=5",
+   "published": "2026-09-30T16:04:41+09:00"
+  },
   {
    "cat": "dc",
    "label": "AI・DC",
@@ -103,22 +111,6 @@
    "published": "2026-09-30T11:47:29+09:00"
   },
   {
-   "cat": "mkt",
-   "label": "相場",
-   "title": "東京／アルミ合金屑／様子見横ばい",
-   "source": "日刊鉄鋼新聞",
-   "link": "https://www.japanmetaldaily.com/articles/-/267890",
-   "published": "2026-09-30T07:00:00+09:00"
-  },
-  {
-   "cat": "btc",
-   "label": "ビットコイン",
-   "title": "5%金利でも崩れぬビットコイン 金との明暗鮮明に",
-   "source": "日本経済新聞",
-   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9PWUJkYUV2VUZWVVR6MUkycHNWRjFIZ0pXVV9IQW9IUzg0eHBGVFJZWkRPVnM4bE5qdnhEZF8zak41emxWUUtiRG8wS1luMDN1emxmRjBKOERiVzI0RjZacGJ5V2ZPRjJWRWZxbQ?oc=5",
-   "published": "2026-09-30T06:50:28+09:00"
-  },
-  {
    "cat": "law",
    "label": "法規制",
    "title": "日本の廃棄物をエネルギーに変える市場の最新動向",
@@ -130,17 +122,9 @@
    "cat": "law",
    "label": "法規制",
    "title": "木谷鉄リサイクル工業会会長／環境省の検討会、過剰規制を警戒／実効性ある規制求め２段階審査を提言",
-   "source": "日刊鉄鋼新聞",
+   "source": "日刊鉄鋼新聞 Japan Metal Daily",
    "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1ySEFEUWowUjVYOFpxdXVNdGpNYUFTUEhjRlV2NGRDazA5bXNrQkNTdjJ2dmowWWZObzNXQkVOWXlSM2NYVXkwNWd0Um9kMGl0WENEQ0FhTGE1QWo4U1E?oc=5",
    "published": "2026-09-30T05:00:00+09:00"
-  },
-  {
-   "cat": "mkt",
-   "label": "相場",
-   "title": "鉄スクラップ 国際相場が上昇 トルコ調達増 国内連れ高要因に",
-   "source": "日刊産業新聞",
-   "link": "https://www.japanmetal.com/news-t20260930150923.html",
-   "published": "2026-09-30T02:00:00+09:00"
   },
   {
    "cat": "law",
@@ -159,18 +143,18 @@
    "published": "2026-09-30T00:00:43+09:00"
   },
   {
-   "cat": "law",
-   "label": "法規制",
-   "title": "【徹底比較】無料の古物台帳アプリで買取店はどこまで運営できる",
-   "source": "RBB TODAY",
-   "link": "https://www.rbbtoday.com/release/dreamnews/20260930/1364900.html",
-   "published": "2026-09-29T23:30:00+09:00"
+   "cat": "mkt",
+   "label": "相場",
+   "title": "【銅が史上最高値なのに大赤字】加工賃ゼロで崩壊する製錬",
+   "source": "note",
+   "link": "https://note.com/aiinveststation/n/n8ed115eefa68",
+   "published": "2026-09-29T13:54:00+09:00"
   },
   {
    "cat": "gen",
    "label": "業界",
    "title": "鉄くずや家電など燃える…当時無人だったスクラップ置き場で火事 約3時間半後に消し止められケガ人なし",
-   "source": "Excite エキサイト",
+   "source": "excite.co.jp",
    "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9yWFdGc1hEM3ljeGQ4QlhQaFltaVBRakpEMmptTnp4cXpGUGlVby1YaUlHWWtHdkNkUEJ1RWdRaE1qT0RhM3AxTGV3ZnlRVW9QOTE4LWpjXzZrZ2xHaXNVbVp5UUNCVndjdU9FRGcxdXZ1Skk?oc=5",
    "published": "2026-09-29T12:11:00+09:00"
   },
@@ -312,19 +296,10 @@
    "published": "2026-09-25T19:26:27+09:00"
   },
   {
-   "cat": "mkt",
-   "label": "相場",
-   "title": "鉄スクラップ 東鉄買値上げ 輸出価格けん制狙い",
-   "source": "Yahoo!ニュース",
-   "link": "https://news.yahoo.co.jp/articles/d674d99ae986cd308dbece1edcfcdc64dbb25e59",
-   "published": "2026-09-25T16:06:00+09:00",
-   "dups": 1
-  },
-  {
    "cat": "gen",
    "label": "業界",
    "title": "｢銅｣を狙う窃盗事件が急増 背景に脱炭素!?【WBSクロス】",
-   "source": "txbiz.tv-tokyo.co.jp",
+   "source": "テレ東BIZ",
    "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFA5ei1rSV9PNmNaVjMtV0s2VFE4dkNiQWpqVGtvS3ByUUhPa1RzRVoyNGY4dGZ5ZUxXT2x5a1d2dE9yV2dfdllpTXkzdmdQUC1NclIzUA?oc=5",
    "published": "2026-09-25T14:24:32+09:00"
   },
@@ -336,6 +311,14 @@
    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE15QnpmLWJZRGc5TVhxR0k4aDdKWDRORURVMmR5WGRMU01pMzEtYngxa25ZMXJUNFBPZXlRMkd4Y2hreHRERDNBZWhwcXd2VG1RNmhSbjFyTnI4ZHRSeFd0Y0pjRV93Qzg1a1NYaWU3VFJjX1paN3lITXY4WDdTM0k?oc=5",
    "published": "2026-09-25T14:07:08+09:00",
    "dups": 2
+  },
+  {
+   "cat": "mkt",
+   "label": "相場",
+   "title": "鉄スクラップ 東鉄買値上げ 輸出価格けん制狙い（日刊産業新聞）",
+   "source": "Yahoo!ニュース",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBmcHB6czlTaXY0czJQNVhCVHpKb3VYS09ZODhNdlliQXNJTHN3b1VWd3hqdUxRZGpFakl5VjRZdGZxMG9Ia1JlbzZZaVdxU19ENFBiLUNzZFZOYU9TWmh3dVBpa29kWGJVRG5qcXc0OWs3RkRrbkkwVFlydXJMcDA?oc=5",
+   "published": "2026-09-25T14:06:04+09:00"
   },
   {
    "cat": "mkt",
@@ -361,14 +344,6 @@
    "source": "選挙ドットコム",
    "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBqYVQzZGtTbmdkMlVjY3ZobFltcXNBYUM4UUxKZmFPVC12NDdrUVhoakhpR0htay10MFhjTjNyVWRLcl9Ral83akVhRWdXeUpyQU5LMnJSMWExSGR5TW1B?oc=5",
    "published": "2026-09-25T08:14:04+09:00"
-  },
-  {
-   "cat": "mkt",
-   "label": "相場",
-   "title": "鉄スクラップ小幅反発 国内相場",
-   "source": "日刊産業新聞",
-   "link": "https://www.japanmetal.com/news-t20260925150853.html",
-   "published": "2026-09-25T07:50:00+09:00"
   },
   {
    "cat": "law",
@@ -403,14 +378,6 @@
    "published": "2026-09-25T00:00:00+09:00"
   },
   {
-   "cat": "mkt",
-   "label": "相場",
-   "title": "鉄スクラップ7月国内市況 輸出は2カ月ぶり減",
-   "source": "Yahoo!ニュース",
-   "link": "https://news.yahoo.co.jp/articles/e693ebb3fa51ed02c30724c092c1de171cc62e5f",
-   "published": "2026-09-24T12:48:00+09:00"
-  },
-  {
    "cat": "law",
    "label": "法規制",
    "title": "廃棄物の再資源化設備、保管・荷役施設に補助金 循環経済認定の港なら加点",
@@ -443,12 +410,28 @@
    "published": "2026-09-24T10:51:48+09:00"
   },
   {
+   "cat": "mkt",
+   "label": "相場",
+   "title": "鉄スクラップ7月国内市況 輸出は2カ月ぶり減（日刊産業新聞）",
+   "source": "Yahoo!ニュース",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE4wN1dHdllqMWprUkRyZ1VqUFhwdEozMHVrTmlDaG8zbWtYdi01N18tMXlWRjRrQm5kX2EtdTZObkNxV2N3RGdmMkhxYVl2QnpidUFDa2h5UVdGdGJJeWFlQ29CQUgtWmRaVkU1RDJWVEpNZmRKWk1ScFFOeUtGZ0k?oc=5",
+   "published": "2026-09-24T10:48:41+09:00"
+  },
+  {
    "cat": "dc",
    "label": "AI・DC",
    "title": "オリエンタル・カッパー／銅ブスバー新工場稼働／年１万トン増強、銅ボール製造も視野",
-   "source": "日刊鉄鋼新聞",
+   "source": "日刊鉄鋼新聞 Japan Metal Daily",
    "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9QUnBRYW45NG5raGlNZUJCZmdEeWpCclNjX0lYUXNUUy1QdXA0ZF9EMFVzcWREY3RVcG5uVVQxd3lTRm9SMkEtMklmd0J0bzF6cDkzcTJVQkFfQWVGZVE?oc=5",
    "published": "2026-09-24T05:00:00+09:00"
+  },
+  {
+   "cat": "mkt",
+   "label": "相場",
+   "title": "【9/24】銅の最高値更新と国内製錬事業の縮小",
+   "source": "note",
+   "link": "https://note.com/kiku_keizai/n/n204e10485f45",
+   "published": "2026-09-24T02:20:00+09:00"
   },
   {
    "cat": "law",
@@ -493,6 +476,14 @@
   {
    "cat": "law",
    "label": "法規制",
+   "title": "【日本】環境省、非常災害廃棄物の迅速処理で自治体と民間業者と",
+   "source": "sustainablejapan",
+   "link": "https://sustainablejapan.jp/2026/09/18/japan-disaster-waste/130678",
+   "published": "2026-09-18T02:00:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
    "title": "環境省 スクラップヤード対策検討会 事業者許可 二段階審査を（日刊産業新聞）",
    "source": "Yahoo!ニュース",
    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5idV96MTh3c1NJTDRDNTYydDdna1dmTno0NExRTHBpN0FTRmRacmlwUS03MDJHVTJNZzdtVERWTmpuRU1xaFVDNzI2Qno0Q0lhcjFGcjVIV09uTkVndVNsOGcwWHdfMW53MzhydWtDRVk0bWEzQWVkakc0aUxqZFU?oc=5",
@@ -528,7 +519,7 @@
    "cat": "law",
    "label": "法規制",
    "title": "環境省のヤード環境対策技術検討会／木谷鉄リ工業会会長、「２段階の許可審査」を提言／〝地域との共生〟書類で判断",
-   "source": "日刊鉄鋼新聞",
+   "source": "日刊鉄鋼新聞 Japan Metal Daily",
    "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBLUUg1Ylltc29VUndkUTZqVTFDd29QbUR6T1V1Qkg3WnBiV3hxdDY0M1BVS3dkaUs0cy1LNW5wNUpvQXlyMlZWTnpWNDBDZkw4anozSDBGeEt5OGhZbkE?oc=5",
    "published": "2026-09-16T16:00:00+09:00"
   },
@@ -564,14 +555,6 @@
    "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBIeEViZko5UXhXb015VF9KWGk3WWJOaVJqUUg2dkhPTFJzLU9oT2FMcjZRNUFUVGxpZ01rRU16Ynd2U0w0ajFOS09kUElQVS1SYjV1aTM4RkFheTExNi1mVk1BNTE4U1hySmc?oc=5",
    "published": "2026-09-11T16:00:00+09:00",
    "dups": 1
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
-   "title": "TRUSTDOCK、古物営業法の施行規則改正に対応する口座情報確認APIを",
-   "source": "PR TIMES",
-   "link": "https://prtimes.jp/main/html/rd/p/000000274.000003955.html",
-   "published": "2026-09-10T18:00:00+09:00"
   },
   {
    "cat": "law",
@@ -649,7 +632,7 @@
    "cat": "law",
    "label": "法規制",
    "title": "倉庫・食品工場の冷凍冷蔵設備に最大6,700万円！東京都の省エネ型ノンフロン機器補助",
-   "source": "補助金ポータル",
+   "source": "hojyokin-portal.jp",
    "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5tTDgtV1VSTENZcTZwdmhHSG9uZlcwc0l3ODk0N19jLUNhb3lOQ3Zzc2FPWHNITnk5SkRiaTRYdnhJRmMxMEh1dVRFRmFaWkRobk8wYUN5eVVXc2NsRUE?oc=5",
    "published": "2026-08-24T16:00:00+09:00"
   },
@@ -696,11 +679,10 @@
   {
    "cat": "law",
    "label": "法規制",
-   "title": "ＥＶ充電所の破壊相次ぐ 銅線を狙った犯行―オーストラリア：時事ドットコム",
+   "title": "ＥＶ充電所の破壊相次ぐ 銅線を狙った犯行―オーストラリア",
    "source": "時事ドットコム",
    "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBpR2g0LW5nLU1FcGFrMmRBSFJia1Nfcy1mdS1peXNhWmRxeGozbDBTRlhibjZLLWFwUHhzQnZReG4xTEdEVnNZMTkzUzJTalVPcVVscFU3c3RyZVZKcEVHZUllUQ?oc=5",
-   "published": "2026-08-02T16:00:00+09:00",
-   "dups": 1
+   "published": "2026-08-02T16:00:00+09:00"
   }
  ],
  "boards": {
@@ -2744,7 +2726,7 @@
     13277483,
     13295037,
     13136421,
-    13084301
+    13085213
    ]
   },
   "基板:マザーボード（Ｃ）": {
@@ -3542,7 +3524,7 @@
     23650.0,
     23650.0,
     22798.0,
-    23026.0
+    22927.0
    ]
   },
   "銀": {
@@ -3626,7 +3608,7 @@
     340.23,
     340.23,
     323.07,
-    336.49
+    323.29
    ]
   },
   "銅建値": {
@@ -3688,10 +3670,10 @@
  },
  "ai": {
   "lines": [
-   "・銅建値242万円、11万円高で再び最高値。金も297円高",
-   "・環境省ヤード検討会、事業者許可は二段階審査を提言",
-   "・銅狙いの窃盗が急増、神社屋根や太陽光ケーブル被害"
+   "・銅建値242万円、11万円上げで再び最高値。金22,927円/g",
+   "・環境省検討会で2段階審査提言、ヤードは2028年までに全国許可制へ",
+   "・銅盗難が急増。神社の銅板や太陽光ケーブル2.2トンで逮捕"
   ],
-  "at": "9/30 15:59"
+  "at": "9/30 17:31"
  }
 }
