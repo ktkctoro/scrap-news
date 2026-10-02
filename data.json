@@ -1,5 +1,5 @@
 {
- "updated": "10/3 5:09",
+ "updated": "10/3 8:07",
  "fx": {
   "usdjpy": 157.67,
   "date": "2026-10-02"
@@ -34,9 +34,9 @@
    },
    {
     "name": "ビットコイン",
-    "value": "13,320,260",
+    "value": "13,341,703",
     "unit": "円",
-    "diff": "-0.6%"
+    "diff": "-0.3%"
    },
    {
     "name": "日経平均",
@@ -53,6 +53,22 @@
   ]
  },
  "items": [
+  {
+   "cat": "btc",
+   "label": "ビットコイン",
+   "title": "米国がビットコインを押し上げ、イランが急落させた暗号資産の24時間",
+   "source": "BeInCrypto",
+   "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5RbWdrTHFWWG5XdDdmenZTZklaTWJxNEtsN0ItbFFMYWZWcC1rM2ZHS1I4LV9LS2J2dFpKdGFFNW1YRDMwejB0Y0RDUU9BUm9GaDR0UENiN1QtNExYR0RmQXppMlZlbFhMWUdwMXJFNklOTVBlZ1h2cW1B?oc=5",
+   "published": "2026-10-03T07:57:51+09:00"
+  },
+  {
+   "cat": "btc",
+   "label": "ビットコイン",
+   "title": "「10月のビットコイン、過去13年間で10回上昇」、米CNBCが強気相場入りの可能性を指摘",
+   "source": "coinpost.jp",
+   "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTFBrbnBRRE5ReVBWWDcwVXR0N3EyTWJzeVkyM3Qza2RFaS1TMkpreFoyUkhZalYzM3NXTmhQblo1YkdFdnc?oc=5",
+   "published": "2026-10-03T07:50:47+09:00"
+  },
   {
    "cat": "btc",
    "label": "ビットコイン",
@@ -78,14 +94,6 @@
    "published": "2026-10-02T20:20:00+09:00"
   },
   {
-   "cat": "mkt",
-   "label": "相場",
-   "title": "東京製鉄、全拠点で 鉄スクラップ買値500円上げ",
-   "source": "日刊産業新聞",
-   "link": "https://www.japanmetal.com/news-t20261002150987.html",
-   "published": "2026-10-02T20:00:00+09:00"
-  },
-  {
    "cat": "btc",
    "label": "ビットコイン",
    "title": "ビットコイン（BTC）のドミナンスが60％復帰に近づく中、暗号通貨トレーダーはリスクオンモードに入っています",
@@ -102,28 +110,20 @@
    "published": "2026-10-02T17:35:00+09:00"
   },
   {
-   "cat": "btc",
-   "label": "ビットコイン",
-   "title": "ビットコインが急騰、フィデリティの10万ドル予測が相場の転機に",
-   "source": "Forbes JAPAN",
-   "link": "https://forbesjapan.com/articles/detail/105865",
-   "published": "2026-10-02T13:45:00+09:00"
-  },
-  {
-   "cat": "btc",
-   "label": "ビットコイン",
-   "title": "【10/2 相場速報｜FxPro】ビットコインがニュース前に上昇——86",
-   "source": "note",
-   "link": "https://note.com/fxpro_japan/n/n7f3b767cdbad",
-   "published": "2026-10-02T13:23:00+09:00"
-  },
-  {
    "cat": "mkt",
    "label": "相場",
    "title": "10月積み建値 銅237万円 鉛36万3000円 亜鉛68万2000円",
    "source": "Yahoo!ニュース",
    "link": "https://news.yahoo.co.jp/articles/1c50846e539739bad3d9d1b4e54954d75e23ea85",
    "published": "2026-10-02T12:57:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "【古物営業法・真贋調査】メルカリで仕入れてAmazonで売る「フリマ",
+   "source": "note",
+   "link": "https://note.com/brisk_vole3305/n/n632f94b28098",
+   "published": "2026-10-02T11:20:00+09:00"
   },
   {
    "cat": "mkt",
@@ -179,7 +179,7 @@
    "cat": "gen",
    "label": "業界",
    "title": "滋賀県愛荘町のリサイクル工場で爆発 男性１人死亡",
-   "source": "中日新聞Web",
+   "source": "chunichi.co.jp",
    "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5FR3BpNEZydWF1SmlscGVJWFYteUtVVUs2em8xWkZxV1pPWU5oa29GcEdubXZhb1FvRWpHWkhCZHI3WHVadlNSS1AycUZYUF9haXgyZg?oc=5",
    "published": "2026-10-01T20:20:35+09:00"
   },
@@ -198,6 +198,14 @@
    "source": "ニコニコニュース",
    "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1XVlVLRS1jZmJCNy1tS0NVejNUSUJCNUhWQTJjeU5BVVdIZEdWaVpmamtneFRaLTVrZnlVYXBVMHE3cEhXaW9jcU5EY1NtUnpVemZpbUZfMVZzNGhjM25lR1FkeWdTcHNESmhSTmh1X2pZay1nUS1wbUtrSQ?oc=5",
    "published": "2026-10-01T17:03:19+09:00"
+  },
+  {
+   "cat": "mkt",
+   "label": "相場",
+   "title": "イクヨ、アルミ再生で新都HDと提携 国内で地産地消の供給網 共同でアルミ2次合金プラントを建設",
+   "source": "netdenjd.com",
+   "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE80QkFIblloWGN2bC1ueE16clgwaFEtcGZRa1VHTjJuTFR5NVVaUkxFYnU3QUNpTXNnaVFKZEloQXBQRy1PbXRtdkZzZThZX1ozWHc?oc=5",
+   "published": "2026-10-01T15:32:44+09:00"
   },
   {
    "cat": "law",
@@ -363,6 +371,14 @@
   {
    "cat": "dc",
    "label": "AI・DC",
+   "title": "「AI・電化時代の銅市場」と題して、住友商事グローバルリサーチ",
+   "source": "毎日新聞デジタル",
+   "link": "https://mainichi.jp/articles/20260929/pr2/00m/020/716000c",
+   "published": "2026-09-29T01:59:00+09:00"
+  },
+  {
+   "cat": "dc",
+   "label": "AI・DC",
    "title": "銅張積層板市場、5GとEV需要を背景に2035年まで拡大へ",
    "source": "IndexBox",
    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNSnNQWDFyVXlPYXBCRGNOc0RYU2VFUEVDQjVmOS1CLW9rYXBrbUgxSUFwaWVxb1J5VnczRFFVa2ZxdTlnb3Y1Q3gwSHBJa1FnOEJYVU5qdzQzbXcyZjVoeWpqWUR5VmNzTHZlWHc5V3djRnFMeXVzUVhZX2hwX05tYjlNdkRZcGdxRFJuTlFrVFN0S3l6TldYVUMwMEhVTm03TkxCaTctRjV5OWE4NU5JeG1ESjhFdw?oc=5",
@@ -376,14 +392,6 @@
    "source": "pando.life",
    "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFBLV2xNNnBmUFZ2cG9NYkU3bzkwanNkS0tFd2VPSERiSHdEQi03eUtMRFdTUHFuZ1VHcHZPNl9rUFZUQ19CZzFUT1VB?oc=5",
    "published": "2026-09-28T21:27:40+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
-   "title": "【特定金属くず買受業】届出にはどんな書類が必要？",
-   "source": "note",
-   "link": "https://note.com/romeoand/n/n7c07b7afa1e6",
-   "published": "2026-09-28T16:02:00+09:00"
   },
   {
    "cat": "dc",
@@ -418,29 +426,20 @@
    "published": "2026-09-27T12:25:00+09:00"
   },
   {
-   "cat": "mkt",
-   "label": "相場",
-   "title": "金木犀の小花を地金で表現！CANAL ４℃「金木犀コレクション」",
-   "source": "Dtimes",
-   "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFBKWDZKR1VkWmJsQ3VxSTctNFlGNnVGbG9qM05wUkJsMldJejVVSDdybUVUcXhvNmRoSV9ObVF1ZDljVjUwOHc?oc=5",
-   "published": "2026-09-26T07:17:03+09:00",
-   "dups": 1
-  },
-  {
-   "cat": "gen",
-   "label": "業界",
-   "title": "EU廃棄物輸送規則：草案リストでインド、マレーシア、タイが金属スクラップ輸入から除外 - ニュースと統計",
-   "source": "IndexBox",
-   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOVGdsbnJ1czNKVEZURnVOSG5SbGktTzR3alVDNmdPeDJRb0RNX0JvYmphU1FaM3l3UGJiOWk5REJkelFQU1o1OHhVc1gzM1hGbFdGVGFidXNtN1pEclVXMTJ2WHQtT3RLMEpWNVJseHRuNFRCZ0xETWFnQV9XT24td3dGNUNpZUMxbjFsU1R5d2xNcGl3c2pFT1NUZ2M3NmVERGtaU3FHNVpyRHc0QjhfeVFyM3ZwSVVaVTcw?oc=5",
-   "published": "2026-09-26T05:12:40+09:00"
-  },
-  {
    "cat": "law",
    "label": "法規制",
    "title": "スクラップヤード規制、2028年までに全国で許可制へ｜県・市条例の",
    "source": "note",
    "link": "https://note.com/hanakenyusui/n/na8580098f2bb",
    "published": "2026-09-25T07:46:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "再資源化事業等高度化法（資源循環の促進のための再資源化事業等の高度化に関する法律）",
+   "source": "kankyo-business.jp",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPNnp5NDBTdlFENWNHQi1QR3VjNFh0dDVEc0dqVkFkNEQycEI5bmlQX1JWT0pWMjJBTl9GZ2JpMDhrU0hpb0MtT2RLRDhOTTVTZHlVWkwwMkJTc2lhYmFGSkFnLTFXWkpVRTZ3R3ZBUU1aWWNBZlBwRi1tZGhfbXF3MzRwNk0?oc=5",
+   "published": "2026-09-25T00:00:00+09:00"
   },
   {
    "cat": "law",
@@ -457,14 +456,6 @@
    "source": "環境新聞オンライン",
    "link": "https://www.kankyo-news.co.jp/news/5142e1dc-e1fd-4c9f-aa71-8a6a1324c800",
    "published": "2026-09-24T02:00:00+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
-   "title": "金属くずを「置いておく」だけで許可が要る時代へ",
-   "source": "note",
-   "link": "https://note.com/kjsnakei/n/n69d5daf3a796",
-   "published": "2026-09-21T11:00:00+09:00"
   },
   {
    "cat": "law",
@@ -550,14 +541,6 @@
   {
    "cat": "law",
    "label": "法規制",
-   "title": "「特定金属くず」の法律相談",
-   "source": "弁護士ドットコム",
-   "link": "https://www.bengo4.com/c_5/bbs/%E7%89%B9%E5%AE%9A%E9%87%91%E5%B1%9E%E3%81%8F%E3%81%9A/",
-   "published": "2026-09-04T12:26:00+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
    "title": "リース満了の太陽光パネル活用、資源循環モデル構築 新法見据え2社提携へ",
    "source": "kankyo-business.jp",
    "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9SblAzZzVDblFwN2l5bnNzR2dWaUtHZmM0amYwcDZyMFF0cFg5VzlUaThzcVpTdldFamI3YnM1V2wza1JoT2NodkM0S1hwemV3cW40TlFIS3VxTUhJVV9PWTM1MHY1T0RWNHJpRnI4bGpBRXV2d1VXbWRlX0M?oc=5",
@@ -599,7 +582,7 @@
    "cat": "law",
    "label": "法規制",
    "title": "福島日産、中古部品・タイヤ買取サービス開始…41店舗で",
-   "source": "レスポンス（Response.jp）",
+   "source": "response.jp",
    "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9NeHNNekFISVBlVHI4X2FqYUxOM2xhLUF0eW4tZnIxN01JMXJ5WnFkMUZ4ckRKVmdqLUxXa2ttbjRkSUFzTmVNUlNpQnJMY2paNXRsY1l2ZWlmRFRlVDRz?oc=5",
    "published": "2026-08-28T16:00:00+09:00"
   },
@@ -607,7 +590,7 @@
    "cat": "law",
    "label": "法規制",
    "title": "KANEYOグループの福島日産とナプロアース、中古部品の「買取から再販まで」を県内41店舗に実装（PR TIMES）",
-   "source": "毎日新聞",
+   "source": "mainichi.jp",
    "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBiSDhnWlotRk9mVnFhUlFrQVN6WFVCZWRISXVBQXZUY3pFX3BKQ0xaUFozWmljd01QYlhSQ0Z4OWVSTUJjZG8xd1A5R2tkb2w0S2JaaTRyVEo4bWtkTUY0QVRBVGhPckpu?oc=5",
    "published": "2026-08-28T16:00:00+09:00"
   },
@@ -733,7 +716,7 @@
      }
     ],
     "spread": 170,
-    "diff": "-20"
+    "diff": "0"
    },
    {
     "group": "銅",
@@ -756,7 +739,7 @@
      }
     ],
     "spread": 180,
-    "diff": "+10"
+    "diff": "0"
    },
    {
     "group": "銅",
@@ -779,7 +762,7 @@
      }
     ],
     "spread": 60,
-    "diff": "-10"
+    "diff": "0"
    },
    {
     "group": "銅",
@@ -889,7 +872,7 @@
      }
     ],
     "spread": 0,
-    "diff": "-30"
+    "diff": "0"
    },
    {
     "group": "電線",
@@ -917,7 +900,7 @@
      }
     ],
     "spread": 315,
-    "diff": "-5"
+    "diff": "0"
    },
    {
     "group": "真鍮・砲金",
@@ -940,7 +923,7 @@
      }
     ],
     "spread": 75,
-    "diff": "+10"
+    "diff": "0"
    },
    {
     "group": "真鍮・砲金",
@@ -963,7 +946,7 @@
      }
     ],
     "spread": 285,
-    "diff": "+10"
+    "diff": "0"
    },
    {
     "group": "真鍮・砲金",
@@ -991,7 +974,7 @@
      }
     ],
     "spread": 160,
-    "diff": "-10"
+    "diff": "0"
    },
    {
     "group": "真鍮・砲金",
@@ -1009,7 +992,7 @@
      }
     ],
     "spread": 50,
-    "diff": "-20"
+    "diff": "0"
    },
    {
     "group": "真鍮・砲金",
@@ -1027,7 +1010,7 @@
      }
     ],
     "spread": 80,
-    "diff": "+10"
+    "diff": "0"
    },
    {
     "group": "アルミ",
@@ -1280,7 +1263,7 @@
      }
     ],
     "spread": 2320,
-    "diff": "+920"
+    "diff": "0"
    },
    {
     "group": "基板／クラス",
@@ -1303,7 +1286,7 @@
      }
     ],
     "spread": 1540,
-    "diff": "+740"
+    "diff": "0"
    },
    {
     "group": "基板／クラス",
@@ -1344,7 +1327,7 @@
      }
     ],
     "spread": 360,
-    "diff": "+360"
+    "diff": "0"
    },
    {
     "group": "基板／クラス",
@@ -1577,7 +1560,7 @@
      }
     ],
     "spread": 8740,
-    "diff": "+880"
+    "diff": "0"
    },
    {
     "group": "基板／CPU・IC",
@@ -1687,7 +1670,7 @@
      }
     ],
     "spread": 560,
-    "diff": "+560"
+    "diff": "0"
    },
    {
     "group": "基板／PC部品",
@@ -1728,7 +1711,7 @@
      }
     ],
     "spread": 440,
-    "diff": "+20"
+    "diff": "0"
    },
    {
     "group": "基板／PC部品",
@@ -1746,7 +1729,7 @@
      }
     ],
     "spread": 640,
-    "diff": "+20"
+    "diff": "0"
    },
    {
     "group": "基板／PC部品",
@@ -1764,7 +1747,7 @@
      }
     ],
     "spread": 395,
-    "diff": "+395"
+    "diff": "0"
    },
    {
     "group": "基板／PC部品",
@@ -1864,7 +1847,7 @@
      }
     ],
     "spread": 1110,
-    "diff": "+1,110"
+    "diff": "0"
    },
    {
     "group": "基板／機器",
@@ -1892,7 +1875,7 @@
      }
     ],
     "spread": 1505,
-    "diff": "+505"
+    "diff": "0"
    },
    {
     "group": "基板／機器",
@@ -1910,7 +1893,7 @@
      }
     ],
     "spread": 480,
-    "diff": "+480"
+    "diff": "0"
    },
    {
     "group": "基板／機器",
@@ -1956,7 +1939,7 @@
      }
     ],
     "spread": 115,
-    "diff": "+15"
+    "diff": "0"
    },
    {
     "group": "基板／機器",
@@ -2025,7 +2008,7 @@
      }
     ],
     "spread": 40,
-    "diff": "-10"
+    "diff": "0"
    },
    {
     "group": "雑品",
@@ -2224,24 +2207,24 @@
   "label": "9月のまとめ"
  },
  "ai_morning": {
-  "date": "2026-10-02",
+  "date": "2026-10-03",
   "items": [
    {
-    "title": "Claude Codeを改造できる「mod」登場 資料作りは2週間、枠が半分",
-    "link": "https://thelastthreeminutes.com/issues/2026-10-02/stories/1/"
+    "title": "Fable 5.5とGemini 4、来週そろって公開か",
+    "link": "https://thelastthreeminutes.com/issues/2026-10-03/stories/1/"
    },
    {
-    "title": "Fable 5.5が近いか 5.1の裏で新版が答えているとの報告",
-    "link": "https://thelastthreeminutes.com/issues/2026-10-02/stories/2/"
+    "title": "ChatGPT有料枠の一斉リセット、約4時間遅れで実施",
+    "link": "https://thelastthreeminutes.com/issues/2026-10-03/stories/2/"
    },
    {
-    "title": "AmazonもJev型の「判断だけするAI」を無料公開 手元のPCで動く",
-    "link": "https://thelastthreeminutes.com/issues/2026-10-02/stories/3/"
+    "title": "FLUX 3 Image公開 直したい所だけ直せる画像AI",
+    "link": "https://thelastthreeminutes.com/issues/2026-10-03/stories/3/"
    }
   ],
-  "link": "https://thelastthreeminutes.com/issues/2026-10-02/",
-  "lead": "金曜の朝は3本です。Claude Codeが、使う人の手で改造できるようになりました。Claudeアプリの資料作りは2週間、5時間枠の消費が半分です。最上位のFable 5.5が近いという報告も相次いでいます。AmazonはJevと同じ型の判断専用モデルを無料で出しました。",
-  "video": "https://www.youtube.com/watch?v=cEVJXCVm6Jw"
+  "link": "https://thelastthreeminutes.com/issues/2026-10-03/",
+  "lead": "土曜の朝は3本です。来週、AnthropicのFable 5.5とGoogleのGemini 4 Argonが出るとの声が広がっています。ChatGPTの利用枠を一斉に戻すリセットは、予定より約4時間遅れて届きました。画像の一部だけを直せるFLUX 3 Imageも出ました。",
+  "video": "https://www.youtube.com/watch?v=u0VO3KtDOto"
  },
  "history": {
   "NYダウ": {
@@ -2703,7 +2686,7 @@
     13166918,
     13168569,
     13399703,
-    13327207
+    13348493
    ]
   },
   "基板:マザーボード（Ｃ）": {
