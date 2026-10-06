@@ -1,5 +1,5 @@
 {
- "updated": "10/7 5:35",
+ "updated": "10/7 8:09",
  "fx": {
   "usdjpy": 158.09,
   "date": "2026-10-06"
@@ -34,9 +34,9 @@
    },
    {
     "name": "ビットコイン",
-    "value": "13,541,330",
+    "value": "13,523,688",
     "unit": "円",
-    "diff": "-0.1%"
+    "diff": "-0.4%"
    },
    {
     "name": "日経平均",
@@ -53,6 +53,22 @@
   ]
  },
  "items": [
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "オンサイト処理施設の展望（15） ＴＯＷＡＬＯ代表 石渡正佳 非常災害廃棄物処理施設 マンパワー支援からシステム支援へＤＸ化できるか",
+   "source": "環境新聞オンライン",
+   "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE15OWxEUDRFUmY3SGh0YnZnUnpTNXhIWlVVc1FOUWJSU2lVbTc1TDBoTHlyRkh1Uk43c0ZPYjNZQXRidG9ldlVHSFBzQ25qb3FZdkU2b0Vsc0RtQkhTY3M1WWUyRW8tVDg4SjFzUFVraFFBTWFhZXpFOUVlZw?oc=5",
+   "published": "2026-10-07T07:00:00+09:00"
+  },
+  {
+   "cat": "dc",
+   "label": "AI・DC",
+   "title": "AIデータセンターは、なぜ銅から光へ向かうのか",
+   "source": "NewsPicks",
+   "link": "https://newspicks.com/news/17646292/body/",
+   "published": "2026-10-07T00:00:00+09:00"
+  },
   {
    "cat": "gen",
    "label": "業界",
@@ -83,8 +99,7 @@
    "title": "東京／アルミ合金屑／弱含み横ばい",
    "source": "日刊鉄鋼新聞",
    "link": "https://www.japanmetaldaily.com/articles/-/268359",
-   "published": "2026-10-06T17:00:00+09:00",
-   "dups": 1
+   "published": "2026-10-06T17:00:00+09:00"
   },
   {
    "cat": "mkt",
@@ -113,18 +128,18 @@
   {
    "cat": "btc",
    "label": "ビットコイン",
-   "title": "ビットコイン、上昇上位15日を除くと3年間11%の損失に＝グレースケール分析",
-   "source": "CoinPost",
-   "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE5FdEFra1JPM0k1ZGpmWmNoU0hzb2ZSZzQ0UktUUGJiV1d5UlpqQ1JHSnVGTkVXbEhnaXRydTd1UGl2a2s?oc=5",
-   "published": "2026-10-06T09:10:29+09:00"
+   "title": "ビットコイン、10月相場に4つの逆風―流動性低下やETF需要減退",
+   "source": "BeInCrypto",
+   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBaTVFhdlVLTTJiOFRIQ3lVSGJlSnFCVTdHeGF0Y08wLWRtRWVOZ1NxNG1ROTN4Y0VfOVVvbzNmenZGR1d4ZnFMYWt5LTRxbFNoQ2ZobmFPQUU3NXZ4TnNFdFd2UUhPZEdkM3RB?oc=5",
+   "published": "2026-10-06T13:37:52+09:00"
   },
   {
    "cat": "btc",
    "label": "ビットコイン",
-   "title": "CryptoQuant CEO「ビットコインの弱気相場は夏に終わった」──新しいサイクルを示す“買い手”の変化【エックスウィン】",
-   "source": "Yahoo!ニュース",
-   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPMDNlaG9BYTQzdFRxMkdjYU9JQUFOa296dzBiM0VZZTNTbGwtLUVWNzVxV0VaUmpmdG9SVjB2UmZqRkRRYW5iSkZrRmpyMWZZeW1GbDB6WjZwNExzTmlxWXYwZjRnb3VibHJONEota0pVLUlESkphLVZvUFpVbW43RDVDeWc5VjNLQlZXRHdn?oc=5",
-   "published": "2026-10-06T08:33:16+09:00"
+   "title": "ビットコイン、上昇上位15日を除くと3年間11%の損失に＝グレースケール分析",
+   "source": "CoinPost",
+   "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE5FdEFra1JPM0k1ZGpmWmNoU0hzb2ZSZzQ0UktUUGJiV1d5UlpqQ1JHSnVGTkVXbEhnaXRydTd1UGl2a2s?oc=5",
+   "published": "2026-10-06T09:10:29+09:00"
   },
   {
    "cat": "mkt",
@@ -135,12 +150,21 @@
    "published": "2026-10-06T07:58:00+09:00"
   },
   {
+   "cat": "law",
+   "label": "法規制",
+   "title": "ハイブリッド光ファイバコネクタ市場2035年予測：5Gフロントホールとデータセンター需要が拡大を牽引 - ニュースと統計",
+   "source": "IndexBox",
+   "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNZGxQY25zbGVPSHJuZlFIRmFXMHhWOGlSbGxMUTlrR180M09QSmU4WXoySmpqcmRkV2NiTnNVWEJid09IdGxrLU9iMzlTVm9UZWc4TUgyZGRwWHNLMVJWbGh6S3V3R3lFTjA5QXduLUw1M2UwdEo2bHo3Ui1jODZXUEE5Qmh3OVFHeXd2bEpXcWZ4NjRMX3ZHZWRBTHFZaGR3RkNJU2JSU281TnZCcVBNVC10WVd2eHBkRHZ6NE1Ld3BqTEVWTVRCbUwwWFJQWlZJNFdiRHdxYkM1d2cw?oc=5",
+   "published": "2026-10-06T07:26:04+09:00",
+   "dups": 1
+  },
+  {
    "cat": "mkt",
    "label": "相場",
    "title": "鉄スクラップ小幅続伸 国内相場 東鉄買値上げ映す 5万円台乗せ",
-   "source": "日刊産業新聞",
-   "link": "https://www.japanmetal.com/news-t20261006151003.html",
-   "published": "2026-10-06T07:50:00+09:00"
+   "source": "WEB産業新聞",
+   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9PSEpDT0x1UUtzakJMTWU2eGRiUi1JYjg5ZTVPNV8xUU82ZUh2VjA0QkdrdmxJVTV0ak1vN0Y5dGhfZGs3bDYzWTRvLXdNVDdjVWRFSl9XbEs2dHExS1NVLWRR?oc=5",
+   "published": "2026-10-06T05:50:00+09:00"
   },
   {
    "cat": "gen",
@@ -159,12 +183,12 @@
    "published": "2026-10-06T04:14:17+09:00"
   },
   {
-   "cat": "law",
-   "label": "法規制",
-   "title": "AI検索検証 廃棄物処理法の近現代史：大義名分が生んだ「一億総",
-   "source": "note",
-   "link": "https://note.com/ayu3615/n/ndc1195389bc4",
-   "published": "2026-10-05T18:54:00+09:00"
+   "cat": "mkt",
+   "label": "相場",
+   "title": "イクヨ、アルミ再生で新都HDと提携 国内で地産地消の供給網 共同でアルミ2次合金プラントを建設",
+   "source": "日刊自動車新聞",
+   "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE80QkFIblloWGN2bC1ueE16clgwaFEtcGZRa1VHTjJuTFR5NVVaUkxFYnU3QUNpTXNnaVFKZEloQXBQRy1PbXRtdkZzZThZX1ozWHc?oc=5",
+   "published": "2026-10-06T03:13:41+09:00"
   },
   {
    "cat": "gen",
@@ -175,20 +199,20 @@
    "published": "2026-10-05T13:28:00+09:00"
   },
   {
-   "cat": "mkt",
-   "label": "相場",
-   "title": "東京製鉄、全拠点で 鉄スクラップ買値500円上げ",
-   "source": "Yahoo!ニュース",
-   "link": "https://news.yahoo.co.jp/articles/44cdb3fb8b9ee3a2b3ad56517f732e893908d525",
-   "published": "2026-10-05T13:23:00+09:00"
-  },
-  {
    "cat": "gen",
    "label": "業界",
    "title": "建設現場内に共犯者か？銅線ケーブル引っ張り出す所を見つかり26歳男逮捕 「同様の犯行繰り返した」余罪捜査",
    "source": "FNNプライムオンライン",
    "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1CUGNaQkl1MEJfUy1KR0ZoYWxFV0ZMVUduUWtrdTRSS1VPNEVMblY2eENiRFZ6WW5QRVJEYmVxRUhTZkhHTHYzYl80SlhNUQ?oc=5",
    "published": "2026-10-05T12:15:00+09:00"
+  },
+  {
+   "cat": "mkt",
+   "label": "相場",
+   "title": "東京製鉄、全拠点で 鉄スクラップ買値500円上げ（日刊産業新聞）",
+   "source": "Yahoo!ニュース",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9iSzhnMFAtV0VTMU9SeHNIQkRxRmRJeGFtcDZJUlYyQldqSzI0bENVZU9DdGV6RDVoSERRQlNCUDZiNDUzb25ETU96R2ZpRlNpMTJkSmZ4ZzUtV3g4NEVlR2tXMnE5QWZ2OHlBeC13b1kzNlNxajVGQktjbmVTdkU?oc=5",
+   "published": "2026-10-05T11:23:24+09:00"
   },
   {
    "cat": "gen",
@@ -223,8 +247,8 @@
    "published": "2026-10-04T16:34:00+09:00"
   },
   {
-   "cat": "gen",
-   "label": "業界",
+   "cat": "mkt",
+   "label": "相場",
    "title": "非鉄金属5社は何が違う？AI・電力・銅で変わる「次の主役」",
    "source": "note",
    "link": "https://note.com/honest_viper8642/n/n382ade6c3427",
@@ -298,14 +322,6 @@
   {
    "cat": "dc",
    "label": "AI・DC",
-   "title": "銅コーティングインダクタ市場2035年まで：EVと5G需要が成長を牽引 - ニュースと統計",
-   "source": "IndexBox",
-   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPRm42cE54VWVhVzlrem93aWsxSkdKcjlhUUczcDNLbEN3VTk5Umk5SlB0SEtKaXJSZWI1dlhiMXlWZV9jSmEzRGplU0UzU0lxZ0JERDdLN0p0S1h4NE1CaXcyNWFjbTV1cFBnSGpBZ2JuWlFxWjUyRUdRSmluQ2NFZ0dGbmE5b2ozS01GLUw1QU5HaWs3N0hMbXRaY0dNbTZtQ3hzUzFCTmJHUmVC?oc=5",
-   "published": "2026-10-02T02:11:04+09:00"
-  },
-  {
-   "cat": "dc",
-   "label": "AI・DC",
    "title": "【AI電源】変圧器・UPSに実需は届いた？日本株4社を比較 Chantal Nobel (HcUrTcfMWr)",
    "source": "Unisba Media",
    "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPZGFTR2x4NUZiakFuN0Y4Mmg0YTZ6TUNHZzhQQlZac29QalJKUlR5MWExR2k5YnV1ZVlwR0luYUoydUMzTTdTdzZMOFVOZzRKY3RudHI4X04yc1RTa3d1NmVScG9Td1pCOF9FOWNUVW9YYi1ncEtRU0J1bjZveTZNRHNR?oc=5",
@@ -333,15 +349,7 @@
    "title": "世界最大の銅生産国チリの8月の銅生産量が15年ぶりに最低水準を記録した。 人工知能(AI)インフラの拡充などで需要が急増する中で、原材料供給網のボトルネック現象が深刻化するものとみられる。 9月30日..",
    "source": "매일경제",
    "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1kSnVMOEw2Ny1FVWhTV3JaU1MxNWV1c0o2TlJMSkV6MEJNZk1YTXlSeldLeFFlTmcwRFBZU294Qlo0Q3ZXVWNyYTk1ODgzY1E?oc=5",
-   "published": "2026-10-01T17:23:26+09:00"
-  },
-  {
-   "cat": "mkt",
-   "label": "相場",
-   "title": "イクヨ、アルミ再生で新都HDと提携 国内で地産地消の供給網 共同でアルミ2次合金プラントを建設",
-   "source": "日刊自動車新聞",
-   "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE80QkFIblloWGN2bC1ueE16clgwaFEtcGZRa1VHTjJuTFR5NVVaUkxFYnU3QUNpTXNnaVFKZEloQXBQRy1PbXRtdkZzZThZX1ozWHc?oc=5",
-   "published": "2026-10-01T15:32:44+09:00"
+   "published": "2026-10-01T19:59:51+09:00"
   },
   {
    "cat": "law",
@@ -352,12 +360,12 @@
    "published": "2026-10-01T13:03:24+09:00"
   },
   {
-   "cat": "law",
-   "label": "法規制",
-   "title": "【2026年9月最新・徹底調査】古物台帳だけで買取店の管理は足りる",
-   "source": "アニメ！アニメ！",
-   "link": "https://animeanime.jp/release/dreamnews/20261001/316534.html",
-   "published": "2026-10-01T11:00:00+09:00"
+   "cat": "mkt",
+   "label": "相場",
+   "title": "キオクシア2日続落、6万円の壁は遠い？指数横ばいでも値下がり6割｜非鉄金属が急騰【9/9日本株】 Köln Vs Heidenheim (W3pjtp36DU)",
+   "source": "Unisba Media",
+   "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOUjNSbEZxSXJlWUgwNktNNk84dWdoa1RWR2xtM1hUOE1kZmZ1SzZONnJGaXVzX25YLUdYZmxzNVFhMEppcVppOWR6V1Z5NEhTYkxfMzBHNGNjbHpmZmh0UUdzX1lBTDJGS0VSOFlpOWpPN0szQXZBd05ETmVmTU5zSjdR?oc=5",
+   "published": "2026-10-01T10:56:08+09:00"
   },
   {
    "cat": "gen",
@@ -366,14 +374,6 @@
    "source": "くらしごと",
    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1LY2hLdUF0M2VwUWliVlQ0a1BGdU1hVTFvQTBmRVVqVGhoX3hWQVhGM1hMMkR1TDVKYy1PSlNFTnc3dDZ3RGs5Y0N4dkxNSTlveXlBMjJQNlN4TXQ1Ym1vOFMydmRtS1pTOHI0Sg?oc=5",
    "published": "2026-10-01T09:00:00+09:00"
-  },
-  {
-   "cat": "mkt",
-   "label": "相場",
-   "title": "キオクシア2日続落、6万円の壁は遠い？指数横ばいでも値下がり6割｜非鉄金属が急騰【9/9日本株】 Naz Reid (kUtDu6nfdC)",
-   "source": "Unisba Media",
-   "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPMURnak1LalA3TnotTmJiTnZ0UVhJeXMxVDV1OU5wR2lac2dRWVk5UXQ2RnBzc0k4eW40TlpISUdYUUg0emJEeFZMVElTMlRfdTFtTkk2UFJPZTBpRjU0S1Z5WmRyZVRsR0t2eUZ2X1JDVUhqeUxZNmRLRGo0cWoyMjVXaDlvZw?oc=5",
-   "published": "2026-10-01T08:49:44+09:00"
   },
   {
    "cat": "dc",
@@ -426,15 +426,6 @@
   {
    "cat": "law",
    "label": "法規制",
-   "title": "木谷鉄リサイクル工業会会長／環境省の検討会、過剰規制を警戒",
-   "source": "日刊鉄鋼新聞",
-   "link": "https://www.japanmetaldaily.com/articles/-/267977",
-   "published": "2026-09-30T07:00:00+09:00",
-   "dups": 1
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
    "title": "日本の廃棄物をエネルギーに変える市場の最新動向",
    "source": "pando.life",
    "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE9DSndZdUpKSjBTZTFXX3ZHUlh5ZUNodnNOMjNYVWpFNDRzMGprVEdrYk1xUmlJb0NmcDhSVlE3MjluM0Z4ZUJIYUt3?oc=5",
@@ -443,10 +434,10 @@
   {
    "cat": "law",
    "label": "法規制",
-   "title": "環境省 環境再生・資源循環局 参事官補佐 妹尾光平氏",
-   "source": "plasticjournal.net",
-   "link": "https://plasticjournal.net/backnumber/companies-and-people/25231.html",
-   "published": "2026-09-30T02:00:00+09:00"
+   "title": "木谷鉄リサイクル工業会会長／環境省の検討会、過剰規制を警戒／実効性ある規制求め２段階審査を提言",
+   "source": "日刊鉄鋼新聞 Japan Metal Daily",
+   "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1ySEFEUWowUjVYOFpxdXVNdGpNYUFTUEhjRlV2NGRDazA5bXNrQkNTdjJ2dmowWWZObzNXQkVOWXlSM2NYVXkwNWd0Um9kMGl0WENEQ0FhTGE1QWo4U1E?oc=5",
+   "published": "2026-09-30T05:00:00+09:00"
   },
   {
    "cat": "law",
@@ -459,14 +450,6 @@
   {
    "cat": "law",
    "label": "法規制",
-   "title": "プラスチックリサイクルのesaとDigitalArchi、廃プラスチックを建築用3Dプリント型枠へ再生する取り組みを開始",
-   "source": "ニコニコニュース",
-   "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE8wMDlhZjFrWng0RV81WmM3bW9tZUtDMHI1MzdIMHUxc1VfcGxyeFJHUTN1el9ZVEpYWDBnQXRiVGxfQXNMREI2UTRaajZQaHRWaXF5Uw?oc=5",
-   "published": "2026-09-28T12:30:29+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
    "title": "スクラップヤード規制、2028年までに全国で許可制へ｜県・市条例の",
    "source": "note",
    "link": "https://note.com/hanakenyusui/n/na8580098f2bb",
@@ -475,26 +458,10 @@
   {
    "cat": "law",
    "label": "法規制",
-   "title": "JESCO事業の災害廃棄物事業の追加は画期的 廃棄物・3R研究財団、3R",
-   "source": "環境新聞オンライン",
-   "link": "https://www.kankyo-news.co.jp/news/5142e1dc-e1fd-4c9f-aa71-8a6a1324c800",
-   "published": "2026-09-24T02:00:00+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
    "title": "住友金属鉱山、愛媛にて電池リサイクルプラントを竣工。商業規模での稼働は国内初",
    "source": "Circular Economy Hub",
    "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBhV3hTNmNvMEMzbERENHd5WjIwYktoNmRKNW9OandJcXMwT2hkTEh2OGgydjcyc2hPZkJjTkJucHBTTWlrNERUcDRNVVUwSF9aRDR5RmREUFhoOS1iNXZnT1Y3S200bVRzNXV1VHgyQVgxR0U?oc=5",
    "published": "2026-09-20T16:00:00+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
-   "title": "「ごみ」を海外に売る時代が終わる――EUが金属スクラップに",
-   "source": "note",
-   "link": "https://note.com/leo77777/n/nd2dcbbf57610",
-   "published": "2026-09-18T18:15:00+09:00"
   },
   {
    "cat": "law",
@@ -2743,7 +2710,7 @@
     13375378,
     13643831,
     13548796,
-    13526899
+    13505007
    ]
   },
   "基板:マザーボード（Ｃ）": {
