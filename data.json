@@ -1,5 +1,5 @@
 {
- "updated": "10/8 5:48",
+ "updated": "10/8 8:38",
  "fx": {
   "usdjpy": 158.23,
   "date": "2026-10-07"
@@ -34,9 +34,9 @@
    },
    {
     "name": "ビットコイン",
-    "value": "13,177,312",
+    "value": "13,170,737",
     "unit": "円",
-    "diff": "-2.7%"
+    "diff": "-2.6%"
    },
    {
     "name": "日経平均",
@@ -78,14 +78,6 @@
    "published": "2026-10-07T19:46:17+09:00"
   },
   {
-   "cat": "mkt",
-   "label": "相場",
-   "title": "8月ステンレス鋼板販売量 6.1％増 薄板・厚中板とも好調",
-   "source": "日刊産業新聞",
-   "link": "https://www.japanmetal.com/news-t20261007151043.html",
-   "published": "2026-10-07T19:30:00+09:00"
-  },
-  {
    "cat": "btc",
    "label": "ビットコイン",
    "title": "底堅いビットコイン 米財政問題が下支え、不正流出に耐性",
@@ -100,6 +92,30 @@
    "source": "QAB 琉球朝日放送",
    "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5kdHZHOUxpWktWUEFIMkxlaGplNGhSWGVnNEpaaEM5UkJZRi1neVRHdDloWURnbTh5Wnd3clRBR3VhUk5CWVpicXRvdDdMblhCbXJaRlFKb2s?oc=5",
    "published": "2026-10-07T18:58:45+09:00"
+  },
+  {
+   "cat": "mkt",
+   "label": "相場",
+   "title": "銅相場の上昇、長期的な強材料にもかかわらず短期リスクに直面 執筆 - Investing.com",
+   "source": "FX | 株式市場 | ファイナンス | 金融ニュース",
+   "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBNY21YS3JmbnFpZXJ0MnZWVGFIRjByQ3puajRqUVJNYmR4cDZQTno2VDRwZHdEU1JxaEUxX1czRnEwODh4QnhQY1pHVWduM2pzejMyVUw5dVd6ejd3eTlkZUFGWDF6RE82Q2tObkJXSzBnaFA1aWNN?oc=5",
+   "published": "2026-10-07T18:44:00+09:00"
+  },
+  {
+   "cat": "btc",
+   "label": "ビットコイン",
+   "title": "【日刊ビットコイン】下落でも機関投資家は買っている？ETF資金",
+   "source": "note",
+   "link": "https://note.com/cormagi/n/n904d4929dcfe",
+   "published": "2026-10-07T18:08:00+09:00"
+  },
+  {
+   "cat": "mkt",
+   "label": "相場",
+   "title": "住友金属鉱山、配線インク量産目指す PEにナノ銅粉活用",
+   "source": "日刊産業新聞",
+   "link": "https://www.japanmetal.com/news-h20261008151051.html",
+   "published": "2026-10-07T17:59:00+09:00"
   },
   {
    "cat": "law",
@@ -134,14 +150,6 @@
    "published": "2026-10-07T13:22:00+09:00"
   },
   {
-   "cat": "btc",
-   "label": "ビットコイン",
-   "title": "ビットコイン下落相場は終了？過去2回とも365日で底、半減期にも",
-   "source": "note",
-   "link": "https://note.com/bitsen/n/n483199fac977",
-   "published": "2026-10-07T11:21:00+09:00"
-  },
-  {
    "cat": "gen",
    "label": "業界",
    "title": "10月7日の「アサザイ 今日の1社」は、日本軽金属ホールディングス（5703）を放送しました。",
@@ -172,6 +180,14 @@
    "source": "日刊鉄鋼新聞",
    "link": "https://www.japanmetaldaily.com/articles/-/268359",
    "published": "2026-10-07T06:59:00+09:00"
+  },
+  {
+   "cat": "mkt",
+   "label": "相場",
+   "title": "株式＝非鉄金属、サービス高い｜四国新聞WEB朝刊",
+   "source": "四国新聞",
+   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5zVzJOaGVfZ1hteUdqQ1R0UHJCSm9FdFhrb0U3ekhaZXpITDRleU1jQWszMTF6RllHQjFzbVY1cTFsNXJ5MU5TQ01sR01fajF3bmtMOVNLeU5EWUdyQTZTb2JJR1dJRW1RWFZ3c1MtU0I2eDFKMld3bmFnbDjSAXxBVV95cUxOc1cyTmhlX2dYbXlHakNUdFByQkpvRXRYa29FN3pIWmV6SEw0ZXlNY0FrMzExekZZR0Ixc21WNXExbDVyeTFOU0NNbEdNX2oxd25rTDlTS3lORFlHckE2U29iSUdXSUVtUVhWd3NTLVNCNngxSjJXd25hZ2w4?oc=5",
+   "published": "2026-10-06T21:26:29+09:00"
   },
   {
    "cat": "gen",
@@ -369,11 +385,11 @@
   {
    "cat": "mkt",
    "label": "相場",
-   "title": "アルミ二次合金、9月5%安",
+   "title": "アルミ二次合金、9月5%安 騰勢一服、2カ月連続下落",
    "source": "日本経済新聞",
-   "link": "https://www.nikkei.com/article/DGKKZO99059870R01C26A0QM8000/",
-   "published": "2026-10-02T04:00:00+09:00",
-   "dups": 2
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE45TUE4a3JSdHkxZ2pLMlRLV3hFQ0tDWWtyWmtvYVdacGVLR3RFSzNCTFl4d1h5ck9MbkVqcTNJYXF1M3M0RFc1cHl3R3JBdFotenZhd2RJMTN2T21LUnJCd0JvMm01TnVxY0hVZQ?oc=5",
+   "published": "2026-10-02T02:00:00+09:00",
+   "dups": 1
   },
   {
    "cat": "dc",
@@ -414,6 +430,14 @@
    "source": "ニコニコニュース",
    "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1tUkJaLUJyc0RhNm9sb1BHaFo4NHNPSzZ1LVFOa0NhbUZKUlljOGx6ZGdvY3N2RVJ4Y3RmTmhqZkZWRk9PeVVSNXhIMGRLbGlwREtHX1c0TDlZTlAzcER4UnIxd2ZsNDh1MmwwOGU5QWNxa1h5UDJrcWV4cw?oc=5",
    "published": "2026-10-01T13:03:24+09:00"
+  },
+  {
+   "cat": "gen",
+   "label": "業界",
+   "title": "ＪＸ金属株式会社、経営資源の戦略的な投資判断を支える経営管理プラットフォーム「Diggle」の導入で、財務情報から生産量・販売量などのKPIまでを一元化することによる経営管理の高度化、及び戦略的な投資判断と成長投資の迅速な意思決定の実現を目指す。｜Infoseekニ",
+   "source": "Infoseek",
+   "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1qVmpKeF9qb055ZE84Mnl6TVJjZ3FrdnhtLUgtRGJqVEx3X1c1X2VKLXVhV0NvalJJTXZiM0loWWRybjdBMHlWQTZsdFZGT2NJV1JteUxqX1ZFald3VVNYMg?oc=5",
+   "published": "2026-10-01T10:00:00+09:00"
   },
   {
    "cat": "gen",
@@ -787,7 +811,7 @@
      }
     ],
     "spread": 200,
-    "diff": "+10"
+    "diff": "0"
    },
    {
     "group": "銅",
@@ -810,7 +834,7 @@
      }
     ],
     "spread": 220,
-    "diff": "+10"
+    "diff": "0"
    },
    {
     "group": "銅",
@@ -833,7 +857,7 @@
      }
     ],
     "spread": 70,
-    "diff": "+10"
+    "diff": "0"
    },
    {
     "group": "銅",
@@ -851,7 +875,7 @@
      }
     ],
     "spread": 0,
-    "diff": "-30"
+    "diff": "0"
    },
    {
     "group": "電線",
@@ -1987,7 +2011,7 @@
      }
     ],
     "spread": 1050,
-    "diff": "+350"
+    "diff": "0"
    },
    {
     "group": "基板／機器",
@@ -2759,7 +2783,7 @@
     13643831,
     13548796,
     13541623,
-    13194553
+    13196981
    ]
   },
   "基板:マザーボード（Ｃ）": {
