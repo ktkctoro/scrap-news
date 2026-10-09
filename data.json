@@ -1,5 +1,5 @@
 {
- "updated": "10/10 5:21",
+ "updated": "10/10 8:21",
  "fx": {
   "usdjpy": 158.25,
   "date": "2026-10-09"
@@ -34,9 +34,9 @@
    },
    {
     "name": "ビットコイン",
-    "value": "13,032,016",
+    "value": "13,072,668",
     "unit": "円",
-    "diff": "+0.9%"
+    "diff": "+1.2%"
    },
    {
     "name": "日経平均",
@@ -54,12 +54,28 @@
  },
  "items": [
   {
+   "cat": "btc",
+   "label": "ビットコイン",
+   "title": "メタプラネット、ビットコイン保有量で世界2位に／Strategyが週次購入を再開【週末に読みたい厳選5本_相場編】（NADA NEWS）",
+   "source": "Yahoo!ニュース",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9MRFNhZm16R2RQb0JubDc5emIyV0dKQWNfZzhTb2JDbHN3VHdOUTYtMml1dDBNQTY0M0VVVE1OejdUZ1VGUUFGT2xLcmdQVzhtSzdVMWxiWUp4bmk0RjdLVGdsVUI0dmQxU3JoMzU2ZzJGZFlqNmJjdHgzSDdMM2M?oc=5",
+   "published": "2026-10-10T07:05:39+09:00"
+  },
+  {
    "cat": "gen",
    "label": "業界",
    "title": "日本の電子廃棄物市場の最新動向",
    "source": "pando.life",
    "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5WX2N0RmFVejVfYUVsYVRicWNBVVJMdlV3M2M0d1g4ajVLOVNhZFNyYnFJVENaQXNWQk9ObGZQcVEydWJmQlNrbnlB?oc=5",
    "published": "2026-10-09T21:10:44+09:00"
+  },
+  {
+   "cat": "mkt",
+   "label": "相場",
+   "title": "亜鉛建値3000円下げ 三井金属",
+   "source": "日本経済新聞",
+   "link": "https://www.nikkei.com/article/DGXZQOUB092GH0Z01C26A0000000/",
+   "published": "2026-10-09T20:48:00+09:00"
   },
   {
    "cat": "btc",
@@ -100,8 +116,7 @@
    "title": "ビットコイン採掘事業者による売り圧力は緩和傾向＝クリプトクアント",
    "source": "Iolite（アイオライト）",
    "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5Mcm5xRHRMYmRIQnBjbmZHSllNbEdKaWlCUk1wblVTV1VQODIxSTF5OWlHaHZpV2pqNjUyYno2NzNkLXpGUlF0UDFaUU1NT3RY?oc=5",
-   "published": "2026-10-09T15:10:30+09:00",
-   "dups": 1
+   "published": "2026-10-09T15:10:30+09:00"
   },
   {
    "cat": "btc",
@@ -152,14 +167,6 @@
    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBuc2Y5WXRoQmpwY2lCQ3prSGpZaHNYMTVnbHVBb1I3U0U3SGFiMjh4b3pXTnpKV3J6Umc0bGl1TTRBc0xibms1cHNfVWk2SkllZzFHOU5JQXpJM1U?oc=5",
    "published": "2026-10-09T05:00:56+09:00",
    "dups": 1
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
-   "title": "資源循環体験プログラム「バラシンピック」千葉市・高岡市での開催が決定！",
-   "source": "ニコニコニュース",
-   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5pT1J5YUNIalBOQlBOX1N1OC1vWEJfcU1GVFI1ZlBEZVppcUxBT2lEaXpGZDNEeHFmTzZqVTlYR240ZF9CUVZZc2VnclZDbW9IbjFFQ0xBTmVUcFd0b3FlVWxrWHVvT2l2?oc=5",
-   "published": "2026-10-09T03:21:17+09:00"
   },
   {
    "cat": "law",
@@ -486,14 +493,6 @@
   {
    "cat": "law",
    "label": "法規制",
-   "title": "資源循環 | 地球環境の保全・再生への貢献",
-   "source": "ＪＸ金属",
-   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5SN1hTT2dOMWZEbmNqZkl2QjNMaXhtdi1rRGlxNXRXb05FZEVMVTFvUTBGbDhyOFNhN3NIS21OdXJwYW14cU5zZUdOZ3lkMkE3dEhPaVVmNFNnSTEwbTNiZzFKb2RXN1ZKVHRyeVoyaVZMVGEyOTZOTWRySVNFVzg?oc=5",
-   "published": "2026-09-30T13:48:25+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
    "title": "【徹底比較】無料の古物台帳アプリで買取店はどこまで運営できる？Excel・無料ソフト・有料クラウドの機能と管理範囲を調査",
    "source": "アニメ！アニメ！",
    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFA2WTJtRC1LdlA2TFVhRTJFVXhqTEoxU3l4X2tnbXVwTWZZaFh2Zy04bGpKT29maW4wR0ctODlmQ1ExMUpxb1VONV9DanBaay1mQ19rbmJfWjJfdkp1ZFhZX0JlQzA3UzBlSHZWdA?oc=5",
@@ -522,6 +521,14 @@
    "source": "note",
    "link": "https://note.com/romeoand/n/n7c07b7afa1e6",
    "published": "2026-09-28T16:02:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "タバコで自宅を“煙まみれ”にしてくる隣家の解体作業員。注意も無視する集団が「必死の形相で逃げ出した」反撃とは",
+   "source": "Infoseek",
+   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE04dUx0YjR5MWVCQlFVa0lFNWYxMFAwZWRTdHNKTjB5cF96WENZMGpial9acFlIZXZyYzBlbHQ3Y1Q0dGhYdklTNU5xbG9Pd3BwMHYxd0JQM2Vrd01FaFloMUFCZDc2MnFzbVHSAW9BVV95cUxQazR4MkU1QWF2dGIyZnFENDRrUmM1bzZGQ1lGLXpWcnc4d3QxSUwwODkwUmpLenlURzduT0p0Vnl0c2hETG8wVDhkSEdPRk5vSDRWUDVFRHlJazBJdktWaXBia09BVGhxY0JqQ2JyNDQ?oc=5",
+   "published": "2026-09-24T16:00:00+09:00"
   },
   {
    "cat": "law",
@@ -606,11 +613,10 @@
   {
    "cat": "law",
    "label": "法規制",
-   "title": "代替フロン回収・再生設備導入に補助金、大気中に放出した場合の",
+   "title": "代替フロン回収・再生設備導入に補助金、大気中に放出した場合の罰金対象機器を拡大…環境省方針",
    "source": "読売新聞",
-   "link": "https://www.yomiuri.co.jp/national/20260904-GYT1T00133/2/",
-   "published": "2026-09-04T17:01:00+09:00",
-   "dups": 1
+   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5FMHNtX3JhSGhKaGJQZ282ZEdtaUZCR2JyMjdjbWpFZ3l3cllHNVFJeWlfOFdyb3FJYlN6UjNIVHVNUkVVb3E1NkdvYVNnWHBleVB6VVB4Z0dSTzZKMXlVLU1FTzhrNVFO?oc=5",
+   "published": "2026-09-04T16:00:00+09:00"
   },
   {
    "cat": "law",
@@ -623,26 +629,9 @@
   {
    "cat": "law",
    "label": "法規制",
-   "title": "JA三井リースと浜田、太陽光パネルのリサイクルで提携 - ニュース - メガソーラービジネス plus",
-   "source": "日経BP",
-   "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1Bd1JjdDdwNDdOSlpoX1FyV1V2UHVGcWNwbkY0dkluVmhKZldKTHQxSlJmUEM1U0ZHVG1sUExENWJJd3B0TEw4ZVJseXR0TUlHV3JMU0w2Mlp1dnVRbDZzWWJrWUg2UFdtYjR4YmxFZ0lFUmFW?oc=5",
-   "published": "2026-09-03T16:00:00+09:00",
-   "dups": 1
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
    "title": "【リニューアル OPEN】「買取専科 岡山表町店」が9月1日(火)リニューアル OPENしました！",
    "source": "山陽新聞",
    "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5rbnV5S3FuTlNBbWxfWlhhZVpxb1hLVHNOSDc3NXB5aGk4TTdCRHFNTUZ3c3BIU3NrdzlzRk1Na1hSc3JLcEpQbks2cjZFRVYxUlE?oc=5",
-   "published": "2026-09-01T16:00:00+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
-   "title": "JEPLAN、GX推進機構から資金調達。PETケミカルリサイクル事業の高度化・拡大へ",
-   "source": "Circular Economy Hub",
-   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPZjhaQzlrTlVhNzQya2JycXoxSmpPOXhKemJvbjB2ekptbmdpTEJNTXBtQmNTSi1zQl9KRFI4UlJEMzI3aXZQV1lVZFc1dVYzYk96M1VSMndZY09oOUVkdXBCLXNJV0VPVGdPMVc0akZEeTBqdjRCWk8zNDZVV3lHaXVLMGdjZjQ?oc=5",
    "published": "2026-09-01T16:00:00+09:00"
   },
   {
@@ -672,9 +661,9 @@
   {
    "cat": "law",
    "label": "法規制",
-   "title": "KANEYOグループの福島日産とナプロアース、中古部品の「買取から再販まで」を県内41店舗に実装（PR TIMES）",
-   "source": "毎日新聞",
-   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBiSDhnWlotRk9mVnFhUlFrQVN6WFVCZWRISXVBQXZUY3pFX3BKQ0xaUFozWmljd01QYlhSQ0Z4OWVSTUJjZG8xd1A5R2tkb2w0S2JaaTRyVEo4bWtkTUY0QVRBVGhPckpu?oc=5",
+   "title": "KANEYOグループの福島日産とナプロアース、中古部品の「買取から再販まで」を県内41店舗に実装",
+   "source": "河北新報オンライン",
+   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5jQmJUd3VPejlydGVieWZwT1c1RUFieEZ5cDFsaV9NLTlRTEVvX3Z6eFNHTktuc08yaWNGclcwVEJHN1MwUVNGRUNlcHFpLW9va09WazJxYjl4WU1RcVZjWldtRmlWX3dRVXhBbmh3?oc=5",
    "published": "2026-08-28T16:00:00+09:00"
   },
   {
@@ -683,6 +672,14 @@
    "title": "太陽光パネルリサイクル法が成立、段階的に規制強化する方針も",
    "source": "日経クロステック（xTECH）",
    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBRUmwyTEQtdmEyREMwUnQtZXUyVEd1UlY1UlJqampBWldYQ2RoTTdELW05amJLLWdtcjh5WHJjcFNtX0NOTVpVaU9mQ0g0SVdOMjNXaXExR25oVmM3dG5yclB3Y3ZOcldOMjUzeQ?oc=5",
+   "published": "2026-08-25T16:00:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "太陽光発電の余剰で水素製造、鉄スクラップ溶断に活用 - ニュース - メガソーラービジネス plus",
+   "source": "日経BP",
+   "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE81TWpQRjlrQ1g1eWVLYjBvZXJ0T2plSVFMemFIbVRJVWEzcDhSSkFBSjh5NVl6dEg0aXBkSHBEMnRTVFliUks1N2hobDZ2YkljTUFpYXdxX0NXVVBSckp0U1dRdnJhcXBMaUNRQzhwRDZPRHJv?oc=5",
    "published": "2026-08-25T16:00:00+09:00"
   },
   {
@@ -800,7 +797,7 @@
      }
     ],
     "spread": 210,
-    "diff": "+10"
+    "diff": "0"
    },
    {
     "group": "銅",
@@ -2772,7 +2769,7 @@
     13541623,
     13166808,
     12910802,
-    13014726
+    13057460
    ]
   },
   "基板:マザーボード（Ｃ）": {
