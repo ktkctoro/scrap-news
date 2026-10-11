@@ -1,5 +1,5 @@
 {
- "updated": "10/12 4:44",
+ "updated": "10/12 8:00",
  "fx": {
   "usdjpy": 158.25,
   "date": "2026-10-09"
@@ -34,9 +34,9 @@
    },
    {
     "name": "ビットコイン",
-    "value": "13,239,954",
+    "value": "13,235,128",
     "unit": "円",
-    "diff": "+0.8%"
+    "diff": "+0.7%"
    },
    {
     "name": "日経平均",
@@ -54,20 +54,20 @@
  },
  "items": [
   {
+   "cat": "btc",
+   "label": "ビットコイン",
+   "title": "ビットコイン、直近の売りにも新たな強気相場入りか",
+   "source": "BeInCrypto",
+   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1WVE9aZzBNSkxFV1dkMVRqYU5pZ0tKMGhWYUlBMG5DaTRLdTRXTGwwX1JLTUh0bDRickR2WENwQk92azRNMHAwTmstcDNmc01LMDFlS2NpUWFwcGVRNHRKWHR1M0x4eFkzb0ZRc1FtTHU4Wms?oc=5",
+   "published": "2026-10-12T04:22:47+09:00"
+  },
+  {
    "cat": "dc",
    "label": "AI・DC",
    "title": "銅市場、AI・電化の流れ止まらず パンパシフィック・カッパー会長",
    "source": "日本経済新聞",
    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE90eDNhQVNhek11Tlc1X3oySTIyQ0xzb214dFU5SjhBdDBvUDR3ckxacGZOQy1HY2w0MENCNDZSQUVuMHpnU3YzVWZkUEN1ZTFIdzM2LUVPamdoakV6WlgzS0xQTnRVZXp5N3h1Rg?oc=5",
    "published": "2026-10-12T02:00:00+09:00"
-  },
-  {
-   "cat": "btc",
-   "label": "ビットコイン",
-   "title": "【相関を解き明かす】ビットコイン（BTC）はなぜ急落・急騰するの",
-   "source": "note",
-   "link": "https://note.com/bold_slug7075/n/n77d5bb508b54",
-   "published": "2026-10-11T20:13:00+09:00"
   },
   {
    "cat": "btc",
@@ -104,10 +104,10 @@
   {
    "cat": "btc",
    "label": "ビットコイン",
-   "title": "メタプラネット、1万BTC売却後「116万円高」で1.1万枚を再取得",
-   "source": "BitTimes",
-   "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5yLWtKQnpidEppYTk2YnIzQ0JMYVU5WDQzdzV3dS1rd19XYXBFX09MUHA5YTRNdGVlM2F0RW82a2hxYmI0NVhsRUF6ak5HUQ?oc=5",
-   "published": "2026-10-10T16:00:00+09:00"
+   "title": "ビットコインニュース | ビットコインのボラティリティは46%に低下も、極端な価格変動は2018年水準を上回る",
+   "source": "Binance",
+   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5JYVl3RHliRkt6cXJGNnRvektjNkM2ODI0akFvZEJlMHRid29DMjBOSUV3dHNPQ0pEck9majVlclJhbGNfc0RSdENpWUZzakhwUmJCMDhkWE5RX1piZ3h5N0ZZdnU?oc=5",
+   "published": "2026-10-10T17:06:10+09:00"
   },
   {
    "cat": "law",
@@ -132,6 +132,14 @@
    "source": "IndexBox",
    "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPX2plMTh4TjVaM0JQVEVEdW90NXIyN1o2TGNyU0lnWFlsNy0wX0E3UGVMWVBSVHJtNGFBR09oeFItOW1NV0JiZHphNUh2YmpIUU45cFlMZjc1Wk54UWJmbjRPVC01Z3FhY2hsVmRlbkRfT0xBeVhJdnl0SEpHVjZSZ0s5OUxKWVdpcjZ1Q21SdVAtWm5fR0VkOHN0UjVmN0tjdnhlYVQwLU1LMU04bGs5bGtfajNmZ2U0WUEzU2gwWEhtd0ZkM3VpZHVadk9IT294dnc?oc=5",
    "published": "2026-10-09T22:26:04+09:00"
+  },
+  {
+   "cat": "gen",
+   "label": "業界",
+   "title": "EU、重要原材料法に基づきKGHMの銅プロジェクトに戦略的地位を付与 - ニュースと統計",
+   "source": "IndexBox",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNY2VLd1d1WTFvM09CYVYyYkM2amFSVGhsWjctQWNuUFp2cWxSN0F0Y1VFeDRXQTFzZTVVWW9oc2paTlVQNXFOekdFdW5ZbXFXRTl4VFpkMXN1eDBJcnJWbDJPbmVvTkM2djlvQTVPLVlUbm80TTI4OU9MSU91X3o4al9iczZ1VklNTk1MS0p2OG5HdVJqUkVGQ0VTbjZKSF90a0xiTHdZYw?oc=5",
+   "published": "2026-10-09T21:50:24+09:00"
   },
   {
    "cat": "mkt",
@@ -160,10 +168,18 @@
   {
    "cat": "dc",
    "label": "AI・DC",
-   "title": "基板20%·銅箔板30%のぴょん··· 台湾の素材·部品·装備、日本の影響力拡大へ",
+   "title": "基板20%・銅張積層板30%急騰…日本・台湾の半導体素材・部品・製造装置企業の影響力拡大",
    "source": "매일경제",
    "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE85a3ZhVTQ4dEwwVmJBWjZyZlBLQkRvTXFVNWt5RzVUcEs5Tkx0UFp0T2k3dG5NNkVGU3RFOVJRcU5HS0N1NUVEUnpIQVg2Vkd1QjBB?oc=5",
    "published": "2026-10-09T17:31:15+09:00"
+  },
+  {
+   "cat": "gen",
+   "label": "業界",
+   "title": "エアコンと室外機つなぐ配管50本盗む 転売目的か 容疑で男ら3人逮捕 西宮|事件・事故",
+   "source": "神戸新聞",
+   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE95RFg2cVdxWEJPM1BIbmFTZmZBOTFmSTBTQ09xOFlDTWpkWWhUeHM2SWhscnlDYU1uaEVzVEgwNzR2eEhRcDJ4LVJDdlBvMHVLZEVnSjNobTlQdE45YjVOZHU1dUsycUZvQmZB?oc=5",
+   "published": "2026-10-09T16:54:11+09:00"
   },
   {
    "cat": "mkt",
@@ -171,14 +187,6 @@
    "title": "今日の銀価格｜本日の店頭銀地金価格(円/g)",
    "source": "OANDA証券",
    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE96eG1BNDRBbzVwTGl1QUdRdkRFdDNrNG50R2VTUXU5ck12bUZRUnVROXZlY0p4bVRZdERHcWl0ZmRKak5QR2NqUnhRVFdzVzJNemxCNGRCU3hhTUdaYlhqVVBUUDViMmhjdVhkYjdkWFVUU2N0RkhNRGc3SzBjcVk?oc=5",
-   "published": "2026-10-09T16:00:00+09:00"
-  },
-  {
-   "cat": "gen",
-   "label": "業界",
-   "title": "鏡野・上斎原総合教育施設で室外機や蛇口盗まれる 何者かが侵入か 津山署、窃盗容疑で捜査",
-   "source": "山陽新聞",
-   "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBPYko5cm1lZnNqS2tza2E1UmpOU0lQZ3BKZHRnbWdaRjFKUS16YmlkeDJUQndmYjR0TlQ3MnZLSEhiSkE4T19fakphb0cwM3Jkemc?oc=5",
    "published": "2026-10-09T16:00:00+09:00"
   },
   {
@@ -230,6 +238,14 @@
    "source": "CNET Japan",
    "link": "https://japan.cnet.com/release/31214254/",
    "published": "2026-10-09T02:00:00+09:00"
+  },
+  {
+   "cat": "dc",
+   "label": "AI・DC",
+   "title": "AIは「ごみ」をどう変えるのか？――リサイクル現場で始まる「AI×",
+   "source": "note",
+   "link": "https://note.com/ai_datamimi/n/n9c315a80745a",
+   "published": "2026-10-08T19:45:00+09:00"
   },
   {
    "cat": "gen",
@@ -315,10 +331,11 @@
   {
    "cat": "dc",
    "label": "AI・DC",
-   "title": "資源生む廃棄物リサイクル工場 食品ロスを肥料や電気などに【グッド！いちおし】｜Quebee キュエビー",
-   "source": "QAB 琉球朝日放送",
-   "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5kdHZHOUxpWktWUEFIMkxlaGplNGhSWGVnNEpaaEM5UkJZRi1neVRHdDloWURnbTh5Wnd3clRBR3VhUk5CWVpicXRvdDdMblhCbXJaRlFKb2s?oc=5",
-   "published": "2026-10-07T18:58:45+09:00"
+   "title": "資源生む廃棄物リサイクル工場 食品ロスを肥料や電気などに【グッド！いちおし】",
+   "source": "ABEMA",
+   "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE04OHBjcnpTVW40SVZXWFdqeDIwT1g2ZHBpRzhNbHhYbVNWWU1kUEZNMEVvTk5MUk04bURXUWZhN1pTcEg1em5iT0ZyYXZMajZtRGFoRmZhUGRRdU0?oc=5",
+   "published": "2026-10-07T19:44:14+09:00",
+   "dups": 1
   },
   {
    "cat": "law",
@@ -335,14 +352,6 @@
    "source": "Yahoo!ニュース",
    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1ZNS1wd19VQThQbDFOdGJZdlR1UWhDNERFZTlueHBwTXcxRzNTcXE0NDA0VHpIem5ubGZ5ZUJic3hvS01WTW5FVUR6WHM3aUpWbEJsVHRSTmZPSWxxU3dxSGRKY1Vma0dsRXc2MFZIVmJTSzdFeGpHVmw0LUZBWGc?oc=5",
    "published": "2026-10-07T17:20:17+09:00"
-  },
-  {
-   "cat": "dc",
-   "label": "AI・DC",
-   "title": "ケーブル洗浄装置市場の2035年予測：送配電網の近代化と再生可能エネルギーの系統連系が成長を牽引",
-   "source": "IndexBox",
-   "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPUGhoLUV4c3lqaXBnWWRwbWlicU5Ra0NWbnowQUhsMnBuYjFRVUYxaGF1cEJIWE13d2ZFME1KbHpTNHJzcFgzekNzdkJrWVZQcnZsZEp4TkZZdm5mLUZNYWtwVXpFa3B4UV9YU2tiZHFXSWttU3J3M3lCM1FtczBsWTAzQkxXNGhMRDFPc2JXX2FRVmZQX0RMWlNESlZUbmpCb3JrN1Z3dWQyY2hlaFI3VnFTOUhYYmNudUM2b1l2ZjdfZ2ZOVEFXOFdvX2dTSFZhYUNaYXRHbGxtajA?oc=5",
-   "published": "2026-10-07T14:06:04+09:00"
   },
   {
    "cat": "mkt",
@@ -473,14 +482,6 @@
    "published": "2026-10-05T11:23:24+09:00"
   },
   {
-   "cat": "mkt",
-   "label": "相場",
-   "title": "東京／銅・黄銅屑、乱高下警戒",
-   "source": "日刊鉄鋼新聞",
-   "link": "https://www.japanmetaldaily.com/articles/-/268206",
-   "published": "2026-10-05T07:00:00+09:00"
-  },
-  {
    "cat": "law",
    "label": "法規制",
    "title": "古物商許可を取った後に「最初の1会場目」を選ぶ基準と、初心者が",
@@ -558,14 +559,6 @@
    "title": "特定放射性廃棄物の最終処分に関する法律に基づく文献調査等に関する考え方等について",
    "source": "北海道のホームページ",
    "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9GUHFDRXU4SGt3ajk1dHZCMXQwc2NwSXliemxrWVQ5TzlTeXlvN015LUlxbWZkeFZOV3BDVmxUb1J4bHJ1aEpZaEtEYzJoVTZmNDNJNTlKM3R6UEtwV2p5TE5Ea0Mtdw?oc=5",
-   "published": "2026-09-16T16:00:00+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
-   "title": "環境省のヤード環境対策技術検討会／木谷鉄リ工業会会長、「２段階の許可審査」を提言／〝地域との共生〟書類で判断",
-   "source": "日刊鉄鋼新聞 Japan Metal Daily",
-   "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBLUUg1Ylltc29VUndkUTZqVTFDd29QbUR6T1V1Qkg3WnBiV3hxdDY0M1BVS3dkaUs0cy1LNW5wNUpvQXlyMlZWTnpWNDBDZkw4anozSDBGeEt5OGhZbkE?oc=5",
    "published": "2026-09-16T16:00:00+09:00"
   },
   {
@@ -2773,7 +2766,7 @@
     12910802,
     13067864,
     13124660,
-    13241162
+    13228949
    ]
   },
   "基板:マザーボード（Ｃ）": {
