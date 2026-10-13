@@ -1,5 +1,5 @@
 {
- "updated": "10/13 7:36",
+ "updated": "10/13 10:28",
  "fx": {
   "usdjpy": 158.6,
   "date": "2026-10-12"
@@ -7,10 +7,10 @@
  "manual": {
   "tiles": [
    {
-    "name": "銅建値（10/6改定）",
-    "value": "2,380,000",
+    "name": "銅建値（10/13改定）",
+    "value": "2,440,000",
     "unit": "円/t",
-    "diff": "+10,000"
+    "diff": "+60,000"
    },
    {
     "name": "東鉄名古屋二級(10/9)",
@@ -22,27 +22,27 @@
   "rows": [
    {
     "name": "金（店頭買取）",
-    "value": "23,192",
+    "value": "23,130",
     "unit": "円/g",
-    "diff": "+444"
+    "diff": "+176"
    },
    {
     "name": "銀（店頭買取）",
-    "value": "321.86",
+    "value": "332.53",
     "unit": "円/g",
-    "diff": "-8.80"
+    "diff": "+2.09"
    },
    {
     "name": "ビットコイン",
-    "value": "13,093,478",
+    "value": "12,987,841",
     "unit": "円",
-    "diff": "-1.1%"
+    "diff": "-2.0%"
    },
    {
     "name": "日経平均",
-    "value": "69,031",
+    "value": "67,530",
     "unit": "円",
-    "diff": "-916"
+    "diff": "-3,154"
    },
    {
     "name": "NYダウ",
@@ -53,6 +53,30 @@
   ]
  },
  "items": [
+  {
+   "cat": "gen",
+   "label": "業界",
+   "title": "宝探しのようなワクワクを！ 函館の金属リサイクル企業で社員募集NEW!",
+   "source": "北海道の人、暮らし、仕事。 くらしごと",
+   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9pRFEwWVlweEJWR1FGdV9IWEo0NkcxYXFvX0xlRXVKY2pJTHVNdjFzay1iSm1NS3VobXo1TzFSUE1EdER2REZ3aHlTVmNvdmNOaGhxWVVhMXpWUDU3bGpuRk93VllLQWh4V3RGN0xKZw?oc=5",
+   "published": "2026-10-13T09:02:38+09:00"
+  },
+  {
+   "cat": "btc",
+   "label": "ビットコイン",
+   "title": "メタプラネット株は反発後も慎重判断、米CPI控えBTC価格の動向に注目",
+   "source": "JinaCoin",
+   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBhdkVBZTh2UW1xZ0xNVUotVURuZWhYanRRaTY1TWwxVVBvenJsb2dmeDUzOEU5OE9aeG9PenEwM2lsSmxrblhKSXQxZ09rcVlIMXBwUVBBV0g2SlBOcVhabmNpZ1dxdnQzc1E?oc=5",
+   "published": "2026-10-13T08:32:59+09:00"
+  },
+  {
+   "cat": "btc",
+   "label": "ビットコイン",
+   "title": "ビットコイン最高値回復はいつか、サイクル分析が時期示唆",
+   "source": "BeInCrypto",
+   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1rbklkNlRpTmR2eDFlQWNrcHcybTRyM2pqMDFuS1VCWHYzekg5eGVLS3NHM0VEZHBJOEhDUEVBLXlLOGlvclB2eDd5eVBCZVBOeXQ3M2I5Y0JPMmt6c0Q2cmh2VXAxeDc5VC1IY1owbkRCR3dvMndhaQ?oc=5",
+   "published": "2026-10-13T08:13:49+09:00"
+  },
   {
    "cat": "mkt",
    "label": "相場",
@@ -88,6 +112,14 @@
    "published": "2026-10-13T05:00:00+09:00"
   },
   {
+   "cat": "mkt",
+   "label": "相場",
+   "title": "中部電炉6社買値 鉄スクラップ 買値1000円上げ",
+   "source": "日刊産業新聞",
+   "link": "https://www.japanmetal.com/news-t20261013151072.html",
+   "published": "2026-10-13T03:26:00+09:00"
+  },
+  {
    "cat": "dc",
    "label": "AI・DC",
    "title": "LANケーブル市場の見通し2026年〜2033年：トレンド、規模、そして予測されるCAG",
@@ -98,10 +130,10 @@
   {
    "cat": "mkt",
    "label": "相場",
-   "title": "中部電炉6社買値 鉄スクラップ 買値1000円上げ",
+   "title": "関東輸出入札5万2077円 鉄スクラップ、大幅反発 8.2％上昇 10月契約",
    "source": "日刊産業新聞",
-   "link": "https://www.japanmetal.com/news-t20261013151072.html",
-   "published": "2026-10-13T00:35:00+09:00"
+   "link": "https://www.japanmetal.com/news-t20261013151070.html",
+   "published": "2026-10-13T02:01:00+09:00"
   },
   {
    "cat": "mkt",
@@ -142,30 +174,6 @@
    "source": "디지털투데이",
    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPNFhWaU1YOExsWG12aUpoNWlvMERkbFJfVi1QVEtubXdBeWJuRU9EWEZybXZGSGh5U3J4am9VSF9TWElyaUZxaGxqNk5ycTY0ckszeFlxT0hacUE3akFjd0FFVkhLRGRWRUcxQ1FYS05qaTVUd3pTUUowN19Nb08yel9PMklac1hERWh5SF9hTC0yc3pJTVZEWGlxVHZLV1JFSTVTd1QzbU5ibHB0QU5v?oc=5",
    "published": "2026-10-12T15:07:00+09:00"
-  },
-  {
-   "cat": "btc",
-   "label": "ビットコイン",
-   "title": "ビットコインETF流入が急減、需要回復なるか",
-   "source": "BeInCrypto",
-   "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1mWURxd0NFZlB2YUltTjNIU2psSjRhSVpPQmdhMkZjNWp4TTRnQkdTem43a3Q5aU1TanFQNVhJYnJPcnkwVktmaXRjUmRTY3RzaWN4MnlNRThVQ09nRVg3LWcxWlRxTkZQTDNKVm1Jd0dwLUMtbVAw?oc=5",
-   "published": "2026-10-12T13:29:51+09:00"
-  },
-  {
-   "cat": "btc",
-   "label": "ビットコイン",
-   "title": "ビットコインが8万4000ドル手前で反発一服──トランプ氏の「エネルギー停戦」、LedgerとColdcardのハッキング懸念を上回るか【価格分析】（NADA NEWS）",
-   "source": "Yahoo!ニュース",
-   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE90MEpzYTduelNsMi1OVnJEaV9uNmItazFVNmVTdjFlUFdtWlJ6bjZoYTNWT3lIRnpXWm5rcmJDa1hSbV84MTh5ZlRvbDVqYkhrSEhzOTBUeUM0VVZtS3hSNkE1aWlJbFVlaHUwUlI2Zkk1WFYwOENjTmRHcWpHYTg?oc=5",
-   "published": "2026-10-12T12:53:41+09:00"
-  },
-  {
-   "cat": "mkt",
-   "label": "相場",
-   "title": "関東輸出入札5万2077円 鉄スクラップ、大幅反発 8.2％上昇 10月契約",
-   "source": "日刊産業新聞",
-   "link": "https://www.japanmetal.com/news-t20261013151070.html",
-   "published": "2026-10-12T11:59:00+09:00"
   },
   {
    "cat": "law",
@@ -552,14 +560,6 @@
    "title": "くら寿司「ちいかわ」転売騒動――メルカリを「闇市」と呼ぶ前の古物営業法の穴｜山本一郎（やまもといちろう）",
    "source": "note",
    "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBQQTViQWctN191X1RKY3pHOFpOWW1VSFljM2luY0UyQTc0OW1LWHhpdlBFRFhXYnlQeVhRdnRMdW0yNjlqOTJIbnBDb2VPQUk?oc=5",
-   "published": "2026-09-12T16:00:00+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
-   "title": "災害廃棄物の処理費 国が97.5％負担へ　高市首相が熊本地震対応を報告",
-   "source": "大紀元 エポックタイムズ",
-   "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5FeTZBc21WOVFva1g3OUxVZHpNQ1ZkTFBHYU94Y1B2SllUcnl5UjlqVk5aWExkY3ltODV3V290Qkg2VUJZNmdNbU1JY3FpU3d3dWVId3BtMW7SAV5BVV95cUxNR2tYRFBaQU9oZ092U09BZHgwMXNzaUotQ3pNQ1phNDBDaXkxNjF3Y00tMnpYSnBKME9JZTk0RW5LMGVmX1BndmFXREFzcHJNdUVta0dOZy1hOGxRV2h3?oc=5",
    "published": "2026-09-12T16:00:00+09:00"
   },
   {
@@ -2595,7 +2595,6 @@
   },
   "ビットコイン": {
    "d": [
-    "2026-07-15",
     "2026-07-16",
     "2026-07-17",
     "2026-07-18",
@@ -2688,7 +2687,6 @@
     "2026-10-13"
    ],
    "v": [
-    10539872,
     10489030,
     10358840,
     10381743,
@@ -2778,7 +2776,7 @@
     13067864,
     13124660,
     13238715,
-    13049637
+    12996074
    ]
   },
   "基板:マザーボード（Ｃ）": {
@@ -3472,7 +3470,8 @@
     "2026-10-06",
     "2026-10-07",
     "2026-10-08",
-    "2026-10-09"
+    "2026-10-09",
+    "2026-10-13"
    ],
    "v": [
     67242.73,
@@ -3534,7 +3533,8 @@
     70683.98,
     70035.71,
     69042.11,
-    69030.92
+    69030.92,
+    67493.61
    ]
   },
   "東鉄名古屋二級": {
@@ -3754,7 +3754,7 @@
     23192.0,
     23192.0,
     23192.0,
-    23192.0
+    23130.0
    ]
   },
   "銀": {
@@ -3864,7 +3864,7 @@
     321.86,
     321.86,
     321.86,
-    321.86
+    332.53
    ]
   },
   "銅建値": {
@@ -3891,7 +3891,8 @@
     "2026-09-17",
     "2026-09-24",
     "2026-10-01",
-    "2026-10-06"
+    "2026-10-06",
+    "2026-10-13"
    ],
    "v": [
     2270000,
@@ -3916,7 +3917,8 @@
     2310000,
     2420000,
     2370000,
-    2380000
+    2380000,
+    2440000
    ]
   }
  }
