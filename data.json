@@ -1,5 +1,5 @@
 {
- "updated": "10/15 4:43",
+ "updated": "10/15 7:24",
  "fx": {
   "usdjpy": 158.45,
   "date": "2026-10-14"
@@ -34,9 +34,9 @@
    },
    {
     "name": "ビットコイン",
-    "value": "12,930,120",
+    "value": "12,904,352",
     "unit": "円",
-    "diff": "-1.8%"
+    "diff": "-2.3%"
    },
    {
     "name": "日経平均",
@@ -46,13 +46,30 @@
    },
    {
     "name": "NYダウ",
-    "value": "51,550",
+    "value": "51,621",
     "unit": "$",
-    "diff": "+371"
+    "diff": "+442"
    }
   ]
  },
  "items": [
+  {
+   "cat": "gen",
+   "label": "業界",
+   "title": "銅スクラップメーカー上位企業2026",
+   "source": "pando.life",
+   "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE0zNkFzWGhjVXcwcHBhZzBaRG5jVHpjNlNYUVpxNUJzeXhPUWRaRVVEdnFRcFVtZjdRNVpFc2RWN0VXbUptT1hxVnF3?oc=5",
+   "published": "2026-10-15T06:03:18+09:00"
+  },
+  {
+   "cat": "btc",
+   "label": "ビットコイン",
+   "title": "ビットコインの買い手が戻ってきた──クジラの保有増とETF資金流入が示す変化【エックスウィン】（NADA NEWS）",
+   "source": "Yahoo!ニュース",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5oRFpNWVpRVFltRG5OWk5GYVlCQ0lZUkRlNTVhaWM4NW1wSWpaMUp2RzR5OGxMOUl0clR0S0FTMGNJbm1xaG53aXR5aERvZ0xwa0t5WXNzWmZoNnFZaXlNWVNrVVE3aVJOMjVzZEx1eDJsZTdacjhPTklnaUdQVjg?oc=5",
+   "published": "2026-10-15T06:01:48+09:00",
+   "dups": 1
+  },
   {
    "cat": "btc",
    "label": "ビットコイン",
@@ -70,6 +87,14 @@
    "published": "2026-10-14T21:30:00+09:00"
   },
   {
+   "cat": "btc",
+   "label": "ビットコイン",
+   "title": "ビットコイン8.2万ドル割れ、米消費者物価の上振れで利上げ観測再燃",
+   "source": "CoinPost",
+   "link": "https://coinpost.jp/?p=742975",
+   "published": "2026-10-14T18:10:00+09:00"
+  },
+  {
    "cat": "gen",
    "label": "業界",
    "title": "エネルギー高効率利用を指向した環境調和型非鉄金属製造・リサイクルプロセスの開発（1期目）",
@@ -84,6 +109,14 @@
    "source": "TBS NEWS DIG",
    "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1Ja1EtQ3Bqc3dvb2RmVUtXNUxQSkZ6Q3RVYVYwSEVpZHEwQjRUeVgzSUpiYlBWMEQ3M0diVzBTbTdnbHNBUlpxOWswNDNYSDNxRExLZDQ0Y3RIcU1LSmwwamRuUHRmc1VYbkxvQjdHTTVjRDI2?oc=5",
    "published": "2026-10-14T17:16:00+09:00"
+  },
+  {
+   "cat": "btc",
+   "label": "ビットコイン",
+   "title": "ビットコイン価格下落、セイラー氏強気予測が現実と対峙",
+   "source": "Bitcoin.com News",
+   "link": "https://news.bitcoin.com/ja/market-updates/bittokoin-kakaku-geraku-seira-shi-tsuyoki-yosoku-ga-genjitsu-to-taiji/",
+   "published": "2026-10-14T15:52:00+09:00"
   },
   {
    "cat": "mkt",
@@ -110,20 +143,28 @@
    "published": "2026-10-14T12:45:00+09:00"
   },
   {
-   "cat": "btc",
-   "label": "ビットコイン",
-   "title": "ビットコイン保有の上場企業、AIフュージョンキャピタルGが全量売却へ",
-   "source": "JinaCoin",
-   "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFAxd241ckZyNTFPQ1l0WlhXakY1V0F6aE51dXhkTUtOTVlpX2JVMGtMZGlsZHZxOEVWZ3JlSlA4OGJDazV1US1tV0lDQW1XcDI5TTRDdg?oc=5",
-   "published": "2026-10-14T11:52:57+09:00"
+   "cat": "mkt",
+   "label": "相場",
+   "title": "鉄スクラップ価格続伸 輸出高受け電炉買値上げ 越・バングラの",
+   "source": "日刊産業新聞",
+   "link": "https://www.japanmetal.com/news-t20261015151109.html",
+   "published": "2026-10-14T12:00:00+09:00"
+  },
+  {
+   "cat": "gen",
+   "label": "業界",
+   "title": "「誰か1人だけ赤字」ではバトンが渡らない JX金属×経産省が挑む",
+   "source": "ITmedia",
+   "link": "https://www.itmedia.co.jp/business/articles/2610/15/news005_2.html",
+   "published": "2026-10-14T12:00:00+09:00"
   },
   {
    "cat": "gen",
    "label": "業界",
    "title": "室外機盗んだ疑い、2人逮捕 大田原署",
    "source": "下野新聞社",
-   "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFB6NE94aDdHY05qS3FVVEVUSjF2dmptMk1NQnNnODNRM0RaUURCRnlRcjZsTk9tZUdWS2w4SEZLNnFMNWhwemtJS1EyYmRDSXVZWG12aUVZV0tHcms?oc=5",
-   "published": "2026-10-14T11:33:28+09:00"
+   "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9FNzliSlM1REhFbnp0V2Q0ems0dUc2SE9heWt1UU1IbTF6c0lzY1VZck0xc2pXZDI0aHZJbjN1Qm5FUzNNOWk1MUQ3TkM4cnFaTWtuUkM2WnkwZXZPbkE?oc=5",
+   "published": "2026-10-14T11:35:49+09:00"
   },
   {
    "cat": "btc",
@@ -132,22 +173,6 @@
    "source": "디지털투데이",
    "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQcm81NE5Qam1CN1R5ZnFtYlcyY0VDb2IwUzRrX2xIcFJHLVhULV9ST2k4Y2ROTEpzVGt2dS1JLTZzRnZhLU5CVFRVVkN1ODZRZVJrZFNlNkpkZVZZQ04xTHFWTHMyeWktSTNQU3lZaXV2YUVBLW9PSWUyX1NnbVVpMWVyRUFsUHJhSGd4ZlJ6VkVqbWNUaTVObFZMOHpYM2R4M1NCWjhYUnRpcjlSdU1wemhMT2FFVUlmc1BJWkFVTTJwbzNHa2JZd0RfOUdubVEySDZFU0dTdVhaRG1TLTRxemdCa3g?oc=5",
    "published": "2026-10-14T10:16:36+09:00"
-  },
-  {
-   "cat": "btc",
-   "label": "ビットコイン",
-   "title": "IMFが世界債務約5京7670兆円に警鐘、「フランスの財政不安」がビットコイン高騰を招く可能性",
-   "source": "Forbes JAPAN",
-   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBGZVk2Y0J6MW9zTHUxMTRDX0dXWFFhNklpWHluUzNvWHJ0QlVYczVxclBDemg1bi1aVXFTWWZnMkZXTDE1ei1hT09iVjU5TEJIbUhxM2tZNVBzZw?oc=5",
-   "published": "2026-10-14T09:45:00+09:00"
-  },
-  {
-   "cat": "btc",
-   "label": "ビットコイン",
-   "title": "ビットコインの取引所残高、2月以降13万BTC減 需給引き締まりに注目",
-   "source": "디지털투데이",
-   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPcnRNdDR0dkZPRWFBQjlha1paVTVxbUN3S1EyeDAwNFdkWURrX3FNbXJQcG1MajdYcG1OWS1OVm8zRWVhRU12Z2dSSTZBa01BSWZTbG5FRDBpdVFyZnMxYXh0U0d5TURMV09RZ0U5S2M3TXYwaXl4Y0tjRWJwc3ZfQ29tcnB5Zks0OGI2dl9RNEVxenJpQmE2Mnk0TjhsT3AzNGlTOUhPRkpaWVExbnRobFc5cUptY0VHcUE?oc=5",
-   "published": "2026-10-14T08:42:18+09:00"
   },
   {
    "cat": "law",
@@ -167,16 +192,17 @@
    "dups": 1
   },
   {
-   "cat": "btc",
-   "label": "ビットコイン",
-   "title": "ビットコイン最高値回復はいつか、サイクル分析が時期示唆",
-   "source": "BeInCrypto",
-   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1rbklkNlRpTmR2eDFlQWNrcHcybTRyM2pqMDFuS1VCWHYzekg5eGVLS3NHM0VEZHBJOEhDUEVBLXlLOGlvclB2eDd5eVBCZVBOeXQ3M2I5Y0JPMmt6c0Q2cmh2VXAxeDc5VC1IY1owbkRCR3dvMndhaQ?oc=5",
-   "published": "2026-10-14T02:14:17+09:00"
+   "cat": "mkt",
+   "label": "相場",
+   "title": "鉄スクラップ購入値／東京製鉄、全拠点で1000円引き上げ",
+   "source": "日刊鉄鋼新聞",
+   "link": "https://www.japanmetaldaily.com/articles/-/268786",
+   "published": "2026-10-14T07:00:00+09:00",
+   "dups": 1
   },
   {
-   "cat": "law",
-   "label": "法規制",
+   "cat": "mkt",
+   "label": "相場",
    "title": "金属スクラップ業界のリアル。「日本系」と「外国系（外資・輸出",
    "source": "note",
    "link": "https://note.com/leal_cobra1980/n/n0992d522571c",
@@ -217,18 +243,11 @@
   {
    "cat": "mkt",
    "label": "相場",
-   "title": "中部電炉6社買値 鉄スクラップ 買値1000円上げ（日刊産業新聞）",
-   "source": "Yahoo!ニュース",
-   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1FQ1BNa2ZQQ0pQT0dzVGZHRWxrY0hrMi0zU242SWFXTWV1YVplOHctMXhERkRvV3BkVDRGd21nVnl4YVpGRTZ5Yk5RS29zMEE1ZFlKM2pWRVJmdlpxVHpFbXl3T1FybXRjSV8wVGJQYkR5UnJYaGpBeFVHcHEtMUk?oc=5",
-   "published": "2026-10-13T18:01:11+09:00"
-  },
-  {
-   "cat": "mkt",
-   "label": "相場",
    "title": "関東輸出入札5万2077円 鉄スクラップ、大幅反発 8.2％上昇 10月契約（日刊産業新聞）",
    "source": "Yahoo!ニュース",
    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA2YjctcE96SnVNdmhua2s0aExRNl9TTXJXbmJIenA3TWEyMzBMMnhiNFNoMGRoYVlPNWUweVg2WWdBOEpoN3dLR0JEejlwaEFCNjBZamJxaHc2a0pvQU4xS3ZDYU9ieWx1UVdQRFNqRFhsMk05bWtoNGZ4NHZ2d2s?oc=5",
-   "published": "2026-10-13T17:58:24+09:00"
+   "published": "2026-10-13T17:58:24+09:00",
+   "dups": 1
   },
   {
    "cat": "law",
@@ -258,9 +277,9 @@
    "cat": "mkt",
    "label": "相場",
    "title": "東大 金属積層造形でクラファン 新合金を開発へ",
-   "source": "日刊産業新聞",
-   "link": "https://www.japanmetal.com/news-h20261013151083.html",
-   "published": "2026-10-13T07:59:00+09:00"
+   "source": "WEB産業新聞",
+   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9MWFY4UUllbmN1djNoczJzV1l3aXR0UnZsVnJBaTdDS3pYRWNEaGhPdW00bDNNdm5XOXlMbUlmOVRfV21VLWRkWnFRSjNldXU4a0RyZy1WZWlQZlMtMHZsR3F3?oc=5",
+   "published": "2026-10-13T06:00:00+09:00"
   },
   {
    "cat": "mkt",
@@ -367,6 +386,22 @@
    "published": "2026-10-09T21:50:24+09:00"
   },
   {
+   "cat": "mkt",
+   "label": "相場",
+   "title": "亜鉛建値3000円下げ 三井金属",
+   "source": "日本経済新聞",
+   "link": "https://www.nikkei.com/article/DGXZQOUB092GH0Z01C26A0000000/",
+   "published": "2026-10-09T20:48:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "フクシマガリレイ、ノンフロン冷媒R1234yf採用のヨコ型解凍庫を発売へ",
+   "source": "Dellows News",
+   "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE15d0haVE9GdGI4enZqY1BNck9idm9HWHhHT203d0hiMWJVdjc4b1pJTnBaaEVPbm1tVi11Y3pCbGVlMGx0UXc?oc=5",
+   "published": "2026-10-09T19:26:02+09:00"
+  },
+  {
    "cat": "gen",
    "label": "業界",
    "title": "高騰する“銅”の換金目的か 集合住宅で水道メーターの盗難相次ぐ 熊野町で46個 呉市で16個 広島（RCC中国放送）",
@@ -420,7 +455,8 @@
    "title": "不用品売却の税金と確定申告 古物店の本人確認基準を整理",
    "source": "JKN News",
    "link": "https://news.jkn.co.kr/editions/japanese/post/1013793",
-   "published": "2026-10-09T12:01:00+09:00"
+   "published": "2026-10-09T12:01:00+09:00",
+   "dups": 1
   },
   {
    "cat": "mkt",
@@ -449,12 +485,12 @@
    "dups": 1
   },
   {
-   "cat": "law",
-   "label": "法規制",
-   "title": "資源循環体験プログラム「バラシンピック」千葉市・高岡市での開催が決定！",
-   "source": "ニコニコニュース",
-   "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1FUXhIRW5WemxMZEpLdmtxRHZQeGRoRE5uVGJ1RjlpNVZVUkx3UllGSlVCeTh1bklUYnRQYV9hemhWZHkzVTBtLW5HbXF3UW1WWFV4NQ?oc=5",
-   "published": "2026-10-09T03:21:17+09:00"
+   "cat": "dc",
+   "label": "AI・DC",
+   "title": "AIは「ごみ」をどう変えるのか？――リサイクル現場で始まる「AI×",
+   "source": "note",
+   "link": "https://note.com/ai_datamimi/n/n9c315a80745a",
+   "published": "2026-10-08T19:45:00+09:00"
   },
   {
    "cat": "gen",
@@ -487,14 +523,6 @@
    "source": "IndexBox",
    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNWmFJbVQtRkpNbV9BWWF5Xzh6T0RpaVRhblc5X0FwbWs1VmZTWHNsVkpGazRxZGt1aDZWbkpzSnRIaU93MTZCRWFsaTJzbTFPNVkwSmpfcWc2cFZsNGx5ME5sc19HRDVLaDFDb3liSjEzQ0lwVkxFVUR0UVFsQkFCckJOWXFlWGxUN25sZE5PTFc3aTJWN2NOUjRfYXh2ZjhUbHhVVi1ERXI0TUZZdFVaQVdUUUtZTjctd01sSw?oc=5",
    "published": "2026-10-08T07:51:04+09:00"
-  },
-  {
-   "cat": "mkt",
-   "label": "相場",
-   "title": "鉄スクラップ業の影島興産／本社で第二工場稼働／ステンレス・非鉄の扱い強化／顧客の利便性向上、特色ある事業形態に",
-   "source": "日刊鉄鋼新聞 Japan Metal Daily",
-   "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBSTVU1NTRJX05pU3M4bDk1UDJDSklrTzdQNnhaVzdHQ242N1UtV0k2VW5EM3YtdHUzV1lzWndpbzB4MFo3VGNfemg3OGdPTk0weDNRUVpFZ1FsOFdkUnc?oc=5",
-   "published": "2026-10-08T05:00:00+09:00"
   },
   {
    "cat": "law",
@@ -632,6 +660,14 @@
    "link": "https://www.yomiuri.co.jp/national/20260904-GYT1T00133/2/",
    "published": "2026-09-04T17:01:00+09:00",
    "dups": 1
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "「特定金属くず」の法律相談",
+   "source": "弁護士ドットコム",
+   "link": "https://www.bengo4.com/c_5/bbs/%E7%89%B9%E5%AE%9A%E9%87%91%E5%B1%9E%E3%81%8F%E3%81%9A/",
+   "published": "2026-09-04T12:26:00+09:00"
   },
   {
    "cat": "law",
@@ -820,7 +856,7 @@
      }
     ],
     "spread": 210,
-    "diff": "+30"
+    "diff": "0"
    },
    {
     "group": "銅",
@@ -843,7 +879,7 @@
      }
     ],
     "spread": 200,
-    "diff": "+30"
+    "diff": "0"
    },
    {
     "group": "銅",
@@ -866,7 +902,7 @@
      }
     ],
     "spread": 110,
-    "diff": "+40"
+    "diff": "0"
    },
    {
     "group": "銅",
@@ -958,7 +994,7 @@
      }
     ],
     "spread": 100,
-    "diff": "+10"
+    "diff": "0"
    },
    {
     "group": "電線",
@@ -2283,7 +2319,7 @@
      }
     ],
     "spread": 6,
-    "diff": "+1"
+    "diff": "0"
    }
   ]
  },
@@ -2464,7 +2500,7 @@
     51654.95,
     51850.55,
     51670.1,
-    51554.08
+    51621.48
    ]
   },
   "ドル円": {
@@ -2792,7 +2828,7 @@
     13238715,
     12967162,
     13158874,
-    12933437
+    12904157
    ]
   },
   "基板:マザーボード（Ｃ）": {
