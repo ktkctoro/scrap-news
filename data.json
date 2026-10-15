@@ -1,5 +1,5 @@
 {
- "updated": "10/16 4:24",
+ "updated": "10/16 7:29",
  "fx": {
   "usdjpy": 157.98,
   "date": "2026-10-15"
@@ -34,9 +34,9 @@
    },
    {
     "name": "ビットコイン",
-    "value": "13,049,870",
+    "value": "13,038,258",
     "unit": "円",
-    "diff": "+0.9%"
+    "diff": "+1.1%"
    },
    {
     "name": "日経平均",
@@ -46,13 +46,21 @@
    },
    {
     "name": "NYダウ",
-    "value": "52,244",
+    "value": "52,178",
     "unit": "$",
-    "diff": "+1,013"
+    "diff": "+946"
    }
   ]
  },
  "items": [
+  {
+   "cat": "btc",
+   "label": "ビットコイン",
+   "title": "ビットコイン、アナリストの84％が強気に──価格に先行する期待をどう読むか【エックスウィン】（NADA NEWS）",
+   "source": "Yahoo!ニュース",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE94eEFEeFIwbGJTcDVmNzBDdXFpQW1ic1kxdllBNkwxbWVCWlhoNVA4UW04Vm5ZSDNFUWJQd3ZRWllFNHByVVh0NW8tWFVXbHBnSU40a3oxZ3RqYWdRYVpNRWMyYkFBclFZT1Y2cGY2LXdUWUhnVUtQSzlocFBUTUE?oc=5",
+   "published": "2026-10-16T06:09:39+09:00"
+  },
   {
    "cat": "mkt",
    "label": "相場",
@@ -68,6 +76,14 @@
    "source": "CoinPost",
    "link": "https://coinpost.jp/?p=743097",
    "published": "2026-10-15T16:31:00+09:00"
+  },
+  {
+   "cat": "btc",
+   "label": "ビットコイン",
+   "title": "【 10/15 相場速報｜FxPro 】ビットコイン、上昇トレンドをかろうじて",
+   "source": "note",
+   "link": "https://note.com/fxpro_japan/n/nad30e63f9a45",
+   "published": "2026-10-15T15:06:00+09:00"
   },
   {
    "cat": "mkt",
@@ -101,22 +117,6 @@
    "source": "pando.life",
    "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE1tSEFYNDVEZHBTZWI5U2s2eGFoQ1c1TF9NNV9Qb3FXNUd4ajRGejlVS2gzZkFHQXRkdlJkQmRRSkZvdkZTWENvX2dR?oc=5",
    "published": "2026-10-15T13:21:13+09:00"
-  },
-  {
-   "cat": "btc",
-   "label": "ビットコイン",
-   "title": "BTC「弱気相場は終わった」強気スコア90に到達｜CryptoQuant分析",
-   "source": "ビットタイムズ",
-   "link": "https://bittimes.net/news/230796.html",
-   "published": "2026-10-15T13:16:00+09:00"
-  },
-  {
-   "cat": "btc",
-   "label": "ビットコイン",
-   "title": "ビットコイン下落、米CPI上振れで利上げ警戒｜仮想NISHI",
-   "source": "CoinPost",
-   "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTFBIbW1yNS1OZXNXcXRDdnJjVXI3bm0yUC1EcG5fRjdqakFJcmVWbG03djFkVGVuU19EeVpfYWpiRnpLcGc?oc=5",
-   "published": "2026-10-15T10:05:05+09:00"
   },
   {
    "cat": "gen",
@@ -190,6 +190,14 @@
    "source": "日本経済新聞",
    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9JM2lrRnRrRnBIU0RSM0lmekVRV1F6cWMyejByaFM3U2ZKTEp4UjRZbnlCR1ZtUmtiTGVKNkwzbVY3NFU1d0hpa250UlNuT3dvX3YxSnFXX3M5V3lqMkRXTG0xSWdFZldjMnlrcQ?oc=5",
    "published": "2026-10-14T12:45:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "【廃棄物処理法違反で罰金刑】三条市の坂井土建、産廃収集運搬業",
+   "source": "にいがた経済新聞",
+   "link": "https://www.niikei.jp/2081990/",
+   "published": "2026-10-14T11:44:00+09:00"
   },
   {
    "cat": "gen",
@@ -379,12 +387,28 @@
    "published": "2026-10-12T11:56:01+09:00"
   },
   {
+   "cat": "law",
+   "label": "法規制",
+   "title": "これからの古美術市場（数多の古物業界）へ参入する方へ",
+   "source": "note",
+   "link": "https://note.com/travelingdealer/n/n82c99b883406",
+   "published": "2026-10-12T09:57:00+09:00"
+  },
+  {
    "cat": "dc",
    "label": "AI・DC",
    "title": "銅市場、AI・電化の流れ止まらず パンパシフィック・カッパー会長",
    "source": "日本経済新聞",
    "link": "https://www.nikkei.com/article/DGXZQODK088E00Y6A900C2000000/",
    "published": "2026-10-12T04:00:00+09:00"
+  },
+  {
+   "cat": "dc",
+   "label": "AI・DC",
+   "title": "再エネ移行の勝者と敗者、銅と石炭の差歴然 オーストラリア鉱山ルポ",
+   "source": "日本経済新聞",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9oeG95R21JUy1haHZyd0xnN21qOHRsYlZjcHF4TFhwV0MxVzFqTkQzdnFnTlF4bFZ1VXFQYS1WNkdxWmxkZ2tJUGlFYkFjN2VsV0E3T1hBYk5CZXhldzJKZDlxVU1hZHoxSWM0bQ?oc=5",
+   "published": "2026-10-11T05:00:00+09:00"
   },
   {
    "cat": "gen",
@@ -443,12 +467,20 @@
    "published": "2026-10-09T16:41:59+09:00"
   },
   {
+   "cat": "mkt",
+   "label": "相場",
+   "title": "今日の銀価格｜本日の店頭銀地金価格(円/g)",
+   "source": "OANDA証券",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE96eG1BNDRBbzVwTGl1QUdRdkRFdDNrNG50R2VTUXU5ck12bUZRUnVROXZlY0p4bVRZdERHcWl0ZmRKak5QR2NqUnhRVFdzVzJNemxCNGRCU3hhTUdaYlhqVVBUUDViMmhjdVhkYjdkWFVUU2N0RkhNRGc3SzBjcVk?oc=5",
+   "published": "2026-10-09T16:00:00+09:00"
+  },
+  {
    "cat": "law",
    "label": "法規制",
-   "title": "【2026年10月最新・徹底調査】買取店の本人確認はマイナ免許証でどう変わる？古物商の従来免許証・マイナンバーカード",
-   "source": "ニコニコニュース",
-   "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBPNklEanJ3MmhpVUQzWWl4bi1ESzBqUlE2RnQ5dmVnamFYeGZqMk5pWUVpMkNrOWZVdHd2cl9zend2NFY3TzlEbGxsNTd5dnM5UVBBTA?oc=5",
-   "published": "2026-10-09T13:03:23+09:00"
+   "title": "【2026年10月最新・徹底調査】買取店の本人確認はマイナ免許証でどう変わる？古物商の従来免許証・マイナンバーカード・OCR入力・ICチップ読み取り・古物台帳の確認ポイント",
+   "source": "Excite エキサイト",
+   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5JenhqXzVueTJqMGNOZzdFWXFuT0o3OEJtMjVfbFZMR0lUQzlWb0hGUkFfY19LZlYzM1hiNjBKV0oybG9DRXFvTElUaGNhZDJOX0V5a3YxVXRlYmNfY3JmRnBsSEpIZk1ON0E?oc=5",
+   "published": "2026-10-09T13:00:00+09:00"
   },
   {
    "cat": "law",
@@ -466,14 +498,6 @@
    "source": "ニコニコニュース",
    "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBtZzBxTXdIRENhX0tDUHB0dXlTZHhkenZFN01YSUl0M3I4V1UxS2JaY3pQM2U4N2o1emJCUUxwbjZmYkxMMzZsNkFVNU1fakM5dHI2Xw?oc=5",
    "published": "2026-10-09T09:11:59+09:00"
-  },
-  {
-   "cat": "mkt",
-   "label": "相場",
-   "title": "【金地金の売却】代金が一度に「200万円」を超えると税務署へ支払",
-   "source": "LIMO on MSN",
-   "link": "https://www.msn.com/ja-jp/news/other/%E9%87%91%E5%9C%B0%E9%87%91%E3%81%AE%E5%A3%B2%E5%8D%B4-%E4%BB%A3%E9%87%91%E3%81%8C%E4%B8%80%E5%BA%A6%E3%81%AB-200%E4%B8%87%E5%86%86-%E3%82%92%E8%B6%85%E3%81%88%E3%82%8B%E3%81%A8%E7%A8%8E%E5%8B%99%E7%BD%B2%E3%81%B8%E6%94%AF%E6%89%95%E8%AA%BF%E6%9B%B8%E3%81%8C%E5%87%BA%E3%82%8B-100%E3%82%B0%E3%83%A9%E3%83%A0%E3%81%AE%E9%87%91%E5%9C%B0%E9%87%91%E3%82%92%E5%A3%B2%E3%82%8B%E3%81%A8%E3%81%84%E3%81%8F%E3%82%89%E3%81%AB%E3%81%AA%E3%82%8B%E3%81%8B/ar-AA2dSdCV",
-   "published": "2026-10-09T06:12:00+09:00"
   },
   {
    "cat": "law",
@@ -926,7 +950,7 @@
      }
     ],
     "spread": 20,
-    "diff": "+10"
+    "diff": "0"
    },
    {
     "group": "電線",
@@ -972,7 +996,7 @@
      }
     ],
     "spread": 30,
-    "diff": "+30"
+    "diff": "0"
    },
    {
     "group": "電線",
@@ -1000,7 +1024,7 @@
      }
     ],
     "spread": 340,
-    "diff": "+25"
+    "diff": "0"
    },
    {
     "group": "真鍮・砲金",
@@ -1023,7 +1047,7 @@
      }
     ],
     "spread": 60,
-    "diff": "+10"
+    "diff": "0"
    },
    {
     "group": "真鍮・砲金",
@@ -1092,7 +1116,7 @@
      }
     ],
     "spread": 110,
-    "diff": "+70"
+    "diff": "0"
    },
    {
     "group": "真鍮・砲金",
@@ -1151,7 +1175,7 @@
      }
     ],
     "spread": 40,
-    "diff": "-15"
+    "diff": "0"
    },
    {
     "group": "アルミ",
@@ -2460,7 +2484,7 @@
     51850.55,
     51670.1,
     51621.48,
-    52245.02
+    52177.69
    ]
   },
   "ドル円": {
@@ -2788,7 +2812,7 @@
     12967162,
     13158874,
     12891657,
-    13029690
+    13026568
    ]
   },
   "基板:マザーボード（Ｃ）": {
