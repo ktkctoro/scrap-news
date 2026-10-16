@@ -1,5 +1,5 @@
 {
- "updated": "10/17 4:03",
+ "updated": "10/17 7:10",
  "fx": {
   "usdjpy": 158.02,
   "date": "2026-10-16"
@@ -34,9 +34,9 @@
    },
    {
     "name": "ビットコイン",
-    "value": "12,804,244",
+    "value": "12,906,772",
     "unit": "円",
-    "diff": "-1.7%"
+    "diff": "-0.9%"
    },
    {
     "name": "日経平均",
@@ -46,13 +46,21 @@
    },
    {
     "name": "NYダウ",
-    "value": "51,901",
+    "value": "52,002",
     "unit": "$",
-    "diff": "+246"
+    "diff": "+347"
    }
   ]
  },
  "items": [
+  {
+   "cat": "mkt",
+   "label": "相場",
+   "title": "【金の買取】「訪問買取」なら8日間クーリング・オフできるのに",
+   "source": "LIMO on MSN",
+   "link": "https://www.msn.com/ja-jp/news/other/%E9%87%91%E3%81%AE%E8%B2%B7%E5%8F%96-%E8%A8%AA%E5%95%8F%E8%B2%B7%E5%8F%96-%E3%81%AA%E3%82%898%E6%97%A5%E9%96%93%E3%82%AF%E3%83%BC%E3%83%AA%E3%83%B3%E3%82%B0-%E3%82%AA%E3%83%95%E3%81%A7%E3%81%8D%E3%82%8B%E3%81%AE%E3%81%AB-%E5%BA%97%E8%88%97%E8%B2%B7%E5%8F%96-%E3%81%A7%E3%81%AF%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E3%81%A3%E3%81%A6%E3%83%9B%E3%83%B3%E3%83%88/ar-AA2epcPm",
+   "published": "2026-10-16T21:52:00+09:00"
+  },
   {
    "cat": "btc",
    "label": "ビットコイン",
@@ -94,12 +102,28 @@
    "published": "2026-10-16T17:09:58+09:00"
   },
   {
+   "cat": "btc",
+   "label": "ビットコイン",
+   "title": "2022年以来初、米国がビットコイン純輸入国に",
+   "source": "CoinPost",
+   "link": "https://coinpost.jp/?p=743388",
+   "published": "2026-10-16T17:00:00+09:00"
+  },
+  {
    "cat": "mkt",
    "label": "相場",
-   "title": "銅建値 239万円 亜鉛 66万4000円（日刊産業新聞）",
+   "title": "銅建値 239万円 亜鉛 66万4000円",
    "source": "Yahoo!ニュース",
-   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBzVlN3MFJsQ0hjQV92d2VET2dTNFdUVUVnUC10Q0dkcVRXVVZtQW9DT2c4THdJRTZPMTB4QkRxYVl4WUxfSVBLNFRnZmxBRVZqTFg0akFmYS1fVUhNcmxibjhuQlBrVFMxcW9Vd0NiMFphelBjbEhKZ1BVZC1RU00?oc=5",
-   "published": "2026-10-16T13:37:42+09:00"
+   "link": "https://news.yahoo.co.jp/articles/c316e8bec62e0f7fb0d4e00c0e21386de59301c3",
+   "published": "2026-10-16T15:37:00+09:00"
+  },
+  {
+   "cat": "btc",
+   "label": "ビットコイン",
+   "title": "金地金トークン展開のunbanked、暗号資産事業から撤退へ",
+   "source": "Yahoo!ニュース",
+   "link": "https://news.yahoo.co.jp/articles/7d0068e121b65cd52cf17eec9a9526431a1967cb",
+   "published": "2026-10-16T13:30:00+09:00"
   },
   {
    "cat": "dc",
@@ -131,8 +155,7 @@
    "title": "ビットコイン「暴落の懸念」、ブラックロックCEOが米国債務とAI",
    "source": "Forbes JAPAN",
    "link": "https://forbesjapan.com/articles/detail/106694",
-   "published": "2026-10-16T09:30:00+09:00",
-   "dups": 1
+   "published": "2026-10-16T09:30:00+09:00"
   },
   {
    "cat": "mkt",
@@ -161,10 +184,10 @@
   {
    "cat": "mkt",
    "label": "相場",
-   "title": "鉄スクラップ価格続伸 輸出高受け電炉買値上げ 越・バングラの",
+   "title": "鉄スクラップ価格続伸 輸出高受け電炉買値上げ 越・バングラの買い強まる（日刊産業新聞）",
    "source": "Yahoo!ニュース",
-   "link": "https://news.yahoo.co.jp/articles/aaac1b8587652cfdb87113354f4b4727b3dbed42",
-   "published": "2026-10-15T13:49:00+09:00",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA3RE1oanNXa0ZuSXAzZDE4anlKa21TdVZlVGoweWxSZ0tIamlCaHFMYXJKb0ZUendiTGg4My02bkVnUDd3eVAzX1FTZzRXNTVwQ2o3LXVZUklMb1ZVTVc3ZXVueC1KWlFBaUhSbEVPY1Bjd0gzOWR6ZHpMZGpFTGM?oc=5",
+   "published": "2026-10-15T11:49:04+09:00",
    "dups": 1
   },
   {
@@ -178,10 +201,11 @@
   {
    "cat": "gen",
    "label": "業界",
-   "title": "「誰か1人だけ赤字」ではバトンが渡らない JX金属×経産省が挑む重要鉱物リサイクル、“もうかる仕組み”どうつくる？",
+   "title": "「誰か1人だけ赤字」ではバトンが渡らない JX金属×経産省が挑む",
    "source": "ITmedia",
-   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9QbGw1eUJKZjZiaVBsQWxUTEh6RWZtTHZHcFJCUThjcDFRcXhWbHo4TnpkNUJzc1FsSTFGYUhzcUVDRGE0RVViR0dfMHF4M3FXTWVyR2Rub3dtNEMxaFRBMWZDcWxrb1RmT0otX0tB?oc=5",
-   "published": "2026-10-15T07:00:00+09:00"
+   "link": "https://www.itmedia.co.jp/business/articles/2610/15/news005_2.html",
+   "published": "2026-10-15T09:00:00+09:00",
+   "dups": 1
   },
   {
    "cat": "mkt",
@@ -266,19 +290,20 @@
   {
    "cat": "mkt",
    "label": "相場",
+   "title": "銅建値、過去最高244万円／鉱山からの供給懸念で",
+   "source": "日刊鉄鋼新聞",
+   "link": "https://www.japanmetaldaily.com/articles/-/268756",
+   "published": "2026-10-14T07:00:00+09:00",
+   "dups": 1
+  },
+  {
+   "cat": "mkt",
+   "label": "相場",
    "title": "鉄スクラップ購入値／東京製鉄、全拠点で1000円引き上げ",
    "source": "日刊鉄鋼新聞",
    "link": "https://www.japanmetaldaily.com/articles/-/268786",
    "published": "2026-10-14T07:00:00+09:00",
    "dups": 2
-  },
-  {
-   "cat": "mkt",
-   "label": "相場",
-   "title": "銅建値、過去最高２４４万円／鉱山からの供給懸念で",
-   "source": "日刊鉄鋼新聞 Japan Metal Daily",
-   "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1NNUN2dzdtYVpRSjhhcUJLNFhvWkJHNzJicVlZbXVGT2l0UGVhQ3JiWjRzY0JHam1lekpPV0FwSXEwMFZVU1Q0M3ZYZFl2aml1UVRjQTFGMk91amd4bUE?oc=5",
-   "published": "2026-10-14T05:00:00+09:00"
   },
   {
    "cat": "mkt",
@@ -315,18 +340,18 @@
   {
    "cat": "mkt",
    "label": "相場",
-   "title": "関東輸出入札5万2077円 鉄スクラップ、大幅反発 8.2％上昇 10月契約（日刊産業新聞）",
-   "source": "Yahoo!ニュース",
-   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA2YjctcE96SnVNdmhua2s0aExRNl9TTXJXbmJIenA3TWEyMzBMMnhiNFNoMGRoYVlPNWUweVg2WWdBOEpoN3dLR0JEejlwaEFCNjBZamJxaHc2a0pvQU4xS3ZDYU9ieWx1UVdQRFNqRFhsMk05bWtoNGZ4NHZ2d2s?oc=5",
-   "published": "2026-10-13T17:58:24+09:00"
+   "title": "銅建値6万円上げ、最高値を更新 JX金属",
+   "source": "日本経済新聞",
+   "link": "https://www.nikkei.com/article/DGXZQOUB131TZ0T11C26A0000000/",
+   "published": "2026-10-13T19:30:00+09:00"
   },
   {
    "cat": "mkt",
    "label": "相場",
-   "title": "銅建値6万円上げ、最高値を更新 JX金属",
-   "source": "日本経済新聞",
-   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1PUjNZV25NQ05MQThTenhSaXdQNW5fT2lvVlJEU2RDNERGVGFFNEJIdExTaUhlN2h4S01yc1BIR2tfRVVnaV84R251el96bG1WZzd0dE84N3YwOGFMbXNnZl8ycVFkTG1rZHUyRQ?oc=5",
-   "published": "2026-10-13T17:30:00+09:00"
+   "title": "関東輸出入札5万2077円 鉄スクラップ、大幅反発 8.2％上昇 10月契約（日刊産業新聞）",
+   "source": "Yahoo!ニュース",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA2YjctcE96SnVNdmhua2s0aExRNl9TTXJXbmJIenA3TWEyMzBMMnhiNFNoMGRoYVlPNWUweVg2WWdBOEpoN3dLR0JEejlwaEFCNjBZamJxaHc2a0pvQU4xS3ZDYU9ieWx1UVdQRFNqRFhsMk05bWtoNGZ4NHZ2d2s?oc=5",
+   "published": "2026-10-13T17:58:24+09:00"
   },
   {
    "cat": "law",
@@ -423,14 +448,6 @@
    "source": "Yahoo!ニュース",
    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1HQmI5YVljclNDcnpCQ1VYQW1sZVo4S3NiaXI4ZEVIeXVQb2c5QmgxZ1k1SUk1djNCUkNCQlJyNFM0YWVOSTZzbXRtWER3NEZCSFBwbXo0NnpQTmlUdTFtd2xSZkRYXzRqWktUY1BpTVQ3QW5pZXBwWTlSXzdEVlk?oc=5",
    "published": "2026-10-12T11:56:01+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
-   "title": "これからの古美術市場（数多の古物業界）へ参入する方へ",
-   "source": "note",
-   "link": "https://note.com/travelingdealer/n/n82c99b883406",
-   "published": "2026-10-12T09:57:00+09:00"
   },
   {
    "cat": "dc",
@@ -537,6 +554,14 @@
    "source": "日刊鉄鋼新聞 Japan Metal Daily",
    "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1ySEFEUWowUjVYOFpxdXVNdGpNYUFTUEhjRlV2NGRDazA5bXNrQkNTdjJ2dmowWWZObzNXQkVOWXlSM2NYVXkwNWd0Um9kMGl0WENEQ0FhTGE1QWo4U1E?oc=5",
    "published": "2026-09-30T05:00:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "再資源化事業等高度化法（資源循環の促進のための再資源化事業等の高度化に関する法律）",
+   "source": "環境ビジネスオンライン",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPNnp5NDBTdlFENWNHQi1QR3VjNFh0dDVEc0dqVkFkNEQycEI5bmlQX1JWT0pWMjJBTl9GZ2JpMDhrU0hpb0MtT2RLRDhOTTVTZHlVWkwwMkJTc2lhYmFGSkFnLTFXWkpVRTZ3R3ZBUU1aWWNBZlBwRi1tZGhfbXF3MzRwNk0?oc=5",
+   "published": "2026-09-25T16:00:00+09:00"
   },
   {
    "cat": "law",
@@ -806,7 +831,7 @@
      }
     ],
     "spread": 200,
-    "diff": "-10"
+    "diff": "0"
    },
    {
     "group": "銅",
@@ -829,7 +854,7 @@
      }
     ],
     "spread": 180,
-    "diff": "-20"
+    "diff": "0"
    },
    {
     "group": "銅",
@@ -852,7 +877,7 @@
      }
     ],
     "spread": 120,
-    "diff": "-20"
+    "diff": "0"
    },
    {
     "group": "銅",
@@ -944,7 +969,7 @@
      }
     ],
     "spread": 80,
-    "diff": "-10"
+    "diff": "0"
    },
    {
     "group": "電線",
@@ -1937,7 +1962,7 @@
      }
     ],
     "spread": 1470,
-    "diff": "+360"
+    "diff": "0"
    },
    {
     "group": "基板／機器",
@@ -2450,7 +2475,7 @@
     51670.1,
     51621.48,
     52177.69,
-    51880.71
+    52002.41
    ]
   },
   "ドル円": {
@@ -2778,7 +2803,7 @@
     13158874,
     12891657,
     12991995,
-    12813101
+    12913163
    ]
   },
   "基板:マザーボード（Ｃ）": {
