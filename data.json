@@ -1,5 +1,5 @@
 {
- "updated": "10/18 2:56",
+ "updated": "10/18 6:33",
  "fx": {
   "usdjpy": 158.02,
   "date": "2026-10-16"
@@ -34,9 +34,9 @@
    },
    {
     "name": "ビットコイン",
-    "value": "12,842,796",
+    "value": "12,813,607",
     "unit": "円",
-    "diff": "-0.0%"
+    "diff": "-0.7%"
    },
    {
     "name": "日経平均",
@@ -56,6 +56,14 @@
   {
    "cat": "btc",
    "label": "ビットコイン",
+   "title": "ビットコイン価格81,500ドル、強気派と弱気派が膠着状態に",
+   "source": "Bitcoin.com News",
+   "link": "https://news.bitcoin.com/ja/market-updates/%e3%83%93%e3%83%83%e3%83%88%e3%82%b3%e3%82%a4%e3%83%b3%e4%be%a1%e6%a0%bc81500%e3%83%89%e3%83%ab%e3%80%81%e5%bc%b7%e6%b0%97%e6%b4%be%e3%81%a8%e5%bc%b1%e6%b0%97%e6%b4%be%e3%81%8c%e8%86%a0%e7%9d%80/",
+   "published": "2026-10-17T18:30:00+09:00"
+  },
+  {
+   "cat": "btc",
+   "label": "ビットコイン",
    "title": "ビットコイン上昇シグナル各所で点灯とアナリスト指摘",
    "source": "BeInCrypto",
    "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBxYm44aWkzeWVIQ0xKb084NjV1bC0wMXhtbm5od3R5Y2JDX3lGS19USVE0ZDNYV1M0Z09rX2k5RmhDTDd5YkVaU3l0T0l5ZFRTTjZUclZRckZIeHhJQXF5aXZ6U1JHTUZLWjNvWF9aRWlyVUtZX1dn?oc=5",
@@ -65,9 +73,9 @@
    "cat": "mkt",
    "label": "相場",
    "title": "金属部分5グラムで9万円前後の可能性も！ジュエルカフェ 金歯の査定記録調査",
-   "source": "ライブドアニュース",
-   "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBCODdpUWJaN1E4MHFUWmJvYVp4enZhaXUxTFVLcVVHYUJoN2lNeXVPNDdIVWFHaHdHRE9namRKQ0FUNG1BX25idWNWckgwQmNqM2ZGRUhNcmhSVGVhUUlr?oc=5",
-   "published": "2026-10-17T16:29:14+09:00",
+   "source": "Dtimes",
+   "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE4yMHhwazFkY2ZqQ25RamR2ejZCR3FUazFtOERmc0Z2OUZMSWtKeUlabk9LTklDWXFZMlI4MGJBdTl0ZVQ0RVE?oc=5",
+   "published": "2026-10-17T16:29:17+09:00",
    "dups": 1
   },
   {
@@ -109,14 +117,6 @@
    "source": "CoinPost",
    "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTFBCRGJRYmpjMHRMU1MxbnJQQWVnam5zeXdnNjYzSUNCenpRN1M2NUd2ajJrd0YyRTgtTVRpUnlWM09VZUU?oc=5",
    "published": "2026-10-17T09:10:57+09:00"
-  },
-  {
-   "cat": "btc",
-   "label": "ビットコイン",
-   "title": "BTC「9万ドルの壁」突破が年末回復の条件に｜コインベース分析",
-   "source": "BitTimes",
-   "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5ZOWUyWVJSaE9rSkhHcWszclI1bEhaOC0zZkQ3eXJFcVh3M09BLTN3MHJYbndpQzgxNEIzeEJWMjhOZGlIZUotTkJWNVNrZw?oc=5",
-   "published": "2026-10-17T08:46:47+09:00"
   },
   {
    "cat": "mkt",
@@ -167,14 +167,6 @@
    "published": "2026-10-16T13:30:00+09:00"
   },
   {
-   "cat": "dc",
-   "label": "AI・DC",
-   "title": "10月20日「リサイクルの日」に向けて、廃棄される販促物を新たな資源へ 使用済み「のぼり」を新しい「のぼり」に再生",
-   "source": "Excite エキサイト",
-   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBBcnhvQlBPakd0UWJxN1UwNU42LXNrNnd5V2pPVnJhSlhDak1YSUsyOUgzb2FMVkV2Z0RHaW5wMUVRaHJKcWw5MTBnYTVkeFBvNDQzMUdETm1XU2otam9BcjNSQjFmcFFZWjhWX0J3WGpreXhJcEE?oc=5",
-   "published": "2026-10-16T12:15:00+09:00"
-  },
-  {
    "cat": "mkt",
    "label": "相場",
    "title": "TREHD、混合アルミの水平リサイクル実証事業に採択",
@@ -185,18 +177,10 @@
   {
    "cat": "mkt",
    "label": "相場",
-   "title": "匿名で寄付された金の地金３本、市が一般競争入札で売却へ…「行政に役立ててほしい」（読売新聞オンライン）",
-   "source": "Yahoo!ニュース",
-   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1rY1huUlVkT0hFVUZybzZ6NVhhQms1VWN0ZlBzV3J1R2FPRGk0SElfTGp4LWJqNFhVZTVnN0p2dUFSLUR5NFp1NFB0c0g4cWJxcldoWV9wYkdDYjVZQlMxQTY3eFBDMXQ0QzR4Q19UTW5GUUNndFQwRTF0RWNjV1E?oc=5",
-   "published": "2026-10-16T09:21:49+09:00"
-  },
-  {
-   "cat": "mkt",
-   "label": "相場",
-   "title": "銅、27年は37万トン余剰 ICSG予測 鉱石生産が回復",
-   "source": "日刊産業新聞",
-   "link": "https://www.japanmetal.com/news-h20261016151137.html",
-   "published": "2026-10-16T07:58:00+09:00"
+   "title": "匿名で寄付された金の地金３本、市が一般競争入札で売却へ…「行政に役立ててほしい」",
+   "source": "読売新聞",
+   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBHVkFhb1ZjRzFDWUFLTUZYZDR4dS1GMUdtUkJnYmNwTGtPd2g0Znk4REpRUVBUOVV3TEg2UzhnZXhjcVZCWGhuY2d0XzlONnY5Nk4ySGY2NnppM1BPSUNhNE50UHo3dw?oc=5",
+   "published": "2026-10-16T09:21:00+09:00"
   },
   {
    "cat": "mkt",
@@ -519,18 +503,10 @@
   {
    "cat": "law",
    "label": "法規制",
-   "title": "【東京都渋谷区】ヴィンテージブランド専門店「NUIR VINTAGE」が買取窓口「買取ぬあ」開始",
-   "source": "ガジェット通信",
-   "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9MLW5nb3FZeGdyeEJnMGZuSHoxVGlVZUlRdTExUXMwb2tpelgwX2tLUkEzYS1DdVZuZlJVN3Z6MHJaMTZVaTdqSTd0UQ?oc=5",
-   "published": "2026-10-08T18:10:07+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
-   "title": "千葉市のヤード条例、10月31日でみなし許可が切れます。更新で",
-   "source": "note",
-   "link": "https://note.com/hanakenyusui/n/n6fc99a5e91a4",
-   "published": "2026-10-08T01:00:00+09:00"
+   "title": "オンサイト処理施設の展望（15） ＴＯＷＡＬＯ代表 石渡正佳 非常災害廃棄物処理施設 マンパワー支援からシステム支援へＤＸ化できるか",
+   "source": "環境新聞オンライン",
+   "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE15OWxEUDRFUmY3SGh0YnZnUnpTNXhIWlVVc1FOUWJSU2lVbTc1TDBoTHlyRkh1Uk43c0ZPYjNZQXRidG9ldlVHSFBzQ25qb3FZdkU2b0Vsc0RtQkhTY3M1WWUyRW8tVDg4SjFzUFVraFFBTWFhZXpFOUVlZw?oc=5",
+   "published": "2026-10-07T07:00:00+09:00"
   },
   {
    "cat": "law",
@@ -741,6 +717,14 @@
    "source": "埼玉県",
    "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBXLTg2WmR2bEw5MEN0ci16SklMTHItelB5VjJ6T0lGZ2tWclktdkg4RGd1ckpCSFFLNW5McGRIMEhZNjBUdGRDbWEyTHBDSkFxWEk4ekhKdDVRQ3lxdFhyaENra2J4ZVJkNGQ4Ql9sZ3VTeHY4?oc=5",
    "published": "2026-08-31T16:00:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "福島日産、中古部品・タイヤ買取サービス開始…41店舗で",
+   "source": "レスポンス（Response.jp）",
+   "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9NeHNNekFISVBlVHI4X2FqYUxOM2xhLUF0eW4tZnIxN01JMXJ5WnFkMUZ4ckRKVmdqLUxXa2ttbjRkSUFzTmVNUlNpQnJMY2paNXRsY1l2ZWlmRFRlVDRz?oc=5",
+   "published": "2026-08-28T16:00:00+09:00"
   },
   {
    "cat": "law",
@@ -2832,7 +2816,7 @@
     12891657,
     12991995,
     12882781,
-    12845622
+    12804529
    ]
   },
   "基板:マザーボード（Ｃ）": {
