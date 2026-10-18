@@ -1,5 +1,5 @@
 {
- "updated": "10/19 3:17",
+ "updated": "10/19 6:38",
  "fx": {
   "usdjpy": 158.02,
   "date": "2026-10-16"
@@ -34,9 +34,9 @@
    },
    {
     "name": "ビットコイン",
-    "value": "12,816,847",
+    "value": "12,792,409",
     "unit": "円",
-    "diff": "-0.4%"
+    "diff": "-0.1%"
    },
    {
     "name": "日経平均",
@@ -60,6 +60,22 @@
    "source": "LIMO | くらしとお金の経済メディア",
    "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE11THdGQkQyYklGSWx4TDlpYWt1VU43aXhjMnowQk5XbV9veDZXc1d4ejRuZGVtUVR5S0prcWNxREtVZEp6WHJsRDlPdUs?oc=5",
    "published": "2026-10-18T22:01:00+09:00"
+  },
+  {
+   "cat": "mkt",
+   "label": "相場",
+   "title": "東京／アルミ合金屑、弱含み",
+   "source": "日刊鉄鋼新聞",
+   "link": "https://www.japanmetaldaily.com/articles/-/268972",
+   "published": "2026-10-18T17:00:00+09:00"
+  },
+  {
+   "cat": "mkt",
+   "label": "相場",
+   "title": "鉄スクラップ購入値／東鉄、田原の新断と関東2拠点で上げ",
+   "source": "日刊鉄鋼新聞",
+   "link": "https://www.japanmetaldaily.com/articles/-/269043",
+   "published": "2026-10-18T17:00:00+09:00"
   },
   {
    "cat": "btc",
@@ -97,9 +113,9 @@
    "cat": "mkt",
    "label": "相場",
    "title": "金属部分5グラムで9万円前後の可能性も！ジュエルカフェ 金歯の査定記録調査",
-   "source": "Dtimes",
-   "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE4yMHhwazFkY2ZqQ25RamR2ejZCR3FUazFtOERmc0Z2OUZMSWtKeUlabk9LTklDWXFZMlI4MGJBdTl0ZVQ0RVE?oc=5",
-   "published": "2026-10-17T16:29:17+09:00",
+   "source": "ライブドアニュース",
+   "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBCODdpUWJaN1E4MHFUWmJvYVp4enZhaXUxTFVLcVVHYUJoN2lNeXVPNDdIVWFHaHdHRE9namRKQ0FUNG1BX25idWNWckgwQmNqM2ZGRUhNcmhSVGVhUUlr?oc=5",
+   "published": "2026-10-17T16:29:14+09:00",
    "dups": 1
   },
   {
@@ -129,7 +145,7 @@
   {
    "cat": "mkt",
    "label": "相場",
-   "title": "東京製鉄の税引き利益39%減に縮小 27年3月期、鉄スクラップ安で",
+   "title": "東京製鉄の税引き利益39%減 27年3月期に縮小、鉄スクラップ安で",
    "source": "日本経済新聞",
    "link": "https://www.nikkei.com/article/DGXZQOUB166830W6A011C2000000/",
    "published": "2026-10-16T19:32:00+09:00"
@@ -185,14 +201,6 @@
   {
    "cat": "mkt",
    "label": "相場",
-   "title": "銅、27年は37万トン余剰 ICSG予測 鉱石生産が回復",
-   "source": "日刊産業新聞",
-   "link": "https://www.japanmetal.com/news-h20261016151137.html",
-   "published": "2026-10-16T07:58:00+09:00"
-  },
-  {
-   "cat": "mkt",
-   "label": "相場",
    "title": "川重の超高速旅客船が採用、UACJの環境配慮アルミニウム素材の性能",
    "source": "ニュースイッチ by 日刊工業新聞社",
    "link": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE1QWHNFaVU1ajJtejNVaFI2ZVJlSDBGcVBNWkxERXJ6d1pRTDFoelZiUE11X1B5eXM1TmxsUWlKbWx6cS1Dazk4?oc=5",
@@ -216,13 +224,20 @@
    "dups": 1
   },
   {
+   "cat": "mkt",
+   "label": "相場",
+   "title": "アルミ割増金の10〜12月交渉、4割安で決着 中東産の輸出が改善",
+   "source": "日本経済新聞",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBYRDdRb3Y1VUZrWXBWa2FuakgzWnc1azBSWlM1NE02NUs2V2VCRUFqeXBKZHJUbVV2eXl3elg5MnliSEZGV0NXa0NrdS1LOWFsbUNzUHlaY3Q3VVVNVG5LTlBmT2J5WmYwSUVMbg?oc=5",
+   "published": "2026-10-15T11:00:00+09:00"
+  },
+  {
    "cat": "gen",
    "label": "業界",
-   "title": "「誰か1人だけ赤字」ではバトンが渡らない JX金属×経産省が挑む",
+   "title": "「誰か1人だけ赤字」ではバトンが渡らない JX金属×経産省が挑む重要鉱物リサイクル、“もうかる仕組み”どうつくる？",
    "source": "ITmedia",
-   "link": "https://www.itmedia.co.jp/business/articles/2610/15/news005_2.html",
-   "published": "2026-10-15T09:00:00+09:00",
-   "dups": 1
+   "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBpZFFiMk1nb3RvczZKRjVtelVRSGZybU5lb01DaWh4WEpCQmg3NWVOd0pFaU9zdzAtNmgyWnllSy1SYkZaZnBVekJXRFBtU0hOWVAyVlFXYVVIWHhzWWIyNDlNdUhHLWRadE5yQ1NROVpaaTdl?oc=5",
+   "published": "2026-10-15T07:00:00+09:00"
   },
   {
    "cat": "dc",
@@ -300,15 +315,6 @@
   {
    "cat": "mkt",
    "label": "相場",
-   "title": "鉄スクラップ購入値／東京製鉄、全拠点で1000円引き上げ",
-   "source": "日刊鉄鋼新聞",
-   "link": "https://www.japanmetaldaily.com/articles/-/268786",
-   "published": "2026-10-14T07:00:00+09:00",
-   "dups": 2
-  },
-  {
-   "cat": "mkt",
-   "label": "相場",
    "title": "金属スクラップ業界のリアル。「日本系」と「外国系（外資・輸出",
    "source": "note",
    "link": "https://note.com/leal_cobra1980/n/n0992d522571c",
@@ -336,7 +342,8 @@
    "title": "富山・砺波市がトルコの姉妹都市に贈った「友好の鐘」が盗難…スクラップ業者に約8万3500円で売却",
    "source": "FNNプライムオンライン",
    "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9wcGRMcXhnTkVLT0lUaHdBTURCWE0xY0VPTUdKZ2FGVEVVVnN1bHdOSUxIbUVUQXVJTUx2SHcwV015eUR6ZUF0alhyaE5CQQ?oc=5",
-   "published": "2026-10-13T20:45:00+09:00"
+   "published": "2026-10-13T20:45:00+09:00",
+   "dups": 1
   },
   {
    "cat": "mkt",
@@ -345,6 +352,14 @@
    "source": "日本経済新聞",
    "link": "https://www.nikkei.com/article/DGXZQOUB131TZ0T11C26A0000000/",
    "published": "2026-10-13T19:30:00+09:00"
+  },
+  {
+   "cat": "mkt",
+   "label": "相場",
+   "title": "中部電炉6社買値 鉄スクラップ 買値1000円上げ（日刊産業新聞）",
+   "source": "Yahoo!ニュース",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1FQ1BNa2ZQQ0pQT0dzVGZHRWxrY0hrMi0zU242SWFXTWV1YVplOHctMXhERkRvV3BkVDRGd21nVnl4YVpGRTZ5Yk5RS29zMEE1ZFlKM2pWRVJmdlpxVHpFbXl3T1FybXRjSV8wVGJQYkR5UnJYaGpBeFVHcHEtMUk?oc=5",
+   "published": "2026-10-13T18:01:11+09:00"
   },
   {
    "cat": "mkt",
@@ -419,6 +434,14 @@
    "published": "2026-10-12T21:41:00+09:00"
   },
   {
+   "cat": "mkt",
+   "label": "相場",
+   "title": "「1kgなら2,200万円」と計算した金の延べ棒、その金額で売れる？ 買取専門店おもいおが差が出る理由を紹介",
+   "source": "Infoseek",
+   "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1oZWk3ZHVDWWdxQTRsaDVoVjV5SDR5cjJvWmFhMjJabllXY05Ua1IxNkVGR0FUQTRpaFNxTmtPbm1uR0FQYVc2Q0FiX21sVm1ybkQtMnFyQ1YtWW01X2dvMg?oc=5",
+   "published": "2026-10-12T19:40:00+09:00"
+  },
+  {
    "cat": "dc",
    "label": "AI・DC",
    "title": "正極銅市場調査：規模推移、成長率3.1%、最新業界動向2026-2032｜QYResearch",
@@ -429,26 +452,10 @@
   {
    "cat": "law",
    "label": "法規制",
-   "title": "労災防止へ 県産業資源循環協会が体力測定を主催",
-   "source": "au Webポータル",
-   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9STTlGbFh4SmZNVWh1REFQeGp0RHZpMm1tQ0FwZkNkZFlXSjVZYWZnaXZOSmQtbjRBZHR4eGxZOWRiXzlWMHR6ZXFOTEFFc0tuTmNrblBSUVVaSUhmZVdRMkhydHJueUhpMmdxTkRR?oc=5",
-   "published": "2026-10-12T12:04:00+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
-   "title": "これからの古美術市場（数多の古物業界）へ参入する方へ",
-   "source": "note",
-   "link": "https://note.com/travelingdealer/n/n82c99b883406",
-   "published": "2026-10-12T09:57:00+09:00"
-  },
-  {
-   "cat": "dc",
-   "label": "AI・DC",
-   "title": "銅市場、AI・電化の流れ止まらず パンパシフィック・カッパー会長",
-   "source": "日本経済新聞",
-   "link": "https://www.nikkei.com/article/DGXZQODK088E00Y6A900C2000000/",
-   "published": "2026-10-12T04:00:00+09:00"
+   "title": "労災防止へ 県産業資源循環協会が体力測定を主催（沖縄テレビOTV）",
+   "source": "Yahoo!ニュース",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1HQmI5YVljclNDcnpCQ1VYQW1sZVo4S3NiaXI4ZEVIeXVQb2c5QmgxZ1k1SUk1djNCUkNCQlJyNFM0YWVOSTZzbXRtWER3NEZCSFBwbXo0NnpQTmlUdTFtd2xSZkRYXzRqWktUY1BpTVQ3QW5pZXBwWTlSXzdEVlk?oc=5",
+   "published": "2026-10-12T11:56:01+09:00"
   },
   {
    "cat": "law",
@@ -487,14 +494,6 @@
   {
    "cat": "law",
    "label": "法規制",
-   "title": "【2026年10月最新調査】貴金属買取店の業務管理はどうする？金",
-   "source": "CNET Japan",
-   "link": "https://japan.cnet.com/release/31214089/",
-   "published": "2026-10-09T02:00:00+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
    "title": "【東京都渋谷区】ヴィンテージブランド専門店「NUIR VINTAGE」が買取窓口「買取ぬあ」開始",
    "source": "ガジェット通信",
    "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9MLW5nb3FZeGdyeEJnMGZuSHoxVGlVZUlRdTExUXMwb2tpelgwX2tLUkEzYS1DdVZuZlJVN3Z6MHJaMTZVaTdqSTd0UQ?oc=5",
@@ -506,7 +505,7 @@
    "title": "オンサイト処理施設の展望（15） ＴＯＷＡＬＯ代表 石渡正佳 非常災害廃棄物処理施設 マンパワー支援からシステム支援へＤＸ化できるか",
    "source": "環境新聞オンライン",
    "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE15OWxEUDRFUmY3SGh0YnZnUnpTNXhIWlVVc1FOUWJSU2lVbTc1TDBoTHlyRkh1Uk43c0ZPYjNZQXRidG9ldlVHSFBzQ25qb3FZdkU2b0Vsc0RtQkhTY3M1WWUyRW8tVDg4SjFzUFVraFFBTWFhZXpFOUVlZw?oc=5",
-   "published": "2026-10-07T16:00:00+09:00"
+   "published": "2026-10-07T07:00:00+09:00"
   },
   {
    "cat": "law",
@@ -2800,7 +2799,7 @@
     12991995,
     12882781,
     12863740,
-    12810121
+    12796381
    ]
   },
   "基板:マザーボード（Ｃ）": {
