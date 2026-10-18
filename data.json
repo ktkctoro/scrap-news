@@ -1,5 +1,5 @@
 {
- "updated": "10/18 6:33",
+ "updated": "10/19 3:17",
  "fx": {
   "usdjpy": 158.02,
   "date": "2026-10-16"
@@ -34,9 +34,9 @@
    },
    {
     "name": "ビットコイン",
-    "value": "12,813,607",
+    "value": "12,816,847",
     "unit": "円",
-    "diff": "-0.7%"
+    "diff": "-0.4%"
    },
    {
     "name": "日経平均",
@@ -54,12 +54,28 @@
  },
  "items": [
   {
+   "cat": "mkt",
+   "label": "相場",
+   "title": "記念金貨、天皇陛下御即位記念10万円金貨は純金30グラム。10月14日の金の店頭買取価格で計算すると「69万3390円」で額面の約6.9倍 記念貨幣は額面どおりのお金としても使える | 概要",
+   "source": "LIMO | くらしとお金の経済メディア",
+   "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE11THdGQkQyYklGSWx4TDlpYWt1VU43aXhjMnowQk5XbV9veDZXc1d4ejRuZGVtUVR5S0prcWNxREtVZEp6WHJsRDlPdUs?oc=5",
+   "published": "2026-10-18T22:01:00+09:00"
+  },
+  {
    "cat": "btc",
    "label": "ビットコイン",
-   "title": "ビットコイン価格81,500ドル、強気派と弱気派が膠着状態に",
-   "source": "Bitcoin.com News",
-   "link": "https://news.bitcoin.com/ja/market-updates/%e3%83%93%e3%83%83%e3%83%88%e3%82%b3%e3%82%a4%e3%83%b3%e4%be%a1%e6%a0%bc81500%e3%83%89%e3%83%ab%e3%80%81%e5%bc%b7%e6%b0%97%e6%b4%be%e3%81%a8%e5%bc%b1%e6%b0%97%e6%b4%be%e3%81%8c%e8%86%a0%e7%9d%80/",
-   "published": "2026-10-17T18:30:00+09:00"
+   "title": "ビットコインCPI・PPI上振れも8万ドル維持、FOMC金利観測が焦点｜bitbankアナリスト寄稿",
+   "source": "CoinPost",
+   "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE9hTURpc0w5OFRJbXpFRzNDYTdmSVJOWUZwcEttNFlzUEg5cHRtNUxZZVczTjhvZGxhbFhHa3pOd0g2RHM?oc=5",
+   "published": "2026-10-18T13:30:00+09:00"
+  },
+  {
+   "cat": "btc",
+   "label": "ビットコイン",
+   "title": "ファイデリティ グローバルマクロ責任者：ビットコイン、新たな4",
+   "source": "techflowpost",
+   "link": "https://www.techflowpost.com/ja-JP/newsletter/140383",
+   "published": "2026-10-18T08:50:00+09:00"
   },
   {
    "cat": "btc",
@@ -68,6 +84,14 @@
    "source": "BeInCrypto",
    "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBxYm44aWkzeWVIQ0xKb084NjV1bC0wMXhtbm5od3R5Y2JDX3lGS19USVE0ZDNYV1M0Z09rX2k5RmhDTDd5YkVaU3l0T0l5ZFRTTjZUclZRckZIeHhJQXF5aXZ6U1JHTUZLWjNvWF9aRWlyVUtZX1dn?oc=5",
    "published": "2026-10-17T18:26:52+09:00"
+  },
+  {
+   "cat": "btc",
+   "label": "ビットコイン",
+   "title": "ウォーシュFRB議長が利上げ示唆せず観測後退、ビットコイン当面レンジ相場",
+   "source": "Iolite（アイオライト）",
+   "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9DNm9GNjRBN0ZxV2ZFSEhfTzBPUlY3bnBPTUt5UG1PeF81bGtLallRbjByNklXXzlHbk1YYjRWVmNwdEhzamNJQUVrNkJQamtW?oc=5",
+   "published": "2026-10-17T18:17:12+09:00"
   },
   {
    "cat": "mkt",
@@ -89,34 +113,10 @@
   {
    "cat": "btc",
    "label": "ビットコイン",
-   "title": "ビットコインは年末にかけて回復見通し、ただし9万ドルが壁",
-   "source": "CoinPost",
-   "link": "https://coinpost.jp/?p=743430",
-   "published": "2026-10-17T12:25:00+09:00"
-  },
-  {
-   "cat": "dc",
-   "label": "AI・DC",
-   "title": "銅高とAI需要で成長は続くのか、急落局面のJX金属を事業・業績",
-   "source": "note",
-   "link": "https://note.com/tamura_nishimura/n/n979aa6c9725e",
-   "published": "2026-10-17T11:01:00+09:00"
-  },
-  {
-   "cat": "btc",
-   "label": "ビットコイン",
    "title": "マスクが暗示、「100兆ドル」規模の暗号資産のゲームチェンジャーになるヒント",
    "source": "Forbes JAPAN",
    "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBfMS1UdlBZZVc5eHEzYS0wVDhzTks4TGw0ckJjR2l3cUx1MTIzUlh1YldYaHR4bG5sTjFBdEpfc0RZQ0ZrZktXelI4T3Z2eE5CaXBpcFJlbzNpUQ?oc=5",
    "published": "2026-10-17T10:30:00+09:00"
-  },
-  {
-   "cat": "btc",
-   "label": "ビットコイン",
-   "title": "ウォーシュFRB議長が利上げ示唆せず観測後退、ビットコイン当面レンジ相場",
-   "source": "CoinPost",
-   "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTFBCRGJRYmpjMHRMU1MxbnJQQWVnam5zeXdnNjYzSUNCenpRN1M2NUd2ajJrd0YyRTgtTVRpUnlWM09VZUU?oc=5",
-   "published": "2026-10-17T09:10:57+09:00"
   },
   {
    "cat": "mkt",
@@ -185,6 +185,14 @@
   {
    "cat": "mkt",
    "label": "相場",
+   "title": "銅、27年は37万トン余剰 ICSG予測 鉱石生産が回復",
+   "source": "日刊産業新聞",
+   "link": "https://www.japanmetal.com/news-h20261016151137.html",
+   "published": "2026-10-16T07:58:00+09:00"
+  },
+  {
+   "cat": "mkt",
+   "label": "相場",
    "title": "川重の超高速旅客船が採用、UACJの環境配慮アルミニウム素材の性能",
    "source": "ニュースイッチ by 日刊工業新聞社",
    "link": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE1QWHNFaVU1ajJtejNVaFI2ZVJlSDBGcVBNWkxERXJ6d1pRTDFoelZiUE11X1B5eXM1TmxsUWlKbWx6cS1Dazk4?oc=5",
@@ -206,14 +214,6 @@
    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA3RE1oanNXa0ZuSXAzZDE4anlKa21TdVZlVGoweWxSZ0tIamlCaHFMYXJKb0ZUendiTGg4My02bkVnUDd3eVAzX1FTZzRXNTVwQ2o3LXVZUklMb1ZVTVc3ZXVueC1KWlFBaUhSbEVPY1Bjd0gzOWR6ZHpMZGpFTGM?oc=5",
    "published": "2026-10-15T11:49:04+09:00",
    "dups": 1
-  },
-  {
-   "cat": "mkt",
-   "label": "相場",
-   "title": "アルミ割増金の10〜12月交渉、4割安で決着 中東産の輸出が改善",
-   "source": "日本経済新聞",
-   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBYRDdRb3Y1VUZrWXBWa2FuakgzWnc1azBSWlM1NE02NUs2V2VCRUFqeXBKZHJUbVV2eXl3elg5MnliSEZGV0NXa0NrdS1LOWFsbUNzUHlaY3Q3VVVNVG5LTlBmT2J5WmYwSUVMbg?oc=5",
-   "published": "2026-10-15T11:00:00+09:00"
   },
   {
    "cat": "gen",
@@ -247,14 +247,6 @@
    "source": "早稲田大学",
    "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9XRG9MNC1aUUtyczl5Y2c5dkJOMmRidWlhSHZmOXN2WE9VR2IyUnQ2LUx6NTA1NW9kdnpPX3pLV0RpdU1FOXFEV3MzZVBKWlNlNEF1ZkZxVmFUVXgyeER0OGFDYw?oc=5",
    "published": "2026-10-14T17:21:01+09:00"
-  },
-  {
-   "cat": "mkt",
-   "label": "相場",
-   "title": "【金地金の手数料】10月6日の店頭価格で小さい地金を買うと割高に。500グラム未満は1本ごとに別途「8800円」から",
-   "source": "LIMO | くらしとお金の経済メディア",
-   "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9xZUpkd0RTYTd6ZmVYNGpSSU9oWXVWZk5DTENSMy1ENFMxczRVQ2RtZTA2VHdPcDhsRm01c0Vnc3EyMi1iZGtJbkN2b0I?oc=5",
-   "published": "2026-10-14T13:02:00+09:00"
   },
   {
    "cat": "dc",
@@ -411,14 +403,6 @@
    "published": "2026-10-13T05:00:00+09:00"
   },
   {
-   "cat": "mkt",
-   "label": "相場",
-   "title": "国内アルミ地金価格６０万円割れ／中東情勢緊迫化以前の水準に",
-   "source": "日刊鉄鋼新聞 Japan Metal Daily",
-   "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE54WUFLZEtoci1tOHJ1MEVmZFZwWk04U05uQzQ3X2pFc3hKVE5QM1FEeXR3aUhGTVh0TTFuN1Fwczhva1BhMzRMei03c01iYXlmYmFKT1lHU3AySjRBYXc?oc=5",
-   "published": "2026-10-13T05:00:00+09:00"
-  },
-  {
    "cat": "dc",
    "label": "AI・DC",
    "title": "LANケーブル市場の見通し2026年〜2033年：トレンド、規模、そして予測されるCAG",
@@ -463,8 +447,8 @@
    "label": "AI・DC",
    "title": "銅市場、AI・電化の流れ止まらず パンパシフィック・カッパー会長",
    "source": "日本経済新聞",
-   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE90eDNhQVNhek11Tlc1X3oySTIyQ0xzb214dFU5SjhBdDBvUDR3ckxacGZOQy1HY2w0MENCNDZSQUVuMHpnU3YzVWZkUEN1ZTFIdzM2LUVPamdoakV6WlgzS0xQTnRVZXp5N3h1Rg?oc=5",
-   "published": "2026-10-12T02:00:00+09:00"
+   "link": "https://www.nikkei.com/article/DGXZQODK088E00Y6A900C2000000/",
+   "published": "2026-10-12T04:00:00+09:00"
   },
   {
    "cat": "law",
@@ -473,6 +457,15 @@
    "source": "Dellows News",
    "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE15d0haVE9GdGI4enZqY1BNck9idm9HWHhHT203d0hiMWJVdjc4b1pJTnBaaEVPbm1tVi11Y3pCbGVlMGx0UXc?oc=5",
    "published": "2026-10-09T19:26:02+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "静岡で金属盗難が多発 防霜ファン銅線など 地域一体での対策を (2026年10月9日掲載)",
+   "source": "ライブドアニュース",
+   "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1DZ0Z4czI5YnR2VVRlVFZrd0dOWXpxSnBsd2dhNkstOGZtdFptbF85azdkVFBkdFpjVUFVMzBoMmh3bm8tV2xubUs5U2VfZUlBWjBERjd2ZG9YdFEtWkE?oc=5",
+   "published": "2026-10-09T16:00:00+09:00",
+   "dups": 1
   },
   {
    "cat": "law",
@@ -494,11 +487,18 @@
   {
    "cat": "law",
    "label": "法規制",
-   "title": "静岡で金属盗難が多発 防霜ファン銅線など 地域一体での対策を (2026年10月9日掲載)",
-   "source": "ライブドアニュース",
-   "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1DZ0Z4czI5YnR2VVRlVFZrd0dOWXpxSnBsd2dhNkstOGZtdFptbF85azdkVFBkdFpjVUFVMzBoMmh3bm8tV2xubUs5U2VfZUlBWjBERjd2ZG9YdFEtWkE?oc=5",
-   "published": "2026-10-09T05:00:00+09:00",
-   "dups": 1
+   "title": "【2026年10月最新調査】貴金属買取店の業務管理はどうする？金",
+   "source": "CNET Japan",
+   "link": "https://japan.cnet.com/release/31214089/",
+   "published": "2026-10-09T02:00:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "【東京都渋谷区】ヴィンテージブランド専門店「NUIR VINTAGE」が買取窓口「買取ぬあ」開始",
+   "source": "ガジェット通信",
+   "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9MLW5nb3FZeGdyeEJnMGZuSHoxVGlVZUlRdTExUXMwb2tpelgwX2tLUkEzYS1DdVZuZlJVN3Z6MHJaMTZVaTdqSTd0UQ?oc=5",
+   "published": "2026-10-08T18:10:07+09:00"
   },
   {
    "cat": "law",
@@ -506,7 +506,7 @@
    "title": "オンサイト処理施設の展望（15） ＴＯＷＡＬＯ代表 石渡正佳 非常災害廃棄物処理施設 マンパワー支援からシステム支援へＤＸ化できるか",
    "source": "環境新聞オンライン",
    "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE15OWxEUDRFUmY3SGh0YnZnUnpTNXhIWlVVc1FOUWJSU2lVbTc1TDBoTHlyRkh1Uk43c0ZPYjNZQXRidG9ldlVHSFBzQ25qb3FZdkU2b0Vsc0RtQkhTY3M1WWUyRW8tVDg4SjFzUFVraFFBTWFhZXpFOUVlZw?oc=5",
-   "published": "2026-10-07T07:00:00+09:00"
+   "published": "2026-10-07T16:00:00+09:00"
   },
   {
    "cat": "law",
@@ -543,18 +543,18 @@
   {
    "cat": "law",
    "label": "法規制",
-   "title": "【徹底比較】無料の古物台帳アプリで買取店はどこまで運営できる？Excel・無料ソフト・有料クラウドの機能と管理範囲を調査",
-   "source": "Excite エキサイト",
-   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE53blc5NFRVRjJFZF9vUExBcS1XYUtIRmlhbEdNY1d6bldqQTVqaDdLSFBodmVzRk1yNmNjUVFRRUFPSlp2Qzl0Nmc5ZnZkLVRNMXRHSkR0b1d2eUh1dThLdmFlTFI5TkJpSHc?oc=5",
-   "published": "2026-09-30T11:30:00+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
    "title": "木谷鉄リサイクル工業会会長／環境省の検討会、過剰規制を警戒／実効性ある規制求め２段階審査を提言",
    "source": "日刊鉄鋼新聞 Japan Metal Daily",
    "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1ySEFEUWowUjVYOFpxdXVNdGpNYUFTUEhjRlV2NGRDazA5bXNrQkNTdjJ2dmowWWZObzNXQkVOWXlSM2NYVXkwNWd0Um9kMGl0WENEQ0FhTGE1QWo4U1E?oc=5",
    "published": "2026-09-30T05:00:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "フクシマガリレイ、ノンフロン冷媒採用の小型ドゥコンディショナーを10月発売へ",
+   "source": "Dellows News",
+   "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5OZXpQLUo4bm41R3NqODdoLV9WOHE0b3dNbVZySTNYYmNfU0J4Q20tWWRFdVQzTWZNZWJYd2h1RkdZOHdrOHFxaTZmUlc1S29oZlNIZk1lazFCUTRwV0E?oc=5",
+   "published": "2026-09-28T16:00:00+09:00"
   },
   {
    "cat": "law",
@@ -607,10 +607,10 @@
   {
    "cat": "law",
    "label": "法規制",
-   "title": "買取専科・埼玉エリアに6店舗目が9月下旬にオープン決定しました！",
-   "source": "PR TIMES",
-   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1XZzFKcEdFbTZDRTdKbk9hYlRJdGNHSE1jOXJCYkZDSXBVS0xfR29JbUcyYW1fU0piSC1WSU1NTndPQjNaUUhCdnNaY1BEREprZDhabnNuRjFWM2lLaE9IUk5CMnNmeDEwZkE?oc=5",
-   "published": "2026-09-15T16:00:00+09:00"
+   "title": "【特別座談会】全国産業資源循環連合会青年部協議会会長・委員長 「委員長が主役」の全国青年部を目指す",
+   "source": "環境新聞オンライン",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBsc3R1b0VjdkFRWXBqSU5MNmJOazMwUEF4bzBvNXZyOEs3R0FsS1dzLTJnRWxZYWdXMGd6TDFuc3hnUlNHT1BEeEpFOExtQjRyMlk1QVllSWhrc3BXZU9TckdtS1loUDZRMFg3UGt3OWcxQTZLLWNPT25RV0ZIUkk?oc=5",
+   "published": "2026-09-16T16:00:00+09:00"
   },
   {
    "cat": "law",
@@ -635,14 +635,6 @@
    "source": "PR TIMES",
    "link": "https://prtimes.jp/main/html/rd/p/000000012.000033766.html",
    "published": "2026-09-10T18:00:00+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
-   "title": "川崎重工ら、郡山市の一般廃棄物処理施設を主体とした炭素循環事業モデル実証事業に採択。CO2回収から合成メタン利用まで一貫",
-   "source": "Circular Economy Hub",
-   "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9vUktNRl93YVIwMHVlRS1YLTh5X3VVc0ZGQWRMYkpPeVhZaktCVXVCcXUwV09ydzF1TUo1dlh5al84RlFvY0RFZHlzTWNmTHVVcmVrd05lOW52RDJGUUZrZWpDaW1tTHhuMFlJMXVxenJmOE83?oc=5",
-   "published": "2026-09-09T16:00:00+09:00"
   },
   {
    "cat": "law",
@@ -692,14 +684,6 @@
    "title": "JEPLAN、GX推進機構から資金調達。PETケミカルリサイクル事業の高度化・拡大へ",
    "source": "Circular Economy Hub",
    "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPZjhaQzlrTlVhNzQya2JycXoxSmpPOXhKemJvbjB2ekptbmdpTEJNTXBtQmNTSi1zQl9KRFI4UlJEMzI3aXZQV1lVZFc1dVYzYk96M1VSMndZY09oOUVkdXBCLXNJV0VPVGdPMVc0akZEeTBqdjRCWk8zNDZVV3lHaXVLMGdjZjQ?oc=5",
-   "published": "2026-09-01T16:00:00+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
-   "title": "フクシマガリレイ、ノンフロン冷媒採用の小型ドゥコンディショナーを10月発売へ",
-   "source": "Dellows News",
-   "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5OZXpQLUo4bm41R3NqODdoLV9WOHE0b3dNbVZySTNYYmNfU0J4Q20tWWRFdVQzTWZNZWJYd2h1RkdZOHdrOHFxaTZmUlc1S29oZlNIZk1lazFCUTRwV0E?oc=5",
    "published": "2026-09-01T16:00:00+09:00"
   },
   {
@@ -2560,7 +2544,7 @@
     "2026-10-14",
     "2026-10-15",
     "2026-10-16",
-    "2026-10-18"
+    "2026-10-19"
    ],
    "v": [
     162.38,
@@ -2633,7 +2617,6 @@
   },
   "ビットコイン": {
    "d": [
-    "2026-07-20",
     "2026-07-21",
     "2026-07-22",
     "2026-07-23",
@@ -2723,10 +2706,10 @@
     "2026-10-15",
     "2026-10-16",
     "2026-10-17",
-    "2026-10-18"
+    "2026-10-18",
+    "2026-10-19"
    ],
    "v": [
-    10510266,
     10591941,
     10855393,
     10776606,
@@ -2816,7 +2799,8 @@
     12891657,
     12991995,
     12882781,
-    12804529
+    12863740,
+    12810121
    ]
   },
   "基板:マザーボード（Ｃ）": {
@@ -2877,7 +2861,8 @@
     "2026-10-15",
     "2026-10-16",
     "2026-10-17",
-    "2026-10-18"
+    "2026-10-18",
+    "2026-10-19"
    ],
    "v": [
     870.0,
@@ -2917,6 +2902,7 @@
     880.0,
     880.0,
     880.0,
+    1050.0,
     1050.0,
     1050.0,
     1050.0,
@@ -2997,7 +2983,8 @@
     "2026-10-15",
     "2026-10-16",
     "2026-10-17",
-    "2026-10-18"
+    "2026-10-18",
+    "2026-10-19"
    ],
    "v": [
     9780.0,
@@ -3037,6 +3024,7 @@
     10070.0,
     10070.0,
     10070.0,
+    13000.0,
     13000.0,
     13000.0,
     13000.0,
@@ -3197,7 +3185,8 @@
     "2026-10-15",
     "2026-10-16",
     "2026-10-17",
-    "2026-10-18"
+    "2026-10-18",
+    "2026-10-19"
    ],
    "v": [
     1150.0,
@@ -3237,6 +3226,7 @@
     1180.0,
     1180.0,
     1180.0,
+    2000.0,
     2000.0,
     2000.0,
     2000.0,
@@ -3317,7 +3307,8 @@
     "2026-10-15",
     "2026-10-16",
     "2026-10-17",
-    "2026-10-18"
+    "2026-10-18",
+    "2026-10-19"
    ],
    "v": [
     3500.0,
@@ -3357,6 +3348,7 @@
     3600.0,
     3600.0,
     3600.0,
+    4000.0,
     4000.0,
     4000.0,
     4000.0,
@@ -3437,7 +3429,8 @@
     "2026-10-15",
     "2026-10-16",
     "2026-10-17",
-    "2026-10-18"
+    "2026-10-18",
+    "2026-10-19"
    ],
    "v": [
     640.0,
@@ -3477,6 +3470,7 @@
     660.0,
     660.0,
     660.0,
+    1100.0,
     1100.0,
     1100.0,
     1100.0,
@@ -3681,7 +3675,8 @@
     "2026-10-15",
     "2026-10-16",
     "2026-10-17",
-    "2026-10-18"
+    "2026-10-18",
+    "2026-10-19"
    ],
    "v": [
     48000.0,
@@ -3736,6 +3731,7 @@
     50000.0,
     50000.0,
     50000.0,
+    51000.0,
     51000.0,
     51000.0,
     51000.0,
@@ -3801,7 +3797,8 @@
     "2026-10-15",
     "2026-10-16",
     "2026-10-17",
-    "2026-10-18"
+    "2026-10-18",
+    "2026-10-19"
    ],
    "v": [
     25415.0,
@@ -3859,6 +3856,7 @@
     23144.0,
     22920.0,
     22884.0,
+    23118.0,
     23118.0,
     23118.0
    ]
@@ -3921,7 +3919,8 @@
     "2026-10-15",
     "2026-10-16",
     "2026-10-17",
-    "2026-10-18"
+    "2026-10-18",
+    "2026-10-19"
    ],
    "v": [
     376.97,
@@ -3979,6 +3978,7 @@
     322.08,
     313.28,
     299.2,
+    305.69,
     305.69,
     305.69
    ]
