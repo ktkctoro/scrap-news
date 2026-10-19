@@ -1,5 +1,5 @@
 {
- "updated": "10/20 5:44",
+ "updated": "10/20 7:57",
  "fx": {
   "usdjpy": 158.24,
   "date": "2026-10-19"
@@ -34,9 +34,9 @@
    },
    {
     "name": "ビットコイン",
-    "value": "12,991,230",
+    "value": "13,000,790",
     "unit": "円",
-    "diff": "+1.8%"
+    "diff": "+0.7%"
    },
    {
     "name": "日経平均",
@@ -53,6 +53,22 @@
   ]
  },
  "items": [
+  {
+   "cat": "mkt",
+   "label": "相場",
+   "title": "鉄スクラップ 関東相場、1000円続伸 輸出対抗姿勢強く 今夏下落の過半まで反発",
+   "source": "WEB産業新聞",
+   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFB0M05ia3Y2WlBxY3VxOWVZcDV5VUNNeGYyZHd2bUFUM19aQlBLYnhsT1NTYkROMzJaa093STdQZkd4cVY3aUxUUkNtMjQwYlRJUGl4eHkwVnpKbnRhSlNEVzdn?oc=5",
+   "published": "2026-10-20T05:56:00+09:00"
+  },
+  {
+   "cat": "mkt",
+   "label": "相場",
+   "title": "鉄スクラップ電炉買値／関東地区で１０００円続伸／東鉄値上げ、湾岸価格の先行上昇受け修正",
+   "source": "日刊鉄鋼新聞 Japan Metal Daily",
+   "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBUSXJQN1g2bFFEU29jZkVjcl92emRiRWRlMFE3T3prLUY5V1lydkR3OWJQd0QtdFhVU2pPdjh0V2lVYnowMVlNdnJDUHNrS0dXVGV1NlotLXYzbldzX1E?oc=5",
+   "published": "2026-10-20T05:00:00+09:00"
+  },
   {
    "cat": "btc",
    "label": "ビットコイン",
@@ -174,14 +190,6 @@
    "published": "2026-10-18T23:28:44+09:00"
   },
   {
-   "cat": "mkt",
-   "label": "相場",
-   "title": "記念金貨、天皇陛下御即位記念10万円金貨は純金30グラム。10月14日の金の店頭買取価格で計算すると「69万3390円」で額面の約6.9倍",
-   "source": "LIMO | くらしとお金の経済メディア",
-   "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE11THdGQkQyYklGSWx4TDlpYWt1VU43aXhjMnowQk5XbV9veDZXc1d4ejRuZGVtUVR5S0prcWNxREtVZEp6WHJsRDlPdUs?oc=5",
-   "published": "2026-10-18T22:01:00+09:00"
-  },
-  {
    "cat": "gen",
    "label": "業界",
    "title": "閉鎖した施設のエアコン室外機を盗もうとした疑い 男2人現行犯",
@@ -237,14 +245,6 @@
    "source": "Yahoo!ニュース",
    "link": "https://news.yahoo.co.jp/articles/c316e8bec62e0f7fb0d4e00c0e21386de59301c3",
    "published": "2026-10-16T15:37:00+09:00"
-  },
-  {
-   "cat": "btc",
-   "label": "ビットコイン",
-   "title": "金地金トークン展開のunbanked、暗号資産事業から撤退へ",
-   "source": "Yahoo!ニュース",
-   "link": "https://news.yahoo.co.jp/articles/7d0068e121b65cd52cf17eec9a9526431a1967cb",
-   "published": "2026-10-16T13:30:00+09:00"
   },
   {
    "cat": "mkt",
@@ -370,8 +370,8 @@
    "dups": 1
   },
   {
-   "cat": "mkt",
-   "label": "相場",
+   "cat": "law",
+   "label": "法規制",
    "title": "金属スクラップ業界のリアル。「日本系」と「外国系（外資・輸出",
    "source": "note",
    "link": "https://note.com/leal_cobra1980/n/n0992d522571c",
@@ -415,8 +415,7 @@
    "title": "関東輸出入札5万2077円 鉄スクラップ、大幅反発 8.2％上昇 10月契約（日刊産業新聞）",
    "source": "Yahoo!ニュース",
    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA2YjctcE96SnVNdmhua2s0aExRNl9TTXJXbmJIenA3TWEyMzBMMnhiNFNoMGRoYVlPNWUweVg2WWdBOEpoN3dLR0JEejlwaEFCNjBZamJxaHc2a0pvQU4xS3ZDYU9ieWx1UVdQRFNqRFhsMk05bWtoNGZ4NHZ2d2s?oc=5",
-   "published": "2026-10-13T17:58:24+09:00",
-   "dups": 1
+   "published": "2026-10-13T17:58:24+09:00"
   },
   {
    "cat": "law",
@@ -454,9 +453,9 @@
    "cat": "law",
    "label": "法規制",
    "title": "労災防止へ 県産業資源循環協会が体力測定を主催",
-   "source": "OTV 沖縄テレビ放送",
-   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9GX2lqVE5TdDRHRnh1Y19NTXFOZUZUazZyV1JjZXowdGoyQl9KOVBpOTNoQmJSNlFZbGV2MXIyMkxla1B0MjMyNEV6ZHgzQklQbHp3N3dZazZYWnN4YmtZbUo2ZHJ1WmtkREhN?oc=5",
-   "published": "2026-10-12T19:15:02+09:00"
+   "source": "au Webポータル",
+   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9STTlGbFh4SmZNVWh1REFQeGp0RHZpMm1tQ0FwZkNkZFlXSjVZYWZnaXZOSmQtbjRBZHR4eGxZOWRiXzlWMHR6ZXFOTEFFc0tuTmNrblBSUVVaSUhmZVdRMkhydHJueUhpMmdxTkRR?oc=5",
+   "published": "2026-10-12T12:04:00+09:00"
   },
   {
    "cat": "law",
@@ -547,6 +546,14 @@
    "source": "日刊鉄鋼新聞 Japan Metal Daily",
    "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1ySEFEUWowUjVYOFpxdXVNdGpNYUFTUEhjRlV2NGRDazA5bXNrQkNTdjJ2dmowWWZObzNXQkVOWXlSM2NYVXkwNWd0Um9kMGl0WENEQ0FhTGE1QWo4U1E?oc=5",
    "published": "2026-09-30T05:00:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "電子廃棄物管理の市場シェアと業界の成長 [2034 年]",
+   "source": "Fortune Business Insights",
+   "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNR0Z1bVlBV05CZi10am0wQnlUblVELWNQb3BLSVg2VWZ6aHozSHJWZ1pMbmtUcXRkd1lZUml6TGJFNHd0VHN3VXNtWjVRSFpaOFZKeF80elZlN2x5Ny1OSmZCbzlCN2lDSjU5UTU2X2hvbTRtMVpRVlBxcHo5OW1Oel9GazVxYk4zcXo5WWdjcTJjbVhTTlJHN2dxT0NZeEw4TTZuejI2MWlaLXBMcmc4Q0s3ZUVocWJGeGRTaUdrVnlFSTVyUXlQZzEwQ0xmMVRFLXA5bWxOMFlWWEMyMkhlZ0JFZw?oc=5",
+   "published": "2026-09-28T16:00:00+09:00"
   },
   {
    "cat": "law",
@@ -721,10 +728,10 @@
   {
    "cat": "law",
    "label": "法規制",
-   "title": "環境省、脱炭素型循環経済システム構築促進事業の1次公募で6事業を採択。水平リサイクルやバイオメタノール製造など",
-   "source": "Circular Economy Hub",
-   "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNTUt6by1sTTlBRFVBbVNDck5OMHRHT2FtbkxVTmMyNHpWU2R5LU8zQUNrX2xHWUJYSkpvNUx6aGFqWkxNZGtlbWhnb3BGYkRaNDB3dU9uVG5Ga2c4ejhGb1VKTlhMQUZ6X3JDeV9BbTdFSEYyOFR2d1RLU3JxYVQ0Tg?oc=5",
-   "published": "2026-08-27T16:00:00+09:00"
+   "title": "KANEYOグループの福島日産とナプロアース、中古部品の「買取から再販まで」を県内41店舗に実装（PR TIMES）",
+   "source": "毎日新聞",
+   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBiSDhnWlotRk9mVnFhUlFrQVN6WFVCZWRISXVBQXZUY3pFX3BKQ0xaUFozWmljd01QYlhSQ0Z4OWVSTUJjZG8xd1A5R2tkb2w0S2JaaTRyVEo4bWtkTUY0QVRBVGhPckpu?oc=5",
+   "published": "2026-08-28T16:00:00+09:00"
   },
   {
    "cat": "law",
@@ -1195,7 +1202,7 @@
      }
     ],
     "spread": 80,
-    "diff": "-20"
+    "diff": "0"
    },
    {
     "group": "アルミ",
@@ -2804,7 +2811,7 @@
     12882781,
     12863740,
     12943035,
-    12930678
+    12940157
    ]
   },
   "基板:マザーボード（Ｃ）": {
