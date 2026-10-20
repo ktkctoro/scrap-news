@@ -1,5 +1,5 @@
 {
- "updated": "10/21 4:36",
+ "updated": "10/21 7:25",
  "fx": {
   "usdjpy": 158.13,
   "date": "2026-10-20"
@@ -34,9 +34,9 @@
    },
    {
     "name": "ビットコイン",
-    "value": "13,041,273",
+    "value": "13,142,442",
     "unit": "円",
-    "diff": "+0.4%"
+    "diff": "+1.0%"
    },
    {
     "name": "日経平均",
@@ -46,9 +46,9 @@
    },
    {
     "name": "NYダウ",
-    "value": "52,451",
+    "value": "52,496",
     "unit": "$",
-    "diff": "+781"
+    "diff": "+826"
    }
   ]
  },
@@ -72,18 +72,18 @@
   {
    "cat": "btc",
    "label": "ビットコイン",
-   "title": "JPモルガンAM、ビットコイン年率10％と想定 米大型株や金を上回る",
-   "source": "CoinPost",
-   "link": "https://coinpost.jp/?p=743974",
-   "published": "2026-10-20T18:20:00+09:00"
-  },
-  {
-   "cat": "btc",
-   "label": "ビットコイン",
    "title": "13年眠っていたビットコインウォレットが411 BTCを移動、約3,300万ドル",
    "source": "Pasquale Pillitteri",
    "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1oS25xajFOVHNiekFnM3R2NDdkYjFXMGVXYUM5RDdZaHo4emhLSjVDNW82YnVxbjVlTkx6cEdhWlB6c2lWeW5rMU9Fc1RjYktfQ0hDVWZyOEF6aDVmeEIwTVM5aU9PaEQyVVF2Y1kwdjEzQnN6bWlpQTdHZWg?oc=5",
    "published": "2026-10-20T18:06:23+09:00"
+  },
+  {
+   "cat": "mkt",
+   "label": "相場",
+   "title": "銅電線出荷9月4.7％減 電機好調も建設・電販低迷",
+   "source": "日刊産業新聞",
+   "link": "https://www.japanmetal.com/news-h20261021151195.html",
+   "published": "2026-10-20T17:59:00+09:00"
   },
   {
    "cat": "mkt",
@@ -158,6 +158,14 @@
    "source": "IndexBox",
    "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQdWRMRnZuRDFFeEpmeDdrMnZuUjctZ3E5RWhIaWx3MU5VRlM5Y2JZYjJVQjVCTDdJNE56REVtRlhkOWt4dFVwWjN6UHZneTZZTzFkRG9UaEZxSmo2VmVXaHYteWR3TkFnM3l4dndNNUdzZVNRdWF5SzBIdEctODdhTkx3dGlYYWszQ3NKOG10NE1HQm9sZTQ0Q3hrZGc4VGVQbzRpZUpKeW1hYjlWcTNfcTVpT2tPQ0wxT0lmNXBDSmZWWTVuSEVMc3VoSm5WTlNINjBNdjVvZ2F6NE1Y?oc=5",
    "published": "2026-10-20T09:11:04+09:00"
+  },
+  {
+   "cat": "btc",
+   "label": "ビットコイン",
+   "title": "米株高の中ビットコイン8万2000ドル割れ - CHOSUNBIZ",
+   "source": "Chosunbiz",
+   "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPandGNmtJY2J1M1BxZGFZYXdQaXBlU0gyQzFMbnVucy1GTUY4cXFlbjkxT3dtdVlwU25sQXVKU1VVY3RyUF9xb1dkTG80eVcxVlVFbG10VXhsTkNwa2hHXzhDek9SZnZMSDgzMXBXYTJNbnBnOUpYVDFuRjVXZlkxeNIBlAFBVV95cUxQOUdla0U3a1A4SFpGU056OUtqNkJuWG1tSDRPcTJNLWZyZ3EzdFZiOGsxc2JkWHBKYXFrRnU2bHBwWVpRVS1WN3JJVms2SWlOMnRjSWV1YnhHTVBFVElrbDAyVmZJeTN0ZnB4ZUNPUGdrVEMyRHV2Vl85cGJMbFExdnhyckd5dWVLM0pjMnl1ZkttaG5h?oc=5",
+   "published": "2026-10-20T08:33:00+09:00"
   },
   {
    "cat": "mkt",
@@ -241,6 +249,14 @@
    "published": "2026-10-18T23:28:44+09:00"
   },
   {
+   "cat": "gen",
+   "label": "業界",
+   "title": "閉鎖した施設のエアコン室外機を盗もうとした疑い 男2人現行犯",
+   "source": "日テレNEWS NNN",
+   "link": "https://news.ntv.co.jp/n/ctv/category/society/ct3f2b61b47ae14c7d93322b0b6c05e6b0",
+   "published": "2026-10-18T08:25:00+09:00"
+  },
+  {
    "cat": "law",
    "label": "法規制",
    "title": "#227 【提案仮説】産廃・リサイクル業者が本当に恐れているのは",
@@ -291,26 +307,18 @@
   {
    "cat": "mkt",
    "label": "相場",
-   "title": "匿名で寄付された金の地金３本、市が一般競争入札で売却へ…「行政に役立ててほしい」（読売新聞オンライン）",
-   "source": "Yahoo!ニュース",
-   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1rY1huUlVkT0hFVUZybzZ6NVhhQms1VWN0ZlBzV3J1R2FPRGk0SElfTGp4LWJqNFhVZTVnN0p2dUFSLUR5NFp1NFB0c0g4cWJxcldoWV9wYkdDYjVZQlMxQTY3eFBDMXQ0QzR4Q19UTW5GUUNndFQwRTF0RWNjV1E?oc=5",
-   "published": "2026-10-16T09:21:49+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
-   "title": "廃棄物処理ＪＡＧ、神戸製鋼からス州の土地取得",
-   "source": "NNAアジア",
-   "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFBQQVNNWWZLOXNXalNSOW5CbzlmaGt2Wl9sRFhuWWdNTVpqc2NjZHRVREFPRW9LcDVvY2N5Y2c4MlVhdjhyc3c?oc=5",
-   "published": "2026-10-16T00:00:00+09:00"
+   "title": "匿名で寄付された金の地金３本、市が一般競争入札で売却へ…「行政に役立ててほしい」",
+   "source": "au Webポータル",
+   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1LTTN0eHFfZDhUYlZmQy1JNTdzRHdNaldYMXJUREY0V2xZcVVZSFptSW5PY2lEMndYakExdXMtdlRySlltaFBldjlWTHQ3aXNQemotWlN1VzZzSklRZ2ZZLU8zZWtIZG52SklNWUJ3?oc=5",
+   "published": "2026-10-16T09:21:00+09:00"
   },
   {
    "cat": "mkt",
    "label": "相場",
-   "title": "銅建値、5万円下げ 亜鉛は3000円上げ",
-   "source": "日本経済新聞",
-   "link": "https://www.nikkei.com/article/DGXZQOUB152LX0V11C26A0000000/",
-   "published": "2026-10-15T19:48:00+09:00"
+   "title": "親から相続した「金地金」、いくらで購入したかわからない場合",
+   "source": "LIMO on MSN",
+   "link": "https://www.msn.com/ja-jp/news/other/%E8%A6%AA%E3%81%8B%E3%82%89%E7%9B%B8%E7%B6%9A%E3%81%97%E3%81%9F-%E9%87%91%E5%9C%B0%E9%87%91-%E3%81%84%E3%81%8F%E3%82%89%E3%81%A7%E8%B3%BC%E5%85%A5%E3%81%97%E3%81%9F%E3%81%8B%E3%82%8F%E3%81%8B%E3%82%89%E3%81%AA%E3%81%84%E5%A0%B4%E5%90%88-%E8%AD%B2%E6%B8%A1%E6%89%80%E5%BE%97-%E3%81%AF%E3%81%A9%E3%81%86%E3%82%84%E3%81%A3%E3%81%A6%E8%A8%88%E7%AE%97%E3%81%99%E3%82%8B/ar-AA2elsbb",
+   "published": "2026-10-16T06:22:00+09:00"
   },
   {
    "cat": "mkt",
@@ -378,6 +386,14 @@
    "published": "2026-10-14T12:45:00+09:00"
   },
   {
+   "cat": "law",
+   "label": "法規制",
+   "title": "【廃棄物処理法違反で罰金刑】三条市の坂井土建、産廃収集運搬業",
+   "source": "にいがた経済新聞",
+   "link": "https://www.niikei.jp/2081990/",
+   "published": "2026-10-14T11:44:00+09:00"
+  },
+  {
    "cat": "gen",
    "label": "業界",
    "title": "室外機盗んだ疑い、2人逮捕 大田原署",
@@ -400,15 +416,6 @@
    "source": "Yahoo!ニュース",
    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1nLVp2NHJoazNSQmpQY1FuZ3JWclZXamRqdzZCQmhwXzl5bEF2ZjdCZVlTMnhTYkJCdXBVSndvR243WkZqV3ZqM0lCcG8tMWhoNE5ia0E2Qnphb3pqb3N2RDJjazZLNHRfcTZyYTRVUFF2VFJDWmJXdU8zaFpRSVk?oc=5",
    "published": "2026-10-14T08:02:53+09:00"
-  },
-  {
-   "cat": "mkt",
-   "label": "相場",
-   "title": "銅建値、過去最高244万円／鉱山からの供給懸念で",
-   "source": "日刊鉄鋼新聞",
-   "link": "https://www.japanmetaldaily.com/articles/-/268756",
-   "published": "2026-10-14T07:00:00+09:00",
-   "dups": 1
   },
   {
    "cat": "law",
@@ -445,14 +452,6 @@
   {
    "cat": "law",
    "label": "法規制",
-   "title": "フクシマガリレイ、ノンフロン冷媒R1234yf採用のヨコ型解凍庫を発売へ",
-   "source": "Dellows News",
-   "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE15d0haVE9GdGI4enZqY1BNck9idm9HWHhHT203d0hiMWJVdjc4b1pJTnBaaEVPbm1tVi11Y3pCbGVlMGx0UXc?oc=5",
-   "published": "2026-10-09T19:26:02+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
    "title": "静岡で金属盗難が多発 防霜ファン銅線など 地域一体での対策を (2026年10月9日掲載)",
    "source": "ライブドアニュース",
    "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1DZ0Z4czI5YnR2VVRlVFZrd0dOWXpxSnBsd2dhNkstOGZtdFptbF85azdkVFBkdFpjVUFVMzBoMmh3bm8tV2xubUs5U2VfZUlBWjBERjd2ZG9YdFEtWkE?oc=5",
@@ -470,10 +469,19 @@
   {
    "cat": "law",
    "label": "法規制",
-   "title": "不用品売却の税金と確定申告 古物店の本人確認基準を整理 : 経済 : 財経日報",
-   "source": "재경일보",
-   "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9EMFZKeFFnN1hSV0dEb1VjdGpfWVNnQXdULTNCZjZYTWVMMjRoT2c0OXVLNk13Z3hNSUFVam1WU0ZzeUoxb2RxbGNJLXNDSHNFSlc1VFF5OVYzOVlqWHEzNVlodw?oc=5",
-   "published": "2026-10-09T10:01:00+09:00"
+   "title": "不用品売却の税金と確定申告 古物店の本人確認基準を整理",
+   "source": "JKN News",
+   "link": "https://news.jkn.co.kr/editions/japanese/post/1013793",
+   "published": "2026-10-09T12:01:00+09:00",
+   "dups": 1
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "【2026年10月最新調査】貴金属買取店の業務管理はどうする？金",
+   "source": "CNET Japan",
+   "link": "https://japan.cnet.com/release/31214089/",
+   "published": "2026-10-09T02:00:00+09:00"
   },
   {
    "cat": "law",
@@ -490,6 +498,14 @@
    "source": "note",
    "link": "https://note.com/holy_calme25128/n/na3a47513c61b",
    "published": "2026-10-07T03:01:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "古物商の家に警察が来た――でも、そんなに恐れることはない",
+   "source": "note",
+   "link": "https://note.com/takumis_room/n/n3266ea2a3480",
+   "published": "2026-10-07T00:46:00+09:00"
   },
   {
    "cat": "law",
@@ -594,6 +610,14 @@
    "source": "PR TIMES",
    "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBIeEViZko5UXhXb015VF9KWGk3WWJOaVJqUUg2dkhPTFJzLU9oT2FMcjZRNUFUVGxpZ01rRU16Ynd2U0w0ajFOS09kUElQVS1SYjV1aTM4RkFheTExNi1mVk1BNTE4U1hySmc?oc=5",
    "published": "2026-09-11T16:00:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "TRUSTDOCK、古物営業法の施行規則改正に対応する口座情報確認APIを",
+   "source": "PR TIMES",
+   "link": "https://prtimes.jp/main/html/rd/p/000000012.000033766.html",
+   "published": "2026-09-10T18:00:00+09:00"
   },
   {
    "cat": "law",
@@ -2411,7 +2435,7 @@
     52177.69,
     52002.41,
     51966.03,
-    52428.12
+    52495.88
    ]
   },
   "ドル円": {
@@ -2739,7 +2763,7 @@
     12863740,
     12943035,
     12979463,
-    13064916
+    13162008
    ]
   },
   "基板:マザーボード（Ｃ）": {
