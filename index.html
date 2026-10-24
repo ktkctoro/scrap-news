@@ -657,7 +657,13 @@ document.querySelectorAll('.chip').forEach(function(c){
 
 function renderBrief(){
   var ai = DATA && DATA.ai;
-  if (!ai || !ai.lines || !ai.lines.length) return;
+  if (!ai || !ai.lines || !ai.lines.length) {
+    // 黙って欄が消えると、止まっていても気づけない（10/1〜3週間そうなっていた）
+    var err = DATA && DATA.ai_error;
+    if (err) document.getElementById('brief').innerHTML =
+      '<div class="msg">けさの3行は、AIの呼び出しに失敗したため出ていません（' + esc(err.at || '') + '）</div>';
+    return;
+  }
   document.getElementById('brief').innerHTML =
     '<div class="brief"><div class="eyebrow">けさの3行（AIのまとめ）</div>' +
     ai.lines.map(function(l){ return '<div class="line">' + esc(l) + '</div>'; }).join('') +

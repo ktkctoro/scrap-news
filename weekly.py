@@ -22,13 +22,13 @@
 import json
 import os
 import sys
-import urllib.request
 from datetime import datetime, timedelta, timezone
+
+from summarize import call_api
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 JST = timezone(timedelta(hours=9))
 
-API_URL = "https://api.anthropic.com/v1/messages"
 MODEL = "claude-opus-5"
 
 
@@ -81,13 +81,15 @@ def build_prompt(data, hist, monthly=False):
     cmp_ = data.get("compare") or {}
     if cmp_.get("rows"):
         L.append("")
-        L.append("【同業の価格差が大きい品目】")
+        L.append("【同業の価格差が大きい品目（きょう時点の値だけ。前の値は無い）】")
         top = sorted(cmp_["rows"], key=lambda r: -r.get("spread", 0))[:10]
         for r in top:
             cells = "、".join(f"{c['dealer']}{c['value']:,}" for c in r["cells"])
             L.append(f"{r['name']}：{cells}（差{r['spread']:,}円）")
 
     items = data.get("items") or []
+    L.append("")
+    L.append("（記事は直近7日ぶん。法規制だけ60日前まで）")
     for label, head in (("法規制", "【法規制の記事】"), ("業界", "【業界の記事】"),
                         ("相場", "【相場の記事】"), ("AI・DC", "【AI・データセンターの記事】")):
         rows = [i for i in items if i.get("label") == label][:14]
@@ -104,8 +106,10 @@ def build_prompt(data, hist, monthly=False):
             "",
             "・見出しなしの短い段落を5つ。1段落は4〜5文、全体で900字程度",
             "・1段落目「先月の相場」: 銅・鉄・貴金属の1ヶ月の動きと、その背景",
-            "・2段落目「制度の動き」: 先月固まった制度と、いつまでに何をすべきか",
-            "・3段落目「商売の見直し」: 同業の価格差や基板相場から、出し先や選別の見直し案",
+            "・2段落目「制度の動き」: 材料の記事から読み取れる制度の動きと、いつまでに何をすべきか。",
+            "  記事は1ヶ月ぶんそろっていないので、「先月固まった」と言い切らない",
+            "・3段落目「商売の見直し」: 出し先の分け方や選別の細かさの見直し案。",
+            "  品目ごとの差額は画面のくらべる欄で毎日見ているので、並べ直さず、判断に絞る",
             "・4段落目「数字の振り返り」: 1ヶ月の変化率を並べ、効いた要因を整理",
             "・5段落目「今月の重点」: 今月ひと月で取り組むべきことを2〜3点",
             "",
@@ -119,13 +123,15 @@ def build_prompt(data, hist, monthly=False):
             "・見出しなしの短い段落を4つ。1段落は3〜4文、全体で600字程度",
             "・1段落目「相場」: 銅・鉄・貴金属の1週間の動きと、その背景",
             "・2段落目「法規制」: 制度の動きと、自社が備えるべきこと",
-            "・3段落目「商売のヒント」: 同業の価格差や基板相場から、仕入れ・出し先の判断材料",
+            "・3段落目「商売のヒント」: 同業の価格差や基板相場から、仕入れ・出し先の判断材料。",
+            "  品目ごとの差額は画面のくらべる欄で毎日見ているので、並べ直さず、判断に絞る",
             "・4段落目「来週の見通し」: 材料から読み取れる範囲での見通しと注意点",
         ]
 
     L += [
         "",
         "・材料にない事実を書かない。数字は材料のまま使う",
+        "・同業の価格差は前の値を渡していないので、「今週も」「広がった」など変化には触れない",
         "・見通しは断定せず「〜の可能性」「〜に注意」と書く",
         "・専門用語は避け、非エンジニアの経営者が読んで分かる言葉で",
     ]
@@ -165,19 +171,7 @@ def ask_claude(api_key, prompt, monthly=False):
         ),
         "messages": [{"role": "user", "content": prompt}],
     }
-    req = urllib.request.Request(
-        API_URL,
-        data=json.dumps(body, ensure_ascii=False).encode("utf-8"),
-        headers={
-            "x-api-key": api_key,
-            "anthropic-version": "2023-06-01",
-            "anthropic-beta": "server-side-fallback-2026-07-01",
-            "content-type": "application/json",
-        },
-        method="POST",
-    )
-    with urllib.request.urlopen(req, timeout=300) as r:
-        res = json.load(r)
+    res = call_api(api_key, body, timeout=300)
 
     if res.get("stop_reason") == "refusal":
         raise RuntimeError("AIが回答を断りました")

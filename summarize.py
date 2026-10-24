@@ -13,6 +13,7 @@ collect.py が作った data.json を読み、Claude(AI)に「けさの3行」�
 import json
 import os
 import sys
+import urllib.error
 import urllib.request
 from datetime import datetime, timezone, timedelta
 
@@ -54,9 +55,9 @@ def build_prompt(data):
             lines.append(f"{r['name']}：{cells}（差{r['spread']:,}円）")
 
     lines.append("")
-    lines.append("【記事の見出し（番号つき・全件）】")
+    lines.append("【記事の見出し（番号つき・全件。かっこ内は出た日）】")
     for n, i in enumerate(data.get("items") or [], 1):
-        lines.append(f"{n}. [{i['label']}] {i['title']}（{i['source']}）")
+        lines.append(f"{n}. [{i['label']}] {i['title']}（{i['source']}・{_md(i.get('published'))}）")
 
     lines += [
         "",
@@ -65,6 +66,8 @@ def build_prompt(data):
         "1) この材料から、経営者が朝いちに読む「けさの3行」を書く。",
         "・ちょうど3行。1行は40字以内。各行の頭に「・」を付ける",
         "・1行目は相場の動き、2行目は法規制・制度の動き、3行目はそのほかで商売に効く話",
+        "・法規制の記事は2ヶ月前のものまで混ざっている。2行目はここ数日に出た動きを選ぶ。",
+        "  新しい動きがなければ、2行目も相場か商売の話に回してよい（古い話をくり返さない）",
         "・材料にない事実を書かない。数字は材料のまま使う",
         "",
         "2) 見出しの中から、明らかに載せる価値のない記事の番号を挙げる。",
@@ -75,6 +78,52 @@ def build_prompt(data):
         "・判断に迷うものは残す（挙げない）。関係ある可能性が少しでもあれば残す",
     ]
     return "\n".join(lines)
+
+
+def _md(iso):
+    """'2026-10-23T21:37:00+09:00' → '10/23'。日付が無ければ '日付不明'。"""
+    try:
+        return f"{int(iso[5:7])}/{int(iso[8:10])}"
+    except (TypeError, ValueError):
+        return "日付不明"
+
+
+def call_api(api_key, body, timeout):
+    """Claudeに問い合わせて、返事(JSON)をそのまま返す。weekly.py からも使う。
+
+    断られたとき(HTTPエラー)は、理由の本文を例外の文に入れる。
+    以前は「400 Bad Request」としか残らず、3週間止まっていても原因が分からなかった。
+    400(頼み方がおかしい)のときは、おまけの機能(fallbacks)を外してもう1回だけ試す。
+    """
+    def post(b, beta):
+        headers = {
+            "x-api-key": api_key,
+            "anthropic-version": "2023-06-01",
+            "content-type": "application/json",
+        }
+        if beta:
+            headers["anthropic-beta"] = beta
+        req = urllib.request.Request(
+            API_URL,
+            data=json.dumps(b, ensure_ascii=False).encode("utf-8"),
+            headers=headers,
+            method="POST",
+        )
+        try:
+            with urllib.request.urlopen(req, timeout=timeout) as r:
+                return json.load(r)
+        except urllib.error.HTTPError as e:
+            detail = e.read().decode("utf-8", "replace")[:500]
+            raise RuntimeError(f"HTTP {e.code}: {detail}") from None
+
+    try:
+        return post(body, "server-side-fallback-2026-07-01")
+    except RuntimeError as e:
+        if not str(e).startswith("HTTP 400"):
+            raise
+        print(f"  ! 1回目は断られました（{e}）。fallbacks を外して試し直します", file=sys.stderr)
+        plain = {k: v for k, v in body.items() if k != "fallbacks"}
+        return post(plain, None)
 
 
 def ask_claude(api_key, prompt):
@@ -117,19 +166,7 @@ def ask_claude(api_key, prompt):
         ),
         "messages": [{"role": "user", "content": prompt}],
     }
-    req = urllib.request.Request(
-        API_URL,
-        data=json.dumps(body, ensure_ascii=False).encode("utf-8"),
-        headers={
-            "x-api-key": api_key,
-            "anthropic-version": "2023-06-01",
-            "anthropic-beta": "server-side-fallback-2026-07-01",
-            "content-type": "application/json",
-        },
-        method="POST",
-    )
-    with urllib.request.urlopen(req, timeout=180) as r:
-        data = json.load(r)
+    data = call_api(api_key, body, timeout=180)
 
     if data.get("stop_reason") == "refusal":
         raise RuntimeError("AIが回答を断りました")
@@ -137,6 +174,15 @@ def ask_claude(api_key, prompt):
         if block.get("type") == "text" and block.get("text"):
             return block["text"].strip()
     raise RuntimeError("AIの返事に本文がありませんでした")
+
+
+def _mark_failed(data, dest, reason):
+    """失敗した印を data.json に残す。画面の「けさの3行」の場所に小さく出る。"""
+    now = datetime.now(JST)
+    data["ai_error"] = {"at": f"{now.month}/{now.day} {now.hour}:{now.minute:02d}",
+                        "reason": reason[:200]}
+    with open(dest, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=1)
 
 
 def main():
@@ -160,12 +206,15 @@ def main():
         rows = [str(l).strip() for l in got.get("lines", []) if str(l).strip()][:3]
         drop = {int(n) for n in got.get("drop", []) if isinstance(n, (int, float))}
     except Exception as e:
-        # まとめが無くても記事と価格は出せるので、失敗しても止めない
+        # まとめが無くても記事と価格は出せるので、失敗しても止めない。
+        # ただし黙って欄が消えると気づけないので、画面に出す印を残す
         print(f"  ! AIまとめの失敗: {e}", file=sys.stderr)
+        _mark_failed(data, dest, str(e))
         return
 
     if not rows:
         print("  ! AIまとめの失敗: 中身が空でした", file=sys.stderr)
+        _mark_failed(data, dest, "中身が空でした")
         return
 
     # 関係ないと判定された記事を落とす。
