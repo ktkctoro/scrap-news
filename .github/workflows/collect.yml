@@ -13,7 +13,7 @@ on:
     - cron: "23 19 * * *"
   # manual.json を直したときなど、手で直したら作り直す。
   # ただし画面や中身に関わるファイルのときだけ。ドキュメントを1行直しただけで
-  # 記事の取り直し・同業8社の巡回・AIまとめ（有料）まで走らせない。
+  # 記事の取り直し・同業8社の巡回まで走らせない。
   push:
     branches: [main]
     paths:
@@ -59,20 +59,18 @@ jobs:
       - name: 何件取れたか確かめる
         run: python check_data.py
 
-      - name: AIのまとめを書く（鍵があるときだけ）
-        env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      # けさの3行と週次・月次レポートは、決まった書き方で組み立てる（AIは使わない）。
+      # 2026-10までは有料のClaude APIに書かせていたが、費用をゼロにするためやめた。
+      - name: けさの3行を書く
         run: python summarize.py
 
       - name: 週次レポートを書く（月曜だけ）
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           FORCE_WEEKLY: ${{ inputs.force_weekly && '1' || '' }}
         run: python weekly.py
 
       - name: 月次レポートを書く（1日だけ）
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           REPORT_KIND: monthly
           FORCE_WEEKLY: ${{ inputs.force_monthly && '1' || '' }}
         run: python weekly.py

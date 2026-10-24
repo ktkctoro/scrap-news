@@ -1,21 +1,24 @@
 #!/usr/bin/env python3
-"""スクラップ動向レポートをAIに書かせる。週次と月次の2種類。
+"""スクラップ動向レポートを書く（無料版。AIは使わない）。週次と月次の2種類。
 
-  週次: 毎週月曜の朝。先週1週間の動き。
-  月次: 毎月1日の朝。先月1ヶ月の動きと、もう少し長い目線。
+  週次: 毎週月曜の朝。1週間の数字の動き。
+  月次: 毎月1日の朝。1ヶ月の数字の動き。
 
-材料は data.json と history.json（3ヶ月の推移）。
-・相場は「1週間の変化」と「1ヶ月の変化」を数字で渡す
-・法規制・業界の記事の見出しを渡す
-・同業の価格差も渡す
+材料は data.json と history.json（3ヶ月の推移）。決まった書き方で
+段落を組み立てる。
+  1段落目: 相場の変化率（週・月）
+  2段落目: 上がったもの・下がったものの大きい順
+  3段落目: 法規制の新着の見出し
+  4段落目: 同業の価格差が大きい品目
 その日でなければ何もしない（前回のレポートがそのまま残る）。
+
+2026-10まではClaude APIに書かせていたが、費用をゼロにするためやめた。
 
 使い方:
   py weekly.py            # 月曜なら週次、1日なら月次を書く
   py weekly.py --force    # きょうが何曜でも週次を書く
   py weekly.py --monthly --force
 
-鍵（ANTHROPIC_API_KEY）が無ければ何もしない。
 追加ライブラリなし（標準ライブラリのみ）。
 """
 
@@ -24,12 +27,13 @@ import os
 import sys
 from datetime import datetime, timedelta, timezone
 
-from summarize import call_api
-
 HERE = os.path.dirname(os.path.abspath(__file__))
 JST = timezone(timedelta(hours=9))
 
-MODEL = "claude-opus-5"
+# history.json の名前 → レポートでの呼び名
+KEYS = (("銅建値", "銅建値"), ("東鉄名古屋二級", "鉄二級"), ("金", "金"), ("銀", "銀"),
+        ("ドル円", "ドル円"), ("日経平均", "日経平均"), ("NYダウ", "NYダウ"),
+        ("ビットコイン", "ビットコイン"))
 
 
 def _pct(now, past):
@@ -51,134 +55,76 @@ def _change(series, days_back):
     return now, _pct(now, series[past[-1]])
 
 
-def build_prompt(data, hist, monthly=False):
+def _num(v):
+    """銀のように小さい数は小数1桁まで、ほかは整数で。"""
+    return f"{v:,.1f}" if v < 1000 else f"{v:,.0f}"
+
+
+def _md(iso):
+    try:
+        return f"{int(iso[5:7])}/{int(iso[8:10])}"
+    except (TypeError, ValueError):
+        return ""
+
+
+def build_report(data, hist, monthly=False):
+    """段落のリストと見出しを返す。"""
     now = datetime.now(JST)
-    span = "先月1ヶ月" if monthly else "先週1週間"
-    L = [f"きょうは{now.year}年{now.month}月{now.day}日。"
-         f"{span}のスクラップ相場と業界の動きをまとめる。", ""]
+    span, days = ("1ヶ月", 30) if monthly else ("1週間", 7)
 
-    L.append("【相場の変化】")
-    for key in ("銅建値", "東鉄名古屋二級", "金", "銀", "ドル円",
-                "日経平均", "NYダウ", "ビットコイン"):
-        s = hist.get(key)
-        if not s:
-            continue
-        v, w = _change(s, 7)
-        _, m = _change(s, 30)
-        if v is None:
-            continue
-        wt = f"週{w:+.1f}%" if w is not None else "週—"
-        mt = f"月{m:+.1f}%" if m is not None else "月—"
-        L.append(f"{key} 現在{v:,.0f}（{wt} / {mt}）")
+    # 相場の変化
+    moves = []          # (呼び名, 現在値, 変化率)
+    for key, label in KEYS:
+        v, p = _change(hist.get(key), days)
+        if v is not None and p is not None:
+            moves.append((label, v, p))
 
-    boards = data.get("boards") or {}
-    if boards.get("rows"):
-        L.append("")
-        L.append("【基板の買取価格（K&Y）】")
-        for r in boards["rows"]:
-            L.append(f"{r['name']} {r['value']}{r['unit']}（前回比 {r.get('diff') or '±0'}）")
+    paras = []
+    if moves:
+        paras.append(f"この{span}の相場の動き。" + "、".join(
+            f"{label}{_num(v)}（{p:+.1f}%）" for label, v, p in moves) + "。")
 
-    cmp_ = data.get("compare") or {}
-    if cmp_.get("rows"):
-        L.append("")
-        L.append("【同業の価格差が大きい品目（きょう時点の値だけ。前の値は無い）】")
-        top = sorted(cmp_["rows"], key=lambda r: -r.get("spread", 0))[:10]
-        for r in top:
-            cells = "、".join(f"{c['dealer']}{c['value']:,}" for c in r["cells"])
-            L.append(f"{r['name']}：{cells}（差{r['spread']:,}円）")
-
-    items = data.get("items") or []
-    L.append("")
-    L.append("（記事は直近7日ぶん。法規制だけ60日前まで）")
-    for label, head in (("法規制", "【法規制の記事】"), ("業界", "【業界の記事】"),
-                        ("相場", "【相場の記事】"), ("AI・DC", "【AI・データセンターの記事】")):
-        rows = [i for i in items if i.get("label") == label][:14]
-        if rows:
-            L.append("")
-            L.append(head)
-            for i in rows:
-                L.append(f"・{i['title']}（{i['source']}）")
-
-    if monthly:
-        L += [
-            "",
-            "この材料から、スクラップ買取業の経営者が月初に読む月次レポートを書いてください。",
-            "",
-            "・見出しなしの短い段落を5つ。1段落は4〜5文、全体で900字程度",
-            "・1段落目「先月の相場」: 銅・鉄・貴金属の1ヶ月の動きと、その背景",
-            "・2段落目「制度の動き」: 材料の記事から読み取れる制度の動きと、いつまでに何をすべきか。",
-            "  記事は1ヶ月ぶんそろっていないので、「先月固まった」と言い切らない",
-            "・3段落目「商売の見直し」: 出し先の分け方や選別の細かさの見直し案。",
-            "  品目ごとの差額は画面のくらべる欄で毎日見ているので、並べ直さず、判断に絞る",
-            "・4段落目「数字の振り返り」: 1ヶ月の変化率を並べ、効いた要因を整理",
-            "・5段落目「今月の重点」: 今月ひと月で取り組むべきことを2〜3点",
-            "",
-            "・週次より長い目線で書く。1日ごとの上下ではなく、ひと月の流れを説明する",
-        ]
+        ups = sorted([m for m in moves if m[2] >= 0.05], key=lambda m: -m[2])
+        downs = sorted([m for m in moves if m[2] <= -0.05], key=lambda m: m[2])
+        s = []
+        if ups:
+            s.append("上がったのは " + "、".join(f"{m[0]}（{m[2]:+.1f}%）" for m in ups[:3]))
+        if downs:
+            s.append("下がったのは " + "、".join(f"{m[0]}（{m[2]:+.1f}%）" for m in downs[:3]))
+        if s:
+            paras.append("。".join(s) + "。")
     else:
-        L += [
-            "",
-            "この材料から、スクラップ買取業の経営者が月曜の朝に読む週次レポートを書いてください。",
-            "",
-            "・見出しなしの短い段落を4つ。1段落は3〜4文、全体で600字程度",
-            "・1段落目「相場」: 銅・鉄・貴金属の1週間の動きと、その背景",
-            "・2段落目「法規制」: 制度の動きと、自社が備えるべきこと",
-            "・3段落目「商売のヒント」: 同業の価格差や基板相場から、仕入れ・出し先の判断材料。",
-            "  品目ごとの差額は画面のくらべる欄で毎日見ているので、並べ直さず、判断に絞る",
-            "・4段落目「来週の見通し」: 材料から読み取れる範囲での見通しと注意点",
-        ]
+        paras.append(f"この{span}の相場は、記録がまだ足りず比べられませんでした。")
 
-    L += [
-        "",
-        "・材料にない事実を書かない。数字は材料のまま使う",
-        "・同業の価格差は前の値を渡していないので、「今週も」「広がった」など変化には触れない",
-        "・見通しは断定せず「〜の可能性」「〜に注意」と書く",
-        "・専門用語は避け、非エンジニアの経営者が読んで分かる言葉で",
-    ]
-    return "\n".join(L)
+    # 法規制の新着
+    since = (now - timedelta(days=days)).isoformat()
+    laws = sorted([i for i in data.get("items") or []
+                   if i.get("cat") == "law" and (i.get("published") or "") >= since],
+                  key=lambda i: i.get("published") or "", reverse=True)[:5]
+    if laws:
+        paras.append(f"この{span}の法規制の記事。" + "／".join(
+            f"{i['title']}（{_md(i.get('published'))}）" for i in laws))
+    else:
+        paras.append(f"この{span}は、法規制の新しい記事がありませんでした。")
 
+    # 同業の価格差
+    rows = sorted((data.get("compare") or {}).get("rows", []),
+                  key=lambda r: -r.get("spread", 0))[:3]
+    if rows:
+        s = []
+        for r in rows:
+            cells = sorted(r["cells"], key=lambda c: -c["value"])
+            s.append(f"{r['name']}は{cells[0]['dealer']}{cells[0]['value']:,}円・"
+                     f"{cells[-1]['dealer']}{cells[-1]['value']:,}円で差{r['spread']:,}円")
+        paras.append("同業の価格差が大きい品目（きょう時点）。" + "、".join(s) + "。")
 
-def ask_claude(api_key, prompt, monthly=False):
-    body = {
-        "model": MODEL,
-        "max_tokens": 16000,
-        # 週に一度のまとめなので、しっかり考えさせる
-        "output_config": {
-            "effort": "high",
-            "format": {
-                "type": "json_schema",
-                "schema": {
-                    "type": "object",
-                    "properties": {
-                        "title": {"type": "string", "description": "20字以内の見出し"},
-                        "paragraphs": {
-                            "type": "array",
-                            "items": {"type": "string"},
-                            "description": "5つの段落" if monthly else "4つの段落",
-                        },
-                    },
-                    "required": ["title", "paragraphs"],
-                    "additionalProperties": False,
-                },
-            },
-        },
-        "fallbacks": "default",
-        "system": (
-            "あなたはスクラップ・非鉄金属買取業「小林商会」のレポート担当です。"
-            + ("経営者が月初に5分で読み、その月の方針を決めるのに使えるレポートを書きます。"
-               if monthly else
-               "経営者が月曜の朝に3分で読み、その週の判断に使えるレポートを書きます。")
-        ),
-        "messages": [{"role": "user", "content": prompt}],
-    }
-    res = call_api(api_key, body, timeout=300)
-
-    if res.get("stop_reason") == "refusal":
-        raise RuntimeError("AIが回答を断りました")
-    for block in res.get("content", []):
-        if block.get("type") == "text" and block.get("text"):
-            return json.loads(block["text"])
-    raise RuntimeError("AIの返事に本文がありませんでした")
+    # 見出し: いちばん大きく動いたもの
+    if moves:
+        top = max(moves, key=lambda m: abs(m[2]))
+        title = f"{top[0]}が{span}で{top[2]:+.1f}%"
+    else:
+        title = "スクラップ動向"
+    return title, paras
 
 
 def main():
@@ -198,11 +144,6 @@ def main():
         print(f"{name}: {when}ではないので飛ばします")
         return
 
-    api_key = os.environ.get("ANTHROPIC_API_KEY", "").strip()
-    if not api_key:
-        print(f"{name}: 鍵が無いので飛ばします")
-        return
-
     dest = os.path.join(HERE, "data.json")
     with open(dest, encoding="utf-8") as f:
         data = json.load(f)
@@ -212,31 +153,20 @@ def main():
     except Exception:
         hist = {}
 
-    print(f"{name}: 書いています…")
-    try:
-        got = ask_claude(api_key, build_prompt(data, hist, monthly), monthly)
-    except Exception as e:
-        # レポートが無くても他は出せるので止めない
-        print(f"  ! {name}の失敗: {e}", file=sys.stderr)
-        return
-
-    paras = [str(p).strip() for p in got.get("paragraphs", []) if str(p).strip()]
-    if not paras:
-        print(f"  ! {name}の失敗: 中身が空でした", file=sys.stderr)
-        return
+    title, paras = build_report(data, hist, monthly)
 
     # 月次は「先月」ぶんなので、見出しの月は1つ前にする
     prev_month = (now.replace(day=1) - timedelta(days=1))
     key = "monthly" if monthly else "weekly"
     data[key] = {
-        "title": str(got.get("title", "スクラップ動向")).strip(),
+        "title": title,
         "paragraphs": paras,
         "date": now.strftime("%Y-%m-%d"),
         "label": f"{prev_month.month}月のまとめ" if monthly else f"{now.month}/{now.day}の週",
     }
     with open(dest, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=1)
-    print(f"{name}: 書きました（{data[key]['title']} / {len(paras)}段落）")
+    print(f"{name}: 書きました（{title} / {len(paras)}段落）")
 
 
 if __name__ == "__main__":
