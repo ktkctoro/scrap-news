@@ -1,5 +1,5 @@
 {
- "updated": "10/26 3:34",
+ "updated": "10/26 6:55",
  "fx": {
   "usdjpy": 156.8,
   "date": "2026-10-23"
@@ -34,9 +34,9 @@
    },
    {
     "name": "ビットコイン",
-    "value": "12,642,518",
+    "value": "12,604,084",
     "unit": "円",
-    "diff": "+0.4%"
+    "diff": "+0.1%"
    },
    {
     "name": "日経平均",
@@ -53,6 +53,14 @@
   ]
  },
  "items": [
+  {
+   "cat": "mkt",
+   "label": "相場",
+   "title": "銅建値、円高重なり９万円安／国際相場は需給緩和で下落",
+   "source": "日刊鉄鋼新聞 Japan Metal Daily",
+   "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFAtLUhjSHhPYW1zaXlMa3NzeEF2N3Q1X0daS2UtUHViUVNIUWhYMWh2U1lYUW1jNEdmaW1VVW80ZElVaTF5UUtQYnhoT05LUFNFWm9qUG05OUU2QVZuUGc?oc=5",
+   "published": "2026-10-26T05:00:00+09:00"
+  },
   {
    "cat": "btc",
    "label": "ビットコイン",
@@ -153,14 +161,6 @@
   {
    "cat": "dc",
    "label": "AI・DC",
-   "title": "ＡＩデータセンター建設、ケーブル生産能力が制約＝ネクサンス | ロイター",
-   "source": "Reuters",
-   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5CN0pxSFNTcnlPQzllZ0FvQmY5NWJTX1RfeWpTZFNfal92S3JHY05KZEt6UTJZU2NGOHF3am1FMHlISC1qWHdvY1I1X0FKcWRpYXNTeU1mdWtGYk9BeVQySDZ3NkxBbHZyZlVfbldLQUhNMVJ6MDQ3OElNTVhnUQ?oc=5",
-   "published": "2026-10-23T11:07:00+09:00"
-  },
-  {
-   "cat": "dc",
-   "label": "AI・DC",
    "title": "光ファイバケーブル用アクセサリ市場の2035年予測：5G高密度化とエッジデータセンターが需要を牽引 - ニュースと統計",
    "source": "IndexBox",
    "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNclV6ZExEWVhGR2NtbGFmVWlPZk1PWE9UMmNFQzlhVFlYZWg3MzBJc3pnLTdHZncydmZEc3pFUW9ZX1lrU2drbEJscWxiRWVxNkJweE5DSWJSQXVVQzlSbFR0X1k0Q2EwRlJjLXhLUVVCSnhuazJuWGhLNEUxN2xGQ1g3akpDajhkUWVsVnJRNE1UQUtSNzdMLXIzbHJwR2VGSUY1Sk82MUVNX3c1S0J5S0VtVV8tZXN3OWxLTXFzeFpQLTRldVBQb1QyYTcxWEpLMmt1Y3kyNE4tMURF?oc=5",
@@ -173,6 +173,14 @@
    "source": "IndexBox",
    "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOSENxcDFnaWJ1dWdaQWpRalhRNGpTNjlHbjhUdlk1dkZTa2t1ZEM2dnBJOVptUFFTS0J5ZThsejQwVHpvTThlR3BUVmNSZG9TZGpuamg0bm1WU1hraVdETThQeXRCcks2OTBnNTdyT0NlTkFEU2h4c2lRVk5SSE9kdmRYNEpkQWdoRjNzMHo3bjZ5QUVLWFJYa3RBT19Uc09Zb19SSE0yZ053aDRsamdoNExta3BkMTM5S3RXWXFUcFJpeGpjbURNaWZfc185YVZPRmRFSy11REFQdw?oc=5",
    "published": "2026-10-22T23:46:04+09:00"
+  },
+  {
+   "cat": "dc",
+   "label": "AI・DC",
+   "title": "AIによる電力需要が世界の金属供給を圧迫、ウッドマッケンジーが警告 - ニュースと統計",
+   "source": "IndexBox",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOMlA3aDF3aUYtdk5waF9SWkpjTGh4VnI4TGlfMHRibGFTNTlsT2thdWxhdmdiVWlKWElBZ0JOakhwcGVxWnNxeVNrMUNkc2ExZEtNX0RGN2pZdkRPWV9GQjJaMkxWVEZCQkE3RV9EdTlLeENBbW0wbHVsTmNzM1FPVk5WWXN5UzZiWDVKd2g3VDVYZW45QV9ZUVV0LVZ3RGdqbFQwSGZCU29IQmFZZ0J0ekp5REZpaXFKNXJWQjZuUGdpQQ?oc=5",
+   "published": "2026-10-22T23:11:22+09:00"
   },
   {
    "cat": "dc",
@@ -223,14 +231,6 @@
    "source": "note",
    "link": "https://note.com/shiny_moose859/n/ncd67e345655c",
    "published": "2026-10-22T12:05:00+09:00"
-  },
-  {
-   "cat": "mkt",
-   "label": "相場",
-   "title": "黄銅棒加工の撤退増加 需要減にコスト高響く 後継者不在も追い打ち",
-   "source": "日刊産業新聞",
-   "link": "https://www.japanmetal.com/news-h20261022151214.html",
-   "published": "2026-10-22T07:58:00+09:00"
   },
   {
    "cat": "mkt",
@@ -325,10 +325,10 @@
   {
    "cat": "law",
    "label": "法規制",
-   "title": "【2026年最新調査】買取店向け「買取コージ」、本人確認OCRで免許証入力を省力化｜氏名・住所・生年月日の読み取り・誤",
-   "source": "ニコニコニュース",
-   "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBkamVIVXh3UFdlZ2NYbVVieDNITjRJM3RBSTl6RlZ0NHhZTnJPb0s3d0dfeE1ObUNzM1pRODZjc3A2RGZKQ3ZEMFdic09jalJuWTZIOQ?oc=5",
-   "published": "2026-10-21T09:03:26+09:00",
+   "title": "【2026年最新調査】買取店向け「買取コージ」、本人確認OCRで免許証入力を省力化｜氏名・住所・生年月日の読み取り・誤読確認・顧客登録の流れを調査",
+   "source": "Excite エキサイト",
+   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5IXzVvZFVoVEtucnRIRWF6RFo3a3IwNEpYVjI0SkE4eHZTV1daaExHcHNrVVA2ejM4enEzWXJqOUtpMzNzZ3RQUGhYMDlzVVAxdGdSaC03cGZEakFEbm8xQWJKZFBhWjNyYnc?oc=5",
+   "published": "2026-10-21T09:00:00+09:00",
    "dups": 1
   },
   {
@@ -338,14 +338,6 @@
    "source": "Circular Economy Hub",
    "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQRDhQTWlXTHo3VTZFdVU2M0RQU3d5QmhpcTZqd0lJY3NleFBqR3FfZGtHeThfbHYxRmRkVlVyUkxPTHBYLWxHcm1ubjhQM0c5UVlsMXZmZWJ2RVZ0TVU4NUZZbmJtMjh4NzFFeHpQcVdWaUdGQzBYTVB4NV85UHFVenZnMTloOVFrQVJLeDZUYXU?oc=5",
    "published": "2026-10-21T07:00:24+09:00"
-  },
-  {
-   "cat": "mkt",
-   "label": "相場",
-   "title": "川口金属工業 新低熱膨張鋳鉄を開発 航空宇宙向けなど開拓",
-   "source": "WEB産業新聞",
-   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1wZ2E5RWU3cDlRekNqdFNvcHZCeUpPb3dnOWJka1p4N0pJdElCd1gzZ1RHRjV2ZEZsTjFjRzRqd0Q3QjZERTh3Nm5wV2FFamI5NmF5ZHlwVjVoX3h3bldISDhB?oc=5",
-   "published": "2026-10-21T05:50:00+09:00"
   },
   {
    "cat": "law",
@@ -426,14 +418,6 @@
    "source": "PR TIMES",
    "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBHOV80d0V0MmMzODhVSUpIMUlzQU5HaGptMndCX24tNG9Tdzl2VGZBeHlHOVpibnEyRldUYlZRNTc1OTJzMXZKM1JTOTVRbEtiS1ltMnNiN0o2anZhUGZLRmNURkFvR1hFZ2c?oc=5",
    "published": "2026-10-19T16:40:05+09:00"
-  },
-  {
-   "cat": "mkt",
-   "label": "相場",
-   "title": "【新店舗】いーふらん、千葉県八千代市に「高価買取おたからや",
-   "source": "ニコニコニュース",
-   "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBXazR4QzVsUDNqWnlBWThZanhoWjJOSm10ajFtUmt0aG1fZ0RacDZqcXc0MnZnTF80cGtiMk1ibDE2Uk01Vmxpc0RRcjhwTEVxTGIwYQ?oc=5",
-   "published": "2026-10-19T10:51:23+09:00"
   },
   {
    "cat": "law",
@@ -537,8 +521,7 @@
    "title": "静岡で金属盗難が多発 防霜ファン銅線など 地域一体での対策を (2026年10月9日掲載)",
    "source": "ライブドアニュース",
    "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1DZ0Z4czI5YnR2VVRlVFZrd0dOWXpxSnBsd2dhNkstOGZtdFptbF85azdkVFBkdFpjVUFVMzBoMmh3bm8tV2xubUs5U2VfZUlBWjBERjd2ZG9YdFEtWkE?oc=5",
-   "published": "2026-10-09T16:00:00+09:00",
-   "dups": 1
+   "published": "2026-10-09T16:00:00+09:00"
   },
   {
    "cat": "law",
@@ -2325,9 +2308,9 @@
  "weekly": {
   "title": "日経平均が1週間で-3.4%",
   "paragraphs": [
-   "この1週間の相場の動き。銅建値2,320,000（-2.9%）、鉄二級51,000（+0.0%）、金22,775（-1.5%）、銀304.3（-0.5%）、ドル円156.8（-0.9%）、日経平均62,693（-3.4%）、NYダウ52,215（+0.5%）、ビットコイン12,641,339（-2.3%）。",
-   "上がったのは NYダウ（+0.5%）。下がったのは 日経平均（-3.4%）、銅建値（-2.9%）、ビットコイン（-2.3%）。",
-   "この1週間の法規制の記事。出張買取「買いクル」運営の株式会社RC、環境省と考えるリユース業界カンファレンスに登壇 優良事業者の評価制度と消費者保護に向けた7つの提言を発表（10/25）／【製造】タイ全国の廃棄物処理工場3000カ所を点検 政府が資金追跡と資産没収へ（10/23）／MRCとEquate、クウェートでプラスチック廃棄物リサイクル契約を締結 - ニュースと統計（10/22）／プラスチック資源循環促進法における再資源化事業計画の認定制度と活用実務（10/21）／【2026年最新調査】買取店向け「買取コージ」、本人確認OCRで免許証入力を省力化｜氏名・住所・生年月日の読み取り・誤（10/21）",
+   "この1週間の相場の動き。銅建値2,320,000（-2.9%）、鉄二級51,000（+0.0%）、金22,775（-1.5%）、銀304.3（-0.5%）、ドル円156.8（-0.9%）、日経平均62,693（-3.4%）、NYダウ52,215（+0.5%）、ビットコイン12,595,879（-2.7%）。",
+   "上がったのは NYダウ（+0.5%）。下がったのは 日経平均（-3.4%）、銅建値（-2.9%）、ビットコイン（-2.7%）。",
+   "この1週間の法規制の記事。出張買取「買いクル」運営の株式会社RC、環境省と考えるリユース業界カンファレンスに登壇 優良事業者の評価制度と消費者保護に向けた7つの提言を発表（10/25）／【製造】タイ全国の廃棄物処理工場3000カ所を点検 政府が資金追跡と資産没収へ（10/23）／MRCとEquate、クウェートでプラスチック廃棄物リサイクル契約を締結 - ニュースと統計（10/22）／プラスチック資源循環促進法における再資源化事業計画の認定制度と活用実務（10/21）／【2026年最新調査】買取店向け「買取コージ」、本人確認OCRで免許証入力を省力化｜氏名・住所・生年月日の読み取り・誤読確認・顧客登録の流れを調査（10/21）",
    "同業の価格差が大きい品目（きょう時点）。CPUセラ長方形(金足)は浜屋68,800円・ケイワイ21,000円で差47,800円、CPUセラ(上)は浜屋68,800円・大畑42,000円で差26,800円、CPU黒は浜屋28,500円・大畑15,000円で差13,500円。"
   ],
   "date": "2026-10-26",
@@ -2823,7 +2806,7 @@
     12730473,
     12722111,
     12676347,
-    12641339
+    12595879
    ]
   },
   "基板:マザーボード（Ｃ）": {
@@ -4177,6 +4160,6 @@
    "・金22,775円（-229）、銀304.26円（-11.88）、ドル円156.8円",
    "・法規制：出張買取「買いクル」運営の株式会社RC、環境省と考えるリユース業界カ…（10/25）"
   ],
-  "at": "10/26 3:34"
+  "at": "10/26 6:55"
  }
 }
