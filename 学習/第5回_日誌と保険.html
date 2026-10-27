@@ -1,0 +1,317 @@
+<title>日誌と保険</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@700;900&family=BIZ+UDPGothic:wght@400;700&family=BIZ+UDGothic&display=swap">
+<style>
+/* レイアウト: 第1〜4回と同じ方眼ノート。1列で上から読む。絵 → 説明 の順をくり返し、最後に全5回のふりかえり */
+:root{
+  --paper:#f4f8fc; --grid:#dde8f3; --card:#ffffff; --ink:#1d2b3a; --sub:#5a6b7d;
+  --marker:#ffe066; --lit:#fff3b8; --room:#eef3f8; --off:#c9d3de; --wall:#ffffff; --roof:#c75b3f;
+  --robot:#7cb4e6; --face:#1f3a5c; --eye:#a8f0ff; --ok:#23915a; --ng:#d4473a; --line:#b9c8d8; --note:#8a6a3c;
+  --f-head:"Zen Maru Gothic","Hiragino Maru Gothic ProN","Meiryo",sans-serif;
+  --f-body:"BIZ UDPGothic","Hiragino Sans","Meiryo",sans-serif;
+  --f-code:"BIZ UDGothic",Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#141e2a; --grid:#1c2938; --card:#1b2735; --ink:#e7eef6; --sub:#9db0c4;
+  --marker:#d9b92e; --lit:#5a4f1e; --room:#223142; --off:#0e1620; --wall:#1f2d3c; --roof:#a64a34;
+  --robot:#6aa6dc; --face:#0d1a2a; --eye:#8fe8ff; --ok:#56c98a; --ng:#ff7b6b; --line:#36475a; --note:#b8925a; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#141e2a; --grid:#1c2938; --card:#1b2735; --ink:#e7eef6; --sub:#9db0c4;
+  --marker:#d9b92e; --lit:#5a4f1e; --room:#223142; --off:#0e1620; --wall:#1f2d3c; --roof:#a64a34;
+  --robot:#6aa6dc; --face:#0d1a2a; --eye:#8fe8ff; --ok:#56c98a; --ng:#ff7b6b; --line:#36475a; --note:#b8925a; color-scheme:dark}
+
+body{background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.85;
+  background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+  background-size:24px 24px}
+.wrap{max-width:720px;margin:0 auto;padding-block:28px 64px;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
+  display:flex;flex-direction:column;gap:36px}
+h1,h2,h3{font-family:var(--f-head);text-wrap:balance;line-height:1.4;margin:0}
+h1{font-size:1.9rem;font-weight:900}
+h2{font-size:1.35rem;font-weight:900;display:flex;gap:10px;align-items:baseline}
+h2 .no{font-size:.85rem;color:var(--sub);letter-spacing:.08em;flex:none}
+h3{font-size:1.05rem}
+p{margin:0}
+.eyebrow{font-family:var(--f-head);font-size:.85rem;letter-spacing:.12em;color:var(--sub)}
+mark{background:linear-gradient(transparent 55%,var(--marker) 55%);color:inherit;padding:0 2px}
+section{display:flex;flex-direction:column;gap:14px}
+.sheet{background:var(--card);border:2px solid var(--line);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:12px}
+svg{display:block;width:100%;height:auto;max-width:100%}
+svg text{font-family:var(--f-body);fill:var(--ink)}
+code{font-family:var(--f-code);background:var(--room);padding:1px 6px;border-radius:5px;font-size:.92em;overflow-wrap:anywhere}
+.cmd-box{display:flex;gap:8px;align-items:stretch;background:var(--face);border-radius:10px;padding:10px 10px 10px 14px}
+.cmd-box pre{margin:0;flex:1;min-width:0;overflow-x:auto;white-space:pre-wrap;color:#e9f4ff;font-family:var(--f-code);font-size:.95rem;line-height:1.7}
+.copy{flex:none;align-self:flex-start;font-size:.85rem;border:0;border-radius:8px;padding:4px 12px;background:var(--marker);color:#1d2b3a;cursor:pointer;font-family:var(--f-head);font-weight:700}
+.copy:focus-visible,summary:focus-visible,a:focus-visible{outline:3px solid var(--robot);outline-offset:2px}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.92rem;line-height:1.6}
+th,td{border-bottom:2px solid var(--line);padding:8px 6px;text-align:left;vertical-align:top}
+th{font-family:var(--f-head);color:var(--sub);font-weight:700;white-space:nowrap}
+.words{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+@media (max-width:520px){.words{grid-template-columns:1fr}}
+.words div{border:2px solid var(--line);border-radius:10px;padding:10px 12px;min-width:0}
+.words b{font-family:var(--f-head);display:block}
+.words span{font-size:.92rem;color:var(--sub)}
+.warn{border:2px solid var(--ng);border-radius:14px;padding:16px 18px;display:flex;flex-direction:column;gap:10px;background:var(--card)}
+.warn h3{color:var(--ng)}
+.warn ul{margin:0;padding-left:1.3em}
+.sum{background:var(--lit);border-radius:14px;padding:18px 20px;display:flex;flex-direction:column;gap:8px}
+.sum ol{margin:0;padding-left:1.4em;font-weight:700;display:flex;flex-direction:column;gap:4px}
+details{background:var(--card);border:2px solid var(--line);border-radius:12px;padding:12px 16px}
+summary{cursor:pointer;font-weight:700;list-style:none;display:flex;gap:10px}
+summary::-webkit-details-marker{display:none}
+summary .q{font-family:var(--f-head);color:var(--robot);flex:none}
+details[open] summary{margin-bottom:8px}
+.ans{border-top:2px dashed var(--line);padding-top:8px}
+.ans b{color:var(--ok)}
+.hint{font-size:.85rem;color:var(--sub)}
+.course{display:flex;flex-direction:column;gap:8px;margin:0;padding:0;list-style:none}
+.course li{display:grid;grid-template-columns:auto minmax(0,1fr);gap:4px 12px;align-items:baseline;background:var(--card);border:2px solid var(--line);border-radius:12px;padding:10px 14px}
+.course li.now{border-color:var(--marker)}
+.course .n{font-family:var(--f-head);font-weight:900;color:var(--robot)}
+.course a{color:var(--ink);font-weight:700;text-underline-offset:3px}
+.course span.d{grid-column:2;font-size:.9rem;color:var(--sub)}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="robot" viewBox="0 0 60 72">
+      <line x1="30" y1="5" x2="30" y2="15" style="stroke:var(--ink);stroke-width:2.5"/>
+      <circle cx="30" cy="5" r="4" style="fill:var(--marker);stroke:var(--ink);stroke-width:2"/>
+      <rect x="9" y="15" width="42" height="30" rx="9" style="fill:var(--robot);stroke:var(--ink);stroke-width:2.5"/>
+      <rect x="15" y="21" width="30" height="17" rx="6" style="fill:var(--face)"/>
+      <circle cx="23" cy="29.5" r="3.6" style="fill:var(--eye)"/>
+      <circle cx="37" cy="29.5" r="3.6" style="fill:var(--eye)"/>
+      <rect x="14" y="47" width="32" height="22" rx="7" style="fill:var(--robot);stroke:var(--ink);stroke-width:2.5"/>
+      <circle cx="30" cy="58" r="3.5" style="fill:var(--marker)"/>
+    </symbol>
+    <symbol id="poster" viewBox="0 0 40 46">
+      <rect x="1.5" y="1.5" width="37" height="43" rx="3" style="fill:var(--card);stroke:var(--ink);stroke-width:2"/>
+      <rect x="8" y="8" width="24" height="5" rx="2" style="fill:var(--marker)"/>
+      <line x1="8" y1="20" x2="32" y2="20" style="stroke:var(--sub);stroke-width:2"/>
+      <line x1="8" y1="27" x2="32" y2="27" style="stroke:var(--sub);stroke-width:2"/>
+      <line x1="8" y1="34" x2="25" y2="34" style="stroke:var(--sub);stroke-width:2"/>
+    </symbol>
+    <symbol id="flag" viewBox="0 0 24 40">
+      <line x1="4" y1="2" x2="4" y2="38" style="stroke:var(--ink);stroke-width:2.5"/>
+      <path d="M5 3 h16 l-4 6 l4 6 h-16 z" style="fill:var(--ok);stroke:var(--ink);stroke-width:1.5"/>
+    </symbol>
+    <symbol id="ngmark" viewBox="0 0 30 30">
+      <circle cx="15" cy="15" r="14" style="fill:var(--ng)"/>
+      <path d="M9 9 l12 12 M21 9 l-12 12" style="stroke:#ffffff;stroke-width:3.5;stroke-linecap:round"/>
+    </symbol>
+    <symbol id="okmark" viewBox="0 0 30 30">
+      <circle cx="15" cy="15" r="14" style="fill:var(--ok)"/>
+      <path d="M8 15 l5 5 l9 -10" style="fill:none;stroke:#ffffff;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:round"/>
+    </symbol>
+  </defs>
+</svg>
+
+<div class="wrap">
+
+<header style="display:flex;flex-direction:column;gap:10px">
+  <div class="eyebrow">AIのためのフォルダ設計　第5回（最終回）</div>
+  <h1>日誌と保険があれば、思いきって頼める</h1>
+  <p>ここまでで、部屋・置き場所・棚・張り紙がそろいました。最後は<mark>失敗しても困らないしくみ</mark>です。これがあると、AIに大きな仕事も安心して頼めるようになります。</p>
+</header>
+
+<section>
+  <h2><span class="no">1</span>日誌には「なぜそうしたか」を残す</h2>
+  <div class="sheet">
+    <svg viewBox="0 0 360 150" role="img" aria-label="左は壁の張り紙で今のルール、右は開いた日誌でこれまでの話。日誌のページには、やらないと決めたこと、の印がある">
+      <use href="#poster" x="30" y="20" width="76" height="88"/>
+      <text x="68" y="126" text-anchor="middle" style="font-size:12px;font-weight:700">張り紙</text>
+      <text x="68" y="142" text-anchor="middle" style="font-size:10px;fill:var(--sub)">今のルール</text>
+      <path d="M150 24 q55 -10 100 6 v84 q-45 -16 -100 -6 z" style="fill:var(--card);stroke:var(--note);stroke-width:2.5"/>
+      <path d="M250 30 q45 -16 96 -6 v84 q-51 -10 -96 6 z" style="fill:var(--card);stroke:var(--note);stroke-width:2.5"/>
+      <g style="stroke:var(--line);stroke-width:2">
+        <line x1="162" y1="40" x2="238" y2="44"/><line x1="162" y1="54" x2="238" y2="58"/>
+        <line x1="162" y1="68" x2="228" y2="72"/><line x1="162" y1="82" x2="238" y2="86"/>
+        <line x1="262" y1="44" x2="334" y2="38"/><line x1="262" y1="58" x2="334" y2="52"/>
+      </g>
+      <rect x="260" y="68" width="78" height="22" rx="3" style="fill:var(--marker)"/>
+      <text x="299" y="83" text-anchor="middle" style="font-size:9px;font-weight:700;fill:#1d2b3a">やらないと決めた</text>
+      <text x="250" y="132" text-anchor="middle" style="font-size:12px;font-weight:700">日誌（引き継ぎ書）</text>
+      <text x="250" y="148" text-anchor="middle" style="font-size:10px;fill:var(--sub)">これまでの話</text>
+    </svg>
+    <div class="tbl">
+      <table>
+        <thead><tr><th>日誌に書くこと</th><th>scrap-news の引き継ぎ書での場所</th></tr></thead>
+        <tbody>
+          <tr><td>作った順番と、きっかけ</td><td>§3 作った順番</td></tr>
+          <tr><td>ハマったところ（地雷）</td><td>§4</td></tr>
+          <tr><td>測った結果</td><td>§8</td></tr>
+          <tr><td>次にやること</td><td>§6</td></tr>
+          <tr><td><b>やらないと決めたこと</b></td><td>§6 の中</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>いちばん見落としやすいのは<mark>「やらないと決めたこと」</mark>です。書いていないと、次のAIが親切心で、前に断った提案をまたしてきます。</p>
+  </div>
+</section>
+
+<section>
+  <h2><span class="no">2</span>こまめにセーブ（コミット）する</h2>
+  <div class="sheet">
+    <svg viewBox="0 0 360 160" role="img" aria-label="道の上に緑の旗が3本立っている。4つめの地点でロボットが失敗して爆発しているが、矢印で3本目の旗まで戻れる">
+      <line x1="16" y1="110" x2="344" y2="110" style="stroke:var(--ink);stroke-width:3;stroke-linecap:round"/>
+      <use href="#flag" x="40" y="70" width="24" height="40"/>
+      <use href="#flag" x="110" y="70" width="24" height="40"/>
+      <use href="#flag" x="180" y="70" width="24" height="40"/>
+      <text x="48" y="130" text-anchor="middle" style="font-size:10px">セーブ1</text>
+      <text x="118" y="130" text-anchor="middle" style="font-size:10px">セーブ2</text>
+      <text x="188" y="130" text-anchor="middle" style="font-size:10px">セーブ3</text>
+      <path d="M290 46 l8 14 l14 -8 l-4 16 l16 4 l-14 8 l8 14 l-16 -4 l-4 16 l-8 -14 l-12 10 l2 -16 l-16 -2 l12 -10 l-10 -12 l16 0 z" style="fill:var(--marker);stroke:var(--ng);stroke-width:2.5;stroke-linejoin:round"/>
+      <use href="#robot" x="284" y="66" width="30" height="36"/>
+      <text x="300" y="130" text-anchor="middle" style="font-size:10px;font-weight:700;fill:var(--ng)">AIが失敗！</text>
+      <path d="M276 140 C 250 156, 220 156, 196 140" style="fill:none;stroke:var(--ok);stroke-width:3;stroke-linecap:round"/>
+      <path d="M204 134 l-8 6 l9 4" style="fill:none;stroke:var(--ok);stroke-width:3;stroke-linecap:round;stroke-linejoin:round"/>
+      <text x="236" y="40" text-anchor="middle" style="font-size:11px;font-weight:700;fill:var(--ok)">セーブ3から</text>
+      <text x="236" y="56" text-anchor="middle" style="font-size:11px;font-weight:700;fill:var(--ok)">やり直せる</text>
+    </svg>
+    <p>git の「コミット」は、<mark>ゲームのセーブ</mark>と同じです。AIが部屋をめちゃくちゃにしても、セーブがあれば、その地点から始め直せます。</p>
+    <p>だから、<b>大きな変更を頼む前に、まずセーブ</b>しておきます。</p>
+    <h3>頼み方</h3>
+    <div class="cmd-box"><pre id="cmd1">ここまでの変更をコミットしてください。</pre><button class="copy" type="button" data-for="cmd1">コピー</button></div>
+    <div class="cmd-box"><pre id="cmd2">さっきのコミットの状態まで戻してください。戻す前に、何が消えるか教えてください。</pre><button class="copy" type="button" data-for="cmd2">コピー</button></div>
+    <p class="hint">Claude Code では、Esc を2回押すと会話の少し前に巻き戻すこともできます。ただし戻せるのは、AIが書きかえたファイルが中心です。いちばん確かな保険はコミットです。</p>
+  </div>
+</section>
+
+<section>
+  <h2><span class="no">3</span>別の線路で試す（枝＝ブランチ）</h2>
+  <div class="sheet">
+    <svg viewBox="0 0 360 170" role="img" aria-label="本番の線路 main の上を毎朝の更新が走り続けている。そこから試しの線路が分かれて学習ページを運び、うまくいったら合流、だめなら線路ごと外せる">
+      <line x1="10" y1="120" x2="350" y2="120" style="stroke:var(--ink);stroke-width:5;stroke-linecap:round"/>
+      <text x="14" y="146" style="font-size:12px;font-weight:700">本番　<tspan style="font-family:var(--f-code)">main</tspan></text>
+      <circle cx="70" cy="120" r="7" style="fill:var(--card);stroke:var(--ink);stroke-width:2.5"/>
+      <circle cx="150" cy="120" r="7" style="fill:var(--card);stroke:var(--ink);stroke-width:2.5"/>
+      <circle cx="230" cy="120" r="7" style="fill:var(--card);stroke:var(--ink);stroke-width:2.5"/>
+      <text x="190" y="146" text-anchor="middle" style="font-size:10px;fill:var(--sub)">毎朝の自動更新は止まらない</text>
+      <path d="M70 120 C 100 120, 100 50, 140 50 L 270 50" style="fill:none;stroke:var(--robot);stroke-width:5;stroke-linecap:round"/>
+      <text x="140" y="34" style="font-size:11px;font-weight:700;font-family:var(--f-code)">claude/agents-md</text>
+      <rect x="150" y="56" width="22" height="22" rx="3" style="fill:var(--card);stroke:var(--ink);stroke-width:2"/>
+      <rect x="180" y="56" width="22" height="22" rx="3" style="fill:var(--card);stroke:var(--ink);stroke-width:2"/>
+      <rect x="210" y="56" width="22" height="22" rx="3" style="fill:var(--card);stroke:var(--ink);stroke-width:2"/>
+      <text x="161" y="71" text-anchor="middle" style="font-size:9px">学</text>
+      <text x="191" y="71" text-anchor="middle" style="font-size:9px">学</text>
+      <text x="221" y="71" text-anchor="middle" style="font-size:9px">紙</text>
+      <path d="M270 50 C 300 50, 300 120, 320 120" style="fill:none;stroke:var(--ok);stroke-width:4;stroke-dasharray:7 5"/>
+      <text x="318" y="96" text-anchor="middle" style="font-size:10px;font-weight:700;fill:var(--ok)">合流</text>
+      <use href="#okmark" x="306" y="62" width="20" height="20"/>
+    </svg>
+    <p>本番に影響を出さずに試したいときは、<mark>本番の線路から分かれた「試しの線路」</mark>を作ります。これを git では「枝（ブランチ）」と呼びます。</p>
+    <p>今回のやりとりが、まさにその例です。張り紙の直しも学習ページも、全部 <code>claude/agents-md</code> という試しの線路に入っています。そのあいだも、本番（<code>main</code>）では毎朝の自動更新がいつもどおり走っていました。</p>
+    <p>うまくいったら本番に合流させます。だめなら線路ごと外せば、本番は無傷です。<b>「まだ main に入れていません」と毎回お伝えしていたのは、このためです。</b></p>
+  </div>
+</section>
+
+<section>
+  <h2><span class="no">4</span>セーブは別の場所の倉庫にも預ける（プッシュ）</h2>
+  <div class="sheet">
+    <svg viewBox="0 0 360 140" role="img" aria-label="パソコンからGitHubの倉庫へ矢印でセーブを預けている。パソコンが壊れても倉庫のセーブは無事">
+      <rect x="20" y="30" width="96" height="64" rx="6" style="fill:var(--room);stroke:var(--ink);stroke-width:2.5"/>
+      <rect x="54" y="94" width="28" height="10" style="fill:var(--ink)"/>
+      <rect x="40" y="104" width="56" height="6" rx="2" style="fill:var(--ink)"/>
+      <path d="M60 46 l-8 14 h10 l-6 14" style="fill:none;stroke:var(--ng);stroke-width:3;stroke-linecap:round;stroke-linejoin:round"/>
+      <text x="90" y="62" text-anchor="middle" style="font-size:10px;fill:var(--ng);font-weight:700">故障!</text>
+      <text x="68" y="128" text-anchor="middle" style="font-size:11px;font-weight:700">パソコン</text>
+      <path d="M128 62 h90 m-10 -8 l10 8 l-10 8" style="fill:none;stroke:var(--ok);stroke-width:3;stroke-linecap:round;stroke-linejoin:round"/>
+      <text x="172" y="50" text-anchor="middle" style="font-size:11px;font-weight:700">プッシュ</text>
+      <polygon points="232,48 290,20 348,48" style="fill:var(--roof);stroke:var(--ink);stroke-width:2.5;stroke-linejoin:round"/>
+      <rect x="240" y="48" width="100" height="62" style="fill:var(--wall);stroke:var(--ink);stroke-width:2.5"/>
+      <use href="#flag" x="256" y="62" width="16" height="28"/>
+      <use href="#flag" x="280" y="62" width="16" height="28"/>
+      <use href="#flag" x="304" y="62" width="16" height="28"/>
+      <text x="290" y="128" text-anchor="middle" style="font-size:11px;font-weight:700">GitHub の倉庫</text>
+    </svg>
+    <p>パソコンの中のセーブだけだと、パソコンが壊れたら全部なくなります。<mark>プッシュは、セーブを GitHub という別の場所の倉庫に預けること</mark>です。今回の作業も、毎回プッシュしてから終わっていました。</p>
+  </div>
+</section>
+
+<section>
+  <h2><span class="no">5</span>セーブに入れない物のリスト（.gitignore）</h2>
+  <div class="sheet">
+    <p>何度でも作り直せる物や、合い鍵は、セーブに入れません。その一覧を書いておく紙が <code>.gitignore</code> です。第3回の棚でいうと、③できあがり品の一部と、⑥金庫に当たります。</p>
+    <div class="words">
+      <div><b>入れない物の例</b><span><code>携帯用.html</code>（いつでも作り直せる）、パスワードや鍵</span></div>
+      <div><b>入れる物の例</b><span><code>history.json</code>（貯金箱。なくすと戻らない）</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="warn">
+  <h3>取り返しがつかない頼みごとに注意</h3>
+  <p>次のような頼みごとは、セーブごと消えてしまうことがあります。</p>
+  <ul>
+    <li>「全部消して作り直して」</li>
+    <li>「強制的に上書きして（force push）」</li>
+  </ul>
+  <p>こういうときは、最後にこの一言を付け足してください。</p>
+  <div class="cmd-box"><pre id="cmd3">やる前に、何が消えるか・元に戻せるかを教えてください。私が「はい」と言うまで実行しないでください。</pre><button class="copy" type="button" data-for="cmd3">コピー</button></div>
+</section>
+
+<section>
+  <h2><span class="no">6</span>覚えておく言葉</h2>
+  <div class="words">
+    <div><b>コミット</b><span>セーブすること</span></div>
+    <div><b>ブランチ（枝）</b><span>本番から分かれた試しの線路</span></div>
+    <div><b>プッシュ</b><span>セーブを GitHub の倉庫に預けること</span></div>
+    <div><b>main</b><span>本番の線路の名前</span></div>
+  </div>
+</section>
+
+<section class="sum">
+  <h2>第5回のまとめ</h2>
+  <ol>
+    <li>日誌には「なぜ」と「やらないと決めたこと」を残す</li>
+    <li>大きな変更の前に、まずセーブ（コミット）</li>
+    <li>試すときは別の線路（ブランチ）で。本番は止めない</li>
+    <li>セーブは GitHub の倉庫に預ける（プッシュ）</li>
+    <li>取り返しがつかない頼みごとには「やる前に教えて」を付ける</li>
+  </ol>
+</section>
+
+<section>
+  <h2>たしかめクイズ</h2>
+  <p class="hint">考えてから押してください。</p>
+  <details>
+    <summary><span class="q">Q1</span>AIに画面を大きく作りかえてもらう。頼む前にすることは？</summary>
+    <div class="ans"><b>セーブ（コミット）しておく。</b>うまくいかなかったら、そのセーブまで戻せます。</div>
+  </details>
+  <details>
+    <summary><span class="q">Q2</span>新しい画面を試したい。でも毎朝の自動更新は止めたくない。どうする？</summary>
+    <div class="ans"><b>試しの線路（ブランチ）を作って、そこで試す。</b>本番（main）はそのまま走り続けます。うまくいったら合流させます。</div>
+  </details>
+  <details>
+    <summary><span class="q">Q3</span>「Bingはやめよう」と3か月前に決めた。どこに書いておく？</summary>
+    <div class="ans"><b>日誌（引き継ぎ書）の「やらないと決めたこと」。</b>理由もいっしょに書いておけば、次のAIが同じ提案をくり返しません。（※たとえ話です。scrap-news では今も Bing を使っています）</div>
+  </details>
+</section>
+
+<section>
+  <h2>全5回のふりかえり</h2>
+  <ul class="course">
+    <li><span class="n">1</span><a href="https://claude.ai/artifact/W9x43aHPJ4CKAc6jkdizbG">AIの仕事部屋</a><span class="d">AIは開けたフォルダ（部屋）の中しか見ない</span></li>
+    <li><span class="n">2</span><a href="https://claude.ai/artifact/4uszZWJoradyg1VFWGGb1H">AIの階をつくる</a><span class="d">AIの部屋は ai-work に集める。ルールの紙は大・中・小</span></li>
+    <li><span class="n">3</span><a href="https://claude.ai/artifact/MYwAnL4s69sctr84KoFeQe">部屋の棚の分け方</a><span class="d">ファイルは6つの棚に分けて、さわってよい物を決める</span></li>
+    <li><span class="n">4</span><a href="https://claude.ai/artifact/EKeWy4S7w9BMaFNCgmTSmz">張り紙の書き方</a><span class="d">張り紙は初出勤のAIへの引き継ぎメモ。理由をそえて短く</span></li>
+    <li class="now"><span class="n">5</span><b>日誌と保険</b><span class="d">日誌に「なぜ」を残し、セーブと試しの線路で失敗に備える</span></li>
+  </ul>
+  <p>この5つがそろうと、AIは毎回「初日の新人さん」でも、部屋に入ってすぐ、決まりを守って働けます。そして失敗しても元に戻せるので、<mark>あなたは安心して大きな仕事を頼めます。</mark>これが「AIを使い倒す」ための土台です。</p>
+</section>
+
+</div>
+
+<script>
+document.querySelectorAll('.copy').forEach(function(btn){
+  btn.addEventListener('click',function(){
+    var el=document.getElementById(btn.dataset.for), text=el.textContent;
+    function done(){btn.textContent='コピーしました';setTimeout(function(){btn.textContent='コピー'},1800)}
+    function fallback(){var r=document.createRange();r.selectNodeContents(el);var s=getSelection();s.removeAllRanges();s.addRange(r);btn.textContent='選択しました'}
+    try{navigator.clipboard.writeText(text).then(done,fallback)}catch(e){fallback()}
+  });
+});
+</script>
