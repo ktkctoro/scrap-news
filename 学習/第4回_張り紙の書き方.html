@@ -1,0 +1,357 @@
+<title>張り紙の書き方</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@700;900&family=BIZ+UDPGothic:wght@400;700&family=BIZ+UDGothic&display=swap">
+<style>
+/* レイアウト: 第1〜3回と同じ方眼ノート。1列で上から読む。コツは「絵｜説明」の横並び（スマホでは縦） */
+:root{
+  --paper:#f4f8fc; --grid:#dde8f3; --card:#ffffff; --ink:#1d2b3a; --sub:#5a6b7d;
+  --marker:#ffe066; --lit:#fff3b8; --room:#eef3f8; --off:#c9d3de; --wall:#ffffff; --roof:#c75b3f;
+  --robot:#7cb4e6; --face:#1f3a5c; --eye:#a8f0ff; --ok:#23915a; --ng:#d4473a; --line:#b9c8d8;
+  --f-head:"Zen Maru Gothic","Hiragino Maru Gothic ProN","Meiryo",sans-serif;
+  --f-body:"BIZ UDPGothic","Hiragino Sans","Meiryo",sans-serif;
+  --f-code:"BIZ UDGothic",Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#141e2a; --grid:#1c2938; --card:#1b2735; --ink:#e7eef6; --sub:#9db0c4;
+  --marker:#d9b92e; --lit:#5a4f1e; --room:#223142; --off:#0e1620; --wall:#1f2d3c; --roof:#a64a34;
+  --robot:#6aa6dc; --face:#0d1a2a; --eye:#8fe8ff; --ok:#56c98a; --ng:#ff7b6b; --line:#36475a; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#141e2a; --grid:#1c2938; --card:#1b2735; --ink:#e7eef6; --sub:#9db0c4;
+  --marker:#d9b92e; --lit:#5a4f1e; --room:#223142; --off:#0e1620; --wall:#1f2d3c; --roof:#a64a34;
+  --robot:#6aa6dc; --face:#0d1a2a; --eye:#8fe8ff; --ok:#56c98a; --ng:#ff7b6b; --line:#36475a; color-scheme:dark}
+
+body{background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.85;
+  background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+  background-size:24px 24px}
+.wrap{max-width:720px;margin:0 auto;padding-block:28px 64px;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
+  display:flex;flex-direction:column;gap:36px}
+h1,h2,h3{font-family:var(--f-head);text-wrap:balance;line-height:1.4;margin:0}
+h1{font-size:1.9rem;font-weight:900}
+h2{font-size:1.35rem;font-weight:900;display:flex;gap:10px;align-items:baseline}
+h2 .no{font-size:.85rem;color:var(--sub);letter-spacing:.08em;flex:none}
+h3{font-size:1.05rem}
+p{margin:0}
+.eyebrow{font-family:var(--f-head);font-size:.85rem;letter-spacing:.12em;color:var(--sub)}
+mark{background:linear-gradient(transparent 55%,var(--marker) 55%);color:inherit;padding:0 2px}
+section{display:flex;flex-direction:column;gap:14px}
+.sheet{background:var(--card);border:2px solid var(--line);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:12px}
+.big{font-family:var(--f-head);font-size:1.35rem;font-weight:900;line-height:1.6}
+svg{display:block;width:100%;height:auto;max-width:100%}
+svg text{font-family:var(--f-body);fill:var(--ink)}
+code{font-family:var(--f-code);background:var(--room);padding:1px 6px;border-radius:5px;font-size:.92em;overflow-wrap:anywhere}
+.cmd-box{display:flex;gap:8px;align-items:stretch;background:var(--face);border-radius:10px;padding:10px 10px 10px 14px}
+.cmd-box pre{margin:0;flex:1;min-width:0;overflow-x:auto;white-space:pre-wrap;color:#e9f4ff;font-family:var(--f-code);font-size:.95rem;line-height:1.7}
+.copy{flex:none;align-self:flex-start;font-size:.85rem;border:0;border-radius:8px;padding:4px 12px;background:var(--marker);color:#1d2b3a;cursor:pointer;font-family:var(--f-head);font-weight:700}
+.copy:focus-visible,summary:focus-visible{outline:3px solid var(--robot);outline-offset:2px}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.92rem;line-height:1.6}
+th,td{border-bottom:2px solid var(--line);padding:8px 6px;text-align:left;vertical-align:top}
+th{font-family:var(--f-head);color:var(--sub);font-weight:700;white-space:nowrap}
+td:first-child{font-family:var(--f-head);font-weight:700;color:var(--robot);white-space:nowrap}
+.tip{background:var(--card);border:2px solid var(--line);border-radius:14px;padding:14px;display:grid;grid-template-columns:minmax(0,220px) minmax(0,1fr);gap:14px;align-items:center}
+@media (max-width:560px){.tip{grid-template-columns:1fr}}
+.tip>div{display:flex;flex-direction:column;gap:6px;min-width:0}
+.tip h3{display:flex;gap:8px;align-items:baseline}
+.tip h3 .n{font-family:var(--f-head);color:var(--robot);flex:none}
+.tip p{font-size:.95rem;line-height:1.75}
+.pair{display:flex;flex-direction:column;gap:2px;font-size:.92rem}
+.pair .x{color:var(--ng)} .pair .o{color:var(--ok)}
+.sum{background:var(--lit);border-radius:14px;padding:18px 20px;display:flex;flex-direction:column;gap:8px}
+.sum ol{margin:0;padding-left:1.4em;font-weight:700;display:flex;flex-direction:column;gap:4px}
+details{background:var(--card);border:2px solid var(--line);border-radius:12px;padding:12px 16px}
+summary{cursor:pointer;font-weight:700;list-style:none;display:flex;gap:10px}
+summary::-webkit-details-marker{display:none}
+summary .q{font-family:var(--f-head);color:var(--robot);flex:none}
+details[open] summary{margin-bottom:8px}
+.ans{border-top:2px dashed var(--line);padding-top:8px}
+.ans b{color:var(--ok)}
+.hint{font-size:.85rem;color:var(--sub)}
+.next{font-size:.92rem;color:var(--sub);text-align:center}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="robot" viewBox="0 0 60 72">
+      <line x1="30" y1="5" x2="30" y2="15" style="stroke:var(--ink);stroke-width:2.5"/>
+      <circle cx="30" cy="5" r="4" style="fill:var(--marker);stroke:var(--ink);stroke-width:2"/>
+      <rect x="9" y="15" width="42" height="30" rx="9" style="fill:var(--robot);stroke:var(--ink);stroke-width:2.5"/>
+      <rect x="15" y="21" width="30" height="17" rx="6" style="fill:var(--face)"/>
+      <circle cx="23" cy="29.5" r="3.6" style="fill:var(--eye)"/>
+      <circle cx="37" cy="29.5" r="3.6" style="fill:var(--eye)"/>
+      <rect x="14" y="47" width="32" height="22" rx="7" style="fill:var(--robot);stroke:var(--ink);stroke-width:2.5"/>
+      <circle cx="30" cy="58" r="3.5" style="fill:var(--marker)"/>
+    </symbol>
+    <symbol id="ngmark" viewBox="0 0 30 30">
+      <circle cx="15" cy="15" r="14" style="fill:var(--ng)"/>
+      <path d="M9 9 l12 12 M21 9 l-12 12" style="stroke:#ffffff;stroke-width:3.5;stroke-linecap:round"/>
+    </symbol>
+    <symbol id="okmark" viewBox="0 0 30 30">
+      <circle cx="15" cy="15" r="14" style="fill:var(--ok)"/>
+      <path d="M8 15 l5 5 l9 -10" style="fill:none;stroke:#ffffff;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:round"/>
+    </symbol>
+  </defs>
+</svg>
+
+<div class="wrap">
+
+<header style="display:flex;flex-direction:column;gap:10px">
+  <div class="eyebrow">AIのためのフォルダ設計　第4回</div>
+  <h1>張り紙は「新人さんへの引き継ぎメモ」</h1>
+  <p>第1回から、AIは部屋に入るとまず「ルールの紙（張り紙）」を読む、と何度も出てきました。今回は<mark>その張り紙に、何をどう書くか</mark>です。ファイルの名前でいうと <code>AGENTS.md</code> や <code>CLAUDE.md</code> のことです。</p>
+</header>
+
+<section>
+  <h2><span class="no">1</span>AIは毎日が「初出勤」</h2>
+  <div class="sheet">
+    <svg viewBox="0 0 360 170" role="img" aria-label="初日の名札をつけたロボットが、引き継ぎメモを読んで、これなら分かると言っている">
+      <rect x="10" y="10" width="340" height="150" rx="10" style="fill:var(--lit);stroke:var(--ink);stroke-width:2"/>
+      <use href="#robot" x="40" y="40" width="80" height="96"/>
+      <rect x="60" y="102" width="40" height="16" rx="3" style="fill:var(--card);stroke:var(--ng);stroke-width:2"/>
+      <text x="80" y="114" text-anchor="middle" style="font-size:10px;font-weight:700;fill:var(--ng)">初日</text>
+      <g transform="rotate(4 180 90)">
+        <rect x="140" y="34" width="84" height="104" rx="4" style="fill:var(--card);stroke:var(--ink);stroke-width:2"/>
+        <text x="182" y="54" text-anchor="middle" style="font-size:11px;font-weight:700">引き継ぎメモ</text>
+        <line x1="150" y1="68" x2="214" y2="68" style="stroke:var(--sub);stroke-width:2"/>
+        <line x1="150" y1="80" x2="214" y2="80" style="stroke:var(--sub);stroke-width:2"/>
+        <line x1="150" y1="92" x2="200" y2="92" style="stroke:var(--sub);stroke-width:2"/>
+        <rect x="150" y="102" width="56" height="8" rx="2" style="fill:var(--marker)"/>
+        <line x1="150" y1="122" x2="210" y2="122" style="stroke:var(--sub);stroke-width:2"/>
+      </g>
+      <path d="M244 40 h96 a8 8 0 0 1 8 8 v40 a8 8 0 0 1 -8 8 h-80 l-12 12 v-12 h-4 a8 8 0 0 1 -8 -8 v-40 a8 8 0 0 1 8 -8 z" style="fill:var(--card);stroke:var(--ink);stroke-width:2"/>
+      <text x="294" y="62" text-anchor="middle" style="font-size:11px">これを読めば</text>
+      <text x="294" y="78" text-anchor="middle" style="font-size:11px">今日から</text>
+      <text x="294" y="94" text-anchor="middle" style="font-size:11px">働けます！</text>
+    </svg>
+    <p>AIは前の日のことを覚えていません。毎回、<mark>初めて出勤した新人さん</mark>と同じです。</p>
+    <p>だから張り紙は「新人さんが初日に読んで、すぐ働ける引き継ぎメモ」のつもりで書きます。お店で新しい人に仕事を教えるときと同じです。</p>
+  </div>
+</section>
+
+<section>
+  <h2><span class="no">2</span>書くことは6つ。この順番で</h2>
+  <div class="sheet">
+    <div class="tbl">
+      <table>
+        <thead><tr><th>順</th><th>書くこと</th><th>scrap-news での例</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>何のための仕組みか（1〜2行）</td><td>「事業主が朝いちにスマホで、商売に効くニュースだけを1分で確認する」</td></tr>
+          <tr><td>2</td><td>使う人の前提</td><td>「Windows 11。ターミナルは詳しくない」</td></tr>
+          <tr><td>3</td><td>棚の地図（ファイルの表）</td><td>「構成」の表（第3回の内容）</td></tr>
+          <tr><td>4</td><td>やってはいけないこと＋理由</td><td>「費用をかけない」「分類は5つ。増やさない」</td></tr>
+          <tr><td>5</td><td>試し方</td><td><code>py collect.py</code> → <code>py check_data.py</code></td></tr>
+          <tr><td>6</td><td>くわしくはどこを見るか</td><td>「先に <code>引き継ぎ書.md</code> を読むこと」</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>新人さんに教える順番と同じです。「この店は何の店か」→「お客さんはどんな人か」→「道具の場所」→「やってはいけないこと」→「仕事の確かめ方」→「分からないときに見るノート」。</p>
+  </div>
+</section>
+
+<section>
+  <h2><span class="no">3</span>書き方のコツ 5つ</h2>
+
+  <div class="tip">
+    <svg viewBox="0 0 220 130" role="img" aria-label="理由のない張り紙を見たロボットはなんでと首をかしげ、理由つきの張り紙を見たロボットはなるほどと分かっている">
+      <rect x="6" y="10" width="96" height="40" rx="4" style="fill:var(--card);stroke:var(--ink);stroke-width:2"/>
+      <text x="54" y="35" text-anchor="middle" style="font-size:10px;font-weight:700">増やさない</text>
+      <use href="#robot" x="30" y="58" width="44" height="54"/>
+      <text x="80" y="76" style="font-size:12px;font-weight:700;fill:var(--ng)">なんで？</text>
+      <rect x="116" y="4" width="98" height="52" rx="4" style="fill:var(--card);stroke:var(--ok);stroke-width:2.5"/>
+      <text x="165" y="24" text-anchor="middle" style="font-size:10px;font-weight:700">増やさない</text>
+      <text x="165" y="42" text-anchor="middle" style="font-size:8.5px">朝に読めなくなるから</text>
+      <use href="#robot" x="140" y="64" width="44" height="54"/>
+      <text x="184" y="84" style="font-size:12px;font-weight:700;fill:var(--ok)">！</text>
+    </svg>
+    <div>
+      <h3><span class="n">①</span>決まりには理由をそえる</h3>
+      <div class="pair"><span class="x">✕ 分類は5つ。増やさない</span><span class="o">○ 分類は5つ。増やさない。画面のチップが増えると朝いちに読めなくなる</span></div>
+      <p>理由があると、張り紙に書いていない似た場面でも、AIが自分で考えられます。「ボタンを3つ足して」と頼まれたときに「朝いちに読めなくなりませんか」と立ち止まれるようになります。</p>
+    </div>
+  </div>
+
+  <div class="tip">
+    <svg viewBox="0 0 220 130" role="img" aria-label="長い巻物の途中に大事な一行が埋もれている絵と、短いカードに大事なことがはっきり書いてある絵">
+      <rect x="10" y="6" width="80" height="118" rx="3" style="fill:var(--card);stroke:var(--ink);stroke-width:2"/>
+      <g style="stroke:var(--line);stroke-width:2">
+        <line x1="18" y1="16" x2="82" y2="16"/><line x1="18" y1="24" x2="78" y2="24"/><line x1="18" y1="32" x2="82" y2="32"/>
+        <line x1="18" y1="40" x2="74" y2="40"/><line x1="18" y1="48" x2="82" y2="48"/><line x1="18" y1="56" x2="80" y2="56"/>
+        <line x1="18" y1="72" x2="82" y2="72"/><line x1="18" y1="80" x2="76" y2="80"/><line x1="18" y1="88" x2="82" y2="88"/>
+        <line x1="18" y1="96" x2="80" y2="96"/><line x1="18" y1="104" x2="82" y2="104"/><line x1="18" y1="112" x2="70" y2="112"/>
+      </g>
+      <line x1="18" y1="64" x2="60" y2="64" style="stroke:var(--marker);stroke-width:3"/>
+      <use href="#ngmark" x="62" y="56" width="18" height="18"/>
+      <rect x="120" y="30" width="90" height="62" rx="4" style="fill:var(--card);stroke:var(--ok);stroke-width:2.5"/>
+      <rect x="130" y="42" width="66" height="9" rx="2" style="fill:var(--marker)"/>
+      <line x1="130" y1="62" x2="198" y2="62" style="stroke:var(--line);stroke-width:2"/>
+      <line x1="130" y1="74" x2="186" y2="74" style="stroke:var(--line);stroke-width:2"/>
+      <use href="#okmark" x="156" y="98" width="20" height="20"/>
+    </svg>
+    <div>
+      <h3><span class="n">②</span>短くする。昔の話は日誌へ</h3>
+      <p>張り紙は毎回、最初から最後まで読まれます。長いと、大事な決まりが埋もれます。</p>
+      <p>だから scrap-news では「済んだこと24項目」を、張り紙（<code>AGENTS.md</code>）から日誌（<code>引き継ぎ書.md</code>）へ移しました。<mark>張り紙は「今のルール」、日誌は「これまでの話」</mark>です。</p>
+    </div>
+  </div>
+
+  <div class="tip">
+    <svg viewBox="0 0 220 130" role="img" aria-label="いい感じにと書かれた紙ではロボットが迷い、スマホで1分で読める量にと書かれた紙ではロボットが分かっている">
+      <rect x="8" y="10" width="96" height="36" rx="4" style="fill:var(--card);stroke:var(--ink);stroke-width:2"/>
+      <text x="56" y="33" text-anchor="middle" style="font-size:11px;font-weight:700">いい感じに</text>
+      <use href="#robot" x="32" y="58" width="44" height="54"/>
+      <text x="78" y="76" style="font-size:14px;font-weight:700;fill:var(--ng)">？</text>
+      <rect x="116" y="6" width="98" height="44" rx="4" style="fill:var(--card);stroke:var(--ok);stroke-width:2.5"/>
+      <text x="165" y="25" text-anchor="middle" style="font-size:9.5px;font-weight:700">スマホで</text>
+      <text x="165" y="40" text-anchor="middle" style="font-size:9.5px;font-weight:700">1分で読める量に</text>
+      <use href="#robot" x="142" y="62" width="44" height="54"/>
+      <text x="186" y="80" style="font-size:12px;font-weight:700;fill:var(--ok)">！</text>
+    </svg>
+    <div>
+      <h3><span class="n">③</span>具体的に書く</h3>
+      <div class="pair"><span class="x">✕ いい感じに／見やすく</span><span class="o">○ スマホで1分で読める量に／専門用語は避けて</span></div>
+      <p>「いい感じ」は人によってちがいます。数字や、目に見える形で書くと、AIも同じものを思いうかべられます。</p>
+    </div>
+  </div>
+
+  <div class="tip">
+    <svg viewBox="0 0 220 130" role="img" aria-label="全部が赤い太字の張り紙はどれも目立たず、一か所だけ黄色い印がある張り紙は大事なところがすぐ分かる">
+      <rect x="8" y="10" width="96" height="110" rx="4" style="fill:var(--card);stroke:var(--ink);stroke-width:2"/>
+      <g style="font-size:10px;font-weight:900;fill:var(--ng)">
+        <text x="16" y="30">必ず！！</text><text x="16" y="48">絶対！！</text><text x="16" y="66">必ず！！</text>
+        <text x="16" y="84">重要！！</text><text x="16" y="102">絶対！！</text>
+      </g>
+      <use href="#ngmark" x="76" y="94" width="20" height="20"/>
+      <rect x="116" y="10" width="96" height="110" rx="4" style="fill:var(--card);stroke:var(--ok);stroke-width:2.5"/>
+      <g style="stroke:var(--line);stroke-width:2">
+        <line x1="124" y1="26" x2="202" y2="26"/><line x1="124" y1="38" x2="196" y2="38"/>
+        <line x1="124" y1="66" x2="202" y2="66"/><line x1="124" y1="78" x2="190" y2="78"/><line x1="124" y1="90" x2="200" y2="90"/>
+      </g>
+      <rect x="122" y="46" width="70" height="11" rx="2" style="fill:var(--marker)"/>
+      <use href="#okmark" x="184" y="94" width="20" height="20"/>
+    </svg>
+    <div>
+      <h3><span class="n">④</span>強調は本当に大事なところだけ</h3>
+      <p>太字や「必ず」をあちこちに付けると、どれも目立たなくなります。全部に赤ペンを引いた教科書と同じです。</p>
+      <p>scrap-news の太字は「費用をかけない」「追加ライブラリを入れない」など、<mark>破ると困るところだけ</mark>に絞ってあります。</p>
+    </div>
+  </div>
+
+  <div class="tip">
+    <svg viewBox="0 0 220 130" role="img" aria-label="道しるべが古い道を指していて、ロボットがそちらへ行ってしまう。本当の道は別の方向にある">
+      <line x1="60" y1="40" x2="60" y2="122" style="stroke:var(--ink);stroke-width:4"/>
+      <path d="M14 30 h70 l12 12 l-12 12 h-70 z" style="fill:var(--card);stroke:var(--ng);stroke-width:2.5"/>
+      <text x="50" y="47" text-anchor="middle" style="font-size:9px;font-family:var(--f-code)">data.json</text>
+      <text x="50" y="22" text-anchor="middle" style="font-size:9px;font-weight:700;fill:var(--ng)">古い道しるべ</text>
+      <path d="M100 100 h50" style="stroke:var(--sub);stroke-width:2;stroke-dasharray:4 4"/>
+      <use href="#robot" x="150" y="70" width="40" height="48"/>
+      <use href="#ngmark" x="190" y="66" width="20" height="20"/>
+      <path d="M60 116 C 40 116, 20 110, 12 100" style="fill:none;stroke:var(--ok);stroke-width:3;stroke-linecap:round"/>
+      <text x="10" y="92" style="font-size:8.5px;font-family:var(--f-code);fill:var(--ok)">history.json</text>
+    </svg>
+    <div>
+      <h3><span class="n">⑤</span>古くなったら直す</h3>
+      <p><mark>実際とちがう張り紙は、無いより悪い</mark>です。まちがった道しるべと同じで、AIは信じてそちらへ進んでしまいます。</p>
+      <p>本当にあった例：張り紙には基板の前回比が「前回の data.json との差」と書いてありました。しかし9月に作りを変えていて、今は「history.json の前の日の値との差」です。この1行は直しました。</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2><span class="no">4</span>張り紙は「育てる」もの</h2>
+  <div class="sheet">
+    <svg viewBox="0 0 360 140" role="img" aria-label="AIが失敗する、張り紙に1行足す、次からは守れる、の3つが矢印で輪になっている">
+      <rect x="10" y="40" width="96" height="56" rx="10" style="fill:var(--room);stroke:var(--ng);stroke-width:2.5"/>
+      <text x="58" y="64" text-anchor="middle" style="font-size:12px;font-weight:700">AIが</text>
+      <text x="58" y="82" text-anchor="middle" style="font-size:12px;font-weight:700">失敗した</text>
+      <rect x="132" y="40" width="96" height="56" rx="10" style="fill:var(--lit);stroke:var(--ink);stroke-width:2.5"/>
+      <text x="180" y="64" text-anchor="middle" style="font-size:12px;font-weight:700">張り紙に</text>
+      <text x="180" y="82" text-anchor="middle" style="font-size:12px;font-weight:700">1行足す</text>
+      <rect x="254" y="40" width="96" height="56" rx="10" style="fill:var(--room);stroke:var(--ok);stroke-width:2.5"/>
+      <text x="302" y="64" text-anchor="middle" style="font-size:12px;font-weight:700">次からは</text>
+      <text x="302" y="82" text-anchor="middle" style="font-size:12px;font-weight:700">守れる</text>
+      <path d="M108 68 h20 m-7 -6 l7 6 l-7 6" style="fill:none;stroke:var(--ink);stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round"/>
+      <path d="M230 68 h20 m-7 -6 l7 6 l-7 6" style="fill:none;stroke:var(--ink);stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round"/>
+      <path d="M302 100 C 302 130, 58 130, 58 100" style="fill:none;stroke:var(--sub);stroke-width:2;stroke-dasharray:5 4"/>
+      <text x="180" y="28" text-anchor="middle" style="font-size:11px;fill:var(--sub)">最初から完ぺきでなくていい</text>
+    </svg>
+    <p>張り紙は、最初から完ぺきに書かなくて大丈夫です。<mark>AIが同じ失敗をしたら、そのたびに1行足す。</mark>今の scrap-news の張り紙も、こうして育ってきました。</p>
+    <h3>作業の終わりに頼むこと</h3>
+    <div class="cmd-box"><pre id="cmd1">今日の作業で分かったことのうち、次の人が知っておくべきことを 引き継ぎ書.md に書き足してください。決まりごとになるものは AGENTS.md にも足してください。</pre><button class="copy" type="button" data-for="cmd1">コピー</button></div>
+    <h3>ときどき頼む点検</h3>
+    <div class="cmd-box"><pre id="cmd2">AGENTS.md に書いてあることと、実際のファイルの中身がずれているところを探して、一覧にしてください。まだ直さないでください。</pre><button class="copy" type="button" data-for="cmd2">コピー</button></div>
+  </div>
+</section>
+
+<section>
+  <h2><span class="no">5</span>新しい部屋の張り紙のひな形</h2>
+  <div class="sheet">
+    <p>新しい仕事の部屋を作ったら、<code>AGENTS.md</code> という名前でこれを置き、<code>（ ）</code> のところを書きかえます。<code>CLAUDE.md</code> には <code>@AGENTS.md</code> の1行だけを書きます。</p>
+    <div class="cmd-box"><pre id="cmd3"># （仕組みの名前）
+
+（何のための仕組みか。だれが、いつ、何のために使うか。1〜2行）
+
+くわしい経緯は `引き継ぎ書.md` にある。初めて作業するときは先に読むこと。
+
+## 使う人の前提
+- （例：パソコンにはくわしくない。スマホで見る）
+
+## 構成
+| ファイル | 役割 |
+|---|---|
+| （ファイル名） | （何をするか。手でさわってよいか） |
+
+## やってはいけないこと
+- （してはいけないこと）。（その理由）
+
+## 試し方
+```
+（動かして確かめるコマンド）
+```</pre><button class="copy" type="button" data-for="cmd3">コピー</button></div>
+    <p class="hint">「使う人の前提」のうち、どの仕事でも同じこと（日本語で、など）は、第2回の「大の紙」に書いておけば、ここには書かなくてかまいません。</p>
+  </div>
+</section>
+
+<section class="sum">
+  <h2>第4回のまとめ</h2>
+  <ol>
+    <li>張り紙は、毎日が初出勤のAIへの引き継ぎメモ</li>
+    <li>書くことは6つ：目的・使う人・棚の地図・禁止と理由・試し方・くわしい場所</li>
+    <li>理由をそえる、短く、具体的に、強調はしぼる</li>
+    <li>実際とちがう張り紙は無いより悪い。古くなったら直す</li>
+    <li>失敗のたびに1行足して、育てていく</li>
+  </ol>
+</section>
+
+<section>
+  <h2>たしかめクイズ</h2>
+  <p class="hint">考えてから押してください。</p>
+  <details>
+    <summary><span class="q">Q1</span>張り紙の文として、いちばん良いのは？　ア：「必ずきれいなコードを絶対に書くこと」　イ：「pip install が要る変更は先に確認を取る。Python標準ライブラリだけで動かしたいから」　ウ：「9月8日にBingを足して、9月9日に直して、9月30日に測った」</summary>
+    <div class="ans"><b>イ。</b>やってはいけないことと、その理由が具体的に書いてあります。ア は「きれい」がぼんやりしていて、強調も多すぎます。ウ は大事な記録ですが「これまでの話」なので、日誌（<code>引き継ぎ書.md</code>）に書きます。</div>
+  </details>
+  <details>
+    <summary><span class="q">Q2</span>張り紙が長くなってきた。何を日誌に移す？</summary>
+    <div class="ans"><b>「これまでにやったこと」「なぜそうなったかの長い話」。</b>張り紙には「今のルール」と、日誌のどこを見ればよいかの案内だけを残します。</div>
+  </details>
+  <details>
+    <summary><span class="q">Q3</span>作りを変えたのに、張り紙の説明が古いままだった。どうする？</summary>
+    <div class="ans"><b>すぐに張り紙を直す。</b>AIはまちがった説明を信じて作業してしまいます。自分で探すのが大変なら、上の「ときどき頼む点検」をAIに頼みます。</div>
+  </details>
+</section>
+
+<p class="next">次回（第5回・最終回）は「日誌と保険」。記録の残し方と、失敗しても元に戻せるしくみです。</p>
+
+</div>
+
+<script>
+document.querySelectorAll('.copy').forEach(function(btn){
+  btn.addEventListener('click',function(){
+    var el=document.getElementById(btn.dataset.for), text=el.textContent;
+    function done(){btn.textContent='コピーしました';setTimeout(function(){btn.textContent='コピー'},1800)}
+    function fallback(){var r=document.createRange();r.selectNodeContents(el);var s=getSelection();s.removeAllRanges();s.addRange(r);btn.textContent='選択しました'}
+    try{navigator.clipboard.writeText(text).then(done,fallback)}catch(e){fallback()}
+  });
+});
+</script>
