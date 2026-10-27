@@ -1,0 +1,348 @@
+<title>部屋の棚の分け方</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@700;900&family=BIZ+UDPGothic:wght@400;700&family=BIZ+UDGothic&display=swap">
+<style>
+/* レイアウト: 第1回・第2回と同じ方眼ノート。1列で上から読む。絵 → 説明 の順をくり返す */
+:root{
+  --paper:#f4f8fc; --grid:#dde8f3; --card:#ffffff; --ink:#1d2b3a; --sub:#5a6b7d;
+  --marker:#ffe066; --lit:#fff3b8; --room:#eef3f8; --off:#c9d3de; --wall:#ffffff; --roof:#c75b3f;
+  --robot:#7cb4e6; --face:#1f3a5c; --eye:#a8f0ff; --ok:#23915a; --ng:#d4473a; --line:#b9c8d8; --pig:#f4a6b8;
+  --f-head:"Zen Maru Gothic","Hiragino Maru Gothic ProN","Meiryo",sans-serif;
+  --f-body:"BIZ UDPGothic","Hiragino Sans","Meiryo",sans-serif;
+  --f-code:"BIZ UDGothic",Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#141e2a; --grid:#1c2938; --card:#1b2735; --ink:#e7eef6; --sub:#9db0c4;
+  --marker:#d9b92e; --lit:#5a4f1e; --room:#223142; --off:#0e1620; --wall:#1f2d3c; --roof:#a64a34;
+  --robot:#6aa6dc; --face:#0d1a2a; --eye:#8fe8ff; --ok:#56c98a; --ng:#ff7b6b; --line:#36475a; --pig:#c97a8d; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#141e2a; --grid:#1c2938; --card:#1b2735; --ink:#e7eef6; --sub:#9db0c4;
+  --marker:#d9b92e; --lit:#5a4f1e; --room:#223142; --off:#0e1620; --wall:#1f2d3c; --roof:#a64a34;
+  --robot:#6aa6dc; --face:#0d1a2a; --eye:#8fe8ff; --ok:#56c98a; --ng:#ff7b6b; --line:#36475a; --pig:#c97a8d; color-scheme:dark}
+
+body{background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.85;
+  background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+  background-size:24px 24px}
+.wrap{max-width:720px;margin:0 auto;padding-block:28px 64px;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
+  display:flex;flex-direction:column;gap:36px}
+h1,h2,h3{font-family:var(--f-head);text-wrap:balance;line-height:1.4;margin:0}
+h1{font-size:1.9rem;font-weight:900}
+h2{font-size:1.35rem;font-weight:900;display:flex;gap:10px;align-items:baseline}
+h2 .no{font-size:.85rem;color:var(--sub);letter-spacing:.08em;flex:none}
+h3{font-size:1.05rem}
+p{margin:0}
+.eyebrow{font-family:var(--f-head);font-size:.85rem;letter-spacing:.12em;color:var(--sub)}
+mark{background:linear-gradient(transparent 55%,var(--marker) 55%);color:inherit;padding:0 2px}
+section{display:flex;flex-direction:column;gap:14px}
+.sheet{background:var(--card);border:2px solid var(--line);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:12px}
+.big{font-family:var(--f-head);font-size:1.35rem;font-weight:900;line-height:1.6}
+svg{display:block;width:100%;height:auto;max-width:100%}
+svg text{font-family:var(--f-body);fill:var(--ink)}
+code{font-family:var(--f-code);background:var(--room);padding:1px 6px;border-radius:5px;font-size:.92em;overflow-wrap:anywhere}
+.cmd-box{display:flex;gap:8px;align-items:stretch;background:var(--face);border-radius:10px;padding:10px 10px 10px 14px}
+.cmd-box pre{margin:0;flex:1;min-width:0;overflow-x:auto;white-space:pre-wrap;color:#e9f4ff;font-family:var(--f-code);font-size:.95rem;line-height:1.7}
+.copy{flex:none;align-self:flex-start;font-size:.85rem;border:0;border-radius:8px;padding:4px 12px;background:var(--marker);color:#1d2b3a;cursor:pointer;font-family:var(--f-head);font-weight:700}
+.copy:focus-visible,summary:focus-visible{outline:3px solid var(--robot);outline-offset:2px}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.92rem;line-height:1.6}
+th,td{border-bottom:2px solid var(--line);padding:8px 6px;text-align:left;vertical-align:top}
+th{font-family:var(--f-head);color:var(--sub);font-weight:700;white-space:nowrap}
+td:first-child{font-weight:700;white-space:nowrap}
+.names{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+@media (max-width:520px){.names{grid-template-columns:1fr}}
+.names div{border:2px solid var(--line);border-radius:10px;padding:10px 12px;display:flex;flex-direction:column;gap:4px;min-width:0}
+.names .ok{border-color:var(--ok)} .names .ng{border-color:var(--ng)}
+.names b{font-family:var(--f-head)}
+.names .ok b{color:var(--ok)} .names .ng b{color:var(--ng)}
+.names ul{margin:0;padding-left:1.2em}
+.sum{background:var(--lit);border-radius:14px;padding:18px 20px;display:flex;flex-direction:column;gap:8px}
+.sum ol{margin:0;padding-left:1.4em;font-weight:700;display:flex;flex-direction:column;gap:4px}
+details{background:var(--card);border:2px solid var(--line);border-radius:12px;padding:12px 16px}
+summary{cursor:pointer;font-weight:700;list-style:none;display:flex;gap:10px}
+summary::-webkit-details-marker{display:none}
+summary .q{font-family:var(--f-head);color:var(--robot);flex:none}
+details[open] summary{margin-bottom:8px}
+.ans{border-top:2px dashed var(--line);padding-top:8px}
+.ans b{color:var(--ok)}
+.hint{font-size:.85rem;color:var(--sub)}
+.next{font-size:.92rem;color:var(--sub);text-align:center}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="robot" viewBox="0 0 60 72">
+      <line x1="30" y1="5" x2="30" y2="15" style="stroke:var(--ink);stroke-width:2.5"/>
+      <circle cx="30" cy="5" r="4" style="fill:var(--marker);stroke:var(--ink);stroke-width:2"/>
+      <rect x="9" y="15" width="42" height="30" rx="9" style="fill:var(--robot);stroke:var(--ink);stroke-width:2.5"/>
+      <rect x="15" y="21" width="30" height="17" rx="6" style="fill:var(--face)"/>
+      <circle cx="23" cy="29.5" r="3.6" style="fill:var(--eye)"/>
+      <circle cx="37" cy="29.5" r="3.6" style="fill:var(--eye)"/>
+      <rect x="14" y="47" width="32" height="22" rx="7" style="fill:var(--robot);stroke:var(--ink);stroke-width:2.5"/>
+      <circle cx="30" cy="58" r="3.5" style="fill:var(--marker)"/>
+    </symbol>
+    <symbol id="poster" viewBox="0 0 40 46">
+      <rect x="1.5" y="1.5" width="37" height="43" rx="3" style="fill:var(--card);stroke:var(--ink);stroke-width:2"/>
+      <rect x="8" y="8" width="24" height="5" rx="2" style="fill:var(--marker)"/>
+      <line x1="8" y1="20" x2="32" y2="20" style="stroke:var(--sub);stroke-width:2"/>
+      <line x1="8" y1="27" x2="32" y2="27" style="stroke:var(--sub);stroke-width:2"/>
+      <line x1="8" y1="34" x2="25" y2="34" style="stroke:var(--sub);stroke-width:2"/>
+    </symbol>
+    <symbol id="gear" viewBox="0 0 40 40">
+      <circle cx="20" cy="20" r="14" style="fill:none;stroke:var(--ink);stroke-width:7;stroke-dasharray:5 4"/>
+      <circle cx="20" cy="20" r="11" style="fill:var(--robot);stroke:var(--ink);stroke-width:2"/>
+      <circle cx="20" cy="20" r="4" style="fill:var(--card);stroke:var(--ink);stroke-width:2"/>
+    </symbol>
+    <symbol id="ngmark" viewBox="0 0 30 30">
+      <circle cx="15" cy="15" r="14" style="fill:var(--ng)"/>
+      <path d="M9 9 l12 12 M21 9 l-12 12" style="stroke:#ffffff;stroke-width:3.5;stroke-linecap:round"/>
+    </symbol>
+    <symbol id="okmark" viewBox="0 0 30 30">
+      <circle cx="15" cy="15" r="14" style="fill:var(--ok)"/>
+      <path d="M8 15 l5 5 l9 -10" style="fill:none;stroke:#ffffff;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:round"/>
+    </symbol>
+  </defs>
+</svg>
+
+<div class="wrap">
+
+<header style="display:flex;flex-direction:column;gap:10px">
+  <div class="eyebrow">AIのためのフォルダ設計　第3回</div>
+  <h1>部屋の中を「棚」で分ける</h1>
+  <p>第1回で部屋の選び方、第2回で部屋の置き場所を学びました。今回は<mark>部屋の中の片付け方</mark>です。</p>
+</header>
+
+<section>
+  <h2><span class="no">1</span>全部が1つの山だと、AIはさわりすぎる</h2>
+  <div class="sheet">
+    <p>AIは、部屋の中の物を見て「これは直してよい物か」を自分で判断します。何もかも1つの山に積んであると、<mark>さわってはいけない物まで、親切心で直してしまいます。</mark></p>
+    <p>そこで、物を種類ごとに「棚」に分けて、棚ごとに約束を決めます。scrap-news の部屋の中を6つの棚に分けると、こうなります。</p>
+    <svg viewBox="0 0 360 262" role="img" aria-label="scrap-news の部屋に6つの棚。道具、注文票、できあがり品、張り紙と日誌、試作品、そして部屋に置いてはいけない金庫">
+      <rect x="6" y="6" width="348" height="250" rx="10" style="fill:var(--lit);stroke:var(--ink);stroke-width:2"/>
+      <text x="18" y="28" style="font-size:13px;font-weight:700">scrap-news の部屋</text>
+      <!-- 1 道具 -->
+      <rect x="18" y="40" width="104" height="100" rx="6" style="fill:var(--card);stroke:var(--line);stroke-width:2"/>
+      <text x="26" y="58" style="font-size:12px;font-weight:700">① 道具</text>
+      <line x1="52" y1="104" x2="82" y2="74" style="stroke:var(--sub);stroke-width:7;stroke-linecap:round"/>
+      <circle cx="86" cy="70" r="9" style="fill:var(--card);stroke:var(--sub);stroke-width:5"/>
+      <text x="70" y="130" text-anchor="middle" style="font-size:9.5px;font-family:var(--f-code)">collect.py</text>
+      <!-- 2 注文票 -->
+      <rect x="128" y="40" width="104" height="100" rx="6" style="fill:var(--card);stroke:var(--line);stroke-width:2"/>
+      <text x="136" y="58" style="font-size:12px;font-weight:700">② 注文票</text>
+      <rect x="160" y="66" width="36" height="44" rx="2" style="fill:var(--room);stroke:var(--ink);stroke-width:2"/>
+      <line x1="166" y1="78" x2="190" y2="78" style="stroke:var(--sub);stroke-width:2"/>
+      <line x1="166" y1="87" x2="190" y2="87" style="stroke:var(--sub);stroke-width:2"/>
+      <line x1="166" y1="96" x2="182" y2="96" style="stroke:var(--sub);stroke-width:2"/>
+      <line x1="196" y1="108" x2="212" y2="86" style="stroke:var(--roof);stroke-width:5;stroke-linecap:round"/>
+      <text x="180" y="130" text-anchor="middle" style="font-size:9.5px;font-family:var(--f-code)">manual.json</text>
+      <!-- 3 できあがり品 -->
+      <rect x="238" y="40" width="104" height="100" rx="6" style="fill:var(--card);stroke:var(--line);stroke-width:2"/>
+      <text x="246" y="58" style="font-size:12px;font-weight:700">③ できあがり品</text>
+      <use href="#gear" x="270" y="66" width="40" height="40"/>
+      <text x="290" y="118" text-anchor="middle" style="font-size:9px;fill:var(--sub)">機械が作る</text>
+      <text x="290" y="132" text-anchor="middle" style="font-size:9.5px;font-family:var(--f-code)">data.json</text>
+      <!-- 4 張り紙・日誌 -->
+      <rect x="18" y="146" width="104" height="100" rx="6" style="fill:var(--card);stroke:var(--line);stroke-width:2"/>
+      <text x="26" y="164" style="font-size:12px;font-weight:700">④ 張り紙・日誌</text>
+      <use href="#poster" x="52" y="172" width="36" height="42"/>
+      <text x="70" y="236" text-anchor="middle" style="font-size:9.5px;font-family:var(--f-code)">AGENTS.md</text>
+      <!-- 5 試作品 -->
+      <rect x="128" y="146" width="104" height="100" rx="6" style="fill:var(--card);stroke:var(--line);stroke-width:2"/>
+      <text x="136" y="164" style="font-size:12px;font-weight:700">⑤ 試作品</text>
+      <rect x="158" y="174" width="44" height="38" rx="4" style="fill:var(--room);stroke:var(--sub);stroke-width:2;stroke-dasharray:5 4"/>
+      <text x="180" y="199" text-anchor="middle" style="font-size:14px;font-weight:700;fill:var(--sub)">試</text>
+      <text x="180" y="236" text-anchor="middle" style="font-size:9.5px;font-family:var(--f-code)">画面案/</text>
+      <!-- 6 金庫 -->
+      <rect x="238" y="146" width="104" height="100" rx="6" style="fill:var(--room);stroke:var(--ng);stroke-width:2.5;stroke-dasharray:6 4"/>
+      <text x="246" y="164" style="font-size:12px;font-weight:700">⑥ 金庫</text>
+      <rect x="270" y="172" width="40" height="40" rx="4" style="fill:var(--off);stroke:var(--ink);stroke-width:2"/>
+      <circle cx="290" cy="192" r="9" style="fill:var(--card);stroke:var(--ink);stroke-width:2"/>
+      <line x1="290" y1="192" x2="295" y2="187" style="stroke:var(--ink);stroke-width:2"/>
+      <use href="#ngmark" x="300" y="164" width="20" height="20"/>
+      <text x="290" y="236" text-anchor="middle" style="font-size:10px;font-weight:700;fill:var(--ng)">部屋に置かない</text>
+    </svg>
+    <div class="tbl">
+      <table>
+        <thead><tr><th>棚</th><th>たとえると</th><th>AIとの約束</th></tr></thead>
+        <tbody>
+          <tr><td>① 道具</td><td>工具箱</td><td>直してよい</td></tr>
+          <tr><td>② 注文票</td><td>人が書く紙</td><td>人が書く。AIは勝手に書きかえない</td></tr>
+          <tr><td>③ できあがり品</td><td>機械が作った物</td><td><b>手でさわらない</b>。道具を動かせば作り直される</td></tr>
+          <tr><td>④ 張り紙・日誌</td><td>ルールと記録</td><td>最初に読む。分かったことは書き足す</td></tr>
+          <tr><td>⑤ 試作品</td><td>試作の箱</td><td>本番とまぜない。決まったら箱ごと捨てる</td></tr>
+          <tr><td>⑥ 金庫</td><td>合い鍵・暗証番号</td><td><b>部屋に置かない</b></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>この表は、<mark>張り紙（AGENTS.md）に書いておくと効きます。</mark>scrap-news の張り紙の「構成」の表が、まさにこれです。</p>
+  </div>
+</section>
+
+<section>
+  <h2><span class="no">2</span>できあがり品は「さわらない」。でも貯金箱はこわさない</h2>
+  <div class="sheet">
+    <svg viewBox="0 0 360 160" role="img" aria-label="左は機械が data.json を作っている絵で、さわらないの札がある。右は history.json という貯金箱に毎朝コインが入る絵で、こわさないの札がある">
+      <rect x="10" y="30" width="62" height="62" rx="8" style="fill:var(--room);stroke:var(--ink);stroke-width:2"/>
+      <use href="#gear" x="21" y="41" width="40" height="40"/>
+      <text x="41" y="110" text-anchor="middle" style="font-size:10px">毎朝の機械</text>
+      <path d="M78 61 h26 m-8 -7 l8 7 l-8 7" style="fill:none;stroke:var(--ink);stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round"/>
+      <rect x="110" y="34" width="46" height="56" rx="3" style="fill:var(--card);stroke:var(--ink);stroke-width:2"/>
+      <text x="133" y="66" text-anchor="middle" style="font-size:9px;font-family:var(--f-code)">data.json</text>
+      <rect x="96" y="102" width="76" height="24" rx="4" style="fill:var(--ng)"/>
+      <text x="134" y="119" text-anchor="middle" style="font-size:11px;font-weight:700;fill:#ffffff">さわらない</text>
+      <line x1="184" y1="16" x2="184" y2="148" style="stroke:var(--line);stroke-width:2;stroke-dasharray:4 4"/>
+      <ellipse cx="270" cy="68" rx="48" ry="34" style="fill:var(--pig);stroke:var(--ink);stroke-width:2"/>
+      <circle cx="312" cy="66" r="10" style="fill:var(--pig);stroke:var(--ink);stroke-width:2"/>
+      <circle cx="309" cy="64" r="1.6" style="fill:var(--ink)"/>
+      <circle cx="315" cy="64" r="1.6" style="fill:var(--ink)"/>
+      <circle cx="292" cy="54" r="2.5" style="fill:var(--ink)"/>
+      <rect x="258" y="34" width="22" height="4" rx="2" style="fill:var(--ink)"/>
+      <rect x="244" y="96" width="9" height="12" style="fill:var(--pig);stroke:var(--ink);stroke-width:2"/>
+      <rect x="282" y="96" width="9" height="12" style="fill:var(--pig);stroke:var(--ink);stroke-width:2"/>
+      <circle cx="269" cy="16" r="9" style="fill:var(--marker);stroke:var(--ink);stroke-width:2"/>
+      <path d="M269 27 v4" style="stroke:var(--ink);stroke-width:2"/>
+      <text x="270" y="124" text-anchor="middle" style="font-size:9.5px;font-family:var(--f-code)">history.json</text>
+      <rect x="228" y="130" width="84" height="24" rx="4" style="fill:var(--ok)"/>
+      <text x="270" y="147" text-anchor="middle" style="font-size:11px;font-weight:700;fill:#ffffff">こわさない</text>
+    </svg>
+    <p><code>data.json</code> は毎朝、機械が作り直します。手で直しても次の朝には消えるので、張り紙に「自動生成。手で触らない」と書いてあります。</p>
+    <p>ただし例外があります。<code>history.json</code> も機械が作る物ですが、<mark>毎朝1枚ずつコインを入れている貯金箱</mark>のような記録です。消すと3ヶ月分の積み上げがゼロに戻ります。</p>
+    <p>こういう「機械が作るけれど捨ててはいけない物」は、張り紙にはっきり書いておきます。scrap-news では「毎朝コミットして引き継ぐ（消すと積み上げがゼロに戻る）」と書いてあります。</p>
+  </div>
+</section>
+
+<section>
+  <h2><span class="no">3</span>合い鍵は、ガラス張りの部屋に置かない</h2>
+  <div class="sheet">
+    <svg viewBox="0 0 360 160" role="img" aria-label="ガラス張りの公開の部屋の中に鍵が置かれ、外から何人もがのぞいていてバツ。右側では鍵が GitHub の金庫に入っていてマル">
+      <rect x="40" y="30" width="140" height="100" rx="8" style="fill:var(--room);stroke:var(--robot);stroke-width:3;opacity:.9"/>
+      <line x1="60" y1="40" x2="80" y2="60" style="stroke:var(--card);stroke-width:4;stroke-linecap:round"/>
+      <line x1="70" y1="40" x2="85" y2="55" style="stroke:var(--card);stroke-width:2;stroke-linecap:round"/>
+      <text x="110" y="52" text-anchor="middle" style="font-size:10px;font-weight:700">公開の部屋</text>
+      <circle cx="98" cy="90" r="10" style="fill:none;stroke:var(--marker);stroke-width:5"/>
+      <path d="M108 90 h28 v8 m-8 -8 v6" style="fill:none;stroke:var(--marker);stroke-width:5;stroke-linecap:round"/>
+      <circle cx="18" cy="60" r="9" style="fill:var(--off);stroke:var(--ink);stroke-width:2"/>
+      <circle cx="18" cy="96" r="9" style="fill:var(--off);stroke:var(--ink);stroke-width:2"/>
+      <circle cx="110" cy="12" r="9" style="fill:var(--off);stroke:var(--ink);stroke-width:2"/>
+      <circle cx="196" cy="76" r="9" style="fill:var(--off);stroke:var(--ink);stroke-width:2"/>
+      <use href="#ngmark" x="98" y="134" width="24" height="24"/>
+      <line x1="214" y1="16" x2="214" y2="148" style="stroke:var(--line);stroke-width:2;stroke-dasharray:4 4"/>
+      <rect x="250" y="34" width="76" height="74" rx="6" style="fill:var(--off);stroke:var(--ink);stroke-width:2.5"/>
+      <circle cx="288" cy="70" r="16" style="fill:var(--card);stroke:var(--ink);stroke-width:2.5"/>
+      <line x1="288" y1="70" x2="297" y2="61" style="stroke:var(--ink);stroke-width:2.5"/>
+      <rect x="322" y="58" width="6" height="22" rx="2" style="fill:var(--ink)"/>
+      <text x="288" y="124" text-anchor="middle" style="font-size:10px;font-weight:700">GitHubの金庫</text>
+      <text x="288" y="137" text-anchor="middle" style="font-size:9px;fill:var(--sub)">（Secrets）</text>
+      <use href="#okmark" x="276" y="140" width="20" height="20"/>
+    </svg>
+    <p>パスワードや、有料サービスを使うための「鍵」は、部屋（フォルダ）に置きません。</p>
+    <p>scrap-news は<mark>だれでも中をのぞける「公開」の部屋</mark>です。ここに鍵を置くと、世界中に見せてしまいます。前に使っていた Claude API の鍵は、部屋の中ではなく GitHub の金庫（Secrets という設定）に入れていました。この置き方が正解です。</p>
+  </div>
+</section>
+
+<section>
+  <h2><span class="no">4</span>名前は「何をするか」で付ける</h2>
+  <div class="sheet">
+    <div class="names">
+      <div class="ok"><b>○ よい名前</b>
+        <ul>
+          <li><code>collect.py</code>（集める）</li>
+          <li><code>check_data.py</code>（確かめる）</li>
+          <li><code>build_page.py</code>（ページを作る）</li>
+        </ul>
+      </div>
+      <div class="ng"><b>✕ よくない名前</b>
+        <ul>
+          <li><code>新しいファイル.py</code></li>
+          <li><code>最終版_本当に最終.py</code></li>
+          <li><code>collect_old2.py</code></li>
+        </ul>
+      </div>
+    </div>
+    <p>名前を見るだけで役割が分かると、AIは中を開かずに見当をつけられます。<mark>「古い版」や「最終版」をファイル名で残すのはやめましょう。</mark>どれが本物か、AIにも人にも分からなくなります。変更の記録は git が取ってくれます（第5回でくわしく）。</p>
+  </div>
+</section>
+
+<section>
+  <h2><span class="no">5</span>引っ越しは慎重に</h2>
+  <div class="sheet">
+    <svg viewBox="0 0 360 150" role="img" aria-label="collect.py を前の棚から新しい棚に移したが、collect.yml という手紙は前の住所あてのままで、届かずにバツ">
+      <rect x="14" y="34" width="96" height="70" rx="6" style="fill:var(--room);stroke:var(--ink);stroke-width:2"/>
+      <text x="62" y="26" text-anchor="middle" style="font-size:11px;font-weight:700">前の場所</text>
+      <rect x="44" y="50" width="36" height="40" rx="3" style="fill:none;stroke:var(--sub);stroke-width:2;stroke-dasharray:4 3"/>
+      <rect x="250" y="34" width="96" height="70" rx="6" style="fill:var(--lit);stroke:var(--ink);stroke-width:2"/>
+      <text x="298" y="26" text-anchor="middle" style="font-size:11px;font-weight:700">新しい場所</text>
+      <rect x="280" y="50" width="36" height="40" rx="3" style="fill:var(--card);stroke:var(--ink);stroke-width:2"/>
+      <text x="298" y="74" text-anchor="middle" style="font-size:8px;font-family:var(--f-code)">collect</text>
+      <path d="M116 46 C 160 20, 200 20, 244 46" style="fill:none;stroke:var(--sub);stroke-width:2;stroke-dasharray:5 4"/>
+      <text x="180" y="22" text-anchor="middle" style="font-size:10px;fill:var(--sub)">引っ越し</text>
+      <rect x="150" y="96" width="60" height="40" rx="3" style="fill:var(--card);stroke:var(--ink);stroke-width:2"/>
+      <path d="M150 96 l30 20 l30 -20" style="fill:none;stroke:var(--ink);stroke-width:2"/>
+      <text x="180" y="148" text-anchor="middle" style="font-size:9.5px;font-family:var(--f-code)">collect.yml</text>
+      <path d="M146 112 C 130 112, 118 104, 112 92" style="fill:none;stroke:var(--ng);stroke-width:2.5;stroke-linecap:round"/>
+      <use href="#ngmark" x="98" y="104" width="24" height="24"/>
+      <text x="64" y="128" text-anchor="middle" style="font-size:10px;font-weight:700;fill:var(--ng)">見つからない！</text>
+    </svg>
+    <p>棚を並べかえたくなっても、<mark>すでに動いている物をむやみに移さないでください。</mark></p>
+    <p>たとえば <code>collect.py</code> を別のフォルダに移すと、毎朝の自動実行を決めている <code>collect.yml</code> に書いてある「住所」が古いままになり、次の朝に止まります。移すときは、先にAIに聞くのが安全です。</p>
+    <div class="cmd-box"><pre id="cmd1">collect.py を別のフォルダに移したら、ほかのどのファイルの住所を直す必要がありますか？まだ移さずに、一覧だけ出してください。</pre><button class="copy" type="button" data-for="cmd1">コピー</button></div>
+  </div>
+</section>
+
+<section>
+  <h2><span class="no">6</span>やってみよう</h2>
+  <div class="sheet">
+    <p>scrap-news の部屋を開いた Claude Code に、次のように頼んでみてください。自分の部屋の棚がどうなっているか、AIが表にしてくれます。</p>
+    <div class="cmd-box"><pre id="cmd2">このフォルダのファイルを「道具・注文票・できあがり品・張り紙と日誌・試作品・金庫」の6つの棚に分けて表にしてください。さわってはいけない物には印をつけてください。ファイルは変更しないでください。</pre><button class="copy" type="button" data-for="cmd2">コピー</button></div>
+    <p class="hint">最後の「ファイルは変更しないでください」が大事です。見るだけの頼みごとには、これを付けておくと安心です。</p>
+  </div>
+</section>
+
+<section class="sum">
+  <h2>第3回のまとめ</h2>
+  <ol>
+    <li>部屋の中は6つの棚に分けて、棚ごとに約束を決める</li>
+    <li>できあがり品はさわらない。でも積み上げの記録（貯金箱）はこわさない</li>
+    <li>合い鍵は部屋に置かない。公開の部屋ならなおさら</li>
+    <li>名前は「何をするか」で付ける。「最終版」は名前で残さない</li>
+    <li>動いている物の引っ越しは、先にAIに影響を聞いてから</li>
+  </ol>
+</section>
+
+<section>
+  <h2>たしかめクイズ</h2>
+  <p class="hint">それぞれ、6つの棚のどれに入るか考えてから押してください。</p>
+  <details>
+    <summary><span class="q">Q1</span><code>history.json</code></summary>
+    <div class="ans"><b>③ できあがり品。でも「貯金箱」の特別あつかい。</b>機械が作りますが、毎朝積み上げている記録なので、消したりこわしたりしてはいけません。</div>
+  </details>
+  <details>
+    <summary><span class="q">Q2</span><code>携帯用.html</code>（<code>build_page.py</code> が作る）</summary>
+    <div class="ans"><b>③ できあがり品。</b>道具を動かせば何度でも作り直せます。だから scrap-news では、git の記録にも入れない設定（<code>.gitignore</code>）にしてあります。</div>
+  </details>
+  <details>
+    <summary><span class="q">Q3</span><code>画面案/案C_朝1分.html</code></summary>
+    <div class="ans"><b>⑤ 試作品。</b>本番の画面（<code>index.html</code>）とはまぜずに、箱（<code>画面案/</code>）の中にしまってあります。採用が決まったら箱ごと片付けます。</div>
+  </details>
+  <details>
+    <summary><span class="q">Q4</span>銀行のパスワードを書いたメモ</summary>
+    <div class="ans"><b>⑥ 金庫。つまり部屋に置かない。</b>AIの部屋にも、公開の部屋にも入れません。</div>
+  </details>
+</section>
+
+<p class="next">次回（第4回）は「張り紙の書き方」。AIが読む入口ファイルに何をどう書くかです。</p>
+
+</div>
+
+<script>
+document.querySelectorAll('.copy').forEach(function(btn){
+  btn.addEventListener('click',function(){
+    var el=document.getElementById(btn.dataset.for), text=el.textContent;
+    function done(){btn.textContent='コピーしました';setTimeout(function(){btn.textContent='コピー'},1800)}
+    function fallback(){var r=document.createRange();r.selectNodeContents(el);var s=getSelection();s.removeAllRanges();s.addRange(r);btn.textContent='選択しました'}
+    try{navigator.clipboard.writeText(text).then(done,fallback)}catch(e){fallback()}
+  });
+});
+</script>

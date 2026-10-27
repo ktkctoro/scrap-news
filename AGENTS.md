@@ -104,7 +104,8 @@ Bingを読むときの注意は `引き継ぎ書.md` §4 にまとめてある�
 - 日経平均・NYダウ: Yahoo!ファイナンス(米国版)の公開データ（^N225 / ^DJI）
 - 基板買取: K&Yシステムの公開価格表 https://www.k-y-system.jp/trader/list/
   （品目は collect.py の KYS_ITEMS で指定。ページ上の表記そのまま＝全角半角も同じに書く。
-  前回比は前回の data.json との差。data.json では boards キー）
+  前回比は history.json の前の日の値との差。記録がまだ無い品目だけ前回の data.json と比べる。
+  data.json では boards キー）
 - 手入力(manual.json)はいまは空。足したい価格が出てきたら書けば表示される
 - 取れなかった朝は前回の `data.json` の値を使い回す（建値は毎日変わらないため実用上足りる）
 - 読み取りは正規表現。ページの作りが変わると壊れるので、桁違いの数字を拾ったら
