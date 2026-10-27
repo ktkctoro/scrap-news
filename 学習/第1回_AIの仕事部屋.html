@@ -1,0 +1,309 @@
+<title>AIの仕事部屋</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@700;900&family=BIZ+UDPGothic:wght@400;700&family=BIZ+UDGothic&display=swap">
+<style>
+/* レイアウト: 方眼ノートの1枚。1列で上から読む。絵 → 説明 の順をくり返す */
+:root{
+  --paper:#f4f8fc; --grid:#dde8f3; --card:#ffffff; --ink:#1d2b3a; --sub:#5a6b7d;
+  --marker:#ffe066; --lit:#fff3b8; --room:#eef3f8; --off:#c9d3de; --wall:#ffffff; --roof:#c75b3f;
+  --robot:#7cb4e6; --face:#1f3a5c; --eye:#a8f0ff; --ok:#23915a; --ng:#d4473a; --line:#b9c8d8;
+  --f-head:"Zen Maru Gothic","Hiragino Maru Gothic ProN","Meiryo",sans-serif;
+  --f-body:"BIZ UDPGothic","Hiragino Sans","Meiryo",sans-serif;
+  --f-code:"BIZ UDGothic",Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#141e2a; --grid:#1c2938; --card:#1b2735; --ink:#e7eef6; --sub:#9db0c4;
+  --marker:#d9b92e; --lit:#5a4f1e; --room:#223142; --off:#0e1620; --wall:#1f2d3c; --roof:#a64a34;
+  --robot:#6aa6dc; --face:#0d1a2a; --eye:#8fe8ff; --ok:#56c98a; --ng:#ff7b6b; --line:#36475a; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#141e2a; --grid:#1c2938; --card:#1b2735; --ink:#e7eef6; --sub:#9db0c4;
+  --marker:#d9b92e; --lit:#5a4f1e; --room:#223142; --off:#0e1620; --wall:#1f2d3c; --roof:#a64a34;
+  --robot:#6aa6dc; --face:#0d1a2a; --eye:#8fe8ff; --ok:#56c98a; --ng:#ff7b6b; --line:#36475a; color-scheme:dark}
+
+body{background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.85;
+  background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+  background-size:24px 24px}
+.wrap{max-width:720px;margin:0 auto;padding-block:28px 64px;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
+  display:flex;flex-direction:column;gap:36px}
+h1,h2,h3{font-family:var(--f-head);text-wrap:balance;line-height:1.4;margin:0}
+h1{font-size:1.9rem;font-weight:900}
+h2{font-size:1.35rem;font-weight:900;display:flex;gap:10px;align-items:baseline}
+h2 .no{font-size:.85rem;color:var(--sub);letter-spacing:.08em;flex:none}
+h3{font-size:1.05rem}
+p{margin:0}
+.eyebrow{font-family:var(--f-head);font-size:.85rem;letter-spacing:.12em;color:var(--sub)}
+mark{background:linear-gradient(transparent 55%,var(--marker) 55%);color:inherit;padding:0 2px}
+section{display:flex;flex-direction:column;gap:14px}
+.sheet{background:var(--card);border:2px solid var(--line);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:12px}
+.big{font-family:var(--f-head);font-size:1.35rem;font-weight:900;line-height:1.6}
+svg{display:block;width:100%;height:auto;max-width:100%}
+svg text{font-family:var(--f-body);fill:var(--ink)}
+.legend{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:.92rem;color:var(--sub)}
+.legend b{color:var(--ink)}
+.three{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+@media (max-width:640px){.three{grid-template-columns:1fr}}
+.panel{background:var(--card);border:2px solid var(--line);border-radius:14px;padding:12px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.panel.good{border-color:var(--ok)}
+.tag{align-self:flex-start;font-family:var(--f-head);font-weight:700;font-size:.85rem;padding:2px 10px;border-radius:99px;color:var(--card)}
+.tag.ng{background:var(--ng)} .tag.ok{background:var(--ok)}
+.panel h3{font-size:1rem}
+.panel p{font-size:.92rem;line-height:1.7}
+code,.cmd{font-family:var(--f-code)}
+code{background:var(--room);padding:1px 6px;border-radius:5px;font-size:.92em}
+.cmd-box{display:flex;gap:8px;align-items:stretch;background:var(--face);border-radius:10px;padding:10px 10px 10px 14px}
+.cmd-box pre{margin:0;flex:1;min-width:0;overflow-x:auto;color:#e9f4ff;font-family:var(--f-code);font-size:.95rem;line-height:1.7}
+.copy{flex:none;font:inherit;font-size:.85rem;border:0;border-radius:8px;padding:4px 12px;background:var(--marker);color:#1d2b3a;cursor:pointer;font-family:var(--f-head);font-weight:700}
+.copy:focus-visible,summary:focus-visible{outline:3px solid var(--robot);outline-offset:2px}
+ol.steps{margin:0;padding-left:1.4em;display:flex;flex-direction:column;gap:6px}
+.sum{background:var(--lit);border-radius:14px;padding:18px 20px;display:flex;flex-direction:column;gap:8px}
+.sum ol{margin:0;padding-left:1.4em;font-weight:700;display:flex;flex-direction:column;gap:4px}
+details{background:var(--card);border:2px solid var(--line);border-radius:12px;padding:12px 16px}
+summary{cursor:pointer;font-weight:700;list-style:none;display:flex;gap:10px}
+summary::-webkit-details-marker{display:none}
+summary .q{font-family:var(--f-head);color:var(--robot);flex:none}
+details[open] summary{margin-bottom:8px}
+.ans{border-top:2px dashed var(--line);padding-top:8px}
+.ans b{color:var(--ok)}
+.hint{font-size:.85rem;color:var(--sub)}
+.next{font-size:.92rem;color:var(--sub);text-align:center}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="robot" viewBox="0 0 60 72">
+      <line x1="30" y1="5" x2="30" y2="15" style="stroke:var(--ink);stroke-width:2.5"/>
+      <circle cx="30" cy="5" r="4" style="fill:var(--marker);stroke:var(--ink);stroke-width:2"/>
+      <rect x="9" y="15" width="42" height="30" rx="9" style="fill:var(--robot);stroke:var(--ink);stroke-width:2.5"/>
+      <rect x="15" y="21" width="30" height="17" rx="6" style="fill:var(--face)"/>
+      <circle cx="23" cy="29.5" r="3.6" style="fill:var(--eye)"/>
+      <circle cx="37" cy="29.5" r="3.6" style="fill:var(--eye)"/>
+      <rect x="14" y="47" width="32" height="22" rx="7" style="fill:var(--robot);stroke:var(--ink);stroke-width:2.5"/>
+      <circle cx="30" cy="58" r="3.5" style="fill:var(--marker)"/>
+    </symbol>
+    <symbol id="poster" viewBox="0 0 40 46">
+      <rect x="1.5" y="1.5" width="37" height="43" rx="3" style="fill:var(--card);stroke:var(--ink);stroke-width:2"/>
+      <rect x="8" y="8" width="24" height="5" rx="2" style="fill:var(--marker)"/>
+      <line x1="8" y1="20" x2="32" y2="20" style="stroke:var(--sub);stroke-width:2"/>
+      <line x1="8" y1="27" x2="32" y2="27" style="stroke:var(--sub);stroke-width:2"/>
+      <line x1="8" y1="34" x2="25" y2="34" style="stroke:var(--sub);stroke-width:2"/>
+    </symbol>
+  </defs>
+</svg>
+
+<div class="wrap">
+
+<header style="display:flex;flex-direction:column;gap:10px">
+  <div class="eyebrow">AIのためのフォルダ設計　第1回</div>
+  <h1>AIは「開けた部屋」の中しか見ない</h1>
+  <p>Claude Code や Codex に仕事を頼むとき、最初にかならず「フォルダ」を開きます。じつは<mark>どのフォルダを開くかで、AIの仕事の出来が大きく変わります。</mark>今回はそのわけを、家と部屋にたとえて説明します。</p>
+</header>
+
+<section>
+  <h2><span class="no">1</span>パソコンは「家」、フォルダは「部屋」</h2>
+  <div class="sheet">
+    <svg viewBox="0 0 360 250" role="img" aria-label="家の絵。4つの部屋のうち scrap-news の部屋だけ明かりがついていて、ロボットがいる。ほかの3部屋は暗い">
+      <polygon points="18,84 180,14 342,84" style="fill:var(--roof);stroke:var(--ink);stroke-width:2.5;stroke-linejoin:round"/>
+      <text x="180" y="66" text-anchor="middle" style="font-size:14px;font-weight:700;fill:#ffffff">あなたのパソコン</text>
+      <rect x="30" y="84" width="300" height="152" style="fill:var(--wall);stroke:var(--ink);stroke-width:2.5"/>
+      <!-- 暗い部屋 -->
+      <rect x="42" y="96" width="132" height="62" rx="4" style="fill:var(--off)"/>
+      <text x="108" y="124" text-anchor="middle" style="font-size:13px;font-weight:700">デスクトップ</text>
+      <text x="108" y="144" text-anchor="middle" style="font-size:11px;fill:var(--sub)">（見えない）</text>
+      <rect x="186" y="96" width="132" height="62" rx="4" style="fill:var(--off)"/>
+      <text x="252" y="124" text-anchor="middle" style="font-size:13px;font-weight:700">写真</text>
+      <text x="252" y="144" text-anchor="middle" style="font-size:11px;fill:var(--sub)">（見えない）</text>
+      <rect x="42" y="166" width="132" height="62" rx="4" style="fill:var(--off)"/>
+      <text x="108" y="194" text-anchor="middle" style="font-size:13px;font-weight:700">経理</text>
+      <text x="108" y="214" text-anchor="middle" style="font-size:11px;fill:var(--sub)">（見えない）</text>
+      <!-- 明るい部屋 -->
+      <rect x="186" y="166" width="132" height="62" rx="4" style="fill:var(--lit);stroke:var(--marker);stroke-width:3"/>
+      <text x="196" y="186" style="font-size:13px;font-weight:700">scrap-news</text>
+      <text x="196" y="206" style="font-size:11px;fill:var(--sub)">ここを開いた</text>
+      <use href="#robot" x="272" y="170" width="40" height="52"/>
+    </svg>
+    <div class="legend">
+      <span><b>家</b> ＝ パソコン</span>
+      <span><b>部屋</b> ＝ フォルダ</span>
+      <span><b>ロボット</b> ＝ AI（Claude Code・Codex）</span>
+    </div>
+    <p class="big">AIは、あなたが開けた<mark>1つの部屋の中だけ</mark>で働きます。</p>
+    <p>その部屋の中にある物は、読んだり書き直したりします。ほかの部屋は暗くて見えないので、基本的にさわりません。</p>
+  </div>
+</section>
+
+<section>
+  <h2><span class="no">2</span>部屋の選び方で、こんなに変わる</h2>
+  <p>同じAIに同じ仕事を頼んでも、どの部屋に入れるかで結果がちがいます。3つの場合をくらべてみます。</p>
+  <div class="three">
+
+    <div class="panel">
+      <span class="tag ng">広すぎ</span>
+      <svg viewBox="0 0 200 160" role="img" aria-label="散らかった広い部屋で、ロボットがはてなマークを出して迷っている">
+        <rect x="6" y="6" width="188" height="148" rx="8" style="fill:var(--room);stroke:var(--ink);stroke-width:2"/>
+        <rect x="16" y="18" width="46" height="24" rx="3" transform="rotate(-8 39 30)" style="fill:var(--card);stroke:var(--line);stroke-width:2"/>
+        <text x="39" y="35" text-anchor="middle" transform="rotate(-8 39 30)" style="font-size:10px">写真</text>
+        <rect x="74" y="14" width="52" height="24" rx="3" transform="rotate(5 100 26)" style="fill:var(--card);stroke:var(--line);stroke-width:2"/>
+        <text x="100" y="31" text-anchor="middle" transform="rotate(5 100 26)" style="font-size:10px">年賀状</text>
+        <rect x="134" y="20" width="52" height="24" rx="3" transform="rotate(-4 160 32)" style="fill:var(--card);stroke:var(--line);stroke-width:2"/>
+        <text x="160" y="37" text-anchor="middle" transform="rotate(-4 160 32)" style="font-size:10px">ゲーム</text>
+        <rect x="14" y="56" width="58" height="24" rx="3" transform="rotate(6 43 68)" style="fill:var(--card);stroke:var(--line);stroke-width:2"/>
+        <text x="43" y="73" text-anchor="middle" transform="rotate(6 43 68)" style="font-size:10px">scrap-news</text>
+        <rect x="128" y="58" width="60" height="26" rx="3" transform="rotate(-6 158 71)" style="fill:var(--card);stroke:var(--ng);stroke-width:2.5"/>
+        <text x="158" y="76" text-anchor="middle" transform="rotate(-6 158 71)" style="font-size:10px;font-weight:700;fill:var(--ng)">大事な書類</text>
+        <use href="#robot" x="76" y="88" width="48" height="58"/>
+        <text x="132" y="112" style="font-size:20px;font-weight:700;fill:var(--ng)">？？</text>
+      </svg>
+      <h3>デスクトップ全体を開いた</h3>
+      <p>関係ない物まで目に入って、AIが迷います。さわってほしくない「大事な書類」にも手が届いてしまいます。</p>
+    </div>
+
+    <div class="panel good">
+      <span class="tag ok">ちょうどいい</span>
+      <svg viewBox="0 0 200 160" role="img" aria-label="片付いた部屋。壁に張り紙があり、棚にファイルが並んでいる。ロボットは張り紙を読んでいる">
+        <rect x="6" y="6" width="188" height="148" rx="8" style="fill:var(--lit);stroke:var(--ink);stroke-width:2"/>
+        <use href="#poster" x="16" y="16" width="38" height="44"/>
+        <text x="35" y="74" text-anchor="middle" style="font-size:9px;font-weight:700">ルールの紙</text>
+        <line x1="70" y1="52" x2="186" y2="52" style="stroke:var(--ink);stroke-width:2.5"/>
+        <rect x="72" y="22" width="34" height="30" rx="2" style="fill:var(--card);stroke:var(--line);stroke-width:2"/>
+        <rect x="110" y="22" width="34" height="30" rx="2" style="fill:var(--card);stroke:var(--line);stroke-width:2"/>
+        <rect x="148" y="22" width="34" height="30" rx="2" style="fill:var(--card);stroke:var(--line);stroke-width:2"/>
+        <text x="89" y="41" text-anchor="middle" style="font-size:8px">集める</text>
+        <text x="127" y="41" text-anchor="middle" style="font-size:8px">データ</text>
+        <text x="165" y="41" text-anchor="middle" style="font-size:8px">画面</text>
+        <use href="#robot" x="64" y="86" width="50" height="60"/>
+        <path d="M118 104 l8 8 l16 -18" style="fill:none;stroke:var(--ok);stroke-width:5;stroke-linecap:round;stroke-linejoin:round"/>
+      </svg>
+      <h3>scrap-news を開いた</h3>
+      <p>この仕事の物だけがそろっています。壁の「ルールの紙」も読めるので、決まりを守って作業できます。</p>
+    </div>
+
+    <div class="panel">
+      <span class="tag ng">せますぎ</span>
+      <svg viewBox="0 0 200 160" role="img" aria-label="押し入れのようなせまい場所にロボットが閉じこめられ、ルールの紙は外の壁にあって見えない">
+        <rect x="6" y="6" width="188" height="148" rx="8" style="fill:var(--off);stroke:var(--line);stroke-width:2;stroke-dasharray:6 5"/>
+        <use href="#poster" x="16" y="18" width="38" height="44" style="opacity:.45"/>
+        <text x="35" y="76" text-anchor="middle" style="font-size:9px;fill:var(--sub)">ルールの紙</text>
+        <rect x="16" y="90" width="44" height="22" rx="2" style="fill:var(--card);stroke:var(--line);stroke-width:2;opacity:.5"/>
+        <text x="38" y="105" text-anchor="middle" style="font-size:8px;fill:var(--sub)">集める</text>
+        <rect x="104" y="30" width="78" height="118" rx="4" style="fill:var(--lit);stroke:var(--ink);stroke-width:2.5"/>
+        <text x="143" y="48" text-anchor="middle" style="font-size:10px;font-weight:700">画面案</text>
+        <use href="#robot" x="117" y="72" width="52" height="64"/>
+        <text x="64" y="138" text-anchor="middle" style="font-size:10px;font-weight:700;fill:var(--ng)">説明書は</text>
+        <text x="64" y="151" text-anchor="middle" style="font-size:10px;font-weight:700;fill:var(--ng)">どこ？</text>
+      </svg>
+      <h3>scrap-news の中の「画面案」だけを開いた</h3>
+      <p>せまい押し入れに入れられた状態です。外の壁にある「ルールの紙」も、データを集める仕組みも見えません。何も知らないまま作業してしまいます。</p>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <h2><span class="no">3</span>部屋の「張り紙」は、AIの記憶の代わり</h2>
+  <div class="sheet">
+    <p>AIには、もう1つ大事なクセがあります。<mark>AIは、前の日に話したことを覚えていません。</mark>毎回、初めてその部屋に入る人と同じです。</p>
+    <p>そこで役に立つのが、部屋の入口に張っておく「ルールの紙」です。AIは部屋に入ると、まずこの紙を読みます。</p>
+    <svg viewBox="0 0 360 150" role="img" aria-label="ロボットが部屋の入口でルールの紙を読んでいる。紙には AGENTS.md と CLAUDE.md と書いてある">
+      <rect x="10" y="10" width="340" height="130" rx="10" style="fill:var(--lit);stroke:var(--ink);stroke-width:2"/>
+      <rect x="22" y="40" width="40" height="100" style="fill:var(--wall);stroke:var(--ink);stroke-width:2"/>
+      <text x="42" y="32" text-anchor="middle" style="font-size:11px;fill:var(--sub)">入口</text>
+      <use href="#poster" x="84" y="26" width="64" height="74"/>
+      <text x="116" y="118" text-anchor="middle" style="font-size:11px;font-weight:700">AGENTS.md</text>
+      <text x="116" y="133" text-anchor="middle" style="font-size:11px;font-weight:700">CLAUDE.md</text>
+      <use href="#robot" x="176" y="44" width="70" height="84"/>
+      <path d="M252 46 h92 a8 8 0 0 1 8 8 v34 a8 8 0 0 1 -8 8 h-80 l-12 12 v-12 a8 8 0 0 1 -8 -8 v-34 a8 8 0 0 1 8 -8 z" transform="translate(-8 -10)" style="fill:var(--card);stroke:var(--ink);stroke-width:2"/>
+      <text x="296" y="58" text-anchor="middle" style="font-size:11px">なるほど、</text>
+      <text x="296" y="74" text-anchor="middle" style="font-size:11px">日本語で説明して、</text>
+      <text x="296" y="90" text-anchor="middle" style="font-size:11px">お金はかけないのね</text>
+    </svg>
+    <p>scrap-news の部屋には、<code>AGENTS.md</code>（Codex が読む紙）と <code>CLAUDE.md</code>（Claude Code が読む紙）が張ってあります。「説明は日本語で」「お金のかかるものは足さない」といった決まりが書いてあります。</p>
+    <p>ここで大事なのは、<mark>AIが読むのは「開けた部屋」の張り紙だということ</mark>です。部屋をまちがえると、別の仕事の決まりを読んでしまいます。</p>
+  </div>
+</section>
+
+<section>
+  <h2><span class="no">4</span>本当にあった失敗</h2>
+  <div class="sheet">
+    <svg viewBox="0 0 360 170" role="img" aria-label="ロボットが動画づくりの部屋に立ったまま、となりの scrap-news の部屋のファイルに手をのばしている。読んでいるのは動画の部屋の張り紙">
+      <rect x="10" y="22" width="168" height="138" rx="8" style="fill:var(--lit);stroke:var(--ink);stroke-width:2"/>
+      <rect x="182" y="22" width="168" height="138" rx="8" style="fill:var(--room);stroke:var(--ink);stroke-width:2"/>
+      <text x="94" y="16" text-anchor="middle" style="font-size:12px;font-weight:700">vlog-maker（動画の仕事）</text>
+      <text x="266" y="16" text-anchor="middle" style="font-size:12px;font-weight:700">scrap-news</text>
+      <use href="#poster" x="22" y="34" width="44" height="50"/>
+      <text x="44" y="98" text-anchor="middle" style="font-size:9px">動画のルール</text>
+      <use href="#poster" x="292" y="34" width="44" height="50" style="opacity:.45"/>
+      <text x="314" y="98" text-anchor="middle" style="font-size:9px;fill:var(--sub)">ニュースのルール</text>
+      <use href="#robot" x="90" y="70" width="64" height="78"/>
+      <line x1="146" y1="122" x2="232" y2="122" style="stroke:var(--robot);stroke-width:7;stroke-linecap:round"/>
+      <line x1="146" y1="122" x2="232" y2="122" style="stroke:var(--ink);stroke-width:1.5;stroke-dasharray:2 0"/>
+      <rect x="230" y="108" width="40" height="30" rx="3" style="fill:var(--card);stroke:var(--line);stroke-width:2"/>
+      <text x="250" y="127" text-anchor="middle" style="font-size:8px">collect</text>
+      <circle cx="320" cy="134" r="14" style="fill:var(--ng)"/>
+      <path d="M313 127 l14 14 M327 127 l-14 14" style="stroke:#ffffff;stroke-width:3;stroke-linecap:round"/>
+    </svg>
+    <p>前に、<b>動画の仕事（vlog-maker）の部屋を開いたまま</b>、となりの scrap-news の物をさわっていたことがありました。</p>
+    <p>するとAIは、<mark>動画の部屋の張り紙</mark>を読んで、その決まりのまま scrap-news の作業をしてしまいました。ニュースの部屋の張り紙は、一度も読まれていませんでした。</p>
+    <p>それからは「かならず scrap-news の部屋を開いてから始める」と決めています（<code>引き継ぎ書.md</code> の §0 に書いてあります）。</p>
+  </div>
+</section>
+
+<section>
+  <h2><span class="no">5</span>正しい部屋の開け方</h2>
+  <div class="sheet">
+    <h3>Claude のアプリから開くとき</h3>
+    <ol class="steps">
+      <li>新しく始めるときに「フォルダを選ぶ」画面が出ます</li>
+      <li><code>scrap-news</code> フォルダを選びます（デスクトップや、その中の <code>画面案</code> ではなく）</li>
+    </ol>
+    <h3>黒い画面（PowerShell）から開くとき</h3>
+    <p>1行ずつ貼りつけて Enter を押します。</p>
+    <div class="cmd-box"><pre id="cmd1">cd "$env:USERPROFILE\scrap-news"
+claude</pre><button class="copy" type="button" data-for="cmd1">コピー</button></div>
+    <p class="hint">Codex を使うときは、2行目の <code>claude</code> を <code>codex</code> に変えます。1行目の「部屋に入る」ところは同じです。</p>
+  </div>
+</section>
+
+<section class="sum">
+  <h2>第1回のまとめ</h2>
+  <ol>
+    <li>AIは、開けたフォルダ（部屋）の中だけで働く</li>
+    <li>広すぎると迷い、せますぎると何も知らないまま作業する</li>
+    <li>AIは前の日のことを忘れる。部屋の「ルールの紙」が記憶の代わり</li>
+    <li>だから、いつも「その仕事の部屋」をまるごと開いてから頼む</li>
+  </ol>
+</section>
+
+<section>
+  <h2>たしかめクイズ</h2>
+  <p class="hint">問題を押すと答えが出ます。</p>
+  <details>
+    <summary><span class="q">Q1</span>経理の表をAIに直してもらいたい。開くのはどれ？　ア：デスクトップ全体　イ：経理のフォルダ　ウ：scrap-news</summary>
+    <div class="ans"><b>イ：経理のフォルダ</b>。その仕事の部屋だけを開きます。ア は広すぎ、ウ は別の仕事の部屋です。</div>
+  </details>
+  <details>
+    <summary><span class="q">Q2</span>scrap-news の中の「画面案」フォルダだけを開いて「画面を作り直して」と頼んだ。何が困る？</summary>
+    <div class="ans">部屋の外にある <b>ルールの紙（AGENTS.md）や、データを集める仕組みが見えない</b>ことです。決まりを知らないまま作り直してしまいます。scrap-news をまるごと開いてから「画面案を見て」と頼みます。</div>
+  </details>
+  <details>
+    <summary><span class="q">Q3</span>AIは、きのう話したことを覚えている？</summary>
+    <div class="ans"><b>覚えていません。</b>だから、覚えておいてほしいことは部屋の「ルールの紙」や <code>引き継ぎ書.md</code> に書いておきます。</div>
+  </details>
+</section>
+
+<p class="next">次回（第2回）は「家のどこに部屋を作るか」。パソコン全体の置き場所の決め方です。</p>
+
+</div>
+
+<script>
+document.querySelectorAll('.copy').forEach(function(btn){
+  btn.addEventListener('click',function(){
+    var el=document.getElementById(btn.dataset.for), text=el.textContent;
+    function done(){btn.textContent='コピーしました';setTimeout(function(){btn.textContent='コピー'},1800)}
+    function fallback(){var r=document.createRange();r.selectNodeContents(el);var s=getSelection();s.removeAllRanges();s.addRange(r);btn.textContent='選択しました'}
+    try{navigator.clipboard.writeText(text).then(done,fallback)}catch(e){fallback()}
+  });
+});
+</script>
