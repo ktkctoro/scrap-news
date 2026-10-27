@@ -1,0 +1,330 @@
+<title>AIの階をつくる</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@700;900&family=BIZ+UDPGothic:wght@400;700&family=BIZ+UDGothic&display=swap">
+<style>
+/* レイアウト: 第1回と同じ方眼ノート。1列で上から読む。絵 → 説明 の順をくり返す */
+:root{
+  --paper:#f4f8fc; --grid:#dde8f3; --card:#ffffff; --ink:#1d2b3a; --sub:#5a6b7d;
+  --marker:#ffe066; --lit:#fff3b8; --room:#eef3f8; --off:#c9d3de; --wall:#ffffff; --roof:#c75b3f;
+  --robot:#7cb4e6; --face:#1f3a5c; --eye:#a8f0ff; --ok:#23915a; --ng:#d4473a; --line:#b9c8d8;
+  --f-head:"Zen Maru Gothic","Hiragino Maru Gothic ProN","Meiryo",sans-serif;
+  --f-body:"BIZ UDPGothic","Hiragino Sans","Meiryo",sans-serif;
+  --f-code:"BIZ UDGothic",Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#141e2a; --grid:#1c2938; --card:#1b2735; --ink:#e7eef6; --sub:#9db0c4;
+  --marker:#d9b92e; --lit:#5a4f1e; --room:#223142; --off:#0e1620; --wall:#1f2d3c; --roof:#a64a34;
+  --robot:#6aa6dc; --face:#0d1a2a; --eye:#8fe8ff; --ok:#56c98a; --ng:#ff7b6b; --line:#36475a; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#141e2a; --grid:#1c2938; --card:#1b2735; --ink:#e7eef6; --sub:#9db0c4;
+  --marker:#d9b92e; --lit:#5a4f1e; --room:#223142; --off:#0e1620; --wall:#1f2d3c; --roof:#a64a34;
+  --robot:#6aa6dc; --face:#0d1a2a; --eye:#8fe8ff; --ok:#56c98a; --ng:#ff7b6b; --line:#36475a; color-scheme:dark}
+
+body{background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.85;
+  background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+  background-size:24px 24px}
+.wrap{max-width:720px;margin:0 auto;padding-block:28px 64px;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
+  display:flex;flex-direction:column;gap:36px}
+h1,h2,h3{font-family:var(--f-head);text-wrap:balance;line-height:1.4;margin:0}
+h1{font-size:1.9rem;font-weight:900}
+h2{font-size:1.35rem;font-weight:900;display:flex;gap:10px;align-items:baseline}
+h2 .no{font-size:.85rem;color:var(--sub);letter-spacing:.08em;flex:none}
+h3{font-size:1.05rem}
+p{margin:0}
+.eyebrow{font-family:var(--f-head);font-size:.85rem;letter-spacing:.12em;color:var(--sub)}
+mark{background:linear-gradient(transparent 55%,var(--marker) 55%);color:inherit;padding:0 2px}
+section{display:flex;flex-direction:column;gap:14px}
+.sheet{background:var(--card);border:2px solid var(--line);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:12px}
+.big{font-family:var(--f-head);font-size:1.35rem;font-weight:900;line-height:1.6}
+svg{display:block;width:100%;height:auto;max-width:100%}
+svg text{font-family:var(--f-body);fill:var(--ink)}
+.legend{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:.92rem;color:var(--sub)}
+.legend b{color:var(--ink)}
+.four{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+@media (max-width:560px){.four{grid-template-columns:1fr}}
+.panel{background:var(--card);border:2px solid var(--line);border-radius:14px;padding:12px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.panel h3{font-size:1rem;display:flex;gap:8px;align-items:baseline}
+.panel h3 .n{font-family:var(--f-head);color:var(--robot);flex:none}
+.panel p{font-size:.92rem;line-height:1.7}
+code,.cmd{font-family:var(--f-code)}
+code{background:var(--room);padding:1px 6px;border-radius:5px;font-size:.92em;overflow-wrap:anywhere}
+.cmd-box{display:flex;gap:8px;align-items:stretch;background:var(--face);border-radius:10px;padding:10px 10px 10px 14px}
+.cmd-box pre{margin:0;flex:1;min-width:0;overflow-x:auto;color:#e9f4ff;font-family:var(--f-code);font-size:.95rem;line-height:1.7}
+.copy{flex:none;align-self:flex-start;font-size:.85rem;border:0;border-radius:8px;padding:4px 12px;background:var(--marker);color:#1d2b3a;cursor:pointer;font-family:var(--f-head);font-weight:700}
+.copy:focus-visible,summary:focus-visible{outline:3px solid var(--robot);outline-offset:2px}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.92rem;line-height:1.6}
+th,td{border-bottom:2px solid var(--line);padding:8px 6px;text-align:left;vertical-align:top}
+th{font-family:var(--f-head);color:var(--sub);font-weight:700;white-space:nowrap}
+td:first-child{font-weight:700;white-space:nowrap}
+ol.steps{margin:0;padding-left:1.4em;display:flex;flex-direction:column;gap:14px}
+.sum{background:var(--lit);border-radius:14px;padding:18px 20px;display:flex;flex-direction:column;gap:8px}
+.sum ol{margin:0;padding-left:1.4em;font-weight:700;display:flex;flex-direction:column;gap:4px}
+details{background:var(--card);border:2px solid var(--line);border-radius:12px;padding:12px 16px}
+summary{cursor:pointer;font-weight:700;list-style:none;display:flex;gap:10px}
+summary::-webkit-details-marker{display:none}
+summary .q{font-family:var(--f-head);color:var(--robot);flex:none}
+details[open] summary{margin-bottom:8px}
+.ans{border-top:2px dashed var(--line);padding-top:8px}
+.ans b.ok{color:var(--ok)} .ans b.ng{color:var(--ng)}
+.hint{font-size:.85rem;color:var(--sub)}
+.next{font-size:.92rem;color:var(--sub);text-align:center}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="robot" viewBox="0 0 60 72">
+      <line x1="30" y1="5" x2="30" y2="15" style="stroke:var(--ink);stroke-width:2.5"/>
+      <circle cx="30" cy="5" r="4" style="fill:var(--marker);stroke:var(--ink);stroke-width:2"/>
+      <rect x="9" y="15" width="42" height="30" rx="9" style="fill:var(--robot);stroke:var(--ink);stroke-width:2.5"/>
+      <rect x="15" y="21" width="30" height="17" rx="6" style="fill:var(--face)"/>
+      <circle cx="23" cy="29.5" r="3.6" style="fill:var(--eye)"/>
+      <circle cx="37" cy="29.5" r="3.6" style="fill:var(--eye)"/>
+      <rect x="14" y="47" width="32" height="22" rx="7" style="fill:var(--robot);stroke:var(--ink);stroke-width:2.5"/>
+      <circle cx="30" cy="58" r="3.5" style="fill:var(--marker)"/>
+    </symbol>
+    <symbol id="poster" viewBox="0 0 40 46">
+      <rect x="1.5" y="1.5" width="37" height="43" rx="3" style="fill:var(--card);stroke:var(--ink);stroke-width:2"/>
+      <rect x="8" y="8" width="24" height="5" rx="2" style="fill:var(--marker)"/>
+      <line x1="8" y1="20" x2="32" y2="20" style="stroke:var(--sub);stroke-width:2"/>
+      <line x1="8" y1="27" x2="32" y2="27" style="stroke:var(--sub);stroke-width:2"/>
+      <line x1="8" y1="34" x2="25" y2="34" style="stroke:var(--sub);stroke-width:2"/>
+    </symbol>
+    <symbol id="okmark" viewBox="0 0 30 30">
+      <circle cx="15" cy="15" r="14" style="fill:var(--ok)"/>
+      <path d="M8 15 l5 5 l9 -10" style="fill:none;stroke:#ffffff;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:round"/>
+    </symbol>
+    <symbol id="ngmark" viewBox="0 0 30 30">
+      <circle cx="15" cy="15" r="14" style="fill:var(--ng)"/>
+      <path d="M9 9 l12 12 M21 9 l-12 12" style="stroke:#ffffff;stroke-width:3.5;stroke-linecap:round"/>
+    </symbol>
+  </defs>
+</svg>
+
+<div class="wrap">
+
+<header style="display:flex;flex-direction:column;gap:10px">
+  <div class="eyebrow">AIのためのフォルダ設計　第2回</div>
+  <h1>家の中に「AIの階」をつくる</h1>
+  <p>第1回では「AIは開けた部屋（フォルダ）の中しか見ない」ことを学びました。今回は、<mark>その部屋を家（パソコン）のどこに作るか</mark>の話です。</p>
+</header>
+
+<section>
+  <h2><span class="no">1</span>AIの部屋は、ぜんぶ同じ階に集める</h2>
+  <div class="sheet">
+    <svg viewBox="0 0 360 300" role="img" aria-label="2階建ての家。2階は ai-work という AIの仕事場で、scrap-news・keiri-tool・_tameshi の3部屋が並ぶ。1階はデスクトップ・写真・OneDrive のふだんの生活の場">
+      <polygon points="16,92 180,18 344,92" style="fill:var(--roof);stroke:var(--ink);stroke-width:2.5;stroke-linejoin:round"/>
+      <text x="180" y="72" text-anchor="middle" style="font-size:14px;font-weight:700;fill:#ffffff">あなたのパソコン</text>
+      <rect x="28" y="92" width="304" height="196" style="fill:var(--wall);stroke:var(--ink);stroke-width:2.5"/>
+      <!-- 2階 -->
+      <text x="40" y="112" style="font-size:12px;font-weight:700">2階：AIの仕事場　<tspan style="font-family:var(--f-code)">ai-work</tspan></text>
+      <rect x="40" y="120" width="92" height="58" rx="4" style="fill:var(--lit);stroke:var(--marker);stroke-width:3"/>
+      <text x="46" y="136" style="font-size:11px;font-weight:700">scrap-news</text>
+      <use href="#robot" x="98" y="140" width="28" height="34"/>
+      <rect x="138" y="120" width="92" height="58" rx="4" style="fill:var(--lit)"/>
+      <text x="144" y="136" style="font-size:11px;font-weight:700">keiri-tool</text>
+      <text x="144" y="154" style="font-size:9px;fill:var(--sub)">経理の道具</text>
+      <rect x="236" y="120" width="84" height="58" rx="4" style="fill:var(--room);stroke:var(--sub);stroke-width:2;stroke-dasharray:5 4"/>
+      <text x="242" y="136" style="font-size:11px;font-weight:700">_tameshi</text>
+      <text x="242" y="154" style="font-size:9px;fill:var(--sub)">試しに使う部屋</text>
+      <line x1="28" y1="190" x2="332" y2="190" style="stroke:var(--ink);stroke-width:2.5"/>
+      <!-- 1階 -->
+      <text x="40" y="210" style="font-size:12px;font-weight:700;fill:var(--sub)">1階：ふだんの生活</text>
+      <rect x="40" y="218" width="92" height="58" rx="4" style="fill:var(--off)"/>
+      <text x="86" y="252" text-anchor="middle" style="font-size:11px;font-weight:700">デスクトップ</text>
+      <rect x="138" y="218" width="92" height="58" rx="4" style="fill:var(--off)"/>
+      <text x="184" y="252" text-anchor="middle" style="font-size:11px;font-weight:700">写真</text>
+      <rect x="236" y="218" width="84" height="58" rx="4" style="fill:var(--off)"/>
+      <path d="M258 252 a9 9 0 0 1 4 -17 a12 12 0 0 1 22 -2 a9 9 0 0 1 12 19 z" style="fill:var(--card);stroke:var(--sub);stroke-width:2"/>
+      <text x="278" y="270" text-anchor="middle" style="font-size:10px;font-weight:700">OneDrive</text>
+    </svg>
+    <p class="big">AIで作るものは、<mark>1つの親フォルダ</mark>にまとめて置きます。</p>
+    <p>家にたとえると、2階をまるごと「AIの仕事場」にするイメージです。名前は <code>ai-work</code> にしておきます。1階のデスクトップや写真とまざらないので、どこに何があるかすぐ分かります。</p>
+    <div class="legend">
+      <span><b>2階</b> ＝ <code>C:\Users\あなた\ai-work</code></span>
+      <span><b>部屋</b> ＝ その中の仕事ごとのフォルダ</span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2><span class="no">2</span>守ること 4つ</h2>
+  <div class="four">
+
+    <div class="panel">
+      <svg viewBox="0 0 200 120" role="img" aria-label="1つの部屋に、ニュースのルールと経理のルールの2枚の張り紙があって、ロボットがどっちと迷っている">
+        <rect x="6" y="6" width="188" height="108" rx="8" style="fill:var(--room);stroke:var(--ink);stroke-width:2"/>
+        <use href="#poster" x="16" y="16" width="34" height="40"/>
+        <text x="33" y="70" text-anchor="middle" style="font-size:9px">ニュース</text>
+        <use href="#poster" x="58" y="16" width="34" height="40"/>
+        <text x="75" y="70" text-anchor="middle" style="font-size:9px">経理</text>
+        <use href="#robot" x="104" y="34" width="56" height="68"/>
+        <text x="150" y="36" style="font-size:12px;font-weight:700;fill:var(--ng)">どっち？</text>
+        <use href="#ngmark" x="14" y="80" width="24" height="24"/>
+      </svg>
+      <h3><span class="n">①</span>1つの仕事 ＝ 1つの部屋</h3>
+      <p>ニュースと経理を同じ部屋に入れると、ルールの紙が2枚まざって、AIがどちらを守ればいいか分からなくなります。</p>
+    </div>
+
+    <div class="panel">
+      <svg viewBox="0 0 200 120" role="img" aria-label="表札のくらべ。英数字の scrap-news は読めるが、日本語と空白の名前は文字化けして読めない">
+        <rect x="10" y="12" width="84" height="34" rx="5" style="fill:var(--card);stroke:var(--ink);stroke-width:2"/>
+        <text x="52" y="34" text-anchor="middle" style="font-size:12px;font-weight:700;font-family:var(--f-code)">scrap-news</text>
+        <use href="#okmark" x="40" y="54" width="24" height="24"/>
+        <text x="52" y="98" text-anchor="middle" style="font-size:10px">どの道具でも読める</text>
+        <rect x="106" y="12" width="84" height="34" rx="5" style="fill:var(--card);stroke:var(--ink);stroke-width:2"/>
+        <text x="148" y="34" text-anchor="middle" style="font-size:10.5px;font-weight:700">スクラップ ニュース</text>
+        <use href="#ngmark" x="136" y="54" width="24" height="24"/>
+        <text x="148" y="98" text-anchor="middle" style="font-size:10px;font-family:var(--f-code);fill:var(--ng)">繧ｹ繧ｯ繝ｩ…</text>
+        <text x="148" y="112" text-anchor="middle" style="font-size:9px;fill:var(--sub)">文字化けすることがある</text>
+      </svg>
+      <h3><span class="n">②</span>部屋の名前は英数字とハイフン</h3>
+      <p>日本語や空白が入った名前だと、道具によっては読めなかったり文字化けしたりします。部屋の中のファイル名は日本語でもかまいません（<code>引き継ぎ書.md</code> のように）。</p>
+    </div>
+
+    <div class="panel">
+      <svg viewBox="0 0 200 120" role="img" aria-label="OneDrive の雲と、作業の記録の箱が、同じファイルを引っぱり合って稲妻が出ている">
+        <path d="M22 62 a14 14 0 0 1 6 -27 a19 19 0 0 1 35 -3 a14 14 0 0 1 18 30 z" style="fill:var(--card);stroke:var(--sub);stroke-width:2.5"/>
+        <text x="50" y="80" text-anchor="middle" style="font-size:10px;font-weight:700">OneDrive</text>
+        <text x="50" y="93" text-anchor="middle" style="font-size:9px;fill:var(--sub)">勝手に同期</text>
+        <rect x="134" y="28" width="56" height="38" rx="5" style="fill:var(--lit);stroke:var(--ink);stroke-width:2"/>
+        <text x="162" y="51" text-anchor="middle" style="font-size:10px;font-weight:700">記録(git)</text>
+        <text x="162" y="80" text-anchor="middle" style="font-size:9px;fill:var(--sub)">変更を記録</text>
+        <rect x="88" y="34" width="26" height="30" rx="2" style="fill:var(--card);stroke:var(--line);stroke-width:2"/>
+        <line x1="82" y1="49" x2="88" y2="49" style="stroke:var(--sub);stroke-width:2.5"/>
+        <line x1="114" y1="49" x2="134" y2="49" style="stroke:var(--sub);stroke-width:2.5"/>
+        <path d="M104 8 l-8 14 h8 l-6 12" style="fill:none;stroke:var(--ng);stroke-width:3;stroke-linecap:round;stroke-linejoin:round"/>
+        <use href="#ngmark" x="88" y="84" width="24" height="24"/>
+      </svg>
+      <h3><span class="n">③</span>デスクトップと OneDrive には置かない</h3>
+      <p>デスクトップはほかのファイルとまざります。OneDrive の中に置くと、勝手に同期するしくみと作業の記録（git）がぶつかって、ファイルが壊れることがあります。</p>
+    </div>
+
+    <div class="panel">
+      <svg viewBox="0 0 200 120" role="img" aria-label="点線で囲まれた試しの部屋。消してOKの札とごみ箱があり、ロボットが気楽に作業している">
+        <rect x="6" y="6" width="188" height="108" rx="8" style="fill:var(--room);stroke:var(--sub);stroke-width:2;stroke-dasharray:6 5"/>
+        <text x="16" y="26" style="font-size:12px;font-weight:700;font-family:var(--f-code)">_tameshi</text>
+        <rect x="16" y="36" width="64" height="24" rx="4" style="fill:var(--marker)"/>
+        <text x="48" y="53" text-anchor="middle" style="font-size:11px;font-weight:700;fill:#1d2b3a">消してOK</text>
+        <path d="M30 74 h30 l-3 32 h-24 z" style="fill:var(--card);stroke:var(--ink);stroke-width:2"/>
+        <line x1="26" y1="74" x2="64" y2="74" style="stroke:var(--ink);stroke-width:2.5"/>
+        <use href="#robot" x="110" y="34" width="56" height="68"/>
+        <text x="166" y="40" style="font-size:14px;font-weight:700;fill:var(--ok)">♪</text>
+      </svg>
+      <h3><span class="n">④</span>試しは「試しの部屋」で</h3>
+      <p>ちょっと試したいときは、本番の部屋ではなく <code>_tameshi</code> で。名前の頭に <code>_</code> を付けると、並べたときに一番上に来て見分けやすくなります。</p>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <h2><span class="no">3</span>ルールの紙は「大・中・小」の3枚</h2>
+  <div class="sheet">
+    <p>第1回で、AIは部屋に入るとまず「ルールの紙」を読む、と学びました。じつはこの紙は、<mark>効く範囲の広さで3枚に分けて</mark>張れます。</p>
+    <svg viewBox="0 0 360 214" role="img" aria-label="入れ子の3つの枠。いちばん外が家ぜんたいの紙、その中が部屋の紙、いちばん内側が押し入れの紙。ロボットは押し入れの中で3枚とも読んでいる">
+      <rect x="6" y="6" width="348" height="202" rx="10" style="fill:var(--room);stroke:var(--ink);stroke-width:2"/>
+      <use href="#poster" x="16" y="16" width="30" height="35"/>
+      <text x="54" y="31" style="font-size:12px;font-weight:700">大：家ぜんたいの紙</text>
+      <text x="54" y="47" style="font-size:10px;fill:var(--sub)">どの仕事でも同じこと</text>
+      <rect x="26" y="62" width="318" height="136" rx="8" style="fill:var(--lit);stroke:var(--ink);stroke-width:2"/>
+      <use href="#poster" x="36" y="72" width="30" height="35"/>
+      <text x="74" y="87" style="font-size:12px;font-weight:700">中：部屋の紙（scrap-news）</text>
+      <text x="74" y="103" style="font-size:10px;fill:var(--sub)">この仕事だけのこと</text>
+      <rect x="46" y="118" width="288" height="70" rx="6" style="fill:var(--card);stroke:var(--ink);stroke-width:2"/>
+      <use href="#poster" x="56" y="128" width="26" height="30"/>
+      <text x="90" y="142" style="font-size:12px;font-weight:700">小：押し入れの紙（画面案）</text>
+      <text x="90" y="158" style="font-size:10px;fill:var(--sub)">このフォルダだけのこと</text>
+      <use href="#robot" x="284" y="124" width="40" height="50"/>
+    </svg>
+    <div class="tbl">
+      <table>
+        <thead><tr><th>紙</th><th>置く場所</th><th>書くことの例</th></tr></thead>
+        <tbody>
+          <tr><td>大</td><td><code>C:\Users\あなた\.claude\CLAUDE.md</code><br><span class="hint">Codex は <code>.codex\AGENTS.md</code></span></td><td>「説明は日本語で、専門用語は避けて」</td></tr>
+          <tr><td>中</td><td><code>scrap-news\AGENTS.md</code></td><td>「お金のかかるものは足さない」</td></tr>
+          <tr><td>小</td><td><code>scrap-news\画面案\AGENTS.md</code></td><td>「データを埋め込まない」</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>AIは、いま作業している場所から外側へ向かって、3枚とも読みます。<mark>「自分のこと」は大の紙に1回書けば、どの部屋でも守られます。</mark></p>
+    <p>いまの scrap-news では「日本語で」「Windows 11」といった<b>あなた自身のこと</b>が中の紙に書いてあります。大の紙に移しておけば、新しい部屋を作るたびに書き直さずにすみます。</p>
+  </div>
+</section>
+
+<section>
+  <h2><span class="no">4</span>やってみよう</h2>
+  <div class="sheet">
+    <ol class="steps">
+      <li>
+        <b>2階（ai-work）をつくる</b><br>
+        PowerShell に貼って Enter を押します。
+        <div class="cmd-box" style="margin-top:6px"><pre id="cmd1">mkdir "$env:USERPROFILE\ai-work"</pre><button class="copy" type="button" data-for="cmd1">コピー</button></div>
+        <span class="hint">いまある scrap-news はそのままで大丈夫です。これから作る仕事を ai-work の中に作ります。</span>
+      </li>
+      <li>
+        <b>大の紙（家ぜんたいの紙）をメモ帳で開く</b><br>
+        1行ずつ貼って Enter を押します。メモ帳が「新しく作りますか？」と聞いてきたら「はい」を押します。
+        <div class="cmd-box" style="margin-top:6px"><pre id="cmd2">mkdir -Force "$env:USERPROFILE\.claude"
+notepad "$env:USERPROFILE\.claude\CLAUDE.md"</pre><button class="copy" type="button" data-for="cmd2">コピー</button></div>
+      </li>
+      <li>
+        <b>大の紙に「自分のこと」を書いて保存する</b><br>
+        たとえば次のように書きます。
+        <div class="cmd-box" style="margin-top:6px"><pre id="cmd3"># わたしについて
+- Windows 11 を使っている。ターミナルは詳しくない
+- 説明は日本語で、専門用語は避けて、具体的に
+- 手順はコマンドをそのまま貼れる形で</pre><button class="copy" type="button" data-for="cmd3">コピー</button></div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="sum">
+  <h2>第2回のまとめ</h2>
+  <ol>
+    <li>AIの部屋は、ぜんぶ <code>ai-work</code> の中に集める</li>
+    <li>1つの仕事に1つの部屋。部屋の名前は英数字とハイフン</li>
+    <li>デスクトップと OneDrive には置かない。試しは <code>_tameshi</code> で</li>
+    <li>ルールの紙は大・中・小の3枚。自分のことは大の紙に1回だけ書く</li>
+  </ol>
+</section>
+
+<section>
+  <h2>たしかめクイズ</h2>
+  <p class="hint">それぞれ、よいか、よくないかを考えてから押してください。</p>
+  <details>
+    <summary><span class="q">Q1</span><code>デスクトップ\新しいフォルダ</code> で AI を開いた</summary>
+    <div class="ans"><b class="ng">よくない。</b>デスクトップはほかのファイルとまざる場所です。名前も「新しいフォルダ」では何の部屋か分かりません。</div>
+  </details>
+  <details>
+    <summary><span class="q">Q2</span><code>ai-work\scrap-news</code> で AI を開いた</summary>
+    <div class="ans"><b class="ok">よい。</b>AIの階の中に、仕事ごとの部屋があり、名前も英数字です。</div>
+  </details>
+  <details>
+    <summary><span class="q">Q3</span>経理の道具を <code>scrap-news\keiri</code> の中に作った</summary>
+    <div class="ans"><b class="ng">よくない。</b>経理の作業をするたびに、ニュースの部屋のルールの紙まで読まれてしまいます。<code>ai-work\keiri-tool</code> のように別の部屋にします。</div>
+  </details>
+  <details>
+    <summary><span class="q">Q4</span>部屋の名前を <code>スクラップ ニュース</code> にした</summary>
+    <div class="ans"><b class="ng">よくない。</b>日本語と空白が入っていて、道具によっては読めないことがあります。<code>scrap-news</code> のようにします。</div>
+  </details>
+</section>
+
+<p class="next">次回（第3回）は「部屋の中の棚の分け方」。ファイルを種類で分けるやり方です。</p>
+
+</div>
+
+<script>
+document.querySelectorAll('.copy').forEach(function(btn){
+  btn.addEventListener('click',function(){
+    var el=document.getElementById(btn.dataset.for), text=el.textContent;
+    function done(){btn.textContent='コピーしました';setTimeout(function(){btn.textContent='コピー'},1800)}
+    function fallback(){var r=document.createRange();r.selectNodeContents(el);var s=getSelection();s.removeAllRanges();s.addRange(r);btn.textContent='選択しました'}
+    try{navigator.clipboard.writeText(text).then(done,fallback)}catch(e){fallback()}
+  });
+});
+</script>
