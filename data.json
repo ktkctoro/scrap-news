@@ -1,8 +1,8 @@
 {
- "updated": "10/30 8:28",
+ "updated": "10/31 5:11",
  "fx": {
-  "usdjpy": 158.06,
-  "date": "2026-10-29"
+  "usdjpy": 157.25,
+  "date": "2026-10-30"
  },
  "manual": {
   "tiles": [
@@ -22,33 +22,33 @@
   "rows": [
    {
     "name": "金（店頭買取）",
-    "value": "22,775",
+    "value": "21,938",
     "unit": "円/g",
-    "diff": "-229"
+    "diff": "-489"
    },
    {
     "name": "銀（店頭買取）",
-    "value": "304.26",
+    "value": "268.84",
     "unit": "円/g",
-    "diff": "-11.88"
+    "diff": "-25.52"
    },
    {
     "name": "ビットコイン",
-    "value": "12,408,030",
+    "value": "12,119,227",
     "unit": "円",
-    "diff": "-3.2%"
+    "diff": "-4.2%"
    },
    {
     "name": "日経平均",
-    "value": "64,659",
+    "value": "63,290",
     "unit": "円",
-    "diff": "+1,966"
+    "diff": "+1,100"
    },
    {
     "name": "NYダウ",
-    "value": "52,343",
+    "value": "51,762",
     "unit": "$",
-    "diff": "-525"
+    "diff": "-453"
    }
   ]
  },
@@ -56,35 +56,68 @@
   {
    "cat": "btc",
    "label": "ビットコイン",
-   "title": "中国株安、ビットコイン価格に波及か",
+   "title": "ビットコイン低迷こそ強気材料と指摘 チェック氏",
    "source": "BeInCrypto",
-   "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBLbE4wYWpwVDJQWDJDa3k4dTZoR0dHd19vSTljNDJQNjM1SWkzN0hZNFdGRXBaWDA5aFpMczdKNW52VkpZUWxQZWlEMGVkcWJWSVJYaEJaU0N6Vi1OQ3dFQnZkU21ubDFLbHp2YWJkeFh2dmR6?oc=5",
-   "published": "2026-10-29T19:45:53+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
-   "title": "今年はさらに拡大「銅の盗難被害」 盗まれた銅の売買を防ぐため規制を強化するも…課題が",
-   "source": "日テレNEWS NNN",
-   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOTEotdk1Kd0RkZXhxYW1uV0hxNERwRUZBbUVzTjJMc1k0dV9heXF5bENLY0JHNGFMSUdFQVdpb3ZDRnphZXh2dUhGV3U3bUQ5azZVSGpIT2ttc005Q2pBYS1DcmpIVEE4RERXa0F2QjdJWmVjYlFCTmE2bXEwUi1DMFZHSTRpY00?oc=5",
-   "published": "2026-10-29T19:17:00+09:00",
-   "dups": 1
-  },
-  {
-   "cat": "mkt",
-   "label": "相場",
-   "title": "ステンレス輸入15％減 9月、冷延入着は本年最多",
-   "source": "日刊産業新聞",
-   "link": "https://www.japanmetal.com/news-t20261030151332.html",
-   "published": "2026-10-29T17:56:00+09:00"
+   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE13S1lhbVprZGlHY0pDakpSZXlWVEdFT1hMTVhSaC1feC1OSF9VaDZtWFJxSUdLYmZkc1dfQkRReHJEbi1fYjFrTzAzekVQbVU1ZzBfLWVSYWZaMTZ5aUoxZ1ZvNDBiMjJSSVZQaVhqZ0w?oc=5",
+   "published": "2026-10-30T19:45:05+09:00"
   },
   {
    "cat": "btc",
    "label": "ビットコイン",
-   "title": "379兆円規模の「中国ショック」がビットコインを襲う可能性",
-   "source": "Forbes JAPAN",
-   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9McVU5Um9YRVloY04yQ2FHLVZGVGVMODQ4bHE2MFM2NGctVHlQaEVyQW5vTlUtVllaTkxMdC1RcDdOaWk4OFl1QkJaNnBUYUoxZEtyQjltaTdyQQ?oc=5",
-   "published": "2026-10-29T17:15:00+09:00"
+   "title": "ビットコインが冷却局面に、10月（アップトーバー）は4.2%安＝ク",
+   "source": "CoinPost",
+   "link": "https://coinpost.jp/?p=745506",
+   "published": "2026-10-30T18:00:00+09:00",
+   "dups": 1
+  },
+  {
+   "cat": "btc",
+   "label": "ビットコイン",
+   "title": "BTC（ビットコイン）は米中間選挙とバイナンスのハッキング疑惑が焦点、下値模索が続くか",
+   "source": "マネクリ",
+   "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE80bnNTdl9vZURPUEp0SVJYck91cEt2ZVY3ZWYtVjZKN3MtT1AwemltbnlUaElHTVoyWVdPMWNvY2ZjenQ1NU9mdGhkRU9KaXY4MFlDWFg5c9IBV0FVX3lxTE80bnNTdl9vZURPUEp0SVJYck91cEt2ZVY3ZWYtVjZKN3MtT1AwemltbnlUaElHTVoyWVdPMWNvY2ZjenQ1NU9mdGhkRU9KaXY4MFlDWFg5cw?oc=5",
+   "published": "2026-10-30T17:20:00+09:00"
+  },
+  {
+   "cat": "btc",
+   "label": "ビットコイン",
+   "title": "AI投資への懸念がBTC相場を圧迫 ハイテク株の売り一巡が反発の鍵か【bitbank月次レポート】 (NADA NEWS)",
+   "source": "Yahoo!ニュース",
+   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOSGZSSlp5ZEJhVUJoSFplZ0xRQnJvT0tZa1FFS21PeE9QZEJPTkRuME9SSG9Kb015OXZYZ0Z5Q2pBejlzbGhkeDJzaV9EVDU4cDZfUUFyME4zSXFtaDN0RnduLVlKTGp0c2xWb3JUMHlWWmNKeDY1ZWZVTGgyNUpyVVg0Q0taZGZUZlpjMjNB?oc=5",
+   "published": "2026-10-30T17:00:00+09:00"
+  },
+  {
+   "cat": "dc",
+   "label": "AI・DC",
+   "title": "銅および銅加工製品の地域別シェアと主要企業",
+   "source": "pando.life",
+   "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5Tc3liS3hFSFNSek1uc0o5SWdwOXI5ZWt2aXJzZzBfcW1OTlRCamlRamsyOFRoSmRmdjZGb2prWVdhTnZTQ3B3c25n?oc=5",
+   "published": "2026-10-30T16:03:53+09:00"
+  },
+  {
+   "cat": "mkt",
+   "label": "相場",
+   "title": "合同鉄が下げ幅を拡大、鉄スクラップ価格高騰で27年3月期利益予想",
+   "source": "みんかぶ",
+   "link": "https://minkabu.jp/news/4646441",
+   "published": "2026-10-30T15:46:00+09:00",
+   "dups": 1
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "今年はさらに拡大「銅の盗難被害」 盗まれた銅の売買を防ぐため規制を強化するも…課題が（2026年10月29日掲載）",
+   "source": "日テレNEWS NNN",
+   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOWmJ3ZE5TaVc1REZwYTBwVzBXQzBqbjMzelJSUS1aVW1ZS0RfdlctY2FKTEkyN3NWMnpzOVJiYUQzOFFOM1pWSzZSNndTa0EzajBEa3kzdktkYnlTRjBMZFg5S3BGMzhWQnlGZEhjTzdyZlIzQnZHc3NYVjdnQzhtTG9ydTBEVTNNalF5ZQ?oc=5",
+   "published": "2026-10-29T19:17:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "【受賞】レナタスグループのＨＡＲＩＴＡ、令和8年度「資源循環技術・システム表彰」で「一般社団法人産業環境管理協会会長賞」および「コラボレーション賞」を受賞",
+   "source": "Dellows News",
+   "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFBfOVg1WjlqOU5OeUN4QkVWR1A1Z2pPbm9pS2tOOWJIX3M5bHllTVA2dENFQWVZd0V0TXYtQWNmLUJwV3N5UXc?oc=5",
+   "published": "2026-10-29T19:07:30+09:00"
   },
   {
    "cat": "law",
@@ -103,14 +136,6 @@
    "published": "2026-10-29T15:55:00+09:00"
   },
   {
-   "cat": "btc",
-   "label": "ビットコイン",
-   "title": "ビットコイン、8万5000ドルの壁に阻まれレンジ相場続く＝グラスノード分析",
-   "source": "CoinPost",
-   "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE9ybWM1ZTd2d3lQcXVFTU5HTVoycjNYSl83bzczNzZkSE1abDdvcTE1ZE55cGZkMUFnQ3FPS0VnMnhFNU0?oc=5",
-   "published": "2026-10-29T14:47:25+09:00"
-  },
-  {
    "cat": "mkt",
    "label": "相場",
    "title": "JX金属 北関東2拠点に新設備 使用済み半導体ターゲット リサイクル処理能力3倍（日刊産業新聞）",
@@ -125,22 +150,6 @@
    "source": "Circular Economy Hub",
    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE0zMHp1R21nNVJDX1hkMGpDNm1BV1lCbkVQa0ZJcmk1YVg3RjRqeWxMNnVvLWt3NV9sM3dIYU4yRDRpNGh6NldqRzlKZUlidl9nMndUbFdvSWsteUlYZERkb0hfNGc5c0dHTWlHemUwamxjUEFPb0Q3WGlGNWRwc1k?oc=5",
    "published": "2026-10-29T12:00:37+09:00"
-  },
-  {
-   "cat": "btc",
-   "label": "ビットコイン",
-   "title": "ビットワイズ予測「ビットコインは10年後160万ドルに到達」 年率34.3％増で",
-   "source": "CoinPost",
-   "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE1FV0Z3UUhreHBCNWxqSTFaRUpQaHJNVmdwNk1zZEJraS1hTW9VUm9nOV9WcVIxelBDNWp0NGxsXzZ6UTA?oc=5",
-   "published": "2026-10-29T11:49:40+09:00"
-  },
-  {
-   "cat": "btc",
-   "label": "ビットコイン",
-   "title": "ビットコイン8万ドル台維持でも投資家心理低迷 「強気相場初期」の見方",
-   "source": "디지털투데이",
-   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNOHhWMVlJX2h1NDViTDVpbXhDSG55dWJBNHpJUkVCU1VnLWZzS3NrZlh6VVFHWHg0aWpPZC01YVhKOThhUzZ5VkgtMmFpbkFOSUlNX1VkX0RzNHlfX3JXempOVTh1dERWcllIRHd0aHlnZHpOTHFBc3plUHdYclNFUDZTbzJodDVXVGdJN3d5eWIxUTB5dnA3dndFTzdWLWZHa3FTVkx2UTl1Z0FicTFkUld4dUhoUnNqSU5MQw?oc=5",
-   "published": "2026-10-29T10:10:41+09:00"
   },
   {
    "cat": "law",
@@ -158,6 +167,14 @@
    "link": "https://www.tsunasaga.jp/kuboizumi/2026/10/post-1225.html",
    "published": "2026-10-29T09:12:00+09:00",
    "dups": 1
+  },
+  {
+   "cat": "gen",
+   "label": "業界",
+   "title": "新都ホールディングス 、スクラップ回収の子会社栄新商事を経営陣に譲渡",
+   "source": "M&A Online",
+   "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFB1QmhFcTdtSWdjRW9tclhQV0xuT1k1ZG9EaHVzUWZJVVEzTjVORjMtQXR0ZEtrZkpvc2pGNnR1eVI1ZHg5eUlaYjd3?oc=5",
+   "published": "2026-10-28T21:32:13+09:00"
   },
   {
    "cat": "gen",
@@ -210,18 +227,18 @@
   {
    "cat": "law",
    "label": "法規制",
+   "title": "デンソーがリサイクルプラで補助輪を開発、多様なプラを適材適所で活用（MONOist）",
+   "source": "Yahoo!ニュース",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1yLTgyWllxeGVLWU5SQnllaDFOUE5HbVRieFJnQkhVbXB2MDFzME1KUTdOTnZoNmY4LWN6dWcxQVpRZmhqOGVLS3ZvS1NFMWhTYWFjS1VycUNpb2lxcWhCdDFid1JHLS1QS0M4V0pqWHM3WmNUUVZwZG1WYmFycVE?oc=5",
+   "published": "2026-10-28T07:15:15+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
    "title": "リサイクルビジネスが挑むパラダイムシフト（3） 「ヤード規制」の意義と衝撃 廃棄物処理法が直面する分岐点",
    "source": "環境新聞オンライン",
    "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE40X09KY1pfdGxldC1TQndwWmRvamRQT2VIQ25LblR2UURjTlVKY3Q2dHB4Y3VkaHphT3Fjc19FT2lGLWdLYnJWSFhVRUF4V0lLUDFfSy1FOC1XOU1vUkJJSzdua09vb185dGFIX05pcFczU0ttX2d5NDg2dw?oc=5",
    "published": "2026-10-28T07:00:00+09:00"
-  },
-  {
-   "cat": "gen",
-   "label": "業界",
-   "title": "KIBOR、低圧アルミケーブルのカット販売と端子のセット供給を本格化",
-   "source": "Dellows News",
-   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1WX1hWNGFQRm5manJ4cGRfTUE5d1JnREhrUjFaZjF0Yjh0djNzT0ZzclRmWmVGaEtoYWdrMmhPOVpRbld1a3JMX3ZCcWJla0tnd0RUNDhuZUpOdmZUbHJVaWZDdHFBT1hY?oc=5",
-   "published": "2026-10-27T19:03:39+09:00"
   },
   {
    "cat": "law",
@@ -230,22 +247,6 @@
    "source": "NHKニュース",
    "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5GUVUxUUo0YzNEVW9VdDNPM3hUd3UxZDdGN3NEeTRiYWNqc0xLaHB5dnNJSDZaaEVoaUFYX0hTX1U5blk0QWh1QWhGTS1XSTQzby1ienNWaEpULUlkeHZz?oc=5",
    "published": "2026-10-27T18:29:00+09:00"
-  },
-  {
-   "cat": "mkt",
-   "label": "相場",
-   "title": "銅建値、6万円上げ 亜鉛は1万5000円上げ",
-   "source": "日本経済新聞",
-   "link": "https://www.nikkei.com/article/DGXZQOUB275C20X21C26A0000000/",
-   "published": "2026-10-27T17:57:00+09:00"
-  },
-  {
-   "cat": "dc",
-   "label": "AI・DC",
-   "title": "電線株がなぜ上がる?ルメンタム・コヒレント・コーニングの急騰とAI需要を分析",
-   "source": "EBC Financial Group",
-   "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9walRQcmRIc1hPTVBLd2pFZzVuTWN1TUZSZVRwZ0tmOTlwMnNKZi0xWGVqb3FEdHNGbWR1bGhlTzZxdWEtRFB6TF80LXZpaE43dGc?oc=5",
-   "published": "2026-10-27T17:42:00+09:00"
   },
   {
    "cat": "dc",
@@ -272,14 +273,6 @@
    "published": "2026-10-27T14:20:18+09:00"
   },
   {
-   "cat": "mkt",
-   "label": "相場",
-   "title": "中部鋼鈑（5461）vs 東京製鐵（5423）— スクラップ高の逆風下、電炉",
-   "source": "note",
-   "link": "https://note.com/kabutabi2000/n/n68119789fd13",
-   "published": "2026-10-27T14:18:00+09:00"
-  },
-  {
    "cat": "law",
    "label": "法規制",
    "title": "フロン管理のDXを推進するJRECOのフォーラム開催と優秀企業表彰",
@@ -290,10 +283,19 @@
   {
    "cat": "law",
    "label": "法規制",
-   "title": "「世界のゴミ捨て場」健在！ タイ税関、港で金属スクラップに有害な電子廃棄物混入コンテナ発見。",
-   "source": "タイニュース・クロスボンバー",
-   "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBPY3BCX25KcnNRdXgxWDkyQU9SWjljb2o0Qm9pZnhSUWtueGVTTWtUTTFfUm1yT0pUem0xekxBNlJESW8zR2lZVWU0Z0s4WXM?oc=5",
-   "published": "2026-10-27T11:04:06+09:00"
+   "title": "エアコンなどのフロン管理、優れた企業を初表彰: デンカが最優秀賞・ANAなど5社が優秀賞に（オルタナ）",
+   "source": "Yahoo!ニュース",
+   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNTlY3dDYyMFJQWEpqcm1Jb1BjbmI2U241ekw1cU5NUm91TkJwVzNvQkpxX3NKWnlYbXBhYXYzeGZ3WHZiWW1zX2VyT2g5dlZUak00cGJFUFhmeEt3RHM1ZnhkLWFiM0txU0l2dk54SGQxajFjVDRtU0JhS0Fnc0hkYjBvRldpLWM1?oc=5",
+   "published": "2026-10-27T12:01:37+09:00",
+   "dups": 1
+  },
+  {
+   "cat": "dc",
+   "label": "AI・DC",
+   "title": "JX金属がチタン銅の生産能力を50％増、背景にAIデータセンターの増設（MONOist）",
+   "source": "Yahoo!ニュース",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1odnJWX08yeUJVME5wX3JVY0EzdUhtZFhNeDBSYml6TmN6VWRXQXU1Z0JBaGUyUFBRcFlRZEpRRkhOUXNhZ0lkWEVxcW96N0hSUzMwN082R1hodTI3YmNnQ25XZDdybHFzZXhrUDVKTUJUcFFPRHJqRHViVjB0QmM?oc=5",
+   "published": "2026-10-27T11:00:15+09:00"
   },
   {
    "cat": "dc",
@@ -321,29 +323,12 @@
    "dups": 1
   },
   {
-   "cat": "law",
-   "label": "法規制",
-   "title": "デンソーがリサイクルプラで補助輪を開発、多様なプラを適材適所で活用：リサイクルニュース（1/2 ページ）",
-   "source": "MONOist",
-   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5iRXVocWhDUGhreTZBTzRaMFZhcml4YWZaX1gwTl9EOGlFRjcyVzlXcWNpSjJoQ1FLZmRMZS1MM1c3bUFlclRrTnlsdWFaN0thZWQ3RzlSeV9WRDc1U3o5Y1lMZ3JjZjFpMHZLSzlFMA?oc=5",
-   "published": "2026-10-27T07:15:00+09:00"
-  },
-  {
    "cat": "gen",
    "label": "業界",
-   "title": "JX金属／リサイクル原料100％の銅箔発売／25年導入の専用製錬炉活用",
-   "source": "日刊鉄鋼新聞",
-   "link": "https://www.japanmetaldaily.com/articles/-/269504",
-   "published": "2026-10-27T07:00:00+09:00",
-   "dups": 1
-  },
-  {
-   "cat": "dc",
-   "label": "AI・DC",
-   "title": "JX金属がチタン銅の生産能力を50％増、背景にAIデータセンターの増設",
-   "source": "Yahoo!ニュース",
-   "link": "https://news.yahoo.co.jp/articles/5831b3a527484530192c35b3f83d58f42f121528",
-   "published": "2026-10-27T04:00:00+09:00"
+   "title": "ＪＸ金属／リサイクル原料１００％の銅箔発売／２５年導入の専用製錬炉活用",
+   "source": "日刊鉄鋼新聞 Japan Metal Daily",
+   "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE80c19ZaVhzUjJGQVFzZXVoQ3hxUkVPbkZRLWhDOHRJc0FXLUR1T2c5bko5VmVTY1JFSWJ0SFVpLW5CcWo4dzVDWlFWUHE0OVhweWNWLTlWQ0JRakpkc0E?oc=5",
+   "published": "2026-10-27T05:00:00+09:00"
   },
   {
    "cat": "dc",
@@ -352,14 +337,6 @@
    "source": "FX | 株式市場 | ファイナンス | 金融ニュース",
    "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9OaTRzNVdZMWk4OXJrWExXamdYSXFCNFRQdFJxQU9WVEFIR24yY2ZmMFJxRnNwX1pOM3g2RmZ5eThnMF91cng4MDM4ZTduRVFic3Z5bGd0UVN3Vnd3SkJIT1hXUEVpZU54T3Uw?oc=5",
    "published": "2026-10-26T23:57:00+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
-   "title": "初開催のフロン管理事例アワード、デンカが最優秀賞: ANAなど5社が優秀賞に",
-   "source": "オルタナ",
-   "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1MMGQ3RDNCNXlxeC1xSUV1WUlMbEZqUjBGako2dU1vNjA1V0FReDBWamFCdTNXOUJha0JGek9SVlk1M2R1bDBTbA?oc=5",
-   "published": "2026-10-26T21:58:55+09:00"
   },
   {
    "cat": "law",
@@ -410,38 +387,36 @@
    "published": "2026-10-26T09:03:54+09:00"
   },
   {
-   "cat": "law",
-   "label": "法規制",
-   "title": "リサイクル製錬事業 JOGMEC出資可能に 重要鉱物強化へ法改正",
-   "source": "日刊産業新聞",
-   "link": "https://www.japanmetal.com/news-h20261026151254.html",
-   "published": "2026-10-26T07:52:00+09:00"
+   "cat": "mkt",
+   "label": "相場",
+   "title": "銅建値、円高重なり９万円安／国際相場は需給緩和で下落",
+   "source": "日刊鉄鋼新聞 Japan Metal Daily",
+   "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFAtLUhjSHhPYW1zaXlMa3NzeEF2N3Q1X0daS2UtUHViUVNIUWhYMWh2U1lYUW1jNEdmaW1VVW80ZElVaTF5UUtQYnhoT05LUFNFWm9qUG05OUU2QVZuUGc?oc=5",
+   "published": "2026-10-26T05:00:00+09:00"
   },
   {
    "cat": "mkt",
    "label": "相場",
-   "title": "銅建値、円高重なり9万円安／国際相場は需給緩和で下落",
-   "source": "japanmetaldaily",
-   "link": "https://www.japanmetaldaily.com/articles/-/269431",
-   "published": "2026-10-26T07:00:00+09:00",
-   "dups": 1
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
-   "title": "リネットジャパン、SGHDやJX金属系など3社と資本・業務提携。小型",
-   "source": "cehub",
-   "link": "https://cehub.jp/news/renet-japan-jx-sgh-collection-platform/",
-   "published": "2026-10-26T06:00:00+09:00",
-   "dups": 1
+   "title": "金の値上がりで金地金を売ったら、税金は株と同じ？ 特別控除50万",
+   "source": "note",
+   "link": "https://note.com/hontax/n/n6c153305d28a",
+   "published": "2026-10-26T02:46:00+09:00"
   },
   {
    "cat": "mkt",
    "label": "相場",
+   "title": "【新店舗】いーふらん、神奈川県藤沢市に「高価買取おたからや",
+   "source": "ニコニコニュース",
+   "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1CNG1oYW1CejdjYVUwQl9UQVlkSVlsbXFhSmt5eERicHJ2Wmg3cjlTVzc5OHpuTnIwc2JhZzdMR3J1UWZ4Q2tfaVcxYlVDR0llR0FRcw?oc=5",
+   "published": "2026-10-25T11:00:18+09:00"
+  },
+  {
+   "cat": "gen",
+   "label": "業界",
    "title": "【金地金の保管】10月14日の買取価格なら20グラムでも1本「46万2260円」。自宅に置くなら家財の火災保険の明記物件を確認",
    "source": "Yahoo!ニュース",
    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1peWlkdzVfUHF4ajdfWVpTVW1GX3NsRzVQQnhSVHJ6WnFHc1ZtRTE4YlVNMV9UZnllSnBwbWdJTlBfVEdfM01xcHJLT1pWcVlhVlJRS1hkTmZDMjAtdUUzcnF0aVQ5Zl9ObkRwX25xbkNXUlo3UGFxRmZEYldidE0?oc=5",
-   "published": "2026-10-25T09:06:00+09:00"
+   "published": "2026-10-25T07:05:47+09:00"
   },
   {
    "cat": "law",
@@ -452,60 +427,12 @@
    "published": "2026-10-25T01:34:27+09:00"
   },
   {
-   "cat": "mkt",
-   "label": "相場",
-   "title": "銅価格が重要な下値水準を試す、鉱山供給は2017年以来初減少",
-   "source": "BeInCrypto",
-   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9UUmw3X0RvLXdheENSa1ZMcE92d04wbXU2VmxHVVBkTV9LYUxvMk43ajhqVkpaZUlDQnBzYjlsZC1XbXhkR0pWMW1McG9EejlGT2YyQVBSeVEwbjQ1Q1p1ZFVtVlhvdGNlM0xNeXBR?oc=5",
-   "published": "2026-10-23T23:17:36+09:00"
-  },
-  {
-   "cat": "mkt",
-   "label": "相場",
-   "title": "銅・ニッケル価格は2035年までに2倍へ？脱炭素と電化で逼迫する",
-   "source": "note",
-   "link": "https://note.com/silverwolf1000/n/n09f4beea974d",
-   "published": "2026-10-23T22:00:00+09:00"
-  },
-  {
-   "cat": "mkt",
-   "label": "相場",
-   "title": "銅先物、1カ月ぶり安値 建値は9万円下げ AI株安が波及",
-   "source": "日本経済新聞",
-   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9PcFpnNTFiQUg3eXY1X0lIZU85VXcwZzBIRVJGZVYzTV92ZFc5OTNYVlJ5aXFsRVJjWG9zWGVmbEJ4S1h4YXFhcnVldXBhbm45OFlMUk11OFhOVXFHeC13NUlIVkZpNTRmcVBPMw?oc=5",
-   "published": "2026-10-23T19:37:41+09:00"
-  },
-  {
-   "cat": "mkt",
-   "label": "相場",
-   "title": "東京製鉄の税引き益48%減 4〜9月単独、鉄スクラップ高が重荷",
-   "source": "日本経済新聞",
-   "link": "https://www.nikkei.com/article/DGXZQOUB234F30T21C26A0000000/",
-   "published": "2026-10-23T19:36:00+09:00"
-  },
-  {
    "cat": "law",
    "label": "法規制",
-   "title": "【製造】タイ全国の廃棄物処理工場3000カ所を点検 政府が資金追跡と資産没収へ",
-   "source": "バンコク週報",
-   "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1vTWZpY1l5R0hHTk53d2ttTDBhbkYwRjc0aTB4bXJrVEtZZzg2Z0lLalVxZklZbjZnanFKNWdKU0ZRMkJDWkN2OG00aGhNazlv?oc=5",
-   "published": "2026-10-23T15:03:48+09:00"
-  },
-  {
-   "cat": "mkt",
-   "label": "相場",
-   "title": "亜鉛建値3000円高 66万7000円",
-   "source": "Yahoo!ニュース",
-   "link": "https://news.yahoo.co.jp/articles/6c52a1bd852b0d110b080fc02fad51223825a5f3",
-   "published": "2026-10-23T13:33:00+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
-   "title": "MRCとEquate、クウェートでプラスチック廃棄物リサイクル契約を締結 - ニュースと統計",
-   "source": "IndexBox",
-   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOWGRnN0dvM01xSVJKMVJxendjNVRpS0pDalBjcy1HXzJuSjF6TXlzMFRDeVM1LTU3d2YwazdNQ2V3SE5DWHVTMWlidi1WRFFsSlVEV2xjckZTZEM4UDBod014QlpwcFQ2Ukh6X2wwT2w4UmoyR2FZcXg2WnUySXcwQktWMG5RZ2NxalNhZ1FlbXFMOFpEOFJEeFA2U3RNOWJSemZiWTdn?oc=5",
-   "published": "2026-10-22T01:31:04+09:00"
+   "title": "アルミスクラップを合金の種類ごとに選り分け、水平リサイクルへ。TREグループ・日本軽金属・みずほ銀が環境省実証に採択",
+   "source": "Circular Economy Hub",
+   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQRDhQTWlXTHo3VTZFdVU2M0RQU3d5QmhpcTZqd0lJY3NleFBqR3FfZGtHeThfbHYxRmRkVlVyUkxPTHBYLWxHcm1ubjhQM0c5UVlsMXZmZWJ2RVZ0TVU4NUZZbmJtMjh4NzFFeHpQcVdWaUdGQzBYTVB4NV85UHFVenZnMTloOVFrQVJLeDZUYXU?oc=5",
+   "published": "2026-10-21T16:00:00+09:00"
   },
   {
    "cat": "law",
@@ -518,34 +445,10 @@
   {
    "cat": "law",
    "label": "法規制",
-   "title": "アルミスクラップを合金の種類ごとに選り分け、水平リサイクルへ。TREグループ・日本軽金属・みずほ銀が環境省実証に採択",
-   "source": "Circular Economy Hub",
-   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQRDhQTWlXTHo3VTZFdVU2M0RQU3d5QmhpcTZqd0lJY3NleFBqR3FfZGtHeThfbHYxRmRkVlVyUkxPTHBYLWxHcm1ubjhQM0c5UVlsMXZmZWJ2RVZ0TVU4NUZZbmJtMjh4NzFFeHpQcVdWaUdGQzBYTVB4NV85UHFVenZnMTloOVFrQVJLeDZUYXU?oc=5",
-   "published": "2026-10-21T07:00:24+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
-   "title": "【2026年最新調査】買取店向け「買取コージ」、本人確認OCRで免許証",
-   "source": "CNET Japan",
-   "link": "https://japan.cnet.com/release/31216985/",
-   "published": "2026-10-21T02:00:00+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
    "title": "東京パック2026 基調講演 資源循環を競争力に 経産・環境省が制度整備",
    "source": "日本食糧新聞・電子版",
    "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1xcWVlM1dNVzFIVTdlUlpydVl5U0lYM28zVm9QbkFObnFiclgySVZpak95R2EtdWNScFFsYldXU0JmNW9LRktZYV9zazZHSFZ0TmFzcTJwNHRDRmpocWI0WER2WU80Zw?oc=5",
-   "published": "2026-10-21T00:14:50+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
-   "title": "【環境】産業廃棄物の罰金を8桁へ、工業相がリサイクル工業団地構想 車は全方位で",
-   "source": "バンコク週報",
-   "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBmQVV0NUR2NDJ4Um42SHNCSk5UZTREc3IyTmllekN2NHZjc1pJWW41Mm5nQmUyTk9nZmNpYmduRFN2dDJpZ2t1SEhvNVZSY01W?oc=5",
-   "published": "2026-10-19T16:00:00+09:00"
+   "published": "2026-10-21T00:05:38+09:00"
   },
   {
    "cat": "law",
@@ -558,10 +461,10 @@
   {
    "cat": "law",
    "label": "法規制",
-   "title": "グローバル非鉄スクラップ市場におけるトップ10企業",
-   "source": "Spherical Insights",
-   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOX0Z5eTB1LS1TOFo2M0E3TmgwQmMzMmpaMjVad2x2MHdDWkF4QzhGMXNzeXp2NS1mZ0xGVjc3Y205eWd0MGo2eGpDY09fa3pUQ2xDalRrVmlnQXBKenBMblU4QUtMcVJYemZuUThCNGs0S0hRUW1WQ0xLbFpuUUZUbDV4V0piM0JxRW1xQ1Etdy1wWlNVSkN5Y3pIRV9nRTJka3h6UFVpeXE0a3VkRDktWjBHRGN6ZFMyZVVKb0xaOFMyR0RSSHpPN0xDZC0?oc=5",
-   "published": "2026-10-18T23:28:44+09:00"
+   "title": "リネットジャパン／SGHD・JX金属CSと資本業務提携、小型家電など再資源化基盤を共同構築へ",
+   "source": "物流ニュースのLNEWS",
+   "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9kV25mSGZ4clZqU20zUklmaWY0Q1V6OTRYRDQyMGFUSE1HZGN3c3FGM2J3bmxWNWxYZmMwSUtlbFlIbUtvNE16WlpOa1h4RXZxTWJSXw?oc=5",
+   "published": "2026-10-19T16:00:00+09:00"
   },
   {
    "cat": "law",
@@ -598,30 +501,6 @@
   {
    "cat": "law",
    "label": "法規制",
-   "title": "労災防止へ 県産業資源循環協会が体力測定を主催",
-   "source": "au Webポータル",
-   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9STTlGbFh4SmZNVWh1REFQeGp0RHZpMm1tQ0FwZkNkZFlXSjVZYWZnaXZOSmQtbjRBZHR4eGxZOWRiXzlWMHR6ZXFOTEFFc0tuTmNrblBSUVVaSUhmZVdRMkhydHJueUhpMmdxTkRR?oc=5",
-   "published": "2026-10-12T16:00:00+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
-   "title": "静岡で金属盗難が多発 防霜ファン銅線など 地域一体での対策を (2026年10月9日掲載)",
-   "source": "ライブドアニュース",
-   "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1DZ0Z4czI5YnR2VVRlVFZrd0dOWXpxSnBsd2dhNkstOGZtdFptbF85azdkVFBkdFpjVUFVMzBoMmh3bm8tV2xubUs5U2VfZUlBWjBERjd2ZG9YdFEtWkE?oc=5",
-   "published": "2026-10-09T16:00:00+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
-   "title": "【東京都渋谷区】ヴィンテージブランド専門店「NUIR VINTAGE」が買取窓口「買取ぬあ」開始",
-   "source": "STRAIGHT PRESS",
-   "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBWZHQydXh0NDg5Y3BOc3czR3VZeW5jNU01U25TeUo1WFBFaktaNDJod2JCVFdZdkhrTlo0bDhhOWcxQzdXS1JzMUJrY0pCeUtiNWJN?oc=5",
-   "published": "2026-10-08T18:42:56+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
    "title": "オンサイト処理施設の展望（15） ＴＯＷＡＬＯ代表 石渡正佳 非常災害廃棄物処理施設 マンパワー支援からシステム支援へＤＸ化できるか",
    "source": "環境新聞オンライン",
    "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE15OWxEUDRFUmY3SGh0YnZnUnpTNXhIWlVVc1FOUWJSU2lVbTc1TDBoTHlyRkh1Uk43c0ZPYjNZQXRidG9ldlVHSFBzQ25qb3FZdkU2b0Vsc0RtQkhTY3M1WWUyRW8tVDg4SjFzUFVraFFBTWFhZXpFOUVlZw?oc=5",
@@ -638,34 +517,10 @@
   {
    "cat": "law",
    "label": "法規制",
-   "title": "古物商の家に警察が来た――でも、そんなに恐れることはない",
-   "source": "note",
-   "link": "https://note.com/takumis_room/n/n3266ea2a3480",
-   "published": "2026-10-07T00:46:00+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
-   "title": "木谷鉄リサイクル工業会会長／環境省の検討会、過剰規制を警戒／実効性ある規制求め２段階審査を提言",
-   "source": "日刊鉄鋼新聞 Japan Metal Daily",
-   "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1ySEFEUWowUjVYOFpxdXVNdGpNYUFTUEhjRlV2NGRDazA5bXNrQkNTdjJ2dmowWWZObzNXQkVOWXlSM2NYVXkwNWd0Um9kMGl0WENEQ0FhTGE1QWo4U1E?oc=5",
-   "published": "2026-09-30T16:00:00+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
    "title": "資源循環 | 地球環境の保全・再生への貢献",
    "source": "ＪＸ金属",
    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5SN1hTT2dOMWZEbmNqZkl2QjNMaXhtdi1rRGlxNXRXb05FZEVMVTFvUTBGbDhyOFNhN3NIS21OdXJwYW14cU5zZUdOZ3lkMkE3dEhPaVVmNFNnSTEwbTNiZzFKb2RXN1ZKVHRyeVoyaVZMVGEyOTZOTWRySVNFVzg?oc=5",
    "published": "2026-09-30T13:48:25+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
-   "title": "電子廃棄物管理の市場シェアと業界の成長 [2034 年]",
-   "source": "Fortune Business Insights",
-   "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNR0Z1bVlBV05CZi10am0wQnlUblVELWNQb3BLSVg2VWZ6aHozSHJWZ1pMbmtUcXRkd1lZUml6TGJFNHd0VHN3VXNtWjVRSFpaOFZKeF80elZlN2x5Ny1OSmZCbzlCN2lDSjU5UTU2X2hvbTRtMVpRVlBxcHo5OW1Oel9GazVxYk4zcXo5WWdjcTJjbVhTTlJHN2dxT0NZeEw4TTZuejI2MWlaLXBMcmc4Q0s3ZUVocWJGeGRTaUdrVnlFSTVyUXlQZzEwQ0xmMVRFLXA5bWxOMFlWWEMyMkhlZ0JFZw?oc=5",
-   "published": "2026-09-28T16:00:00+09:00"
   },
   {
    "cat": "law",
@@ -742,14 +597,6 @@
   {
    "cat": "law",
    "label": "法規制",
-   "title": "自動車リサイクル法、「適正処理の確保」から「国内資源循環の推進」へ",
-   "source": "環境ビジネスオンライン",
-   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBOWFJYLXdSSUtjcWkxbDBzYlVpRW5oajhqX1Zickk3VGhNVlppSE1CVGM0SldQRmFUVFVyem1KVWZnYlNGY0VmRFJhUlpySVVLRS1SZVkxcmVZYzd1c2xybnZ2RkR2dXRjUFpmRlJMU0t4SnpyaGNvSW9vRUJ1V2M?oc=5",
-   "published": "2026-09-15T16:00:00+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
    "title": "くら寿司「ちいかわ」転売騒動――メルカリを「闇市」と呼ぶ前の古物営業法の穴｜山本一郎（やまもといちろう）",
    "source": "note",
    "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBQQTViQWctN191X1RKY3pHOFpOWW1VSFljM2luY0UyQTc0OW1LWHhpdlBFRFhXYnlQeVhRdnRMdW0yNjlqOTJIbnBDb2VPQUk?oc=5",
@@ -766,14 +613,6 @@
   {
    "cat": "law",
    "label": "法規制",
-   "title": "TRUSTDOCK、古物営業法の施行規則改正に対応する口座情報確認APIを",
-   "source": "PR TIMES",
-   "link": "https://prtimes.jp/main/html/rd/p/000000012.000033766.html",
-   "published": "2026-09-10T18:00:00+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
    "title": "環境省・経産省、プラスチック資源循環の3つのタスクフォースを設置。循環型設計の高度化やマスバランス等価値表示のあり方を検討へ",
    "source": "Circular Economy Hub",
    "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOdUlKN05EUmJ1VmhsM2hoalJRN2s1SlRsQlBXUW01RkdLbm9RS3I4UWZEMEJROHpGOGFQcGw5Rk1MSTRnVjZHc0JwdFZlZnQyWGZvcmJEZFdlanh6UFI3MU1vbG40MlptdmFBdjVhZkhRaG1KRE51SGlNOUd5a25Vb0NVeGM3Zw?oc=5",
@@ -782,10 +621,10 @@
   {
    "cat": "law",
    "label": "法規制",
-   "title": "「特定金属くず」の法律相談",
-   "source": "弁護士ドットコム",
-   "link": "https://www.bengo4.com/c_5/bbs/%E7%89%B9%E5%AE%9A%E9%87%91%E5%B1%9E%E3%81%8F%E3%81%9A/",
-   "published": "2026-09-04T12:26:00+09:00"
+   "title": "代替フロン回収・再生設備導入に補助金、大気中に放出した場合の罰金対象機器を拡大…環境省方針",
+   "source": "読売新聞",
+   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5FMHNtX3JhSGhKaGJQZ282ZEdtaUZCR2JyMjdjbWpFZ3l3cllHNVFJeWlfOFdyb3FJYlN6UjNIVHVNUkVVb3E1NkdvYVNnWHBleVB6VVB4Z0dSTzZKMXlVLU1FTzhrNVFO?oc=5",
+   "published": "2026-09-04T16:00:00+09:00"
   },
   {
    "cat": "law",
@@ -794,14 +633,6 @@
    "source": "日経BP",
    "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1Bd1JjdDdwNDdOSlpoX1FyV1V2UHVGcWNwbkY0dkluVmhKZldKTHQxSlJmUEM1U0ZHVG1sUExENWJJd3B0TEw4ZVJseXR0TUlHV3JMU0w2Mlp1dnVRbDZzWWJrWUg2UFdtYjR4YmxFZ0lFUmFW?oc=5",
    "published": "2026-09-03T16:00:00+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
-   "title": "ＴＲＥＨＤの新中計を聞く／阿部光男社長／公民・動静脈連携を強化／解体事業進出、Ｍ＆Ａも推進",
-   "source": "WEB産業新聞",
-   "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBZdkVFTlJQRno4aWgydzRvVWJJZ3EyUDdrejM3bks2LXQ0RW1qVkI2blpXcTNKWTg0RUFOOEZtcVdiQUpMZi1pc0V6SktVdkJXWEtZT1ZJdVotTF9oZWpNcDludw?oc=5",
-   "published": "2026-09-02T16:00:00+09:00"
   },
   {
    "cat": "law",
@@ -818,14 +649,6 @@
    "source": "Circular Economy Hub",
    "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPZjhaQzlrTlVhNzQya2JycXoxSmpPOXhKemJvbjB2ekptbmdpTEJNTXBtQmNTSi1zQl9KRFI4UlJEMzI3aXZQV1lVZFc1dVYzYk96M1VSMndZY09oOUVkdXBCLXNJV0VPVGdPMVc0akZEeTBqdjRCWk8zNDZVV3lHaXVLMGdjZjQ?oc=5",
    "published": "2026-09-01T16:00:00+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
-   "title": "柏・野田・茨城境の未来図：自動車ヤード問題とムスリム定着社会のリアル",
-   "source": "選挙ドットコム",
-   "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5jZ0JpWFhoMkVKY045bjg3RDZYNzlZWjlLbEY1SWZqRXM3MkM2dFZwazRGb0dNeDhEZE5DLTJLdTZ1ZGFlS2NvVjZsMHYyZTlRYnZSeWRHMnBrd0gxT0lB?oc=5",
-   "published": "2026-08-31T16:00:00+09:00"
   }
  ],
  "boards": {
@@ -868,6 +691,9 @@
    "土金",
    "長澤",
    "大畑",
+   "安城貿易",
+   "宝源",
+   "浜屋",
    "ケイワイ",
    "キバセン"
   ],
@@ -890,9 +716,14 @@
       "dealer": "大畑",
       "value": 2290,
       "best": false
+     },
+     {
+      "dealer": "宝源",
+      "value": 2250,
+      "best": false
      }
     ],
-    "spread": 150,
+    "spread": 190,
     "diff": "0"
    },
    {
@@ -908,9 +739,14 @@
       "dealer": "大畑",
       "value": 2190,
       "best": false
+     },
+     {
+      "dealer": "宝源",
+      "value": 2150,
+      "best": false
      }
     ],
-    "spread": 130,
+    "spread": 170,
     "diff": "0"
    },
    {
@@ -937,6 +773,23 @@
     "diff": "0"
    },
    {
+    "group": "銅",
+    "name": "下銅",
+    "cells": [
+     {
+      "dealer": "宝源",
+      "value": 2050,
+      "best": true
+     },
+     {
+      "dealer": "土金",
+      "value": 1980,
+      "best": false
+     }
+    ],
+    "spread": 70
+   },
+   {
     "group": "電線",
     "name": "雑線(銅率80%)",
     "cells": [
@@ -944,6 +797,11 @@
       "dealer": "長澤",
       "value": 1800,
       "best": true
+     },
+     {
+      "dealer": "宝源",
+      "value": 1760,
+      "best": false
      },
      {
       "dealer": "大畑",
@@ -962,6 +820,11 @@
       "dealer": "長澤",
       "value": 1300,
       "best": true
+     },
+     {
+      "dealer": "宝源",
+      "value": 1280,
+      "best": false
      },
      {
       "dealer": "大畑",
@@ -984,6 +847,11 @@
      {
       "dealer": "長澤",
       "value": 980,
+      "best": false
+     },
+     {
+      "dealer": "宝源",
+      "value": 970,
       "best": false
      },
      {
@@ -1031,9 +899,14 @@
       "dealer": "大畑",
       "value": 1150,
       "best": false
+     },
+     {
+      "dealer": "宝源",
+      "value": 1000,
+      "best": false
      }
     ],
-    "spread": 190,
+    "spread": 340,
     "diff": "0"
    },
    {
@@ -1097,6 +970,11 @@
       "best": false
      },
      {
+      "dealer": "宝源",
+      "value": 1480,
+      "best": false
+     },
+     {
       "dealer": "大畑",
       "value": 1460,
       "best": false
@@ -1104,6 +982,23 @@
     ],
     "spread": 130,
     "diff": "0"
+   },
+   {
+    "group": "真鍮・砲金",
+    "name": "込真鍮",
+    "cells": [
+     {
+      "dealer": "長澤",
+      "value": 1500,
+      "best": true
+     },
+     {
+      "dealer": "宝源",
+      "value": 1390,
+      "best": false
+     }
+    ],
+    "spread": 110
    },
    {
     "group": "真鍮・砲金",
@@ -1136,9 +1031,14 @@
       "dealer": "長澤",
       "value": 470,
       "best": false
+     },
+     {
+      "dealer": "宝源",
+      "value": 380,
+      "best": false
      }
     ],
-    "spread": 10,
+    "spread": 100,
     "diff": "0"
    },
    {
@@ -1177,9 +1077,14 @@
       "dealer": "長澤",
       "value": 270,
       "best": false
+     },
+     {
+      "dealer": "宝源",
+      "value": 260,
+      "best": false
      }
     ],
-    "spread": 90,
+    "spread": 100,
     "diff": "0"
    },
    {
@@ -1205,9 +1110,19 @@
     "name": "アルミラジエーター",
     "cells": [
      {
+      "dealer": "安城貿易",
+      "value": 220,
+      "best": true
+     },
+     {
       "dealer": "長澤",
       "value": 150,
-      "best": true
+      "best": false
+     },
+     {
+      "dealer": "宝源",
+      "value": 150,
+      "best": false
      },
      {
       "dealer": "土金",
@@ -1220,8 +1135,8 @@
       "best": false
      }
     ],
-    "spread": 70,
-    "diff": "-70"
+    "spread": 140,
+    "diff": "+70"
    },
    {
     "group": "アルミ",
@@ -1231,6 +1146,11 @@
       "dealer": "長澤",
       "value": 465,
       "best": true
+     },
+     {
+      "dealer": "宝源",
+      "value": 440,
+      "best": false
      },
      {
       "dealer": "大畑",
@@ -1282,9 +1202,14 @@
       "dealer": "長澤",
       "value": 210,
       "best": false
+     },
+     {
+      "dealer": "宝源",
+      "value": 200,
+      "best": false
      }
     ],
-    "spread": 50,
+    "spread": 60,
     "diff": "0"
    },
    {
@@ -1328,9 +1253,14 @@
     "name": "基板SS",
     "cells": [
      {
+      "dealer": "浜屋",
+      "value": 9220,
+      "best": true
+     },
+     {
       "dealer": "ケイワイ",
       "value": 8300,
-      "best": true
+      "best": false
      },
      {
       "dealer": "キバセン",
@@ -1338,17 +1268,22 @@
       "best": false
      }
     ],
-    "spread": 1400,
-    "diff": "-920"
+    "spread": 2320,
+    "diff": "+920"
    },
    {
     "group": "基板／クラス",
     "name": "基板S",
     "cells": [
      {
+      "dealer": "浜屋",
+      "value": 7540,
+      "best": true
+     },
+     {
       "dealer": "ケイワイ",
       "value": 6800,
-      "best": true
+      "best": false
      },
      {
       "dealer": "大畑",
@@ -1356,8 +1291,8 @@
       "best": false
      }
     ],
-    "spread": 800,
-    "diff": "-740"
+    "spread": 1540,
+    "diff": "+740"
    },
    {
     "group": "基板／クラス",
@@ -1372,10 +1307,32 @@
       "dealer": "大畑",
       "value": 4000,
       "best": false
+     },
+     {
+      "dealer": "浜屋",
+      "value": 3500,
+      "best": false
      }
     ],
-    "spread": 500,
+    "spread": 1000,
     "diff": "0"
+   },
+   {
+    "group": "基板／クラス",
+    "name": "金メッキ基板(厚金)",
+    "cells": [
+     {
+      "dealer": "浜屋",
+      "value": 3860,
+      "best": true
+     },
+     {
+      "dealer": "ケイワイ",
+      "value": 3500,
+      "best": false
+     }
+    ],
+    "spread": 360
    },
    {
     "group": "基板／クラス",
@@ -1390,9 +1347,14 @@
       "dealer": "大畑",
       "value": 3000,
       "best": false
+     },
+     {
+      "dealer": "浜屋",
+      "value": 2750,
+      "best": false
      }
     ],
-    "spread": 300,
+    "spread": 550,
     "diff": "0"
    },
    {
@@ -1408,10 +1370,32 @@
       "dealer": "ケイワイ",
       "value": 2000,
       "best": true
+     },
+     {
+      "dealer": "浜屋",
+      "value": 1700,
+      "best": false
      }
     ],
-    "spread": 0,
+    "spread": 300,
     "diff": "0"
+   },
+   {
+    "group": "基板／クラス",
+    "name": "基板D",
+    "cells": [
+     {
+      "dealer": "浜屋",
+      "value": 1150,
+      "best": true
+     },
+     {
+      "dealer": "ケイワイ",
+      "value": 1100,
+      "best": false
+     }
+    ],
+    "spread": 50
    },
    {
     "group": "基板／クラス",
@@ -1432,13 +1416,35 @@
     "diff": "0"
    },
    {
+    "group": "基板／クラス",
+    "name": "電源基板",
+    "cells": [
+     {
+      "dealer": "浜屋",
+      "value": 460,
+      "best": true
+     },
+     {
+      "dealer": "大畑",
+      "value": 150,
+      "best": false
+     }
+    ],
+    "spread": 310
+   },
+   {
     "group": "基板／CPU・IC",
     "name": "CPUセラ(上)",
     "cells": [
      {
+      "dealer": "浜屋",
+      "value": 68800,
+      "best": true
+     },
+     {
       "dealer": "ケイワイ",
       "value": 53000,
-      "best": true
+      "best": false
      },
      {
       "dealer": "キバセン",
@@ -1451,17 +1457,22 @@
       "best": false
      }
     ],
-    "spread": 11000,
-    "diff": "-15,800"
+    "spread": 26800,
+    "diff": "+15,800"
    },
    {
     "group": "基板／CPU・IC",
     "name": "CPUセラ長方形(金足)",
     "cells": [
      {
+      "dealer": "浜屋",
+      "value": 68800,
+      "best": true
+     },
+     {
       "dealer": "大畑",
       "value": 37000,
-      "best": true
+      "best": false
      },
      {
       "dealer": "ケイワイ",
@@ -1469,17 +1480,39 @@
       "best": false
      }
     ],
-    "spread": 16000,
-    "diff": "-31,800"
+    "spread": 47800,
+    "diff": "+31,800"
+   },
+   {
+    "group": "基板／CPU・IC",
+    "name": "CPUセラ(金属板なし)",
+    "cells": [
+     {
+      "dealer": "浜屋",
+      "value": 31900,
+      "best": true
+     },
+     {
+      "dealer": "ケイワイ",
+      "value": 24000,
+      "best": false
+     }
+    ],
+    "spread": 7900
    },
    {
     "group": "基板／CPU・IC",
     "name": "CPU黒",
     "cells": [
      {
+      "dealer": "浜屋",
+      "value": 28500,
+      "best": true
+     },
+     {
       "dealer": "ケイワイ",
       "value": 21000,
-      "best": true
+      "best": false
      },
      {
       "dealer": "大畑",
@@ -1487,17 +1520,39 @@
       "best": false
      }
     ],
-    "spread": 6000,
-    "diff": "-7,500"
+    "spread": 13500,
+    "diff": "+7,500"
+   },
+   {
+    "group": "基板／CPU・IC",
+    "name": "CPUセラ(金属板あり)",
+    "cells": [
+     {
+      "dealer": "ケイワイ",
+      "value": 21000,
+      "best": true
+     },
+     {
+      "dealer": "浜屋",
+      "value": 19200,
+      "best": false
+     }
+    ],
+    "spread": 1800
    },
    {
     "group": "基板／CPU・IC",
     "name": "IC正方形",
     "cells": [
      {
+      "dealer": "浜屋",
+      "value": 13240,
+      "best": true
+     },
+     {
       "dealer": "ケイワイ",
       "value": 12000,
-      "best": true
+      "best": false
      },
      {
       "dealer": "大畑",
@@ -1505,8 +1560,25 @@
       "best": false
      }
     ],
-    "spread": 7500,
-    "diff": "-1,240"
+    "spread": 8740,
+    "diff": "+1,240"
+   },
+   {
+    "group": "基板／CPU・IC",
+    "name": "CPU緑(上)",
+    "cells": [
+     {
+      "dealer": "浜屋",
+      "value": 9900,
+      "best": true
+     },
+     {
+      "dealer": "ケイワイ",
+      "value": 7000,
+      "best": false
+     }
+    ],
+    "spread": 2900
    },
    {
     "group": "基板／CPU・IC",
@@ -1521,9 +1593,14 @@
       "dealer": "ケイワイ",
       "value": 4000,
       "best": true
+     },
+     {
+      "dealer": "浜屋",
+      "value": 3100,
+      "best": false
      }
     ],
-    "spread": 0,
+    "spread": 900,
     "diff": "0"
    },
    {
@@ -1531,9 +1608,14 @@
     "name": "IC長方形",
     "cells": [
      {
+      "dealer": "浜屋",
+      "value": 2750,
+      "best": true
+     },
+     {
       "dealer": "ケイワイ",
       "value": 2000,
-      "best": true
+      "best": false
      },
      {
       "dealer": "大畑",
@@ -1541,8 +1623,8 @@
       "best": false
      }
     ],
-    "spread": 1500,
-    "diff": "-750"
+    "spread": 2250,
+    "diff": "+750"
    },
    {
     "group": "基板／PC部品",
@@ -1552,6 +1634,11 @@
       "dealer": "ケイワイ",
       "value": 13000,
       "best": true
+     },
+     {
+      "dealer": "浜屋",
+      "value": 12300,
+      "best": false
      },
      {
       "dealer": "大畑",
@@ -1569,12 +1656,34 @@
    },
    {
     "group": "基板／PC部品",
+    "name": "拡張カード(上)",
+    "cells": [
+     {
+      "dealer": "浜屋",
+      "value": 6060,
+      "best": true
+     },
+     {
+      "dealer": "ケイワイ",
+      "value": 5500,
+      "best": false
+     }
+    ],
+    "spread": 560
+   },
+   {
+    "group": "基板／PC部品",
     "name": "ノートPC基板",
     "cells": [
      {
+      "dealer": "浜屋",
+      "value": 5350,
+      "best": true
+     },
+     {
       "dealer": "ケイワイ",
       "value": 5000,
-      "best": true
+      "best": false
      },
      {
       "dealer": "キバセン",
@@ -1582,8 +1691,59 @@
       "best": false
      }
     ],
-    "spread": 1000,
-    "diff": "-350"
+    "spread": 1350,
+    "diff": "+350"
+   },
+   {
+    "group": "基板／PC部品",
+    "name": "HDD基板",
+    "cells": [
+     {
+      "dealer": "浜屋",
+      "value": 4640,
+      "best": true
+     },
+     {
+      "dealer": "ケイワイ",
+      "value": 4200,
+      "best": false
+     }
+    ],
+    "spread": 440
+   },
+   {
+    "group": "基板／PC部品",
+    "name": "PCカード",
+    "cells": [
+     {
+      "dealer": "浜屋",
+      "value": 4640,
+      "best": true
+     },
+     {
+      "dealer": "ケイワイ",
+      "value": 4000,
+      "best": false
+     }
+    ],
+    "spread": 640
+   },
+   {
+    "group": "基板／PC部品",
+    "name": "拡張カード(下)",
+    "cells": [
+     {
+      "dealer": "浜屋",
+      "value": 4295,
+      "best": true
+     },
+     {
+      "dealer": "ケイワイ",
+      "value": 3900,
+      "best": false
+     }
+    ],
+    "spread": 395
    },
    {
     "group": "基板／PC部品",
@@ -1595,6 +1755,11 @@
       "best": true
      },
      {
+      "dealer": "浜屋",
+      "value": 2980,
+      "best": false
+     },
+     {
       "dealer": "大畑",
       "value": 1000,
       "best": false
@@ -1602,6 +1767,46 @@
     ],
     "spread": 3200,
     "diff": "0"
+   },
+   {
+    "group": "基板／PC部品",
+    "name": "ノートPCマザー(下)",
+    "cells": [
+     {
+      "dealer": "ケイワイ",
+      "value": 1500,
+      "best": true
+     },
+     {
+      "dealer": "浜屋",
+      "value": 1100,
+      "best": false
+     }
+    ],
+    "spread": 400
+   },
+   {
+    "group": "基板／PC部品",
+    "name": "HDD本体",
+    "cells": [
+     {
+      "dealer": "安城貿易",
+      "value": 300,
+      "best": true
+     },
+     {
+      "dealer": "ケイワイ",
+      "value": 160,
+      "best": false
+     },
+     {
+      "dealer": "大畑",
+      "value": 150,
+      "best": false
+     }
+    ],
+    "spread": 150,
+    "diff": "+140"
    },
    {
     "group": "基板／PC部品",
@@ -1622,36 +1827,40 @@
     "diff": "0"
    },
    {
-    "group": "基板／PC部品",
-    "name": "HDD本体",
+    "group": "基板／機器",
+    "name": "携帯電話基板",
     "cells": [
      {
-      "dealer": "ケイワイ",
-      "value": 160,
+      "dealer": "浜屋",
+      "value": 15870,
       "best": true
      },
      {
-      "dealer": "大畑",
-      "value": 150,
+      "dealer": "ケイワイ",
+      "value": 14400,
       "best": false
      }
     ],
-    "spread": 10,
-    "diff": "-140"
+    "spread": 1470
    },
    {
     "group": "基板／機器",
     "name": "携帯電話(電池なし)",
     "cells": [
      {
+      "dealer": "浜屋",
+      "value": 5505,
+      "best": true
+     },
+     {
       "dealer": "大畑",
       "value": 5000,
-      "best": true
+      "best": false
      },
      {
       "dealer": "ケイワイ",
       "value": 5000,
-      "best": true
+      "best": false
      },
      {
       "dealer": "キバセン",
@@ -1659,17 +1868,39 @@
       "best": false
      }
     ],
-    "spread": 1000,
-    "diff": "-505"
+    "spread": 1505,
+    "diff": "+505"
+   },
+   {
+    "group": "基板／機器",
+    "name": "携帯電話(電池あり)",
+    "cells": [
+     {
+      "dealer": "浜屋",
+      "value": 5230,
+      "best": true
+     },
+     {
+      "dealer": "ケイワイ",
+      "value": 4750,
+      "best": false
+     }
+    ],
+    "spread": 480
    },
    {
     "group": "基板／機器",
     "name": "スマートフォン",
     "cells": [
      {
+      "dealer": "浜屋",
+      "value": 2850,
+      "best": true
+     },
+     {
       "dealer": "ケイワイ",
       "value": 2000,
-      "best": true
+      "best": false
      },
      {
       "dealer": "大畑",
@@ -1677,17 +1908,22 @@
       "best": false
      }
     ],
-    "spread": 200,
-    "diff": "-850"
+    "spread": 1050,
+    "diff": "+850"
    },
    {
     "group": "基板／機器",
     "name": "リレー",
     "cells": [
      {
+      "dealer": "浜屋",
+      "value": 1215,
+      "best": true
+     },
+     {
       "dealer": "キバセン",
       "value": 1200,
-      "best": true
+      "best": false
      },
      {
       "dealer": "ケイワイ",
@@ -1695,8 +1931,25 @@
       "best": false
      }
     ],
-    "spread": 100,
-    "diff": "-15"
+    "spread": 115,
+    "diff": "+15"
+   },
+   {
+    "group": "基板／機器",
+    "name": "デジカメ",
+    "cells": [
+     {
+      "dealer": "ケイワイ",
+      "value": 900,
+      "best": true
+     },
+     {
+      "dealer": "浜屋",
+      "value": 610,
+      "best": false
+     }
+    ],
+    "spread": 290
    },
    {
     "group": "基板／機器",
@@ -1731,6 +1984,16 @@
       "best": false
      },
      {
+      "dealer": "安城貿易",
+      "value": 490,
+      "best": false
+     },
+     {
+      "dealer": "宝源",
+      "value": 470,
+      "best": false
+     },
+     {
       "dealer": "大畑",
       "value": 430,
       "best": false
@@ -1744,9 +2007,19 @@
     "name": "黒モーター",
     "cells": [
      {
+      "dealer": "安城貿易",
+      "value": 180,
+      "best": true
+     },
+     {
       "dealer": "土金",
       "value": 150,
-      "best": true
+      "best": false
+     },
+     {
+      "dealer": "宝源",
+      "value": 150,
+      "best": false
      },
      {
       "dealer": "大畑",
@@ -1754,8 +2027,8 @@
       "best": false
      }
     ],
-    "spread": 20,
-    "diff": "-30"
+    "spread": 50,
+    "diff": "+30"
    },
    {
     "group": "雑品",
@@ -1767,12 +2040,22 @@
       "best": true
      },
      {
+      "dealer": "安城貿易",
+      "value": 200,
+      "best": true
+     },
+     {
       "dealer": "長澤",
       "value": 170,
       "best": false
+     },
+     {
+      "dealer": "宝源",
+      "value": 150,
+      "best": false
      }
     ],
-    "spread": 30,
+    "spread": 50,
     "diff": "0"
    },
    {
@@ -1783,6 +2066,11 @@
       "dealer": "大畑",
       "value": 128,
       "best": true
+     },
+     {
+      "dealer": "安城貿易",
+      "value": 125,
+      "best": false
      },
      {
       "dealer": "土金",
@@ -1800,12 +2088,34 @@
    },
    {
     "group": "雑品",
+    "name": "安定器",
+    "cells": [
+     {
+      "dealer": "安城貿易",
+      "value": 200,
+      "best": true
+     },
+     {
+      "dealer": "長澤",
+      "value": 105,
+      "best": false
+     }
+    ],
+    "spread": 95
+   },
+   {
+    "group": "雑品",
     "name": "工業雑品",
     "cells": [
      {
       "dealer": "長澤",
       "value": 90,
       "best": true
+     },
+     {
+      "dealer": "宝源",
+      "value": 60,
+      "best": false
      },
      {
       "dealer": "大畑",
@@ -1824,6 +2134,11 @@
       "dealer": "長澤",
       "value": 220,
       "best": true
+     },
+     {
+      "dealer": "宝源",
+      "value": 195,
+      "best": false
      },
      {
       "dealer": "土金",
@@ -1887,7 +2202,6 @@
  "history": {
   "NYダウ": {
    "d": [
-    "2026-07-30",
     "2026-07-31",
     "2026-08-03",
     "2026-08-04",
@@ -1951,10 +2265,10 @@
     "2026-10-26",
     "2026-10-27",
     "2026-10-28",
-    "2026-10-29"
+    "2026-10-29",
+    "2026-10-30"
    ],
    "v": [
-    52208.06,
     52485.03,
     53178.41,
     54085.88,
@@ -2018,12 +2332,12 @@
     52361.58,
     52377.57,
     52475.1,
-    52342.56
+    52342.56,
+    51766.87
    ]
   },
   "ドル円": {
    "d": [
-    "2026-07-30",
     "2026-07-31",
     "2026-08-03",
     "2026-08-04",
@@ -2089,10 +2403,10 @@
     "2026-10-27",
     "2026-10-28",
     "2026-10-29",
-    "2026-10-30"
+    "2026-10-30",
+    "2026-10-31"
    ],
    "v": [
-    162.94,
     160.24,
     156.68,
     157.41,
@@ -2158,12 +2472,12 @@
     157.82,
     157.96,
     158.06,
-    158.06
+    157.25,
+    157.25
    ]
   },
   "ビットコイン": {
    "d": [
-    "2026-08-01",
     "2026-08-02",
     "2026-08-03",
     "2026-08-04",
@@ -2253,10 +2567,10 @@
     "2026-10-27",
     "2026-10-28",
     "2026-10-29",
-    "2026-10-30"
+    "2026-10-30",
+    "2026-10-31"
    ],
    "v": [
-    9889452,
     9882601,
     10007288,
     9998517,
@@ -2346,7 +2660,8 @@
     12607174,
     12766087,
     12827900,
-    12407641
+    12284000,
+    12142550
    ]
   },
   "基板:マザーボード（Ｃ）": {
@@ -2419,7 +2734,8 @@
     "2026-10-27",
     "2026-10-28",
     "2026-10-29",
-    "2026-10-30"
+    "2026-10-30",
+    "2026-10-31"
    ],
    "v": [
     870.0,
@@ -2459,6 +2775,7 @@
     880.0,
     880.0,
     880.0,
+    1050.0,
     1050.0,
     1050.0,
     1050.0,
@@ -2563,7 +2880,8 @@
     "2026-10-27",
     "2026-10-28",
     "2026-10-29",
-    "2026-10-30"
+    "2026-10-30",
+    "2026-10-31"
    ],
    "v": [
     9780.0,
@@ -2603,6 +2921,7 @@
     10070.0,
     10070.0,
     10070.0,
+    13000.0,
     13000.0,
     13000.0,
     13000.0,
@@ -2787,7 +3106,8 @@
     "2026-10-27",
     "2026-10-28",
     "2026-10-29",
-    "2026-10-30"
+    "2026-10-30",
+    "2026-10-31"
    ],
    "v": [
     1150.0,
@@ -2827,6 +3147,7 @@
     1180.0,
     1180.0,
     1180.0,
+    2000.0,
     2000.0,
     2000.0,
     2000.0,
@@ -2931,7 +3252,8 @@
     "2026-10-27",
     "2026-10-28",
     "2026-10-29",
-    "2026-10-30"
+    "2026-10-30",
+    "2026-10-31"
    ],
    "v": [
     3500.0,
@@ -2971,6 +3293,7 @@
     3600.0,
     3600.0,
     3600.0,
+    4000.0,
     4000.0,
     4000.0,
     4000.0,
@@ -3075,7 +3398,8 @@
     "2026-10-27",
     "2026-10-28",
     "2026-10-29",
-    "2026-10-30"
+    "2026-10-30",
+    "2026-10-31"
    ],
    "v": [
     640.0,
@@ -3146,12 +3470,12 @@
     1100.0,
     1100.0,
     1100.0,
+    1100.0,
     1100.0
    ]
   },
   "日経平均": {
    "d": [
-    "2026-07-30",
     "2026-07-31",
     "2026-08-03",
     "2026-08-04",
@@ -3210,10 +3534,10 @@
     "2026-10-23",
     "2026-10-26",
     "2026-10-27",
-    "2026-10-28"
+    "2026-10-28",
+    "2026-10-29"
    ],
    "v": [
-    61867.43,
     64362.02,
     63754.9,
     63957.53,
@@ -3272,7 +3596,8 @@
     62693.16,
     62189.65,
     63268.37,
-    63954.19
+    63954.19,
+    64659.47
    ]
   },
   "東鉄名古屋二級": {
@@ -3345,7 +3670,8 @@
     "2026-10-27",
     "2026-10-28",
     "2026-10-29",
-    "2026-10-30"
+    "2026-10-30",
+    "2026-10-31"
    ],
    "v": [
     48000.0,
@@ -3400,6 +3726,7 @@
     50000.0,
     50000.0,
     50000.0,
+    51000.0,
     51000.0,
     51000.0,
     51000.0,
@@ -3489,7 +3816,8 @@
     "2026-10-27",
     "2026-10-28",
     "2026-10-29",
-    "2026-10-30"
+    "2026-10-30",
+    "2026-10-31"
    ],
    "v": [
     25415.0,
@@ -3560,7 +3888,8 @@
     22775.0,
     22775.0,
     22775.0,
-    22775.0
+    22775.0,
+    21938.0
    ]
   },
   "銀": {
@@ -3633,7 +3962,8 @@
     "2026-10-27",
     "2026-10-28",
     "2026-10-29",
-    "2026-10-30"
+    "2026-10-30",
+    "2026-10-31"
    ],
    "v": [
     376.97,
@@ -3704,7 +4034,8 @@
     304.26,
     304.26,
     304.26,
-    304.26
+    304.26,
+    268.84
    ]
   },
   "銅建値": {
@@ -3761,9 +4092,9 @@
  "ai": {
   "lines": [
    "・銅建値2,380,000円（+60,000）、鉄二級51,000円（変わらず）",
-   "・金22,775円（-229）、銀304.26円（-11.88）、ドル円158.06円",
+   "・金21,938円（-489）、銀268.84円（-25.52）、ドル円157.25円",
    "・法規制：今年はさらに拡大「銅の盗難被害」 盗まれた銅の売買を防ぐため規制を強…（10/29）"
   ],
-  "at": "10/30 8:29"
+  "at": "10/31 5:11"
  }
 }
