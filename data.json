@@ -1,5 +1,5 @@
 {
- "updated": "11/7 6:04",
+ "updated": "11/7 8:46",
  "fx": {
   "usdjpy": 158.33,
   "date": "2026-11-06"
@@ -34,9 +34,9 @@
    },
    {
     "name": "ビットコイン",
-    "value": "12,015,088",
+    "value": "12,024,379",
     "unit": "円",
-    "diff": "+0.2%"
+    "diff": "+0.5%"
    },
    {
     "name": "日経平均",
@@ -110,6 +110,14 @@
    "published": "2026-11-06T19:09:53+09:00"
   },
   {
+   "cat": "dc",
+   "label": "AI・DC",
+   "title": "AIの銅需要：予測は高すぎるのか",
+   "source": "EBC Financial Group",
+   "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE94LUo3dVdiUll2OEpEUjUzaFVUVDNkNzN4b2FOVlJCdnhhYTdVUnVJa2IwU1FMaXNBajZ5dVZRUWZ6d0o0Y2NFcW1OMWtrTXkyMXc?oc=5",
+   "published": "2026-11-06T18:27:00+09:00"
+  },
+  {
    "cat": "mkt",
    "label": "相場",
    "title": "銅先物が3カ月ぶり安値 米中間選･民主大勝でAI向け需要鈍化に懸念",
@@ -137,10 +145,10 @@
   {
    "cat": "btc",
    "label": "ビットコイン",
-   "title": "バイナンス流出後のビットコイン最大下落は5.7％、過去例では中程",
-   "source": "CoinPost",
-   "link": "https://coinpost.jp/?p=746715",
-   "published": "2026-11-06T11:25:00+09:00"
+   "title": "旧ビットファームズ、保有ビットコインを全売却 売上はなおBTC相場に左右",
+   "source": "BeInCrypto",
+   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5SMHJCXzAzNXp1RkhrYVZ1Nk9iS0k1dGxmRE1YYW16eXN6MEMtQ3JDdTNyaWQ3STFjUms3VjlBdkstN2JVMjNwUkNCakVjUmhLckdlc3RnN1Q2cHNkcno5VkhmMDJrZkdjelE?oc=5",
+   "published": "2026-11-06T10:28:37+09:00"
   },
   {
    "cat": "dc",
@@ -323,8 +331,8 @@
    "cat": "law",
    "label": "法規制",
    "title": "「身分確認すると客が来なくなる」盗まれた電線ケーブルを常習的に買い取りか 金属買取業者に家宅捜索 東京・あきる野市",
-   "source": "Yahoo!ニュース",
-   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1icW1JZVVkSGlzWmF3UmlYVTZqWmF0dTJQRjBaZXRmY2oyajJoR0tjWDVFdUExN3ZTRVdqQW1NQmVuX1RDbU0xeDVkdHRRNWJaSGxUaHdLdV8xTlRBbXpGaHZNcTY0SWNLOVA0WFRGTFk4ZHY2N0NWVTltUkVQb0U?oc=5",
+   "source": "日テレNEWS NNN",
+   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTFA4S2czUzdXM3BuVk9JaHhtN0gtdUc2M1dGLTU3OG44WTh5QjFZU1lhM3Y0Q2hYeFdhdVB3MDhPekFzbTQ5TGxPUWs4RUw2eHFWSGFGS082bEpGZ3FnanBsT2FJWENfMWprcllNaWZCVnpiS0ZvbjJLd2NBcHo?oc=5",
    "published": "2026-11-02T18:58:00+09:00"
   },
   {
@@ -443,19 +451,19 @@
   {
    "cat": "law",
    "label": "法規制",
-   "title": "今年はさらに拡大「銅の盗難被害」 盗まれた銅の売買を防ぐため規制を強化するも…課題が（2026年10月29日掲載）",
-   "source": "日テレNEWS NNN",
-   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOWmJ3ZE5TaVc1REZwYTBwVzBXQzBqbjMzelJSUS1aVW1ZS0RfdlctY2FKTEkyN3NWMnpzOVJiYUQzOFFOM1pWSzZSNndTa0EzajBEa3kzdktkYnlTRjBMZFg5S3BGMzhWQnlGZEhjTzdyZlIzQnZHc3NYVjdnQzhtTG9ydTBEVTNNalF5ZQ?oc=5",
-   "published": "2026-10-29T19:17:00+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
    "title": "防カメが捉えた金属盗難の一部始終…狙われる金属 神社の屋根から",
    "source": "名古屋テレビ【メ～テレ】",
    "link": "https://www.nagoyatv.com/news/?id=037799",
    "published": "2026-10-29T18:59:00+09:00",
    "dups": 1
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "今年はさらに拡大「銅の盗難被害」 盗まれた銅の売買を防ぐため規制を強化するも…課題が（2026年10月29日掲載）",
+   "source": "日テレNEWS NNN",
+   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOWmJ3ZE5TaVc1REZwYTBwVzBXQzBqbjMzelJSUS1aVW1ZS0RfdlctY2FKTEkyN3NWMnpzOVJiYUQzOFFOM1pWSzZSNndTa0EzajBEa3kzdktkYnlTRjBMZFg5S3BGMzhWQnlGZEhjTzdyZlIzQnZHc3NYVjdnQzhtTG9ydTBEVTNNalF5ZQ?oc=5",
+   "published": "2026-10-29T16:00:00+09:00"
   },
   {
    "cat": "law",
@@ -518,6 +526,14 @@
   {
    "cat": "law",
    "label": "法規制",
+   "title": "アルミスクラップを合金の種類ごとに選り分け、水平リサイクルへ。TREグループ・日本軽金属・みずほ銀が環境省実証に採択",
+   "source": "Circular Economy Hub",
+   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQRDhQTWlXTHo3VTZFdVU2M0RQU3d5QmhpcTZqd0lJY3NleFBqR3FfZGtHeThfbHYxRmRkVlVyUkxPTHBYLWxHcm1ubjhQM0c5UVlsMXZmZWJ2RVZ0TVU4NUZZbmJtMjh4NzFFeHpQcVdWaUdGQzBYTVB4NV85UHFVenZnMTloOVFrQVJLeDZUYXU?oc=5",
+   "published": "2026-10-21T16:00:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
    "title": "プラスチック資源循環促進法における再資源化事業計画の認定制度と活用実務",
    "source": "ブライトイノベーション",
    "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1wdFZvYy02ODhoMlNnd1ZBUnNXZ0dLaHJHd0w4d215TjBRZER3UWt4dEt3VVBELTFLQzhROGlqdmZxRlNIay1UUjktbUR5Zk43SmNRWUZMN2VNdw?oc=5",
@@ -529,14 +545,6 @@
    "title": "経産省・環境省、小型家電リサイクル制度の評価報告書を公表。処理費を払う「逆有償」の取引が依然半数超",
    "source": "Circular Economy Hub",
    "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5CaHVFSUxvS05CRlA5MGRxT2l4OFNsV2M3bXJtVlg3Z0dJWmJwUV9HTGdFZ0tHanN2TjRMYTN6Slk5TjZ2MGRXajY1NXhRbGJQaHRyVml2dWxQUjNBN0hmSUtKOXN6T1FGODlRZWVMa3U4RGgzM0E?oc=5",
-   "published": "2026-10-19T16:00:00+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
-   "title": "リネットジャパン／SGHD・JX金属CSと資本業務提携、小型家電など再資源化基盤を共同構築へ",
-   "source": "物流ニュースのLNEWS",
-   "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9kV25mSGZ4clZqU20zUklmaWY0Q1V6OTRYRDQyMGFUSE1HZGN3c3FGM2J3bmxWNWxYZmMwSUtlbFlIbUtvNE16WlpOa1h4RXZxTWJSXw?oc=5",
    "published": "2026-10-19T16:00:00+09:00"
   },
   {
@@ -753,12 +761,12 @@
      },
      {
       "dealer": "宝源",
-      "value": 2200,
+      "value": 2160,
       "best": false
      }
     ],
-    "spread": 150,
-    "diff": "-50"
+    "spread": 190,
+    "diff": "0"
    },
    {
     "group": "銅",
@@ -776,12 +784,12 @@
      },
      {
       "dealer": "宝源",
-      "value": 2100,
+      "value": 2060,
       "best": false
      }
     ],
-    "spread": 150,
-    "diff": "-50"
+    "spread": 190,
+    "diff": "0"
    },
    {
     "group": "銅",
@@ -789,7 +797,7 @@
     "cells": [
      {
       "dealer": "土金",
-      "value": 2240,
+      "value": 2210,
       "best": true
      },
      {
@@ -803,7 +811,7 @@
       "best": false
      }
     ],
-    "spread": 190,
+    "spread": 160,
     "diff": "-30"
    },
    {
@@ -812,7 +820,7 @@
     "cells": [
      {
       "dealer": "宝源",
-      "value": 2000,
+      "value": 1960,
       "best": true
      },
      {
@@ -821,8 +829,8 @@
       "best": false
      }
     ],
-    "spread": 80,
-    "diff": "0"
+    "spread": 40,
+    "diff": "-40"
    },
    {
     "group": "電線",
@@ -834,32 +842,32 @@
       "best": true
      },
      {
-      "dealer": "宝源",
-      "value": 1720,
-      "best": true
-     },
-     {
       "dealer": "長澤",
       "value": 1705,
       "best": false
+     },
+     {
+      "dealer": "宝源",
+      "value": 1680,
+      "best": false
      }
     ],
-    "spread": 15,
-    "diff": "-30"
+    "spread": 40,
+    "diff": "0"
    },
    {
     "group": "電線",
     "name": "雑線(銅率60〜65%)",
     "cells": [
      {
-      "dealer": "宝源",
-      "value": 1250,
+      "dealer": "長澤",
+      "value": 1230,
       "best": true
      },
      {
-      "dealer": "長澤",
+      "dealer": "宝源",
       "value": 1230,
-      "best": false
+      "best": true
      },
      {
       "dealer": "大畑",
@@ -867,8 +875,8 @@
       "best": false
      }
     ],
-    "spread": 30,
-    "diff": "-10"
+    "spread": 10,
+    "diff": "-20"
    },
    {
     "group": "電線",
@@ -880,12 +888,12 @@
       "best": true
      },
      {
-      "dealer": "宝源",
-      "value": 950,
+      "dealer": "大畑",
+      "value": 940,
       "best": false
      },
      {
-      "dealer": "大畑",
+      "dealer": "宝源",
       "value": 940,
       "best": false
      },
@@ -896,7 +904,7 @@
      }
     ],
     "spread": 95,
-    "diff": "-20"
+    "diff": "0"
    },
    {
     "group": "電線",
@@ -914,7 +922,7 @@
      }
     ],
     "spread": 30,
-    "diff": "-20"
+    "diff": "0"
    },
    {
     "group": "電線",
@@ -937,12 +945,12 @@
      },
      {
       "dealer": "宝源",
-      "value": 980,
+      "value": 970,
       "best": false
      }
     ],
-    "spread": 290,
-    "diff": "-30"
+    "spread": 300,
+    "diff": "0"
    },
    {
     "group": "真鍮・砲金",
@@ -965,7 +973,7 @@
      }
     ],
     "spread": 90,
-    "diff": "-10"
+    "diff": "0"
    },
    {
     "group": "真鍮・砲金",
@@ -988,7 +996,7 @@
      }
     ],
     "spread": 235,
-    "diff": "-70"
+    "diff": "0"
    },
    {
     "group": "真鍮・砲金",
@@ -1000,12 +1008,12 @@
       "best": true
      },
      {
-      "dealer": "宝源",
-      "value": 1470,
+      "dealer": "大畑",
+      "value": 1460,
       "best": false
      },
      {
-      "dealer": "大畑",
+      "dealer": "宝源",
       "value": 1460,
       "best": false
      },
@@ -1029,12 +1037,12 @@
      },
      {
       "dealer": "宝源",
-      "value": 1380,
+      "value": 1370,
       "best": false
      }
     ],
-    "spread": 40,
-    "diff": "-35"
+    "spread": 50,
+    "diff": "0"
    },
    {
     "group": "真鍮・砲金",
@@ -2175,7 +2183,7 @@
      }
     ],
     "spread": 50,
-    "diff": "-5"
+    "diff": "0"
    },
    {
     "group": "雑品",
@@ -2711,7 +2719,7 @@
     12263542,
     12738562,
     11970746,
-    11938537
+    11951123
    ]
   },
   "基板:マザーボード（Ｃ）": {
@@ -4255,6 +4263,6 @@
    "・金22,325円（-330）、銀269.39円（-21.67）、ドル円158.33円",
    "・法規制：「ヤード」の一斉立ち入り調査で５３件を行政指導 静岡県警など、９～１…（11/6）"
   ],
-  "at": "11/7 6:05"
+  "at": "11/7 8:46"
  }
 }
