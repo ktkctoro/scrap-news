@@ -1,5 +1,5 @@
 {
- "updated": "11/8 4:38",
+ "updated": "11/8 7:50",
  "fx": {
   "usdjpy": 158.33,
   "date": "2026-11-06"
@@ -34,9 +34,9 @@
    },
    {
     "name": "ビットコイン",
-    "value": "11,998,717",
+    "value": "11,996,589",
     "unit": "円",
-    "diff": "+0.1%"
+    "diff": "-0.2%"
    },
    {
     "name": "日経平均",
@@ -56,9 +56,26 @@
   {
    "cat": "btc",
    "label": "ビットコイン",
+   "title": "ビットコインはなぜ8万ドルを維持できないのか──2つのオンチェーン指標が示す買い手の実態【エックスウィン】（NADA NEWS）",
+   "source": "Yahoo!ニュース",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9UMzdRS0tibWVYOE44SlZ5WXFrUXBzcGNiOXJyanZuRkEzdEpPZXg0cy1OM3daX09OUmd3VDBKLVRaZlpDaWhZejh2T2UtR096aXJSczBDeXNuNm10ZlNNcVFTQjFDNnZUUVlvZ0Q0ZndnWHEydWZtakV1am9lYVk?oc=5",
+   "published": "2026-11-08T06:36:03+09:00",
+   "dups": 1
+  },
+  {
+   "cat": "btc",
+   "label": "ビットコイン",
    "title": "130年の数学法則がビットコイン2033年予測",
    "source": "BeInCrypto",
    "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5UYmVXVXVVclBvWTlPcUl2OHFMeERLQVFDYzFaX2ctbEFpdkE2UEk5cEdpUkVkR0ZqczF1UlJySlJRcTlUT0tsUC00ZlQ0X2Z5TS1sNG1DZ1YweDBjNW9UTFBCbDhSbTdmZ2lzbm5yMEM2Yzlm?oc=5",
+   "published": "2026-11-08T01:30:40+09:00"
+  },
+  {
+   "cat": "btc",
+   "label": "ビットコイン",
+   "title": "ビットコインとエヌビディア、2026年は外食株に劣勢",
+   "source": "BeInCrypto",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5GeEwxSjVSQUtsLWlKUlZtYUxYU2dlaERFazM4VUNPM3Q2NnlHVTdLNHdKM2ZQUmNwRGZQOXpNVnktOWliQU1ZR3lXTWQxbng3WGF6RkVzaW1hQWlmUEJfLWNxZ2hTTlI2Q2pqeQ?oc=5",
    "published": "2026-11-08T01:30:40+09:00"
   },
   {
@@ -70,36 +87,12 @@
    "published": "2026-11-08T00:42:11+09:00"
   },
   {
-   "cat": "btc",
-   "label": "ビットコイン",
-   "title": "ビットコインとエヌビディア、2026年は外食株に劣勢",
-   "source": "BeInCrypto",
-   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5GeEwxSjVSQUtsLWlKUlZtYUxYU2dlaERFazM4VUNPM3Q2NnlHVTdLNHdKM2ZQUmNwRGZQOXpNVnktOWliQU1ZR3lXTWQxbng3WGF6RkVzaW1hQWlmUEJfLWNxZ2hTTlI2Q2pqeQ?oc=5",
-   "published": "2026-11-07T18:59:44+09:00"
-  },
-  {
    "cat": "mkt",
    "label": "相場",
    "title": "長井市に匿名寄付された「金」の地金2000ｇ…入札で4500万円の価値に（6日午後2時時点）山形",
    "source": "Excite エキサイト",
    "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5iWldCMGFZek9Kbklhbi1NNEFmNkRFdUc1ZUJnZ29raVZOS0J4VG9XZ1VjMzdpUTVPOTZUeGVVQlBtaG1sUm1zSjRNeUtOX3RyUGJwc0psV0FtemxqbzFqZ1hMZFlLcTNydTg5RlA1VlFCcUdaYUE?oc=5",
    "published": "2026-11-07T18:28:00+09:00"
-  },
-  {
-   "cat": "btc",
-   "label": "ビットコイン",
-   "title": "ビットコイン6%急落、7週間ぶり安値／テザー、約1.8兆円分のビット",
-   "source": "Yahoo!ニュース",
-   "link": "https://news.yahoo.co.jp/articles/36986838d89f6816be48a0d9eb67b20e6645bfbb/images/000",
-   "published": "2026-11-07T08:00:00+09:00"
-  },
-  {
-   "cat": "btc",
-   "label": "ビットコイン",
-   "title": "旧ビットファームズ、保有ビットコインを全売却 売上はなおBTC相場に左右",
-   "source": "BeInCrypto",
-   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5SMHJCXzAzNXp1RkhrYVZ1Nk9iS0k1dGxmRE1YYW16eXN6MEMtQ3JDdTNyaWQ3STFjUms3VjlBdkstN2JVMjNwUkNCakVjUmhLckdlc3RnN1Q2cHNkcno5VkhmMDJrZkdjelE?oc=5",
-   "published": "2026-11-07T07:00:00+09:00"
   },
   {
    "cat": "dc",
@@ -138,7 +131,7 @@
    "label": "相場",
    "title": "銅相場下落、AIインフラ整備鈍化の見方広がる－中間選挙受け",
    "source": "Bloomberg.com",
-   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxONUo4RmdLLUdoS05Pc25lNzdVTnVham1ZRTZLN1Z0dmZlZ0hfMEJJaFlCc3BycUctcUp6VVFGT0Z2ZGNxWWl5WGdmVnZ2UDZTOEttRVNpalB5N2ZlR2ZYMUo1cWpvRkRiYUFSVWRZN2I5V2FWc0hDYjMxSm03a0ZWcFZLTXF6RVZkekc2dXpR?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBvYjd3VFZWTGY5TnZDRHFJZ3JnTTdzMHlGclhKbHRtQnBqQXlPT2xaWjFCa21ENHBoNVAtbWtSZXdIdGpFZ2dRbm1uV05UdDJZNlB0TmtMY2RJRERsZHVyeENjYVBIVkdEUzgyS3ZWZjVpak5LVGtz?oc=5",
    "published": "2026-11-06T19:09:53+09:00"
   },
   {
@@ -162,8 +155,8 @@
    "label": "相場",
    "title": "銅建値、6万円下げ JX金属",
    "source": "日本経済新聞",
-   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5lMmx2Z2RheVRjNkJEQWpYSXp4MUhxS05oanBGUzFRc29NTWNERVNWTjdUV3o5U2xoNnpkczl3Snk2b1dEaXVSSV90NG4ycG9PZHFNQ3hZV2JVY1hjQ1FRcWNSUG95TkkxNkZvMw?oc=5",
-   "published": "2026-11-06T13:18:16+09:00"
+   "link": "https://www.nikkei.com/article/DGXZQOUB062YY0W6A101C2000000/",
+   "published": "2026-11-06T14:18:00+09:00"
   },
   {
    "cat": "mkt",
@@ -214,6 +207,14 @@
    "published": "2026-11-05T14:53:00+09:00"
   },
   {
+   "cat": "law",
+   "label": "法規制",
+   "title": "【2026年最新調査】古物台帳を書いていない・記入漏れがある場合は",
+   "source": "RBB TODAY",
+   "link": "https://www.rbbtoday.com/release/dreamnews/20261105/1395786.html",
+   "published": "2026-11-05T13:00:00+09:00"
+  },
+  {
    "cat": "mkt",
    "label": "相場",
    "title": "値上がり益100万円の金を売ると税金はいくら？金ETFは約20.3万円、地金・純金積立は5年超なら約5.1万円（所得税率10%の場合） (LIMO)",
@@ -256,10 +257,10 @@
   {
    "cat": "mkt",
    "label": "相場",
-   "title": "銅建値、4万円下げ 亜鉛は3000円下げ",
-   "source": "日本経済新聞",
-   "link": "https://www.nikkei.com/article/DGXZQOUB042GF0U6A101C2000000/",
-   "published": "2026-11-04T20:11:00+09:00"
+   "title": "タイの金価格が急騰！1日で1,900バーツ上昇、金地金64,400バーツに。何があった？！",
+   "source": "タイニュース・クロスボンバー",
+   "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE03ZnVvSWltOHMtMXYwbTdIOU1BZlhwY05BaHo2cTdyWTd3RklSNHJvbFI3Q3ZMeUIxbXZUMWk4YzZsWl9PUzZod2s2R0xaNFhya3RN?oc=5",
+   "published": "2026-11-05T00:49:48+09:00"
   },
   {
    "cat": "mkt",
@@ -275,8 +276,7 @@
    "title": "「長井市に世話になった」 市に\"金の地金\"2000グラム寄付・6日に一般競争入札 山形・長井市｜ニュース",
    "source": "さくらんぼテレビ",
    "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1UWU1COG9wa3B4ZUxTbUJMMllMeERtdnY4WmZYeFNJVXpMQjlUaGR1LWw3TktxUGpRcHU3NVV2czFJa19FUGw4N1hpeVB1b1g2eFYxLVlBWVlXUnNMRm10YkZjdUxqSFdhNVdiTWE1VUpFOXc?oc=5",
-   "published": "2026-11-04T18:49:00+09:00",
-   "dups": 1
+   "published": "2026-11-04T18:49:00+09:00"
   },
   {
    "cat": "mkt",
@@ -338,8 +338,8 @@
    "cat": "law",
    "label": "法規制",
    "title": "「身分確認すると客が来なくなる」盗まれた電線ケーブルを常習的に買い取りか 金属買取業者に家宅捜索 東京・あきる野市",
-   "source": "日テレNEWS NNN",
-   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTFA4S2czUzdXM3BuVk9JaHhtN0gtdUc2M1dGLTU3OG44WTh5QjFZU1lhM3Y0Q2hYeFdhdVB3MDhPekFzbTQ5TGxPUWs4RUw2eHFWSGFGS082bEpGZ3FnanBsT2FJWENfMWprcllNaWZCVnpiS0ZvbjJLd2NBcHo?oc=5",
+   "source": "Yahoo!ニュース",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1icW1JZVVkSGlzWmF3UmlYVTZqWmF0dTJQRjBaZXRmY2oyajJoR0tjWDVFdUExN3ZTRVdqQW1NQmVuX1RDbU0xeDVkdHRRNWJaSGxUaHdLdV8xTlRBbXpGaHZNcTY0SWNLOVA0WFRGTFk4ZHY2N0NWVTltUkVQb0U?oc=5",
    "published": "2026-11-02T18:58:00+09:00"
   },
   {
@@ -409,10 +409,10 @@
   {
    "cat": "law",
    "label": "法規制",
-   "title": "全日本古物鑑定士協会の理事に誠報社代表の松尾匠が就任へ。買取",
-   "source": "ストレートプレス",
-   "link": "https://straightpress.jp/company_news/detail?pr=000000011.000161726",
-   "published": "2026-11-01T02:00:00+09:00",
+   "title": "全日本古物鑑定士協会の理事に誠報社代表の松尾匠が就任へ。買取現場の不正を、業界横断の仕組みで防ぐ",
+   "source": "ニコニコニュース",
+   "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9EZUxQUl96VXZpYWpmOUhReVl5NDJ4b040b0tyLW9QT3hwbFlaQ0pLRHNCaWhCODFQOUNzeFBXbHhibG9fNS05VXhDcEZBZUNYd1FnbQ?oc=5",
+   "published": "2026-10-31T13:00:33+09:00",
    "dups": 1
   },
   {
@@ -426,27 +426,18 @@
   {
    "cat": "law",
    "label": "法規制",
-   "title": "防カメが捉えた金属盗難の一部始終…狙われる金属 神社の屋根から",
-   "source": "名古屋テレビ【メ～テレ】",
-   "link": "https://www.nagoyatv.com/news/?id=037799",
-   "published": "2026-10-29T18:59:00+09:00",
-   "dups": 1
+   "title": "防カメが捉えた金属盗難の一部始終…狙われる金属 神社の屋根から銅板盗む被害も 東海地方で相次ぐ被害",
+   "source": "Yahoo!ニュース",
+   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQNGZfNXpuVmRSR2Q2TXZ2cGEwWEtXN3NVN2ZtcHRDd0VKSlc1Ni1icmtlY3ZrTW1Mb3d1SDhuQnJNczExQ2d6VV8xMXh1RVVXYjlrNllxdVJkdmNBV3hlOHIwb0Zwb3EyTl9oejBST1pCNzdTSHhfeUJPZlhkazdBWmlqV3JhSFYxdE4tZXNn?oc=5",
+   "published": "2026-10-29T16:55:02+09:00"
   },
   {
    "cat": "law",
    "label": "法規制",
-   "title": "今年はさらに拡大「銅の盗難被害」 盗まれた銅の売買を防ぐため規制を強化するも…課題が（2026年10月29日掲載）",
+   "title": "今年はさらに拡大「銅の盗難被害」 盗まれた銅の売買を防ぐため規制を強化するも…課題が",
    "source": "日テレNEWS NNN",
-   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOWmJ3ZE5TaVc1REZwYTBwVzBXQzBqbjMzelJSUS1aVW1ZS0RfdlctY2FKTEkyN3NWMnpzOVJiYUQzOFFOM1pWSzZSNndTa0EzajBEa3kzdktkYnlTRjBMZFg5S3BGMzhWQnlGZEhjTzdyZlIzQnZHc3NYVjdnQzhtTG9ydTBEVTNNalF5ZQ?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOTEotdk1Kd0RkZXhxYW1uV0hxNERwRUZBbUVzTjJMc1k0dV9heXF5bENLY0JHNGFMSUdFQVdpb3ZDRnphZXh2dUhGV3U3bUQ5azZVSGpIT2ttc005Q2pBYS1DcmpIVEE4RERXa0F2QjdJWmVjYlFCTmE2bXEwUi1DMFZHSTRpY00?oc=5",
    "published": "2026-10-29T16:00:00+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
-   "title": "相次ぐ金属盗被害、流通経路断ちへ 稲沢署が買い取り事業所での検査公開：ニュース",
-   "source": "中日BIZナビ",
-   "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFA4clJqbEU2RzVaRGpLUEV5ZUNiRGh0UVFpZEZENkhRbjZUR3h2cnVabkkzU0xCdWJwLUdmS2k5VHhLdWxLQTg2NzhsQjVOZ1d0OVVmdjlQZXNYZEVIWlEw?oc=5",
-   "published": "2026-10-28T15:00:00+09:00"
   },
   {
    "cat": "law",
@@ -455,14 +446,6 @@
    "source": "環境新聞オンライン",
    "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE40X09KY1pfdGxldC1TQndwWmRvamRQT2VIQ25LblR2UURjTlVKY3Q2dHB4Y3VkaHphT3Fjc19FT2lGLWdLYnJWSFhVRUF4V0lLUDFfSy1FOC1XOU1vUkJJSzdua09vb185dGFIX05pcFczU0ttX2d5NDg2dw?oc=5",
    "published": "2026-10-28T07:00:00+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
-   "title": "古物商許可を取ったのに営業しないと取り消される？6か月ルールと",
-   "source": "note",
-   "link": "https://note.com/cozy_wasp4536/n/n5dd95f0ca543",
-   "published": "2026-10-28T01:56:00+09:00"
   },
   {
    "cat": "law",
@@ -2666,7 +2649,7 @@
     12738562,
     11970746,
     12007733,
-    11997958
+    11995807
    ]
   },
   "基板:マザーボード（Ｃ）": {
@@ -4226,6 +4209,6 @@
    "・金22,325円（-330）、銀269.39円（-21.67）、ドル円158.33円",
    "・法規制：「ヤード」の一斉立ち入り調査で５３件を行政指導 静岡県警など、９～１…（11/6）"
   ],
-  "at": "11/8 4:38"
+  "at": "11/8 7:50"
  }
 }
