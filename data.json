@@ -1,5 +1,5 @@
 {
- "updated": "11/11 6:26",
+ "updated": "11/11 9:07",
  "fx": {
   "usdjpy": 158.18,
   "date": "2026-11-10"
@@ -34,15 +34,15 @@
    },
    {
     "name": "ビットコイン",
-    "value": "11,726,133",
+    "value": "11,703,769",
     "unit": "円",
-    "diff": "-0.7%"
+    "diff": "-1.6%"
    },
    {
     "name": "日経平均",
     "value": "60,460",
     "unit": "円",
-    "diff": "-1,729"
+    "diff": "-618"
    },
    {
     "name": "NYダウ",
@@ -53,6 +53,38 @@
   ]
  },
  "items": [
+  {
+   "cat": "gen",
+   "label": "業界",
+   "title": "一次金属製造市場の2035年予測：グリーン製鉄と電動化が成長を牽引 - ニュースと統計",
+   "source": "IndexBox",
+   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNakVrUGhDWlpPX1cxSnU2RGhFcEpJMUVrNi1HX1NCZUxuek1KdGhldFlvMk16QTUwbGkwYWZzdXMwNFM2c2wzVWVoUC1kYmlRVHRkSFhJZVNZbDh5NHU1dEVSNVlzblhWOWtWb3Y4X0h6T2ltYzBkNVVyaHRHLV9RMHlHU1NxOEo4OE5OdEx1c0tWaTdha1BLdmZwU1dZSHhfR1RFdXh6d1g1TWxaQVZ5UXZjM1Axc0ZVMFVvcEwwT2tTYzU3NHVWd211X21JQQ?oc=5",
+   "published": "2026-11-11T06:36:03+09:00"
+  },
+  {
+   "cat": "mkt",
+   "label": "相場",
+   "title": "最新市場価格（鉄鋼・非鉄金属）",
+   "source": "japanmetaldaily",
+   "link": "https://www.japanmetaldaily.com/list/market/details",
+   "published": "2026-11-11T01:00:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "廃棄物処理業者が生き残るための脱炭素経営（58） カーボン",
+   "source": "環境新聞オンライン",
+   "link": "https://www.kankyo-news.co.jp/news/31c721d9-5598-4750-a69f-fd4ba258cdad",
+   "published": "2026-11-11T01:00:00+09:00"
+  },
+  {
+   "cat": "btc",
+   "label": "ビットコイン",
+   "title": "ビットコイン一時7.3万ドル割れ、米CPI上振れで売り加速",
+   "source": "nadanews",
+   "link": "https://www.nadanews.com/390750/",
+   "published": "2026-11-11T01:00:00+09:00"
+  },
   {
    "cat": "btc",
    "label": "ビットコイン",
@@ -77,6 +109,14 @@
    "link": "https://www.nikkei.com/article/DGXZQOUB103QU0Q6A111C2000000/",
    "published": "2026-11-10T20:33:00+09:00",
    "dups": 1
+  },
+  {
+   "cat": "btc",
+   "label": "ビットコイン",
+   "title": "ビットコインを現物ETFに交換する需要、ブラックロックで過去最高",
+   "source": "CoinPost",
+   "link": "https://coinpost.jp/?p=747337",
+   "published": "2026-11-10T19:06:00+09:00"
   },
   {
    "cat": "dc",
@@ -111,22 +151,6 @@
    "published": "2026-11-10T11:46:00+09:00"
   },
   {
-   "cat": "btc",
-   "label": "ビットコイン",
-   "title": "【11/10 相場速報｜FxPro】説得力を欠く仮想通貨の反発——BTCが200日",
-   "source": "note",
-   "link": "https://note.com/fxpro_japan/n/n6b1337ee7200",
-   "published": "2026-11-10T11:38:00+09:00"
-  },
-  {
-   "cat": "btc",
-   "label": "ビットコイン",
-   "title": "ビットコイン現物ETF、6営業日連続で純流出 週間で12億8000万ドル流出、IBITに売り集中",
-   "source": "디지털투데이",
-   "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOZHoyT09CZnQ2ZTdVTEJORXRWNnFOc05hc1NRdDNsUE5vRHY2NGhPdUNDSmp0OUNmZjBpZExvRmVfOTVXcTBFVjg4S2JxWGJHVk5FMkhwczdkY0NXaENZdUN3dkNXblRVTlJScWo0eFR2WVZDc2pDcmlJX3VTeWNzTWFuc1l0bE5MSUw1cC1pY2hfc1VobGdSYWUzdUt1VEdId2p2UG90bjhjZ2dSTFc1MnBXRjhIZC1maGdqX3JlclRQc19MOGFGM0lfRVY4V25EaktGNHY5WFoyQQ?oc=5",
-   "published": "2026-11-10T11:32:24+09:00"
-  },
-  {
    "cat": "gen",
    "label": "業界",
    "title": "KIBOR、低圧アルミケーブルのカット販売と端子のセット供給を本格化",
@@ -149,14 +173,6 @@
    "source": "日刊鉄鋼新聞 Japan Metal Daily",
    "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5VS0h6cjNDX240Q2FjZEZOVXlyOXUzbnhvQmZxZ01rbG5oRkRoTEpWWnlKa0VMOUVkN3F0VURjMnZUT00zeFRiT3RLTXV6NTc1dEdmdHhRUS1HMzFFV1E?oc=5",
    "published": "2026-11-10T05:00:00+09:00"
-  },
-  {
-   "cat": "mkt",
-   "label": "相場",
-   "title": "最新市場価格（鉄鋼・非鉄金属）",
-   "source": "japanmetaldaily",
-   "link": "https://www.japanmetaldaily.com/list/market/details",
-   "published": "2026-11-10T01:00:00+09:00"
   },
   {
    "cat": "mkt",
@@ -189,6 +205,14 @@
    "source": "Yahoo!ニュース",
    "link": "https://news.yahoo.co.jp/articles/097f7a07923307891180864fed038d69ad6ce677",
    "published": "2026-11-09T12:38:00+09:00"
+  },
+  {
+   "cat": "dc",
+   "label": "AI・DC",
+   "title": "AIデータセンター建設ラッシュで銅も変圧器も足りない？ 巨額AI",
+   "source": "note",
+   "link": "https://note.com/akaineko117/n/ne776020b20b6",
+   "published": "2026-11-09T12:00:00+09:00"
   },
   {
    "cat": "dc",
@@ -252,7 +276,7 @@
    "label": "業界",
    "title": "鏡野・上斎原総合教育施設で室外機や蛇口盗まれる 何者かが侵入か 津山署、窃盗容疑で捜査",
    "source": "山陽新聞",
-   "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBPYko5cm1lZnNqS2tza2E1UmpOU0lQZ3BKZHRnbWdaRjFKUS16YmlkeDJUQndmYjR0TlQ3MnZLSEhiSkE4T19fakphb0cwM3Jkemc?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1vcXJMcnU0eUJIalpPWHBQX0JyR2k3dXhXVFZGMzB0Z3FqblVwY0g1Sm5mREthRGdscW9GcVFIZDdZaUpiLW9rRkNzY0FYa1ZkTlJXNWJncVlXdWVsYTJWRlZ1VQ?oc=5",
    "published": "2026-11-07T17:00:00+09:00"
   },
   {
@@ -388,6 +412,14 @@
   {
    "cat": "law",
    "label": "法規制",
+   "title": "【2026年最新調査】古物台帳の記載事項・記入例で迷うポイントは",
+   "source": "CNET Japan",
+   "link": "https://japan.cnet.com/release/31220804/",
+   "published": "2026-11-04T01:00:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
    "title": "「身分確認すると客が来なくなる」盗まれた電線ケーブルを常習的に買い取りか 金属買取業者に家宅捜索 東京・あきる野市",
    "source": "日テレNEWS NNN",
    "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTFA4S2czUzdXM3BuVk9JaHhtN0gtdUc2M1dGLTU3OG44WTh5QjFZU1lhM3Y0Q2hYeFdhdVB3MDhPekFzbTQ5TGxPUWs4RUw2eHFWSGFGS082bEpGZ3FnanBsT2FJWENfMWprcllNaWZCVnpiS0ZvbjJLd2NBcHo?oc=5",
@@ -453,18 +485,10 @@
   {
    "cat": "law",
    "label": "法規制",
-   "title": "古物商許可を取ったのに営業しないと取り消される？6か月ルールと",
-   "source": "note",
-   "link": "https://note.com/cozy_wasp4536/n/n5dd95f0ca543",
-   "published": "2026-10-28T01:56:00+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
    "title": "エアコンなどのフロン管理、優れた企業を初表彰: デンカが最優秀賞・ANAなど5社が優秀賞に（オルタナ）",
    "source": "Yahoo!ニュース",
    "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNTlY3dDYyMFJQWEpqcm1Jb1BjbmI2U241ekw1cU5NUm91TkJwVzNvQkpxX3NKWnlYbXBhYXYzeGZ3WHZiWW1zX2VyT2g5dlZUak00cGJFUFhmeEt3RHM1ZnhkLWFiM0txU0l2dk54SGQxajFjVDRtU0JhS0Fnc0hkYjBvRldpLWM1?oc=5",
-   "published": "2026-10-27T12:01:37+09:00",
+   "published": "2026-10-27T16:00:00+09:00",
    "dups": 1
   },
   {
@@ -558,14 +582,6 @@
   {
    "cat": "law",
    "label": "法規制",
-   "title": "【瀬戸内資源循環プロジェクト】 前処理拠点が竣工、店頭回収もスタート 地域循環の食品トレー、来年3月から店頭へ",
-   "source": "プラジャーナル",
-   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1lVzBZNDNsTEpkMUNTZlVJSlQ0UzMyc243ZzhPakN6TUN5b1J0dnE1alZlc3ozWHFfRmduMTNaTDRReHNNaFJFaUhzU0VqZEZYOWRDVGxLdXdXY1phNFdDLTF5TVI0UkZSRHIzenFDcHZCVHdnN2RsMg?oc=5",
-   "published": "2026-10-07T16:00:00+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
    "title": "自動車リサイクル法施行20年（上） 国内資源の循環推進へ 「制度の転換点」と経済産業省",
    "source": "株式会社共同通信社",
    "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9mVEQ2MnZzWU9mUVVnSjFYTVBxZHVNU3M2VFk3RUZDNXlac19tSGptU2FYRFlxZVFpQmFSUlk0RkJSaldkc0dWX2Y1OWJobTBiT18yMGMzamhTOTlveHRVWEtaNA?oc=5",
@@ -611,14 +627,6 @@
    "source": "Yahoo!ニュース",
    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5idV96MTh3c1NJTDRDNTYydDdna1dmTno0NExRTHBpN0FTRmRacmlwUS03MDJHVTJNZzdtVERWTmpuRU1xaFVDNzI2Qno0Q0lhcjFGcjVIV09uTkVndVNsOGcwWHdfMW53MzhydWtDRVk0bWEzQWVkakc0aUxqZFU?oc=5",
    "published": "2026-09-17T16:00:00+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
-   "title": "特定放射性廃棄物の最終処分に関する法律に基づく文献調査等に関する考え方等について",
-   "source": "北海道のホームページ",
-   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9GUHFDRXU4SGt3ajk1dHZCMXQwc2NwSXliemxrWVQ5TzlTeXlvN015LUlxbWZkeFZOV3BDVmxUb1J4bHJ1aEpZaEtEYzJoVTZmNDNJNTlKM3R6UEtwV2p5TE5Ea0Mtdw?oc=5",
-   "published": "2026-09-16T16:00:00+09:00"
   },
   {
    "cat": "law",
@@ -2663,7 +2671,7 @@
     12008661,
     11831084,
     11891208,
-    11667657
+    11694232
    ]
   },
   "基板:マザーボード（Ｃ）": {
@@ -4271,8 +4279,8 @@
   "lines": [
    "・銅建値2,320,000円（+40,000）、鉄二級51,000円（変わらず）",
    "・金22,720円（+102）、銀278.52円（-11.66）、ドル円158.18円",
-   "・法規制：【2027年度制度改正】2026年に追加された「資源循環」分野とは（11/9）"
+   "・法規制：廃棄物処理業者が生き残るための脱炭素経営（58） カーボン（11/11）"
   ],
-  "at": "11/11 6:26"
+  "at": "11/11 9:07"
  }
 }
