@@ -1,5 +1,5 @@
 {
- "updated": "11/12 7:17",
+ "updated": "11/12 10:36",
  "fx": {
   "usdjpy": 159.23,
   "date": "2026-11-11"
@@ -22,27 +22,27 @@
   "rows": [
    {
     "name": "金（店頭買取）",
-    "value": "22,548",
+    "value": "22,302",
     "unit": "円/g",
-    "diff": "-393"
+    "diff": "-190"
    },
    {
     "name": "銀（店頭買取）",
-    "value": "281.49",
+    "value": "288.53",
     "unit": "円/g",
-    "diff": "-13.86"
+    "diff": "+1.32"
    },
    {
     "name": "ビットコイン",
-    "value": "11,887,437",
+    "value": "11,753,505",
     "unit": "円",
-    "diff": "+1.4%"
+    "diff": "+0.4%"
    },
    {
     "name": "日経平均",
-    "value": "61,249",
+    "value": "61,412",
     "unit": "円",
-    "diff": "+171"
+    "diff": "+3,978"
    },
    {
     "name": "NYダウ",
@@ -53,6 +53,22 @@
   ]
  },
  "items": [
+  {
+   "cat": "btc",
+   "label": "ビットコイン",
+   "title": "ステーブルコイン供給量、30日で142億ドル減 ビットコイン反発の重荷に",
+   "source": "디지털투데이",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQaDhvVVR2dlNMSFRxUW4zWGEyWWU5UGVUaDBlalhocnhaYlhLWS1zWVBVYzVScHF2eUVvXzZmRTdiLU1CSnBnemJUUGNaMS04ekZTaEgxaUtYNThPbHhBa0hTQjZ1WUN4Q1BTUldVYUc0d0JhV2NQZnRLNVV0Mktpa3ExemFqZ0ZKSkRzUWhGRHdyN0lrQWNrRVFZM0kwN0c0QTNGOGZSQm52NXZEY2hraE9CdmpWWEJOMnNVcDl4MA?oc=5",
+   "published": "2026-11-12T09:10:50+09:00"
+  },
+  {
+   "cat": "btc",
+   "label": "ビットコイン",
+   "title": "ビットコイン小幅高もETF資金流出で先安観",
+   "source": "Chosunbiz",
+   "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNd0xGamtrTmJlUkYtcUpRVnJMejJ2NXJRNjl2bkpVZWFJRmNQckpmV204T2VGX0hWVHI2VVZZUWcyYU5Yai1LLVZ5cXNqUzlQdmlXZmVYc0hjVHFyelR2RWtTLWJhUzVuRDFWWmw0a3U0ZXpDUXFTXzBrQVZiMjVEMg?oc=5",
+   "published": "2026-11-12T08:46:00+09:00"
+  },
   {
    "cat": "law",
    "label": "法規制",
@@ -70,13 +86,12 @@
    "published": "2026-11-12T02:30:24+09:00"
   },
   {
-   "cat": "btc",
-   "label": "ビットコイン",
-   "title": "ビットコイン反発の鍵は「利上げ鈍化」 利下げ前でも追い風に＝Binance Research",
-   "source": "디지털투데이",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQc2J5Mm55UVVqY2I2aExqMXg1NTRWa0VXcXRuc09GTGVOek40YXV3MWRnRzI5eHI2Z2ZlUGJhTHBjN3BGb3REVTRubENZdEFxNWxmWWFGb1JPLW41S0R0UGQtZTdyNUlyejJUN0RpSThxME02ME1jRGoxMG1IdlZFcjNjenRMWDR5cUwzSGN6SnVva3RZbU0zODZ4UGFxdDNkSEhyMXdNMlJtRDdXeWVQOWdZaU4?oc=5",
-   "published": "2026-11-12T00:01:00+09:00",
-   "dups": 1
+   "cat": "mkt",
+   "label": "相場",
+   "title": "最新市場価格（鉄鋼・非鉄金属）",
+   "source": "japanmetaldaily",
+   "link": "https://www.japanmetaldaily.com/list/market/details",
+   "published": "2026-11-12T01:00:00+09:00"
   },
   {
    "cat": "mkt",
@@ -84,8 +99,16 @@
    "title": "鉄スクラップ 関東輸出入札5万3688円 2カ月連続上昇 国内相場の強気",
    "source": "日刊産業新聞",
    "link": "https://www.japanmetal.com/news-t20261112151474.html",
-   "published": "2026-11-11T23:15:00+09:00",
+   "published": "2026-11-12T01:00:00+09:00",
    "dups": 1
+  },
+  {
+   "cat": "btc",
+   "label": "ビットコイン",
+   "title": "ビットコイン反発の鍵は「利上げ鈍化」 利下げ前でも追い風に＝Binance Research",
+   "source": "디지털투데이",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQc2J5Mm55UVVqY2I2aExqMXg1NTRWa0VXcXRuc09GTGVOek40YXV3MWRnRzI5eHI2Z2ZlUGJhTHBjN3BGb3REVTRubENZdEFxNWxmWWFGb1JPLW41S0R0UGQtZTdyNUlyejJUN0RpSThxME02ME1jRGoxMG1IdlZFcjNjenRMWDR5cUwzSGN6SnVva3RZbU0zODZ4UGFxdDNkSEhyMXdNMlJtRDdXeWVQOWdZaU4?oc=5",
+   "published": "2026-11-12T00:01:00+09:00"
   },
   {
    "cat": "dc",
@@ -102,6 +125,14 @@
    "source": "Cryptopolitan",
    "link": "https://www.cryptopolitan.com/ja/bitcoin-recovery-stablecoin-supply/",
    "published": "2026-11-11T20:03:00+09:00"
+  },
+  {
+   "cat": "btc",
+   "label": "ビットコイン",
+   "title": "ビットコイン、底打ち前の最後の下落か──USDT66億ドル減少と短期",
+   "source": "nadanews",
+   "link": "https://www.nadanews.com/390768/",
+   "published": "2026-11-11T19:15:00+09:00"
   },
   {
    "cat": "law",
@@ -146,22 +177,6 @@
    "dups": 2
   },
   {
-   "cat": "btc",
-   "label": "ビットコイン",
-   "title": "ビットコイン、局所的な底か深い調整か クリプトクアントが分岐点を分析",
-   "source": "CoinPost",
-   "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE03NWVqU1loTTEzLVJNbl9FYWVQejdIUXpqcUdGZmlHMXdNaVVRb21BMnZpV281WHdRMGVLcFAzSEV3Snc?oc=5",
-   "published": "2026-11-11T16:00:30+09:00"
-  },
-  {
-   "cat": "btc",
-   "label": "ビットコイン",
-   "title": "ビットコインへの弱気論再燃 前回価格推移の検証",
-   "source": "BeInCrypto",
-   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBoNEtKV2NwNS1fN0FFUHF1bUNhdktvR2NxUUI1ZzNoSGlKdEJTTFdmNEt1TGJwcGlURFRVZVAxbTFBbHBGWGhhOFFFQm5JbDY5RDNmT29EWG1Ed1lzYlZUamRrUmNjSDNHVTMxMXQ4bTk1Zw?oc=5",
-   "published": "2026-11-11T14:38:32+09:00"
-  },
-  {
    "cat": "mkt",
    "label": "相場",
    "title": "電気設備の経済ニュース｜2026年11月11日号 銅建値は232万円／tへ4万",
@@ -185,14 +200,6 @@
    "source": "日本経済新聞",
    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1rTm1tVnEtc01rU2Q0UzNiVlZSN3Z4UnZuVkpMWVRoYUpNcjVKay1MMDVhb25MU1B2akZjQjRESUdCWmxmUUp2SDBWZFZ5Y3FUbGIxSHZpWTJBTlhlakNaSi1TYlpLYm1pRGkzUg?oc=5",
    "published": "2026-11-11T05:00:00+09:00"
-  },
-  {
-   "cat": "mkt",
-   "label": "相場",
-   "title": "最新市場価格（鉄鋼・非鉄金属）",
-   "source": "japanmetaldaily",
-   "link": "https://www.japanmetaldaily.com/list/market/details",
-   "published": "2026-11-11T01:00:00+09:00"
   },
   {
    "cat": "law",
@@ -395,21 +402,20 @@
    "published": "2026-11-06T14:18:00+09:00"
   },
   {
-   "cat": "dc",
-   "label": "AI・DC",
-   "title": "【サニックス資源開発グループ】廃プラスチックのマテリアルリサイクル事業に参入",
-   "source": "ニコニコニュース",
-   "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5jcHU4UTVva3ZWWjQzNGt5THc0bmpGRk5vWkdYY3BnTGlRTEVhMEVGVnFEYXpUUzNfWGx2ZTAtU1gtV2ZidUlvVUtsdU16QXZETXU5Rg?oc=5",
-   "published": "2026-11-06T06:15:23+09:00",
-   "dups": 1
-  },
-  {
    "cat": "mkt",
    "label": "相場",
    "title": "ＪＸ金属・茨城事業所 高純度硫酸銅50％増産",
    "source": "WEB産業新聞",
    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE13bjRnX29waXIxcjNuVkxRUkhVc3g0ZWNGS1JHSmhBbVBmem5DVzZ6U2ozcjJ4d2YzdHRtc0hnUWJkUUhLalN5MWdvRjVkX0ZBTHN0dlp2eUpUNVV1TEFJZVBB?oc=5",
    "published": "2026-11-06T06:00:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "サニックス資源開発、廃プラのマテリアルリサイクル事業に参入",
+   "source": "ニュースメディアVOIX",
+   "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1uWTRhXzNBTW9lbFFPdXN4SEFhalI0VGtFNm1GeEdRdFRXZHNqM1FpQjRRMTVIQnlmcXRFX1c5QlFPOVZrMTBtaW5hWFB0M1lCZ2F3?oc=5",
+   "published": "2026-11-05T16:01:40+09:00"
   },
   {
    "cat": "mkt",
@@ -430,18 +436,10 @@
   {
    "cat": "law",
    "label": "法規制",
-   "title": "【2026年最新調査】古物台帳を書いていない・記入漏れがある場合はどうする？「買取コージ」が過去取引・領収書・在庫・売",
-   "source": "ニコニコニュース",
-   "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9vYzIzV3NuYWlBVV9UMzc0cjlfUmdlRnhlaTZNcEE1eDF1emlQck5adjhRNmRpMWdfanY4VEVjcDcwc0lOV1J4MWpOZFA1Wjk3LWlNbA?oc=5",
-   "published": "2026-11-05T13:00:29+09:00"
-  },
-  {
-   "cat": "gen",
-   "label": "業界",
-   "title": "戦略17分野『非鉄金属資源循環』関連企業データベースを正式提供開始 非鉄金属の回収・再生を支える関連企業を設備・部材・サービスまで調査 - 株式会社Lister",
-   "source": "PR TIMES",
-   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE92SmFnMHRNR1I4Y3h4YkNYT2xYc3AzWndfWGVLNlJscktZcGgxSHVWa29oZ0N5OTdPUnpXb3lqaDdNNkNFQnVFNHFtVjF0THRnczFnbjNrNktNTkVQRERxMWphbEhzS0pzTHc?oc=5",
-   "published": "2026-11-05T10:00:03+09:00"
+   "title": "【2026年最新調査】古物台帳を書いていない・記入漏れがある場合は",
+   "source": "RBB TODAY",
+   "link": "https://www.rbbtoday.com/release/dreamnews/20261105/1395786.html",
+   "published": "2026-11-05T13:00:00+09:00"
   },
   {
    "cat": "law",
@@ -479,9 +477,9 @@
    "cat": "law",
    "label": "法規制",
    "title": "全日本古物鑑定士協会の理事に誠報社代表の松尾匠が就任へ。買取現場の不正を、業界横断の仕組みで防ぐ",
-   "source": "PR TIMES",
-   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFAwbjNDUTJpUUY4XzRTMk43NmNOTnI3YVJkTFZyV2ZvOG1FR0w3UnZQNGpkYXVCd1l3Mm5mM2FPNnZLRlc5NDFfNl8zWk95M25DRVFMTzdQSVFzMUUxNVZIRGtLUXBaeVdQZ0E?oc=5",
-   "published": "2026-11-01T16:00:00+09:00",
+   "source": "ニコニコニュース",
+   "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9EZUxQUl96VXZpYWpmOUhReVl5NDJ4b040b0tyLW9QT3hwbFlaQ0pLRHNCaWhCODFQOUNzeFBXbHhibG9fNS05VXhDcEZBZUNYd1FnbQ?oc=5",
+   "published": "2026-10-31T16:00:00+09:00",
    "dups": 1
   },
   {
@@ -556,6 +554,14 @@
    "source": "ブライトイノベーション",
    "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1wdFZvYy02ODhoMlNnd1ZBUnNXZ0dLaHJHd0w4d215TjBRZER3UWt4dEt3VVBELTFLQzhROGlqdmZxRlNIay1UUjktbUR5Zk43SmNRWUZMN2VNdw?oc=5",
    "published": "2026-10-21T16:00:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "電子廃棄物管理の市場シェアと業界の成長 [2034 年]",
+   "source": "Fortune Business Insights",
+   "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNR0Z1bVlBV05CZi10am0wQnlUblVELWNQb3BLSVg2VWZ6aHozSHJWZ1pMbmtUcXRkd1lZUml6TGJFNHd0VHN3VXNtWjVRSFpaOFZKeF80elZlN2x5Ny1OSmZCbzlCN2lDSjU5UTU2X2hvbTRtMVpRVlBxcHo5OW1Oel9GazVxYk4zcXo5WWdjcTJjbVhTTlJHN2dxT0NZeEw4TTZuejI2MWlaLXBMcmc4Q0s3ZUVocWJGeGRTaUdrVnlFSTVyUXlQZzEwQ0xmMVRFLXA5bWxOMFlWWEMyMkhlZ0JFZw?oc=5",
+   "published": "2026-10-19T16:00:00+09:00"
   },
   {
    "cat": "law",
@@ -2522,7 +2528,6 @@
   },
   "ビットコイン": {
    "d": [
-    "2026-08-14",
     "2026-08-15",
     "2026-08-16",
     "2026-08-17",
@@ -2615,7 +2620,6 @@
     "2026-11-12"
    ],
    "v": [
-    10112895,
     10033649,
     10041098,
     10006215,
@@ -2705,7 +2709,7 @@
     11831084,
     11891208,
     11700870,
-    11809289
+    11765403
    ]
   },
   "基板:マザーボード（Ｃ）": {
@@ -3699,7 +3703,8 @@
     "2026-11-05",
     "2026-11-06",
     "2026-11-09",
-    "2026-11-10"
+    "2026-11-10",
+    "2026-11-12"
    ],
    "v": [
     67524.06,
@@ -3761,7 +3766,8 @@
     61077.9,
     57434.77,
     58775.5,
-    60459.58
+    60459.58,
+    61405.38
    ]
   },
   "東鉄名古屋二級": {
@@ -4101,7 +4107,7 @@
     22325.0,
     22941.0,
     22720.0,
-    22548.0
+    22302.0
    ]
   },
   "銀": {
@@ -4271,7 +4277,7 @@
     269.39,
     295.35,
     278.52,
-    281.49
+    288.53
    ]
   },
   "銅建値": {
@@ -4330,9 +4336,9 @@
  "ai": {
   "lines": [
    "・銅建値2,320,000円（+40,000）、鉄二級51,000円（変わらず）",
-   "・金22,548円（-393）、銀281.49円（-13.86）、ドル円159.23円",
+   "・金22,302円（-190）、銀288.53円（+1.32）、ドル円159.23円",
    "・法規制：【たかが銅線泥棒ではない】 社会インフラをも脅かす金属盗の実態（11/12）"
   ],
-  "at": "11/12 7:17"
+  "at": "11/12 10:36"
  }
 }
