@@ -1,5 +1,5 @@
 {
- "updated": "11/13 6:56",
+ "updated": "11/13 9:35",
  "fx": {
   "usdjpy": 159.7,
   "date": "2026-11-12"
@@ -22,27 +22,27 @@
   "rows": [
    {
     "name": "金（店頭買取）",
-    "value": "22,109",
+    "value": "21,827",
     "unit": "円/g",
-    "diff": "-383"
+    "diff": "-475"
    },
    {
     "name": "銀（店頭買取）",
-    "value": "272.58",
+    "value": "281.38",
     "unit": "円/g",
-    "diff": "-14.63"
+    "diff": "-7.15"
    },
    {
     "name": "ビットコイン",
-    "value": "11,427,594",
+    "value": "11,366,622",
     "unit": "円",
-    "diff": "-3.8%"
+    "diff": "-3.7%"
    },
    {
     "name": "日経平均",
-    "value": "60,819",
+    "value": "61,680",
     "unit": "円",
-    "diff": "+3,385"
+    "diff": "+2,904"
    },
    {
     "name": "NYダウ",
@@ -53,6 +53,14 @@
   ]
  },
  "items": [
+  {
+   "cat": "mkt",
+   "label": "相場",
+   "title": "金の店頭買取価格は11月11日に1g「2万2547円」に。100gの地金は手数料を引き223万8200円、金貨は地金に換算した額より低い",
+   "source": "LIMO | くらしとお金の経済メディア",
+   "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1UYnhUVHJKSFdTeTUyM2lvN2xhcFI5NUtvaWVwQ1VMcnhfMGdrY3lfWXJMbHFtdnR0ZFpUdWliS3M0cFEyeWY5YVh3QlE?oc=5",
+   "published": "2026-11-13T09:21:00+09:00"
+  },
   {
    "cat": "mkt",
    "label": "相場",
@@ -77,6 +85,14 @@
    "source": "pando.life",
    "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE1wWWpDNEFiOXZxVGRiLVpFQ1FmbmxSb0l3SzI3Y29XVFg0QmQwaHdpTEFGMGNOZm1zdkduODBJbzNpTHBlbzRiLUZB?oc=5",
    "published": "2026-11-13T02:54:25+09:00"
+  },
+  {
+   "cat": "mkt",
+   "label": "相場",
+   "title": "最新市場価格（鉄鋼・非鉄金属）",
+   "source": "japanmetaldaily",
+   "link": "https://www.japanmetaldaily.com/list/market/details",
+   "published": "2026-11-13T01:00:00+09:00"
   },
   {
    "cat": "mkt",
@@ -146,10 +162,18 @@
   {
    "cat": "btc",
    "label": "ビットコイン",
-   "title": "ビットコイン約12週間ぶり安値、7万1200ドルまで下落",
+   "title": "ビットコイン約12週間ぶりの安値に、7万1200ドルまで下落",
    "source": "CoinPost",
    "link": "https://coinpost.jp/?p=747702",
    "published": "2026-11-12T16:55:00+09:00"
+  },
+  {
+   "cat": "mkt",
+   "label": "相場",
+   "title": "東京／銅・黄銅屑／黄銅類1000円高",
+   "source": "日刊鉄鋼新聞",
+   "link": "https://www.japanmetaldaily.com/articles/-/270615",
+   "published": "2026-11-12T16:00:00+09:00"
   },
   {
    "cat": "law",
@@ -158,14 +182,6 @@
    "source": "選挙ドットコム",
    "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9oNXhMRHdVS0hCWGRMOGxRLUxWdGFGdzg2NTlNT3kzSDJWLTM4TGVLNkVZdG5zbzVieDZkNWlOUEFMRWpNR1V1TUdEMG9IbWo1eUhJb3p4UlFHOVczLXo4?oc=5",
    "published": "2026-11-12T04:06:02+09:00"
-  },
-  {
-   "cat": "mkt",
-   "label": "相場",
-   "title": "最新市場価格（鉄鋼・非鉄金属）",
-   "source": "japanmetaldaily",
-   "link": "https://www.japanmetaldaily.com/list/market/details",
-   "published": "2026-11-12T01:00:00+09:00"
   },
   {
    "cat": "mkt",
@@ -414,14 +430,6 @@
   {
    "cat": "law",
    "label": "法規制",
-   "title": "【2026年最新調査】古物台帳を書いていない・記入漏れがある場合は",
-   "source": "RBB TODAY",
-   "link": "https://www.rbbtoday.com/release/dreamnews/20261105/1395786.html",
-   "published": "2026-11-05T13:00:00+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
    "title": "レコテックの廃棄物管理ツール プラ循環を高度化 都が50施設に導入",
    "source": "環境新聞オンライン",
    "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5WMk5sWHBUUmxpdm0yLVh1S3ZmODNSdjZxZThYem9CaC1HWTNmcTNyVnlzSHRpclhTM2dReEVPS3RreGdNNC0zOXNHSV91TVlEM0xuNkFUcjR5VndJX2FlaEhyYnFBeVhJUFo0T3NDZV85THluemM4Q2dEdw?oc=5",
@@ -491,6 +499,14 @@
    "source": "環境新聞オンライン",
    "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE40X09KY1pfdGxldC1TQndwWmRvamRQT2VIQ25LblR2UURjTlVKY3Q2dHB4Y3VkaHphT3Fjc19FT2lGLWdLYnJWSFhVRUF4V0lLUDFfSy1FOC1XOU1vUkJJSzdua09vb185dGFIX05pcFczU0ttX2d5NDg2dw?oc=5",
    "published": "2026-10-28T16:00:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "「世界のゴミ捨て場」健在！ タイ税関、港で金属スクラップに有害な電子廃棄物混入コンテナ発見。",
+   "source": "タイニュース・クロスボンバー",
+   "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBPY3BCX25KcnNRdXgxWDkyQU9SWjljb2o0Qm9pZnhSUWtueGVTTWtUTTFfUm1yT0pUem0xekxBNlJESW8zR2lZVWU0Z0s4WXM?oc=5",
+   "published": "2026-10-27T16:00:00+09:00"
   },
   {
    "cat": "law",
@@ -2482,7 +2498,6 @@
   },
   "ビットコイン": {
    "d": [
-    "2026-08-15",
     "2026-08-16",
     "2026-08-17",
     "2026-08-18",
@@ -2575,7 +2590,6 @@
     "2026-11-13"
    ],
    "v": [
-    10033649,
     10041098,
     10006215,
     10275541,
@@ -2665,7 +2679,7 @@
     11891208,
     11700870,
     11816729,
-    11419898
+    11368066
    ]
   },
   "基板:マザーボード（Ｃ）": {
@@ -3669,7 +3683,8 @@
     "2026-11-06",
     "2026-11-09",
     "2026-11-10",
-    "2026-11-11"
+    "2026-11-11",
+    "2026-11-13"
    ],
    "v": [
     68308.59,
@@ -3731,7 +3746,8 @@
     57434.77,
     58775.5,
     60459.58,
-    61248.59
+    61248.59,
+    61654.06
    ]
   },
   "東鉄名古屋二級": {
@@ -4075,7 +4091,7 @@
     22941.0,
     22720.0,
     22302.0,
-    22109.0
+    21827.0
    ]
   },
   "銀": {
@@ -4247,7 +4263,7 @@
     295.35,
     278.52,
     288.53,
-    272.58
+    281.38
    ]
   },
   "銅建値": {
@@ -4304,9 +4320,9 @@
  "ai": {
   "lines": [
    "・銅建値2,320,000円（+40,000）、鉄二級51,000円（変わらず）",
-   "・金22,109円（-383）、銀272.58円（-14.63）、ドル円159.7円",
+   "・金21,827円（-475）、銀281.38円（-7.15）、ドル円159.7円",
    "・法規制：タイ政府、有害廃棄物の違法輸入に罰則強化へ！ 外国人の国外退去も検討…（11/13）"
   ],
-  "at": "11/13 6:56"
+  "at": "11/13 9:35"
  }
 }
