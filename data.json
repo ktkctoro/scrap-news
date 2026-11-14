@@ -1,5 +1,5 @@
 {
- "updated": "11/14 6:38",
+ "updated": "11/14 9:24",
  "fx": {
   "usdjpy": 160.0,
   "date": "2026-11-13"
@@ -34,9 +34,9 @@
    },
    {
     "name": "ビットコイン",
-    "value": "10,885,358",
+    "value": "10,907,200",
     "unit": "円",
-    "diff": "-4.7%"
+    "diff": "-4.3%"
    },
    {
     "name": "日経平均",
@@ -56,10 +56,19 @@
   {
    "cat": "btc",
    "label": "ビットコイン",
+   "title": "ビットコイン7万ドル割れ、AI株安が波及しロング大量清算が下落を加速｜仮想NISHI",
+   "source": "CoinPost",
+   "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE9KM0hkM2h4RG9obF9kR0tKWTlla08yMzFBOVNja1FqTXEzWl9OWFRQcjZGd291UTZZc2ZGempYTEpnYTg?oc=5",
+   "published": "2026-11-14T09:15:32+09:00"
+  },
+  {
+   "cat": "btc",
+   "label": "ビットコイン",
    "title": "ビットコイン（BTC）の買い手はどこへ消えたのか──日経新聞へのコメントから読み解く資金流出の実態【エックスウィン】",
    "source": "Yahoo!ニュース",
    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1nOEU3NllVUFBnOE5nS19GTTZLemlVMGZOSzRTU0dTY0tPRUJKdjNlYzI2NDZwV2h6Tm8xZ1h1SHNUcUVSX1IyTW5PUVFVQktWMFN6dWdxOHY1U3VDOTdpbk9ObW9yOHB6U0NtMWNHeFg3MnVJT1c1UHZNVDFiYWs?oc=5",
-   "published": "2026-11-14T06:00:00+09:00"
+   "published": "2026-11-14T06:00:00+09:00",
+   "dups": 1
   },
   {
    "cat": "btc",
@@ -67,7 +76,7 @@
    "title": "ビットコインはUS$ 6.9万を下回り、過去のサポート水準を試す",
    "source": "PortalCripto",
    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQNXJucl9NM1lNZ2hFengtZkswdFZDczhyN3VhWnhocTdDaU9YN1lSOUdWODh0TDJvN2gyT3luQmdteVlrcWhaTS1oa1RPZFYyd1daNlBRVmlsRmdMWHpZR2EzbTctTFdEcXR3UC1OeGhtQWVxVm16Mlo2QXlzZUkybnhZRW5LUzVzTEwydV9iaVc4aDR5ZHRWaEYyT0MzeHYtTWRxSFExdEU?oc=5",
-   "published": "2026-11-14T02:11:26+09:00"
+   "published": "2026-11-14T02:13:55+09:00"
   },
   {
    "cat": "btc",
@@ -76,22 +85,6 @@
    "source": "BeInCrypto",
    "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9oRGRXZXBicHFHNFI5NmlrQ1pvWVBDOUcwSHBTdERJR0xIS1FEbklJLWdDa2s2aGpUM2JCZUh1c0J5d1dTbEhkV0NwRXNpM2JQaDVmT3EzcFJUa1VIaTJtUFZfQkdKNGZTX2RUTnd5V1o2SnM?oc=5",
    "published": "2026-11-13T23:24:22+09:00"
-  },
-  {
-   "cat": "btc",
-   "label": "ビットコイン",
-   "title": "ビットコイン急落の背景 BTCが6万9000ドル割れた5要因",
-   "source": "BeInCrypto",
-   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1FdmtfLVBLeEhwV0I5aUkxVG00bU9MX0FoNE5RcG5HdGVMMU9JWnROQlZlM3ZJb2tQYm5wNkpaRi15bXVUa1hNcmd6NTFsZDlrSndJMW1UWTNaVnpOSWE1d09QYkZwNEV4OW9EQ0NJMTc5NFE?oc=5",
-   "published": "2026-11-13T22:16:26+09:00"
-  },
-  {
-   "cat": "btc",
-   "label": "ビットコイン",
-   "title": "ビットコイン7万ドル割れは想定内──次の上昇相場は2027年3月か",
-   "source": "COIN OTAKU",
-   "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE9xbVQ2Q3UwZElrdUN2NmFzTWhjZWlKZ0d6SXNNZkUwNzBFWWNoWVlacUdYcWcwOTVWOTR4ZFdseGNIRG1aa01PaTZR?oc=5",
-   "published": "2026-11-13T20:31:54+09:00"
   },
   {
    "cat": "dc",
@@ -209,8 +202,8 @@
    "published": "2026-11-13T01:00:00+09:00"
   },
   {
-   "cat": "mkt",
-   "label": "相場",
+   "cat": "gen",
+   "label": "業界",
    "title": "スクラップシャー市場2035年予測：電炉鋼と循環経済が成長を牽引",
    "source": "IndexBox",
    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQelNMc0pFSjRUU0lCSDNTTUdzbEI1YXpCdFAwemJmTmNKUEhUMTRuRlQtb1NkYnNoNmdvRFZTUlJOUFNyZTRqNHRvNzNOUUIySk1qZ0JiMnFXWFU3SDlkalpRWWtUWll0T1lWTUx3Qlk1RWdLRVNuZGVRakRkVkhIVjhzMVpKQmpCa0lWSVhNak8xVUJFaTJlRDhzS1VGb0FWV3V6cEs0TWhDV0laamZUSVNfMXNLZjBlQ2dndW1zTjk?oc=5",
@@ -258,20 +251,20 @@
    "published": "2026-11-12T04:06:02+09:00"
   },
   {
+   "cat": "mkt",
+   "label": "相場",
+   "title": "金高騰で「売る人」は7割増 ― 買取約29万件のデータで見る、日本人が手放す金の実像",
+   "source": "ニコニコニュース",
+   "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBCT1NzcWdhTThuOUFOODloejNLd0hhTHZpZnRXblRMQWg5TGJyT0FNNVRUWFFuQXFhdm02QmtBR3FRY3F5TlJqZkhmaWtQMG9jbEo1R3dBYnlFdlk2Y0tTXzNHUHZvYXB1THNveURRQWhsUzcwaTRWMTA5MA?oc=5",
+   "published": "2026-11-12T02:30:24+09:00"
+  },
+  {
    "cat": "dc",
    "label": "AI・DC",
    "title": "中国の供給逼迫とAI需要で銅先物は6.30ドルに向け反発 - ニュースと統計",
    "source": "IndexBox",
    "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOakRZMzVhckM3WVJGWmQtYnRJcVh5LVU2QThVOTlwVkxmZ2ZqOEhQa1MyQlh5endYbk1yXzBHaTlNdjFsNDRsX1E0MkZjMlNrNDMtaVZRQ2x4ajRrTE9Nd2lweVdFeU94QzF0dVFnRXhjOXp4TVFUSVlXWWJQajlfU2p0akdMdHdQME1DTWhVbXVRMkhmQXc?oc=5",
    "published": "2026-11-11T21:20:27+09:00"
-  },
-  {
-   "cat": "mkt",
-   "label": "相場",
-   "title": "金高騰で「売る人」は7割増 ― 買取約29万件のデータで見る、日本人が手放す金の実像",
-   "source": "毎日キレイ",
-   "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9sbEtfdXIxQ3dXWmdXOVVlRG5FOTR0a2VkaUQ0QTlzbE5uUkdXcHpWV2E1YXhhUTZKSE5FbTZGYUFDbk0xVHdVcXIzSjJGeEFwdkJpZmJWQlF1R1FCQkpMbUZOdUs0ck95enNUWkdJZmZET1NhMjhxX1dR?oc=5",
-   "published": "2026-11-11T20:50:00+09:00"
   },
   {
    "cat": "law",
@@ -321,8 +314,7 @@
    "title": "電気設備の経済ニュース｜2026年11月11日号 銅建値は232万円／tへ4万",
    "source": "note",
    "link": "https://note.com/harita2021/n/n8240405767dc",
-   "published": "2026-11-11T08:24:00+09:00",
-   "dups": 1
+   "published": "2026-11-11T08:24:00+09:00"
   },
   {
    "cat": "dc",
@@ -405,14 +397,6 @@
    "published": "2026-11-09T06:00:00+09:00"
   },
   {
-   "cat": "mkt",
-   "label": "相場",
-   "title": "三井物産、銅の供給力強化 鉱山拡張、新規権益検討も オフテイク権拡大進展",
-   "source": "WEB産業新聞",
-   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9lakxkSk9kWk5vRkx6b3lqd2hnZ21YRmZHdEtZUkFELU94QkU3NUFLSEY1VnV6dlQxa0Nlem90VUtsaTdjX3BqTWNfbW0yZEIxSWNvYUdyMnRGci1FX0lZamxn?oc=5",
-   "published": "2026-11-09T05:58:00+09:00"
-  },
-  {
    "cat": "law",
    "label": "法規制",
    "title": "杣川工業、金属加工会社が古家具リメイク",
@@ -451,6 +435,14 @@
    "source": "静岡新聞DIGITAL",
    "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9VMVlFNFFwVV84WGZ6M1NhMkh3UVQ3QzN1dmJXMGxGUkJ6T0dUMEhQT0tERU5IV1hpeVBST2NBd0tJSE42aG1INE15UkdEdw?oc=5",
    "published": "2026-11-06T22:20:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "【2026年最新調査】古物台帳を書いていない・記入漏れがある場合は",
+   "source": "RBB TODAY",
+   "link": "https://www.rbbtoday.com/release/dreamnews/20261105/1395786.html",
+   "published": "2026-11-05T13:00:00+09:00"
   },
   {
    "cat": "law",
@@ -496,9 +488,9 @@
   {
    "cat": "law",
    "label": "法規制",
-   "title": "今年はさらに拡大「銅の盗難被害」 盗まれた銅の売買を防ぐため規制を強化するも…課題が",
+   "title": "今年はさらに拡大「銅の盗難被害」 盗まれた銅の売買を防ぐため規制を強化するも…課題が（2026年10月29日掲載）",
    "source": "日テレNEWS NNN",
-   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOTEotdk1Kd0RkZXhxYW1uV0hxNERwRUZBbUVzTjJMc1k0dV9heXF5bENLY0JHNGFMSUdFQVdpb3ZDRnphZXh2dUhGV3U3bUQ5azZVSGpIT2ttc005Q2pBYS1DcmpIVEE4RERXa0F2QjdJWmVjYlFCTmE2bXEwUi1DMFZHSTRpY00?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOWmJ3ZE5TaVc1REZwYTBwVzBXQzBqbjMzelJSUS1aVW1ZS0RfdlctY2FKTEkyN3NWMnpzOVJiYUQzOFFOM1pWSzZSNndTa0EzajBEa3kzdktkYnlTRjBMZFg5S3BGMzhWQnlGZEhjTzdyZlIzQnZHc3NYVjdnQzhtTG9ydTBEVTNNalF5ZQ?oc=5",
    "published": "2026-10-29T16:00:00+09:00"
   },
   {
@@ -533,6 +525,14 @@
    "source": "ブライトイノベーション",
    "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1wdFZvYy02ODhoMlNnd1ZBUnNXZ0dLaHJHd0w4d215TjBRZER3UWt4dEt3VVBELTFLQzhROGlqdmZxRlNIay1UUjktbUR5Zk43SmNRWUZMN2VNdw?oc=5",
    "published": "2026-10-21T16:00:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "電子廃棄物管理の市場シェアと業界の成長 [2034 年]",
+   "source": "Fortune Business Insights",
+   "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNR0Z1bVlBV05CZi10am0wQnlUblVELWNQb3BLSVg2VWZ6aHozSHJWZ1pMbmtUcXRkd1lZUml6TGJFNHd0VHN3VXNtWjVRSFpaOFZKeF80elZlN2x5Ny1OSmZCbzlCN2lDSjU5UTU2X2hvbTRtMVpRVlBxcHo5OW1Oel9GazVxYk4zcXo5WWdjcTJjbVhTTlJHN2dxT0NZeEw4TTZuejI2MWlaLXBMcmc4Q0s3ZUVocWJGeGRTaUdrVnlFSTVyUXlQZzEwQ0xmMVRFLXA5bWxOMFlWWEMyMkhlZ0JFZw?oc=5",
+   "published": "2026-10-19T16:00:00+09:00"
   },
   {
    "cat": "law",
@@ -693,7 +693,7 @@
     "cells": [
      {
       "dealer": "土金",
-      "value": 2380,
+      "value": 2330,
       "best": true
      },
      {
@@ -712,8 +712,8 @@
       "best": false
      }
     ],
-    "spread": 220,
-    "diff": "0"
+    "spread": 170,
+    "diff": "-50"
    },
    {
     "group": "銅",
@@ -721,7 +721,7 @@
     "cells": [
      {
       "dealer": "土金",
-      "value": 2250,
+      "value": 2210,
       "best": true
      },
      {
@@ -735,8 +735,8 @@
       "best": false
      }
     ],
-    "spread": 190,
-    "diff": "0"
+    "spread": 150,
+    "diff": "-40"
    },
    {
     "group": "銅",
@@ -744,7 +744,7 @@
     "cells": [
      {
       "dealer": "土金",
-      "value": 2240,
+      "value": 2200,
       "best": true
      },
      {
@@ -758,8 +758,8 @@
       "best": false
      }
     ],
-    "spread": 190,
-    "diff": "0"
+    "spread": 150,
+    "diff": "-40"
    },
    {
     "group": "銅",
@@ -831,7 +831,7 @@
     "cells": [
      {
       "dealer": "土金",
-      "value": 1020,
+      "value": 1010,
       "best": true
      },
      {
@@ -850,8 +850,8 @@
       "best": false
      }
     ],
-    "spread": 95,
-    "diff": "0"
+    "spread": 85,
+    "diff": "-10"
    },
    {
     "group": "電線",
@@ -951,7 +951,7 @@
     "cells": [
      {
       "dealer": "土金",
-      "value": 1590,
+      "value": 1530,
       "best": true
      },
      {
@@ -970,8 +970,8 @@
       "best": false
      }
     ],
-    "spread": 170,
-    "diff": "0"
+    "spread": 110,
+    "diff": "-60"
    },
    {
     "group": "真鍮・砲金",
@@ -1979,13 +1979,13 @@
     "name": "給湯器",
     "cells": [
      {
-      "dealer": "土金",
-      "value": 500,
+      "dealer": "安城貿易",
+      "value": 490,
       "best": true
      },
      {
-      "dealer": "安城貿易",
-      "value": 490,
+      "dealer": "土金",
+      "value": 480,
       "best": false
      },
      {
@@ -2004,8 +2004,8 @@
       "best": false
      }
     ],
-    "spread": 70,
-    "diff": "0"
+    "spread": 60,
+    "diff": "-10"
    },
    {
     "group": "雑品",
@@ -2483,7 +2483,6 @@
   },
   "ビットコイン": {
    "d": [
-    "2026-08-16",
     "2026-08-17",
     "2026-08-18",
     "2026-08-19",
@@ -2576,7 +2575,6 @@
     "2026-11-14"
    ],
    "v": [
-    10041098,
     10006215,
     10275541,
     10320718,
@@ -2666,7 +2664,7 @@
     11700870,
     11816729,
     11411349,
-    10909911
+    10905851
    ]
   },
   "基板:マザーボード（Ｃ）": {
@@ -4324,6 +4322,6 @@
    "・金21,753円（-549）、銀266.53円（-22.00）、ドル円160.0円",
    "・法規制：リバスタ、廃棄物処理法の規則改正に向けe-reverse.comを拡…（11/13）"
   ],
-  "at": "11/14 6:39"
+  "at": "11/14 9:24"
  }
 }
