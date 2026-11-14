@@ -1,5 +1,5 @@
 {
- "updated": "11/15 5:06",
+ "updated": "11/15 8:07",
  "fx": {
   "usdjpy": 160.0,
   "date": "2026-11-13"
@@ -34,9 +34,9 @@
    },
    {
     "name": "ビットコイン",
-    "value": "10,509,342",
+    "value": "10,147,233",
     "unit": "円",
-    "diff": "-4.6%"
+    "diff": "-6.5%"
    },
    {
     "name": "日経平均",
@@ -98,18 +98,34 @@
   {
    "cat": "btc",
    "label": "ビットコイン",
+   "title": "コブラ氏、冬の到来を前にAIがビットコインの自己管理を脅かすと警告",
+   "source": "Bitcoin.com News",
+   "link": "https://news.bitcoin.com/ja/crypto-news/kobura-shi-fuyu-no-torai-wo-mae-ni-ai-ga-bitcoin-no-jikokanri-wo-odosu-to-keikoku/",
+   "published": "2026-11-14T16:53:00+09:00"
+  },
+  {
+   "cat": "btc",
+   "label": "ビットコイン",
    "title": "ビットコイン過去最高値更新は再びあるかXで議論",
    "source": "BeInCrypto",
    "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBWSE9NTDhkRGhmZnlPQUtVMjFPWmM5bWVqWS1kNjZhUTFqR0lBNkJJMi1kMmhfMkdDR3BkSFc3SmhOMDVqbGpQMG4wZndIeW5PdWI3d1dCOVV4RW9vd21XNGV1N1hrNGhsbTFHMzBwaEM1em95S1hFeU1VMXVpdw?oc=5",
    "published": "2026-11-14T13:24:37+09:00"
   },
   {
-   "cat": "btc",
-   "label": "ビットコイン",
-   "title": "ピーター・シフ氏、ビットコインは「じわじわ価値を失う」と批判 金は3900ドル割れ",
-   "source": "Bitcoin News",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPOS1IXzV5RTVxcjBDRktfRk5fc0o1UGZ4X3djNkRKREMyRkRXeDBZVDl2RGkwQXVwQ2lsdktqSEdkdzgtNHNhQlE0aGRMV2ZfdWlKdnJteWZyek1CREI4YnZINWJ3ZHl6dXJHZXlxMmtOc1FjV3drcGNFM1BFbVNjM3IyMUU0TXpOZG5iemNIVk5CU3FmaXlDeDNubDFqaWx5TTlOaHctM3VCOEdsamltejFaVk5CLWRCRFVWaExKMjY?oc=5",
-   "published": "2026-11-14T12:38:00+09:00"
+   "cat": "dc",
+   "label": "AI・DC",
+   "title": "【電線4社比較】フジクラ「営業益160％増」で一人勝ち？「AI特需」勝者を分ける3条件（ビジネス＋IT）",
+   "source": "Yahoo!ニュース",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5oZnNLa3ptTG9PN21XUndGZnBNTi1wYVhTek9WV05vZFBiM0pmT1pRa0JJOFdCdC1JSUV6MDd3dkRKOXNzRVFUeEVlaklTaVVkZk1Way1Yc19KN2VOb0h1aVRudVpmTGFPOUN6TXFPWnZBdUw2eUpiY25qa3EwMTg?oc=5",
+   "published": "2026-11-14T07:00:07+09:00"
+  },
+  {
+   "cat": "dc",
+   "label": "AI・DC",
+   "title": "「データセンター機器用フレキシブルフラットケーブル（FFC）の",
+   "source": "RBB TODAY",
+   "link": "https://www.rbbtoday.com/release/dreamnews/20261113/1402951.html",
+   "published": "2026-11-13T18:30:00+09:00"
   },
   {
    "cat": "mkt",
@@ -187,14 +203,6 @@
    "dups": 1
   },
   {
-   "cat": "law",
-   "label": "法規制",
-   "title": "タイ政府、有害廃棄物の違法輸入に罰則強化へ！ 外国人の国外退去も検討。本当にやれるのか？！",
-   "source": "タイニュース・クロスボンバー",
-   "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBBTjZ2XzYtMmRqd0dvSXN4YnQxdVJ6WHRRY2pJWWlaNVZzYXc1Wjkta05pYnVkV0s1QTl6emYwZ2dmc3MtSmhsSTlkR2ZsMjg?oc=5",
-   "published": "2026-11-13T03:12:15+09:00"
-  },
-  {
    "cat": "dc",
    "label": "AI・DC",
    "title": "銅張積層板（CCL）およびプリプレグ市場における主要な成長要因と、2026年から2033",
@@ -218,6 +226,14 @@
    "link": "https://www.nikkei.com/article/DGXZQOUB122480S6A111C2000000/",
    "published": "2026-11-12T18:57:00+09:00",
    "dups": 1
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
+   "title": "パネル・リサイクル制度、「ガラスを回収し、ほぼ全て再資源化」 - ニュース - メガソーラービジネス plus",
+   "source": "日経BP",
+   "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5jYldGWVNyMVI5S3lPSk5uckdhNzRERmV2RnJJTFV6MzJuSVdVak5FT3FpQUFfU2Z6cTBCWktFSXN2Q2J0dndzSXpwb1MySDViVjlhQXdmNXduM29vam54cmlROE1mdmNWU3JGODduVXdrVHVJ?oc=5",
+   "published": "2026-11-12T18:09:00+09:00"
   },
   {
    "cat": "law",
@@ -376,6 +392,14 @@
    "published": "2026-11-09T12:00:00+09:00"
   },
   {
+   "cat": "dc",
+   "label": "AI・DC",
+   "title": "AIサーバ向け高周波回路基板用途HVLP4銅箔の供給能力を拡大",
+   "source": "AGARA 紀伊民報",
+   "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5ZSzg2cHhuR3AzWjBndjhLWkRRMEdhNFdmWjVXQnlVMldGNDFTY1hsYjZWUzlLY1ZZMEJTc0VySml4aW5tVWVXV0pBMWV1Y2M?oc=5",
+   "published": "2026-11-09T11:00:00+09:00"
+  },
+  {
    "cat": "mkt",
    "label": "相場",
    "title": "【金属価格推移】銅は依然高値圏を維持アルミは7月以降急落",
@@ -414,14 +438,6 @@
    "source": "静岡新聞DIGITAL",
    "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9VMVlFNFFwVV84WGZ6M1NhMkh3UVQ3QzN1dmJXMGxGUkJ6T0dUMEhQT0tERU5IV1hpeVBST2NBd0tJSE42aG1INE15UkdEdw?oc=5",
    "published": "2026-11-06T22:20:00+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
-   "title": "豊田通商、「再生材サプライヤー」へ進化 金属スクラップで世界トップへ",
-   "source": "日経ビジネス電子版",
-   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9pS0RNOVFBMHkxbUttYS14SHktMlFwdENXVFBWcXg4bHEwLW44UHYwX0gtM08tZEstVTNqQi1IaXkyM2xvaWZuVUdHNzhUdFdUVXdsaWZVVXFXQzN5MFl1dUZySkVNSWc?oc=5",
-   "published": "2026-11-05T17:00:00+09:00"
   },
   {
    "cat": "law",
@@ -478,7 +494,8 @@
    "title": "防カメが捉えた金属盗難の一部始終…狙われる金属　神社の屋根から銅板盗む被害も　東海地方で相次ぐ被害",
    "source": "名古屋テレビ【メ～テレ】",
    "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE8yd29XQjJNb0ZlNFJRUl9tYlhnUDlHbXhqaVpwUmVhR1JkcWdSYW9kQlJhYkdXaGhIUFpTTVVzTnBQZm9RUWN0bkhQandQbHRQMXfSAWRBVV95cUxPT0dMbktCRHgzVGNaUnBqMmN4Sm1zeWJpeUV1YWI1ajdTU1lJTWFJeENhNS1pMHpJdU1oRUk2Y1dwZnRJSzFjbzkyYTEya3AxZjVRQW42YzkxTEM0SmxTd1hlcGtY?oc=5",
-   "published": "2026-10-29T16:00:00+09:00"
+   "published": "2026-10-29T16:00:00+09:00",
+   "dups": 1
   },
   {
    "cat": "law",
@@ -528,14 +545,6 @@
    "source": "ブライトイノベーション",
    "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1wdFZvYy02ODhoMlNnd1ZBUnNXZ0dLaHJHd0w4d215TjBRZER3UWt4dEt3VVBELTFLQzhROGlqdmZxRlNIay1UUjktbUR5Zk43SmNRWUZMN2VNdw?oc=5",
    "published": "2026-10-21T16:00:00+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
-   "title": "電子廃棄物管理の市場シェアと業界の成長 [2034 年]",
-   "source": "Fortune Business Insights",
-   "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNR0Z1bVlBV05CZi10am0wQnlUblVELWNQb3BLSVg2VWZ6aHozSHJWZ1pMbmtUcXRkd1lZUml6TGJFNHd0VHN3VXNtWjVRSFpaOFZKeF80elZlN2x5Ny1OSmZCbzlCN2lDSjU5UTU2X2hvbTRtMVpRVlBxcHo5OW1Oel9GazVxYk4zcXo5WWdjcTJjbVhTTlJHN2dxT0NZeEw4TTZuejI2MWlaLXBMcmc4Q0s3ZUVocWJGeGRTaUdrVnlFSTVyUXlQZzEwQ0xmMVRFLXA5bWxOMFlWWEMyMkhlZ0JFZw?oc=5",
-   "published": "2026-10-19T16:00:00+09:00"
   },
   {
    "cat": "law",
@@ -2689,7 +2698,7 @@
     11816729,
     11411349,
     10912777,
-    10505263
+    10134162
    ]
   },
   "基板:マザーボード（Ｃ）": {
@@ -4363,6 +4372,6 @@
    "・金21,753円（-549）、銀266.53円（-22.00）、ドル円160.0円",
    "・法規制：リバスタ、廃棄物処理法の規則改正に向けe-reverse.comを拡…（11/13）"
   ],
-  "at": "11/15 5:06"
+  "at": "11/15 8:07"
  }
 }
