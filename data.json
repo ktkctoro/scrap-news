@@ -1,5 +1,5 @@
 {
- "updated": "11/16 5:35",
+ "updated": "11/16 8:26",
  "fx": {
   "usdjpy": 160.0,
   "date": "2026-11-13"
@@ -34,9 +34,9 @@
    },
    {
     "name": "ビットコイン",
-    "value": "10,374,271",
+    "value": "10,385,745",
     "unit": "円",
-    "diff": "-0.7%"
+    "diff": "+1.9%"
    },
    {
     "name": "日経平均",
@@ -56,10 +56,50 @@
   {
    "cat": "btc",
    "label": "ビットコイン",
+   "title": "約320兆円の暗号資産暴落を受け、ビットコイン「崩壊」の警鐘が鳴る",
+   "source": "Forbes JAPAN",
+   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFAzX01FM0d5WFF6QnF4amxGaVEwWXVhMzViS2hIRHU1aFVkYXNVVGhIbElmalhsdlNoTDE3cTFWaVhab1V6bEg2VTl4MVFUendONFlBTHYyakgzdw?oc=5",
+   "published": "2026-11-16T07:30:00+09:00"
+  },
+  {
+   "cat": "mkt",
+   "label": "相場",
+   "title": "製錬大手８社の４～９月期／非鉄価格高騰などで全社最終増益／通期は５社が最終増益見通し",
+   "source": "日刊鉄鋼新聞 Japan Metal Daily",
+   "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9nY3oyLUZwTmE5Z0RjT0ZHQk1rcWpGTVB0RkpabkZhUFpkaWhlQ09ERU8yQU11SHU2UjljNlk2ZkoyeVA2c0NWbmZHeThqSGVieVB0ODV3RGhtbXI5eFE?oc=5",
+   "published": "2026-11-16T05:00:00+09:00"
+  },
+  {
+   "cat": "btc",
+   "label": "ビットコイン",
    "title": "【続編】ビットコインはなぜ67,000ドルを割り込んだのか？──",
    "source": "note",
    "link": "https://note.com/silverwolf1000/n/n4c3d7c49c556",
    "published": "2026-11-15T21:00:00+09:00"
+  },
+  {
+   "cat": "mkt",
+   "label": "相場",
+   "title": "日鋼ステンレスと豫洲短板産業 越合弁、北部に新拠点",
+   "source": "日刊産業新聞",
+   "link": "https://www.japanmetal.com/news-t20261116151513.html",
+   "published": "2026-11-15T16:52:00+09:00"
+  },
+  {
+   "cat": "btc",
+   "label": "ビットコイン",
+   "title": "ビットコインじり安から下げ加速、疲弊するトレーダー－下値を模索",
+   "source": "Bloomberg.com",
+   "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5QTm45b3Y1WnVrb1QwWXAxdjBnN0pRSnpHZ2UtTUhzQnJnZFY2S19aWkVOR0lLT0FidE1BTUpnSkJTTXBsMGFpUzRhWGJqeG8ySmdrdE9wLU9HN2xvZ3JjaF9ZT1hodl9FLW9zZUdJVWZjSjhuaU1r?oc=5",
+   "published": "2026-11-15T16:45:00+09:00"
+  },
+  {
+   "cat": "mkt",
+   "label": "相場",
+   "title": "最新市場価格（鉄鋼・非鉄金属）",
+   "source": "japanmetaldaily",
+   "link": "https://www.japanmetaldaily.com/list/market/details",
+   "published": "2026-11-15T10:59:00+09:00"
   },
   {
    "cat": "btc",
@@ -68,14 +108,6 @@
    "source": "Yahoo!ニュース",
    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBpZ3pBdllZZWxUM05EQ2p6U2JFUTdvRTJsVFJpZ19rYVI5ZFlFNWtDNFVzNlVjalFhb0lyd3VKNjF6VU9TSGdWYU4wRkFOSjdLd2ZWZy1aRnBSSHBzaWw1dVpfbEhxTnZmbmxHZW51NnVOVGdyY2JrTnlHeklGSkk?oc=5",
    "published": "2026-11-15T09:10:48+09:00"
-  },
-  {
-   "cat": "btc",
-   "label": "ビットコイン",
-   "title": "ビットコインじり安から下げ加速、疲弊するトレーダー－下値を模索",
-   "source": "Bloomberg",
-   "link": "https://www.bloomberg.com/jp/news/articles/2026-11-15/TOJ527KK3NY800",
-   "published": "2026-11-15T08:45:00+09:00"
   },
   {
    "cat": "dc",
@@ -101,14 +133,6 @@
    "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNRmlrcnJza0h1WDFsM1ZHa3NCb01FZW1RTVdiVENnaXl5WjMydXY5SnlEakZGR0tjVTMzVkNsQXd5ZnZVWU5wU0xBWUd2M0RsdDFzLTF5d3FjQXVlOFg4MC15cHNHNE4tamJudnp1QUhDZVh5R0EwNWR6WTg2Uzh1MzVHd3ctdHhaQ1RsQV9fNXVpaFZ3VlVwajJMMF83RXVuZUowakE0NzdkeWRSTkNHdFRzNm12UXpXSzUxRldFNkVqdXRpMUY0MUhnYTNWVTNZN1VHRjF6c0c5UkZMRWc?oc=5",
    "published": "2026-11-14T23:06:04+09:00",
    "dups": 1
-  },
-  {
-   "cat": "btc",
-   "label": "ビットコイン",
-   "title": "【ビットコイン急落】何が起きた？含み損16%でも、私が積立続ける",
-   "source": "note",
-   "link": "https://note.com/noahscrypto/n/na1e6c4ec7275",
-   "published": "2026-11-14T13:40:00+09:00"
   },
   {
    "cat": "dc",
@@ -169,6 +193,14 @@
    "dups": 1
   },
   {
+   "cat": "gen",
+   "label": "業界",
+   "title": "パチンコ店の屋上に侵入、エアコン室外機から銅管15本盗んだ疑い 45歳の男「やったとも、やっていないとも言えません」容疑否認　北海道中富良野町",
+   "source": "ｄメニューニュース",
+   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5lMTlyQmZPS1hlTkNZR3Q0VlhRbWVFMFNjV0ZEcGxvNmJUbVlBcnVjTjhFUnpoNUlUZkVHU09walVVQWVkV3RWR2FCOWJVX3BRSldtaXAzWEd3MkFxdXBNMlo0SXhtY25Eb1diakpDVdIBdEFVX3lxTE1Pa0c0MjFCd21uUWwzOWw0ZDlHRnMySlkyakpVdEtCNjBBcVp5c1JUZGRSemtqWVZUbDh1OTQ0RjJfa0xNeFhJVm5Bbk1MTS1nOFFYTG1KOVVsVTZ1XzZHMVMxWTd5TXlFY1ljWVYzYWlTakwz?oc=5",
+   "published": "2026-11-13T09:05:00+09:00"
+  },
+  {
    "cat": "mkt",
    "label": "相場",
    "title": "日本青銅、今期売上高最高の95億円見通し。15年で4倍に拡大（鉄鋼新聞）",
@@ -220,14 +252,6 @@
   {
    "cat": "mkt",
    "label": "相場",
-   "title": "最新市場価格（鉄鋼・非鉄金属）",
-   "source": "japanmetaldaily",
-   "link": "https://www.japanmetaldaily.com/list/market/details",
-   "published": "2026-11-13T01:00:00+09:00"
-  },
-  {
-   "cat": "mkt",
-   "label": "相場",
    "title": "亜鉛建値1万8000円上げ 三井金属",
    "source": "日本経済新聞",
    "link": "https://www.nikkei.com/article/DGXZQOUB122480S6A111C2000000/",
@@ -267,14 +291,6 @@
    "published": "2026-11-12T04:06:02+09:00"
   },
   {
-   "cat": "mkt",
-   "label": "相場",
-   "title": "金高騰で「売る人」は7割増 ― 買取約29万件のデータで見る、日本人が手放す金の実像",
-   "source": "ニコニコニュース",
-   "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBCT1NzcWdhTThuOUFOODloejNLd0hhTHZpZnRXblRMQWg5TGJyT0FNNVRUWFFuQXFhdm02QmtBR3FRY3F5TlJqZkhmaWtQMG9jbEo1R3dBYnlFdlk2Y0tTXzNHUHZvYXB1THNveURRQWhsUzcwaTRWMTA5MA?oc=5",
-   "published": "2026-11-12T02:30:24+09:00"
-  },
-  {
    "cat": "dc",
    "label": "AI・DC",
    "title": "中国の供給逼迫とAI需要で銅先物は6.30ドルに向け反発 - ニュースと統計",
@@ -304,8 +320,7 @@
    "title": "鉄スクラップ輸出入札、11月は3%上昇 日本製に割安感",
    "source": "日本経済新聞",
    "link": "https://www.nikkei.com/article/DGXZQOUB110JD0R11C26A1000000/",
-   "published": "2026-11-11T17:34:00+09:00",
-   "dups": 1
+   "published": "2026-11-11T17:34:00+09:00"
   },
   {
    "cat": "mkt",
@@ -389,12 +404,12 @@
    "published": "2026-11-09T12:00:00+09:00"
   },
   {
-   "cat": "mkt",
-   "label": "相場",
-   "title": "【金属価格推移】銅は依然高値圏を維持アルミは7月以降急落",
-   "source": "古紙ジャーナル",
-   "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1ENTRSN2Z6X2FSTEtkaXJmNkowQy1tNkJnbVA1OGVwb0w1bXR0QXo0OWM3aVZVbFdxeHppZDdHc1FtN0VtczN5SklFb1QtM2JxZDlwU0tEblRrOHRi?oc=5",
-   "published": "2026-11-09T06:00:09+09:00"
+   "cat": "dc",
+   "label": "AI・DC",
+   "title": "AIサーバ向け高周波回路基板用途HVLP4銅箔の供給能力を拡大",
+   "source": "AGARA 紀伊民報",
+   "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5ZSzg2cHhuR3AzWjBndjhLWkRRMEdhNFdmWjVXQnlVMldGNDFTY1hsYjZWUzlLY1ZZMEJTc0VySml4aW5tVWVXV0pBMWV1Y2M?oc=5",
+   "published": "2026-11-09T11:00:00+09:00"
   },
   {
    "cat": "law",
@@ -475,7 +490,8 @@
    "title": "「明細を見ながら1行ずつ入力する」仕事をなくす。古物商・リユース事業者向けSaaS「リユース在庫SaaS」提供開始",
    "source": "ニコニコニュース",
    "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBvWE12RGozOGwwY3M3VU1SMDNuNl9yVVh1TFR4eDNyU1JJWjQ2YlgyUV9yWThRa3BINC1wRzJGdWFUUXB5NU9mZl9jQmc0WFlWNm5zMA?oc=5",
-   "published": "2026-11-01T11:45:32+09:00"
+   "published": "2026-11-01T11:45:32+09:00",
+   "dups": 1
   },
   {
    "cat": "law",
@@ -500,8 +516,7 @@
    "title": "防カメが捉えた金属盗難の一部始終…狙われる金属　神社の屋根から銅板盗む被害も　東海地方で相次ぐ被害",
    "source": "名古屋テレビ【メ～テレ】",
    "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE8yd29XQjJNb0ZlNFJRUl9tYlhnUDlHbXhqaVpwUmVhR1JkcWdSYW9kQlJhYkdXaGhIUFpTTVVzTnBQZm9RUWN0bkhQandQbHRQMXfSAWRBVV95cUxPT0dMbktCRHgzVGNaUnBqMmN4Sm1zeWJpeUV1YWI1ajdTU1lJTWFJeENhNS1pMHpJdU1oRUk2Y1dwZnRJSzFjbzkyYTEya3AxZjVRQW42YzkxTEM0SmxTd1hlcGtY?oc=5",
-   "published": "2026-10-29T16:00:00+09:00",
-   "dups": 1
+   "published": "2026-10-29T16:00:00+09:00"
   },
   {
    "cat": "law",
@@ -614,14 +629,6 @@
    "title": "【瀬戸内資源循環プロジェクト】 前処理拠点が竣工、店頭回収もスタート 地域循環の食品トレー、来年3月から店頭へ",
    "source": "プラジャーナル",
    "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1lVzBZNDNsTEpkMUNTZlVJSlQ0UzMyc243ZzhPakN6TUN5b1J0dnE1alZlc3ozWHFfRmduMTNaTDRReHNNaFJFaUhzU0VqZEZYOWRDVGxLdXdXY1phNFdDLTF5TVI0UkZSRHIzenFDcHZCVHdnN2RsMg?oc=5",
-   "published": "2026-10-07T16:00:00+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
-   "title": "【R&R（荒川産業グループ）】 アマルクプラ・タイヤセンターが本格稼働 3つの廃プラリサイクル事業を柱に地域循環目指す",
-   "source": "プラジャーナル",
-   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE04R1J0bGFYaVRlazZJQ2kyUVEtdmlsS3RNTlkxNmZxREdiUGhaQ1ZsV3RMb0VfZ0tabXhzZlZvRkhuSHV0X0dUNjBTenAxZHRnRlNsZU00RzhRVF95Qk9tUDlrRXcxRlNXSlhSUlRuRzZCN3cxTThLag?oc=5",
    "published": "2026-10-07T16:00:00+09:00"
   },
   {
@@ -2181,10 +2188,10 @@
   ]
  },
  "weekly": {
-  "title": "ビットコインが1週間で-12.2%",
+  "title": "ビットコインが1週間で-12.1%",
   "paragraphs": [
-   "この1週間の相場の動き。銅建値2,320,000（+1.8%）、鉄二級51,000（+0.0%）、金21,753（-2.6%）、銀266.5（-1.1%）、ドル円160.0（+1.3%）、日経平均61,142（+4.0%）、NYダウ52,348（-0.1%）、ビットコイン10,392,128（-12.2%）。",
-   "上がったのは 日経平均（+4.0%）、銅建値（+1.8%）、ドル円（+1.3%）。下がったのは ビットコイン（-12.2%）、金（-2.6%）、銀（-1.1%）。",
+   "この1週間の相場の動き。銅建値2,320,000（+1.8%）、鉄二級51,000（+0.0%）、金21,753（-2.6%）、銀266.5（-1.1%）、ドル円160.0（+1.3%）、日経平均61,142（+4.0%）、NYダウ52,348（-0.1%）、ビットコイン10,397,445（-12.1%）。",
+   "上がったのは 日経平均（+4.0%）、銅建値（+1.8%）、ドル円（+1.3%）。下がったのは ビットコイン（-12.1%）、金（-2.6%）、銀（-1.1%）。",
    "この1週間の法規制の記事。リバスタ、廃棄物処理法の規則改正に向けe-reverse.comを拡充へ（11/13）／タイ政府、有害廃棄物の違法輸入に罰則強化へ！ 外国人の国外退去も検討。本当にやれるのか？！（11/13）／パネル・リサイクル制度、「ガラスを回収し、ほぼ全て再資源化」 - ニュース - メガソーラービジネス plus（11/12）／管理会社に「事業は一切禁止」と言われた！古物商許可は、もう（11/12）／【たかが銅線泥棒ではない】 社会インフラをも脅かす金属盗の実態（11/12）",
    "同業の価格差が大きい品目（きょう時点）。CPUセラ長方形(金足)は浜屋63,700円・ケイワイ21,000円で差42,700円、CPUセラ(上)は浜屋63,700円・大畑42,000円で差21,700円、CPU黒は浜屋26,100円・大畑15,000円で差11,100円。"
   ],
@@ -2680,7 +2687,7 @@
     11411349,
     10912777,
     10242890,
-    10392128
+    10397445
    ]
   },
   "基板:マザーボード（Ｃ）": {
@@ -4368,8 +4375,8 @@
   "lines": [
    "・銅建値2,320,000円（+40,000）、鉄二級51,000円（変わらず）",
    "・金21,753円（-549）、銀266.53円（-22.00）、ドル円160.0円",
-   "・法規制：リバスタ、廃棄物処理法の規則改正に向けe-reverse.comを拡…（11/13）"
+   "・業界：パチンコ店の屋上に侵入、エアコン室外機から銅管15本盗んだ疑い 45…（11/13）"
   ],
-  "at": "11/16 5:36"
+  "at": "11/16 8:26"
  }
 }
