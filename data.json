@@ -1,5 +1,5 @@
 {
- "updated": "11/21 7:22",
+ "updated": "11/21 9:53",
  "fx": {
   "usdjpy": 158.64,
   "date": "2026-11-20"
@@ -34,9 +34,9 @@
    },
    {
     "name": "ビットコイン",
-    "value": "9,369,302",
+    "value": "9,357,894",
     "unit": "円",
-    "diff": "-5.1%"
+    "diff": "-5.4%"
    },
    {
     "name": "日経平均",
@@ -56,18 +56,26 @@
   {
    "cat": "btc",
    "label": "ビットコイン",
+   "title": "ビットコイン年初来最安値、米ハイテク株急落とマイナー売りが重荷｜仮想NISHI",
+   "source": "CoinPost",
+   "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE1iUzI4S1dTejMxUktJaUo4YVRiMXFvN3o0SEZSaUNRMGpHWVFGVGVJeTV1NUwweThlS0M3andIME9tS3M?oc=5",
+   "published": "2026-11-21T09:25:36+09:00"
+  },
+  {
+   "cat": "btc",
+   "label": "ビットコイン",
+   "title": "ビットコイン、5万9000ドルも割り込む…7週連続の下落 : 가상화폐 : 財経日報",
+   "source": "재경일보",
+   "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9vTU5rdFVxdHlXWU45OEV3bFVZREk1RHpFc2J1RERsc0tDNHJDdXhvUzM3U3EtWDcyLWszSThTc3pMZy1SSmFFTUFFR1RVZzYxWVJRcms3R3ZXem5PX3I2Y2pRbw?oc=5",
+   "published": "2026-11-21T07:25:00+09:00"
+  },
+  {
+   "cat": "btc",
+   "label": "ビットコイン",
    "title": "ビットコイン続落、AI株安の中で一時5.8万ドル割れ、3170億円超ロスカット",
    "source": "CoinPost",
    "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE5LUjdNdDAwVGM2NHJnV3lqamtJMlIzRjF5TmkwVTduTWt3b2g2REVxbHBSVzVJMDgycGRuUU9VbVBpbnM?oc=5",
    "published": "2026-11-21T06:05:01+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
-   "title": "金属・室外機盗防止で重点警戒 沼津署 防犯パトロールなど実施",
-   "source": "静岡新聞DIGITAL",
-   "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1DT1psb2xESHJhZFlLeHQyUTZmb0V1SVBYMXZYcEhTN2lxWXNXNFJITV9uRUxJbFk3U2dSYkt4UjVFcU1pd0VSdlJwQXotdw?oc=5",
-   "published": "2026-11-21T06:00:00+09:00"
   },
   {
    "cat": "btc",
@@ -86,22 +94,6 @@
    "published": "2026-11-21T05:48:34+09:00"
   },
   {
-   "cat": "btc",
-   "label": "ビットコイン",
-   "title": "ビットコインが4か月ぶりに6万ドル割れ…7週連続の下落 : 가상화폐 : 財経日報",
-   "source": "재경일보",
-   "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5JRVMybVdFSW4tWWx1ZUlHRmtLbl9fOGUyUDl6RlZDNC1Sa3VmMHF2a1ZRS0twZ1dlOC0zNmhyWFQwQVdFaW4yQWVZUUtMR2xqR01qRlNfYWtaLTgyQ2NzVDJ3SQ?oc=5",
-   "published": "2026-11-21T05:40:00+09:00"
-  },
-  {
-   "cat": "btc",
-   "label": "ビットコイン",
-   "title": "ビットコインは5万9000ドルを割り、暗号資産の強制決済は15億ドル超です。",
-   "source": "Bitcoin News",
-   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPc2VkdTVjR1NLY3NmNm0xZlppMzJ5dTBXUEZkRmtHYzVUTl8zU2M3aFR2ZUw5dWtiZkFjQi1DQ3BwaWMyWWEzcEJLcUs2Q01nMWhXRzQxa1Z2ejhGU3lHN2Y0OW5PME85d1pQSkNtR1NKQTJTWk05S2R5Z3Z5a2FlYVRydVFGclJuaDltTkU2bEx6Zk9rMTY4WkZrZjdiQk5ONmtrdmRYeUJmbmt6RXBGOWMwb2R5UW1TT2ViR0xPN1FzSVVFWVotNTlB?oc=5",
-   "published": "2026-11-21T04:52:23+09:00"
-  },
-  {
    "cat": "dc",
    "label": "AI・DC",
    "title": "銅が下げ拡大、週間下落率は過去10年で最大級に－AI不安で需要に懸念",
@@ -110,20 +102,20 @@
    "published": "2026-11-20T21:15:58+09:00"
   },
   {
+   "cat": "law",
+   "label": "法規制",
+   "title": "金属・室外機盗防止で重点警戒 沼津署 防犯パトロールなど実施",
+   "source": "静岡新聞DIGITAL",
+   "link": "https://news.at-s.com/article/2103166",
+   "published": "2026-11-20T17:00:00+09:00"
+  },
+  {
    "cat": "dc",
    "label": "AI・DC",
    "title": "AIデータセンター需要の疑念で銅価格が急落、6カ月ぶり水準",
    "source": "Yahoo!ニュース",
    "link": "https://news.yahoo.co.jp/articles/0e28a347aa8c4869a86fc21a9ef24ecbc45c1a75",
    "published": "2026-11-20T14:30:00+09:00"
-  },
-  {
-   "cat": "mkt",
-   "label": "相場",
-   "title": "ゴールド下落、銅価格の変調、アンソロピックのIPO",
-   "source": "マネクリ",
-   "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9ZQWRZVjF3TUZUNl9PU05yVjI2TTdWaWJINTlQSnNWSE5BNXRaaFl3M3Q4TUQzZEFCcmxNM2Z2MUJaTDJ5NTVRZ2tSNlQ2cVhza3FCeXQta9IBV0FVX3lxTE9ZQWRZVjF3TUZUNl9PU05yVjI2TTdWaWJINTlQSnNWSE5BNXRaaFl3M3Q4TUQzZEFCcmxNM2Z2MUJaTDJ5NTVRZ2tSNlQ2cVhza3FCeXQtaw?oc=5",
-   "published": "2026-11-20T13:30:00+09:00"
   },
   {
    "cat": "dc",
@@ -177,22 +169,6 @@
    "published": "2026-11-20T00:00:00+09:00"
   },
   {
-   "cat": "dc",
-   "label": "AI・DC",
-   "title": "コデルコ、インドのアダニ・グループとチリ銅探鉱案件で提携（チリ、インド）",
-   "source": "Infoseek",
-   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE85TXFNUVpQUkJ6QnVselY5TzdqQ0dvR3BFeDBFYTlFOVNLTTVGQ0VRM01NVmxmY3BMTGNISTVhS2E1bFdmc1dYRkxybVhxSm5IcnU4X2xkdFh3TFdkdDdlT1RIVm1jeWdlOXM0?oc=5",
-   "published": "2026-11-20T00:00:00+09:00"
-  },
-  {
-   "cat": "mkt",
-   "label": "相場",
-   "title": "銅急落、7カ月ぶり安値 AI期待変調でマネー流出",
-   "source": "日本経済新聞",
-   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9NREhxdlZ0cTlaS0JRN18zQmVuby1lQ09QZENSWU1vRElwSTBDZWtSU1pNLTRZdE9MNms2WUtqTTZ1c0R1Q1F4SXNRc2FQR25ZZjI3WGZrTkFUbFB3NmRaMURzZEFKc25aeDlieQ?oc=5",
-   "published": "2026-11-19T18:55:02+09:00"
-  },
-  {
    "cat": "mkt",
    "label": "相場",
    "title": "銅建値4万円下げ 220万円",
@@ -207,8 +183,7 @@
    "title": "製錬大手8社の4～9月期／非鉄価格高騰などで全社最終増益／通期は5社が最終増益見通し",
    "source": "ニッキンONLINE",
    "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5aZEFVYTFYX3cxV0xDeURMZVBmYmFkTjJjZG05UFRuOVdha1dackRjQmRxYU5jb1MxTnZ6ckR3RkZKQWlSckZ6eHkxOUJSMDVMQW9iVTR3?oc=5",
-   "published": "2026-11-19T17:00:00+09:00",
-   "dups": 1
+   "published": "2026-11-19T17:00:00+09:00"
   },
   {
    "cat": "law",
@@ -217,14 +192,6 @@
    "source": "Digital PR Platform",
    "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE1IRkNnSVZBNlR0VHNkc3VUQVowVG9FdVNZOTJDWmZYX09aZW9DbHhBeHF5LXRPQzcwQ1RQbnJPblFWTE0?oc=5",
    "published": "2026-11-19T15:05:13+09:00"
-  },
-  {
-   "cat": "mkt",
-   "label": "相場",
-   "title": "非鉄株が軒並み安､LME銅価格急落や米利上げ観測で",
-   "source": "四季報オンライン",
-   "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5jR2taNXd4X1FrbTNvamh2WGZwMUVieXJXeVJWZDhIQkxlSHVqUmtscjhsMlFSTk5yX05FUjFidVRiX2dRRDJrd1BwYUJEcXdFWWZUdHRkdw?oc=5",
-   "published": "2026-11-19T13:41:39+09:00"
   },
   {
    "cat": "gen",
@@ -242,7 +209,7 @@
    "source": "みんかぶ",
    "link": "https://minkabu.jp/news/4668671",
    "published": "2026-11-19T12:13:00+09:00",
-   "dups": 2
+   "dups": 1
   },
   {
    "cat": "mkt",
@@ -309,28 +276,12 @@
    "published": "2026-11-18T22:39:53+09:00"
   },
   {
-   "cat": "dc",
-   "label": "AI・DC",
-   "title": "2026年から2033年にかけて、LANケーブル市場の収益成長率に影響を与える要因を、年",
-   "source": "pando.life",
-   "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE13UlFmdk5uVjlOeTBFSW5kMmZQSVVmMjJjNVpaNVhSZWNCVjlqcEUwb21QMWxTMVRRaUU3cURqSmhQbjFKWWVMVXhR?oc=5",
-   "published": "2026-11-18T21:49:49+09:00"
-  },
-  {
    "cat": "gen",
    "label": "業界",
    "title": "MERFとネクシーズ、業務用空調のリサイクルで業務提携",
    "source": "日本経済新聞",
-   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1yTXo3MTAzX0JlaTUwcllabk9IdUZPYlY3M1JWTmcwRVJZY09oZXNvcWZ3VWdQM1h1UUZjZERmZkhiYmhZVzFYU19mMzZNMEdoa3BZY0wtcFZXTTlEdzJzZ2FPQXZEYUVObzBFWQ?oc=5",
-   "published": "2026-11-18T19:42:35+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
-   "title": "減らない金属盗 苦慮 岐阜、9月末で昨年超えの399件 新法の抑止効果疑問視 ／岐阜",
-   "source": "毎日新聞",
-   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5ObWhNY3U0S1k1VmZMTF9DMlpsVkhCQkFYbFNFWjdjR2VFQUt3YmdPRmNBTHhfV1pCX2RKeGViNE5JYVQ4NkhJX2dmUEo4TkJDV3RPYVF3TzFtZENqOGFtZjVnc3NudTZs?oc=5",
-   "published": "2026-11-18T18:31:54+09:00"
+   "link": "https://www.nikkei.com/article/DGXZQOCC188FC0Y6A111C2000000/",
+   "published": "2026-11-18T20:42:00+09:00"
   },
   {
    "cat": "dc",
@@ -383,12 +334,12 @@
    "published": "2026-11-18T05:12:00+09:00"
   },
   {
-   "cat": "dc",
-   "label": "AI・DC",
-   "title": "ドラッケンミラー氏、1年先見通せず積極取引を手控え－銅には弱気",
-   "source": "TBS NEWS DIG",
-   "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBrLTJIYmdaeE1GQ1NzNzJCalBUeGZsVHFtWlBPQl8xek1mcVYyck5DUFlqWEZKN0xmM01UelVEZC1kQ2Fuc1VZeERKMHByX0trYkNZUTVGMzFKYkJYSGdwRWNDcllSNC1uOWpHQ3JJcXQtMDRp?oc=5",
-   "published": "2026-11-18T05:05:56+09:00"
+   "cat": "law",
+   "label": "法規制",
+   "title": "減らない金属盗 苦慮 岐阜、9月末で昨年超えの399件 新法の抑止効果",
+   "source": "毎日新聞デジタル",
+   "link": "https://mainichi.jp/articles/20261118/ddl/k21/040/042000c",
+   "published": "2026-11-18T01:00:00+09:00"
   },
   {
    "cat": "mkt",
@@ -397,14 +348,6 @@
    "source": "IndexBox",
    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPeVpRdkpRS3pYUmVjYklNNFQzcF9BQjZYbDhHd21IdUtVWWZhSGl5SENieXhUcDk2NUhEbWNDR09XX0tvTUFyUWsyNV94UXhmZ0h0ODZYYUVjN3JaV1NHbFpEaVcySEJwUFh2LWtkaU1xTlFReEJ1REg0R3lObkp5aHJ6c05TMnVQRXJkVVRsQVd5cGVmTzBCRkJCWHdpYjBLWnBNUEktb1NHcEluYkZPcDNCcFo?oc=5",
    "published": "2026-11-17T20:40:35+09:00"
-  },
-  {
-   "cat": "mkt",
-   "label": "相場",
-   "title": "銅価格は4カ月ぶりの安値に下落、中国からの輸入プレミアムは過去最高の1トン当たり350ドルに急騰",
-   "source": "EBC Financial Group",
-   "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE8zaUFkbDd0YlRmTnM4N0dzOFc1cHhoM3pjdWtsZ1NDcWUtQlpUMmhJM210NHZac1BQbGJYdGdlRFBjRGpwRXF2MFFfYmNVclQ2V0E?oc=5",
-   "published": "2026-11-17T14:58:00+09:00"
   },
   {
    "cat": "law",
@@ -441,6 +384,14 @@
   {
    "cat": "law",
    "label": "法規制",
+   "title": "こっこー東広島リサイクルセンターが全面リニューアル完了、本格稼働体制を整える",
+   "source": "Dellows News",
+   "link": "https://news.google.com/rss/articles/CBMiR0FVX3lxTFBqT0ZzSFNpeS00UExiYlE3NlhNekM3Z24yNVprYzc0NFhpN1plbDRoRThqdkRwaFVfN2RfYUdKdE9PbW15T3Jn?oc=5",
+   "published": "2026-11-16T15:11:32+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
    "title": "営業所が2つの県にある。古物商許可は2つ取るのですか｜答えは「1",
    "source": "note",
    "link": "https://note.com/trust_kobutsusho/n/n65845d25cc0c",
@@ -449,26 +400,10 @@
   {
    "cat": "gen",
    "label": "業界",
-   "title": "日鋼ステンレスと豫洲短板産業 越合弁、北部に新拠点",
-   "source": "WEB産業新聞",
-   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBodDdlV0ppQ2YzNHpWYy1MamNYdzZ0T29iTkx1TWZZcXRqWjVqYVNlTksxUWdBR1hNZUk3eG9aMWFmWFZZcmhzQThpTDRUcHlzRXRHbnhaQU1EMUljaTFFcjdn?oc=5",
-   "published": "2026-11-16T05:52:00+09:00"
-  },
-  {
-   "cat": "gen",
-   "label": "業界",
    "title": "KIBOR、低圧アルミケーブルのカット販売と端子のセット供給を本格化",
    "source": "Dellows News",
    "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE10aDMyWG5vRGFxR05LamNyVXBIS1R1NXJDOWNuYXR3a0lsS0x5V09hT3VfYU52NGY3dU9YcHBISmNlcmZlYUE?oc=5",
    "published": "2026-11-16T02:24:43+09:00"
-  },
-  {
-   "cat": "gen",
-   "label": "業界",
-   "title": "銅線ケーブル窃盗、山県市の被害女性「まさか自分が」 岐阜県内で急増、狙われる太陽光発電施設",
-   "source": "中日新聞Web",
-   "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE93U1FYbXJhTThNNjdIWG5lSUVJOTJOdlg3WnkyUUdXR0R4SEpTdEN3REt4dmxGU1R4Mkh4cGZERFVIazNVSWtGYnlXSDZnZXpqOXQ4OA?oc=5",
-   "published": "2026-11-14T12:00:00+09:00"
   },
   {
    "cat": "law",
@@ -545,6 +480,14 @@
   {
    "cat": "law",
    "label": "法規制",
+   "title": "ソフトバンク、スマホ買取初動好調",
+   "source": "rej.media",
+   "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE95c1k3ZVVraFozZkExNG45bl9qWW13QUh6aUJvVjR1T2pxYUVqUXh6NURkN2dSQjNsQzhwN3FqZGZZbURNeVJOeVRTYldFTlJ0?oc=5",
+   "published": "2026-11-03T17:00:00+09:00"
+  },
+  {
+   "cat": "law",
+   "label": "法規制",
    "title": "「身分確認すると客が来なくなる」盗まれた電線ケーブルを常習的に買い取りか 金属買取業者に家宅捜索 東京・あきる野市",
    "source": "日テレNEWS NNN",
    "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTFA4S2czUzdXM3BuVk9JaHhtN0gtdUc2M1dGLTU3OG44WTh5QjFZU1lhM3Y0Q2hYeFdhdVB3MDhPekFzbTQ5TGxPUWs4RUw2eHFWSGFGS082bEpGZ3FnanBsT2FJWENfMWprcllNaWZCVnpiS0ZvbjJLd2NBcHo?oc=5",
@@ -554,9 +497,9 @@
    "cat": "law",
    "label": "法規制",
    "title": "全日本古物鑑定士協会の理事に誠報社代表の松尾匠が就任へ。買取現場の不正を、業界横断の仕組みで防ぐ",
-   "source": "ニコニコニュース",
-   "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9EZUxQUl96VXZpYWpmOUhReVl5NDJ4b040b0tyLW9QT3hwbFlaQ0pLRHNCaWhCODFQOUNzeFBXbHhibG9fNS05VXhDcEZBZUNYd1FnbQ?oc=5",
-   "published": "2026-10-31T16:00:00+09:00"
+   "source": "PR TIMES",
+   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFAwbjNDUTJpUUY4XzRTMk43NmNOTnI3YVJkTFZyV2ZvOG1FR0w3UnZQNGpkYXVCd1l3Mm5mM2FPNnZLRlc5NDFfNl8zWk95M25DRVFMTzdQSVFzMUUxNVZIRGtLUXBaeVdQZ0E?oc=5",
+   "published": "2026-11-01T16:00:00+09:00"
   },
   {
    "cat": "law",
@@ -613,14 +556,6 @@
    "title": "プラスチック資源循環促進法における再資源化事業計画の認定制度と活用実務",
    "source": "ブライトイノベーション",
    "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1wdFZvYy02ODhoMlNnd1ZBUnNXZ0dLaHJHd0w4d215TjBRZER3UWt4dEt3VVBELTFLQzhROGlqdmZxRlNIay1UUjktbUR5Zk43SmNRWUZMN2VNdw?oc=5",
-   "published": "2026-10-21T16:00:00+09:00"
-  },
-  {
-   "cat": "law",
-   "label": "法規制",
-   "title": "環境省、プラスチックの高度リサイクル実証事業に6件採択 マテリアル・ケミカル連携で品質・収率向上へ",
-   "source": "ESG Journal",
-   "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9UNWF4cGEteWV5a2tLaXZvMUs1Y1VjMmNPQkVLenhraTBWci02eGx1bXRUZHhXWHgxN2xHZFpVRDBHWllBckc0U1FrcTFIakVqOG1jbGhGQVhvRDQ?oc=5",
    "published": "2026-10-21T16:00:00+09:00"
   },
   {
@@ -755,7 +690,7 @@
      },
      {
       "dealer": "土金",
-      "value": 2010,
+      "value": 2000,
       "best": false
      },
      {
@@ -770,7 +705,7 @@
      }
     ],
     "spread": 180,
-    "diff": "-80"
+    "diff": "0"
    },
    {
     "group": "銅",
@@ -783,7 +718,7 @@
      },
      {
       "dealer": "土金",
-      "value": 1930,
+      "value": 1920,
       "best": false
      },
      {
@@ -793,7 +728,7 @@
      }
     ],
     "spread": 140,
-    "diff": "-110"
+    "diff": "0"
    },
    {
     "group": "銅",
@@ -806,7 +741,7 @@
      },
      {
       "dealer": "土金",
-      "value": 1910,
+      "value": 1900,
       "best": false
      },
      {
@@ -816,7 +751,7 @@
      }
     ],
     "spread": 85,
-    "diff": "-65"
+    "diff": "0"
    },
    {
     "group": "銅",
@@ -834,7 +769,7 @@
      }
     ],
     "spread": 110,
-    "diff": "-50"
+    "diff": "0"
    },
    {
     "group": "電線",
@@ -908,7 +843,7 @@
      }
     ],
     "spread": 60,
-    "diff": "-40"
+    "diff": "0"
    },
    {
     "group": "電線",
@@ -954,7 +889,7 @@
      }
     ],
     "spread": 230,
-    "diff": "-70"
+    "diff": "0"
    },
    {
     "group": "真鍮・砲金",
@@ -2540,7 +2475,6 @@
   },
   "ビットコイン": {
    "d": [
-    "2026-08-23",
     "2026-08-24",
     "2026-08-25",
     "2026-08-26",
@@ -2633,7 +2567,6 @@
     "2026-11-21"
    ],
    "v": [
-    12253191,
     12346880,
     12567312,
     12500297,
@@ -2723,7 +2656,7 @@
     10350569,
     10040777,
     9890012,
-    9452123
+    9357541
    ]
   },
   "基板:マザーボード（Ｃ）": {
@@ -4493,8 +4426,8 @@
   "lines": [
    "・銅建値2,100,000円（-100,000）、鉄二級51,000円（変わらず）",
    "・金20,970円（-529）、銀250.80円（-10.12）、ドル円158.64円",
-   "・法規制：金属・室外機盗防止で重点警戒 沼津署 防犯パトロールなど実施（11/21）"
+   "・法規制：金属・室外機盗防止で重点警戒 沼津署 防犯パトロールなど実施（11/20）"
   ],
-  "at": "11/21 7:22"
+  "at": "11/21 9:53"
  }
 }
